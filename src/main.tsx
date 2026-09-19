@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { catalog, type Plan } from "./catalog";
-import { compare, type Request, type Resource } from "./comparison";
+import {
+  compare,
+  type Request,
+  type InputField,
+  type Quote,
+  type Comparison,
+} from "./comparison";
 import "@fontsource/vazirmatn/400.css";
 import "@fontsource/vazirmatn/700.css";
 import "./style.css";
 
 const number = (value: number) => new Intl.NumberFormat("fa-IR").format(value);
 const providerNames = { manageit: "منیجیت", iranserver: "ایران‌سرور" };
-const fields: { key: Resource; label: string }[] = [
+const fields: { key: InputField; label: string }[] = [
   { key: "ram", label: "حداقل رم (GB)" },
   { key: "cpu", label: "حداقل پردازنده (هسته)" },
   { key: "disk", label: "حداقل دیسک (GB)" },
+  { key: "egress", label: "خروجی ماهانه (GB)" },
+  { key: "ingress", label: "ورودی ماهانه (GB، اختیاری)" },
 ];
 
 function Traffic({ plan }: { plan: Plan }) {
@@ -81,7 +89,7 @@ function BillingDetails({ plan }: { plan: Plan }) {
         )}
         <p>
           شمول IPv4 پایه، مالیات و کامل بودن هزینه‌های اجباری نامشخص است. قیمت
-          پایه، مبلغ نهایی صورت‌حساب نیست.
+          پایه و جمع برآوردی، مبلغ نهایی صورت‌حساب نیست.
         </p>
         <p className="source-wording">
           عبارت ثبت‌شده منبع:{" "}
@@ -109,6 +117,110 @@ function BillingDetails({ plan }: { plan: Plan }) {
         )}
       </div>
     </details>
+  );
+}
+
+const unpricedReasons: Record<string, string> = {
+  unknown_overage: "تعرفه ترافیک اضافه نامشخص است.",
+  missing_traffic_rate: "نرخ لازم برای محاسبه ترافیک مشخص نیست.",
+  unknown_allowance: "سهمیه لازم برای محاسبه مشخص نیست.",
+  unknown_traffic_policy: "شرایط ترافیک مشخص نیست.",
+  arithmetic_out_of_range: "مصرف از محدوده محاسبه دقیق خارج است.",
+};
+function Offer({
+  candidate,
+  quote,
+  cheapest = false,
+}: {
+  candidate: Comparison["unpriced"][number];
+  quote?: Quote;
+  cheapest?: boolean;
+}) {
+  const { plan } = candidate;
+  return (
+    <article
+      aria-label={`${providerNames[plan.provider]} ${plan.provider_plan_name ?? plan.id}`}
+    >
+      <div className="offer-main">
+        <div className="identity">
+          <h3>{providerNames[plan.provider]}</h3>
+          <bdi className="plan-name">{plan.provider_plan_name ?? plan.id}</bdi>
+          {!plan.provider_plan_name && <small>شناسه محلی پلن</small>}
+        </div>
+        <div className="resources">
+          <span>
+            <strong>{number(plan.ram_gb)}</strong> GB رم
+          </span>
+          <span>
+            <strong>{number(plan.cpu_count)}</strong> هسته
+          </span>
+          <span>
+            <strong>{number(plan.disk_gb)}</strong> GB دیسک
+          </span>
+        </div>
+        <div className="price">
+          {cheapest && (
+            <span className="badge">کمترین جمع برآوردی در نتایج</span>
+          )}
+          <strong>
+            {number(quote?.subtotalToman ?? plan.advertised_monthly_toman)}
+          </strong>
+          <span>تومان / ماه</span>
+          <small>
+            {quote
+              ? "جمع برآوردی پایه و ترافیک"
+              : "قیمت پایه ناقص؛ خارج از رتبه‌بندی"}
+          </small>
+        </div>
+      </div>
+      {quote ? (
+        <div className="breakdown">
+          <p>
+            ترافیک قابل پرداخت: <bdi>{number(quote.billableGb)} GB</bdi>؛ نرخ:{" "}
+            {quote.rateTomanPerGb === null
+              ? "تعرفه اضافه نامشخص؛ مصرف در سهمیه"
+              : `${number(quote.rateTomanPerGb)} تومان / GB`}
+          </p>
+          <p>
+            هزینه ترافیک:{" "}
+            {quote.rateTomanPerGb !== null && (
+              <>
+                <bdi dir="ltr">
+                  {number(quote.billableGb)} GB × {number(quote.rateTomanPerGb)}{" "}
+                  = {number(quote.trafficChargeToman)}
+                </bdi>{" "}
+                تومان
+              </>
+            )}
+            {quote.rateTomanPerGb === null &&
+              `${number(quote.trafficChargeToman)} تومان (بدون مصرف اضافه)`}
+          </p>
+          <p>
+            پایه + ترافیک = جمع برآوردی:{" "}
+            <bdi dir="ltr">
+              {number(quote.baseMonthlyToman)} +{" "}
+              {number(quote.trafficChargeToman)} = {number(quote.subtotalToman)}
+            </bdi>{" "}
+            تومان
+          </p>
+        </div>
+      ) : (
+        <div className="breakdown">
+          <p>
+            {candidate.reasons
+              .map((reason) => unpricedReasons[reason] ?? reason)
+              .join(" ")}
+          </p>
+          {candidate.billableGb !== undefined && (
+            <p>{number(candidate.billableGb)} GB بیش از سهمیه مشترک</p>
+          )}
+        </div>
+      )}
+      <p className="traffic">
+        <Traffic plan={plan} />
+      </p>
+      <BillingDetails plan={plan} />
+    </article>
   );
 }
 
@@ -154,6 +266,9 @@ function App() {
             <button onClick={() => setRequest({ ram: "4" })}>
               حداقل ۴ GB رم
             </button>
+            <button onClick={() => setRequest({ ram: "4", egress: "1000" })}>
+              ۴ GB رم + ۱ TB خروجی
+            </button>
           </div>
           <div className="fields">
             {fields.map(({ key, label }) => (
@@ -164,7 +279,9 @@ function App() {
                   inputMode="numeric"
                   type="text"
                   value={request[key] ?? ""}
-                  placeholder="بدون محدودیت"
+                  placeholder={
+                    key === "egress" || key === "ingress" ? "۰" : "بدون محدودیت"
+                  }
                   aria-invalid={Boolean(comparison.errors[key])}
                   aria-describedby={
                     comparison.errors[key] ? `${key}-error` : "input-help"
@@ -182,22 +299,29 @@ function App() {
             ))}
           </div>
           <p id="input-help" className="muted">
-            فیلد خالی یعنی بدون محدودیت. عدد صحیح صفر یا بیشتر؛ واحد GB همان
-            واحد اعلام‌شده ارائه‌دهنده است.
+            منابع خالی یعنی بدون محدودیت؛ مصرف خالی یعنی صفر. ۱ TB برابر ۱٬۰۰۰
+            GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد اعلام‌شده
+            ارائه‌دهنده است.
           </p>
         </section>
         <section aria-labelledby="results-title" className="results">
           <div className="section-heading">
             <h2 id="results-title">پیشنهادها</h2>
-            <span className="muted">قیمت پایه: کم به زیاد</span>
+            <span className="muted">جمع برآوردی: کم به زیاد</span>
           </div>
           <p role="status">
             {invalid
               ? "برای دیدن نتایج، ورودی را اصلاح کنید."
-              : `${number(comparison.ranked.length)} پیشنهاد مطابق منابع شما`}
+              : `${number(comparison.ranked.length)} پیشنهاد قیمت‌گذاری‌شده مطابق درخواست شما`}
           </p>
           <p className="muted">
-            مقایسه با مصرف ترافیک صفر؛ قیمت‌های پایه ماهانه به تومان هستند.
+            جمع برآوردی ماهانه = قیمت پایه + هزینه ترافیک، به تومان؛ بدون مالیات
+            و هزینه‌های حل‌نشده.
+          </p>
+          <p className="muted">
+            قاعده ثابت محصول: دانلود منیجیت خروجی سرور و آپلود آن ورودی رایگان
+            است. سهمیه با جهت نامشخص را مشترک بین ورودی و خروجی حساب می‌کنیم؛
+            این تفسیر محصول است، نه تأیید جهت مصرف توسط ارائه‌دهنده.
           </p>
           {invalid ? (
             <div className="empty" role="alert">
@@ -216,47 +340,28 @@ function App() {
               </button>
             </div>
           ) : (
-            comparison.ranked.map(({ plan, baseMonthlyToman }, index) => (
-              <article
-                key={plan.id}
-                aria-label={`${providerNames[plan.provider]} ${plan.provider_plan_name ?? plan.id}`}
-              >
-                <div className="offer-main">
-                  <div className="identity">
-                    <h3>{providerNames[plan.provider]}</h3>
-                    <bdi className="plan-name">
-                      {plan.provider_plan_name ?? plan.id}
-                    </bdi>
-                    {!plan.provider_plan_name && <small>شناسه محلی پلن</small>}
-                  </div>
-                  <div className="resources">
-                    <span>
-                      <strong>{number(plan.ram_gb)}</strong> GB رم
-                    </span>
-                    <span>
-                      <strong>{number(plan.cpu_count)}</strong> هسته
-                    </span>
-                    <span>
-                      <strong>{number(plan.disk_gb)}</strong> GB دیسک
-                    </span>
-                  </div>
-                  <div className="price">
-                    {index === 0 && (
-                      <span className="badge">کمترین قیمت پایه در نتایج</span>
-                    )}
-                    <strong>{number(baseMonthlyToman)}</strong>
-                    <span>تومان / ماه</span>
-                    <small>قیمت پایه اعلام‌شده</small>
-                  </div>
-                </div>
-                <p className="traffic">
-                  <Traffic plan={plan} />
-                </p>
-                <BillingDetails plan={plan} />
-              </article>
+            comparison.ranked.map((quote, index) => (
+              <Offer
+                key={quote.plan.id}
+                candidate={quote}
+                quote={quote}
+                cheapest={index === 0}
+              />
             ))
           )}
         </section>
+        {!invalid && comparison.unpriced.length > 0 && (
+          <section className="results" aria-labelledby="unpriced-title">
+            <h2 id="unpriced-title">پیشنهادهای بدون برآورد ترافیک</h2>
+            <p className="muted">
+              {number(comparison.unpriced.length)} پیشنهاد؛ هزینه ترافیک قابل
+              محاسبه نیست. قیمت پایه ناقص؛ خارج از رتبه‌بندی.
+            </p>
+            {comparison.unpriced.map((candidate) => (
+              <Offer key={candidate.plan.id} candidate={candidate} />
+            ))}
+          </section>
+        )}
         <footer>
           پوشش این فهرست محدود است؛ پیش از خرید، شرایط جاری، موجودی و هزینه
           نهایی را از ارائه‌دهنده بررسی کنید.
