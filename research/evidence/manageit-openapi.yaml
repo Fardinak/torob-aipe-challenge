@@ -1,0 +1,1537 @@
+openapi: 3.1.0
+
+info:
+  title: ManageIt API
+  version: "1.0.0"
+  description: >
+    The ManageIt API lets you manage your cloud resources: projects, servers
+    (with IPs and snapshots), SSH keys, and load balancers (with domains and
+    private networks).
+
+
+    All requests are authenticated with a personal access token sent as a bearer
+    token. Create an API token from your dashboard at
+    <https://console.manageit.dev/profile/tokens>.
+
+servers:
+  - url: https://api.manageit.dev/api
+    description: Production
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: Projects
+    description: Logical grouping of servers and load balancers.
+  - name: Server Catalog
+    description: Locations, OS images and plans available for provisioning.
+  - name: Servers
+    description: VPS lifecycle and management.
+  - name: Server Assistant
+    description: >
+      A chat assistant that manages one of your servers for you. Answers are
+      charged to your account balance based on the model you choose.
+
+
+      The assistant is enabled per account. Until it is enabled on yours, every
+      endpoint in this section answers `404`.
+  - name: Server Power
+    description: Power/state actions on a server.
+  - name: Server IPs
+    description: Additional IP address management on a server.
+  - name: Snapshots
+    description: Server snapshots.
+  - name: SSH Keys
+    description: SSH public keys usable at provisioning time.
+  - name: Load Balancer Catalog
+    description: Locations and plans available for load balancers.
+  - name: Load Balancers
+    description: Load balancer lifecycle and management.
+  - name: Load Balancer Domains
+    description: Domains attached to a load balancer.
+  - name: Load Balancer Private Networks
+    description: Private-network (tunnel) attachments to a load balancer.
+
+paths:
+
+  # --------------------------------------------------------------- Projects
+  /v1/projects:
+    get:
+      tags: [Projects]
+      summary: List projects
+      operationId: listProjects
+      responses:
+        "200":
+          description: The user's projects.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/Project" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    post:
+      tags: [Projects]
+      summary: Create a project
+      operationId: createProject
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: { type: string, minLength: 3, maxLength: 100 }
+      responses:
+        "201":
+          description: Created project.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Project" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/projects/{project}:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+    get:
+      tags: [Projects]
+      summary: Get a project
+      operationId: getProject
+      responses:
+        "200":
+          description: The project.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Project" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    put:
+      tags: [Projects]
+      summary: Update a project
+      operationId: updateProject
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: { type: string, maxLength: 100 }
+      responses:
+        "200":
+          description: Updated project.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Project" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+    delete:
+      tags: [Projects]
+      summary: Delete a project
+      operationId: deleteProject
+      responses:
+        "200": { description: Project deleted. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # -------------------------------------------------------- Server Catalog
+  /v1/servers/locations:
+    get:
+      tags: [Server Catalog]
+      summary: List server locations
+      operationId: listServerLocations
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/servers/os_images:
+    get:
+      tags: [Server Catalog]
+      summary: List available OS images
+      operationId: listServerOsImages
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/servers/all_plans:
+    get:
+      tags: [Server Catalog]
+      summary: List all server plans
+      operationId: listAllServerPlans
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/servers/plans/{location_id}:
+    get:
+      tags: [Server Catalog]
+      summary: List server plans for a location
+      operationId: listServerPlansForLocation
+      parameters:
+        - name: location_id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/servers/progress/{server}:
+    get:
+      tags: [Server Catalog]
+      summary: Get provisioning progress for a server
+      operationId: getServerProgress
+      parameters:
+        - $ref: "#/components/parameters/ServerHash"
+      responses:
+        "200":
+          description: Provisioning progress.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ---------------------------------------------------------------- Servers
+  /v1/projects/{project}/servers:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+    get:
+      tags: [Servers]
+      summary: List servers in a project
+      operationId: listServers
+      responses:
+        "200":
+          description: Servers in the project.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [Servers]
+      summary: Provision a server (v1)
+      operationId: createServer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/CreateServerV1" }
+      responses:
+        "201":
+          description: Created server.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1.1/projects/{project}/servers:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+    post:
+      tags: [Servers]
+      summary: Provision a server (v1.1, supports payment type)
+      description: Supports Laravel Precognition (send the `Precognition` header to validate only).
+      operationId: createServerV11
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: "#/components/schemas/CreateServerV1"
+                - type: object
+                  required: [payment_type]
+                  properties:
+                    payment_type:
+                      $ref: "#/components/schemas/ServerPaymentType"
+      responses:
+        "201":
+          description: Created server.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1.1/projects/{project}/servers/{server}/renew:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/ServerHash"
+    post:
+      tags: [Servers]
+      summary: Renew a server's service period
+      operationId: renewServer
+      responses:
+        "200":
+          description: Server renewed.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/projects/{project}/servers/{server}:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/ServerHash"
+    get:
+      tags: [Servers]
+      summary: Get a server
+      operationId: getServer
+      responses:
+        "200":
+          description: The server.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    put:
+      tags: [Servers]
+      summary: Update a server (rename)
+      operationId: updateServer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [hostname]
+              properties:
+                hostname: { $ref: "#/components/schemas/Hostname" }
+      responses:
+        "200":
+          description: Updated server.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Server" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+    delete:
+      tags: [Servers]
+      summary: Delete a server
+      operationId: deleteServer
+      responses:
+        "200": { description: Server deleted. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/projects/{project}/servers/{server}/usage/cpu:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/ServerHash"
+    get:
+      tags: [Servers]
+      summary: Get server CPU usage metrics
+      operationId: getServerCpuUsage
+      responses:
+        "200":
+          description: CPU usage time series.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ------------------------------------------------------- Server Assistant
+  /v1/ai/models:
+    get:
+      tags: [Server Assistant]
+      summary: List assistant models
+      operationId: listAiModels
+      description: >
+        The assistant models you may choose from, together with what each one
+        costs. Prices are in toman per 1,000 tokens and are charged to your
+        account balance as you use the assistant.
+
+
+        `default_model_id` is the model chosen for you unless you pick another
+        one; it is always one of the listed models, or `null` when no default
+        has been set.
+      responses:
+        "200":
+          description: The available assistant models.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/AiModel" }
+                  default_model_id:
+                    type: integer
+                    nullable: true
+                    description: >
+                      The model preselected for a new conversation, or `null`
+                      when there is no default.
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/projects/{project}/servers/{server}/ai:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/ServerHash"
+    get:
+      tags: [Server Assistant]
+      summary: Get a server's assistant conversation
+      operationId: getServerAssistant
+      description: >
+        The ongoing assistant conversation for this server: its messages, the
+        model last used, and what the conversation has consumed so far. Each
+        server keeps its own conversation, which stays available until you clear
+        it.
+      responses:
+        "200":
+          description: The conversation and its usage so far.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/AiConversation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/Forbidden" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [Server Assistant]
+      summary: Send a message to a server's assistant
+      operationId: promptServerAssistant
+      description: >
+        Ask the assistant something about this server. The answer is prepared in
+        the background: this call returns as soon as the message is accepted, and
+        the reply appears in the conversation (read it back with `GET` on this
+        same address) once it is ready.
+
+
+        Every answer consumes tokens, priced at the chosen model's rate and
+        charged to your account balance, so a message is refused unless your
+        balance is above the required minimum. The refusal message states that
+        minimum and your current balance. Usage that has been metered but not
+        yet charged also has a ceiling; once it is reached, the assistant stops
+        accepting messages until that amount is settled.
+
+
+        One message at a time: while the assistant is still working on your
+        previous one, a new message is refused. Wait for the reply, or stop the
+        running message first (`POST` on `.../ai/stop`).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [message, model_id]
+              properties:
+                message:
+                  type: string
+                  minLength: 1
+                  maxLength: 2000
+                  description: What you want to ask the assistant.
+                  example: چقدر از دیسک سرور پر شده است؟
+                model_id:
+                  type: integer
+                  description: >
+                    The id of one of the available assistant models (see
+                    `GET /v1/ai/models`).
+      responses:
+        "202":
+          description: The message was accepted and the reply is being prepared.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accepted: { type: boolean, example: true }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403":
+          description: >
+            The server is not yours, your account is not verified, your account
+            balance is below the required minimum, or your unaccounted assistant
+            usage has reached its ceiling.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "409":
+          description: >
+            The assistant is still working on your previous message for this
+            server.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+        "429":
+          description: >
+            Too many messages. Wait for the period given in the `Retry-After`
+            header and try again.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+    delete:
+      tags: [Server Assistant]
+      summary: Clear a server's assistant conversation
+      operationId: clearServerAssistant
+      description: >
+        Forget the conversation so your next message starts a fresh one. Usage
+        you have already been charged for is unaffected.
+      responses:
+        "204": { description: The conversation was cleared. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/Forbidden" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/projects/{project}/servers/{server}/ai/stop:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/ServerHash"
+    post:
+      tags: [Server Assistant]
+      summary: Stop the assistant reply in progress
+      operationId: stopServerAssistant
+      description: >
+        Ask the assistant to give up on the reply it is currently preparing. The
+        request returns immediately; the reply stops shortly afterwards, keeping
+        whatever it had already said. A stopped reply is not charged.
+
+
+        Stopping when nothing is running changes nothing.
+      responses:
+        "204": { description: The stop was recorded. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/Forbidden" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ---------------------------------------------------------- Server Power
+  /v1/server-action/{server}/start:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Power on a server
+      operationId: startServer
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/server-action/{server}/stop:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Power off a server
+      operationId: stopServer
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/server-action/{server}/restart:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Restart a server
+      operationId: restartServer
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/server-action/{server}/reset-password:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Reset the server's root password
+      operationId: resetServerPassword
+      responses:
+        "200":
+          description: The newly generated root password.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success: { type: boolean, example: true }
+                  password: { type: string, description: The new root password. }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/server-action/{server}/resize:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Resize a server to a different plan (upgrade/downgrade)
+      operationId: resizeServer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [plan]
+              properties:
+                plan: { type: integer, description: Target plan id. }
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "402": { description: Insufficient credit for the new plan. }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/server-action/{server}/rebuild:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Rebuild a server with a new OS
+      operationId: rebuildServer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [os]
+              properties:
+                os: { type: integer, description: Target OS image id. }
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/server-action/{server}/vnc:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Get a VNC console session for a server
+      operationId: vncServer
+      responses:
+        "200":
+          description: VNC session details.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/servers/{server}/resend-email:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server Power]
+      summary: Resend the server-information email
+      operationId: resendServerInformation
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/ip/update/{hash}:
+    post:
+      tags: [Server Power]
+      summary: Refresh/sync a server's IP information
+      operationId: updateServerIp
+      parameters:
+        - name: hash
+          in: path
+          required: true
+          schema: { type: string }
+          description: Server hash.
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ------------------------------------------------------------- Server IPs
+  /v1/servers/{server}/ips:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    post:
+      tags: [Server IPs]
+      summary: Add an additional IP to a server
+      operationId: addServerIp
+      responses:
+        "200":
+          description: IP added.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/Ip" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    put:
+      tags: [Server IPs]
+      summary: Update / set the primary IP of a server
+      operationId: updateServerPrimaryIp
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ip: { type: string, description: The IP to promote to primary. }
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/servers/{server}/ips/{ip}:
+    parameters:
+      - $ref: "#/components/parameters/ServerHash"
+      - name: ip
+        in: path
+        required: true
+        schema: { type: string }
+        description: The IP address to remove.
+    delete:
+      tags: [Server IPs]
+      summary: Remove an additional IP from a server
+      operationId: deleteServerIp
+      responses:
+        "200": { description: IP removed. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # -------------------------------------------------------------- Snapshots
+  /v1/servers/{server}/snapshots:
+    parameters: [ { $ref: "#/components/parameters/ServerHash" } ]
+    get:
+      tags: [Snapshots]
+      summary: List a server's snapshots
+      operationId: listSnapshots
+      responses:
+        "200":
+          description: Snapshots for the server.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/Snapshot" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [Snapshots]
+      summary: Create a snapshot
+      operationId: createSnapshot
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/snapshots/{snapshot}:
+    parameters: [ { $ref: "#/components/parameters/SnapshotHash" } ]
+    delete:
+      tags: [Snapshots]
+      summary: Delete a snapshot
+      operationId: deleteSnapshot
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/snapshots/{snapshot}/revert:
+    parameters: [ { $ref: "#/components/parameters/SnapshotHash" } ]
+    post:
+      tags: [Snapshots]
+      summary: Revert a server to a snapshot
+      operationId: revertSnapshot
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  # --------------------------------------------------------------- SSH Keys
+  /v1/ssh_keys:
+    get:
+      tags: [SSH Keys]
+      summary: List SSH keys
+      operationId: listSshKeys
+      responses:
+        "200":
+          description: The user's SSH keys.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/SshKey" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    post:
+      tags: [SSH Keys]
+      summary: Add an SSH key
+      operationId: createSshKey
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, body]
+              properties:
+                name: { type: string, minLength: 3, maxLength: 50, description: Unique name. }
+                body: { type: string, description: The public key material. }
+      responses:
+        "201":
+          description: SSH key created.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/SshKey" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/ssh_keys/{ssh_key}:
+    delete:
+      tags: [SSH Keys]
+      summary: Delete an SSH key
+      operationId: deleteSshKey
+      parameters:
+        - name: ssh_key
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        "200": { description: SSH key deleted. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ------------------------------------------------- Load Balancer Catalog
+  /v1/load_balancers/locations:
+    get:
+      tags: [Load Balancer Catalog]
+      summary: List load-balancer locations
+      operationId: listLoadBalancerLocations
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /v1/load_balancers/plans:
+    get:
+      tags: [Load Balancer Catalog]
+      summary: List load-balancer plans
+      operationId: listLoadBalancerPlans
+      responses:
+        "200": { $ref: "#/components/responses/CatalogList" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  # --------------------------------------------------------- Load Balancers
+  /v1/projects/{project}/load_balancers:
+    parameters: [ { $ref: "#/components/parameters/ProjectHash" } ]
+    get:
+      tags: [Load Balancers]
+      summary: List load balancers in a project
+      operationId: listLoadBalancers
+      responses:
+        "200":
+          description: Load balancers in the project.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/LoadBalancer" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [Load Balancers]
+      summary: Create a load balancer
+      operationId: createLoadBalancer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/CreateLoadBalancer" }
+      responses:
+        "201":
+          description: Created load balancer.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancer" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/projects/{project}/load_balancers/{loadBalancer}:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/LoadBalancerHash"
+    get:
+      tags: [Load Balancers]
+      summary: Get a load balancer
+      operationId: getLoadBalancer
+      responses:
+        "200":
+          description: The load balancer.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancer" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    put:
+      tags: [Load Balancers]
+      summary: Update a load balancer
+      operationId: updateLoadBalancer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/UpdateLoadBalancer" }
+      responses:
+        "200":
+          description: Updated load balancer.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancer" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+    delete:
+      tags: [Load Balancers]
+      summary: Delete a load balancer
+      operationId: deleteLoadBalancer
+      responses:
+        "200": { description: Load balancer deleted. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/projects/{project}/load_balancers/{loadBalancer}/progress:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/LoadBalancerHash"
+    get:
+      tags: [Load Balancers]
+      summary: Get provisioning progress for a load balancer
+      operationId: getLoadBalancerProgress
+      responses:
+        "200":
+          description: Provisioning progress.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/projects/{project}/load_balancers/{loadBalancer}/reinstall:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/LoadBalancerHash"
+    post:
+      tags: [Load Balancers]
+      summary: Reinstall a load balancer
+      operationId: reinstallLoadBalancer
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "400": { $ref: "#/components/responses/ActionFailure" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # -------------------------------------------------- Load Balancer Domains
+  /v1/projects/{project}/load_balancers/{loadBalancer}/domain:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/LoadBalancerHash"
+    post:
+      tags: [Load Balancer Domains]
+      summary: Attach a domain to a load balancer
+      operationId: addLoadBalancerDomain
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [domain]
+              properties:
+                domain: { type: string, description: Unique per load balancer. }
+      responses:
+        "201":
+          description: Domain attached.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancerDomain" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/projects/{project}/load_balancers/{loadBalancer}/domain/{domain}:
+    parameters:
+      - $ref: "#/components/parameters/ProjectHash"
+      - $ref: "#/components/parameters/LoadBalancerHash"
+      - name: domain
+        in: path
+        required: true
+        schema: { type: integer }
+        description: Load-balancer domain id.
+    post:
+      tags: [Load Balancer Domains]
+      summary: Retry certificate issuance for a domain
+      operationId: retryLoadBalancerDomain
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  # ----------------------------------------- Load Balancer Private Networks
+  /v1/load_balancers/{loadBalancer}/private_networks:
+    parameters: [ { $ref: "#/components/parameters/LoadBalancerHash" } ]
+    get:
+      tags: [Load Balancer Private Networks]
+      summary: List private networks of a load balancer
+      operationId: listLoadBalancerPrivateNetworks
+      responses:
+        "200":
+          description: Private networks attached to the load balancer.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: "#/components/schemas/LoadBalancerPrivateNetwork" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [Load Balancer Private Networks]
+      summary: Attach a private network (tunnel) to a load balancer
+      operationId: createLoadBalancerPrivateNetwork
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [username, ip, port, password]
+              properties:
+                username: { type: string, maxLength: 255, description: SSH user on the remote host. }
+                ip: { type: string, format: ipv4, description: Remote host IP. }
+                port: { type: integer, minimum: 1, maximum: 65535 }
+                password: { type: string, format: password }
+                protocol:
+                  type: string
+                  nullable: true
+                  enum: [udp, icmp, gre, gre6]
+      responses:
+        "201":
+          description: Private network created.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancerPrivateNetwork" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+
+  /v1/load_balancers/{loadBalancer}/private_networks/{privateNetwork}:
+    parameters:
+      - $ref: "#/components/parameters/LoadBalancerHash"
+      - $ref: "#/components/parameters/PrivateNetworkHash"
+    put:
+      tags: [Load Balancer Private Networks]
+      summary: Update a private network
+      operationId: updateLoadBalancerPrivateNetwork
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username: { type: string }
+                ip: { type: string, format: ipv4 }
+                port: { type: integer, minimum: 1, maximum: 65535 }
+                password: { type: string, format: password }
+      responses:
+        "200":
+          description: Private network updated.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: "#/components/schemas/LoadBalancerPrivateNetwork" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+        "422": { $ref: "#/components/responses/ValidationError" }
+    delete:
+      tags: [Load Balancer Private Networks]
+      summary: Detach a private network
+      operationId: deleteLoadBalancerPrivateNetwork
+      responses:
+        "200": { description: Private network detached. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /v1/load_balancers/{loadBalancer}/private_networks/{privateNetwork}/rebuild:
+    parameters:
+      - $ref: "#/components/parameters/LoadBalancerHash"
+      - $ref: "#/components/parameters/PrivateNetworkHash"
+    post:
+      tags: [Load Balancer Private Networks]
+      summary: Rebuild a private network tunnel
+      operationId: rebuildLoadBalancerPrivateNetwork
+      responses:
+        "200": { $ref: "#/components/responses/ActionSuccess" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+# ============================================================== Components
+components:
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: >
+        A personal access token, sent as `Authorization: Bearer <token>`.
+        Create one from your dashboard at
+        https://console.manageit.dev/profile/tokens.
+
+  parameters:
+    ProjectHash:
+      name: project
+      in: path
+      required: true
+      schema: { type: string }
+      description: Project hash.
+    ServerHash:
+      name: server
+      in: path
+      required: true
+      schema: { type: string }
+      description: Server hash.
+    LoadBalancerHash:
+      name: loadBalancer
+      in: path
+      required: true
+      schema: { type: string }
+      description: Load-balancer hash.
+    PrivateNetworkHash:
+      name: privateNetwork
+      in: path
+      required: true
+      schema: { type: string }
+      description: Private-network hash.
+    SnapshotHash:
+      name: snapshot
+      in: path
+      required: true
+      schema: { type: string }
+      description: Snapshot hash.
+  responses:
+    Unauthorized:
+      description: Missing or invalid bearer token.
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    NotFound:
+      description: Resource not found or not owned by the authenticated user.
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    Forbidden:
+      description: >
+        Your account is not verified, or the resource does not belong to you.
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    ValidationError:
+      description: The request failed validation.
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/ValidationError" }
+    ActionSuccess:
+      description: The action was accepted.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success: { type: boolean, example: true }
+    ActionFailure:
+      description: The upstream action failed.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success: { type: boolean, example: false }
+    CatalogList:
+      description: A list of available catalog items.
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              additionalProperties: true
+
+  schemas:
+
+    Hostname:
+      type: string
+      minLength: 6
+      maxLength: 100
+      pattern: '^[a-zA-Z0-9-.]+$'
+      description: Alphanumeric plus dot and hyphen.
+
+    ServerPaymentType:
+      type: string
+      enum: [hourly, monthly]
+
+    Error:
+      type: object
+      properties:
+        message: { type: string }
+
+    ValidationError:
+      type: object
+      properties:
+        message: { type: string }
+        errors:
+          type: object
+          additionalProperties:
+            type: array
+            items: { type: string }
+      example:
+        message: "The name field is required."
+        errors:
+          name: ["The name field is required."]
+
+    Project:
+      type: object
+      properties:
+        id: { type: string, description: Project hash (same as `hash`). }
+        hash: { type: string }
+        name: { type: string }
+        created_at: { type: string, format: date-time }
+        servers_count: { type: integer }
+        loadbalancers_count: { type: integer }
+
+    Ip:
+      type: object
+      properties:
+        id: { type: integer }
+        ip: { type: string }
+        range: { type: string, nullable: true }
+        type: { type: string, example: ipv4 }
+        is_primary: { type: boolean }
+        gateway: { type: string, nullable: true }
+        created_at: { type: string, format: date-time, nullable: true }
+
+    CreateServerV1:
+      type: object
+      required: [location, plan, os, hostname]
+      properties:
+        location: { type: integer, description: Location id. }
+        plan: { type: integer, description: Plan id. }
+        os: { type: integer, description: OS image id. }
+        hostname: { $ref: "#/components/schemas/Hostname" }
+        ssh_keys:
+          type: array
+          nullable: true
+          items: { type: integer }
+          description: SSH key ids to inject at build time.
+
+    Server:
+      type: object
+      properties:
+        id: { type: string, description: Server hash (same as `hash`). }
+        hash: { type: string }
+        uuid: { type: string, nullable: true }
+        name: { type: string }
+        username: { type: string }
+        password: { type: string, nullable: true }
+        plan_name: { type: string }
+        price: { type: integer }
+        total_price_usage: { type: integer }
+        real_status: { type: string, nullable: true, description: Live power state from the panel. }
+        status: { type: string }
+        specifications: { type: object, additionalProperties: true, nullable: true }
+        location: { type: object, additionalProperties: true, nullable: true }
+        settings: { type: object, additionalProperties: true, nullable: true }
+        payment_type: { $ref: "#/components/schemas/ServerPaymentType" }
+        bandwidth: { nullable: true, description: Present only when non-zero. }
+        suspend_at: { type: string, format: date-time, nullable: true }
+        created_at: { type: string, format: date-time }
+        traffic: { nullable: true }
+        canceled: { type: boolean }
+        network_incoming: { type: integer, nullable: true }
+        network_outgoing: { type: integer, nullable: true }
+        ips:
+          type: array
+          items: { $ref: "#/components/schemas/Ip" }
+
+    Snapshot:
+      type: object
+      properties:
+        id: { type: string, description: Snapshot hash (same as `hash`). }
+        hash: { type: string }
+        name: { type: string }
+        size: { type: integer, nullable: true }
+        status: { type: string }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+
+    AiModel:
+      type: object
+      description: >
+        One assistant model you may pick, with its price. `input_price` and
+        `output_price` are in toman per 1,000 tokens: input tokens are what you
+        and your server's context send to the model, output tokens are what it
+        writes back.
+      properties:
+        id: { type: integer }
+        provider: { type: string, example: anthropic }
+        model: { type: string, example: claude-sonnet-5 }
+        label:
+          type: string
+          nullable: true
+          description: A friendly name for the model, when one is set.
+        input_price: { type: integer, description: Toman per 1,000 input tokens. }
+        output_price: { type: integer, description: Toman per 1,000 output tokens. }
+
+    AiMessage:
+      type: object
+      properties:
+        role:
+          type: string
+          enum: [user, assistant]
+          description: Who wrote the message — you, or the assistant.
+        content: { type: string }
+        created_at: { type: string, format: date-time, nullable: true }
+
+    AiRunUsage:
+      type: object
+      description: The tokens one answer consumed and what it cost, in toman.
+      properties:
+        input_tokens: { type: integer }
+        output_tokens: { type: integer }
+        cost: { type: integer, description: Cost of this answer, in toman. }
+
+    AiConversation:
+      type: object
+      properties:
+        conversation_id:
+          type: string
+          nullable: true
+          description: >
+            Identifier of the ongoing conversation, or `null` when none has
+            started yet.
+        model_id:
+          type: integer
+          nullable: true
+          description: >
+            The assistant model last used in this conversation, falling back to
+            the default model while the conversation has not used one yet.
+            `null` when there is no default either.
+        messages:
+          type: array
+          description: The conversation so far, oldest message first.
+          items: { $ref: "#/components/schemas/AiMessage" }
+        usage:
+          type: object
+          description: What this conversation has consumed so far.
+          properties:
+            last:
+              oneOf:
+                - $ref: "#/components/schemas/AiRunUsage"
+                - type: "null"
+              description: The most recent answer, or `null` when there is none.
+            total_tokens:
+              type: integer
+              description: Input plus output tokens across the whole conversation.
+            total_cost:
+              type: integer
+              description: Total cost of the conversation so far, in toman.
+
+    SshKey:
+      type: object
+      properties:
+        id: { type: integer }
+        user_id: { type: integer }
+        ssh_key_id: { type: integer }
+        name: { type: string }
+        body: { type: string }
+        created_at: { type: string, format: date-time, nullable: true }
+        updated_at: { type: string, format: date-time, nullable: true }
+
+    LoadBalancerTarget:
+      type: object
+      properties:
+        ip: { type: string, description: "IPv4, IPv6 or hostname." }
+        backup: { type: boolean }
+
+    LoadBalancerService:
+      type: object
+      properties:
+        source_port: { type: integer, minimum: 0, maximum: 65535 }
+        destination_port: { type: integer, minimum: 0, maximum: 65535 }
+        health_check: { type: boolean }
+        proxy: { type: boolean }
+        use_ssl: { type: boolean }
+        protocol: { type: string, enum: [tcp, udp] }
+
+    CreateLoadBalancer:
+      type: object
+      required: [name, plan, location, algorithm, type]
+      properties:
+        name: { $ref: "#/components/schemas/Hostname" }
+        plan: { type: integer, enum: [31, 18, 19] }
+        location: { type: integer }
+        algorithm: { type: string, enum: [roundrobin, leastconn] }
+        type: { type: string, enum: [TCP, UDP], description: Load-balancer type. }
+        credit: { type: number, description: Initial credit to allocate (must exceed the configured minimum). }
+        targets:
+          type: array
+          nullable: true
+          items: { $ref: "#/components/schemas/LoadBalancerTarget" }
+        services:
+          type: array
+          nullable: true
+          items: { $ref: "#/components/schemas/LoadBalancerService" }
+
+    UpdateLoadBalancer:
+      type: object
+      required: [name, algorithm]
+      properties:
+        name:
+          type: string
+          minLength: 6
+          maxLength: 50
+          pattern: '^[a-zA-Z0-9-.]+$'
+        algorithm: { type: string, enum: [roundrobin, leastconn] }
+        targets:
+          type: array
+          nullable: true
+          items: { $ref: "#/components/schemas/LoadBalancerTarget" }
+        services:
+          type: array
+          nullable: true
+          items: { $ref: "#/components/schemas/LoadBalancerService" }
+
+    LoadBalancer:
+      type: object
+      properties:
+        id: { type: string, description: Load-balancer hash (same as `hash`). }
+        hash: { type: string }
+        name: { type: string }
+        uuid: { type: string, nullable: true }
+        algorithm: { type: string, enum: [roundrobin, leastconn] }
+        plan: { type: integer }
+        plan_name: { type: string }
+        price: { type: integer }
+        network_incoming: { type: integer, nullable: true }
+        network_outgoing: { type: integer, nullable: true }
+        real_status: { type: string, nullable: true }
+        status:
+          type: string
+          enum: [active, updating, failed, deleted, suspend]
+        type: { type: string, enum: [TCP, UDP] }
+        location: { type: object, additionalProperties: true, nullable: true }
+        created_at: { type: string, format: date-time }
+        services:
+          type: array
+          items: { $ref: "#/components/schemas/LoadBalancerService" }
+        targets:
+          type: array
+          items: { $ref: "#/components/schemas/LoadBalancerTarget" }
+        traffic: { nullable: true }
+        total_price_usage: { type: integer }
+        payment_type: { type: string }
+        bandwidth: { nullable: true }
+        suspend_at: { type: string, format: date-time, nullable: true }
+        ips:
+          type: array
+          items: { $ref: "#/components/schemas/Ip" }
+        domains:
+          type: array
+          items: { $ref: "#/components/schemas/LoadBalancerDomain" }
+
+    LoadBalancerDomain:
+      type: object
+      properties:
+        id: { type: integer }
+        domain: { type: string }
+        status: { type: string }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+
+    LoadBalancerPrivateNetwork:
+      type: object
+      properties:
+        id: { type: string, description: Private-network hash (same as `hash`). }
+        hash: { type: string }
+        ip: { type: string }
+        username: { type: string }
+        port: { type: integer }
+        type:
+          type: string
+          enum: [GRE, GRE6, AMNEZIAWG, AMNEZIAICMP]
+        local_ipv4: { type: string, nullable: true }
+        local_ipv6: { type: string, nullable: true }
+        remote_ipv4: { type: string, nullable: true }
+        remote_ipv6: { type: string, nullable: true }
+        logs: { type: string, nullable: true }
+        status: { type: string }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }

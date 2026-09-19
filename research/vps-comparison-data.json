@@ -1,0 +1,205 @@
+{
+  "status": "reviewed_public_page_snapshot_not_checkout_quotes",
+  "scope": "11 captured rows; not exhaustive provider or market coverage",
+  "units": "Resource GB preserved as advertised; no GB/GiB equivalence inferred. Scenarios define 1 TB as 1000 GB.",
+  "sources": {
+    "manageit": {
+      "url": "https://www.manageitcloud.com/cloud-server",
+      "snapshot": "research/evidence/manageitcloud.html",
+      "snapshot_saved_at": "2026-09-19T02:05:46.837755+00:00",
+      "sha256": "3353c7d681c7c2ab3901ec46a80f65c3e70288ed920a31d1a12dfc1442c09c89"
+    },
+    "iranserver": {
+      "url": "https://www.iranserver.com/vps/iran/",
+      "snapshot": "research/evidence/iranserver.html",
+      "snapshot_saved_at": "2026-09-19T03:40:38.166382+00:00",
+      "sha256": "709e76f44da52ceb8f54f953b0f749c42d626c27d5a8f4e7ea96ca27bf41f724"
+    },
+    "manageit_ip": {
+      "url": "https://www.manageitcloud.com/floating-ip",
+      "snapshot": "research/evidence/manageit-ip.html",
+      "snapshot_saved_at": "2026-09-19T02:06:18.058398+00:00",
+      "sha256": "e00a5a855782388b09b86142be740f3d8e2543f550a779c4c717a951b7a8c83a"
+    }
+  },
+  "providers": {
+    "manageit": {
+      "currency": "toman",
+      "billing": "Published monthly reference; charged hourly PAYG. Divisor, cap and rounding unknown.",
+      "cpu_allocation": null,
+      "traffic_original_labels": {
+        "upload": "free",
+        "download_toman_per_gb": 1200,
+        "applicable_datacenters": [
+          "Parvaz",
+          "Omid",
+          "Parsian"
+        ]
+      },
+      "verified_server_egress_allowance_gb": null,
+      "base_ipv4_included": null,
+      "ipv6_included": true,
+      "optional_independent_floating_ipv4_monthly_toman": 195000,
+      "tax_basis": null,
+      "mandatory_fee_completeness": false,
+      "plan_location_mapping": "Iran-focused page; per-plan datacenter availability not verified"
+    },
+    "iranserver": {
+      "currency": "toman",
+      "billing": "Published monthly price",
+      "cpu_allocation": "shared",
+      "traffic_original_label": "1000 GB traffic per plan; direction and overage unverified",
+      "verified_server_egress_allowance_gb": null,
+      "base_ipv4_included": null,
+      "ipv6_included": null,
+      "tax_basis": null,
+      "mandatory_fee_completeness": false,
+      "plan_location_mapping": "Iran VPS page"
+    }
+  },
+  "plans": [
+    {
+      "id": "manageit-1c-1g-25g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 1,
+      "ram_gb": 1,
+      "disk_gb": 25,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 710000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "manageit-1c-2g-50g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 1,
+      "ram_gb": 2,
+      "disk_gb": 50,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 975000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "manageit-2c-2g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 2,
+      "ram_gb": 2,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1325000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "manageit-2c-4g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 2,
+      "ram_gb": 4,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1420000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "manageit-4c-4g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 4,
+      "ram_gb": 4,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 2030000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "manageit-6c-12g-150g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 6,
+      "ram_gb": 12,
+      "disk_gb": 150,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 3950000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit",
+      "availability": "not_verified"
+    },
+    {
+      "id": "NGP-small40",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-small40",
+      "cpu_count": 1,
+      "ram_gb": 4,
+      "disk_gb": 40,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 1823999,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified"
+    },
+    {
+      "id": "NGP-medium40",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-medium40",
+      "cpu_count": 2,
+      "ram_gb": 8,
+      "disk_gb": 40,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 2803199,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified"
+    },
+    {
+      "id": "NGP-large80",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-large80",
+      "cpu_count": 4,
+      "ram_gb": 16,
+      "disk_gb": 80,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 4823039,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified"
+    },
+    {
+      "id": "NGP-xlarge120",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-xlarge120",
+      "cpu_count": 8,
+      "ram_gb": 32,
+      "disk_gb": 120,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 8801279,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified"
+    },
+    {
+      "id": "NGP-2xlarge160",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-2xlarge160",
+      "cpu_count": 16,
+      "ram_gb": 64,
+      "disk_gb": 160,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 16696319,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+مستندات API منیجیت | مدیریت سرور ابری و لود بالانسر
+دو API منیجیت
+شروع سریع
+ساخت توکن
+مستندات API منیجیت
+منیجیت دو API عمومی دارد: یکی برای پلتفرم سرور ابری خودِ منیجیت، و یکی برای تحویل سرور روی
+Hetzner
+،
+DigitalOcean
+و
+Linode
+.
+            هر دو با یک توکن دسترسی شخصی کار می‌کنند.
+مرجع تعاملی ManageIt API
+مرجع تعاملی Hetzner API
+api.manageit.dev
+$
+curl -H "Authorization: Bearer mi_…" \
+https://api.manageit.dev/api/v1/projects
+✓ 200 OK · application/json
+{ "data": [
+{ "name": "production", "servers_count": 12 },
+{ "name": "staging", "servers_count": 3 }
+] }
+کدام API را لازم دارید؟
+تفاوت در جایی است که سرور تحویل داده می‌شود، نه در نحوه احراز هویت.
+ManageIt API
+پلتفرم سرور ابری منیجیت
+https://api.manageit.dev/api
+پروژه‌ها، سرورها همراه با IPها و اسنپ‌شات‌ها، کلیدهای SSH، و لود بالانسرها همراه با
+                دامنه‌ها و شبکه‌های خصوصی. ۴۲ اندپوینت در ۱۲ گروه.
+Projects
+Server Catalog
+Servers
+Server Assistant
+Server Power
+Server IPs
+Snapshots
+SSH Keys
+Load Balancer Catalog
+Load Balancers
+Load Balancer Domains
+Load Balancer Private Networks
+مرجع تعاملی ManageIt API ←
+ManageIt Hetzner API
+سرور روی
+Hetzner
+،
+DigitalOcean
+و
+Linode
+https://hetzner.manageit.dev/api
+کاتالوگ (ریجن، ایمیج و پلن)، چرخه عمر سرور (ساخت، تغییر اندازه، نصب مجدد، روشن و خاموش، بکاپ)،
+                IPهای شناور و تراکنش‌های صورتحساب. ۱۶ اندپوینت در ۶ گروه، با سقف ۶۰ درخواست در دقیقه به ازای هر توکن.
+Server Catalog
+Servers
+Server Actions
+Backups
+Floating IPs
+Transactions
+مرجع تعاملی Hetzner API ←
+ManageIt CDN API
+به‌زودی
+شبکه توزیع محتوا
+تحویل فایل‌ها و محتوای ایستا از نزدیک‌ترین نقطه به کاربر. این سرویس فعلا آزمایشی است و
+                برای هر حساب جداگانه فعال می‌شود؛ مرجع API آن هنوز منتشر نشده است.
+مرجع تعاملی هنوز منتشر نشده است
+شروع سریع
+توکن دسترسی شخصی را در
+https://console.manageit.dev/profile/tokens
+بسازید و در هدر
+Authorization
+بفرستید. همین توکن روی هر دو آدرس پایه کار می‌کند.
+curl
+کپی
+$
+curl https://api.manageit.dev/api/v1/projects \
+-H "Authorization: Bearer $MANAGEIT_TOKEN" \
+-H "Accept: application/json"
+✓ 200 OK · application/json
+مدیریت کامل زیرساخت ابری منیجیت با استفاده از API
+مرجع API
+مرجع تعاملی ManageIt API
+مرجع تعاملی Hetzner API
+ساخت توکن دسترسی
+کلیه حقوق برای منیجیت محفوظ است.
