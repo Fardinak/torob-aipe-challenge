@@ -1,6 +1,6 @@
 # Build a traffic-aware VPS comparison application
 
-Publication status: local draft; project issue tracker is not configured. Intended triage label: `ready-for-agent`. Proposed test boundary awaits the skill-required user check. No issue has been published.
+Publication status: local draft; project issue tracker is not configured. Intended triage label: `ready-for-agent`. User approved the test boundary: comparison operation plus one browser journey. No issue has been published.
 
 ## Problem Statement
 
@@ -77,7 +77,7 @@ Exclude plans exceeding a confirmed hard cap with no additional traffic. Separat
 
 ## Testing Decisions
 
-- **Proposed seam, pending user check:** use the complete comparison operation as the main automated test boundary: catalog plus request in; ranked, unpriced and excluded results out. Add one browser journey for controls and rendering. This captures the existing pricing behavior at a higher boundary than the prototype's per-plan function and avoids duplicating tests across implementation helpers.
+- **User-approved seam:** use the complete comparison operation as the main automated test boundary: catalog plus request in; ranked, unpriced and excluded results out. Add one browser journey for controls and rendering. This captures the existing pricing behavior at a higher boundary than the prototype's per-plan function and avoids duplicating tests across implementation helpers.
 - **Good tests:** assert externally meaningful eligibility, prices, ordering, reasons and visible behavior. Do not assert private helper calls, component structure, CSS class names or snapshots of the entire page. Tests should detect a broken purchase comparison even if the implementation is reorganized.
 - **Modules under test:** the comparison operation, including its catalog/request validation behavior, and the application screen through the browser journey. Use small synthetic policy fixtures only for policy cases absent from the real sample; never add them to the live catalog.
 - **Prior art:** no automated suite or established test framework exists in this repository. The research arithmetic script, prototype calculation boundary and browser-verified 1,000/1,200 GB cases provide prior behavior to preserve. Choose a lightweight runner compatible with the existing TypeScript toolchain during implementation.
@@ -125,4 +125,4 @@ The dollar-priced purchase story motivates the problem but is not a comparable p
 
 For the Torob challenge, demonstrate the user's problem, the immediate comparison, a traffic-induced ranking change, source inspection and the engineering/AI-assisted development process in a video below five minutes. Runtime AI is not required by the recorded challenge brief. Build and deployment precede preparation of the application package; actual submission is a separate action.
 
-Publishing dependency: run `/setup-matt-pocock-skills` to supply the project issue tracker and triage configuration. Once configured and the testing seam is checked with the user, publish this spec with `ready-for-agent` and record the resulting issue link. Do not substitute an unrelated tracker or silently install a connector.
+Publishing dependency: run `/setup-matt-pocock-skills` to supply the project issue tracker and triage configuration. The user has approved the testing seam. Once the tracker is configured, publish this spec with `ready-for-agent` and record the resulting issue link. Do not substitute an unrelated tracker or silently install a connector.
