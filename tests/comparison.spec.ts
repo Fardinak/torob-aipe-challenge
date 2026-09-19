@@ -2,7 +2,17 @@ import { test, expect } from "@playwright/test";
 test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure → reset, with editable and invalid requests", async ({
   page,
 }) => {
-  await page.goto("/");
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  page.on("requestfailed", (request) => errors.push(request.url()));
+  page.on("response", (response) => {
+    if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`);
+  });
+  const response = await page.goto("./");
+  expect(response?.status()).toBe(200);
+  await expect(page.locator("html")).toHaveAttribute("lang", "fa");
+  await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+  await page.evaluate(() => document.fonts.ready);
   const offers = page.getByRole("article");
   await expect(offers).toHaveCount(11);
   await expect(offers.first()).toContainText("۷۱۰٬۰۰۰");
@@ -16,7 +26,13 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
     name: "حداقل ۴ GB رم",
     exact: true,
   });
-  await preset.focus();
+  // Reach a key control through the browser's real tab order.
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("button", { name: "پاک کردن فیلترها" })).toBeFocused();
+  await page.keyboard.press("Tab");
+  await page.keyboard.press("Tab");
+  await expect(preset).toBeFocused();
+  expect(await preset.evaluate((element) => getComputedStyle(element).outlineStyle)).not.toBe("none");
   await page.keyboard.press("Enter");
   await expect(offers).toHaveCount(8);
   await expect(offers.first()).toContainText("۱٬۴۲۰٬۰۰۰");
@@ -72,6 +88,14 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
     "https://www.manageitcloud.com/cloud-server",
   );
   await expect(source).toHaveAttribute("target", "_blank");
+  await expect(manageit.getByRole("link", { name: "منبع تعرفه IP شناور" })).toHaveAttribute(
+    "href", "https://www.manageitcloud.com/floating-ip",
+  );
+  const iranserver = unpriced.getByRole("article").first();
+  await iranserver.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(iranserver.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" })).toHaveAttribute(
+    "href", "https://www.iranserver.com/vps/",
+  );
   await expect(manageit).toContainText("۱۹۵٬۰۰۰");
   await expect(manageit).toContainText("upload: free; download: 1200 toman/GB");
   await expect(page.getByRole("checkbox")).toHaveCount(0);
@@ -130,9 +154,13 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
   await expect(page.getByText("پیشنهادی با این منابع نداریم.")).toHaveCount(0);
   await page.reload();
   await expect(offers).toHaveCount(11);
+  await expect(ram).toHaveValue("");
+  await expect(egress).toHaveValue("");
+  await expect(page.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" })).toHaveCount(0);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBe(true);
+  expect(errors).toEqual([]);
 });
