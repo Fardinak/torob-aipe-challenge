@@ -42,27 +42,27 @@ Start the gate with ManageIT Cloud and IranServer; inspect the other three if a 
 
 The completed [gate](vps-comparison-gate.md) captured six ManageIT and five IranServer plans and assessed all five providers. Traffic direction and fee completeness remain unresolved. Parspack is a promising fallback, but embedded disabled tariffs need verification before ranking.
 
-The first source pass should record CPU allocation/architecture, RAM, storage, location, billing period and caps, traffic allowances/direction/overage, IP costs, setup fees, tax basis, promotional conditions, and availability. Missing fields remain unknown. Use timestamped primary pages rather than search excerpts and keep all initial calculations in one currency.
+The first source pass should record CPU allocation/architecture, RAM, storage, location, billing period and caps, traffic allowances/direction/overage, IP costs, setup fees, tax basis, promotional conditions, and availability. Missing fields remain unknown. Use primary pages rather than search excerpts and keep all initial calculations in one currency.
 
 ### Browser-informed UX refinement
 
-The [T3Code walkthrough](torob-browser-walkthrough.md) verified a category journey, storage filtering, product details, seller-guarantee filtering, and a separate search journey. Use a shared results interface for browsing and search, visible selected filters, compact offer summaries, and deeper billing/source details. Keep factual eligibility filters distinct from usage inputs that recalculate cost. Price summaries must explain the selected scenario. The later [provider data gate](vps-comparison-gate.md) is now complete with a narrowed scope. Our source timestamps are a proposed evidence feature, not an observed Torob timestamp.
+The [T3Code walkthrough](torob-browser-walkthrough.md) verified a category journey, storage filtering, product details, seller-guarantee filtering, and a separate search journey. Use a shared results interface for browsing and search, visible selected filters, compact offer summaries, and deeper billing/source details. Keep factual eligibility filters distinct from usage inputs that recalculate cost. Price summaries must explain the selected scenario. The later [provider data gate](vps-comparison-gate.md) is now complete with a narrowed scope.
 
 ### First gate: prove the comparison before building the interface
 
 Completed with a partial pass; see [results and calculations](vps-comparison-gate.md). The original criteria were:
 
 1. If reachable, ask one or two developers to describe their most recent server-selection task and the facts they had difficulty comparing. Otherwise explicitly retain the problem as an unvalidated hypothesis and use a concrete recent decision as the initial scenario. No outreach has been performed.
-2. Collect roughly 10–12 real plans/configurations across two providers. A third is optional only after the core works. Store source URL, retrieval time, original units, billing conditions, and missing fields.
+2. Collect roughly 10–12 real plans/configurations across two providers. A third is optional only after the core works. Store source URL, original units, billing conditions, and missing fields.
 3. Hand-calculate three realistic scenarios. Confirm at least one meaningful difference between headline price and scenario cost, or another consequential tradeoff worth showing.
 4. Continue with this market only if the comparable fees can be established and users recognize the problem. Otherwise revise scope or choose an alternative before investing in UI work.
 
-Small, manually reviewed snapshots are acceptable for an honest prototype. Mark the dataset's date and coverage; describe it as a snapshot rather than live availability. Challenge acceptance of sample data is unspecified, so prefer actual sourced offers.
+Small, manually reviewed snapshots are acceptable for an honest prototype. Mark the dataset's coverage; describe it as a snapshot rather than live availability. Challenge acceptance of sample data is unspecified, so prefer actual sourced offers.
 
 ## The experience to build
 
 1. **Search and editable intent.** A structured form produces visible fields for location, RAM, CPU, disk, monthly traffic, IPv4, and budget. A Persian-query enhancement can populate these fields if time remains; the user can correct every interpretation.
-2. **Immediate offer list.** Requirements sit above provider rows, following Torob's immediate vendor preview. Default to advertised monthly price within the covered sample. Show resources, traffic wording, evidence date and unknown fees. Unknown egress eligibility cannot pass a strict egress filter; show unverified candidates separately. Enable estimated-total sorting only when billing rules are complete.
+2. **Immediate offer list.** Requirements sit above provider rows, following Torob's immediate vendor preview. Default to advertised monthly price within the covered sample. Show resources, traffic wording and unknown fees. Unknown egress eligibility cannot pass a strict egress filter; show unverified candidates separately. Enable estimated-total sorting only when billing rules are complete.
 3. **Inspect an offer inline.** Expand billing facts and source evidence from the row. A separate side-by-side comparison is stretch work. Shared/dedicated CPU and architecture remain visible; equal core counts do not imply equal performance.
 4. **Explain a choice with evidence.** “Lowest estimated cost among these eligible plans under your assumptions” is supportable. Link each consequential fee or constraint to its source. Let users expand a cost breakdown and change traffic to observe the result.
 5. **Continue to provider.** Open the relevant plan page. Preserve the current comparison in page state. Persistent shortlists, shareable URLs, and feedback collection are stretch work.
@@ -105,13 +105,13 @@ Store provider, plan/configuration, source snapshot, and versioned tariff facts 
 
 Proposed acceptance targets, not Torob's published scoring rubric:
 
-- All displayed consequential facts have a source and retrieval time; no invented reviews, guarantees, or uptime measurements.
+- All displayed consequential facts have a source; no invented reviews, guarantees, or uptime measurements.
 - Ten hand-verified billing scenarios match computed output under documented rounding, including traffic allowances, missing costs, and billing caps where applicable.
 - Hard constraints are never silently relaxed; no-result suggestions require the user to change them.
 - If AI parsing is included, a small Persian-query evaluation set checks digits/units, negation, ambiguous budgets, and missing fields. Model failures leave the form usable.
 - One or two available target users attempt to find an eligible option and explain the main cost tradeoff within two minutes without coaching. Record what worked and failed; this is qualitative feedback, not validation at scale. If nobody is available, say that usability remains untested.
 - One end-to-end check covers query → correction → comparison → source inspection → provider link. Verify desktop and mobile layouts.
-- Refresh failures retain a clearly dated last-known snapshot; no fresh timestamp is applied to stale data.
+- Refresh failures retain the previous snapshot and clearly indicate that refresh failed.
 
 ## Five-minute application story
 
@@ -120,7 +120,7 @@ Proposed acceptance targets, not Torob's published scoring rubric:
 | 0:00–0:35 | A real decision problem and what the user currently has to compare manually. |
 | 0:35–1:25 | Enter requirements, view eligible plans; demonstrate Persian query parsing only if implemented. |
 | 1:25–2:30 | Compare offers, reveal a consequential extra charge, change traffic, and show the resulting ordering. |
-| 2:30–3:20 | Inspect evidence and freshness, explain an unknown field, continue to the provider. |
+| 2:30–3:20 | Inspect source evidence, explain an unknown field, continue to the provider. |
 | 3:20–4:15 | Explain the engineering choices and where AI helped, including a useful failure/fallback case. |
 | 4:15–4:50 | Show a tested correction or observed limitation, acknowledge dataset scope, and identify the next improvement. |
 

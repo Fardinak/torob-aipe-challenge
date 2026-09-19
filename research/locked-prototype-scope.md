@@ -2,7 +2,7 @@
 
 2026-09-19 — approved by the user before invoking the prototype skill.
 
-- Persian RTL interface; 11 captured plans across ManageIT and IranServer, explicitly a limited dated snapshot.
+- Persian RTL interface; 11 captured plans across ManageIT and IranServer, explicitly a limited snapshot.
 - Default: all offers sorted by advertised monthly toman, no minimum resources.
 - Editable RAM, CPU and disk minimums. No inferred CPU constraint from a RAM request.
 - Traffic evidence is incomplete. A strict egress requirement yields zero confirmed matches; resource-matching candidates remain inspectable as unverified.

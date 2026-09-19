@@ -31,7 +31,7 @@ Prices below are advertised monthly toman, not complete bills. ManageIT labels m
 
 IranServer explicitly describes this family as shared CPU. Equal core counts across providers do not establish equal performance. Its five captured rows each list 1,000 GB traffic; the table does not establish that this is server egress. Other table families failed to populate in the captured page, so this is not its full catalog. ManageIT advertises SSD and free IPv6, but its page does not establish base IPv4 inclusion. [IranServer](https://www.iranserver.com/vps/iran/), [ManageIT](https://www.manageitcloud.com/cloud-server).
 
-The [normalized JSON](vps-comparison-data.json) includes unknowns, source URLs, snapshot save times and SHA-256 hashes. Timestamps describe our evidence collection; they are not an observed Torob feature. Original HTML and extracted text are in `evidence/`. Resource GB is preserved as published without assuming GiB equivalence.
+The [normalized JSON](vps-comparison-data.json) includes unknowns, source URLs, snapshot save times and SHA-256 hashes. Original HTML and extracted text are in `evidence/`. Resource GB is preserved as published without assuming GiB equivalence.
 
 ## Three worked scenarios
 
