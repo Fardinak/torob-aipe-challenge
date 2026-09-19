@@ -211,7 +211,7 @@ function Offer({
           </div>
         )
       ) : (
-        <div className="breakdown">
+        <div className="breakdown breakdown-warning">
           <p>
             {candidate.reasons
               .map((reason) => unpricedReasons[reason] ?? reason)
@@ -362,8 +362,26 @@ function App() {
           )}
         </section>
         {!invalid && comparison.unpriced.length > 0 && (
-          <section className="results" aria-labelledby="unpriced-title">
-            <h2 id="unpriced-title">پیشنهادهای بدون برآورد ترافیک</h2>
+          <section
+            className="results unpriced-results"
+            aria-labelledby="unpriced-title"
+          >
+            <h2 id="unpriced-title">
+              <svg
+                className="warning-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M10.3 4.2a2 2 0 0 1 3.4 0l8 14A2 2 0 0 1 20 21H4a2 2 0 0 1-1.7-2.8z" />
+                <path d="M12 9v5m0 3h.01" />
+              </svg>
+              پیشنهادهای بدون برآورد ترافیک
+            </h2>
             <p className="muted">
               {number(comparison.unpriced.length)} پیشنهاد؛ هزینه ترافیک قابل
               محاسبه نیست. قیمت پایه ناقص؛ خارج از رتبه‌بندی.
