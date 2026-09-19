@@ -11,12 +11,12 @@ export function policyFor(plan: Plan): TrafficPolicy {
     ? {kind: 'metered', rate: catalog.providers.manageit.traffic_original_labels.download_toman_per_gb}
     : {kind: 'allowance', gb: plan.traffic_allowance_gb_unspecified_direction!, additional: 'unknown'};
 }
-export function quotePlan(plan: Plan, usage: Usage, downloadIsEgress: boolean, policy = policyFor(plan)): Quote {
+export function quotePlan(plan: Plan, usage: Usage, policy = policyFor(plan)): Quote {
   const sharedUsageGb = usage.egress + usage.ingress;
   const result = (status: Quote['status'], trafficCost: number | null, billableGb: number, reason: string): Quote => ({status, trafficCost, billableGb, sharedUsageGb, reason, subtotal: trafficCost === null ? null : plan.advertised_monthly_toman + trafficCost});
   if (sharedUsageGb === 0) return result('eligible', 0, 0, 'no_usage_entered');
   if (policy.kind === 'metered') {
-    if (!downloadIsEgress) return result('unknown', null, 0, 'direction_unresolved');
+    // Fixed prototype rule approved by the user: download is server egress.
     return result('eligible', usage.egress * policy.rate, usage.egress, 'download_assumed_egress');
   }
   // Undeclared direction is a shared ingress + egress allowance for filtering.

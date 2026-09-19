@@ -25,9 +25,9 @@ The floating bottom control and left/right keyboard arrows cycle layouts. Arrow 
 4. Enter 128 GB RAM: no matching resources; reset returns all 11.
 5. Switch layouts with filters active. Compare scanning the rows, reading aligned attributes, and inspecting one provider's upgrade options.
 
-Enter 1,200 GB outbound: only the 3 matching ManageIT plans remain ranked; IranServer moves to the separate unpriced section because overage is unknown. Enter 1,000 outbound + 200 inbound to see shared-limit behavior. A confirmed hard cap with no extra traffic is excluded entirely (no captured provider currently has that confirmed policy). Disable the ManageIT direction assumption to move its nonzero-usage estimates out of ranking.
+Enter 1,200 GB outbound: only the 3 matching ManageIT plans remain ranked; IranServer moves to the separate unpriced section because overage is unknown. Enter 1,000 outbound + 200 inbound to see shared-limit behavior. A confirmed hard cap with no extra traffic is excluded entirely (no captured provider currently has that confirmed policy).
 
-All prices come from `research/vps-comparison-data.json`. Original direction labels remain visible. The explicit, editable assumption treats ManageIT download as server egress; unspecified allowances are internally treated as shared ingress + egress. There are no complete-bill estimates, checkout/stock claims, performance benchmarks, fake reviews, or external mutations. The optional floating-IP fee is shown as optional. Fonts use Vazirmatn from Google Fonts with a system fallback; application behavior needs no external service.
+All prices come from `research/vps-comparison-data.json`. Original direction labels remain visible. The fixed prototype rule treats ManageIT download as server egress; unspecified allowances are internally treated as shared ingress + egress. There are no complete-bill estimates, checkout/stock claims, performance benchmarks, fake reviews, or external mutations. The optional floating-IP fee is shown as optional. Fonts use Vazirmatn from Google Fonts with a system fallback; application behavior needs no external service.
 
 ## Capture and validation
 
@@ -37,7 +37,7 @@ All prices come from `research/vps-comparison-data.json`. Original direction lab
 - `npm run build` passes TypeScript checking and Vite compilation.
 - The local route returns HTTP 200.
 - Browser host became available during the traffic iteration. Verified A’s 1,000/1,200 GB subtotal and ranking changes, layout switching with retained inputs, and mobile rendering of B. Browser console showed no errors during those checks.
-- Manually exercised arithmetic for 1,000 GB boundary, shared 1,200 GB usage, unknown overage, a synthetic explicit no-extra cap, disabled direction assumption and free ingress. Synthetic policy used only for verification; no fake offer was added.
+- Manually exercised arithmetic for 1,000 GB boundary, shared 1,200 GB usage, unknown overage, a synthetic explicit no-extra cap, free ingress. Synthetic policy used only for verification; no fake offer was added.
 - No test suite was added, following the throwaway prototype skill.
 
 See [comparison gate](research/vps-comparison-gate.md) for pricing evidence and limitations.

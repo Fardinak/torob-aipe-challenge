@@ -32,7 +32,6 @@ function TrafficCost({plan}: {plan: Plan}) {
     {q.reason === 'download_assumed_egress' && <><span>پایه: {num(plan.advertised_monthly_toman)} تومان</span><strong>+ {num(q.billableGb)} GB × ۱٬۲۰۰ = {num(q.trafficCost!)} تومان ترافیک</strong><small>فرض محاسبه: دانلود منیجیت = خروجی سرور؛ آپلود رایگان</small></>}
     {q.reason === 'within_assumed_shared_allowance' && <><strong>هزینه اضافه ترافیک: ۰ تومان</strong><small>مصرف مجموع: {num(q.sharedUsageGb)} از {num(plan.traffic_allowance_gb_unspecified_direction!)} GB؛ با فرض سقف مشترک ورودی و خروجی</small></>}
     {q.reason === 'overage_unverified' && <><strong>{num(q.billableGb)} GB بیشتر از ترافیک همراه پلن</strong><small>امکان و تعرفه خرید ترافیک اضافه مشخص نیست؛ از رتبه‌بندی هزینه کنار گذاشته شده است.</small></>}
-    {q.reason === 'direction_unresolved' && <small>برای برآورد هزینه منیجیت، فرض جهت دانلود را فعال کنید.</small>}
   </div>;
 }
 function Evidence({plan}: {plan: Plan}) {
@@ -85,24 +84,23 @@ function PrototypeSwitcher({variant, change}: {variant: Variant; change: (v: Var
 function App() {
   const [variant,setVariant] = useState<Variant>(getVariant);
   const [filters,setFilters] = useState<Filters>(zero);
-  const [downloadIsEgress,setDownloadIsEgress] = useState(true);
   useEffect(()=>{const h=()=>setVariant(getVariant());window.addEventListener('popstate',h);return()=>window.removeEventListener('popstate',h);},[]);
   const change = (v: Variant) => {const url=new URL(location.href);url.searchParams.set('variant',v);history.replaceState(null,'',url);setVariant(v);};
-  const candidates: Plan[] = catalog.plans.filter(p=>p.ram_gb>=filters.ram && p.cpu_count>=filters.cpu && p.disk_gb>=filters.disk).map(p=>({...p,quote:quotePlan(p,filters,downloadIsEgress)}));
+  const candidates: Plan[] = catalog.plans.filter(p=>p.ram_gb>=filters.ram && p.cpu_count>=filters.cpu && p.disk_gb>=filters.disk).map(p=>({...p,quote:quotePlan(p,filters)}));
   const plans = candidates.filter(p=>p.quote.status==='eligible').sort((a,b)=>a.quote.subtotal!-b.quote.subtotal!);
   const unknown = candidates.filter(p=>p.quote.status==='unknown').sort((a,b)=>a.advertised_monthly_toman-b.advertised_monthly_toman);
   const excluded = candidates.filter(p=>p.quote.status==='excluded');
   const uncertain = filters.egress + filters.ingress > 0;
-  const state = {variant,filters,downloadIsEgress,undeclaredDirection:'shared_ingress_egress',sort:variant==='C'?'subtotal within provider; groups by cheapest subtotal':'subtotal ascending',ranked:plans.map(p=>({id:p.id,...p.quote})),unpriced:unknown.map(p=>({id:p.id,...p.quote})),excluded:excluded.map(p=>({id:p.id,...p.quote})),availability:'unknown',completeBill:'unknown',persistence:false};
+  const state = {variant,filters,manageitDownloadDirection:'egress',undeclaredDirection:'shared_ingress_egress',sort:variant==='C'?'subtotal within provider; groups by cheapest subtotal':'subtotal ascending',ranked:plans.map(p=>({id:p.id,...p.quote})),unpriced:unknown.map(p=>({id:p.id,...p.quote})),excluded:excluded.map(p=>({id:p.id,...p.quote})),availability:'unknown',completeBill:'unknown',persistence:false};
   const set = (key: keyof Filters, value: string) => setFilters({...filters,[key]:Math.max(0,Number.isFinite(Number(value))?Number(value):0)});
   const view = {plans,uncertain};
-  useEffect(()=>{console.info('VPS prototype state',state);},[variant,filters,downloadIsEgress]);
+  useEffect(()=>{console.info('VPS prototype state',state);},[variant,filters]);
   return <div className={'app variant-'+variant}>
     <header className="site-header"><a className="brand" href="/prototype/vps"><span className="brand-icon">≋</span>سروربین<span className="brand-tag">انتخاب روشن‌تر</span></a><span className="prototype-label">نمونه تعاملی · داده محدود</span></header>
     <main><section className="intro"><div><p className="eyebrow">مقایسه سرورهای مجازی / ایران</p><h1>سرور مناسب،<br className="mobile-break"/> با قیمت روشن‌تر.</h1><p className="intro-copy">پیشنهادها را یک‌جا ببینید. نیازتان را مشخص کنید و هزینه‌های نامشخص را قبل از خرید بشناسید.</p></div><div className="coverage"><strong>۱۱<span>پلن</span> / ۲<span>ارائه‌دهنده</span></strong><span>نمونه‌ای محدود از پیشنهادهای بازار</span><small>جست‌وجوی کامل بازار یا قیمت لحظه‌ای نیست</small></div></section>
     <section className="requirements" aria-label="نیازهای سرور"><div className="section-heading"><h2>چه منابعی نیاز دارید؟</h2><button className="text-button" onClick={()=>setFilters(zero)}>پاک کردن فیلترها</button></div><div className="presets"><button className={Object.values(filters).every(v=>v===0)?'selected':''} onClick={()=>setFilters(zero)}>ارزان‌ترین، بدون محدودیت</button><button className={filters.ram===4&&filters.egress===0&&filters.cpu===0&&filters.disk===0&&filters.ingress===0?'selected':''} onClick={()=>setFilters({...zero,ram:4})}>حداقل ۴ GB رم</button><button className={filters.ram===4&&filters.egress===1000&&filters.cpu===0&&filters.disk===0&&filters.ingress===0?'selected':''} onClick={()=>setFilters({...zero,ram:4,egress:1000})}>۴ GB رم + ۱ TB خروجی</button></div>
       <div className="filter-grid">{([{key:'ram',label:'حداقل رم',unit:'GB',step:1},{key:'cpu',label:'حداقل پردازنده',unit:'هسته',step:1},{key:'disk',label:'حداقل دیسک',unit:'GB',step:1},{key:'egress',label:'مصرف خروجی ماهانه',unit:'GB',step:1},{key:'ingress',label:'مصرف ورودی ماهانه',unit:'GB',step:1}] as const).map(f=><label key={f.key} htmlFor={f.key}>{f.label}<div className="number-field"><input id={f.key} type="number" min="0" step={f.step} value={filters[f.key]||''} placeholder={f.key==='egress'||f.key==='ingress'?'۰': 'بدون محدودیت'} onChange={e=>set(f.key,e.target.value)}/><span>{f.unit}</span></div></label>)}</div><p className="filter-help">۱ TB = ۱٬۰۰۰ GB. خروجی: داده ارسالی سرور؛ ورودی: داده دریافتی سرور. ورودی خالی، صفر فرض می‌شود.</p>
-      <div className="traffic-assumptions"><label><input type="checkbox" checked={downloadIsEgress} onChange={e=>setDownloadIsEgress(e.target.checked)}/> فرض محاسبه: دانلود منیجیت = خروجی سرور</label><p>ترافیک با جهت نامشخص، برای فیلتر کردن سقف مشترک ورودی + خروجی فرض می‌شود. مالیات و هزینه‌های اجباری نامشخص در برآورد نیستند.</p></div>
+      <div className="traffic-assumptions"><p>ترافیک با جهت نامشخص، برای فیلتر کردن سقف مشترک ورودی + خروجی فرض می‌شود. مالیات و هزینه‌های اجباری نامشخص در برآورد نیستند.</p></div>
     </section>
     {uncertain && <section className="scenario-summary" role="status">برآورد برای {num(filters.egress)} GB خروجی + {num(filters.ingress)} GB ورودی در ماه · {num(plans.length)} پیشنهاد قابل محاسبه{unknown.length > 0 && ` · ${num(unknown.length)} پیشنهاد با هزینه نامشخص، خارج از رتبه‌بندی`}{excluded.length > 0 && ` · ${num(excluded.length)} پیشنهاد به علت سقف ترافیک حذف شد`}</section>}
     <section className="results" aria-label="پیشنهادها"><div className="results-heading"><div><h2>{uncertain?'پیشنهادها با هزینه ترافیک': 'پیشنهادهای قابل مقایسه'} <span>{num(plans.length)}</span></h2><p>{uncertain?'قیمت پایه + ترافیک بر اساس فرض‌های بالا؛ مبلغ نهایی خرید نیست.':'قیمت پایه را مقایسه کنید؛ جزئیات هزینه را در هر پیشنهاد ببینید.'}</p></div><span className="sort-label">↑ {uncertain?'برآورد هزینه':'قیمت پایه'}: کم به زیاد{variant==='C'?' · در هر گروه':''}</span></div>
