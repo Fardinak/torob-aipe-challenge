@@ -4,18 +4,17 @@ Persian RTL React + TypeScript application for issues #2 and #3. Compares monthl
 
 ## Deployment
 
-Target: GitHub Pages at
-`https://fardinak.github.io/torob-aipe-challenge/`. The production build and
-deployment workflow are ready, but deployment is currently blocked: the
-repository is private and the current GitHub plan does not support Pages. The
-GitHub API returned `Your current plan does not support GitHub Pages for this
-repository` when Pages was configured on 2026-09-19. An owner must either
-upgrade the plan or make the repository eligible for Pages, then enable
-**Settings → Pages → Source: GitHub Actions**. No application secret is
-needed. This is an explicit hosting dependency, not a deployed application;
-there is no live URL to verify yet.
+Hosting: [GitHub Pages](https://fardinak.github.io/torob-aipe-challenge/).
+The repository is public and Pages is configured with **Settings → Pages →
+Source: GitHub Actions**. Both are required: making a repository public does
+not enable Pages automatically. No application secret is needed.
 
-Once enabled, a push to `main` or a manual workflow run publishes `dist/`. The
+A push to `main` or a manual run of `Deploy to GitHub Pages` validates the
+catalog, checks types, runs comparison tests and the desktop/mobile journey
+against the production build, then publishes `dist/` and repeats the journey
+against the deployed URL. A failed post-deployment check leaves the site
+published but marks the workflow failed; inspect the failed step before
+claiming delivery complete. The
 Vite base path is supplied by `BASE_PATH`, so the same build remains usable at
 `/` locally and under the repository path in production. The root page can be
 refreshed directly and returns to the default in-memory comparison.
@@ -40,7 +39,20 @@ npm test
 npm run build
 ```
 
-On supported Linux systems without browser libraries, use `npx playwright install --with-deps chromium`. `npm run test:unit` runs comparison tests; `npm run test:browser` runs the same user journey at desktop and mobile widths. `npm run build` checks types and catalog validity before emitting `dist/`. Preview it with `npm run preview`; for a production-path check, run `BASE_PATH=/torob-aipe-challenge/ npm run build` and serve `dist/` at that path. No API, database or secrets are needed.
+On supported Linux systems without browser libraries, use `npx playwright install --with-deps chromium`. `npm run test:unit` runs comparison tests; `npm run test:browser` builds the application and runs the same user journey at desktop and mobile widths against Vite's production preview. Port 4173 must be free. `npm run build` checks types and catalog validity before emitting `dist/`. Preview it with `npm run preview`. No API, database or secrets are needed.
+
+Verify the production project path locally, or target the live deployment
+(include the trailing slash; remote verification does not start a local server):
+
+```sh
+BASE_PATH=/torob-aipe-challenge/ npm test
+PLAYWRIGHT_BASE_URL=https://fardinak.github.io/torob-aipe-challenge/ npm run test:browser
+```
+
+The journey checks ranking, arithmetic, unknown costs, original terms, all
+three provider/source destinations, keyboard tab order and focus, RTL, asset
+loading, runtime errors, reset and reload. Hosting serves the single application
+route `/torob-aipe-challenge/`; no other application routes are defined.
 
 ## Data and boundaries
 
@@ -58,20 +70,25 @@ Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranSe
 
 ## Reproducible demo outline (under five minutes)
 
-1. Open the deployed URL once the hosting dependency is resolved and explain
+1. **0:00–0:35:** Open the deployed URL and explain
    the buyer problem: comparing sampled Iranian VPS offers requires
    interpreting both resources and traffic terms.
-2. Show the default 11 offers, select **۴ GB رم + ۱ TB خروجی**, and point out
+2. **0:35–1:30:** Show the default 11 offers, select **۴ GB رم + ۱ TB خروجی**, and point out
    the changed ranking plus ManageIT's `۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰` arithmetic.
-3. Change outbound usage to `۱٬۲۰۰` GB and show three ranked ManageIT offers
+3. **1:30–2:15:** Change outbound usage to `۱٬۲۰۰` GB and show three ranked ManageIT offers
    alongside five separately unpriced candidates; explain why unknown overage
    is not ranked as a cheap base price.
-4. Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
+4. **2:15–3:15:** Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
    the provider source link in a new tab. Reset the filters and refresh to show
    the documented default state.
-5. Close with the engineering boundary: a static React/TypeScript app, exact
+5. **3:15–4:30:** Close with the engineering boundary: a static React/TypeScript app, exact
    comparison operation tests, responsive browser tests, and fixed product
-   interpretations kept separate from source facts.
+   interpretations kept separate from source facts. Explain the AI-assisted
+   workflow: the agent implemented the approved issues, ran comparison and
+   browser tests, and reviewed the changes; human decisions set the buyer
+   problem, sample scope and traffic interpretation. Show the issue and test
+   results as evidence. AI supports development; the deployed app does not
+   call an AI model.
 
 The catalog is a reviewed, limited sample. It does not claim live availability,
 exhaustive market coverage, a final bill, or verified current provider terms;
