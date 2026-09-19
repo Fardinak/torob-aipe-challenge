@@ -16,3 +16,7 @@
 Which immediate comparison layout makes those three tasks easiest: compact offer list, attribute table, or provider-grouped offers?
 
 The throwaway prototype is captured on `prototype/vps-comparison`. Run `npm install && npm run prototype`, then open `/prototype/vps?variant=A` (also B/C). No implementation issue exists in this local workspace, so this file is the context pointer. Layout verdict is pending user review; no winner has been validated or promoted.
+
+## Implementation handoff
+
+The approved traffic-pricing decisions and implementation scope are recorded in [the implementation spec](../specs/vps-comparison.md) and [GitHub issue #1](https://github.com/Fardinak/torob-aipe-challenge/issues/1). These supersede the initial eligibility rules above. The captured UI prototype remains on `prototype/vps-comparison`; repository setup and the implementation spec are on `main`.
