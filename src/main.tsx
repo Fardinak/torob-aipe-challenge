@@ -168,42 +168,48 @@ function Offer({
           <span>تومان / ماه</span>
           <small>
             {quote
-              ? "جمع برآوردی پایه و ترافیک"
+              ? quote.trafficChargeToman > 0
+                ? "جمع برآوردی پایه و ترافیک"
+                : "قیمت پایه اعلام‌شده"
               : "قیمت پایه ناقص؛ خارج از رتبه‌بندی"}
           </small>
         </div>
       </div>
       {quote ? (
-        <div className="breakdown">
-          <p>
-            ترافیک قابل پرداخت: <bdi>{number(quote.billableGb)} GB</bdi>؛ نرخ:{" "}
-            {quote.rateTomanPerGb === null
-              ? "تعرفه اضافه نامشخص؛ مصرف در سهمیه"
-              : `${number(quote.rateTomanPerGb)} تومان / GB`}
-          </p>
-          <p>
-            هزینه ترافیک:{" "}
-            {quote.rateTomanPerGb !== null && (
-              <>
-                <bdi dir="ltr">
-                  {number(quote.billableGb)} GB × {number(quote.rateTomanPerGb)}{" "}
-                  = {number(quote.trafficChargeToman)}
-                </bdi>{" "}
-                تومان
-              </>
-            )}
-            {quote.rateTomanPerGb === null &&
-              `${number(quote.trafficChargeToman)} تومان (بدون مصرف اضافه)`}
-          </p>
-          <p>
-            پایه + ترافیک = جمع برآوردی:{" "}
-            <bdi dir="ltr">
-              {number(quote.baseMonthlyToman)} +{" "}
-              {number(quote.trafficChargeToman)} = {number(quote.subtotalToman)}
-            </bdi>{" "}
-            تومان
-          </p>
-        </div>
+        quote.trafficChargeToman > 0 && (
+          <div className="breakdown">
+            <p>
+              ترافیک قابل پرداخت: <bdi>{number(quote.billableGb)} GB</bdi>؛ نرخ:{" "}
+              {quote.rateTomanPerGb === null
+                ? "تعرفه اضافه نامشخص؛ مصرف در سهمیه"
+                : `${number(quote.rateTomanPerGb)} تومان / GB`}
+            </p>
+            <p>
+              هزینه ترافیک:{" "}
+              {quote.rateTomanPerGb !== null && (
+                <>
+                  <bdi dir="ltr">
+                    {number(quote.billableGb)} GB ×{" "}
+                    {number(quote.rateTomanPerGb)} ={" "}
+                    {number(quote.trafficChargeToman)}
+                  </bdi>{" "}
+                  تومان
+                </>
+              )}
+              {quote.rateTomanPerGb === null &&
+                `${number(quote.trafficChargeToman)} تومان (بدون مصرف اضافه)`}
+            </p>
+            <p>
+              پایه + ترافیک = جمع برآوردی:{" "}
+              <bdi dir="ltr">
+                {number(quote.baseMonthlyToman)} +{" "}
+                {number(quote.trafficChargeToman)} ={" "}
+                {number(quote.subtotalToman)}
+              </bdi>{" "}
+              تومان
+            </p>
+          </div>
+        )
       ) : (
         <div className="breakdown">
           <p>

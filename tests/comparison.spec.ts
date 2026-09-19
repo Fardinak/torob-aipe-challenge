@@ -6,6 +6,12 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
   const offers = page.getByRole("article");
   await expect(offers).toHaveCount(11);
   await expect(offers.first()).toContainText("۷۱۰٬۰۰۰");
+  await expect(
+    page.getByText("ترافیک قابل پرداخت:", { exact: false }),
+  ).toHaveCount(0);
+  await expect(
+    page.getByText("پایه + ترافیک = جمع برآوردی:", { exact: false }),
+  ).toHaveCount(0);
   const preset = page.getByRole("button", {
     name: "حداقل ۴ GB رم",
     exact: true,
@@ -23,6 +29,10 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
   await expect(offers).toHaveCount(8);
   await expect(offers.first()).toContainText("NGP-small40");
   await expect(offers.first()).toContainText("۱٬۸۲۳٬۹۹۹");
+  await expect(offers.first()).not.toContainText("ترافیک قابل پرداخت:");
+  await expect(offers.first()).not.toContainText(
+    "پایه + ترافیک = جمع برآوردی:",
+  );
   const manageit = page.getByRole("article", {
     name: "منیجیت manageit-2c-4g-75g",
     exact: true,
@@ -80,7 +90,10 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
     await field.fill("");
   }
   await ingress.fill("1200");
-  await expect(manageit).toContainText("۱٬۴۲۰٬۰۰۰ + ۰ = ۱٬۴۲۰٬۰۰۰");
+  await expect(manageit).toContainText("۱٬۴۲۰٬۰۰۰");
+  await expect(manageit).toContainText("قیمت پایه اعلام‌شده");
+  await expect(manageit).not.toContainText("ترافیک قابل پرداخت:");
+  await expect(manageit).not.toContainText("پایه + ترافیک = جمع برآوردی:");
   await page.getByRole("button", { name: "پاک کردن فیلترها" }).click();
   await expect(offers).toHaveCount(11);
   await expect(egress).toHaveValue("");
