@@ -1,6 +1,6 @@
 # Prototype plan for the Torob challenge
 
-Drafted 2026-09-19. The user is open to a market recommendation and has a weekend budget. This proposes a Persian-first VPS comparison prototype for one builder, with roughly 12–16 focused hours. The comparison gate is complete: proceed with advertised-price discovery and resource filtering; verified all-in egress ranking remains blocked by source ambiguity. See [gate findings](vps-comparison-gate.md). Implementation has not started.
+Drafted 2026-09-19. The user is open to a market recommendation and has a weekend budget. This proposes a Persian-first VPS comparison prototype for one builder, with roughly 12–16 focused hours. The comparison gate is complete. The user subsequently approved assumption-based traffic subtotals and filtering; verified all-in billing remains blocked by source ambiguity. See [gate findings](vps-comparison-gate.md). A throwaway UI prototype now exists on `prototype/vps-comparison`.
 
 ## Product thesis
 
@@ -24,7 +24,7 @@ I would reconsider the ranking immediately if the user has direct access to user
 
 **User:** a Persian-speaking developer selecting a small Linux VPS in Iran, with known minimum resources and expected traffic.
 
-**Promise:** find the cheapest published offer in a clearly scoped catalog, filter by stated requirements, and inspect traffic terms and unknown costs before visiting a provider. Complete monthly estimates require verified billing rules.
+**Promise:** find the cheapest published offer in a clearly scoped catalog, filter by stated requirements, and inspect traffic terms and unknown costs before visiting a provider. Traffic subtotals use explicit user-approved assumptions; complete bills still require verified billing rules.
 
 **Example query:** «سرور ایران با حداقل ۴ گیگ رم، ۲ هسته و ۴۰ گیگ دیسک؛ ماهی ۱۰۰ گیگ ترافیک خروجی و یک IPv4». Budget is an editable field. Avoid inferring exact compute requirements from vague business descriptions without asking the user to confirm them.
 
@@ -62,7 +62,7 @@ Small, manually reviewed snapshots are acceptable for an honest prototype. Mark 
 ## The experience to build
 
 1. **Search and editable intent.** A structured form produces visible fields for location, RAM, CPU, disk, monthly traffic, IPv4, and budget. A Persian-query enhancement can populate these fields if time remains; the user can correct every interpretation.
-2. **Immediate offer list.** Requirements sit above provider rows, following Torob's immediate vendor preview. Default to advertised monthly price within the covered sample. Show resources, traffic wording and unknown fees. Unknown egress eligibility cannot pass a strict egress filter; show unverified candidates separately. Enable estimated-total sorting only when billing rules are complete.
+2. **Immediate offer list.** Requirements sit above provider rows, following Torob's immediate vendor preview. Default to advertised monthly price within the covered sample. Show resources, traffic wording and unknown fees. For unspecified direction, use a shared ingress + egress limit internally and preserve the source wording. Assume ManageIT download is egress (editable) and add its published per-GB charge. Rank eligible traffic subtotals, exclude confirmed hard-cap violations, and show unknown overage candidates separately outside ranked results.
 3. **Inspect an offer inline.** Expand billing facts and source evidence from the row. A separate side-by-side comparison is stretch work. Shared/dedicated CPU and architecture remain visible; equal core counts do not imply equal performance.
 4. **Explain a choice with evidence.** “Lowest estimated cost among these eligible plans under your assumptions” is supportable. Link each consequential fee or constraint to its source. Let users expand a cost breakdown and change traffic to observe the result.
 5. **Continue to provider.** Open the relevant plan page. Preserve the current comparison in page state. Persistent shortlists, shareable URLs, and feedback collection are stretch work.
@@ -95,7 +95,7 @@ Store provider, plan/configuration, source snapshot, and versioned tariff facts 
 | Sunday, hour 4 | Observe one or two target users if available; fix the clearest misunderstanding. |
 | Sunday, hours 5–6 | Check deployment, README, source accuracy, and record a demo targeting 4:50. Keep remaining time as buffer. |
 
-**Required:** two real sources, the reviewed 11-row dataset, editable requirements, correct advertised-price sorting, immediate comparison rows, visible evidence/unknowns, provider handoff, and a reproducible demonstration. Conditional arithmetic must be labeled; all-in ranking is deferred until source completeness permits it.
+**Required:** two real sources, the reviewed 11-row dataset, editable requirements, correct advertised-price sorting, immediate comparison rows, visible evidence/unknowns, provider handoff, and a reproducible demonstration. Assumption-based traffic subtotals must be labeled and used for ranking; all-in bills remain deferred until source completeness permits them.
 
 **Stretch:** AI query parsing, saved/shareable comparison, one automated source importer.
 
@@ -128,4 +128,8 @@ Target 4:50 to leave recording margin. Application deliverables remain the worki
 
 ## Decisions still open
 
-ManageIT and IranServer supply the initial advertised-price catalog. The user supplied a concrete purchase account supporting cheapest-offer discovery and minimum-requirement search. Verified egress semantics, availability of usability testers, and deployment services remain open. The next implementation can use the narrower scope in the gate report; verified all-in ranking requires additional first-party evidence. No app or external submission has been created. The research calculation script is not a production pricing engine.
+ManageIT and IranServer supply the initial advertised-price catalog. The user supplied a concrete purchase account supporting cheapest-offer discovery and minimum-requirement search. Verified egress semantics, availability of usability testers, and deployment services remain open. The next implementation can use the narrower scope in the gate report; verified all-in ranking requires additional first-party evidence. The throwaway app is implemented; no external submission has been made. The research calculation script is not a production pricing engine.
+
+## Approved traffic iteration
+
+The user found resource filtering easy and identified missing traffic pricing as the main gap. Implemented: expected outbound and optional inbound GB, base + traffic subtotals across A/B/C, editable ManageIT download-as-egress assumption, shared allowance filtering for unspecified direction, and separate unpriced overage candidates. At 4 GB RAM + 1,000 GB egress, ManageIT is 2,620,000 toman and IranServer is 1,823,999 under these assumptions. At 1,200 GB combined usage, IranServer is outside ranked results because overage terms are unknown. Confirmed no-extra hard caps are excluded entirely. No source facts were rewritten to make these assumptions appear verified.

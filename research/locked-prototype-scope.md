@@ -5,11 +5,13 @@
 - Persian RTL interface; 11 captured plans across ManageIT and IranServer, explicitly a limited snapshot.
 - Default: all offers sorted by advertised monthly toman, no minimum resources.
 - Editable RAM, CPU and disk minimums. No inferred CPU constraint from a RAM request.
-- Traffic evidence is incomplete. A strict egress requirement yields zero confirmed matches; resource-matching candidates remain inspectable as unverified.
+- Traffic is expected monthly usage. Assume ManageIT download means server egress by default (editable); compute base + egress GB × 1,200 toman. Preserve the original tariff wording and label estimates as assumption-based.
+- Unspecified traffic direction stays unspecified in the offer, but its allowance is treated as shared ingress + egress for filtering. Optional inbound usage defaults to zero.
+- Exceeding a known hard cap with no additional traffic excludes the plan. Unknown overage terms remove it from ranked results and place it in a separate unpriced section; unknown does not mean unavailable.
 - Immediate provider offer rows show price, resources, traffic wording, known extras and sources. Expand details inline.
-- Unknown fees remain unknown. No all-in estimate, live-stock claim or performance ranking.
+- Rank by base + calculated traffic subtotal when usage is entered, otherwise base price. Unknown mandatory fees remain unknown. No all-in bill, live-stock claim or performance ranking.
 - TypeScript/React, reviewed JSON, memory-only state. No database, crawler or runtime AI dependency.
-- Success: find cheapest sampled offer; apply 4 GB minimum; understand why 1 TB egress is unconfirmed.
+- Success: find cheapest sampled offer; apply 4 GB minimum; compare 1 TB traffic estimates, see the ranking change, and understand cap/overage behavior.
 
 ## Design question
 
