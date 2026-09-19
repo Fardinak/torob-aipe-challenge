@@ -75,7 +75,7 @@ Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranSe
    interpreting both resources and traffic terms.
 2. **0:35–1:30:** Show the default 11 offers, select **۴ GB رم + ۱ TB خروجی**, and point out
    the changed ranking plus ManageIT's `۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰` arithmetic.
-3. **1:30–2:15:** Change outbound usage to `۱٬۲۰۰` GB and show three ranked ManageIT offers
+3. **1:30–2:15:** Enter `1200` in outbound usage (without a thousands separator) and show three ranked ManageIT offers
    alongside five separately unpriced candidates; explain why unknown overage
    is not ranked as a cheap base price.
 4. **2:15–3:15:** Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
