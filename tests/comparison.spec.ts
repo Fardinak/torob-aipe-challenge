@@ -107,7 +107,14 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
   await expect(offers).toHaveCount(1);
   await page.getByRole("button", { name: "بدون محدودیت", exact: true }).click();
   await expect(offers).toHaveCount(11);
-  await ram.fill("8");
+  await ram.fill("16");
+  await egress.fill("1200");
+  await expect(ranked.getByRole("article")).toHaveCount(0);
+  await expect(unpriced.getByRole("article")).toHaveCount(3);
+  await expect(
+    page.getByRole("heading", { name: "برای این مصرف، برآورد قیمت نداریم." }),
+  ).toBeVisible();
+  await expect(page.getByText("پیشنهادی با این منابع نداریم.")).toHaveCount(0);
   await page.reload();
   await expect(offers).toHaveCount(11);
   expect(
