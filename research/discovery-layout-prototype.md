@@ -1,6 +1,6 @@
-# Discovery layout prototype — awaiting human feedback
+# Discovery layout prototype — variant C selected
 
-Throwaway primary source for [Choose the discovery layout through a working prototype](https://github.com/Fardinak/torob-aipe-challenge/issues/9). This is a planning asset, not production implementation or a resolved decision.
+Throwaway primary source for [Choose the discovery layout through a working prototype](https://github.com/Fardinak/torob-aipe-challenge/issues/9). This is a throwaway planning asset. The layout decision is resolved in the linked resolution below; this code is not production implementation.
 
 On branch `prototype/discovery-layout`, open `index.html` directly, or run `npm run dev` and open the existing `/` route. No installation beyond existing project dependencies is needed. The original application remains on the original branch. Do not merge this branch.
 
@@ -22,9 +22,13 @@ Published base-price ordering is separate per category. A budget filter checks o
 
 Font: embedded Vazirmatn Arabic subset, SIL Open Font License, from the project's installed @fontsource/vazirmatn dependency.
 
-## Questions for human feedback
+## Human verdict
 
-Which result hierarchy should lead: A, B, C, or a combination? Then refine mobile filter placement, evidence/detail density, traffic assumption placement and the five-second handoff. A preference has not yet been supplied; leave the decision ticket open.
+The human selected C (“I like C”) and confirmed all four interaction recommendations (“yes to all”). [Authoritative resolution](https://github.com/Fardinak/torob-aipe-challenge/issues/9#issuecomment-6482976362).
+
+The agreed refinements are full-width mobile details with Back restoring list position and filters in a drawer; visible prices, cost warnings and verification dates with deeper evidence expanded on demand; collapsible VPS usage controls with active assumptions visible; and a five-second provider handoff with Cancel and Continue now.
+
+The rough artifact still shows its original mobile arrangement and evidence density. These refinements are decisions for the implementation specification, not implemented features in this artifact. Preserve the complete three-variant artifact as the primary source; do not promote or merge it into production.
 
 ## Verification
 
