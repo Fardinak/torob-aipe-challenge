@@ -31,6 +31,33 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await expect(offers).toHaveCount(1);
   await expect(offers).toContainText("قیمت پایه اعلام‌شده");
 
+  await page
+    .getByLabel("ارائه‌دهنده", { exact: true })
+    .selectOption("manageit");
+  await expect(configurations).toHaveCount(6);
+  await expect(offers).toContainText("منیجیت");
+  const filteredURL = page.url();
+  await page
+    .getByRole("navigation", { name: "کاتالوگ ارائه‌دهندگان" })
+    .getByRole("link", { name: "کاتالوگ منیجیت" })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "کاتالوگ منیجیت" }),
+  ).toBeVisible();
+  await expect(configurations).toHaveCount(6);
+  await expect(configurations.first()).toContainText("۷۱۰٬۰۰۰");
+  await configurations.last().click();
+  await page.reload();
+  await expect(offers).toContainText("منیجیت");
+  await expect(offers).toContainText("آخرین تأیید موفق:");
+  await expect(offers).toContainText("هزینه نهایی نامشخص");
+  await page
+    .getByRole("link", { name: "بازگشت به مقایسه", exact: true })
+    .click();
+  expect(page.url()).toBe(filteredURL);
+  await page.getByLabel("ارائه‌دهنده", { exact: true }).selectOption("");
+  await expect(configurations).toHaveCount(12);
+
   const preset = page.getByRole("button", {
     name: "حداقل ۴ GB رم",
     exact: true,
@@ -272,9 +299,46 @@ test("search, recover and restore the same discovery detail with browser navigat
   await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
   expect(page.url()).toContain("version=18.4");
   expect(page.url()).toContain("sort=price-desc");
+  const discoveryURL = page.url();
+  await page
+    .getByRole("article")
+    .getByRole("link", { name: "کاتالوگ لیارا" })
+    .click();
+  await expect(page.locator(".configuration")).toHaveCount(4);
+  await expect(
+    page.getByText("شامل همه محصولات آن شرکت نیست", { exact: false }),
+  ).toBeVisible();
+  await expect(page.locator(".configuration-list")).toContainText("PostgreSQL");
+  await expect(page.locator(".configuration-list")).toContainText("Redis");
+  await expect(page.locator(".configuration").first()).toContainText(
+    "۴٬۱۲۵٬۰۰۰",
+  );
+  await expect(page.locator(".configuration").first()).toContainText(
+    "تعارض شواهد",
+  );
+  await page.locator(".configuration").last().click();
+  await page.reload();
+  await expect(page.getByRole("article")).toContainText("Redis");
+  await expect(page.getByRole("article")).toContainText("هزینه نهایی نامشخص");
+  await page.goBack();
+  await page.goBack();
+  expect(page.url()).toBe(discoveryURL);
+  await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
+  await page.goForward();
+  await expect(page.locator(".configuration")).toHaveCount(4);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
+  for (const id of ["constructor", "manageit,liara"]) {
+    const invalidCatalog = new URL(page.url());
+    invalidCatalog.searchParams.set("catalog", id);
+    await page.goto(invalidCatalog.href);
+    await expect(
+      page.getByRole("heading", { name: "ارائه‌دهنده یافت نشد" }),
+    ).toBeVisible();
+    await expect(page.locator(".configuration")).toHaveCount(0);
+    await expect(page.getByRole("article")).toHaveCount(0);
+  }
 });

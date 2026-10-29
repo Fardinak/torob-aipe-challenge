@@ -17,13 +17,21 @@ const requestKeys = [
   "ingress",
   "priceMode",
 ] as const;
-function readLocation(): { request: Request; selectedId: string | null } {
+function readLocation(): {
+  request: Request;
+  selectedId: string | null;
+  catalogId: string | null;
+} {
   const params = new URLSearchParams(location.search);
   const request: Record<string, string> = { category: "all" };
   for (const key of requestKeys)
     if (params.has(key)) request[key] = params.get(key)!;
   // Invalid enum values do not become a different comparison silently.
-  return { request: request as Request, selectedId: params.get("detail") };
+  return {
+    request: request as Request,
+    selectedId: params.get("detail"),
+    catalogId: params.get("catalog"),
+  };
 }
 export function useDiscoveryState() {
   const [state, setState] = useState(readLocation);
@@ -58,6 +66,7 @@ export function useDiscoveryState() {
     );
     const url = new URL(location.href);
     url.search = "";
+    if (state.catalogId) url.searchParams.set("catalog", state.catalogId);
     for (const key of requestKeys) {
       const value = request[key];
       if (
@@ -76,7 +85,7 @@ export function useDiscoveryState() {
       "",
       url,
     );
-    setState({ request, selectedId });
+    setState({ request, selectedId, catalogId: state.catalogId });
   };
   return {
     ...state,

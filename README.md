@@ -1,6 +1,6 @@
 # سروربین — VPS and managed database discovery
 
-Persian RTL React + TypeScript application for issues #2, #3, #13–#16. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
+Persian RTL React + TypeScript application for issues #2, #3, #13–#17. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
 
 ## Deployment
 
@@ -67,7 +67,7 @@ Blank resource requirements impose no constraints; blank usage is zero. Usage is
 
 Billing disclosures preserve unknown CPU allocation, tax, mandatory fees and IPv4 inclusion. ManageIT's optional floating IPv4 price is explanatory only. Published monthly prices are not converted to hourly prices. The prototype remains on `prototype/vps-comparison`; this application implements approved layout C without merging the prototype.
 
-See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; broader coverage, provider catalogs and handoff in #12 remain separate work.
+See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; broader coverage and handoff in #12 remain separate work.
 
 ## Traffic comparison demo
 
@@ -142,3 +142,27 @@ phone, open the filter drawer, narrow results, inspect a configuration and use
 Back. The production browser journeys cover these outcomes, list position,
 focus, empty recovery and restored VPS traffic arithmetic under the hosting
 base path. The existing catalog coverage/release limitations still apply.
+
+## Provider discovery (#17)
+
+Select one or more providers in the provider filter (Ctrl/Cmd selects multiple
+on desktop). Only selected providers contribute offers and starting prices.
+The URL's `provider` parameter contains comma-separated stable provider IDs;
+removing the provider chip restores all providers.
+
+Open a provider catalog from the provider links or any offer detail. The
+`catalog` URL parameter selects a separate profile containing all that
+provider's admitted release offers across VPS and managed engines at its own
+published base prices. This covers admitted release offers, **not every
+product the provider sells**. Discovery filters and traffic assumptions are
+retained in the URL for returning to comparison, but do not narrow or reprice
+the catalog. Catalog groups retain separate category/engine price comparisons,
+verification dates, evidence warnings and unknown mandatory charges. Select a
+configuration to inspect its own provider offers; reload, sharing and browser
+Back/Forward restore catalog and detail navigation under the hosting base path.
+
+The comparison check uses a synthetic exact overlap to prove that an excluded
+cheaper provider cannot supply a starting price. Production VPS and database
+journeys exercise provider filtering, catalog prices, all-engine coverage and
+restoration. The reviewed release sample still has no established genuine
+cross-provider exact match; #12's acquisition/release gate remains outstanding.

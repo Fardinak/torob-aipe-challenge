@@ -173,7 +173,8 @@ export function compare(
     if (
       (request.category !== "all" &&
         plan.category !== (request.category ?? "vps")) ||
-      (request.provider && plan.provider !== request.provider) ||
+      (request.provider &&
+        !request.provider.split(",").includes(plan.provider)) ||
       !matchesSearch(plan, request.query ?? "") ||
       (plan.category === "database" && db?.management.status !== "verified") ||
       (request.engine && plan.database?.engine !== request.engine) ||

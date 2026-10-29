@@ -552,3 +552,13 @@ select {
     display: none;
   }
 }
+
+.provider-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.provider-profile {
+  margin-bottom: 24px;
+}

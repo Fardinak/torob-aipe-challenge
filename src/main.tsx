@@ -175,6 +175,14 @@ const unpricedReasons: Record<string, string> = {
   unknown_traffic_policy: "شرایط ترافیک مشخص نیست.",
   arithmetic_out_of_range: "مصرف از محدوده محاسبه دقیق خارج است.",
 };
+function catalogHref(provider: string | null) {
+  const url = new URL(location.href);
+  url.searchParams.delete("detail");
+  if (provider) url.searchParams.set("catalog", provider);
+  else url.searchParams.delete("catalog");
+  return `${url.pathname}${url.search}`;
+}
+
 function Offer({
   candidate,
   quote,
@@ -192,6 +200,9 @@ function Offer({
       <div className="offer-main">
         <div className="identity">
           <h3>{catalog.providers[plan.provider].name}</h3>
+          <a href={catalogHref(plan.provider)}>
+            کاتالوگ {catalog.providers[plan.provider].name}
+          </a>
           {plan.database && <p>{plan.database.engine} — دیتابیس مدیریت‌شده</p>}
           <bdi className="plan-name">{plan.provider_plan_name ?? plan.id}</bdi>
           {!plan.provider_plan_name ? (
@@ -422,7 +433,7 @@ function Configuration({
 }
 
 function App() {
-  const { request, selectedId, setRequest, select, backToList } =
+  const { request, selectedId, catalogId, setRequest, select, backToList } =
     useDiscoveryState();
   const [mobile, setMobile] = useState(
     () => matchMedia("(max-width: 720px)").matches,
@@ -463,8 +474,24 @@ function App() {
         .flatMap((p) => p.database!.versions),
     ),
   ];
-  const comparison = compare(catalog, request);
-  const invalid = Object.keys(comparison.errors).length > 0;
+  const providerProfile =
+    catalogId && Object.hasOwn(catalog.providers, catalogId)
+      ? catalog.providers[catalogId]
+      : undefined;
+  const comparison = compare(
+    catalog,
+    catalogId
+      ? {
+          category: "all",
+          provider: catalogId,
+          priceMode: "base",
+          sort: request.sort,
+        }
+      : request,
+  );
+  const invalid =
+    Boolean(catalogId && !providerProfile) ||
+    Object.keys(comparison.errors).length > 0;
   const selected = selectedId
     ? comparison.items.find((item) => item.id === selectedId)
     : comparison.items[0];
@@ -475,291 +502,344 @@ function App() {
         <span>مقایسه زیرساخت</span>
       </header>
       <main className={mobile && selectedId && selected ? "show-detail" : ""}>
-        <section className="intro">
-          <div>
-            <p className="eyebrow">سرور مجازی و دیتابیس مدیریت‌شده / ایران</p>
+        {catalogId ? (
+          <section
+            className="provider-profile"
+            aria-label="کاتالوگ ارائه‌دهنده"
+          >
             <h1>
-              منابع مورد نیاز شما،
-              <br />
-              قیمت‌های روشن‌تر.
+              {providerProfile
+                ? `کاتالوگ ${providerProfile.name}`
+                : "ارائه‌دهنده یافت نشد"}
             </h1>
             <p>
-              پیشنهادها را یک‌جا ببینید و جزئیات هزینه را پیش از انتخاب بررسی
-              کنید.
+              این کاتالوگ همه پیشنهادهای پذیرفته‌شده این ارائه‌دهنده در دسته‌های
+              انتشار را با قیمت پایه خودش نشان می‌دهد؛ شامل همه محصولات آن شرکت
+              نیست.
             </p>
-          </div>
-          <aside className="coverage">
-            <strong>
-              {number(
-                catalog.plans.filter((p) => p.lifecycle === "active").length,
-              )}{" "}
-              رکورد / {number(Object.keys(catalog.providers).length)}{" "}
-              ارائه‌دهنده
-            </strong>
-            <p>نمونه زیرساخت با وضعیت شواهد هر پیشنهاد</p>
-            <small>نمونه محدود بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
-          </aside>
-        </section>
-        <section className="search-entry" aria-label="جستجو">
-          <label htmlFor="search">جستجوی محصول، دسته یا موتور</label>
-          <input
-            id="search"
-            type="search"
-            placeholder="VPS، PostgreSQL، Redis…"
-            value={request.query ?? ""}
-            onChange={(event) =>
-              setRequest({ ...request, query: event.target.value })
-            }
-          />
-          <p>
-            نام محصول یا موتور را جستجو کنید؛ نام ارائه‌دهنده در فیلتر جداگانه
-            است.
-          </p>
-          <div className="presets">
-            <button onClick={() => setRequest({ category: "vps" })}>
-              مرور سرور مجازی
-            </button>
-            <button onClick={() => setRequest({ category: "database" })}>
-              مرور دیتابیس مدیریت‌شده
-            </button>
-          </div>
-        </section>
-        <button
-          className="mobile-only"
-          onClick={() => drawer.current?.showModal()}
-        >
-          فیلترها
-        </button>
-        <dialog
-          ref={drawer}
-          open={!mobile}
-          className="filter-drawer"
-          aria-label="فیلترهای جستجو"
-        >
-          <button
-            className="mobile-only"
-            onClick={() => drawer.current?.close()}
-          >
-            نمایش نتایج
-          </button>
-          <section
-            className="requirements"
-            aria-labelledby="requirements-title"
-          >
-            <div className="section-heading">
-              <h2 id="requirements-title">چه منابعی نیاز دارید؟</h2>
-              <button className="reset" onClick={() => setRequest({})}>
-                پاک کردن فیلترها
-              </button>
-            </div>
-            <div className="presets">
-              <button onClick={() => setRequest({})}>بدون محدودیت</button>
-              <button
-                onClick={() =>
-                  setRequest({ category: request.category, ram: "4" })
+            <p>
+              فیلترهای جستجو در این نما اعمال نمی‌شوند؛ هنگام بازگشت حفظ
+              می‌شوند.
+            </p>
+            {providerProfile?.disclosures.map((note) => (
+              <p key={note}>{note}</p>
+            ))}
+            <a href={catalogHref(null)}>بازگشت به مقایسه</a>
+          </section>
+        ) : (
+          <>
+            <section className="intro">
+              <div>
+                <p className="eyebrow">
+                  سرور مجازی و دیتابیس مدیریت‌شده / ایران
+                </p>
+                <h1>
+                  منابع مورد نیاز شما،
+                  <br />
+                  قیمت‌های روشن‌تر.
+                </h1>
+                <p>
+                  پیشنهادها را یک‌جا ببینید و جزئیات هزینه را پیش از انتخاب
+                  بررسی کنید.
+                </p>
+              </div>
+              <aside className="coverage">
+                <strong>
+                  {number(
+                    catalog.plans.filter((p) => p.lifecycle === "active")
+                      .length,
+                  )}{" "}
+                  رکورد / {number(Object.keys(catalog.providers).length)}{" "}
+                  ارائه‌دهنده
+                </strong>
+                <p>نمونه زیرساخت با وضعیت شواهد هر پیشنهاد</p>
+                <small>نمونه محدود بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
+              </aside>
+            </section>
+            <nav className="provider-links" aria-label="کاتالوگ ارائه‌دهندگان">
+              {Object.entries(catalog.providers).map(([id, provider]) => (
+                <a key={id} href={catalogHref(id)}>
+                  کاتالوگ {provider.name}
+                </a>
+              ))}
+            </nav>
+            <section className="search-entry" aria-label="جستجو">
+              <label htmlFor="search">جستجوی محصول، دسته یا موتور</label>
+              <input
+                id="search"
+                type="search"
+                placeholder="VPS، PostgreSQL، Redis…"
+                value={request.query ?? ""}
+                onChange={(event) =>
+                  setRequest({ ...request, query: event.target.value })
                 }
-              >
-                حداقل ۴ GB رم
-              </button>
-              {!databaseCategory && (
-                <button
-                  onClick={() =>
-                    setRequest({
-                      category: "vps",
-                      ram: "4",
-                      egress: "1000",
-                      priceMode: "traffic",
-                    })
-                  }
-                >
-                  ۴ GB رم + ۱ TB خروجی
+              />
+              <p>
+                نام محصول یا موتور را جستجو کنید؛ نام ارائه‌دهنده در فیلتر
+                جداگانه است.
+              </p>
+              <div className="presets">
+                <button onClick={() => setRequest({ category: "vps" })}>
+                  مرور سرور مجازی
                 </button>
-              )}
-            </div>
-            <div className="fields mode-fields">
-              <div>
-                <label htmlFor="sort">ترتیب در هر دسته و موتور</label>
-                <select
-                  id="sort"
-                  value={request.sort ?? "price-asc"}
-                  onChange={(e) =>
-                    setRequest({
-                      ...request,
-                      sort: e.target.value as Request["sort"],
-                    })
-                  }
-                >
-                  <option value="price-asc">قیمت: کم به زیاد</option>
-                  <option value="price-desc">قیمت: زیاد به کم</option>
-                </select>
+                <button onClick={() => setRequest({ category: "database" })}>
+                  مرور دیتابیس مدیریت‌شده
+                </button>
               </div>
-              <div>
-                <label htmlFor="provider">ارائه‌دهنده</label>
-                <select
-                  id="provider"
-                  value={request.provider ?? ""}
-                  onChange={(e) =>
-                    setRequest({ ...request, provider: e.target.value })
-                  }
-                >
-                  <option value="">همه ارائه‌دهندگان</option>
-                  {Object.entries(catalog.providers).map(([id, provider]) => (
-                    <option key={id} value={id}>
-                      {provider.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="category">دسته خدمات</label>
-                <select
-                  id="category"
-                  value={request.category ?? "all"}
-                  onChange={(e) => {
-                    setRequest({
-                      ...request,
-                      category: e.target.value as Request["category"],
-                      ...(e.target.value === "database"
-                        ? {
-                            egress: "",
-                            ingress: "",
-                            priceMode: "base" as const,
-                          }
-                        : {}),
-                      engine: "",
-                      version: "",
-                    });
-                  }}
-                >
-                  <option value="all">همه دسته‌ها؛ مقایسه جداگانه</option>
-                  <option value="vps">سرور مجازی</option>
-                  <option value="database">دیتابیس مدیریت‌شده</option>
-                </select>
-              </div>
-              {databaseCategory && (
-                <>
-                  <div>
-                    <label htmlFor="engine">موتور دیتابیس</label>
-                    <select
-                      id="engine"
-                      value={request.engine ?? ""}
-                      onChange={(e) =>
+            </section>
+            <button
+              className="mobile-only"
+              onClick={() => drawer.current?.showModal()}
+            >
+              فیلترها
+            </button>
+            <dialog
+              ref={drawer}
+              open={!mobile}
+              className="filter-drawer"
+              aria-label="فیلترهای جستجو"
+            >
+              <button
+                className="mobile-only"
+                onClick={() => drawer.current?.close()}
+              >
+                نمایش نتایج
+              </button>
+              <section
+                className="requirements"
+                aria-labelledby="requirements-title"
+              >
+                <div className="section-heading">
+                  <h2 id="requirements-title">چه منابعی نیاز دارید؟</h2>
+                  <button className="reset" onClick={() => setRequest({})}>
+                    پاک کردن فیلترها
+                  </button>
+                </div>
+                <div className="presets">
+                  <button onClick={() => setRequest({})}>بدون محدودیت</button>
+                  <button
+                    onClick={() =>
+                      setRequest({ category: request.category, ram: "4" })
+                    }
+                  >
+                    حداقل ۴ GB رم
+                  </button>
+                  {!databaseCategory && (
+                    <button
+                      onClick={() =>
                         setRequest({
-                          ...request,
-                          engine: e.target.value,
-                          version: "",
+                          category: "vps",
+                          ram: "4",
+                          egress: "1000",
+                          priceMode: "traffic",
                         })
                       }
                     >
-                      <option value="">همه موتورها؛ مقایسه جداگانه</option>
-                      {engines.map((engine) => (
-                        <option key={engine}>{engine}</option>
-                      ))}
+                      ۴ GB رم + ۱ TB خروجی
+                    </button>
+                  )}
+                </div>
+                <div className="fields mode-fields">
+                  <div>
+                    <label htmlFor="sort">ترتیب در هر دسته و موتور</label>
+                    <select
+                      id="sort"
+                      value={request.sort ?? "price-asc"}
+                      onChange={(e) =>
+                        setRequest({
+                          ...request,
+                          sort: e.target.value as Request["sort"],
+                        })
+                      }
+                    >
+                      <option value="price-asc">قیمت: کم به زیاد</option>
+                      <option value="price-desc">قیمت: زیاد به کم</option>
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="version">نسخه دیتابیس</label>
+                    <label htmlFor="provider">ارائه‌دهنده</label>
                     <select
-                      id="version"
-                      disabled={!request.engine}
-                      value={request.version ?? ""}
+                      id="provider"
+                      multiple
+                      value={request.provider?.split(",").filter(Boolean) ?? []}
                       onChange={(e) =>
-                        setRequest({ ...request, version: e.target.value })
+                        setRequest({
+                          ...request,
+                          provider: Array.from(
+                            e.target.selectedOptions,
+                            (option) => option.value,
+                          )
+                            .filter(Boolean)
+                            .join(","),
+                        })
                       }
                     >
-                      <option value="">بدون محدودیت نسخه</option>
-                      {versions.map((version) => (
-                        <option key={version}>{version}</option>
-                      ))}
+                      <option value="">همه ارائه‌دهندگان</option>
+                      {Object.entries(catalog.providers).map(
+                        ([id, provider]) => (
+                          <option key={id} value={id}>
+                            {provider.name}
+                          </option>
+                        ),
+                      )}
                     </select>
                   </div>
-                </>
-              )}
-              <div>
-                <label htmlFor="resource-mode">روش تطبیق منابع</label>
-                <select
-                  id="resource-mode"
-                  value={request.resourceMode ?? "minimum"}
-                  onChange={(e) =>
-                    setRequest({
-                      ...request,
-                      resourceMode:
-                        e.target.value === "exact" ? "exact" : "minimum",
-                    })
-                  }
-                >
-                  <option value="minimum">حداقل منابع</option>
-                  <option value="exact">منابع دقیق</option>
-                </select>
-              </div>
-              {!databaseCategory && (
-                <div>
-                  <label htmlFor="price-mode">روش مقایسه قیمت</label>
-                  <select
-                    id="price-mode"
-                    value={comparison.priceMode}
-                    onChange={(e) =>
-                      setRequest({
-                        ...request,
-                        priceMode:
-                          e.target.value === "traffic" ? "traffic" : "base",
-                      })
-                    }
-                  >
-                    <option value="base">قیمت پایه اعلام‌شده</option>
-                    <option value="traffic">جمع برآوردی پایه و ترافیک</option>
-                  </select>
-                </div>
-              )}
-            </div>
-            <div className="fields">
-              {fields
-                .filter(
-                  ({ key }) =>
-                    !databaseCategory ||
-                    (key !== "egress" && key !== "ingress"),
-                )
-                .map(({ key, label }) => (
-                  <div key={key}>
-                    <label htmlFor={key}>
-                      {request.resourceMode === "exact"
-                        ? label.replace("حداقل", "دقیق")
-                        : label}
-                    </label>
-                    <input
-                      id={key}
-                      inputMode="numeric"
-                      type="text"
-                      value={request[key] ?? ""}
-                      placeholder={
-                        key === "egress" || key === "ingress"
-                          ? "۰"
-                          : "بدون محدودیت"
-                      }
-                      aria-invalid={Boolean(comparison.errors[key])}
-                      aria-describedby={
-                        comparison.errors[key] ? `${key}-error` : "input-help"
-                      }
-                      onChange={(e) =>
-                        setRequest({ ...request, [key]: e.target.value })
-                      }
-                    />
-                    {comparison.errors[key] && (
-                      <p className="field-error" id={`${key}-error`}>
-                        {comparison.errors[key]}
-                      </p>
-                    )}
+                  <div>
+                    <label htmlFor="category">دسته خدمات</label>
+                    <select
+                      id="category"
+                      value={request.category ?? "all"}
+                      onChange={(e) => {
+                        setRequest({
+                          ...request,
+                          category: e.target.value as Request["category"],
+                          ...(e.target.value === "database"
+                            ? {
+                                egress: "",
+                                ingress: "",
+                                priceMode: "base" as const,
+                              }
+                            : {}),
+                          engine: "",
+                          version: "",
+                        });
+                      }}
+                    >
+                      <option value="all">همه دسته‌ها؛ مقایسه جداگانه</option>
+                      <option value="vps">سرور مجازی</option>
+                      <option value="database">دیتابیس مدیریت‌شده</option>
+                    </select>
                   </div>
-                ))}
-            </div>
-            <p id="input-help" className="muted">
-              منابع خالی یعنی بدون محدودیت. مصرف VPS خالی یعنی صفر. ۱ TB برابر
-              ۱٬۰۰۰ GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد اعلام‌شده
-              ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛ هزینه‌های اجباری
-              نامشخص ممکن است به آن اضافه شوند.
-            </p>
-          </section>
-        </dialog>
+                  {databaseCategory && (
+                    <>
+                      <div>
+                        <label htmlFor="engine">موتور دیتابیس</label>
+                        <select
+                          id="engine"
+                          value={request.engine ?? ""}
+                          onChange={(e) =>
+                            setRequest({
+                              ...request,
+                              engine: e.target.value,
+                              version: "",
+                            })
+                          }
+                        >
+                          <option value="">همه موتورها؛ مقایسه جداگانه</option>
+                          {engines.map((engine) => (
+                            <option key={engine}>{engine}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div>
+                        <label htmlFor="version">نسخه دیتابیس</label>
+                        <select
+                          id="version"
+                          disabled={!request.engine}
+                          value={request.version ?? ""}
+                          onChange={(e) =>
+                            setRequest({ ...request, version: e.target.value })
+                          }
+                        >
+                          <option value="">بدون محدودیت نسخه</option>
+                          {versions.map((version) => (
+                            <option key={version}>{version}</option>
+                          ))}
+                        </select>
+                      </div>
+                    </>
+                  )}
+                  <div>
+                    <label htmlFor="resource-mode">روش تطبیق منابع</label>
+                    <select
+                      id="resource-mode"
+                      value={request.resourceMode ?? "minimum"}
+                      onChange={(e) =>
+                        setRequest({
+                          ...request,
+                          resourceMode:
+                            e.target.value === "exact" ? "exact" : "minimum",
+                        })
+                      }
+                    >
+                      <option value="minimum">حداقل منابع</option>
+                      <option value="exact">منابع دقیق</option>
+                    </select>
+                  </div>
+                  {!databaseCategory && (
+                    <div>
+                      <label htmlFor="price-mode">روش مقایسه قیمت</label>
+                      <select
+                        id="price-mode"
+                        value={comparison.priceMode}
+                        onChange={(e) =>
+                          setRequest({
+                            ...request,
+                            priceMode:
+                              e.target.value === "traffic" ? "traffic" : "base",
+                          })
+                        }
+                      >
+                        <option value="base">قیمت پایه اعلام‌شده</option>
+                        <option value="traffic">
+                          جمع برآوردی پایه و ترافیک
+                        </option>
+                      </select>
+                    </div>
+                  )}
+                </div>
+                <div className="fields">
+                  {fields
+                    .filter(
+                      ({ key }) =>
+                        !databaseCategory ||
+                        (key !== "egress" && key !== "ingress"),
+                    )
+                    .map(({ key, label }) => (
+                      <div key={key}>
+                        <label htmlFor={key}>
+                          {request.resourceMode === "exact"
+                            ? label.replace("حداقل", "دقیق")
+                            : label}
+                        </label>
+                        <input
+                          id={key}
+                          inputMode="numeric"
+                          type="text"
+                          value={request[key] ?? ""}
+                          placeholder={
+                            key === "egress" || key === "ingress"
+                              ? "۰"
+                              : "بدون محدودیت"
+                          }
+                          aria-invalid={Boolean(comparison.errors[key])}
+                          aria-describedby={
+                            comparison.errors[key]
+                              ? `${key}-error`
+                              : "input-help"
+                          }
+                          onChange={(e) =>
+                            setRequest({ ...request, [key]: e.target.value })
+                          }
+                        />
+                        {comparison.errors[key] && (
+                          <p className="field-error" id={`${key}-error`}>
+                            {comparison.errors[key]}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                </div>
+                <p id="input-help" className="muted">
+                  منابع خالی یعنی بدون محدودیت. مصرف VPS خالی یعنی صفر. ۱ TB
+                  برابر ۱٬۰۰۰ GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد
+                  اعلام‌شده ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛
+                  هزینه‌های اجباری نامشخص ممکن است به آن اضافه شوند.
+                </p>
+              </section>
+            </dialog>
+          </>
+        )}
         <section aria-labelledby="results-title" className="results">
           <div className="section-heading">
             <h2 id="results-title">پیشنهادها</h2>
@@ -775,48 +855,57 @@ function App() {
                     : "جمع پایه و ترافیک: کم به زیاد"}
             </span>
           </div>
-          <div className="active-filters" aria-label="فیلترهای فعال">
-            {Object.entries(request)
-              .filter(([, value]) => value !== "" && value !== "all")
-              .map(([key, value]) => (
-                <button
-                  key={key}
-                  onClick={() => {
-                    const next = { ...request };
-                    delete next[key as keyof Request];
-                    if (key === "category" || key === "engine") {
-                      delete next.version;
-                      delete next.engine;
+          {!catalogId && (
+            <div className="active-filters" aria-label="فیلترهای فعال">
+              {Object.entries(request)
+                .filter(([, value]) => value !== "" && value !== "all")
+                .map(([key, value]) => (
+                  <button
+                    key={key}
+                    onClick={() => {
+                      const next = { ...request };
+                      delete next[key as keyof Request];
+                      if (key === "category" || key === "engine") {
+                        delete next.version;
+                        delete next.engine;
+                      }
+                      setRequest({ category: "all", ...next });
+                    }}
+                  >
+                    حذف{" "}
+                    {
+                      (
+                        {
+                          query: "جستجو",
+                          category: "دسته",
+                          engine: "موتور",
+                          version: "نسخه",
+                          ram: "رم GB",
+                          cpu: "هسته",
+                          disk: "دیسک GB",
+                          budget: "بودجه تومان",
+                          sort: "ترتیب",
+                          provider: "ارائه‌دهنده",
+                          priceMode: "روش قیمت",
+                          resourceMode: "روش منابع",
+                          egress: "خروجی GB",
+                          ingress: "ورودی GB",
+                        } as Record<string, string>
+                      )[key]
                     }
-                    setRequest({ category: "all", ...next });
-                  }}
-                >
-                  حذف{" "}
-                  {
-                    (
-                      {
-                        query: "جستجو",
-                        category: "دسته",
-                        engine: "موتور",
-                        version: "نسخه",
-                        ram: "رم GB",
-                        cpu: "هسته",
-                        disk: "دیسک GB",
-                        budget: "بودجه تومان",
-                        sort: "ترتیب",
-                        provider: "ارائه‌دهنده",
-                        priceMode: "روش قیمت",
-                        resourceMode: "روش منابع",
-                        egress: "خروجی GB",
-                        ingress: "ورودی GB",
-                      } as Record<string, string>
-                    )[key]
-                  }
-                  : {value} ×
-                </button>
-              ))}
-          </div>
-          {databaseCategory && (
+                    :{" "}
+                    {key === "provider"
+                      ? String(value)
+                          .split(",")
+                          .map((id) => catalog.providers[id]?.name ?? id)
+                          .join("، ")
+                      : value}{" "}
+                    ×
+                  </button>
+                ))}
+            </div>
+          )}
+          {(databaseCategory || catalogId) && (
             <p>
               قیمت‌ها فقط در یک موتور مقایسه می‌شوند؛ ترتیب موتورها الفبایی است.
               یکسان بودن منابع به معنی مدیریت یا پشتیبان‌گیری یکسان نیست.
@@ -855,9 +944,11 @@ function App() {
                 فیلترها حفظ شده‌اند. منابع یا بودجه را تغییر دهید یا همه
                 پیشنهادها را ببینید.
               </p>
-              <button onClick={() => setRequest({})}>
-                نمایش همه پیشنهادها
-              </button>
+              {!catalogId && (
+                <button onClick={() => setRequest({})}>
+                  نمایش همه پیشنهادها
+                </button>
+              )}
             </div>
           ) : (
             <>

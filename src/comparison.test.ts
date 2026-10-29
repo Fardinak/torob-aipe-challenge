@@ -78,6 +78,22 @@ test("consolidates only evidenced exact resources and storage type, retaining of
   expect(compare(sample, {}).items).toHaveLength(2);
 });
 
+test("provider selection isolates own prices before consolidation, including multiple selected providers", () => {
+  const sample = overlappingCatalog();
+  const own = compare(sample, { provider: "other" });
+  expect(own.items[0]).toMatchObject({
+    startingPriceToman: 800000,
+    startingOfferId: "second",
+  });
+  expect(own.items[0].offers.map(({ plan }) => plan.provider)).toEqual([
+    "other",
+  ]);
+  expect(
+    compare(sample, { provider: "other,manageit" }).items[0].offers,
+  ).toHaveLength(2);
+  expect(compare(sample, { provider: "missing" }).items).toEqual([]);
+});
+
 test("exact mode constrains every selected resource, including zero, while blanks impose no constraint", () => {
   expect(
     compare(catalog, { ram: 4, resourceMode: "exact" }).ranked.map(
