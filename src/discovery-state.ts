@@ -68,7 +68,14 @@ export function useDiscoveryState() {
         url.searchParams.set(key, String(value));
     }
     if (selectedId) url.searchParams.set("detail", selectedId);
-    history.pushState({ scrollY: selectedId ? 0 : window.scrollY }, "", url);
+    history.pushState(
+      {
+        scrollY: selectedId ? 0 : window.scrollY,
+        fromList: Boolean(selectedId),
+      },
+      "",
+      url,
+    );
     setState({ request, selectedId });
   };
   return {

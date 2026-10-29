@@ -619,6 +619,13 @@ function App() {
                     setRequest({
                       ...request,
                       category: e.target.value as Request["category"],
+                      ...(e.target.value === "database"
+                        ? {
+                            egress: "",
+                            ingress: "",
+                            priceMode: "base" as const,
+                          }
+                        : {}),
                       engine: "",
                       version: "",
                     });
@@ -763,7 +770,9 @@ function App() {
                   ? request.sort === "price-desc"
                     ? "قیمت پایه: زیاد به کم"
                     : "قیمت پایه: کم به زیاد"
-                  : "جمع پایه و ترافیک: کم به زیاد"}
+                  : request.sort === "price-desc"
+                    ? "جمع پایه و ترافیک: زیاد به کم"
+                    : "جمع پایه و ترافیک: کم به زیاد"}
             </span>
           </div>
           <div className="active-filters" aria-label="فیلترهای فعال">
@@ -873,13 +882,7 @@ function App() {
                         key={item.id}
                         item={item}
                         selected={selected?.id === item.id}
-                        onSelect={() => {
-                          select(item.id);
-                          history.replaceState(
-                            { ...history.state, fromList: true },
-                            "",
-                          );
-                        }}
+                        onSelect={() => select(item.id)}
                       />
                     </div>
                   ))}

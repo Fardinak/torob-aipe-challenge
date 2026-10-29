@@ -258,7 +258,9 @@ test("search, recover and restore the same discovery detail with browser navigat
     await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
   if (isMobile)
     await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+  await page.getByLabel("خروجی ماهانه (GB)", { exact: true }).fill("invalid");
   await page.getByLabel("دسته خدمات").selectOption("database");
+  await expect(page.getByRole("alert")).toHaveCount(0);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
   await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
   await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
