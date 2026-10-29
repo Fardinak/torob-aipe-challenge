@@ -3,7 +3,10 @@ import { catalogSchema, databaseServiceKeys, type Plan } from "./catalog";
 export type Resource = "ram" | "cpu" | "disk";
 export type InputField = Resource | "egress" | "ingress" | "budget";
 export type Request = Partial<Record<InputField, string | number>> & {
-  category?: "vps" | "database";
+  category?: "vps" | "database" | "all";
+  query?: string;
+  sort?: "price-asc" | "price-desc";
+  provider?: string;
   engine?: string;
   version?: string;
   resourceMode?: "minimum" | "exact";
@@ -53,6 +56,7 @@ export type Comparison = {
       | "catalog"
       | "resourceMode"
       | "priceMode"
+      | "sort"
       | "category"
       | "version",
       string
@@ -92,9 +96,14 @@ export function compare(
     result.errors.priceMode = "روش مقایسه قیمت معتبر نیست.";
   if (
     request.category !== undefined &&
-    !["vps", "database"].includes(request.category)
+    !["vps", "database", "all"].includes(request.category)
   )
     result.errors.category = "دسته معتبر نیست.";
+  if (
+    request.sort !== undefined &&
+    !["price-asc", "price-desc"].includes(request.sort)
+  )
+    result.errors.sort = "ترتیب معتبر نیست.";
   if (request.version && (!request.engine || request.category !== "database"))
     result.errors.version = "برای نسخه، موتور دیتابیس را انتخاب کنید.";
   const amounts: Record<InputField, number> = {
@@ -162,7 +171,10 @@ export function compare(
         db[key].status = effectiveFacts[`database_${key}`];
     }
     if (
-      plan.category !== (request.category ?? "vps") ||
+      (request.category !== "all" &&
+        plan.category !== (request.category ?? "vps")) ||
+      (request.provider && plan.provider !== request.provider) ||
+      !matchesSearch(plan, request.query ?? "") ||
       (plan.category === "database" && db?.management.status !== "verified") ||
       (request.engine && plan.database?.engine !== request.engine) ||
       (request.version &&
@@ -205,7 +217,7 @@ export function compare(
       result.excluded.push({ plan, reasons: ["base_price_above_budget"] });
       continue;
     }
-    if (result.priceMode === "base") {
+    if (result.priceMode === "base" || plan.category === "database") {
       result.ranked.push({
         plan,
         baseMonthlyToman: plan.advertised_monthly_toman,
@@ -378,8 +390,38 @@ export function compare(
           ? 1
           : b.startingPriceToman === null
             ? -1
-            : a.startingPriceToman - b.startingPriceToman) ||
+            : (a.startingPriceToman - b.startingPriceToman) *
+              (request.sort === "price-desc" ? -1 : 1)) ||
       (a.id < b.id ? -1 : a.id > b.id ? 1 : 0),
   );
   return result;
+}
+
+// Category names are the release vocabulary; engine/product names come from
+// the reviewed catalog. Provider names and workload guesses never enter search.
+function matchesSearch(plan: Plan, query: string): boolean {
+  const normalize = (value: string) =>
+    value
+      .toLowerCase()
+      .normalize("NFKC")
+      .replace(/ي/g, "ی")
+      .replace(/ك/g, "ک")
+      .replace(/[\u200c-\u200f-]/g, " ");
+  const names =
+    plan.category === "vps"
+      ? "VPS virtual private server سرور مجازی"
+      : "managed database دیتابیس مدیریت شده";
+  // Verified Persian spellings in retained Liara setup evidence; see
+  // docs/search-aliases.md. New engines still match their catalog names.
+  const aliases: Record<string, string> = {
+    PostgreSQL: "پستگرس",
+    Redis: "ردیس",
+  };
+  const searchable = normalize(
+    `${names} ${plan.database?.engine ?? ""} ${aliases[plan.database?.engine ?? ""] ?? ""} ${plan.provider_plan_name ?? ""}`,
+  );
+  return normalize(query)
+    .trim()
+    .split(/\s+/)
+    .every((word) => searchable.includes(word));
 }

@@ -1,6 +1,6 @@
 # سروربین — VPS and managed database discovery
 
-Persian RTL React + TypeScript application for issues #2, #3, #13 and #14. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
+Persian RTL React + TypeScript application for issues #2, #3, #13–#16. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
 
 ## Deployment
 
@@ -16,8 +16,7 @@ against the deployed URL. A failed post-deployment check leaves the site
 published but marks the workflow failed; inspect the failed step before
 claiming delivery complete. The
 Vite base path is supplied by `BASE_PATH`, so the same build remains usable at
-`/` locally and under the repository path in production. The root page can be
-refreshed directly and returns to the default in-memory comparison.
+`/` locally and under the repository path in production. The root page can be refreshed directly; query parameters restore the discovery comparison and selected detail. A clean homepage URL uses defaults.
 
 ## Run
 
@@ -28,7 +27,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. State stays in memory; reload clears requirements.
+Open the local URL printed by Vite. Discovery state is stored in the URL. Reload, sharing and browser Back/Forward restore it.
 
 ## Verify
 
@@ -66,9 +65,9 @@ Per-offer traffic policies and explicit assumptions keep product interpretations
 
 Blank resource requirements impose no constraints; blank usage is zero. Usage is in whole GB, with 1 TB explicitly equal to 1,000 GB. Nonnegative whole numbers (including Persian/Arabic digits) update results immediately. Invalid input hides quotes until corrected. Equal prices sort by stable plan ID, with no performance preference implied.
 
-Billing disclosures preserve unknown CPU allocation, tax, mandatory fees and IPv4 inclusion. ManageIT's optional floating IPv4 price is explanatory only. Published monthly prices are not converted to hourly prices. The prototype remains on `prototype/vps-comparison`; this application implements layout A's interaction without merging the prototype.
+Billing disclosures preserve unknown CPU allocation, tax, mandatory fees and IPv4 inclusion. ManageIT's optional floating IPv4 price is explanatory only. Published monthly prices are not converted to hourly prices. The prototype remains on `prototype/vps-comparison`; this application implements approved layout C without merging the prototype.
 
-See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; the broader coverage, search, provider catalogs, URL restoration and refined mobile navigation in #12 remain separate work.
+See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; broader coverage, provider catalogs and handoff in #12 remain separate work.
 
 ## Traffic comparison demo
 
@@ -85,8 +84,7 @@ Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranSe
    alongside five separately unpriced candidates; explain why unknown overage
    is not ranked as a cheap base price.
 4. **2:15–3:15:** Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
-   the provider source link in a new tab. Reset the filters and refresh to show
-   the documented default state.
+   the provider source link in a new tab. Share or refresh the URL to restore the comparison; open the clean homepage to show defaults.
 5. **3:15–4:30:** Close with the engineering boundary: a static React/TypeScript app, exact
    comparison operation tests, responsive browser tests, and fixed product
    interpretations kept separate from source facts. Explain the AI-assisted
@@ -104,8 +102,43 @@ provider before purchase. The prototype reference remains on
 
 ## Managed database initial slice (#15)
 
-Choose **دیتابیس مدیریت‌شده** in the category control, then an engine and a verified version. PostgreSQL and Redis each have two reviewed initial Liara base-package configurations. Minimum/exact resources and base-price budgets operate before listing prices. Engine/version choices come from admitted offers, with no engine whitelist. Version matching uses the exact published version string. Unknown/unsupported evidence cannot satisfy it. VPS remains the default category. Database comparisons always use base prices and never VPS traffic policies; cross-engine browsing is ordered by engine, then price within each engine.
+Choose **دیتابیس مدیریت‌شده** in the category control, then an engine and a verified version. PostgreSQL and Redis each have two reviewed initial Liara base-package configurations. Minimum/exact resources and base-price budgets operate before listing prices. Engine/version choices come from admitted offers, with no engine whitelist. Version matching uses the exact published version string. Unknown/unsupported evidence cannot satisfy it. The clean homepage browses both release categories in separate groups; the comparison operation retains VPS as its default for existing callers. Database comparisons always use base prices and never VPS traffic policies; cross-engine browsing is ordered by engine, then price within each engine.
 
 Database listing identity adds engine and verified node topology to exact CPU/RAM/storage identity, excluding version. Unknown topology keeps the initial offers independent. Details expose management, backups, location, topology, package, billing, mandatory-charge uncertainty, statuses, source links and general-tariff handoff. The visible backup conflict is unresolved, not an included-backup promise. See [initial review](research/managed-database-initial-review-2026-10-29.md). This does not fulfill the separate broad acquisition or genuine cross-provider release gate.
 
 Demo: switch category, select PostgreSQL / 18.4 / minimum 4 GB RAM, inspect Saturn at 4,125,000 toman/month and expand its service evidence. Switch to exact 8 GB to show preserved empty results, return to 4 GB, then choose Redis / 8.0. Follow the disclosed general provider tariff link. The representative browser journey runs on desktop and mobile alongside the existing VPS journeys.
+
+## Search and restoration (#16)
+
+The prominent search spans both categories. Category buttons enter the same
+results view without a query. Search matches product/category/engine names
+and [verified Persian/English aliases](docs/search-aliases.md); it does not
+search provider metadata or infer hardware for workloads. Select the database
+category to expose engine and applicable version facets. Global browsing keeps
+VPS and each database engine in separate price comparisons, including when
+VPS traffic mode is active. Sort changes ordering within each group; unpriced
+offers remain last.
+
+Filters appear above the desktop list beside a persistent, scrollable detail
+pane. On mobile, filters use a keyboard-accessible modal drawer (Escape closes
+it); selecting a configuration shows full-width details. Back restores list
+position and keyboard focus. Prices, billing basis, verification dates and
+relevant uncertainty remain visible; deeper service/evidence information is
+expandable. Counts, removable filter buttons and explicit reset recover empty
+results without changing constraints silently.
+
+The URL carries `query`, `category`, `engine`, `version`, `ram`, `cpu`, `disk`,
+`resourceMode`, `budget`, `provider`, `sort`, `egress`, `ingress`, `priceMode`
+and `detail`. No browser-local storage is used. Navigation preserves the
+hosting base path. Explicit filter changes clear selected detail; shared or
+reloaded detail IDs restore eligible offers. If an ID no longer matches the
+catalog, the view explains that it is unavailable rather than substituting a
+different selected detail. Invalid inputs suppress results until corrected.
+
+Try searching `پستگرس`, choose the database category / PostgreSQL / 18.4 /
+minimum 4 GB, select the configuration, then reload or share its URL. Remove
+the search chip, change engine to Redis, and use browser Back/Forward. On a
+phone, open the filter drawer, narrow results, inspect a configuration and use
+Back. The production browser journeys cover these outcomes, list position,
+focus, empty recovery and restored VPS traffic arithmetic under the hosting
+base path. The existing catalog coverage/release limitations still apply.

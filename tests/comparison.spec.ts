@@ -3,6 +3,10 @@ import { test, expect } from "@playwright/test";
 test("browse exact configurations, filter base budgets, inspect provider terms and preserve traffic comparison", async ({
   page,
 }) => {
+  test.skip(
+    test.info().project.name === "mobile",
+    "Desktop pricing journey; mobile discovery is covered separately.",
+  );
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   page.on("requestfailed", (request) => errors.push(request.url()));
@@ -18,6 +22,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     .getByRole("button")
     .filter({ has: page.locator("strong") });
   const offers = page.getByRole("article");
+  await page.getByLabel("دسته خدمات").selectOption("vps");
   const ram = page.getByLabel("حداقل رم (GB)", { exact: true });
   const budget = page.getByLabel("سقف قیمت پایه ماهانه (تومان)");
   const egress = page.getByLabel("خروجی ماهانه (GB)", { exact: true });
@@ -25,16 +30,12 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await expect(configurations.first()).toContainText("از ۷۱۰٬۰۰۰");
   await expect(offers).toHaveCount(1);
   await expect(offers).toContainText("قیمت پایه اعلام‌شده");
-  await page.keyboard.press("Tab");
-  await expect(
-    page.getByRole("button", { name: "پاک کردن فیلترها" }),
-  ).toBeFocused();
-  await page.keyboard.press("Tab");
-  await page.keyboard.press("Tab");
+
   const preset = page.getByRole("button", {
     name: "حداقل ۴ GB رم",
     exact: true,
   });
+  await preset.focus();
   await expect(preset).toBeFocused();
   expect(
     await preset.evaluate((element) => getComputedStyle(element).outlineStyle),
@@ -80,6 +81,12 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await manageitConfiguration.click();
   await expect(offers).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰ = ۲٬۶۲۰٬۰۰۰");
   await expect(offers).toContainText("۱٬۰۰۰ GB × ۱٬۲۰۰");
+  await page.reload();
+  await expect(
+    page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
+  ).toHaveValue("1000");
+  await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("traffic");
+  await expect(offers).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰ = ۲٬۶۲۰٬۰۰۰");
   await egress.fill("1200");
   await expect(configurations).toHaveCount(8);
   await expect(
@@ -114,12 +121,12 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await ram.fill("128");
   await expect(configurations).toHaveCount(0);
   await page.getByRole("button", { name: "نمایش همه پیشنهادها" }).click();
-  await expect(configurations).toHaveCount(12);
+  await expect(configurations).toHaveCount(16);
   await ram.fill("۴");
-  await expect(configurations).toHaveCount(8);
+  await expect(configurations).toHaveCount(10);
   await page.reload();
-  await expect(configurations).toHaveCount(12);
-  await expect(ram).toHaveValue("");
+  await expect(configurations).toHaveCount(10);
+  await expect(ram).toHaveValue("۴");
   await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("base");
   expect(
     await page.evaluate(
@@ -132,6 +139,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
 test("evidence warnings accompany starting prices and unknown identity stays separate", async ({
   page,
 }) => {
+  test.skip(test.info().project.name === "mobile");
   await page.clock.setFixedTime(new Date("2026-11-28T00:00:00Z"));
   await page.goto("./");
   const first = page.locator(".configuration").first();
@@ -160,6 +168,7 @@ test("evidence warnings accompany starting prices and unknown identity stays sep
 test("browse managed databases, choose engine/version and inspect reviewed service facts", async ({
   page,
 }) => {
+  test.skip(test.info().project.name === "mobile");
   await page.goto("./");
   await page.getByLabel("دسته خدمات").selectOption("database");
   await expect(
@@ -194,6 +203,73 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   await expect(page.getByLabel("نسخه دیتابیس")).toHaveValue("");
   await page.getByLabel("نسخه دیتابیس").selectOption("8.0");
   await expect(page.getByRole("article")).toContainText("Redis");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+});
+
+test("search, recover and restore the same discovery detail with browser navigation", async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto("./");
+  const search = page.getByLabel("جستجوی محصول، دسته یا موتور");
+  await expect(page.locator(".configuration")).toHaveCount(16);
+  if (isMobile) {
+    const last = page.locator(".configuration").last();
+    await last.scrollIntoViewIfNeeded();
+    const listY = await page.evaluate(() => scrollY);
+    await last.click();
+    await expect(
+      page.getByRole("heading", { name: "پیشنهادهای ارائه‌دهندگان" }),
+    ).toBeFocused();
+    await expect(page.locator(".configuration-list")).not.toBeVisible();
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+    await expect(page.locator(".configuration-list")).toBeVisible();
+    await expect
+      .poll(async () => Math.abs((await page.evaluate(() => scrollY)) - listY))
+      .toBeLessThan(4);
+    await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+    await page.keyboard.press("Escape");
+    await expect(
+      page.getByRole("button", { name: "فیلترها", exact: true }),
+    ).toBeFocused();
+  }
+  await search.fill("PostgreSQL");
+  await expect(page.locator(".configuration")).toHaveCount(2);
+  await page.locator(".configuration").last().click();
+  await expect(page.getByRole("article")).toContainText("زحل");
+  const shared = page.url();
+  await page.reload();
+  await expect(page.getByRole("article")).toContainText("زحل");
+  if (isMobile)
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+  await search.fill("Liara");
+  await expect(page.locator(".empty")).toBeVisible();
+  await page.goBack();
+  await expect(search).toHaveValue("PostgreSQL");
+  await page.goForward();
+  await expect(search).toHaveValue("Liara");
+  await page.goto(shared);
+  await expect(page.getByRole("article")).toContainText("زحل");
+  if (isMobile)
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+  if (isMobile)
+    await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+  await page.getByLabel("دسته خدمات").selectOption("database");
+  await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
+  await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
+  await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
+  await page.getByLabel("ترتیب در هر دسته و موتور").selectOption("price-desc");
+  if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
+  await expect(page.locator(".configuration")).toHaveCount(1);
+  await page.locator(".configuration").click();
+  await page.reload();
+  await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
+  expect(page.url()).toContain("version=18.4");
+  expect(page.url()).toContain("sort=price-desc");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,

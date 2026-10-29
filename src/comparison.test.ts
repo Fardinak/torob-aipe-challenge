@@ -616,3 +616,54 @@ test("failed database evidence gates versions and topology without hiding unaffe
   });
   expect(compare(sample, { category: "database" }).items).toEqual([]);
 });
+
+test("searches catalog names across separate categories without searching providers or recommending hardware", () => {
+  const all = compare(reviewedCatalog, { category: "all" });
+  expect(all.items).toHaveLength(16);
+  const postgres = compare(reviewedCatalog, {
+    category: "all",
+    query: "postgresql",
+  });
+  expect(postgres.items).toHaveLength(2);
+  expect(
+    compare(reviewedCatalog, { category: "all", query: "پستگرس" }).items,
+  ).toHaveLength(2);
+  expect(
+    compare(reviewedCatalog, { category: "all", query: "ردیس" }).items,
+  ).toHaveLength(2);
+  expect(postgres.items.every((item) => item.engine === "PostgreSQL")).toBe(
+    true,
+  );
+  expect(
+    compare(reviewedCatalog, { category: "all", query: "Liara" }).items,
+  ).toEqual([]);
+  expect(
+    compare(reviewedCatalog, { category: "all", query: "wordpress" }).items,
+  ).toEqual([]);
+  expect(
+    compare(reviewedCatalog, { category: "all", query: "سرور مجازی" }).items,
+  ).toHaveLength(12);
+});
+
+test("global traffic discovery keeps database base prices and sorts within each engine only", () => {
+  const result = compare(reviewedCatalog, {
+    category: "all",
+    priceMode: "traffic",
+    egress: "1200",
+    sort: "price-desc",
+  });
+  const databases = result.ranked.filter(
+    ({ plan }) => plan.category === "database",
+  );
+  expect(databases).toHaveLength(4);
+  expect(databases.every((quote) => quote.trafficChargeToman === 0)).toBe(true);
+  expect(
+    databases.find(({ plan }) => plan.id === "liara-pg-2c-4g-40g-base")
+      ?.subtotalToman,
+  ).toBe(4125000);
+  expect(
+    result.items
+      .filter((item) => item.engine === "PostgreSQL")
+      .map((item) => item.startingPriceToman),
+  ).toEqual([4125000, 1300000]);
+});
