@@ -254,13 +254,27 @@ function Offer({
           )}
           <small>
             {candidate.totalCostUnknown ? "هزینه نهایی نامشخص؛ " : ""}
-            {catalog.providers[plan.provider].mandatory_fee_completeness
+            {!candidate.totalCostUnknown
               ? "هزینه‌های اجباری بررسی شده"
               : "هزینه‌های اجباری ناقص"}
           </small>
-          {Object.values(plan.evidence.facts).some(
+          {(Object.values(plan.evidence.facts).some(
             (status) => status === "conflicting" || status === "failed",
-          ) && (
+          ) ||
+            (plan.database &&
+              [
+                plan.database.version_status,
+                plan.database.topology_status,
+                ...[
+                  plan.database.management,
+                  plan.database.backup,
+                  plan.database.location,
+                  plan.database.feature_package,
+                  plan.database.mandatory_charges,
+                ].map((fact) => fact.status),
+              ].some(
+                (status) => status === "conflicting" || status === "failed",
+              ))) && (
             <small className="evidence-warning">
               شواهد حل‌نشده؛ اطلاعات متأثر در مقایسه استفاده نمی‌شود.
             </small>

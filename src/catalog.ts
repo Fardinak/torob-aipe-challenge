@@ -54,6 +54,18 @@ const evidence = z.object({
   facts,
   notes: z.array(text),
 });
+export const databaseServiceKeys = [
+  "management",
+  "backup",
+  "location",
+  "feature_package",
+  "mandatory_charges",
+] as const;
+const databaseFactKeys = z.enum([
+  "database_version",
+  "database_topology",
+  ...databaseServiceKeys.map((key) => `database_${key}` as const),
+]);
 const serviceFact = z.object({ status: factStatus, detail: text });
 const database = z.object({
   engine: text,
@@ -97,7 +109,7 @@ const plan = published.extend({
       attempted_at: date,
       outcome: z.enum(["success", "failed"]),
       sources: z.array(text).min(1),
-      affected_facts: z.array(facts.keyof()),
+      affected_facts: z.array(z.union([facts.keyof(), databaseFactKeys])),
       note: text,
     }),
   ),
@@ -124,9 +136,7 @@ export const catalogSchema = z
         issue(`Withdrawal requires confirmation: ${offer.id}`);
       if (
         offer.category === "database" &&
-        (!offer.database ||
-          offer.database.management.status !== "verified" ||
-          !offer.evidence.last_verified_at)
+        (!offer.database || !offer.evidence.last_verified_at)
       )
         issue(
           `Managed database requires reviewed operating responsibility: ${offer.id}`,

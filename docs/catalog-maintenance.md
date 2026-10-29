@@ -1,4 +1,4 @@
-# Manual VPS evidence refresh and identity
+# Manual infrastructure evidence refresh and identity
 
 The application is static. Edit `research/vps-reviewed-catalog.json`, review the
 first-party evidence and run the production checks before publication. The
@@ -24,7 +24,7 @@ Different CPU/RAM/disk sizes, storage types, hardware/feature packages,
 topologies, regions or billing variants get different IDs. The validator rejects
 changes to those dimensions within one ID's history. A display label is not a
 storage type. Unknown identity dimensions are `null`; they cannot prove that two
-offers match. This slice does not consolidate configurations. Never recycle an
+offers match. Listing consolidation requires all exact identity facts to be verified. Never recycle an
 old ID for a replacement sold under the same marketing name. If the old
 configuration cannot be reverified, keep its history, mark affected facts
 unresolved and record the attempt; absence alone is not confirmed withdrawal.
@@ -89,3 +89,27 @@ Synthetic test fixtures cover withdrawal, failed refresh, unknown traffic and
 identity failures; they are never release offers or evidence of market coverage.
 The original worked arithmetic remains tested against the historical tariffs;
 the application uses the refreshed reviewed catalog.
+
+## Managed database evidence
+
+Set category to `database` with a free-form engine identity and retained version
+evidence. Ordinary hosting and a database installed on VPS do not qualify.
+Admission requires an identifiable priced configuration and first-party provider
+operating responsibility beyond provisioning. Keep sources and review dates.
+An unresolved management responsibility excludes the offer from database results;
+unresolved versions cannot satisfy a version filter. Version is not listing identity.
+Database grouping additionally requires verified node topology and the same engine.
+
+Record database attempts using `database_version`, `database_topology`,
+`database_management`, `database_backup`, `database_location`,
+`database_feature_package` and `database_mandatory_charges` in `affected_facts`.
+The same latest-attempt rule applies as for resources and tariffs. Successful
+attempts restore the reviewed status, including explicit unknown/conflicting facts.
+Keep conflicting backup claims and their applicable package visible; a generic
+backup guide cannot override a package restriction or establish another engine's
+backup guarantee. Per-offer unresolved mandatory charges preserve cost uncertainty
+even when provider-wide fees are documented. Database offers never inherit VPS
+traffic policies or compete on price across engines.
+
+The [initial review](../research/managed-database-initial-review-2026-10-29.md)
+is a sample, not the broad acquisition or exact cross-provider release gate.

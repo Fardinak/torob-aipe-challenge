@@ -1,5 +1,5 @@
 import { trafficPolicySchema, type TrafficPolicies } from "./traffic-policy";
-import { catalogSchema, type Plan } from "./catalog";
+import { catalogSchema, databaseServiceKeys, type Plan } from "./catalog";
 export type Resource = "ram" | "cpu" | "disk";
 export type InputField = Resource | "egress" | "ingress" | "budget";
 export type Request = Partial<Record<InputField, string | number>> & {
@@ -124,15 +124,46 @@ export function compare(
   for (const plan of catalog.plans) {
     // Parsing gives us a private copy. A latest failed attempt invalidates only
     // its affected facts, even if a maintainer omitted a redundant status edit.
-    const reviewedFacts = { ...plan.evidence.facts };
+    const db = plan.database;
+    const reviewedFacts: Record<
+      string,
+      Plan["evidence"]["facts"]["cpu_count"]
+    > = {
+      ...plan.evidence.facts,
+      ...(db
+        ? {
+            database_version: db.version_status,
+            database_topology: db.topology_status,
+            ...Object.fromEntries(
+              databaseServiceKeys.map((key) => [
+                `database_${key}`,
+                db[key].status,
+              ]),
+            ),
+          }
+        : {}),
+    };
+    const effectiveFacts = { ...reviewedFacts };
     for (const attempt of plan.verification_attempts) {
       for (const key of attempt.affected_facts) {
-        plan.evidence.facts[key] =
-          attempt.outcome === "failed" ? "failed" : reviewedFacts[key];
+        if (reviewedFacts[key] !== undefined)
+          effectiveFacts[key] =
+            attempt.outcome === "failed" ? "failed" : reviewedFacts[key];
       }
+    }
+    for (const key of Object.keys(
+      plan.evidence.facts,
+    ) as (keyof Plan["evidence"]["facts"])[])
+      plan.evidence.facts[key] = effectiveFacts[key];
+    if (db) {
+      db.version_status = effectiveFacts.database_version;
+      db.topology_status = effectiveFacts.database_topology;
+      for (const key of databaseServiceKeys)
+        db[key].status = effectiveFacts[`database_${key}`];
     }
     if (
       plan.category !== (request.category ?? "vps") ||
+      (plan.category === "database" && db?.management.status !== "verified") ||
       (request.engine && plan.database?.engine !== request.engine) ||
       (request.version &&
         (plan.database?.version_status !== "verified" ||
@@ -295,7 +326,9 @@ export function compare(
       quote,
       reasons: quote.reasons,
       totalCostUnknown:
-        !catalog.providers[quote.plan.provider].mandatory_fee_completeness,
+        !catalog.providers[quote.plan.provider].mandatory_fee_completeness ||
+        (quote.plan.database !== undefined &&
+          quote.plan.database.mandatory_charges.status !== "verified"),
     })),
     ...result.unpriced.map((offer) => ({ ...offer, totalCostUnknown: true })),
   ];

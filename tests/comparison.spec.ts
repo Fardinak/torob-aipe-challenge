@@ -178,7 +178,7 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   await page.getByText("جزئیات هزینه و منبع", { exact: true }).click();
   await expect(page.getByRole("article")).toContainText("مسئولیت مانیتورینگ");
   await expect(
-    page.getByRole("link", { name: "liara-pg-versions" }),
+    page.getByRole("link", { name: "نسخه‌های PostgreSQL" }),
   ).toHaveAttribute(
     "href",
     "https://docs.liara.ir/dbaas/postgresql/choose-version/",

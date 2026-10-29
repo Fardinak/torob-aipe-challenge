@@ -523,6 +523,15 @@ test("managed database boundaries isolate engines, versions, topology and VPS tr
   expect(result.items[0].startingPriceToman).toBe(900);
   expect(result.items[0].offers.map((o) => o.plan.id)).toEqual(["pg"]);
   expect(compare(sample, { category: "database" }).items).toHaveLength(2);
+  expect(
+    compare(sample, { category: "database" }).items.map((item) => [
+      item.engine,
+      item.startingPriceToman,
+    ]),
+  ).toEqual([
+    ["PostgreSQL", 200],
+    ["Redis", 100],
+  ]);
   sample.plans[2].database!.version_status = "unknown";
   expect(
     compare(sample, {
@@ -539,4 +548,71 @@ test("managed database boundaries isolate engines, versions, topology and VPS tr
   expect(compare(sample, {}).ranked.map((q) => q.plan.id)).toEqual([
     "manageit-1c-1g-25g",
   ]);
+});
+
+test("failed database evidence gates versions and topology without hiding unaffected base prices", () => {
+  const sample = structuredClone(reviewedCatalog);
+  sample.plans = sample.plans
+    .filter(
+      (p) => p.category === "database" && p.database?.engine === "PostgreSQL",
+    )
+    .slice(0, 1);
+  const plan = sample.plans[0];
+  sample.providers.liara.mandatory_fee_completeness = true;
+  expect(
+    compare(sample, { category: "database" }).items[0].offers[0]
+      .totalCostUnknown,
+  ).toBe(true);
+  plan.verification_attempts.push({
+    attempted_at: "2026-10-30",
+    outcome: "failed",
+    sources: plan.evidence.sources,
+    affected_facts: ["database_version"],
+    note: "Version page unavailable",
+  });
+  expect(
+    compare(sample, {
+      category: "database",
+      engine: "PostgreSQL",
+      version: "18.4",
+    }).items,
+  ).toEqual([]);
+  expect(compare(sample, { category: "database" }).ranked).toHaveLength(1);
+  plan.verification_attempts.push({
+    attempted_at: "2026-10-31",
+    outcome: "success",
+    sources: plan.evidence.sources,
+    affected_facts: ["database_version"],
+    note: "Version reviewed again",
+  });
+  expect(
+    compare(sample, {
+      category: "database",
+      engine: "PostgreSQL",
+      version: "18.4",
+    }).ranked,
+  ).toHaveLength(1);
+  plan.topology = "single-node";
+  plan.database!.topology_status = "verified";
+  expect(compare(sample, { category: "database" }).items[0].exactIdentity).toBe(
+    true,
+  );
+  plan.verification_attempts.push({
+    attempted_at: "2026-11-01",
+    outcome: "failed",
+    sources: plan.evidence.sources,
+    affected_facts: ["database_topology"],
+    note: "Topology no longer verifiable",
+  });
+  expect(compare(sample, { category: "database" }).items[0].exactIdentity).toBe(
+    false,
+  );
+  plan.verification_attempts.push({
+    attempted_at: "2026-11-02",
+    outcome: "failed",
+    sources: plan.evidence.sources,
+    affected_facts: ["database_management"],
+    note: "Operating responsibility no longer verifiable",
+  });
+  expect(compare(sample, { category: "database" }).items).toEqual([]);
 });
