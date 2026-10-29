@@ -67,7 +67,7 @@ Blank resource requirements impose no constraints; blank usage is zero. Usage is
 
 Billing disclosures preserve unknown CPU allocation, tax, mandatory fees and IPv4 inclusion. ManageIT's optional floating IPv4 price is explanatory only. Published monthly prices are not converted to hourly prices. The prototype remains on `prototype/vps-comparison`; this application implements approved layout C without merging the prototype.
 
-See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; broader coverage and handoff in #12 remain separate work.
+See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; broader coverage in #12 remains separate work.
 
 ## Traffic comparison demo
 
@@ -84,7 +84,7 @@ Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranSe
    alongside five separately unpriced candidates; explain why unknown overage
    is not ranked as a cheap base price.
 4. **2:15–3:15:** Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
-   the provider source link in a new tab. Share or refresh the URL to restore the comparison; open the clean homepage to show defaults.
+   the provider handoff in a new tab; cancel the countdown to inspect its warnings, then use Continue now. Share or refresh the URL to restore the comparison; open the clean homepage to show defaults.
 5. **3:15–4:30:** Close with the engineering boundary: a static React/TypeScript app, exact
    comparison operation tests, responsive browser tests, and fixed product
    interpretations kept separate from source facts. Explain the AI-assisted
@@ -186,3 +186,26 @@ mode: IranServer NGP-small40 leads at 2,436,399 toman, while ManageIT becomes
 2,620,000. Collapse usage, inspect the zero-charge IranServer breakdown, and
 share/reload the selected-detail URL. Back/Forward restores the scenario;
 changing the base budget still filters published base prices only.
+
+## Provider handoff (#19)
+
+Each provider offer has **ادامه به …**, opening a new tab at the same hosting
+base path. The `handoff` parameter retains the stable selected offer ID alongside
+the comparison URL, including traffic usage or provider-catalog context. The
+handoff displays that offer's configuration, prices, unresolved costs, evidence
+warnings and expandable sources. It never substitutes the cheapest offer's
+provider destination. Missing or ineligible IDs stop without redirecting.
+
+The visible five-second countdown automatically opens the selected offer's
+retained primary source. **لغو** cancels automatic departure; **ادامه اکنون**
+continues immediately, including after cancellation. Return to comparison
+restores the URL context. All currently reviewed destinations are general
+product/tariff pages, disclosed explicitly rather than presented as direct
+checkout. Source links remain available for verification. Published offers and
+working links do not establish current stock or provisioning availability.
+
+Desktop/mobile production journeys exercise keyboard opening and cancellation,
+immediate continuation, the five-second boundary, offer-specific identity and
+provider destination, unknown traffic costs, database evidence conflicts and
+staleness, and missing-offer recovery. External destinations are intercepted;
+these checks do not log in or purchase.

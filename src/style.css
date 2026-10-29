@@ -582,3 +582,32 @@ select {
     display: none;
   }
 }
+
+.handoff-actions,
+.handoff-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+}
+.handoff-actions small {
+  color: #5b6973;
+}
+.handoff-page {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.handoff-page > p {
+  margin-bottom: 12px;
+}
+.handoff-destination {
+  overflow-wrap: anywhere;
+}
+.handoff-controls {
+  padding-inline: 0;
+  margin-bottom: 16px;
+}
+.handoff-controls [role="status"] {
+  flex-basis: 100%;
+}

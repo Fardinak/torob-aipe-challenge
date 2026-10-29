@@ -400,3 +400,135 @@ test("collapse VPS usage while retaining scenario, zero-charge arithmetic and hi
     "۲٬۴۳۶٬۳۹۹ + ۰ = ۲٬۴۳۶٬۳۹۹",
   );
 });
+
+test("handoff retains the chosen provider, cancellation and immediate departure", async ({
+  page,
+  context,
+}) => {
+  await page.goto("./?category=vps&ram=4&priceMode=traffic&egress=1200");
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "۱ هسته / ۴ GB رم / ۴۰ GB دیسک" })
+    .click();
+  const offer = page.getByRole("article", {
+    name: "ایران‌سرور NGP-small40",
+    exact: true,
+  });
+  const link = offer.getByRole("link", { name: "ادامه به ایران‌سرور" });
+  await link.focus();
+  const popup = page.waitForEvent("popup");
+  await page.keyboard.press("Enter");
+  const handoff = await popup;
+  const now = new Date("2026-12-01T12:00:00Z");
+  await handoff.clock.install({ time: now });
+  await handoff.clock.pauseAt(now);
+  expect(new URL(handoff.url()).pathname).toBe(new URL(page.url()).pathname);
+  expect(handoff.url()).toContain("handoff=NGP-small40");
+  await expect(handoff.getByRole("heading", { level: 1 })).toContainText(
+    "ایران‌سرور",
+  );
+  await expect(handoff.getByRole("article")).toContainText("NGP-small40");
+  await expect(handoff.getByRole("article")).toContainText(
+    "تعرفه ترافیک اضافه نامشخص است",
+  );
+  await expect(
+    handoff.getByText("در حال خروج از این سایت هستید", { exact: false }),
+  ).toBeVisible();
+  await expect(
+    handoff.getByText("مقصد عمومی محصول یا تعرفه است", { exact: false }),
+  ).toBeVisible();
+  await expect(
+    handoff.getByRole("link", { name: "منبع مقصد" }),
+  ).toHaveAttribute("href", "https://www.iranserver.com/vps/iran/");
+  await expect(handoff.getByRole("status")).toContainText("۵ ثانیه");
+  const cancel = handoff.getByRole("button", { name: "لغو", exact: true });
+  await cancel.focus();
+  await handoff.keyboard.press("Enter");
+  await handoff.clock.fastForward(6000);
+  await expect(handoff.getByRole("status")).toContainText(
+    "انتقال خودکار لغو شد",
+  );
+  expect(new URL(handoff.url()).searchParams.get("handoff")).toBe(
+    "NGP-small40",
+  );
+  expect(
+    await handoff.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await context.route("https://www.iranserver.com/vps/iran/", (route) =>
+    route.fulfill({
+      contentType: "text/html",
+      body: "<title>Selected provider</title>",
+    }),
+  );
+  await handoff.getByRole("button", { name: "ادامه اکنون" }).click();
+  await expect(handoff).toHaveURL("https://www.iranserver.com/vps/iran/");
+  await handoff.close();
+});
+
+test("database handoff counts down five seconds with evidence warnings and fails closed for missing offers", async ({
+  page,
+  context,
+}) => {
+  await page.goto("./?catalog=liara");
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "PostgreSQL" })
+    .filter({ hasText: "۴ GB" })
+    .click();
+  const href = await page
+    .getByRole("article")
+    .getByRole("link", { name: "ادامه به لیارا" })
+    .getAttribute("href");
+  const handoff = await context.newPage();
+  const now = new Date("2026-12-01T12:00:00Z");
+  await handoff.clock.install({ time: now });
+  await handoff.clock.pauseAt(now);
+  await context.route("https://liara.ir/pricing/", (route) =>
+    route.fulfill({
+      contentType: "text/html",
+      body: "<title>Selected database provider</title>",
+    }),
+  );
+  await handoff.goto(new URL(href!, page.url()).href);
+  await expect(handoff.getByRole("article")).toContainText(
+    "PostgreSQL / زحل / پایه",
+  );
+  await expect(handoff.getByRole("article")).toContainText("۴ GB رم");
+  await expect(handoff.getByRole("article")).toContainText(
+    "هزینه نهایی نامشخص",
+  );
+  await expect(handoff.getByRole("article")).toContainText(
+    "تعارض شواهد پشتیبان‌گیری",
+  );
+  await expect(handoff.getByRole("article")).toContainText("شواهد قدیمی");
+  await expect(
+    handoff.getByText("امکان راه‌اندازی فعلی را تأیید نمی‌کند", {
+      exact: false,
+    }),
+  ).toBeVisible();
+  await expect(handoff.getByRole("status")).toContainText("۵ ثانیه");
+  await handoff.clock.fastForward(4000);
+  await expect(handoff.getByRole("status")).toContainText("۱ ثانیه");
+  expect(new URL(handoff.url()).searchParams.get("handoff")).toBe(
+    "liara-pg-2c-4g-40g-base",
+  );
+  await handoff.clock.fastForward(1000);
+  await expect(handoff).toHaveURL("https://liara.ir/pricing/");
+  for (const id of ["missing", "constructor"]) {
+    await handoff.goto(
+      new URL(`./?handoff=${id}&destination=https://example.com/`, page.url())
+        .href,
+    );
+    await expect(
+      handoff.getByRole("heading", { name: "پیشنهاد انتخاب‌شده یافت نشد" }),
+    ).toBeVisible();
+    await handoff.clock.fastForward(6000);
+    expect(new URL(handoff.url()).searchParams.get("handoff")).toBe(id);
+    await expect(
+      handoff.getByRole("button", { name: "ادامه اکنون" }),
+    ).toHaveCount(0);
+  }
+  await handoff.close();
+});

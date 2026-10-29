@@ -226,6 +226,13 @@ function catalogHref(provider: string | null) {
   url.searchParams.delete("detail");
   if (provider) url.searchParams.set("catalog", provider);
   else url.searchParams.delete("catalog");
+  url.searchParams.delete("handoff");
+  return `${url.pathname}${url.search}`;
+}
+
+function handoffHref(offerId: string) {
+  const url = new URL(location.href);
+  url.searchParams.set("handoff", offerId);
   return `${url.pathname}${url.search}`;
 }
 
@@ -233,10 +240,12 @@ function Offer({
   candidate,
   quote,
   cheapest = false,
+  showHandoff = true,
 }: {
   candidate: ProviderOffer;
   quote?: Quote;
   cheapest?: boolean;
+  showHandoff?: boolean;
 }) {
   const { plan } = candidate;
   return (
@@ -397,7 +406,104 @@ function Offer({
         <bdi>{plan.traffic_terms}</bdi>
       </p>
       <BillingDetails plan={plan} />
+      {showHandoff && (
+        <p className="handoff-actions">
+          <a href={handoffHref(plan.id)} target="_blank" rel="noreferrer">
+            ادامه به {catalog.providers[plan.provider].name}
+          </a>
+          <small>در برگه جدید؛ پیش از خروج امکان لغو دارید.</small>
+        </p>
+      )}
     </article>
+  );
+}
+
+function Handoff({ candidate }: { candidate?: ProviderOffer }) {
+  const [remaining, setRemaining] = useState(5);
+  const [cancelled, setCancelled] = useState(false);
+  const timer = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+  // The retained offer's primary evidence is a general product/tariff page in
+  // the current catalog. Never substitute the listing's cheapest offer URL.
+  const destination = candidate && catalog.sources[candidate.plan.source].url;
+  const stopTimer = () => clearInterval(timer.current);
+  useEffect(() => {
+    if (!destination) return;
+    const deadline = Date.now() + 5000;
+    timer.current = setInterval(() => {
+      const seconds = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+      setRemaining(seconds);
+      if (seconds === 0) {
+        clearInterval(timer.current);
+        location.assign(destination);
+      }
+    }, 250);
+    return () => clearInterval(timer.current);
+  }, [destination]);
+  const returnURL = new URL(location.href);
+  returnURL.searchParams.delete("handoff");
+  const back = `${returnURL.pathname}${returnURL.search}`;
+  if (!candidate || !destination)
+    return (
+      <main className="handoff-page">
+        <h1>پیشنهاد انتخاب‌شده یافت نشد</h1>
+        <p>انتقال انجام نمی‌شود؛ پیشنهاد را دوباره در مقایسه انتخاب کنید.</p>
+        <a href={back}>بازگشت به مقایسه</a>
+      </main>
+    );
+  return (
+    <main className="handoff-page">
+      <h1>ادامه به {catalog.providers[candidate.plan.provider].name}</h1>
+      <p>
+        در حال خروج از این سایت هستید؛ پیکربندی انتخاب‌شده را در مقصد بررسی
+        کنید.
+      </p>
+      <p>مقصد عمومی محصول یا تعرفه است؛ لینک خرید مستقیم این پیکربندی نیست.</p>
+      <p>
+        انتشار پیشنهاد یا کار کردن لینک، موجودی یا امکان راه‌اندازی فعلی را
+        تأیید نمی‌کند.
+      </p>
+      <p>
+        <a href={destination} target="_blank" rel="noreferrer">
+          منبع مقصد
+        </a>
+      </p>
+      <p className="handoff-destination">
+        <bdi>{destination}</bdi>
+      </p>
+      <div className="handoff-controls">
+        <p role="status">
+          {cancelled
+            ? "انتقال خودکار لغو شد."
+            : `انتقال خودکار تا ${number(remaining)} ثانیه دیگر`}
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            stopTimer();
+            setCancelled(true);
+          }}
+        >
+          لغو
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            stopTimer();
+            location.assign(destination);
+          }}
+        >
+          ادامه اکنون
+        </button>
+        <a href={back} onClick={stopTimer}>
+          بازگشت به مقایسه
+        </a>
+      </div>
+      <Offer
+        candidate={candidate}
+        quote={candidate.quote}
+        showHandoff={false}
+      />
+    </main>
   );
 }
 
@@ -541,6 +647,19 @@ function App() {
   const selected = selectedId
     ? comparison.items.find((item) => item.id === selectedId)
     : comparison.items[0];
+  const handoffId = new URLSearchParams(location.search).get("handoff");
+  if (handoffId !== null)
+    return (
+      <Handoff
+        candidate={
+          invalid
+            ? undefined
+            : comparison.items
+                .flatMap((item) => item.offers)
+                .find((offer) => offer.plan.id === handoffId)
+        }
+      />
+    );
   return (
     <>
       <header className="site-header">
