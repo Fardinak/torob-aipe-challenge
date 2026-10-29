@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { catalog, type Plan } from "./catalog";
+import { catalog, evidenceIsStale, type Plan } from "./catalog";
 import {
   compare,
   type Request,
@@ -13,7 +13,7 @@ import "@fontsource/vazirmatn/700.css";
 import "./style.css";
 
 const number = (value: number) => new Intl.NumberFormat("fa-IR").format(value);
-const providerNames = { manageit: "منیجیت", iranserver: "ایران‌سرور" };
+
 const fields: { key: InputField; label: string }[] = [
   { key: "ram", label: "حداقل رم (GB)" },
   { key: "cpu", label: "حداقل پردازنده (هسته)" },
@@ -22,105 +22,107 @@ const fields: { key: InputField; label: string }[] = [
   { key: "ingress", label: "ورودی ماهانه (GB، اختیاری)" },
 ];
 
-function Traffic({ plan }: { plan: Plan }) {
-  if (plan.provider === "manageit") {
-    const terms = catalog.providers.manageit.traffic_original_labels;
-    return (
-      <>
-        آپلود: {terms.upload === "free" ? "رایگان" : terms.upload}؛ دانلود هر
-        GB:{" "}
-        {terms.download_toman_per_gb === null
-          ? "تعرفه نامشخص"
-          : `${number(terms.download_toman_per_gb)} تومان`}
-      </>
-    );
-  }
-  return (
-    <>
-      {plan.traffic_allowance_gb_unspecified_direction === null
-        ? "مقدار ترافیک نامشخص"
-        : `${number(plan.traffic_allowance_gb_unspecified_direction)} GB ترافیک`}
-      ؛ جهت مصرف و تعرفه اضافه نامشخص
-    </>
-  );
-}
-
 function BillingDetails({ plan }: { plan: Plan }) {
-  const facts = catalog.providers[plan.provider];
-  const optionalIp =
-    catalog.providers.manageit.optional_independent_floating_ipv4_monthly_toman;
+  const provider = catalog.providers[plan.provider];
   return (
     <details>
       <summary>جزئیات هزینه و منبع</summary>
       <div className="details-body">
+        <p>پرداخت: {provider.billing}</p>
         <p>
-          <strong>پرداخت: </strong>
-          {plan.provider === "manageit"
-            ? "قیمت مرجع ماهانه؛ پرداخت ساعتی بر اساس مصرف (PAYG). مقسوم‌علیه تبدیل ماه به ساعت، سقف و گرد کردن صورت‌حساب نامشخص است."
-            : "قیمت اعلام‌شده ماهانه."}
-        </p>
-        <p>
-          <strong>پردازنده: </strong>
-          {facts.cpu_allocation === "shared"
+          پردازنده:{" "}
+          {provider.cpu_allocation === "shared"
             ? "اشتراکی"
-            : (facts.cpu_allocation ?? "نوع تخصیص نامشخص")}
+            : (provider.cpu_allocation ?? "نوع تخصیص نامشخص")}
           ؛ تعداد هسته یکسان به معنی عملکرد برابر نیست.
         </p>
         <p>
-          <strong>دیسک: </strong>
-          {plan.provider === "manageit"
-            ? plan.storage_label
-            : "صفحه به‌طور عمومی NVMe را تبلیغ می‌کند؛ نوع دیسک این پلن جداگانه تأیید نشده است."}
+          دیسک: {plan.storage_label}؛ وضعیت:{" "}
+          {plan.evidence.facts.storage_label === "verified"
+            ? "تأیید شده"
+            : "نامشخص"}
         </p>
-        {plan.provider === "manageit" && (
-          <>
-            <p>
-              تعرفه ترافیک برای دیتاسنترهای پرواز، امید و پارسیان اعلام شده؛
-              موجود بودن هر پلن در هر دیتاسنتر تأیید نشده است.
-            </p>
-            <p>
-              IPv6 همراه پلن است. IPv4 شناور مستقل، اختیاری:{" "}
-              {optionalIp === null
-                ? "قیمت نامشخص"
-                : `${number(optionalIp)} تومان در ماه`}
-              ؛ به قیمت پایه اضافه نشده است.
-            </p>
-          </>
-        )}
         <p>
-          شمول IPv4 پایه، مالیات و کامل بودن هزینه‌های اجباری نامشخص است. قیمت
-          پایه و جمع برآوردی، مبلغ نهایی صورت‌حساب نیست.
+          IPv4 پایه:{" "}
+          {provider.base_ipv4_included === null
+            ? "نامشخص"
+            : provider.base_ipv4_included
+              ? "همراه پلن"
+              : "همراه پلن نیست"}
+          ؛ IPv6:{" "}
+          {provider.ipv6_included === null
+            ? "نامشخص"
+            : provider.ipv6_included
+              ? "همراه پلن"
+              : "همراه پلن نیست"}
+          ؛ مالیات: {provider.tax_basis ?? "نامشخص"}
+        </p>
+        {provider.disclosures.map((note) => (
+          <p key={note}>{note}</p>
+        ))}
+        {plan.evidence.notes.map((note) => (
+          <p key={note}>{note}</p>
+        ))}
+        <p>
+          منطقه: {plan.region ?? "نامشخص"}؛ بسته سخت‌افزار:{" "}
+          {plan.hardware_package ?? "نامشخص"}؛ بسته امکانات:{" "}
+          {plan.feature_package ?? "نامشخص"}؛ توپولوژی:{" "}
+          {plan.topology ?? "نامشخص"}
         </p>
         <p className="source-wording">
-          عبارت ثبت‌شده منبع:{" "}
-          <bdi>
-            {plan.provider === "manageit"
-              ? `upload: ${catalog.providers.manageit.traffic_original_labels.upload}; download: ${catalog.providers.manageit.traffic_original_labels.download_toman_per_gb ?? "unknown"} toman/GB`
-              : catalog.providers.iranserver.traffic_original_label}
-          </bdi>
+          عبارت ثبت‌شده منبع: <bdi>{plan.traffic_terms}</bdi>
         </p>
-        <a
-          href={catalog.sources[plan.source].url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          صفحه تعرفه ارائه‌دهنده ↗
-        </a>
-        {plan.provider === "manageit" && (
+        {plan.evidence.sources.map((id) => (
           <a
-            href={catalog.sources.manageit_ip.url}
+            key={id}
+            href={catalog.sources[id].url}
             target="_blank"
             rel="noreferrer"
           >
-            منبع تعرفه IP شناور ↗
+            {catalog.sources[id].label} ↗
           </a>
-        )}
+        ))}
+        {plan.verification_attempts.map((attempt, i) => (
+          <p key={i}>
+            بررسی <bdi>{attempt.attempted_at}</bdi>:{" "}
+            {attempt.outcome === "success"
+              ? "موفق"
+              : "ناموفق؛ به معنی خروج از عرضه نیست"}{" "}
+            — {attempt.note}
+          </p>
+        ))}
+        <p>نسخه‌های پیشین شواهد: {number(plan.revisions.length)}</p>
+        {plan.revisions.map((revision) => (
+          <p key={revision.revision_id}>
+            <bdi>{revision.evidence.last_verified_at ?? "نامشخص"}</bdi> —{" "}
+            {number(revision.advertised_monthly_toman)} تومان؛{" "}
+            {number(revision.ram_gb)} GB رم
+            {evidenceIsStale(revision.evidence.last_verified_at) && (
+              <small className="evidence-warning">
+                شواهد تاریخی قدیمی؛ بیش از ۳۰ روز از تأیید گذشته است.
+              </small>
+            )}
+            {revision.evidence.sources.map((id) => (
+              <a
+                key={id}
+                href={catalog.sources[id].url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                منبع نسخه پیشین ↗
+              </a>
+            ))}
+          </p>
+        ))}
       </div>
     </details>
   );
 }
 
 const unpricedReasons: Record<string, string> = {
+  base_price_unresolved:
+    "قیمت پایه تأیید نشده یا متعارض است؛ قابل مقایسه نیست.",
+  traffic_evidence_unresolved: "شواهد لازم برای محاسبه ترافیک حل‌نشده است.",
   unknown_overage: "تعرفه ترافیک اضافه نامشخص است.",
   missing_traffic_rate: "نرخ لازم برای محاسبه ترافیک مشخص نیست.",
   unknown_allowance: "سهمیه لازم برای محاسبه مشخص نیست.",
@@ -139,23 +141,44 @@ function Offer({
   const { plan } = candidate;
   return (
     <article
-      aria-label={`${providerNames[plan.provider]} ${plan.provider_plan_name ?? plan.id}`}
+      aria-label={`${catalog.providers[plan.provider].name} ${plan.provider_plan_name ?? plan.id}`}
     >
       <div className="offer-main">
         <div className="identity">
-          <h3>{providerNames[plan.provider]}</h3>
+          <h3>{catalog.providers[plan.provider].name}</h3>
           <bdi className="plan-name">{plan.provider_plan_name ?? plan.id}</bdi>
-          {!plan.provider_plan_name && <small>شناسه محلی پلن</small>}
+          {!plan.provider_plan_name ? (
+            <small>شناسه محلی پلن</small>
+          ) : (
+            <small>
+              شناسه پایدار: <bdi>{plan.id}</bdi>
+            </small>
+          )}
         </div>
         <div className="resources">
           <span>
-            <strong>{number(plan.ram_gb)}</strong> GB رم
+            <strong>
+              {plan.evidence.facts.ram_gb === "verified"
+                ? number(plan.ram_gb)
+                : "نامشخص"}
+            </strong>{" "}
+            GB رم
           </span>
           <span>
-            <strong>{number(plan.cpu_count)}</strong> هسته
+            <strong>
+              {plan.evidence.facts.cpu_count === "verified"
+                ? number(plan.cpu_count)
+                : "نامشخص"}
+            </strong>{" "}
+            هسته
           </span>
           <span>
-            <strong>{number(plan.disk_gb)}</strong> GB دیسک
+            <strong>
+              {plan.evidence.facts.disk_gb === "verified"
+                ? number(plan.disk_gb)
+                : "نامشخص"}
+            </strong>{" "}
+            GB دیسک
           </span>
         </div>
         <div className="price">
@@ -163,9 +186,36 @@ function Offer({
             <span className="badge">کمترین جمع برآوردی در نتایج</span>
           )}
           <strong>
-            {number(quote?.subtotalToman ?? plan.advertised_monthly_toman)}
+            {plan.evidence.facts.advertised_monthly_toman === "verified"
+              ? number(quote?.subtotalToman ?? plan.advertised_monthly_toman)
+              : "قیمت نامشخص"}
           </strong>
           <span>تومان / ماه</span>
+          <small>{plan.billing_display}</small>
+          <small>
+            آخرین تأیید موفق:{" "}
+            <bdi>{plan.evidence.last_verified_at ?? "نامشخص"}</bdi>
+          </small>
+          {evidenceIsStale(plan.evidence.last_verified_at) && (
+            <small className="evidence-warning">
+              {plan.evidence.last_verified_at
+                ? "شواهد قدیمی؛ بیش از ۳۰ روز از تأیید موفق گذشته است."
+                : "تاریخ تأیید موفق نامشخص؛ نیازمند بازبینی."}
+            </small>
+          )}
+          <small>
+            هزینه نهایی نامشخص؛{" "}
+            {catalog.providers[plan.provider].mandatory_fee_completeness
+              ? "هزینه‌های اجباری بررسی شده"
+              : "هزینه‌های اجباری ناقص"}
+          </small>
+          {Object.values(plan.evidence.facts).some(
+            (status) => status === "conflicting" || status === "failed",
+          ) && (
+            <small className="evidence-warning">
+              شواهد حل‌نشده؛ اطلاعات متأثر در مقایسه استفاده نمی‌شود.
+            </small>
+          )}
           <small>
             {quote
               ? quote.trafficChargeToman > 0
@@ -223,7 +273,7 @@ function Offer({
         </div>
       )}
       <p className="traffic">
-        <Traffic plan={plan} />
+        <bdi>{plan.traffic_terms}</bdi>
       </p>
       <BillingDetails plan={plan} />
     </article>
@@ -255,8 +305,14 @@ function App() {
             </p>
           </div>
           <aside className="coverage">
-            <strong>۱۱ پلن / ۲ ارائه‌دهنده</strong>
-            <p>۶ پلن منیجیت و ۵ پلن ایران‌سرور</p>
+            <strong>
+              {number(
+                catalog.plans.filter((p) => p.lifecycle === "active").length,
+              )}{" "}
+              رکورد / {number(Object.keys(catalog.providers).length)}{" "}
+              ارائه‌دهنده
+            </strong>
+            <p>نمونه VPS با وضعیت شواهد هر پیشنهاد</p>
             <small>نمونه محدود بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
           </aside>
         </section>
@@ -380,11 +436,11 @@ function App() {
                 <path d="M10.3 4.2a2 2 0 0 1 3.4 0l8 14A2 2 0 0 1 20 21H4a2 2 0 0 1-1.7-2.8z" />
                 <path d="M12 9v5m0 3h.01" />
               </svg>
-              پیشنهادهای بدون برآورد ترافیک
+              پیشنهادهای بدون برآورد قابل مقایسه
             </h2>
             <p className="muted">
-              {number(comparison.unpriced.length)} پیشنهاد؛ هزینه ترافیک قابل
-              محاسبه نیست. قیمت پایه ناقص؛ خارج از رتبه‌بندی.
+              {number(comparison.unpriced.length)} پیشنهاد؛ قیمت پایه یا هزینه
+              ترافیک قابل محاسبه نیست. قیمت پایه ناقص؛ خارج از رتبه‌بندی.
             </p>
             {comparison.unpriced.map((candidate) => (
               <Offer key={candidate.plan.id} candidate={candidate} />

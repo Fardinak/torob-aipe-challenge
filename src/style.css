@@ -396,3 +396,14 @@ footer {
   background: #fff4df;
   border-inline-start: 3px solid #bd811d;
 }
+
+.evidence-warning {
+  color: #8b3d12;
+  font-weight: 700;
+}
+.price small {
+  max-width: 24rem;
+}
+.details-body a {
+  overflow-wrap: anywhere;
+}

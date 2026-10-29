@@ -1,8 +1,4 @@
-import {
-  sampleTrafficPolicy,
-  trafficPolicySchema,
-  type TrafficPolicies,
-} from "./traffic-policy";
+import { trafficPolicySchema, type TrafficPolicies } from "./traffic-policy";
 import { catalogSchema, type Plan } from "./catalog";
 export type Resource = "ram" | "cpu" | "disk";
 export type InputField = Resource | "egress" | "ingress";
@@ -64,21 +60,71 @@ export function compare(
   }
   if (Object.keys(result.errors).length) return result;
   for (const plan of catalog.plans) {
+    // Parsing gives us a private copy. A latest failed attempt invalidates only
+    // its affected facts, even if a maintainer omitted a redundant status edit.
+    const reviewedFacts = { ...plan.evidence.facts };
+    for (const attempt of plan.verification_attempts) {
+      for (const key of attempt.affected_facts) {
+        plan.evidence.facts[key] =
+          attempt.outcome === "failed" ? "failed" : reviewedFacts[key];
+      }
+    }
+    if (plan.lifecycle === "withdrawn") {
+      result.excluded.push({ plan, reasons: ["withdrawn"] });
+      continue;
+    }
     const reasons = (Object.keys(resources) as Resource[])
-      .filter((key) => plan[resources[key]] < minimums[key])
-      .map((key) => `${key}_below_minimum`);
+      .filter(
+        (key) =>
+          minimums[key] > 0 &&
+          (plan.evidence.facts[resources[key]] !== "verified" ||
+            plan[resources[key]] < minimums[key]),
+      )
+      .map((key) =>
+        plan.evidence.facts[resources[key]] !== "verified"
+          ? `${key}_unresolved`
+          : `${key}_below_minimum`,
+      );
     if (reasons.length) {
       result.excluded.push({ plan, reasons });
       continue;
     }
+    if (plan.evidence.facts.advertised_monthly_toman !== "verified") {
+      result.unpriced.push({ plan, reasons: ["base_price_unresolved"] });
+      continue;
+    }
+    const trafficRequested = minimums.egress > 0 || minimums.ingress > 0;
     const policyResult = trafficPolicySchema.safeParse(
-      policies ? policies[plan.id] : sampleTrafficPolicy(catalog, plan),
+      policies ? policies[plan.id] : plan.traffic_policy,
     );
-    if (!policyResult.success) {
+    if (!policyResult.success && trafficRequested) {
       result.unpriced.push({ plan, reasons: ["unknown_traffic_policy"] });
       continue;
     }
-    const policy = policyResult.data;
+    const policy = policyResult.success
+      ? policyResult.data
+      : {
+          direction: "egress" as const,
+          includedGb: 0,
+          overage: { kind: "unknown" as const },
+        };
+    const facts = plan.evidence.facts;
+    // An unspecified source direction may use the disclosed shared-pool assumption.
+    // A failed/conflicting direction cannot support any usage calculation.
+    if (
+      trafficRequested &&
+      facts.traffic_direction !== "verified" &&
+      !(
+        facts.traffic_direction === "unknown" &&
+        ((plan.traffic_assumption === "unspecified-shared" &&
+          policy.direction === "shared") ||
+          (plan.traffic_assumption === "download-as-egress-free-upload" &&
+            policy.direction === "egress"))
+      )
+    ) {
+      result.unpriced.push({ plan, reasons: ["traffic_evidence_unresolved"] });
+      continue;
+    }
     const usage =
       policy.direction === "shared"
         ? minimums.egress + minimums.ingress
@@ -87,18 +133,33 @@ export function compare(
       result.unpriced.push({ plan, reasons: ["arithmetic_out_of_range"] });
       continue;
     }
-    if (usage > 0 && policy.includedGb === null) {
+    if (
+      usage > 0 &&
+      (policy.includedGb === null || facts.traffic_allowance !== "verified")
+    ) {
       result.unpriced.push({ plan, reasons: ["unknown_allowance"] });
       continue;
     }
     const billableGb = Math.max(0, usage - (policy.includedGb ?? 0));
     const rateTomanPerGb =
       policy.overage.kind === "priced" ? policy.overage.rateTomanPerGb : null;
+    if (
+      billableGb > 0 &&
+      (["failed", "conflicting"].includes(facts.traffic_overage) ||
+        (policy.overage.kind !== "unknown" &&
+          facts.traffic_overage !== "verified"))
+    ) {
+      result.unpriced.push({ plan, reasons: ["traffic_evidence_unresolved"] });
+      continue;
+    }
     if (billableGb > 0 && policy.overage.kind === "unavailable") {
       result.excluded.push({ plan, reasons: ["traffic_hard_cap"] });
       continue;
     }
-    if (billableGb > 0 && rateTomanPerGb === null) {
+    if (
+      billableGb > 0 &&
+      (rateTomanPerGb === null || facts.traffic_rate !== "verified")
+    ) {
       result.unpriced.push({
         plan,
         billableGb,

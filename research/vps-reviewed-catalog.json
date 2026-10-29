@@ -1,0 +1,1557 @@
+{
+  "status": "reviewed_public_page_snapshot_not_checkout_quotes",
+  "scope": "11 rechecked sample configurations plus one unresolved historical configuration; not exhaustive coverage",
+  "units": "Resource GB preserved as advertised; no GB/GiB equivalence inferred. Scenarios define 1 TB as 1000 GB.",
+  "sources": {
+    "manageit": {
+      "url": "https://www.manageitcloud.com/cloud-server",
+      "snapshot": "research/evidence/manageitcloud.html",
+      "snapshot_saved_at": "2026-09-19T02:05:46.837755+00:00",
+      "sha256": "3353c7d681c7c2ab3901ec46a80f65c3e70288ed920a31d1a12dfc1442c09c89",
+      "provider": "manageit",
+      "label": "صفحه تعرفه ارائه‌دهنده"
+    },
+    "iranserver": {
+      "url": "https://www.iranserver.com/vps/iran/",
+      "snapshot": "research/evidence/iranserver.html",
+      "snapshot_saved_at": "2026-09-19T03:40:38.166382+00:00",
+      "sha256": "709e76f44da52ceb8f54f953b0f749c42d626c27d5a8f4e7ea96ca27bf41f724",
+      "provider": "iranserver",
+      "label": "صفحه تعرفه ارائه‌دهنده"
+    },
+    "manageit_ip": {
+      "url": "https://www.manageitcloud.com/floating-ip",
+      "snapshot": "research/evidence/manageit-ip.html",
+      "snapshot_saved_at": "2026-09-19T02:06:18.058398+00:00",
+      "sha256": "e00a5a855782388b09b86142be740f3d8e2543f550a779c4c717a951b7a8c83a",
+      "provider": "manageit",
+      "label": "منبع تعرفه IP شناور"
+    },
+    "manageit-2026-10-29": {
+      "url": "https://www.manageitcloud.com/cloud-server",
+      "snapshot": "research/evidence/manageit-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:01:08.440610+00:00",
+      "sha256": "886c3a0786d22f56b5cd8affb79f17551132e9d8d662e7d88b925c49119668b6",
+      "provider": "manageit",
+      "label": "صفحه تعرفه ارائه‌دهنده"
+    },
+    "iranserver-2026-10-29": {
+      "url": "https://www.iranserver.com/vps/iran/",
+      "snapshot": "research/evidence/iranserver-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:01:23.334849+00:00",
+      "sha256": "96488468b74e76bcbca583625a6d21ce71587b4eca8720830f0177a8b930376b",
+      "provider": "iranserver",
+      "label": "صفحه تعرفه ارائه‌دهنده"
+    },
+    "manageit_ip-2026-10-29": {
+      "url": "https://www.manageitcloud.com/floating-ip",
+      "snapshot": "research/evidence/manageit-ip-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:01:08.379019+00:00",
+      "sha256": "601342c5c5acd38ee7244cfab9dc75893dcb72063bbd0f2dc85d218954da9967",
+      "provider": "manageit",
+      "label": "منبع تعرفه IP شناور"
+    }
+  },
+  "providers": {
+    "manageit": {
+      "currency": "toman",
+      "billing": "قیمت مرجع ماهانه؛ پرداخت ساعتی بر اساس مصرف (PAYG). مقسوم‌علیه تبدیل، سقف و گرد کردن صورت‌حساب نامشخص است.",
+      "cpu_allocation": null,
+      "base_ipv4_included": null,
+      "ipv6_included": true,
+      "tax_basis": null,
+      "mandatory_fee_completeness": false,
+      "plan_location_mapping": "Iran-focused page; per-plan datacenter availability not verified",
+      "name": "منیجیت",
+      "disclosures": [
+        "موقعیت ایران؛ نگاشت هر پلن به دیتاسنتر نامشخص است.",
+        "IPv6 همراه پلن است؛ IPv4 شناور مستقل اختیاری: ۱۹۵٬۰۰۰ تومان در ماه؛ به قیمت پایه اضافه نشده است.",
+        "تعرفه ترافیک برای دیتاسنترهای پرواز، امید و پارسیان است؛ نگاشت هر پلن به دیتاسنتر تأیید نشده است."
+      ]
+    },
+    "iranserver": {
+      "currency": "toman",
+      "billing": "قیمت اعلام‌شده ماهانه.",
+      "cpu_allocation": "shared",
+      "base_ipv4_included": null,
+      "ipv6_included": null,
+      "tax_basis": null,
+      "mandatory_fee_completeness": false,
+      "plan_location_mapping": "Iran VPS page",
+      "name": "ایران‌سرور",
+      "disclosures": ["موقعیت ایران؛ نگاشت هر پلن به دیتاسنتر نامشخص است."]
+    }
+  },
+  "plans": [
+    {
+      "id": "manageit-1c-1g-25g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 1,
+      "ram_gb": 1,
+      "disk_gb": 25,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 710000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-1c-1g-25g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 1,
+          "ram_gb": 1,
+          "disk_gb": 25,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 710000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "manageit-1c-2g-50g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 1,
+      "ram_gb": 2,
+      "disk_gb": 50,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 975000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-1c-2g-50g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 1,
+          "ram_gb": 2,
+          "disk_gb": 50,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 975000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "manageit-2c-2g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 2,
+      "ram_gb": 2,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1325000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-2c-2g-75g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 2,
+          "ram_gb": 2,
+          "disk_gb": 75,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 1325000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "manageit-2c-4g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 2,
+      "ram_gb": 4,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1420000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-2c-4g-75g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 2,
+          "ram_gb": 4,
+          "disk_gb": 75,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 1420000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "manageit-4c-4g-75g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 4,
+      "ram_gb": 4,
+      "disk_gb": 75,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 2030000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-4c-4g-75g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 4,
+          "ram_gb": 4,
+          "disk_gb": 75,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 2030000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "manageit-6c-12g-150g",
+      "provider": "manageit",
+      "provider_plan_name": null,
+      "cpu_count": 6,
+      "ram_gb": 12,
+      "disk_gb": 150,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 3950000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "manageit-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly-reference-hourly-payg",
+      "traffic_terms": "upload: free; download: 1200 toman/GB",
+      "traffic_policy": {
+        "direction": "egress",
+        "includedGb": 0,
+        "overage": {
+          "kind": "priced",
+          "rateTomanPerGb": 1200
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "verified",
+          "traffic_overage": "verified"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "manageit-6c-12g-150g",
+          "provider": "manageit",
+          "provider_plan_name": null,
+          "cpu_count": 6,
+          "ram_gb": 12,
+          "disk_gb": 150,
+          "storage_label": "SSD",
+          "advertised_monthly_toman": 3950000,
+          "traffic_allowance_gb_unspecified_direction": null,
+          "source": "manageit",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly-reference-hourly-payg",
+          "traffic_terms": "upload: free; download: 1200 toman/GB",
+          "traffic_policy": {
+            "direction": "egress",
+            "includedGb": 0,
+            "overage": {
+              "kind": "priced",
+              "rateTomanPerGb": 1200
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["manageit", "manageit_ip"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "verified",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "verified",
+              "traffic_overage": "verified"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": "SSD",
+          "traffic_assumption": "download-as-egress-free-upload",
+          "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": "SSD",
+      "traffic_assumption": "download-as-egress-free-upload",
+      "billing_display": "مرجع ماهانه؛ پرداخت ساعتی PAYG"
+    },
+    {
+      "id": "NGP-small40",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-small40",
+      "cpu_count": 1,
+      "ram_gb": 4,
+      "disk_gb": 40,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 2436399,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["iranserver-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "NGP-small40",
+          "provider": "iranserver",
+          "provider_plan_name": "NGP-small40",
+          "cpu_count": 1,
+          "ram_gb": 4,
+          "disk_gb": 40,
+          "storage_label": "disk; page advertises NVMe generally",
+          "advertised_monthly_toman": 1823999,
+          "traffic_allowance_gb_unspecified_direction": 1000,
+          "source": "iranserver",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly",
+          "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+          "traffic_policy": {
+            "direction": "shared",
+            "includedGb": 1000,
+            "overage": {
+              "kind": "unknown"
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["iranserver"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "unknown",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "unknown",
+              "traffic_overage": "unknown"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": null,
+          "traffic_assumption": "unspecified-shared",
+          "billing_display": "پرداخت ماهانه"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "NGP-medium40",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-medium40",
+      "cpu_count": 2,
+      "ram_gb": 8,
+      "disk_gb": 40,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 3517599,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["iranserver-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "NGP-medium40",
+          "provider": "iranserver",
+          "provider_plan_name": "NGP-medium40",
+          "cpu_count": 2,
+          "ram_gb": 8,
+          "disk_gb": 40,
+          "storage_label": "disk; page advertises NVMe generally",
+          "advertised_monthly_toman": 2803199,
+          "traffic_allowance_gb_unspecified_direction": 1000,
+          "source": "iranserver",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly",
+          "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+          "traffic_policy": {
+            "direction": "shared",
+            "includedGb": 1000,
+            "overage": {
+              "kind": "unknown"
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["iranserver"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "unknown",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "unknown",
+              "traffic_overage": "unknown"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": null,
+          "traffic_assumption": "unspecified-shared",
+          "billing_display": "پرداخت ماهانه"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "NGP-large80",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-large80",
+      "cpu_count": 4,
+      "ram_gb": 16,
+      "disk_gb": 80,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 4823039,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-09-19",
+        "sources": ["iranserver"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "conflicting",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "conflicting",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است.",
+          "صفحه جدید با همین نام ۳۲ GB رم دارد؛ قیمت و منابع پیکربندی قدیمی حل‌نشده است؛ خروج قطعی تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "NGP-large80",
+          "provider": "iranserver",
+          "provider_plan_name": "NGP-large80",
+          "cpu_count": 4,
+          "ram_gb": 16,
+          "disk_gb": 80,
+          "storage_label": "disk; page advertises NVMe generally",
+          "advertised_monthly_toman": 4823039,
+          "traffic_allowance_gb_unspecified_direction": 1000,
+          "source": "iranserver",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly",
+          "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+          "traffic_policy": {
+            "direction": "shared",
+            "includedGb": 1000,
+            "overage": {
+              "kind": "unknown"
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["iranserver"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "unknown",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "unknown",
+              "traffic_overage": "unknown"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": null,
+          "traffic_assumption": "unspecified-shared",
+          "billing_display": "پرداخت ماهانه"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": ["ram_gb", "advertised_monthly_toman"],
+          "note": "همین نام اکنون با ۳۲ GB رم منتشر می‌شود؛ منابع و قیمت پیکربندی ۱۶ GB دوباره تأیید نشد. خروج قطعی از عرضه تأیید نشده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "NGP-xlarge120",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-xlarge120",
+      "cpu_count": 8,
+      "ram_gb": 32,
+      "disk_gb": 120,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 10140479,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["iranserver-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "NGP-xlarge120",
+          "provider": "iranserver",
+          "provider_plan_name": "NGP-xlarge120",
+          "cpu_count": 8,
+          "ram_gb": 32,
+          "disk_gb": 120,
+          "storage_label": "disk; page advertises NVMe generally",
+          "advertised_monthly_toman": 8801279,
+          "traffic_allowance_gb_unspecified_direction": 1000,
+          "source": "iranserver",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly",
+          "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+          "traffic_policy": {
+            "direction": "shared",
+            "includedGb": 1000,
+            "overage": {
+              "kind": "unknown"
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["iranserver"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "unknown",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "unknown",
+              "traffic_overage": "unknown"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": null,
+          "traffic_assumption": "unspecified-shared",
+          "billing_display": "پرداخت ماهانه"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "NGP-2xlarge160",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-2xlarge160",
+      "cpu_count": 16,
+      "ram_gb": 64,
+      "disk_gb": 160,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 18857919,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["iranserver-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [
+        {
+          "id": "NGP-2xlarge160",
+          "provider": "iranserver",
+          "provider_plan_name": "NGP-2xlarge160",
+          "cpu_count": 16,
+          "ram_gb": 64,
+          "disk_gb": 160,
+          "storage_label": "disk; page advertises NVMe generally",
+          "advertised_monthly_toman": 16696319,
+          "traffic_allowance_gb_unspecified_direction": 1000,
+          "source": "iranserver",
+          "availability": "not_verified",
+          "region": null,
+          "hardware_package": null,
+          "feature_package": null,
+          "topology": null,
+          "billing_variant": "monthly",
+          "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+          "traffic_policy": {
+            "direction": "shared",
+            "includedGb": 1000,
+            "overage": {
+              "kind": "unknown"
+            }
+          },
+          "evidence": {
+            "last_verified_at": "2026-09-19",
+            "sources": ["iranserver"],
+            "facts": {
+              "cpu_count": "verified",
+              "ram_gb": "verified",
+              "disk_gb": "verified",
+              "storage_label": "unknown",
+              "advertised_monthly_toman": "verified",
+              "traffic_direction": "unknown",
+              "traffic_allowance": "verified",
+              "traffic_rate": "unknown",
+              "traffic_overage": "unknown"
+            },
+            "notes": [
+              "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+              "موجودی لحظه‌ای تأیید نشده است."
+            ]
+          },
+          "revision_id": "review-2026-09-19",
+          "storage_type": null,
+          "traffic_assumption": "unspecified-shared",
+          "billing_display": "پرداخت ماهانه"
+        }
+      ],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "iranserver-ngp-large80-4c-32g-80g-monthly",
+      "provider": "iranserver",
+      "provider_plan_name": "NGP-large80",
+      "cpu_count": 4,
+      "ram_gb": 32,
+      "disk_gb": 80,
+      "storage_label": "disk; page advertises NVMe generally",
+      "advertised_monthly_toman": 8800639,
+      "traffic_allowance_gb_unspecified_direction": 1000,
+      "source": "iranserver-2026-10-29",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": null,
+      "feature_package": null,
+      "topology": null,
+      "billing_variant": "monthly",
+      "traffic_terms": "1000 GB traffic per plan; direction and overage unverified",
+      "traffic_policy": {
+        "direction": "shared",
+        "includedGb": 1000,
+        "overage": {
+          "kind": "unknown"
+        }
+      },
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": ["iranserver-2026-10-29"],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "unknown",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "verified",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "شمول IPv4 پایه، مالیات و هزینه‌های اجباری نامشخص است.",
+          "موجودی لحظه‌ای تأیید نشده است."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [],
+      "verification_attempts": [
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "failed",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [],
+          "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
+        },
+        {
+          "attempted_at": "2026-10-29",
+          "outcome": "success",
+          "sources": ["iranserver-2026-10-29"],
+          "affected_facts": [
+            "cpu_count",
+            "ram_gb",
+            "disk_gb",
+            "storage_label",
+            "advertised_monthly_toman",
+            "traffic_direction",
+            "traffic_allowance",
+            "traffic_rate",
+            "traffic_overage"
+          ],
+          "note": "قیمت، منابع و شرایط نمونه در صفحه رسمی بازبینی شد؛ شواهد نگهداری شده است."
+        }
+      ],
+      "storage_type": null,
+      "traffic_assumption": "unspecified-shared",
+      "billing_display": "پرداخت ماهانه"
+    }
+  ]
+}

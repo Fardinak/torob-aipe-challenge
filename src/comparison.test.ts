@@ -1,6 +1,18 @@
 import { expect, test } from "vitest";
-import { catalog, type Catalog } from "./catalog";
+import { catalog as reviewedCatalog, type Catalog } from "./catalog";
 import { compare } from "./comparison";
+// Preserve the original worked examples independently of later tariff revisions.
+const catalog: Catalog = {
+  ...reviewedCatalog,
+  plans: reviewedCatalog.plans
+    .filter((p) => p.revisions.length)
+    .map((p) => ({
+      ...p,
+      ...p.revisions[0],
+      revisions: [],
+      verification_attempts: [],
+    })),
+};
 
 test("ranks the complete reviewed sample by exact monthly base prices", () => {
   const result = compare(catalog, {});
@@ -89,7 +101,7 @@ test.each([
     c.plans[0].source = "missing";
   },
   (c: any) => {
-    c.providers.manageit.traffic_original_labels.download_toman_per_gb = -1;
+    c.plans[0].traffic_policy.overage.rateTomanPerGb = -1;
   },
 ])("blocks malformed catalog instead of inventing offers", (mutate) => {
   const sample: Catalog = structuredClone(catalog);
@@ -144,6 +156,8 @@ test("separates unknown overage using shared ingress plus egress", () => {
 test("applies confirmed hard caps and paid excess without adding synthetic live offers", () => {
   const sample: Catalog = structuredClone(catalog);
   sample.plans = [sample.plans.find((p) => p.id === "NGP-small40")!];
+  sample.plans[0].evidence.facts.traffic_overage = "verified";
+  sample.plans[0].evidence.facts.traffic_rate = "verified";
   const policies = {
     "NGP-small40": {
       direction: "shared" as const,
@@ -180,8 +194,12 @@ test("applies confirmed hard caps and paid excess without adding synthetic live 
 
 test("never fabricates a quote from missing data or unsafe arithmetic", () => {
   const sample: Catalog = structuredClone(catalog);
-  sample.providers.manageit.traffic_original_labels.download_toman_per_gb =
-    null;
+  sample.plans.forEach((p) => {
+    if (p.traffic_policy?.overage.kind === "priced")
+      p.traffic_policy.overage.rateTomanPerGb = null;
+    if (p.traffic_policy?.direction === "shared")
+      p.traffic_policy.includedGb = null;
+  });
   sample.plans.forEach((p) => {
     p.traffic_allowance_gb_unspecified_direction = null;
   });
@@ -197,4 +215,99 @@ test("never fabricates a quote from missing data or unsafe arithmetic", () => {
   });
   expect(huge.ranked).toEqual([]);
   expect(huge.unpriced).toHaveLength(11);
+});
+
+test("unresolved facts affect only comparisons that depend on them, and withdrawal excludes", () => {
+  const sample = structuredClone(catalog);
+  sample.plans = [sample.plans[0]];
+  sample.plans[0].evidence.facts.ram_gb = "conflicting";
+  expect(compare(sample, {}).ranked).toHaveLength(1);
+  expect(compare(sample, { ram: 1 }).excluded[0].reasons).toContain(
+    "ram_unresolved",
+  );
+  sample.plans[0].evidence.facts.advertised_monthly_toman = "failed";
+  expect(compare(sample, {}).unpriced[0].reasons).toContain(
+    "base_price_unresolved",
+  );
+  sample.plans[0].lifecycle = "withdrawn";
+  sample.plans[0].withdrawal = {
+    confirmed_at: "2026-10-29",
+    source: "manageit",
+    reason: "Confirmed withdrawal fixture",
+  };
+  expect(compare(sample, {}).excluded[0].reasons).toContain("withdrawn");
+});
+
+test("a stale or failed review does not refresh evidence or disable unrelated facts", () => {
+  const sample = structuredClone(catalog);
+  sample.plans = [sample.plans[0]];
+  const offer = sample.plans[0];
+  offer.verification_attempts.push({
+    attempted_at: "2026-10-29",
+    outcome: "failed",
+    sources: [offer.source],
+    affected_facts: ["traffic_rate"],
+    note: "Tariff request failed",
+  });
+  expect(compare(sample, {}).ranked).toHaveLength(1);
+  expect(compare(sample, { egress: 1 }).unpriced[0].reasons).toContain(
+    "missing_traffic_rate",
+  );
+  expect(compare(sample, {}).ranked[0].plan.evidence.last_verified_at).toBe(
+    "2026-09-19",
+  );
+  offer.evidence.last_verified_at = "2026-10-29";
+  expect(compare(sample, {}).errors.catalog).toBeTruthy();
+});
+
+test("accepts another provider and source while rejecting identity rewrites and dangling evidence", () => {
+  const sample = structuredClone(catalog);
+  sample.plans = [sample.plans[0]];
+  sample.providers.other = { ...sample.providers.manageit, name: "Other" };
+  sample.sources.other = {
+    ...sample.sources.manageit,
+    provider: "other",
+    url: "https://example.com/tariff",
+  };
+  sample.plans[0].provider = "other";
+  sample.plans[0].source = "other";
+  sample.plans[0].evidence.sources = ["other"];
+  expect(compare(sample, { egress: 1 }).ranked[0].subtotalToman).toBe(711200);
+  sample.plans[0].revisions = [
+    { ...structuredClone(sample.plans[0]), revision_id: "previous", ram_gb: 2 },
+  ];
+  expect(compare(sample, {}).errors.catalog).toBeTruthy();
+  sample.plans[0].revisions = [];
+  sample.plans[0].evidence.sources = ["missing"];
+  expect(compare(sample, {}).errors.catalog).toBeTruthy();
+});
+
+test("uses refreshed prices, retains revisions and separates the changed resource configuration", () => {
+  const result = compare(reviewedCatalog, { ram: 4, egress: 1000 });
+  expect(result.errors).toEqual({});
+  expect(result.ranked[0]).toMatchObject({
+    plan: { id: "NGP-small40" },
+    subtotalToman: 2436399,
+  });
+  expect(
+    result.ranked.find(
+      (q) => q.plan.id === "iranserver-ngp-large80-4c-32g-80g-monthly",
+    )?.plan.ram_gb,
+  ).toBe(32);
+  expect(
+    result.excluded.find((q) => q.plan.id === "NGP-large80")?.reasons,
+  ).toContain("ram_unresolved");
+  expect(result.ranked[0].plan.revisions[0].advertised_monthly_toman).toBe(
+    1823999,
+  );
+});
+
+test("missing traffic evidence leaves the base usable until usage needs that evidence", () => {
+  const sample = structuredClone(catalog);
+  sample.plans = [sample.plans[0]];
+  sample.plans[0].traffic_policy = null;
+  expect(compare(sample, {}).ranked[0]?.subtotalToman).toBe(710000);
+  expect(compare(sample, { egress: 1 }).unpriced[0].reasons).toContain(
+    "unknown_traffic_policy",
+  );
 });
