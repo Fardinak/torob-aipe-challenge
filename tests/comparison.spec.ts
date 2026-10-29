@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
-test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure → reset, with editable and invalid requests", async ({
+
+test("browse exact configurations, filter base budgets, inspect provider terms and preserve traffic comparison", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -9,161 +10,117 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
     if (response.status() >= 400)
       errors.push(`${response.status()} ${response.url()}`);
   });
-  const response = await page.goto("./");
-  expect(response?.status()).toBe(200);
+  expect((await page.goto("./"))?.status()).toBe(200);
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await page.evaluate(() => document.fonts.ready);
+  const configurations = page
+    .getByRole("button")
+    .filter({ has: page.locator("strong") });
   const offers = page.getByRole("article");
-  await expect(offers).toHaveCount(12);
-  await expect(offers.first()).toContainText("۷۱۰٬۰۰۰");
-  await expect(
-    page.getByText("ترافیک قابل پرداخت:", { exact: false }),
-  ).toHaveCount(0);
-  await expect(
-    page.getByText("پایه + ترافیک = جمع برآوردی:", { exact: false }),
-  ).toHaveCount(0);
-  const preset = page.getByRole("button", {
-    name: "حداقل ۴ GB رم",
-    exact: true,
-  });
-  // Reach a key control through the browser's real tab order.
+  const ram = page.getByLabel("حداقل رم (GB)", { exact: true });
+  const budget = page.getByLabel("سقف قیمت پایه ماهانه (تومان)");
+  const egress = page.getByLabel("خروجی ماهانه (GB)", { exact: true });
+  await expect(configurations).toHaveCount(12);
+  await expect(configurations.first()).toContainText("از ۷۱۰٬۰۰۰");
+  await expect(offers).toHaveCount(1);
+  await expect(offers).toContainText("قیمت پایه اعلام‌شده");
   await page.keyboard.press("Tab");
   await expect(
     page.getByRole("button", { name: "پاک کردن فیلترها" }),
   ).toBeFocused();
   await page.keyboard.press("Tab");
   await page.keyboard.press("Tab");
+  const preset = page.getByRole("button", {
+    name: "حداقل ۴ GB رم",
+    exact: true,
+  });
   await expect(preset).toBeFocused();
   expect(
     await preset.evaluate((element) => getComputedStyle(element).outlineStyle),
   ).not.toBe("none");
   await page.keyboard.press("Enter");
-  await expect(offers).toHaveCount(8);
-  await expect(offers.first()).toContainText("۱٬۴۲۰٬۰۰۰");
-  const trafficPreset = page.getByRole("button", {
-    name: "۴ GB رم + ۱ TB خروجی",
-    exact: true,
-  });
-  await trafficPreset.focus();
-  await page.keyboard.press("Enter");
-  await expect(offers).toHaveCount(8);
-  await expect(offers.first()).toContainText("NGP-small40");
-  await expect(offers.first()).toContainText("۲٬۴۳۶٬۳۹۹");
-  await expect(offers.first()).not.toContainText("ترافیک قابل پرداخت:");
-  await expect(offers.first()).not.toContainText(
-    "پایه + ترافیک = جمع برآوردی:",
+  await expect(configurations).toHaveCount(8);
+  await expect(configurations.first()).toContainText("از ۱٬۴۲۰٬۰۰۰");
+  await page.getByLabel("روش تطبیق منابع").selectOption("exact");
+  await expect(configurations).toHaveCount(3);
+  await page.getByLabel("دقیق پردازنده (هسته)", { exact: true }).fill("٢");
+  await expect(configurations).toHaveCount(1);
+  await budget.fill("1400000");
+  await expect(configurations).toHaveCount(0);
+  await expect(page.getByText("پیشنهادی با این منابع نداریم.")).toBeVisible();
+  await expect(budget).toHaveValue("1400000");
+  await budget.fill("۱۴۲۰۰۰۰");
+  await expect(configurations).toHaveCount(1);
+  await expect(configurations.first()).toContainText("هزینه نهایی نامشخص");
+  await expect(offers).toContainText("هزینه‌های اجباری ناقص");
+  await offers.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(offers).toContainText(
+    "تعداد هسته یکسان به معنی عملکرد برابر نیست",
   );
-  const manageit = page.getByRole("article", {
-    name: "منیجیت manageit-2c-4g-75g",
-    exact: true,
-  });
-  await expect(manageit).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰ = ۲٬۶۲۰٬۰۰۰");
-  await expect(manageit).toContainText("۱٬۰۰۰ GB × ۱٬۲۰۰");
+  await expect(offers).toContainText("مرجع ماهانه؛ پرداخت ساعتی PAYG");
   await expect(
-    page.getByLabel("حداقل پردازنده (هسته)", { exact: true }),
-  ).toHaveValue("");
-  await expect(page.getByLabel("حداقل دیسک (GB)", { exact: true })).toHaveValue(
-    "",
-  );
-  const egress = page.getByLabel("خروجی ماهانه (GB)", { exact: true });
-  const ingress = page.getByLabel("ورودی ماهانه (GB، اختیاری)", {
-    exact: true,
-  });
-  await egress.focus();
-  await page.keyboard.press("ControlOrMeta+A");
-  await page.keyboard.type("1200");
-  const ranked = page.getByRole("region", { name: "پیشنهادها", exact: true });
-  const unpriced = page.getByRole("region", {
-    name: "پیشنهادهای بدون برآورد قابل مقایسه",
-    exact: true,
-  });
-  await expect(ranked.getByRole("article")).toHaveCount(3);
-  await expect(unpriced.getByRole("article")).toHaveCount(5);
-  await expect(manageit).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۴۴۰٬۰۰۰ = ۲٬۸۶۰٬۰۰۰");
-  await expect(unpriced).toContainText("قیمت پایه ناقص؛ خارج از رتبه‌بندی");
-  await expect(unpriced).toContainText("۲۰۰ GB");
-  const disclosure = manageit.getByText("جزئیات هزینه و منبع", { exact: true });
-  await disclosure.focus();
-  await page.keyboard.press("Enter");
-  const source = manageit.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" });
-  await expect(source).toBeVisible();
-  await expect(source).toHaveAttribute(
-    "href",
-    "https://www.manageitcloud.com/cloud-server",
-  );
-  await expect(source).toHaveAttribute("target", "_blank");
+    offers.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" }),
+  ).toHaveAttribute("href", "https://www.manageitcloud.com/cloud-server");
   await expect(
-    manageit.getByRole("link", { name: "منبع تعرفه IP شناور" }),
+    offers.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" }),
+  ).toHaveAttribute("target", "_blank");
+  await expect(
+    offers.getByRole("link", { name: "منبع تعرفه IP شناور" }),
   ).toHaveAttribute("href", "https://www.manageitcloud.com/floating-ip");
-  const iranserver = unpriced.getByRole("article").first();
-  await iranserver.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+
+  await page
+    .getByRole("button", { name: "۴ GB رم + ۱ TB خروجی", exact: true })
+    .click();
+  await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("traffic");
+  await expect(configurations.first()).toContainText("از ۲٬۴۳۶٬۳۹۹");
+  const manageitConfiguration = configurations.filter({
+    hasText: "۲ هسته / ۴ GB رم / ۷۵ GB دیسک",
+  });
+  await manageitConfiguration.click();
+  await expect(offers).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰ = ۲٬۶۲۰٬۰۰۰");
+  await expect(offers).toContainText("۱٬۰۰۰ GB × ۱٬۲۰۰");
+  await egress.fill("1200");
+  await expect(configurations).toHaveCount(8);
   await expect(
-    iranserver.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" }),
+    configurations.filter({ hasText: "خارج از رتبه‌بندی" }),
+  ).toHaveCount(5);
+  await expect(offers).toContainText("۱٬۴۲۰٬۰۰۰ + ۱٬۴۴۰٬۰۰۰ = ۲٬۸۶۰٬۰۰۰");
+  await configurations
+    .filter({ hasText: "۱ هسته / ۴ GB رم / ۴۰ GB دیسک" })
+    .click();
+  await expect(offers).toContainText("تعرفه ترافیک اضافه نامشخص است");
+  await expect(offers).toContainText("خارج از رتبه‌بندی");
+  await offers.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(
+    offers.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" }),
   ).toHaveAttribute("href", "https://www.iranserver.com/vps/iran/");
-  await expect(manageit).toContainText("۱۹۵٬۰۰۰");
-  await expect(manageit).toContainText("upload: free; download: 1200 toman/GB");
-  await expect(page.getByRole("checkbox")).toHaveCount(0);
-  await expect(manageit).toContainText("آخرین تأیید موفق: 2026-10-29");
-  await expect(manageit).toContainText("مرجع ماهانه؛ پرداخت ساعتی PAYG");
-  await expect(manageit).toContainText("هزینه‌های اجباری ناقص");
-  expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= window.innerWidth,
-    ),
-  ).toBe(true);
-  for (const field of [egress, ingress]) {
-    await field.fill("-1");
-    await expect(field).toHaveAttribute("aria-invalid", "true");
-    await expect(offers).toHaveCount(0);
+  await budget.fill("1420000");
+  await expect(configurations).toHaveCount(1);
+  await expect(offers).toContainText("۲٬۸۶۰٬۰۰۰"); // Budget is base only, never a complete-bill guarantee.
+  await page.getByLabel("روش مقایسه قیمت").selectOption("base");
+  await expect(offers).toContainText("۱٬۴۲۰٬۰۰۰");
+  await expect(offers).not.toContainText("ترافیک قابل پرداخت:");
+  for (const field of [egress, budget, ram]) {
+    for (const value of ["-1", "1.5", "abc"]) {
+      await field.fill(value);
+      await expect(field).toHaveAttribute("aria-invalid", "true");
+      await expect(page.getByRole("alert")).toBeVisible();
+      await expect(configurations).toHaveCount(0);
+      await expect(offers).toHaveCount(0);
+    }
     await field.fill("");
   }
-  await ingress.fill("1200");
-  await expect(manageit).toContainText("۱٬۴۲۰٬۰۰۰");
-  await expect(manageit).toContainText("قیمت پایه اعلام‌شده");
-  await expect(manageit).not.toContainText("ترافیک قابل پرداخت:");
-  await expect(manageit).not.toContainText("پایه + ترافیک = جمع برآوردی:");
-  await page.getByRole("button", { name: "پاک کردن فیلترها" }).click();
-  await expect(offers).toHaveCount(12);
-  await expect(egress).toHaveValue("");
-  await expect(ingress).toHaveValue("");
-  const ram = page.getByLabel("حداقل رم (GB)", { exact: true });
   await ram.fill("128");
-  await expect(offers).toHaveCount(0);
-  await expect(page.getByText("پیشنهادی با این منابع نداریم.")).toBeVisible();
-  await expect(ram).toHaveValue("128");
+  await expect(configurations).toHaveCount(0);
   await page.getByRole("button", { name: "نمایش همه پیشنهادها" }).click();
-  for (const value of ["-1", "1.5", "Infinity", "abc"]) {
-    await ram.fill(value);
-    await expect(ram).toHaveAttribute("aria-invalid", "true");
-    await expect(page.getByRole("alert")).toBeVisible();
-    await expect(offers).toHaveCount(0);
-  }
+  await expect(configurations).toHaveCount(12);
   await ram.fill("۴");
-  await expect(offers).toHaveCount(8);
-  await ram.fill("");
-  await expect(offers).toHaveCount(12);
-  await page.getByLabel("حداقل پردازنده (هسته)", { exact: true }).fill("8");
-  await expect(offers).toHaveCount(2);
-  await page.getByLabel("حداقل دیسک (GB)", { exact: true }).fill("160");
-  await expect(offers).toHaveCount(1);
-  await page.getByRole("button", { name: "بدون محدودیت", exact: true }).click();
-  await expect(offers).toHaveCount(12);
-  await ram.fill("16");
-  await egress.fill("1200");
-  await expect(ranked.getByRole("article")).toHaveCount(0);
-  await expect(unpriced.getByRole("article")).toHaveCount(3);
-  await expect(
-    page.getByRole("heading", { name: "برای این مصرف، برآورد قیمت نداریم." }),
-  ).toBeVisible();
-  await expect(page.getByText("پیشنهادی با این منابع نداریم.")).toHaveCount(0);
+  await expect(configurations).toHaveCount(8);
   await page.reload();
-  await expect(offers).toHaveCount(12);
+  await expect(configurations).toHaveCount(12);
   await expect(ram).toHaveValue("");
-  await expect(egress).toHaveValue("");
-  await expect(
-    page.getByRole("link", { name: "صفحه تعرفه ارائه‌دهنده" }),
-  ).toHaveCount(0);
+  await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("base");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -172,35 +129,30 @@ test("default offers → 4 GB + 1 TB → unpriced overage → source disclosure 
   expect(errors).toEqual([]);
 });
 
-test("evidence dates and warnings stay visible beside prices at the 30-day boundary", async ({
+test("evidence warnings accompany starting prices and unknown identity stays separate", async ({
   page,
 }) => {
   await page.clock.setFixedTime(new Date("2026-11-28T00:00:00Z"));
   await page.goto("./");
-  const offer = page.getByRole("article", {
-    name: "منیجیت manageit-1c-1g-25g",
-    exact: true,
-  });
-  await expect(offer.getByText("آخرین تأیید موفق:")).toContainText(
-    "2026-10-29",
-  );
-  await expect(offer.getByText("شواهد قدیمی", { exact: false })).toHaveCount(0);
-  await expect(offer).toContainText("۷۱۰٬۰۰۰");
+  const first = page.locator(".configuration").first();
+  await expect(first).toContainText("آخرین تأیید موفق: 2026-10-29");
+  await expect(first).not.toContainText("شواهد قدیمی");
   await page.clock.setFixedTime(new Date("2026-11-29T00:00:00Z"));
   await page.reload();
-  await expect(offer.getByText("شواهد قدیمی", { exact: false })).toBeVisible();
-  await expect(offer).toContainText("۷۱۰٬۰۰۰");
-  await expect(
-    offer.getByText("هزینه‌های اجباری ناقص", { exact: false }),
-  ).toBeVisible();
+  await expect(first).toContainText("شواهد قدیمی");
+  await expect(first).toContainText("۷۱۰٬۰۰۰");
+  await expect(page.getByRole("article")).toContainText("شواهد قدیمی");
   const historical = page
-    .getByRole("region", {
-      name: "پیشنهادهای بدون برآورد قابل مقایسه",
-      exact: true,
-    })
-    .getByRole("article", { name: "ایران‌سرور NGP-large80", exact: true });
-  await expect(historical).toContainText("قیمت نامشخص");
-  await expect(historical).toContainText("آخرین تأیید موفق: 2026-09-19");
-  await historical.getByText("جزئیات هزینه و منبع", { exact: true }).click();
-  await expect(historical).toContainText("ناموفق؛ به معنی خروج از عرضه نیست");
+    .locator(".configuration")
+    .filter({ hasText: "۴ هسته / نامشخص GB رم / ۸۰ GB دیسک" });
+  await expect(historical).toContainText("هویت دقیق تأیید نشده");
+  await historical.click();
+  const offer = page.getByRole("article", {
+    name: "ایران‌سرور NGP-large80",
+    exact: true,
+  });
+  await expect(offer).toContainText("قیمت نامشخص");
+  await expect(offer).toContainText("آخرین تأیید موفق: 2026-09-19");
+  await offer.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(offer).toContainText("ناموفق؛ به معنی خروج از عرضه نیست");
 });

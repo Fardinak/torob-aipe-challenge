@@ -1,6 +1,6 @@
 # سروربین — sampled VPS comparison
 
-Persian RTL React + TypeScript application for issues #2, #3 and #13. Compares monthly **base-plus-traffic subtotals** of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum RAM, CPU and disk and expected outbound/inbound usage. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
+Persian RTL React + TypeScript application for issues #2, #3, #13 and #14. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
 
 ## Deployment
 
@@ -49,26 +49,30 @@ BASE_PATH=/torob-aipe-challenge/ npm test
 PLAYWRIGHT_BASE_URL=https://fardinak.github.io/torob-aipe-challenge/ npm run test:browser
 ```
 
-The journeys check ranking, arithmetic, unknown costs, original terms, visible verification dates, 30-day stale warnings, all
-three provider/source destinations, keyboard tab order and focus, RTL, asset
-loading, runtime errors, reset and reload. Hosting serves the single application
+The journeys check configuration selection, minimum/exact resources, base-price budgets, traffic ranking/arithmetic, unknown costs, provider/source destinations, visible verification dates, 30-day stale warnings, keyboard operation, RTL, asset loading, runtime errors, reset and reload. Hosting serves the single application
 route `/torob-aipe-challenge/`; no other application routes are defined.
 
 ## Data and boundaries
 
 `research/vps-reviewed-catalog.json` is the current reviewed catalog with retained evidence revisions, fact statuses and verification attempts. `research/vps-comparison-data.json` remains the unchanged historical snapshot. `src/catalog.ts` validates provider/source records, unique identifiers, evidence references, identity continuity and nonnegative integer prices. The build also checks retained snapshot hashes. Missing required facts block validation; explicit unknowns remain unknown. The application displays successful-review dates, evidence warnings and source links. Snapshot capture timestamps remain separate from verification dates.
 
-`compare(catalog, request)` in `src/comparison.ts` owns validation, resource and traffic eligibility, exact integer arithmetic, reasons and deterministic subtotal ordering. It returns ranked, unpriced and excluded groups plus validation errors. Per-offer traffic policies and explicit assumptions keep product interpretations separate from source facts; `src/traffic-policy.ts` validates them: ManageIT download is egress billed at the source rate (1,200 toman/GB), upload is free ingress; IranServer’s unspecified-direction allowance is treated as shared ingress plus egress. Unknown overage is unpriced above the allowance. Confirmed hard caps exclude plans; known paid overage charges only excess. Synthetic policies enter through the optional third comparison argument in tests, without adding live offers. Calculations outside JavaScript’s safe integer range remain unpriced.
+`compare(catalog, request)` in `src/comparison.ts` owns validation, offer eligibility, listing consolidation, starting prices, traffic arithmetic and deterministic ordering. `request.resourceMode` defaults to `minimum`; `exact` requires equality for every selected amount (including zero). `request.budget` is an inclusive monthly base-price ceiling applied per offer before starting prices. Unknown mandatory fees do not prevent base-price eligibility; unresolved base tariffs remain inspectable and never supply a starting price.
+
+`request.priceMode` defaults to `base`, even when usage is supplied. Choose `traffic` to rank base-plus-traffic subtotals. The UI exposes both modes; the usage preset activates traffic mode. Billing uses the catalog's explicitly published monthly reference in toman, retaining each offer's payment terms (including hourly PAYG) without inventing hourly conversions. A budget still constrains base prices in traffic mode and does not guarantee the subtotal or final bill fits it.
+
+The returned `items` contain only eligible provider offers, exact or explicitly incomplete resource identity, a starting price/offer (or null), billing basis and offer-level cost uncertainty. Grouping requires verified CPU, RAM, storage capacity and a known storage type supported by verified storage evidence. Unknown facts produce separate items; equal resources do not promise equal performance. Stable offer IDs break price ties, and stable configuration IDs break listing ties. Legacy `ranked`, `unpriced`, `excluded` and validation errors remain available.
+
+Per-offer traffic policies and explicit assumptions keep product interpretations separate from source facts; `src/traffic-policy.ts` validates them: ManageIT download is egress billed at the source rate (1,200 toman/GB), upload is free ingress; IranServer’s unspecified-direction allowance is treated as shared ingress plus egress. Unknown required traffic charges stay outside ranked subtotals. Confirmed hard caps exclude plans; known paid overage charges only excess. Synthetic overlaps and policies are tests only; the reviewed sample has no established exact cross-provider match and does not satisfy #12's release coverage gate. Calculations outside JavaScript’s safe integer range remain unpriced.
 
 Blank resource requirements impose no constraints; blank usage is zero. Usage is in whole GB, with 1 TB explicitly equal to 1,000 GB. Nonnegative whole numbers (including Persian/Arabic digits) update results immediately. Invalid input hides quotes until corrected. Equal prices sort by stable plan ID, with no performance preference implied.
 
 Billing disclosures preserve unknown CPU allocation, tax, mandatory fees and IPv4 inclusion. ManageIT's optional floating IPv4 price is explanatory only. Published monthly prices are not converted to hourly prices. The prototype remains on `prototype/vps-comparison`; this application implements layout A's interaction without merging the prototype.
 
-See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice preserves the existing traffic experience; the broader discovery journeys in #12 are separate work.
+See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. This slice adds exact VPS discovery and preserves traffic comparison; the broader coverage, search, provider catalogs, URL restoration and refined mobile navigation in #12 remain separate work.
 
 ## Traffic comparison demo
 
-Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranServer NGP-small40 at 2,436,399 toman. ManageIT 2c/4g/75g shows 1,420,000 base + 1,200,000 traffic = 2,620,000 toman. Change outbound to 1,200 GB: three ManageIT offers remain ranked (2c/4g/75g at 2,860,000), with five IranServer offers separately unpriced. Inspect the original tariff wording and limitations, then reset. CPU and disk remain unconstrained by this preset.
+Choose **۴ GB رم + ۱ TB خروجی**: eight offers are priced, led by IranServer NGP-small40 at 2,436,399 toman. ManageIT 2c/4g/75g shows 1,420,000 base + 1,200,000 traffic = 2,620,000 toman. Change outbound to 1,200 GB: three ManageIT offers remain ranked (2c/4g/75g at 2,860,000), with five IranServer offers separately unpriced. Select a configuration to inspect its provider offer. Inspect the original tariff wording and limitations, then reset. CPU and disk remain unconstrained by this preset.
 
 ## Reproducible demo outline (under five minutes)
 

@@ -407,3 +407,63 @@ footer {
 .details-body a {
   overflow-wrap: anywhere;
 }
+
+select {
+  font: inherit;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #a9b9c3;
+  border-radius: 8px;
+  background: #fcfdfd;
+  color: #23313e;
+}
+.mode-fields {
+  margin-bottom: 20px;
+}
+.discovery {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr);
+  gap: 24px;
+  align-items: start;
+}
+.configuration-list {
+  display: grid;
+  gap: 12px;
+}
+.configuration {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.configuration[aria-pressed="true"] {
+  border: 2px solid #087367;
+  background: #edf7f4;
+}
+.configuration small {
+  font-size: 0.78rem;
+}
+.offer-detail {
+  min-width: 0;
+  position: sticky;
+  top: 16px;
+}
+.offer-detail > p {
+  margin: 8px 0 16px;
+}
+.offer-detail .offer-main {
+  grid-template-columns: 1fr 1fr;
+}
+.offer-detail .resources {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+@media (max-width: 720px) {
+  .discovery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .offer-detail {
+    position: static;
+  }
+}

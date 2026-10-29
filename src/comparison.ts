@@ -1,8 +1,11 @@
 import { trafficPolicySchema, type TrafficPolicies } from "./traffic-policy";
 import { catalogSchema, type Plan } from "./catalog";
 export type Resource = "ram" | "cpu" | "disk";
-export type InputField = Resource | "egress" | "ingress";
-export type Request = Partial<Record<InputField, string | number>>;
+export type InputField = Resource | "egress" | "ingress" | "budget";
+export type Request = Partial<Record<InputField, string | number>> & {
+  resourceMode?: "minimum" | "exact";
+  priceMode?: "base" | "traffic";
+};
 export type Quote = {
   plan: Plan;
   baseMonthlyToman: number;
@@ -12,11 +15,36 @@ export type Quote = {
   subtotalToman: number;
   reasons: string[];
 };
+export type ProviderOffer = {
+  plan: Plan;
+  quote?: Quote;
+  billableGb?: number;
+  reasons: string[];
+  totalCostUnknown: boolean;
+};
+export type ListingItem = {
+  id: string;
+  exactIdentity: boolean;
+  configuration: {
+    cpu: number | null;
+    ram: number | null;
+    disk: number | null;
+    storageType: string | null;
+  };
+  offers: ProviderOffer[];
+  startingPriceToman: number | null;
+  startingOfferId: string | null;
+  billingBasis: "published-monthly-reference";
+};
 export type Comparison = {
+  items: ListingItem[];
+  priceMode: "base" | "traffic";
   ranked: Quote[];
   unpriced: { plan: Plan; billableGb?: number; reasons: string[] }[];
   excluded: { plan: Plan; reasons: string[] }[];
-  errors: Partial<Record<InputField | "catalog", string>>;
+  errors: Partial<
+    Record<InputField | "catalog" | "resourceMode" | "priceMode", string>
+  >;
 };
 const resources = { ram: "ram_gb", cpu: "cpu_count", disk: "disk_gb" } as const;
 export function compare(
@@ -25,6 +53,8 @@ export function compare(
   policies?: TrafficPolicies,
 ): Comparison {
   const result: Comparison = {
+    items: [],
+    priceMode: request.priceMode ?? "base",
     ranked: [],
     unpriced: [],
     excluded: [],
@@ -36,14 +66,25 @@ export function compare(
     return result;
   }
   const catalog = parsed.data;
-  const minimums: Record<InputField, number> = {
+  if (
+    request.resourceMode !== undefined &&
+    !["minimum", "exact"].includes(request.resourceMode)
+  )
+    result.errors.resourceMode = "روش تطبیق منابع معتبر نیست.";
+  if (
+    request.priceMode !== undefined &&
+    !["base", "traffic"].includes(request.priceMode)
+  )
+    result.errors.priceMode = "روش مقایسه قیمت معتبر نیست.";
+  const amounts: Record<InputField, number> = {
     ram: 0,
     cpu: 0,
     disk: 0,
     egress: 0,
     ingress: 0,
+    budget: 0,
   };
-  for (const key of Object.keys(minimums) as InputField[]) {
+  for (const key of Object.keys(amounts) as InputField[]) {
     const raw = request[key];
     const text = String(raw ?? "")
       .trim()
@@ -56,7 +97,7 @@ export function compare(
       value < 0
     )
       result.errors[key] = "عدد صحیح صفر یا بیشتر وارد کنید.";
-    else minimums[key] = value;
+    else amounts[key] = value;
   }
   if (Object.keys(result.errors).length) return result;
   for (const plan of catalog.plans) {
@@ -76,14 +117,16 @@ export function compare(
     const reasons = (Object.keys(resources) as Resource[])
       .filter(
         (key) =>
-          minimums[key] > 0 &&
+          String(request[key] ?? "").trim() !== "" &&
           (plan.evidence.facts[resources[key]] !== "verified" ||
-            plan[resources[key]] < minimums[key]),
+            (request.resourceMode === "exact"
+              ? plan[resources[key]] !== amounts[key]
+              : plan[resources[key]] < amounts[key])),
       )
       .map((key) =>
         plan.evidence.facts[resources[key]] !== "verified"
           ? `${key}_unresolved`
-          : `${key}_below_minimum`,
+          : `${key}_${request.resourceMode === "exact" ? "not_exact" : "below_minimum"}`,
       );
     if (reasons.length) {
       result.excluded.push({ plan, reasons });
@@ -93,7 +136,26 @@ export function compare(
       result.unpriced.push({ plan, reasons: ["base_price_unresolved"] });
       continue;
     }
-    const trafficRequested = minimums.egress > 0 || minimums.ingress > 0;
+    if (
+      String(request.budget ?? "").trim() !== "" &&
+      plan.advertised_monthly_toman > amounts.budget
+    ) {
+      result.excluded.push({ plan, reasons: ["base_price_above_budget"] });
+      continue;
+    }
+    if (result.priceMode === "base") {
+      result.ranked.push({
+        plan,
+        baseMonthlyToman: plan.advertised_monthly_toman,
+        billableGb: 0,
+        rateTomanPerGb: null,
+        trafficChargeToman: 0,
+        subtotalToman: plan.advertised_monthly_toman,
+        reasons: ["published_base_price"],
+      });
+      continue;
+    }
+    const trafficRequested = amounts.egress > 0 || amounts.ingress > 0;
     const policyResult = trafficPolicySchema.safeParse(
       policies ? policies[plan.id] : plan.traffic_policy,
     );
@@ -127,8 +189,8 @@ export function compare(
     }
     const usage =
       policy.direction === "shared"
-        ? minimums.egress + minimums.ingress
-        : minimums.egress;
+        ? amounts.egress + amounts.ingress
+        : amounts.egress;
     if (!Number.isSafeInteger(usage)) {
       result.unpriced.push({ plan, reasons: ["arithmetic_out_of_range"] });
       continue;
@@ -191,6 +253,60 @@ export function compare(
     (a, b) =>
       a.subtotalToman - b.subtotalToman ||
       (a.plan.id < b.plan.id ? -1 : a.plan.id > b.plan.id ? 1 : 0),
+  );
+  const items = new Map<string, ListingItem>();
+  const offers: ProviderOffer[] = [
+    ...result.ranked.map((quote) => ({
+      plan: quote.plan,
+      quote,
+      reasons: quote.reasons,
+      totalCostUnknown:
+        !catalog.providers[quote.plan.provider].mandatory_fee_completeness,
+    })),
+    ...result.unpriced.map((offer) => ({ ...offer, totalCostUnknown: true })),
+  ];
+  for (const offer of offers) {
+    const { plan } = offer;
+    const configuration = {
+      cpu: plan.evidence.facts.cpu_count === "verified" ? plan.cpu_count : null,
+      ram: plan.evidence.facts.ram_gb === "verified" ? plan.ram_gb : null,
+      disk: plan.evidence.facts.disk_gb === "verified" ? plan.disk_gb : null,
+      storageType:
+        plan.evidence.facts.storage_label === "verified"
+          ? plan.storage_type
+          : null,
+    };
+    const exactIdentity = Object.values(configuration).every(
+      (value) => value !== null,
+    );
+    const id = exactIdentity
+      ? `vps:${JSON.stringify(configuration)}`
+      : `offer:${plan.id}`;
+    let item = items.get(id);
+    if (!item) {
+      item = {
+        id,
+        exactIdentity,
+        configuration,
+        offers: [],
+        startingPriceToman: offer.quote?.subtotalToman ?? null,
+        startingOfferId: offer.quote ? plan.id : null,
+        billingBasis: "published-monthly-reference",
+      };
+      items.set(id, item);
+    }
+    item.offers.push(offer);
+  }
+  result.items = [...items.values()].sort(
+    (a, b) =>
+      (a.startingPriceToman === null && b.startingPriceToman === null
+        ? 0
+        : a.startingPriceToman === null
+          ? 1
+          : b.startingPriceToman === null
+            ? -1
+            : a.startingPriceToman - b.startingPriceToman) ||
+      (a.id < b.id ? -1 : a.id > b.id ? 1 : 0),
   );
   return result;
 }

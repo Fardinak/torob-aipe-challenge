@@ -14,6 +14,137 @@ const catalog: Catalog = {
     })),
 };
 
+// Synthetic overlaps exercise grouping only; these are never release offers.
+function overlappingCatalog(): Catalog {
+  const sample = structuredClone(catalog);
+  const original = sample.plans[0];
+  sample.providers.other = {
+    ...sample.providers.manageit,
+    name: "Other provider",
+  };
+  sample.sources.other = {
+    ...sample.sources.manageit,
+    provider: "other",
+    url: "https://example.com/tariff",
+  };
+  sample.plans = [
+    original,
+    {
+      ...structuredClone(original),
+      id: "second",
+      provider: "other",
+      source: "other",
+      evidence: { ...structuredClone(original.evidence), sources: ["other"] },
+      advertised_monthly_toman: 800000,
+    },
+  ];
+  return sample;
+}
+
+test("consolidates only evidenced exact resources and storage type, retaining offer prices", () => {
+  const sample = overlappingCatalog();
+  const grouped = compare(sample, {});
+  expect(grouped.items).toHaveLength(1);
+  expect(grouped.items[0]).toMatchObject({
+    exactIdentity: true,
+    startingPriceToman: 710000,
+  });
+  expect(grouped.items[0].offers.map((o) => o.plan.id)).toEqual([
+    "manageit-1c-1g-25g",
+    "second",
+  ]);
+  for (const change of [
+    { ram_gb: 2 },
+    { cpu_count: 2 },
+    { disk_gb: 50 },
+    { storage_type: "NVMe" },
+    { storage_type: null },
+    {
+      evidence: {
+        ...sample.plans[1].evidence,
+        facts: {
+          ...sample.plans[1].evidence.facts,
+          storage_label: "unknown" as const,
+        },
+      },
+    },
+  ]) {
+    const distinct = structuredClone(sample);
+    Object.assign(distinct.plans[1], change);
+    expect(compare(distinct, {}).items).toHaveLength(2);
+  }
+  sample.plans.forEach((p) => (p.evidence.facts.cpu_count = "unknown"));
+  expect(compare(sample, {}).items.every((i) => !i.exactIdentity)).toBe(true);
+  expect(compare(sample, {}).items).toHaveLength(2);
+});
+
+test("exact mode constrains every selected resource, including zero, while blanks impose no constraint", () => {
+  expect(
+    compare(catalog, { ram: 4, resourceMode: "exact" }).ranked.map(
+      (q) => q.plan.id,
+    ),
+  ).toEqual(["manageit-2c-4g-75g", "NGP-small40", "manageit-4c-4g-75g"]);
+  expect(
+    compare(catalog, {
+      ram: "۴",
+      cpu: "٢",
+      disk: "",
+      resourceMode: "exact",
+    }).ranked.map((q) => q.plan.id),
+  ).toEqual(["manageit-2c-4g-75g"]);
+  expect(compare(catalog, { ram: 0, resourceMode: "exact" }).items).toEqual([]);
+  const sample = overlappingCatalog();
+  sample.plans[0].evidence.facts.ram_gb = "unknown";
+  expect(
+    compare(sample, { ram: 1, resourceMode: "exact" }).excluded[0].reasons,
+  ).toEqual(["ram_unresolved"]);
+});
+
+test("base budgets filter offers before starting prices, retain unknown mandatory fees and reject unresolved tariffs", () => {
+  const sample = overlappingCatalog();
+  sample.plans[0].evidence.facts.advertised_monthly_toman = "conflicting";
+  expect(compare(sample, {}).items[0]).toMatchObject({
+    startingPriceToman: 800000,
+    startingOfferId: "second",
+  });
+  const budgeted = compare(sample, { budget: "۸۰۰۰۰۰" });
+  expect(
+    budgeted.items[0].offers.find((o) => o.plan.id === "second"),
+  ).toMatchObject({ totalCostUnknown: true });
+  expect(
+    compare(sample, { budget: 799999 }).items[0].startingPriceToman,
+  ).toBeNull();
+  expect(compare(sample, { budget: 799999 }).excluded[0].reasons).toContain(
+    "base_price_above_budget",
+  );
+  expect(compare(sample, { budget: 0 }).ranked).toEqual([]);
+  expect(compare(sample, { budget: "-1" }).errors.budget).toBeTruthy();
+});
+
+test("default discovery compares published monthly bases even with usage; traffic is a separate subtotal promise", () => {
+  const base = compare(catalog, { ram: 4, egress: 1200 });
+  expect(base.priceMode).toBe("base");
+  expect(base.items[0]).toMatchObject({
+    startingPriceToman: 1420000,
+    startingOfferId: "manageit-2c-4g-75g",
+    billingBasis: "published-monthly-reference",
+  });
+  expect(base.unpriced).toEqual([]);
+  const traffic = compare(catalog, {
+    ram: 4,
+    egress: 1200,
+    priceMode: "traffic",
+  });
+  expect(traffic.items[0].startingPriceToman).toBe(2860000);
+  expect(traffic.unpriced).toHaveLength(5);
+  expect(
+    compare(catalog, { priceMode: "invalid" } as never).errors.priceMode,
+  ).toBeTruthy();
+  expect(
+    compare(catalog, { resourceMode: "invalid" } as never).errors.resourceMode,
+  ).toBeTruthy();
+});
+
 test("ranks the complete reviewed sample by exact monthly base prices", () => {
   const result = compare(catalog, {});
   expect(result.errors).toEqual({});
@@ -112,7 +243,11 @@ test.each([
 });
 
 test("prices the 4 GB plus 1 TB scenario and changes the cheapest offer", () => {
-  const result = compare(catalog, { ram: 4, egress: 1000 });
+  const result = compare(catalog, {
+    ram: 4,
+    priceMode: "traffic",
+    egress: 1000,
+  });
   expect(result.ranked).toHaveLength(8);
   expect(result.ranked[0]).toMatchObject({
     plan: { id: "NGP-small40" },
@@ -130,7 +265,11 @@ test("prices the 4 GB plus 1 TB scenario and changes the cheapest offer", () => 
 });
 
 test("separates unknown overage using shared ingress plus egress", () => {
-  const result = compare(catalog, { ram: 4, egress: 1200 });
+  const result = compare(catalog, {
+    ram: 4,
+    priceMode: "traffic",
+    egress: 1200,
+  });
   expect(result.ranked).toHaveLength(3);
   expect(result.unpriced).toHaveLength(5);
   expect(result.unpriced[0]).toMatchObject({
@@ -142,12 +281,24 @@ test("separates unknown overage using shared ingress plus egress", () => {
     subtotalToman: 2860000,
   });
   expect(
-    compare(catalog, { ram: 4, egress: 800, ingress: 200 }).ranked,
+    compare(catalog, {
+      ram: 4,
+      priceMode: "traffic",
+      egress: 800,
+      ingress: 200,
+    }).ranked,
   ).toHaveLength(8);
   expect(
-    compare(catalog, { ram: 4, egress: 1000, ingress: 200 }).unpriced,
+    compare(catalog, {
+      ram: 4,
+      priceMode: "traffic",
+      egress: 1000,
+      ingress: 200,
+    }).unpriced,
   ).toHaveLength(5);
-  expect(compare(catalog, { ram: 4, ingress: 1200 }).ranked[0]).toMatchObject({
+  expect(
+    compare(catalog, { ram: 4, priceMode: "traffic", ingress: 1200 }).ranked[0],
+  ).toMatchObject({
     trafficChargeToman: 0,
     subtotalToman: 1420000,
   });
@@ -165,7 +316,11 @@ test("applies confirmed hard caps and paid excess without adding synthetic live 
       overage: { kind: "unavailable" as const },
     },
   };
-  const capped = compare(sample, { egress: 1000, ingress: 200 }, policies);
+  const capped = compare(
+    sample,
+    { priceMode: "traffic", egress: 1000, ingress: 200 },
+    policies,
+  );
   expect(capped.ranked).toEqual([]);
   expect(capped.unpriced).toEqual([]);
   expect(capped.excluded[0].reasons).toEqual(["traffic_hard_cap"]);
@@ -176,14 +331,16 @@ test("applies confirmed hard caps and paid excess without adding synthetic live 
     },
   };
   expect(
-    compare(sample, { egress: 800, ingress: 200 }, paid).ranked[0],
+    compare(sample, { priceMode: "traffic", egress: 800, ingress: 200 }, paid)
+      .ranked[0],
   ).toMatchObject({
     billableGb: 0,
     trafficChargeToman: 0,
     subtotalToman: 1823999,
   });
   expect(
-    compare(sample, { egress: 1000, ingress: 200 }, paid).ranked[0],
+    compare(sample, { priceMode: "traffic", egress: 1000, ingress: 200 }, paid)
+      .ranked[0],
   ).toMatchObject({
     billableGb: 200,
     rateTomanPerGb: 1234,
@@ -203,13 +360,14 @@ test("never fabricates a quote from missing data or unsafe arithmetic", () => {
   sample.plans.forEach((p) => {
     p.traffic_allowance_gb_unspecified_direction = null;
   });
-  const result = compare(sample, { egress: 1 });
+  const result = compare(sample, { priceMode: "traffic", egress: 1 });
   expect(result.ranked).toEqual([]);
   expect(result.unpriced).toHaveLength(11);
   expect(result.unpriced[0].reasons).toEqual(["missing_traffic_rate"]);
   expect(result.unpriced[6].reasons).toEqual(["unknown_allowance"]);
   expect(compare(sample, {}).ranked).toHaveLength(11);
   const huge = compare(catalog, {
+    priceMode: "traffic",
     egress: Number.MAX_SAFE_INTEGER,
     ingress: Number.MAX_SAFE_INTEGER,
   });
@@ -250,9 +408,9 @@ test("a stale or failed review does not refresh evidence or disable unrelated fa
     note: "Tariff request failed",
   });
   expect(compare(sample, {}).ranked).toHaveLength(1);
-  expect(compare(sample, { egress: 1 }).unpriced[0].reasons).toContain(
-    "missing_traffic_rate",
-  );
+  expect(
+    compare(sample, { priceMode: "traffic", egress: 1 }).unpriced[0].reasons,
+  ).toContain("missing_traffic_rate");
   expect(compare(sample, {}).ranked[0].plan.evidence.last_verified_at).toBe(
     "2026-09-19",
   );
@@ -272,7 +430,10 @@ test("accepts another provider and source while rejecting identity rewrites and 
   sample.plans[0].provider = "other";
   sample.plans[0].source = "other";
   sample.plans[0].evidence.sources = ["other"];
-  expect(compare(sample, { egress: 1 }).ranked[0].subtotalToman).toBe(711200);
+  expect(
+    compare(sample, { priceMode: "traffic", egress: 1 }).ranked[0]
+      .subtotalToman,
+  ).toBe(711200);
   sample.plans[0].revisions = [
     { ...structuredClone(sample.plans[0]), revision_id: "previous", ram_gb: 2 },
   ];
@@ -283,7 +444,11 @@ test("accepts another provider and source while rejecting identity rewrites and 
 });
 
 test("uses refreshed prices, retains revisions and separates the changed resource configuration", () => {
-  const result = compare(reviewedCatalog, { ram: 4, egress: 1000 });
+  const result = compare(reviewedCatalog, {
+    ram: 4,
+    priceMode: "traffic",
+    egress: 1000,
+  });
   expect(result.errors).toEqual({});
   expect(result.ranked[0]).toMatchObject({
     plan: { id: "NGP-small40" },
@@ -307,7 +472,7 @@ test("missing traffic evidence leaves the base usable until usage needs that evi
   sample.plans = [sample.plans[0]];
   sample.plans[0].traffic_policy = null;
   expect(compare(sample, {}).ranked[0]?.subtotalToman).toBe(710000);
-  expect(compare(sample, { egress: 1 }).unpriced[0].reasons).toContain(
-    "unknown_traffic_policy",
-  );
+  expect(
+    compare(sample, { priceMode: "traffic", egress: 1 }).unpriced[0].reasons,
+  ).toContain("unknown_traffic_policy");
 });

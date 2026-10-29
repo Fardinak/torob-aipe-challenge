@@ -6,7 +6,8 @@ import {
   type Request,
   type InputField,
   type Quote,
-  type Comparison,
+  type ProviderOffer,
+  type ListingItem,
 } from "./comparison";
 import "@fontsource/vazirmatn/400.css";
 import "@fontsource/vazirmatn/700.css";
@@ -18,6 +19,7 @@ const fields: { key: InputField; label: string }[] = [
   { key: "ram", label: "حداقل رم (GB)" },
   { key: "cpu", label: "حداقل پردازنده (هسته)" },
   { key: "disk", label: "حداقل دیسک (GB)" },
+  { key: "budget", label: "سقف قیمت پایه ماهانه (تومان)" },
   { key: "egress", label: "خروجی ماهانه (GB)" },
   { key: "ingress", label: "ورودی ماهانه (GB، اختیاری)" },
 ];
@@ -134,7 +136,7 @@ function Offer({
   quote,
   cheapest = false,
 }: {
-  candidate: Comparison["unpriced"][number];
+  candidate: ProviderOffer;
   quote?: Quote;
   cheapest?: boolean;
 }) {
@@ -182,9 +184,7 @@ function Offer({
           </span>
         </div>
         <div className="price">
-          {cheapest && (
-            <span className="badge">کمترین جمع برآوردی در نتایج</span>
-          )}
+          {cheapest && <span className="badge">قیمت شروع این پیکربندی</span>}
           <strong>
             {plan.evidence.facts.advertised_monthly_toman === "verified"
               ? number(quote?.subtotalToman ?? plan.advertised_monthly_toman)
@@ -204,7 +204,7 @@ function Offer({
             </small>
           )}
           <small>
-            هزینه نهایی نامشخص؛{" "}
+            {candidate.totalCostUnknown ? "هزینه نهایی نامشخص؛ " : ""}
             {catalog.providers[plan.provider].mandatory_fee_completeness
               ? "هزینه‌های اجباری بررسی شده"
               : "هزینه‌های اجباری ناقص"}
@@ -218,10 +218,10 @@ function Offer({
           )}
           <small>
             {quote
-              ? quote.trafficChargeToman > 0
+              ? quote.reasons.includes("base_plus_traffic")
                 ? "جمع برآوردی پایه و ترافیک"
                 : "قیمت پایه اعلام‌شده"
-              : "قیمت پایه ناقص؛ خارج از رتبه‌بندی"}
+              : "بدون قیمت قابل مقایسه؛ خارج از رتبه‌بندی"}
           </small>
         </div>
       </div>
@@ -280,10 +280,71 @@ function Offer({
   );
 }
 
+function Configuration({
+  item,
+  selected,
+  onSelect,
+}: {
+  item: ListingItem;
+  selected: boolean;
+  onSelect: () => void;
+}) {
+  const { configuration } = item;
+  const startingOffer = item.offers.find(
+    (offer) => offer.plan.id === item.startingOfferId,
+  );
+  return (
+    <button
+      className="configuration"
+      aria-pressed={selected}
+      onClick={onSelect}
+    >
+      <strong>
+        {configuration.cpu === null ? "نامشخص" : number(configuration.cpu)} هسته
+        / {configuration.ram === null ? "نامشخص" : number(configuration.ram)} GB
+        رم /{" "}
+        {configuration.disk === null ? "نامشخص" : number(configuration.disk)} GB
+        دیسک
+      </strong>
+      <span>
+        {configuration.storageType ?? "نوع دیسک نامشخص"}؛{" "}
+        {number(item.offers.length)} پیشنهاد
+      </span>
+      {!item.exactIdentity && (
+        <small>هویت دقیق تأیید نشده؛ پیشنهاد مستقل</small>
+      )}
+      <span>
+        {item.startingPriceToman === null
+          ? "بدون قیمت قابل مقایسه؛ خارج از رتبه‌بندی"
+          : `از ${number(item.startingPriceToman)} تومان / مرجع ماهانه`}
+      </span>
+      {startingOffer?.totalCostUnknown && (
+        <small className="evidence-warning">هزینه نهایی نامشخص</small>
+      )}
+      {startingOffer && (
+        <small>
+          آخرین تأیید موفق:{" "}
+          <bdi>{startingOffer.plan.evidence.last_verified_at ?? "نامشخص"}</bdi>
+        </small>
+      )}
+      {startingOffer &&
+        evidenceIsStale(startingOffer.plan.evidence.last_verified_at) && (
+          <small className="evidence-warning">
+            شواهد قدیمی؛ نیازمند بازبینی
+          </small>
+        )}
+    </button>
+  );
+}
+
 function App() {
   const [request, setRequest] = useState<Request>({});
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const comparison = compare(catalog, request);
   const invalid = Object.keys(comparison.errors).length > 0;
+  const selected =
+    comparison.items.find((item) => item.id === selectedId) ??
+    comparison.items[0];
   return (
     <>
       <header className="site-header">
@@ -328,14 +389,58 @@ function App() {
             <button onClick={() => setRequest({ ram: "4" })}>
               حداقل ۴ GB رم
             </button>
-            <button onClick={() => setRequest({ ram: "4", egress: "1000" })}>
+            <button
+              onClick={() =>
+                setRequest({ ram: "4", egress: "1000", priceMode: "traffic" })
+              }
+            >
               ۴ GB رم + ۱ TB خروجی
             </button>
+          </div>
+          <div className="fields mode-fields">
+            <div>
+              <label htmlFor="resource-mode">روش تطبیق منابع</label>
+              <select
+                id="resource-mode"
+                value={request.resourceMode ?? "minimum"}
+                onChange={(e) =>
+                  setRequest({
+                    ...request,
+                    resourceMode:
+                      e.target.value === "exact" ? "exact" : "minimum",
+                  })
+                }
+              >
+                <option value="minimum">حداقل منابع</option>
+                <option value="exact">منابع دقیق</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="price-mode">روش مقایسه قیمت</label>
+              <select
+                id="price-mode"
+                value={comparison.priceMode}
+                onChange={(e) =>
+                  setRequest({
+                    ...request,
+                    priceMode:
+                      e.target.value === "traffic" ? "traffic" : "base",
+                  })
+                }
+              >
+                <option value="base">قیمت پایه اعلام‌شده</option>
+                <option value="traffic">جمع برآوردی پایه و ترافیک</option>
+              </select>
+            </div>
           </div>
           <div className="fields">
             {fields.map(({ key, label }) => (
               <div key={key}>
-                <label htmlFor={key}>{label}</label>
+                <label htmlFor={key}>
+                  {request.resourceMode === "exact"
+                    ? label.replace("حداقل", "دقیق")
+                    : label}
+                </label>
                 <input
                   id={key}
                   inputMode="numeric"
@@ -363,90 +468,98 @@ function App() {
           <p id="input-help" className="muted">
             منابع خالی یعنی بدون محدودیت؛ مصرف خالی یعنی صفر. ۱ TB برابر ۱٬۰۰۰
             GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد اعلام‌شده
-            ارائه‌دهنده است.
+            ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛ هزینه‌های اجباری
+            نامشخص ممکن است به آن اضافه شوند.
           </p>
         </section>
         <section aria-labelledby="results-title" className="results">
           <div className="section-heading">
             <h2 id="results-title">پیشنهادها</h2>
-            <span className="muted">جمع برآوردی: کم به زیاد</span>
+            <span className="muted">
+              {comparison.priceMode === "base"
+                ? "قیمت پایه: کم به زیاد"
+                : "جمع پایه و ترافیک: کم به زیاد"}
+            </span>
           </div>
           <p role="status">
             {invalid
               ? "برای دیدن نتایج، ورودی را اصلاح کنید."
-              : `${number(comparison.ranked.length)} پیشنهاد قیمت‌گذاری‌شده مطابق درخواست شما`}
+              : `${number(comparison.items.length)} پیکربندی / ${number(comparison.ranked.length)} پیشنهاد قیمت‌گذاری‌شده مطابق درخواست شما`}
           </p>
           <p className="muted">
-            جمع برآوردی ماهانه = قیمت پایه + هزینه ترافیک، به تومان؛ بدون مالیات
-            و هزینه‌های حل‌نشده.
+            {comparison.priceMode === "base"
+              ? "قیمت پایه اعلام‌شده؛ مرجع ماهانه به تومان، بدون تضمین هزینه نهایی. مصرف ترافیک در این حالت روی ترتیب اثر ندارد."
+              : "جمع برآوردی ماهانه = قیمت پایه + هزینه ترافیک، به تومان؛ بدون مالیات و هزینه‌های حل‌نشده."}
           </p>
           <p className="muted">
-            قاعده ثابت محصول: دانلود منیجیت خروجی سرور و آپلود آن ورودی رایگان
-            است. سهمیه با جهت نامشخص را مشترک بین ورودی و خروجی حساب می‌کنیم؛
-            این تفسیر محصول است، نه تأیید جهت مصرف توسط ارائه‌دهنده.
+            منابع یکسان به معنی عملکرد برابر نیست. نوع دیسک یا منابع نامشخص،
+            برابری دو پیشنهاد را ثابت نمی‌کند.
           </p>
+          {comparison.priceMode === "traffic" && (
+            <p className="muted">
+              قاعده ثابت محصول: دانلود منیجیت خروجی سرور و آپلود آن ورودی رایگان
+              است. سهمیه با جهت نامشخص را مشترک بین ورودی و خروجی حساب می‌کنیم؛
+              این تفسیر محصول است، نه تأیید جهت مصرف توسط ارائه‌دهنده.
+            </p>
+          )}
           {invalid ? (
             <div className="empty" role="alert">
               {comparison.errors.catalog ??
                 "ورودی نامعتبر است. نتایج تا اصلاح ورودی نمایش داده نمی‌شوند."}
             </div>
-          ) : comparison.ranked.length === 0 ? (
+          ) : comparison.items.length === 0 ? (
             <div className="empty">
-              <h3>
-                {comparison.unpriced.length > 0
-                  ? "برای این مصرف، برآورد قیمت نداریم."
-                  : "پیشنهادی با این منابع نداریم."}
-              </h3>
+              <h3>پیشنهادی با این منابع نداریم.</h3>
               <p>
-                {comparison.unpriced.length > 0
-                  ? "پیشنهادهای مطابق منابع شما در بخش بدون برآورد آمده‌اند. شرایط ترافیک را بررسی کنید یا مصرف را تغییر دهید."
-                  : "فیلترها حفظ شده‌اند. منابع را تغییر دهید یا همه پیشنهادها را ببینید."}
+                فیلترها حفظ شده‌اند. منابع یا بودجه را تغییر دهید یا همه
+                پیشنهادها را ببینید.
               </p>
               <button onClick={() => setRequest({})}>
                 نمایش همه پیشنهادها
               </button>
             </div>
           ) : (
-            comparison.ranked.map((quote, index) => (
-              <Offer
-                key={quote.plan.id}
-                candidate={quote}
-                quote={quote}
-                cheapest={index === 0}
-              />
-            ))
+            <>
+              {comparison.ranked.length === 0 && (
+                <p>برای این مصرف، برآورد قیمت نداریم.</p>
+              )}
+              <div className="discovery">
+                <div className="configuration-list" aria-label="پیکربندی‌ها">
+                  {comparison.items.map((item) => (
+                    <Configuration
+                      key={item.id}
+                      item={item}
+                      selected={selected?.id === item.id}
+                      onSelect={() => setSelectedId(item.id)}
+                    />
+                  ))}
+                </div>
+                {selected && (
+                  <section
+                    className="offer-detail"
+                    aria-labelledby="detail-title"
+                  >
+                    <h2 id="detail-title">پیشنهادهای ارائه‌دهندگان</h2>
+                    <p>
+                      {number(selected.offers.length)} پیشنهاد؛ قیمت‌ها و شرایط
+                      مستقل هر ارائه‌دهنده
+                    </p>
+                    {selected.offers.map((candidate) => (
+                      <Offer
+                        key={candidate.plan.id}
+                        candidate={candidate}
+                        quote={candidate.quote}
+                        cheapest={
+                          candidate.plan.id === selected.startingOfferId
+                        }
+                      />
+                    ))}
+                  </section>
+                )}
+              </div>
+            </>
           )}
         </section>
-        {!invalid && comparison.unpriced.length > 0 && (
-          <section
-            className="results unpriced-results"
-            aria-labelledby="unpriced-title"
-          >
-            <h2 id="unpriced-title">
-              <svg
-                className="warning-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M10.3 4.2a2 2 0 0 1 3.4 0l8 14A2 2 0 0 1 20 21H4a2 2 0 0 1-1.7-2.8z" />
-                <path d="M12 9v5m0 3h.01" />
-              </svg>
-              پیشنهادهای بدون برآورد قابل مقایسه
-            </h2>
-            <p className="muted">
-              {number(comparison.unpriced.length)} پیشنهاد؛ قیمت پایه یا هزینه
-              ترافیک قابل محاسبه نیست. قیمت پایه ناقص؛ خارج از رتبه‌بندی.
-            </p>
-            {comparison.unpriced.map((candidate) => (
-              <Offer key={candidate.plan.id} candidate={candidate} />
-            ))}
-          </section>
-        )}
         <footer>
           پوشش این فهرست محدود است؛ پیش از خرید، شرایط جاری، موجودی و هزینه
           نهایی را از ارائه‌دهنده بررسی کنید.
