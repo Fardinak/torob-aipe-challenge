@@ -476,3 +476,67 @@ test("missing traffic evidence leaves the base usable until usage needs that evi
     compare(sample, { priceMode: "traffic", egress: 1 }).unpriced[0].reasons,
   ).toContain("unknown_traffic_policy");
 });
+
+test("managed database boundaries isolate engines, versions, topology and VPS traffic", () => {
+  const sample = overlappingCatalog();
+  const db = (id: string, engine: string, price: number) => ({
+    ...structuredClone(sample.plans[0]),
+    id,
+    category: "database" as const,
+    advertised_monthly_toman: price,
+    topology: "single-node",
+    database: {
+      engine,
+      versions: ["18.4"],
+      version_status: "verified" as const,
+      topology_status: "verified" as const,
+      management: {
+        status: "verified" as const,
+        detail: "Provider monitors the database",
+      },
+      backup: { status: "unknown" as const, detail: "Not established" },
+      location: { status: "unknown" as const, detail: "Not established" },
+      feature_package: { status: "verified" as const, detail: "Base" },
+      mandatory_charges: {
+        status: "unknown" as const,
+        detail: "Tax unresolved",
+      },
+    },
+  });
+  sample.plans = [
+    db("pg", "PostgreSQL", 900),
+    db("redis", "Redis", 100),
+    db("pg-old", "PostgreSQL", 200),
+    sample.plans[0],
+  ];
+  sample.plans[2].database!.versions = ["17.10"];
+  const result = compare(sample, {
+    category: "database",
+    engine: "PostgreSQL",
+    version: "18.4",
+    priceMode: "traffic",
+    egress: 999999,
+  });
+  expect(result.errors).toEqual({});
+  expect(result.priceMode).toBe("base");
+  expect(result.items).toHaveLength(1);
+  expect(result.items[0].startingPriceToman).toBe(900);
+  expect(result.items[0].offers.map((o) => o.plan.id)).toEqual(["pg"]);
+  expect(compare(sample, { category: "database" }).items).toHaveLength(2);
+  sample.plans[2].database!.version_status = "unknown";
+  expect(
+    compare(sample, {
+      category: "database",
+      engine: "PostgreSQL",
+      version: "17.10",
+    }).items,
+  ).toEqual([]);
+  sample.plans[2].database!.version_status = "verified";
+  sample.plans[2].database!.topology_status = "unknown";
+  expect(
+    compare(sample, { category: "database", engine: "PostgreSQL" }).items,
+  ).toHaveLength(2);
+  expect(compare(sample, {}).ranked.map((q) => q.plan.id)).toEqual([
+    "manageit-1c-1g-25g",
+  ]);
+});

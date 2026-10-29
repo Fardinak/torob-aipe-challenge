@@ -1,6 +1,6 @@
 {
   "status": "reviewed_public_page_snapshot_not_checkout_quotes",
-  "scope": "11 rechecked sample configurations plus one unresolved historical configuration; not exhaustive coverage",
+  "scope": "11 rechecked sample configurations plus one unresolved historical configuration; not exhaustive coverage; four initial Liara managed database offers across PostgreSQL and Redis, not release breadth",
   "units": "Resource GB preserved as advertised; no GB/GiB equivalence inferred. Scenarios define 1 TB as 1000 GB.",
   "sources": {
     "manageit": {
@@ -50,6 +50,62 @@
       "sha256": "601342c5c5acd38ee7244cfab9dc75893dcb72063bbd0f2dc85d218954da9967",
       "provider": "manageit",
       "label": "منبع تعرفه IP شناور"
+    },
+    "liara-tariff": {
+      "provider": "liara",
+      "label": "liara-tariff",
+      "url": "https://liara.ir/pricing/",
+      "snapshot": "research/evidence/liara-tariff-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "1504dc463ae9d25fc499aa309abac6a8722b7be09940af2e622878a1a69686ef"
+    },
+    "liara-features": {
+      "provider": "liara",
+      "label": "liara-features",
+      "url": "https://docs.liara.ir/dbaas/details/plans/software-plans/",
+      "snapshot": "research/evidence/liara-features-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "fe2ef18cdb10dee40c4dd65382be9c07668a0177caafce5f2696b454b6d1635e"
+    },
+    "liara-pg-setup": {
+      "provider": "liara",
+      "label": "liara-pg-setup",
+      "url": "https://docs.liara.ir/dbaas/postgresql/quick-setup/",
+      "snapshot": "research/evidence/liara-pg-setup-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "ffb6c2a47f8dfacb9bae57047ac8d3df0e499196a5e47ce3c2cc5e86b7747828"
+    },
+    "liara-redis-setup": {
+      "provider": "liara",
+      "label": "liara-redis-setup",
+      "url": "https://docs.liara.ir/dbaas/redis/quick-setup/",
+      "snapshot": "research/evidence/liara-redis-setup-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "5741f02ddc8316ffe902f6e602abe5b02d6b3f172d806dab28563fa0c4bc61c8"
+    },
+    "liara-pg-versions": {
+      "provider": "liara",
+      "label": "liara-pg-versions",
+      "url": "https://docs.liara.ir/dbaas/postgresql/choose-version/",
+      "snapshot": "research/evidence/liara-pg-versions-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "a1cabfa196d608547a96ebffbee18fe9c736288544a7ce6141fbad3ad7b05a8a"
+    },
+    "liara-redis-versions": {
+      "provider": "liara",
+      "label": "liara-redis-versions",
+      "url": "https://docs.liara.ir/dbaas/redis/choose-version/",
+      "snapshot": "research/evidence/liara-redis-versions-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "4d6be6e8287b98c038f2a6f0d0aaa10c461e0114c1a5399050ed0fb40106de78"
+    },
+    "liara-backup": {
+      "provider": "liara",
+      "label": "liara-backup",
+      "url": "https://docs.liara.ir/dbaas/postgresql/how-tos/create-backup/",
+      "snapshot": "research/evidence/liara-backup-2026-10-29.html",
+      "snapshot_saved_at": "2026-10-29T01:36:36.809545+00:00",
+      "sha256": "c60b00f947a8f160ab9eaa789a6a17aa2415df6f6dc9c04f094f5968926d420c"
     }
   },
   "providers": {
@@ -79,7 +135,23 @@
       "mandatory_fee_completeness": false,
       "plan_location_mapping": "Iran VPS page",
       "name": "ایران‌سرور",
-      "disclosures": ["موقعیت ایران؛ نگاشت هر پلن به دیتاسنتر نامشخص است."]
+      "disclosures": [
+        "موقعیت ایران؛ نگاشت هر پلن به دیتاسنتر نامشخص است."
+      ]
+    },
+    "liara": {
+      "name": "لیارا",
+      "currency": "toman",
+      "billing": "مرجع ماهانه منتشرشده؛ تعرفه ساعتی جداگانه، بدون تبدیل ساختگی.",
+      "cpu_allocation": null,
+      "base_ipv4_included": null,
+      "ipv6_included": null,
+      "tax_basis": null,
+      "mandatory_fee_completeness": false,
+      "plan_location_mapping": "موقعیت دیتابیس در شواهد بررسی‌شده مشخص نشده است.",
+      "disclosures": [
+        "تعرفه عمومی دیتابیس و بسته پایه؛ هزینه‌های اجباری و مالیات نیازمند تأیید."
+      ]
     }
   },
   "plans": [
@@ -111,7 +183,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -159,7 +234,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -186,14 +264,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -240,7 +324,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -288,7 +375,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -315,14 +405,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -369,7 +465,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -417,7 +516,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -444,14 +546,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -498,7 +606,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -546,7 +657,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -573,14 +687,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -627,7 +747,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -675,7 +798,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -702,14 +828,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -756,7 +888,10 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+        "sources": [
+          "manageit-2026-10-29",
+          "manageit_ip-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -804,7 +939,10 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["manageit", "manageit_ip"],
+            "sources": [
+              "manageit",
+              "manageit_ip"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -831,14 +969,20 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["manageit-2026-10-29", "manageit_ip-2026-10-29"],
+          "sources": [
+            "manageit-2026-10-29",
+            "manageit_ip-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -884,7 +1028,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["iranserver-2026-10-29"],
+        "sources": [
+          "iranserver-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -931,7 +1077,9 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["iranserver"],
+            "sources": [
+              "iranserver"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -958,14 +1106,18 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -1011,7 +1163,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["iranserver-2026-10-29"],
+        "sources": [
+          "iranserver-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -1058,7 +1212,9 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["iranserver"],
+            "sources": [
+              "iranserver"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -1085,14 +1241,18 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -1138,7 +1298,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-09-19",
-        "sources": ["iranserver"],
+        "sources": [
+          "iranserver"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "conflicting",
@@ -1186,7 +1348,9 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["iranserver"],
+            "sources": [
+              "iranserver"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -1213,8 +1377,13 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
-          "affected_facts": ["ram_gb", "advertised_monthly_toman"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
+          "affected_facts": [
+            "ram_gb",
+            "advertised_monthly_toman"
+          ],
           "note": "همین نام اکنون با ۳۲ GB رم منتشر می‌شود؛ منابع و قیمت پیکربندی ۱۶ GB دوباره تأیید نشد. خروج قطعی از عرضه تأیید نشده است."
         }
       ],
@@ -1249,7 +1418,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["iranserver-2026-10-29"],
+        "sources": [
+          "iranserver-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -1296,7 +1467,9 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["iranserver"],
+            "sources": [
+              "iranserver"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -1323,14 +1496,18 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -1376,7 +1553,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["iranserver-2026-10-29"],
+        "sources": [
+          "iranserver-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -1423,7 +1602,9 @@
           },
           "evidence": {
             "last_verified_at": "2026-09-19",
-            "sources": ["iranserver"],
+            "sources": [
+              "iranserver"
+            ],
             "facts": {
               "cpu_count": "verified",
               "ram_gb": "verified",
@@ -1450,14 +1631,18 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -1503,7 +1688,9 @@
       },
       "evidence": {
         "last_verified_at": "2026-10-29",
-        "sources": ["iranserver-2026-10-29"],
+        "sources": [
+          "iranserver-2026-10-29"
+        ],
         "facts": {
           "cpu_count": "verified",
           "ram_gb": "verified",
@@ -1527,14 +1714,18 @@
         {
           "attempted_at": "2026-10-29",
           "outcome": "failed",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [],
           "note": "دسترسی نخست به منبع ناموفق بود؛ دریافت دوباره و بازبینی همان منبع در ادامه موفق شد."
         },
         {
           "attempted_at": "2026-10-29",
           "outcome": "success",
-          "sources": ["iranserver-2026-10-29"],
+          "sources": [
+            "iranserver-2026-10-29"
+          ],
           "affected_facts": [
             "cpu_count",
             "ram_gb",
@@ -1552,6 +1743,372 @@
       "storage_type": null,
       "traffic_assumption": "unspecified-shared",
       "billing_display": "پرداخت ماهانه"
+    },
+    {
+      "id": "liara-pg-1c-1g-10g-base",
+      "provider": "liara",
+      "provider_plan_name": "PostgreSQL / مریخ / پایه",
+      "cpu_count": 1,
+      "ram_gb": 1,
+      "disk_gb": 10,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1300000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "liara-tariff",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": "مریخ",
+      "feature_package": "base",
+      "topology": null,
+      "billing_variant": "published-monthly-reference",
+      "traffic_terms": "سیاست ترافیک VPS به دیتابیس اعمال نمی‌شود.",
+      "traffic_policy": null,
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": [
+          "liara-tariff",
+          "liara-features",
+          "liara-pg-setup",
+          "liara-pg-versions",
+          "liara-backup"
+        ],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "unknown",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "تعرفه عمومی DBaaS با راهنمای راه‌اندازی موتور تطبیق داده شد؛ توپولوژی و موقعیت نامشخص است.",
+          "تعارض بکاپ بین راهنمای عمومی و جدول امکانات؛ به‌عنوان تضمین استفاده نمی‌شود."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [],
+      "verification_attempts": [],
+      "storage_type": "SSD",
+      "traffic_assumption": null,
+      "billing_display": "مرجع ماهانه بسته پایه؛ پرداخت ساعتی نیز منتشر شده است.",
+      "category": "database",
+      "database": {
+        "engine": "PostgreSQL",
+        "versions": [
+          "18.4",
+          "17.10",
+          "16.14",
+          "15.18",
+          "14.23",
+          "13.23",
+          "18.0",
+          "17.6",
+          "16.10",
+          "15.14",
+          "14.19",
+          "13.22",
+          "17.1",
+          "16.3",
+          "16.1",
+          "15.4",
+          "14.9",
+          "13.12",
+          "12.16",
+          "11.21"
+        ],
+        "version_status": "verified",
+        "topology_status": "unknown",
+        "management": {
+          "status": "verified",
+          "detail": "ارائه‌دهنده نمودار منابع مصرفی دیتابیس را تا ۷ روز در بسته پایه نگه می‌دارد؛ مسئولیت مانیتورینگ مستند است. نگهداری و به‌روزرسانی تضمین نشده است."
+        },
+        "backup": {
+          "status": "conflicting",
+          "detail": "راهنمای پشتیبان‌گیری، بکاپ روزانه خودکار را اعلام می‌کند؛ جدول بسته پایه پشتیبان‌گیری را ندارد اعلام کرده است. شمول بکاپ برای این بسته حل نشده است."
+        },
+        "location": {
+          "status": "unknown",
+          "detail": "موقعیت این دیتابیس مشخص نشده است."
+        },
+        "feature_package": {
+          "status": "verified",
+          "detail": "بسته پایه؛ نمودار منابع تا ۷ روز، شخصی‌سازی پارامترها و شبکه عمومی."
+        },
+        "mandatory_charges": {
+          "status": "unknown",
+          "detail": "مالیات، هزینه شبکه و سایر هزینه‌های اجباری تأیید نشده‌اند؛ قیمت پایه است."
+        }
+      }
+    },
+    {
+      "id": "liara-pg-2c-4g-40g-base",
+      "provider": "liara",
+      "provider_plan_name": "PostgreSQL / زحل / پایه",
+      "cpu_count": 2,
+      "ram_gb": 4,
+      "disk_gb": 40,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 4125000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "liara-tariff",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": "زحل",
+      "feature_package": "base",
+      "topology": null,
+      "billing_variant": "published-monthly-reference",
+      "traffic_terms": "سیاست ترافیک VPS به دیتابیس اعمال نمی‌شود.",
+      "traffic_policy": null,
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": [
+          "liara-tariff",
+          "liara-features",
+          "liara-pg-setup",
+          "liara-pg-versions",
+          "liara-backup"
+        ],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "unknown",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "تعرفه عمومی DBaaS با راهنمای راه‌اندازی موتور تطبیق داده شد؛ توپولوژی و موقعیت نامشخص است.",
+          "تعارض بکاپ بین راهنمای عمومی و جدول امکانات؛ به‌عنوان تضمین استفاده نمی‌شود."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [],
+      "verification_attempts": [],
+      "storage_type": "SSD",
+      "traffic_assumption": null,
+      "billing_display": "مرجع ماهانه بسته پایه؛ پرداخت ساعتی نیز منتشر شده است.",
+      "category": "database",
+      "database": {
+        "engine": "PostgreSQL",
+        "versions": [
+          "18.4",
+          "17.10",
+          "16.14",
+          "15.18",
+          "14.23",
+          "13.23",
+          "18.0",
+          "17.6",
+          "16.10",
+          "15.14",
+          "14.19",
+          "13.22",
+          "17.1",
+          "16.3",
+          "16.1",
+          "15.4",
+          "14.9",
+          "13.12",
+          "12.16",
+          "11.21"
+        ],
+        "version_status": "verified",
+        "topology_status": "unknown",
+        "management": {
+          "status": "verified",
+          "detail": "ارائه‌دهنده نمودار منابع مصرفی دیتابیس را تا ۷ روز در بسته پایه نگه می‌دارد؛ مسئولیت مانیتورینگ مستند است. نگهداری و به‌روزرسانی تضمین نشده است."
+        },
+        "backup": {
+          "status": "conflicting",
+          "detail": "راهنمای پشتیبان‌گیری، بکاپ روزانه خودکار را اعلام می‌کند؛ جدول بسته پایه پشتیبان‌گیری را ندارد اعلام کرده است. شمول بکاپ برای این بسته حل نشده است."
+        },
+        "location": {
+          "status": "unknown",
+          "detail": "موقعیت این دیتابیس مشخص نشده است."
+        },
+        "feature_package": {
+          "status": "verified",
+          "detail": "بسته پایه؛ نمودار منابع تا ۷ روز، شخصی‌سازی پارامترها و شبکه عمومی."
+        },
+        "mandatory_charges": {
+          "status": "unknown",
+          "detail": "مالیات، هزینه شبکه و سایر هزینه‌های اجباری تأیید نشده‌اند؛ قیمت پایه است."
+        }
+      }
+    },
+    {
+      "id": "liara-redis-1c-1g-10g-base",
+      "provider": "liara",
+      "provider_plan_name": "Redis / مریخ / پایه",
+      "cpu_count": 1,
+      "ram_gb": 1,
+      "disk_gb": 10,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 1300000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "liara-tariff",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": "مریخ",
+      "feature_package": "base",
+      "topology": null,
+      "billing_variant": "published-monthly-reference",
+      "traffic_terms": "سیاست ترافیک VPS به دیتابیس اعمال نمی‌شود.",
+      "traffic_policy": null,
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": [
+          "liara-tariff",
+          "liara-features",
+          "liara-redis-setup",
+          "liara-redis-versions",
+          "liara-backup"
+        ],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "unknown",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "تعرفه عمومی DBaaS با راهنمای راه‌اندازی موتور تطبیق داده شد؛ توپولوژی و موقعیت نامشخص است.",
+          "پشتیبان‌گیری Redis برای این بسته تأیید نشده است؛ راهنمای موتور دیگر ضمانت آن نیست."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [],
+      "verification_attempts": [],
+      "storage_type": "SSD",
+      "traffic_assumption": null,
+      "billing_display": "مرجع ماهانه بسته پایه؛ پرداخت ساعتی نیز منتشر شده است.",
+      "category": "database",
+      "database": {
+        "engine": "Redis",
+        "versions": [
+          "8.0",
+          "7.2",
+          "6.2"
+        ],
+        "version_status": "verified",
+        "topology_status": "unknown",
+        "management": {
+          "status": "verified",
+          "detail": "ارائه‌دهنده نمودار منابع مصرفی دیتابیس را تا ۷ روز در بسته پایه نگه می‌دارد؛ مسئولیت مانیتورینگ مستند است. نگهداری و به‌روزرسانی تضمین نشده است."
+        },
+        "backup": {
+          "status": "unknown",
+          "detail": "جدول بسته پایه پشتیبان‌گیری را ندارد اعلام می‌کند؛ راهنمای PostgreSQL تضمین بکاپ Redis نیست. شمول بکاپ برای Redis تأیید نشده است."
+        },
+        "location": {
+          "status": "unknown",
+          "detail": "موقعیت این دیتابیس مشخص نشده است."
+        },
+        "feature_package": {
+          "status": "verified",
+          "detail": "بسته پایه؛ نمودار منابع تا ۷ روز، شخصی‌سازی پارامترها و شبکه عمومی."
+        },
+        "mandatory_charges": {
+          "status": "unknown",
+          "detail": "مالیات، هزینه شبکه و سایر هزینه‌های اجباری تأیید نشده‌اند؛ قیمت پایه است."
+        }
+      }
+    },
+    {
+      "id": "liara-redis-2c-4g-40g-base",
+      "provider": "liara",
+      "provider_plan_name": "Redis / زحل / پایه",
+      "cpu_count": 2,
+      "ram_gb": 4,
+      "disk_gb": 40,
+      "storage_label": "SSD",
+      "advertised_monthly_toman": 4125000,
+      "traffic_allowance_gb_unspecified_direction": null,
+      "source": "liara-tariff",
+      "availability": "not_verified",
+      "region": null,
+      "hardware_package": "زحل",
+      "feature_package": "base",
+      "topology": null,
+      "billing_variant": "published-monthly-reference",
+      "traffic_terms": "سیاست ترافیک VPS به دیتابیس اعمال نمی‌شود.",
+      "traffic_policy": null,
+      "evidence": {
+        "last_verified_at": "2026-10-29",
+        "sources": [
+          "liara-tariff",
+          "liara-features",
+          "liara-redis-setup",
+          "liara-redis-versions",
+          "liara-backup"
+        ],
+        "facts": {
+          "cpu_count": "verified",
+          "ram_gb": "verified",
+          "disk_gb": "verified",
+          "storage_label": "verified",
+          "advertised_monthly_toman": "verified",
+          "traffic_direction": "unknown",
+          "traffic_allowance": "unknown",
+          "traffic_rate": "unknown",
+          "traffic_overage": "unknown"
+        },
+        "notes": [
+          "تعرفه عمومی DBaaS با راهنمای راه‌اندازی موتور تطبیق داده شد؛ توپولوژی و موقعیت نامشخص است.",
+          "پشتیبان‌گیری Redis برای این بسته تأیید نشده است؛ راهنمای موتور دیگر ضمانت آن نیست."
+        ]
+      },
+      "lifecycle": "active",
+      "withdrawal": null,
+      "revisions": [],
+      "verification_attempts": [],
+      "storage_type": "SSD",
+      "traffic_assumption": null,
+      "billing_display": "مرجع ماهانه بسته پایه؛ پرداخت ساعتی نیز منتشر شده است.",
+      "category": "database",
+      "database": {
+        "engine": "Redis",
+        "versions": [
+          "8.0",
+          "7.2",
+          "6.2"
+        ],
+        "version_status": "verified",
+        "topology_status": "unknown",
+        "management": {
+          "status": "verified",
+          "detail": "ارائه‌دهنده نمودار منابع مصرفی دیتابیس را تا ۷ روز در بسته پایه نگه می‌دارد؛ مسئولیت مانیتورینگ مستند است. نگهداری و به‌روزرسانی تضمین نشده است."
+        },
+        "backup": {
+          "status": "unknown",
+          "detail": "جدول بسته پایه پشتیبان‌گیری را ندارد اعلام می‌کند؛ راهنمای PostgreSQL تضمین بکاپ Redis نیست. شمول بکاپ برای Redis تأیید نشده است."
+        },
+        "location": {
+          "status": "unknown",
+          "detail": "موقعیت این دیتابیس مشخص نشده است."
+        },
+        "feature_package": {
+          "status": "verified",
+          "detail": "بسته پایه؛ نمودار منابع تا ۷ روز، شخصی‌سازی پارامترها و شبکه عمومی."
+        },
+        "mandatory_charges": {
+          "status": "unknown",
+          "detail": "مالیات، هزینه شبکه و سایر هزینه‌های اجباری تأیید نشده‌اند؛ قیمت پایه است."
+        }
+      }
     }
   ]
 }

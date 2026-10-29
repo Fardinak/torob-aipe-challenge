@@ -25,8 +25,8 @@ const provider = z.object({
   disclosures: z.array(text),
 });
 const configuration = z.object({
-  cpu_count: whole.positive(),
-  ram_gb: whole.positive(),
+  cpu_count: z.number().positive().max(Number.MAX_SAFE_INTEGER),
+  ram_gb: z.number().positive().max(Number.MAX_SAFE_INTEGER),
   disk_gb: whole.positive(),
   storage_type: text.nullable(),
   // Unknown identity dimensions do not establish equivalence across offers.
@@ -54,7 +54,21 @@ const evidence = z.object({
   facts,
   notes: z.array(text),
 });
+const serviceFact = z.object({ status: factStatus, detail: text });
+const database = z.object({
+  engine: text,
+  versions: z.array(text),
+  version_status: factStatus,
+  topology_status: factStatus,
+  management: serviceFact,
+  backup: serviceFact,
+  location: serviceFact,
+  feature_package: serviceFact,
+  mandatory_charges: serviceFact,
+});
 const published = configuration.extend({
+  category: z.enum(["vps", "database"]).default("vps"),
+  database: database.optional(),
   billing_display: text,
   storage_label: text,
   traffic_assumption: z
@@ -108,6 +122,17 @@ export const catalogSchema = z
         issue(`Missing provider: ${offer.id}`);
       if ((offer.lifecycle === "withdrawn") !== (offer.withdrawal !== null))
         issue(`Withdrawal requires confirmation: ${offer.id}`);
+      if (
+        offer.category === "database" &&
+        (!offer.database ||
+          offer.database.management.status !== "verified" ||
+          !offer.evidence.last_verified_at)
+      )
+        issue(
+          `Managed database requires reviewed operating responsibility: ${offer.id}`,
+        );
+      if (offer.category === "vps" && offer.database)
+        issue(`VPS cannot carry database identity: ${offer.id}`);
       const references = [
         offer.source,
         ...(offer.withdrawal ? [offer.withdrawal.source] : []),
@@ -124,6 +149,11 @@ export const catalogSchema = z
           if (revision[key] !== offer[key])
             issue(`Identity changed under ${offer.id}: ${key}`);
         }
+        if (
+          revision.category !== offer.category ||
+          revision.database?.engine !== offer.database?.engine
+        )
+          issue(`Service identity changed: ${offer.id}`);
         const verified = revision.evidence.last_verified_at;
         if (
           verified === null &&

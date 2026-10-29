@@ -1,4 +1,4 @@
-# سروربین — sampled VPS comparison
+# سروربین — VPS and managed database discovery
 
 Persian RTL React + TypeScript application for issues #2, #3, #13 and #14. Defaults to published **monthly base-price discovery**, with a separate **base-plus-traffic subtotal** mode of six ManageIT and five current IranServer configurations (plus one inspectable unresolved historical configuration), with optional minimum/exact RAM, CPU and disk, a base-price budget and expected outbound/inbound usage. Select a configuration to inspect its eligible provider offers and independent billing terms. Estimates exclude unresolved fees and tax; the sample does not claim live stock or exhaustive market coverage.
 
@@ -101,3 +101,11 @@ exhaustive market coverage, a final bill, or verified current provider terms;
 buyers should confirm conditions, inventory, tax and mandatory fees with the
 provider before purchase. The prototype reference remains on
 `prototype/vps-comparison`.
+
+## Managed database initial slice (#15)
+
+Choose **دیتابیس مدیریت‌شده** in the category control, then an engine and a verified version. PostgreSQL and Redis each have two reviewed initial Liara base-package configurations. Minimum/exact resources and base-price budgets operate before listing prices. Engine/version choices come from admitted offers, with no engine whitelist. Version matching uses the exact published version string. Unknown/unsupported evidence cannot satisfy it. VPS remains the default category. Database comparisons always use base prices and never VPS traffic policies; cross-engine browsing is ordered by engine, then price within each engine.
+
+Database listing identity adds engine and verified node topology to exact CPU/RAM/storage identity, excluding version. Unknown topology keeps the initial offers independent. Details expose management, backups, location, topology, package, billing, mandatory-charge uncertainty, statuses, source links and general-tariff handoff. The visible backup conflict is unresolved, not an included-backup promise. See [initial review](research/managed-database-initial-review-2026-10-29.md). This does not fulfill the separate broad acquisition or genuine cross-provider release gate.
+
+Demo: switch category, select PostgreSQL / 18.4 / minimum 4 GB RAM, inspect Saturn at 4,125,000 toman/month and expand its service evidence. Switch to exact 8 GB to show preserved empty results, return to 4 GB, then choose Redis / 8.0. Follow the disclosed general provider tariff link. The representative browser journey runs on desktop and mobile alongside the existing VPS journeys.

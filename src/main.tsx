@@ -13,6 +13,12 @@ import "@fontsource/vazirmatn/400.css";
 import "@fontsource/vazirmatn/700.css";
 import "./style.css";
 
+const statusLabel = {
+  verified: "تأیید شده",
+  unknown: "نامشخص",
+  conflicting: "متعارض",
+  failed: "بررسی ناموفق",
+};
 const number = (value: number) => new Intl.NumberFormat("fa-IR").format(value);
 
 const fields: { key: InputField; label: string }[] = [
@@ -31,6 +37,43 @@ function BillingDetails({ plan }: { plan: Plan }) {
       <summary>جزئیات هزینه و منبع</summary>
       <div className="details-body">
         <p>پرداخت: {provider.billing}</p>
+        {plan.database && (
+          <>
+            <p>
+              موتور: {plan.database.engine}؛ نسخه‌ها (
+              {statusLabel[plan.database.version_status]}):{" "}
+              {plan.database.versions.join("، ")}
+            </p>
+            <p>
+              توپولوژی ({statusLabel[plan.database.topology_status]}):{" "}
+              {plan.topology ?? "نامشخص"}
+            </p>
+            {(
+              [
+                ["management", "مدیریت"],
+                ["backup", "پشتیبان‌گیری"],
+                ["location", "موقعیت"],
+                ["feature_package", "بسته امکانات"],
+                ["mandatory_charges", "هزینه‌های اجباری"],
+              ] as const
+            ).map(([key, label]) => (
+              <p key={key}>
+                {label} ({statusLabel[plan.database![key].status]}):{" "}
+                {plan.database![key].detail}
+              </p>
+            ))}
+            <p>
+              مقصد عمومی تعرفه است؛ لینک خرید این پیکربندی یا تضمین موجودی نیست.
+            </p>
+            <a
+              href={catalog.sources[plan.source].url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              بررسی در سایت ارائه‌دهنده ↗
+            </a>
+          </>
+        )}
         <p>
           پردازنده:{" "}
           {provider.cpu_allocation === "shared"
@@ -148,6 +191,7 @@ function Offer({
       <div className="offer-main">
         <div className="identity">
           <h3>{catalog.providers[plan.provider].name}</h3>
+          {plan.database && <p>{plan.database.engine} — دیتابیس مدیریت‌شده</p>}
           <bdi className="plan-name">{plan.provider_plan_name ?? plan.id}</bdi>
           {!plan.provider_plan_name ? (
             <small>شناسه محلی پلن</small>
@@ -201,6 +245,11 @@ function Offer({
               {plan.evidence.last_verified_at
                 ? "شواهد قدیمی؛ بیش از ۳۰ روز از تأیید موفق گذشته است."
                 : "تاریخ تأیید موفق نامشخص؛ نیازمند بازبینی."}
+            </small>
+          )}
+          {plan.database?.backup.status === "conflicting" && (
+            <small className="evidence-warning">
+              تعارض شواهد پشتیبان‌گیری؛ شمول بکاپ تأیید نشده است.
             </small>
           )}
           <small>
@@ -299,6 +348,11 @@ function Configuration({
       aria-pressed={selected}
       onClick={onSelect}
     >
+      {item.engine && (
+        <span>
+          {item.engine}؛ توپولوژی: {item.topology ?? "نامشخص"}
+        </span>
+      )}
       <strong>
         {configuration.cpu === null ? "نامشخص" : number(configuration.cpu)} هسته
         / {configuration.ram === null ? "نامشخص" : number(configuration.ram)} GB
@@ -340,6 +394,26 @@ function Configuration({
 function App() {
   const [request, setRequest] = useState<Request>({});
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const databaseCategory = request.category === "database";
+  const engines = [
+    ...new Set(
+      catalog.plans
+        .filter((p) => p.category === "database" && p.lifecycle === "active")
+        .map((p) => p.database!.engine),
+    ),
+  ].sort();
+  const versions = [
+    ...new Set(
+      catalog.plans
+        .filter(
+          (p) =>
+            p.lifecycle === "active" &&
+            p.database?.engine === request.engine &&
+            p.database?.version_status === "verified",
+        )
+        .flatMap((p) => p.database!.versions),
+    ),
+  ];
   const comparison = compare(catalog, request);
   const invalid = Object.keys(comparison.errors).length > 0;
   const selected =
@@ -349,12 +423,12 @@ function App() {
     <>
       <header className="site-header">
         <span className="brand">≋ سروربین</span>
-        <span>مقایسه سرور مجازی</span>
+        <span>مقایسه زیرساخت</span>
       </header>
       <main>
         <section className="intro">
           <div>
-            <p className="eyebrow">سرورهای مجازی / ایران</p>
+            <p className="eyebrow">سرور مجازی و دیتابیس مدیریت‌شده / ایران</p>
             <h1>
               منابع مورد نیاز شما،
               <br />
@@ -373,7 +447,7 @@ function App() {
               رکورد / {number(Object.keys(catalog.providers).length)}{" "}
               ارائه‌دهنده
             </strong>
-            <p>نمونه VPS با وضعیت شواهد هر پیشنهاد</p>
+            <p>نمونه زیرساخت با وضعیت شواهد هر پیشنهاد</p>
             <small>نمونه محدود بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
           </aside>
         </section>
@@ -386,18 +460,80 @@ function App() {
           </div>
           <div className="presets">
             <button onClick={() => setRequest({})}>بدون محدودیت</button>
-            <button onClick={() => setRequest({ ram: "4" })}>
-              حداقل ۴ GB رم
-            </button>
             <button
               onClick={() =>
-                setRequest({ ram: "4", egress: "1000", priceMode: "traffic" })
+                setRequest({ category: request.category, ram: "4" })
               }
             >
-              ۴ GB رم + ۱ TB خروجی
+              حداقل ۴ GB رم
             </button>
+            {!databaseCategory && (
+              <button
+                onClick={() =>
+                  setRequest({ ram: "4", egress: "1000", priceMode: "traffic" })
+                }
+              >
+                ۴ GB رم + ۱ TB خروجی
+              </button>
+            )}
           </div>
           <div className="fields mode-fields">
+            <div>
+              <label htmlFor="category">دسته خدمات</label>
+              <select
+                id="category"
+                value={request.category ?? "vps"}
+                onChange={(e) => {
+                  setRequest({
+                    category:
+                      e.target.value === "database" ? "database" : "vps",
+                  });
+                  setSelectedId(null);
+                }}
+              >
+                <option value="vps">سرور مجازی</option>
+                <option value="database">دیتابیس مدیریت‌شده</option>
+              </select>
+            </div>
+            {databaseCategory && (
+              <>
+                <div>
+                  <label htmlFor="engine">موتور دیتابیس</label>
+                  <select
+                    id="engine"
+                    value={request.engine ?? ""}
+                    onChange={(e) =>
+                      setRequest({
+                        ...request,
+                        engine: e.target.value,
+                        version: "",
+                      })
+                    }
+                  >
+                    <option value="">همه موتورها؛ مقایسه جداگانه</option>
+                    {engines.map((engine) => (
+                      <option key={engine}>{engine}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="version">نسخه دیتابیس</label>
+                  <select
+                    id="version"
+                    disabled={!request.engine}
+                    value={request.version ?? ""}
+                    onChange={(e) =>
+                      setRequest({ ...request, version: e.target.value })
+                    }
+                  >
+                    <option value="">بدون محدودیت نسخه</option>
+                    {versions.map((version) => (
+                      <option key={version}>{version}</option>
+                    ))}
+                  </select>
+                </div>
+              </>
+            )}
             <div>
               <label htmlFor="resource-mode">روش تطبیق منابع</label>
               <select
@@ -415,59 +551,68 @@ function App() {
                 <option value="exact">منابع دقیق</option>
               </select>
             </div>
-            <div>
-              <label htmlFor="price-mode">روش مقایسه قیمت</label>
-              <select
-                id="price-mode"
-                value={comparison.priceMode}
-                onChange={(e) =>
-                  setRequest({
-                    ...request,
-                    priceMode:
-                      e.target.value === "traffic" ? "traffic" : "base",
-                  })
-                }
-              >
-                <option value="base">قیمت پایه اعلام‌شده</option>
-                <option value="traffic">جمع برآوردی پایه و ترافیک</option>
-              </select>
-            </div>
+            {!databaseCategory && (
+              <div>
+                <label htmlFor="price-mode">روش مقایسه قیمت</label>
+                <select
+                  id="price-mode"
+                  value={comparison.priceMode}
+                  onChange={(e) =>
+                    setRequest({
+                      ...request,
+                      priceMode:
+                        e.target.value === "traffic" ? "traffic" : "base",
+                    })
+                  }
+                >
+                  <option value="base">قیمت پایه اعلام‌شده</option>
+                  <option value="traffic">جمع برآوردی پایه و ترافیک</option>
+                </select>
+              </div>
+            )}
           </div>
           <div className="fields">
-            {fields.map(({ key, label }) => (
-              <div key={key}>
-                <label htmlFor={key}>
-                  {request.resourceMode === "exact"
-                    ? label.replace("حداقل", "دقیق")
-                    : label}
-                </label>
-                <input
-                  id={key}
-                  inputMode="numeric"
-                  type="text"
-                  value={request[key] ?? ""}
-                  placeholder={
-                    key === "egress" || key === "ingress" ? "۰" : "بدون محدودیت"
-                  }
-                  aria-invalid={Boolean(comparison.errors[key])}
-                  aria-describedby={
-                    comparison.errors[key] ? `${key}-error` : "input-help"
-                  }
-                  onChange={(e) =>
-                    setRequest({ ...request, [key]: e.target.value })
-                  }
-                />
-                {comparison.errors[key] && (
-                  <p className="field-error" id={`${key}-error`}>
-                    {comparison.errors[key]}
-                  </p>
-                )}
-              </div>
-            ))}
+            {fields
+              .filter(
+                ({ key }) =>
+                  !databaseCategory || (key !== "egress" && key !== "ingress"),
+              )
+              .map(({ key, label }) => (
+                <div key={key}>
+                  <label htmlFor={key}>
+                    {request.resourceMode === "exact"
+                      ? label.replace("حداقل", "دقیق")
+                      : label}
+                  </label>
+                  <input
+                    id={key}
+                    inputMode="numeric"
+                    type="text"
+                    value={request[key] ?? ""}
+                    placeholder={
+                      key === "egress" || key === "ingress"
+                        ? "۰"
+                        : "بدون محدودیت"
+                    }
+                    aria-invalid={Boolean(comparison.errors[key])}
+                    aria-describedby={
+                      comparison.errors[key] ? `${key}-error` : "input-help"
+                    }
+                    onChange={(e) =>
+                      setRequest({ ...request, [key]: e.target.value })
+                    }
+                  />
+                  {comparison.errors[key] && (
+                    <p className="field-error" id={`${key}-error`}>
+                      {comparison.errors[key]}
+                    </p>
+                  )}
+                </div>
+              ))}
           </div>
           <p id="input-help" className="muted">
-            منابع خالی یعنی بدون محدودیت؛ مصرف خالی یعنی صفر. ۱ TB برابر ۱٬۰۰۰
-            GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد اعلام‌شده
+            منابع خالی یعنی بدون محدودیت. مصرف VPS خالی یعنی صفر. ۱ TB برابر
+            ۱٬۰۰۰ GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد اعلام‌شده
             ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛ هزینه‌های اجباری
             نامشخص ممکن است به آن اضافه شوند.
           </p>
@@ -476,11 +621,19 @@ function App() {
           <div className="section-heading">
             <h2 id="results-title">پیشنهادها</h2>
             <span className="muted">
-              {comparison.priceMode === "base"
-                ? "قیمت پایه: کم به زیاد"
-                : "جمع پایه و ترافیک: کم به زیاد"}
+              {databaseCategory
+                ? "موتور؛ سپس قیمت پایه در همان موتور"
+                : comparison.priceMode === "base"
+                  ? "قیمت پایه: کم به زیاد"
+                  : "جمع پایه و ترافیک: کم به زیاد"}
             </span>
           </div>
+          {databaseCategory && (
+            <p>
+              قیمت‌ها فقط در یک موتور مقایسه می‌شوند؛ ترتیب موتورها الفبایی است.
+              یکسان بودن منابع به معنی مدیریت یا پشتیبان‌گیری یکسان نیست.
+            </p>
+          )}
           <p role="status">
             {invalid
               ? "برای دیدن نتایج، ورودی را اصلاح کنید."

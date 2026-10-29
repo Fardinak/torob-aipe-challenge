@@ -3,6 +3,9 @@ import { catalogSchema, type Plan } from "./catalog";
 export type Resource = "ram" | "cpu" | "disk";
 export type InputField = Resource | "egress" | "ingress" | "budget";
 export type Request = Partial<Record<InputField, string | number>> & {
+  category?: "vps" | "database";
+  engine?: string;
+  version?: string;
   resourceMode?: "minimum" | "exact";
   priceMode?: "base" | "traffic";
 };
@@ -25,6 +28,8 @@ export type ProviderOffer = {
 export type ListingItem = {
   id: string;
   exactIdentity: boolean;
+  engine: string | null;
+  topology: string | null;
   configuration: {
     cpu: number | null;
     ram: number | null;
@@ -43,7 +48,15 @@ export type Comparison = {
   unpriced: { plan: Plan; billableGb?: number; reasons: string[] }[];
   excluded: { plan: Plan; reasons: string[] }[];
   errors: Partial<
-    Record<InputField | "catalog" | "resourceMode" | "priceMode", string>
+    Record<
+      | InputField
+      | "catalog"
+      | "resourceMode"
+      | "priceMode"
+      | "category"
+      | "version",
+      string
+    >
   >;
 };
 const resources = { ram: "ram_gb", cpu: "cpu_count", disk: "disk_gb" } as const;
@@ -54,7 +67,8 @@ export function compare(
 ): Comparison {
   const result: Comparison = {
     items: [],
-    priceMode: request.priceMode ?? "base",
+    priceMode:
+      request.category === "database" ? "base" : (request.priceMode ?? "base"),
     ranked: [],
     unpriced: [],
     excluded: [],
@@ -76,6 +90,13 @@ export function compare(
     !["base", "traffic"].includes(request.priceMode)
   )
     result.errors.priceMode = "روش مقایسه قیمت معتبر نیست.";
+  if (
+    request.category !== undefined &&
+    !["vps", "database"].includes(request.category)
+  )
+    result.errors.category = "دسته معتبر نیست.";
+  if (request.version && (!request.engine || request.category !== "database"))
+    result.errors.version = "برای نسخه، موتور دیتابیس را انتخاب کنید.";
   const amounts: Record<InputField, number> = {
     ram: 0,
     cpu: 0,
@@ -109,6 +130,16 @@ export function compare(
         plan.evidence.facts[key] =
           attempt.outcome === "failed" ? "failed" : reviewedFacts[key];
       }
+    }
+    if (
+      plan.category !== (request.category ?? "vps") ||
+      (request.engine && plan.database?.engine !== request.engine) ||
+      (request.version &&
+        (plan.database?.version_status !== "verified" ||
+          !plan.database.versions.includes(request.version)))
+    ) {
+      result.excluded.push({ plan, reasons: ["service_filter_mismatch"] });
+      continue;
     }
     if (plan.lifecycle === "withdrawn") {
       result.excluded.push({ plan, reasons: ["withdrawn"] });
@@ -251,6 +282,9 @@ export function compare(
   }
   result.ranked.sort(
     (a, b) =>
+      (a.plan.database?.engine ?? "").localeCompare(
+        b.plan.database?.engine ?? "",
+      ) ||
       a.subtotalToman - b.subtotalToman ||
       (a.plan.id < b.plan.id ? -1 : a.plan.id > b.plan.id ? 1 : 0),
   );
@@ -276,17 +310,22 @@ export function compare(
           ? plan.storage_type
           : null,
     };
-    const exactIdentity = Object.values(configuration).every(
-      (value) => value !== null,
-    );
+    const engine = plan.database?.engine ?? null;
+    const topology =
+      plan.database?.topology_status === "verified" ? plan.topology : null;
+    const exactIdentity =
+      (plan.category === "vps" || topology !== null) &&
+      Object.values(configuration).every((value) => value !== null);
     const id = exactIdentity
-      ? `vps:${JSON.stringify(configuration)}`
+      ? `${plan.category}:${engine ?? ""}:${plan.category === "database" ? topology : ""}:${JSON.stringify(configuration)}`
       : `offer:${plan.id}`;
     let item = items.get(id);
     if (!item) {
       item = {
         id,
         exactIdentity,
+        engine,
+        topology,
         configuration,
         offers: [],
         startingPriceToman: offer.quote?.subtotalToman ?? null,
@@ -299,6 +338,7 @@ export function compare(
   }
   result.items = [...items.values()].sort(
     (a, b) =>
+      (a.engine ?? "").localeCompare(b.engine ?? "") ||
       (a.startingPriceToman === null && b.startingPriceToman === null
         ? 0
         : a.startingPriceToman === null

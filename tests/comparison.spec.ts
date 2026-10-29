@@ -156,3 +156,47 @@ test("evidence warnings accompany starting prices and unknown identity stays sep
   await offer.getByText("جزئیات هزینه و منبع", { exact: true }).click();
   await expect(offer).toContainText("ناموفق؛ به معنی خروج از عرضه نیست");
 });
+
+test("browse managed databases, choose engine/version and inspect reviewed service facts", async ({
+  page,
+}) => {
+  await page.goto("./");
+  await page.getByLabel("دسته خدمات").selectOption("database");
+  await expect(
+    page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
+  ).toHaveCount(0);
+  await expect(page.locator(".configuration")).toHaveCount(4);
+  await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
+  await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
+  await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
+  await expect(page.locator(".configuration")).toHaveCount(1);
+  await expect(page.getByRole("article")).toContainText("PostgreSQL");
+  await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
+  await expect(page.getByRole("article")).toContainText(
+    "تعارض شواهد پشتیبان‌گیری",
+  );
+  await page.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(page.getByRole("article")).toContainText("مسئولیت مانیتورینگ");
+  await expect(
+    page.getByRole("link", { name: "liara-pg-versions" }),
+  ).toHaveAttribute(
+    "href",
+    "https://docs.liara.ir/dbaas/postgresql/choose-version/",
+  );
+  await expect(
+    page.getByRole("link", { name: "بررسی در سایت ارائه‌دهنده" }),
+  ).toHaveAttribute("href", "https://liara.ir/pricing/");
+  await page.getByLabel("روش تطبیق منابع").selectOption("exact");
+  await page.getByLabel("دقیق رم (GB)", { exact: true }).fill("8");
+  await expect(page.locator(".configuration")).toHaveCount(0);
+  await page.getByLabel("دقیق رم (GB)", { exact: true }).fill("4");
+  await page.getByLabel("موتور دیتابیس").selectOption("Redis");
+  await expect(page.getByLabel("نسخه دیتابیس")).toHaveValue("");
+  await page.getByLabel("نسخه دیتابیس").selectOption("8.0");
+  await expect(page.getByRole("article")).toContainText("Redis");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+});
