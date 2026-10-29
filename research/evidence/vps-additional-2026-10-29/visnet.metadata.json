@@ -1,0 +1,23 @@
+{
+  "provider": "visnet",
+  "url": "https://host.visnet.ir/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86/",
+  "attempted_at_utc": "2026-10-29T02:23:52.824367+00:00",
+  "status": 200,
+  "final_url": "https://host.visnet.ir/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86/",
+  "headers": {
+    "Connection": "close",
+    "X-Powered-By": "PHP/7.4.33",
+    "Last-Modified": "Mon, 02 Sep 2024 21:17:15 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Cache-Control": "public, max-age=0",
+    "Expires": "Thu, 29 Oct 2026 02:23:53 GMT",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:53 GMT",
+    "Vary": "User-Agent,Accept-Encoding",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 216197,
+  "text_chars": 7487,
+  "saved_at_utc": "2026-10-29T02:23:59.524804+00:00",
+  "sha256": "0d217bd7b531111e5eb06eca5090cdd1d51c3b18bb655224773e3853af3a1121"
+}

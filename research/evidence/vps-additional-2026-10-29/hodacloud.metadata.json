@@ -1,0 +1,21 @@
+{
+  "provider": "hodacloud",
+  "url": "https://hodacloud.com/",
+  "attempted_at_utc": "2026-10-29T02:22:59.676593+00:00",
+  "status": 200,
+  "final_url": "https://hodacloud.com/",
+  "headers": {
+    "Alt-Svc": "h3=\":60418\"; ma=2592000,h3=\":60413\"; ma=2592000,h3=\":60414\"; ma=2592000",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 29 Oct 2026 02:23:03 GMT",
+    "Link": "<https://hodacloud.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Server": "BitNinja-WafPro",
+    "Via": "1.1 Caddy",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "bytes": 482924,
+  "text_chars": 15118,
+  "saved_at_utc": "2026-10-29T02:23:10.837961+00:00",
+  "sha256": "cbd2c99a223cb64edaf3898e1419c6c3085316a48e06a7fa2bf0d4f9ff7a840f"
+}

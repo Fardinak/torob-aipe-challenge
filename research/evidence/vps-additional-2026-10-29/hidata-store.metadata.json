@@ -1,0 +1,22 @@
+{
+  "provider": "hidata-store",
+  "url": "https://my.hidata.org/store/iran-nvme-vps",
+  "attempted_at_utc": "2026-10-29T02:25:28.976911+00:00",
+  "status": 200,
+  "final_url": "https://my.hidata.org/store/iran-nvme-vps",
+  "headers": {
+    "Connection": "close",
+    "set-cookie": "WHMCSkNk3xfpW0C6T=bb5edc65cdd83359e5f63dc9413c9065; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:25:25 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 261162,
+  "text_chars": 41991,
+  "saved_at_utc": "2026-10-29T02:25:31.041260+00:00",
+  "sha256": "a6c27183ac9536df9888a703cab49b0a111e8048ae8d6799ed459c4eb9407f22"
+}

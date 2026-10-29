@@ -1,0 +1,22 @@
+{
+  "provider": "hidata-sata-store",
+  "url": "https://my.hidata.org/store/ir-sata-vps",
+  "attempted_at_utc": "2026-10-29T02:26:23.739181+00:00",
+  "status": 200,
+  "final_url": "https://my.hidata.org/store/ir-sata-vps",
+  "headers": {
+    "Connection": "close",
+    "set-cookie": "WHMCSkNk3xfpW0C6T=9f8db0b177bf3bb278eec197cb41d98f; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:26:19 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 170719,
+  "text_chars": 25787,
+  "saved_at_utc": "2026-10-29T02:26:25.213284+00:00",
+  "sha256": "aca5abed0717cac2f2adf8a3cb22ff541442bca4c50d031b540eee93e901c71a"
+}

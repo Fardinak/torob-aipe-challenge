@@ -1,0 +1,26 @@
+{
+  "provider": "famaserver",
+  "url": "https://famaserver.com/vps/",
+  "attempted_at_utc": "2026-10-29T02:23:54.737838+00:00",
+  "status": 200,
+  "final_url": "https://famaserver.com/vps/",
+  "headers": {
+    "Connection": "close",
+    "x-powered-by": "PHP/8.2.34",
+    "Content-Type": "text/html; charset=UTF-8",
+    "link": "<https://famaserver.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "x-turbo-cache": "MISS",
+    "x-turbo-cache-reason": "cold",
+    "cache-control": "public, max-age=172800",
+    "expires": "Fri, 30 Oct 2026 16:57:24 GMT",
+    "etag": "\"164873-1793206644;;;\"",
+    "X-LiteSpeed-Cache": "hit",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:49 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 202921,
+  "text_chars": 41950,
+  "saved_at_utc": "2026-10-29T02:23:54.934751+00:00",
+  "sha256": "c2d20707783164cf7d49b23ad0521e522d9d0cd1078c395005864ad8815c4c40"
+}

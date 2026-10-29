@@ -32,7 +32,7 @@ unresolved and record the attempt; absence alone is not confirmed withdrawal.
 ## Refresh procedure
 
 1. Retrieve every applicable first-party tariff and terms page. Retain the bytes,
-   actual retrieval time, digest and original wording. Review each sampled row's
+   actual retrieval time, digest and original wording. Review every qualifying row's
    resources, price and currency, billing basis, traffic terms and applicability,
    optional extras, tax, mandatory fees and unresolved claims. A 200 response
    without the required content is not successful verification.
@@ -113,3 +113,29 @@ traffic policies or compete on price across engines.
 
 The [initial review](../research/managed-database-initial-review-2026-10-29.md)
 is a sample, not the broad acquisition or exact cross-provider release gate.
+
+
+## VPS breadth acquisition (#20)
+
+Continue from [the breadth review](../research/vps-breadth-review-2026-10-29.md)
+and its linked source manifests, rather than repeating the original shortlist.
+Review all returned qualifying fixed configurations, including nondefault family
+and datacenter tabs; do not use the old two-by-two target as a cap. Preserve
+excluded rows, failed requests and unfinished leads with their reasons. A new
+provider or resource/traffic/billing family that adds meaningful coverage reopens
+the breadth search; matching resources alone do not complete acquisition.
+
+The production build publishes the reviewed data at `evidence/catalog.json`
+and each referenced snapshot as `evidence/<source-key>.txt`. Offer disclosures
+link the retained snapshot next to the live first-party page. Raw provider HTML
+is served as plain text so its scripts cannot execute on the catalog origin.
+Both current and historical referenced snapshots are emitted; build validation
+checks their original byte hashes before publication.
+
+Monthly reference prices remain the ranking basis. Preserve other published
+billing periods in evidence, without inventing monthly/hourly conversions.
+Unknown storage type permits base-price admission but cannot prove exact
+identity. Mixed-media offers retain their composition; any decimal aggregate
+capacity is explicitly derived, never treated as a single-media exact match.
+MB values use decimal MB/1000 for the GB filter, retaining the original MB label;
+no implicit MB/MiB or GB/GiB equivalence is introduced.

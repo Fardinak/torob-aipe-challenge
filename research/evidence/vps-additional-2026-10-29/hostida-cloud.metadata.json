@@ -1,0 +1,22 @@
+{
+  "provider": "hostida-cloud",
+  "url": "https://hostida.com/cloud/iran/",
+  "attempted_at_utc": "2026-10-29T02:24:42.667804+00:00",
+  "status": 200,
+  "final_url": "https://hostida.com/cloud/iran/",
+  "headers": {
+    "Connection": "close",
+    "Last-Modified": "Tue, 27 Oct 2026 13:40:20 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Cache-Control": "public, max-age=0",
+    "Expires": "Thu, 29 Oct 2026 02:24:37 GMT",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:24:37 GMT",
+    "Vary": "User-Agent,Accept-Encoding",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 166683,
+  "text_chars": 15345,
+  "saved_at_utc": "2026-10-29T02:24:43.031525+00:00",
+  "sha256": "6c17bd368c23f95dfa5d121e4cf5cdcaa8032e3706acc642dc835dc35b196dc4"
+}

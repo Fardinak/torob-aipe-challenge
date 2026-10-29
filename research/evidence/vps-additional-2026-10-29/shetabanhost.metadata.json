@@ -1,0 +1,24 @@
+{
+  "provider": "shetabanhost",
+  "url": "https://shetabanhost.com/vps/iran-ssd/",
+  "attempted_at_utc": "2026-10-29T02:23:52.819278+00:00",
+  "status": 200,
+  "final_url": "https://shetabanhost.com/vps/iran-ssd/",
+  "headers": {
+    "Connection": "close",
+    "Link": "<https://shetabanhost.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "text/html; charset=UTF-8",
+    "X-LiteSpeed-Cache-Control": "public,max-age=231",
+    "X-LiteSpeed-Tag": "dc3_page,dc3_URL.a8300e71eb42303817f2d1b44d788d6d,dc3_Po.114,dc3_PGS,dc3_",
+    "Etag": "\"4119-1793240628;;;\"",
+    "X-Litespeed-Cache": "miss",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:48 GMT",
+    "Vary": "User-Agent",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+  },
+  "bytes": 74653,
+  "text_chars": 9907,
+  "saved_at_utc": "2026-10-29T02:23:53.443213+00:00",
+  "sha256": "6b7bdfacdee7b6d6758615bf79e5bcbdeca3a755a5e2846a5204f2301b862907"
+}

@@ -1,0 +1,23 @@
+{
+  "provider": "azardata",
+  "url": "https://azardata.net/vps/nvme/iran/",
+  "attempted_at_utc": "2026-10-29T02:23:52.817369+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/nvme/iran/",
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Link": "<https://azardata.net/wp-json/>; rel=\"https://api.w.org/\"",
+    "Etag": "\"396-1793232344;;;\"",
+    "X-LiteSpeed-Cache": "hit",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:39 GMT",
+    "Vary": "User-Agent",
+    "Strict-Transport-Security": "max-age=31536000;includeSubDomains;preload",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 364134,
+  "text_chars": 28978,
+  "saved_at_utc": "2026-10-29T02:23:53.204301+00:00",
+  "sha256": "9cfe70b339e0154763b3ce744f9aa6c4c7079a127837bc66f4c9757624179c9e"
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خرید سرور مجازی (VPS) — لینوکس، ویندوز و مک | Noderio</title>
+<meta name="description" content="خرید سرور مجازی با منابع اختصاصی روی KVM در ۴۰ کشور. لینوکس، ویندوز سرور و macOS، دسترسی کامل SSH و VNC، پرداخت ریالی و تحویل خودکار.">
+<link rel="canonical" href="https://noderio.com/vps">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noderio">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:url" content="https://noderio.com/vps">
+<meta property="og:title" content="خرید سرور مجازی (VPS) — لینوکس، ویندوز و مک | Noderio">
+<meta property="og:description" content="خرید سرور مجازی با منابع اختصاصی روی KVM در ۴۰ کشور. لینوکس، ویندوز سرور و macOS، دسترسی کامل SSH و VNC، پرداخت ریالی و تحویل خودکار.">
+<meta property="og:image" content="https://noderio.com/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="خرید سرور مجازی (VPS) — لینوکس، ویندوز و مک | Noderio">
+<meta name="twitter:description" content="خرید سرور مجازی با منابع اختصاصی روی KVM در ۴۰ کشور. لینوکس، ویندوز سرور و macOS، دسترسی کامل SSH و VNC، پرداخت ریالی و تحویل خودکار.">
+<meta name="twitter:image" content="https://noderio.com/icon-512.png">
+<link rel="preload" href="/vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/media/site_logo_url-bbde69f806e7f393.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#090f1e">
+<style>
+/* Vazirmatn, self-hosted -- same variable woff2 the SPA bundles, copied to a
+   stable path because these pages may only reference filenames that survive a
+   Vite build. A Google Fonts <link> is not an option twice over: the CDN is
+   unreachable from Iran, and the app's CSP is font-src 'self'. */
+@font-face{
+  font-family:'Vazirmatn';
+  src:url('/vazirmatn.woff2') format('woff2 supports variations'),
+      url('/vazirmatn.woff2') format('woff2-variations');
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+}
+/* Same visual language as the SPA landing page (landing.css): midnight
+   ground, ice-blue accent, violet gradient for primary actions. */
+:root{
+  --bg:#090f1e; --card:#0f1726; --line:#22324d; --line-2:#2c4468;
+  --text:#e6eef2; --muted:#a9bcd2; --faint:#7690ae;
+  --accent:#82cbf5; --violet:#a9b7ff; --green:#6fd8a6;
+  --grad:linear-gradient(115deg,#91e0ff 0%,#8bbcff 52%,#b5a6ff 100%);
+  --card-bg:radial-gradient(ellipse at 100% 0%,rgba(40,70,113,.22),transparent 60%),linear-gradient(155deg,#111c2e,#0e1524 75%);
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Vazirmatn,system-ui,'Segoe UI',sans-serif;
+  line-height:1.9;-webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(ellipse 85% 680px at 95% 0%,rgba(51,100,184,.15),transparent 72%),
+    radial-gradient(ellipse 75% 720px at 0% 700px,rgba(101,76,176,.10),transparent 74%),
+    radial-gradient(ellipse 90% 1100px at 100% 2200px,rgba(37,116,161,.08),transparent 75%);
+  background-repeat:no-repeat;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(83,118,201,.5);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+bdi{unicode-bidi:isolate}
+.mono{font-family:var(--mono);letter-spacing:.14em}
+
+/* header */
+header.top{position:sticky;top:0;z-index:30;background:rgba(9,15,30,.9);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;flex-shrink:0}
+.brand img{width:30px;height:30px;border-radius:8px}
+.top nav{display:flex;gap:26px;font-size:13.5px;color:#a8b7c7}
+.top nav a{transition:color .2s}
+.top nav a:hover,.top nav a[aria-current]{color:var(--accent)}
+.subnav{display:none}
+@media(max-width:820px){
+  .top nav{display:none}
+  .subnav{display:flex;gap:6px;overflow-x:auto;padding:8px 20px;border-bottom:1px solid rgba(255,255,255,.06);
+    scrollbar-width:none;background:rgba(9,15,30,.6)}
+  .subnav::-webkit-scrollbar{display:none}
+  .subnav a{flex-shrink:0;font-size:12.5px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .subnav a[aria-current]{color:#0f1e3a;background:var(--accent);border-color:var(--accent)}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;
+  border-radius:12px;padding:10px 20px;font-size:14px;font-weight:700;
+  border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s}
+.btn-primary{background:var(--grad);color:#0b1831;border-color:#b6d7ff;
+  box-shadow:0 4px 22px rgba(68,105,223,.14),inset 0 1px 0 rgba(255,255,255,.33)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 7px 26px rgba(97,126,255,.22)}
+.btn-ghost{background:rgba(24,38,68,.25);color:#c6dcff;border-color:#3c5680}
+.btn-ghost:hover{background:#223862;border-color:#729ad3}
+.btn-sm{min-height:40px;padding:7px 15px;font-size:13px;border-radius:10px}
+.arrow{width:16px;height:16px;flex-shrink:0}
+
+/* breadcrumb */
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12.5px;color:var(--faint);padding-top:20px}
+.crumb a{color:var(--muted);transition:color .2s}
+.crumb a:hover{color:var(--accent)}
+.crumb .sep{opacity:.5}
+
+/* hero */
+.hero{padding:34px 0 30px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:44px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a3d5e;
+  background:rgba(19,32,58,.5);border-radius:999px;padding:6px 14px;font-size:12.5px;color:#9fc4e6;margin-bottom:20px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);display:inline-block}
+h1{font-size:clamp(30px,4.4vw,50px);line-height:1.35;margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
+h1 .hl{background:linear-gradient(105deg,#a99eff 5%,#78baff 52%,#9eefff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(15px,1.5vw,17px);color:var(--muted);max-width:62ch;margin:0}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font-size:12.5px;color:#899db3}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+.trust span::before{content:"✓";color:var(--accent);font-weight:700}
+
+/* hero side card */
+.glance{position:relative;isolation:isolate;padding:22px;border-radius:24px;border:1px solid #3f5f93;overflow:hidden;
+  background:radial-gradient(ellipse at 90% 0%,rgba(58,99,168,.33),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(90,75,176,.18),transparent 60%),linear-gradient(155deg,#15233d,#101830 70%,#17152b);
+  box-shadow:0 30px 80px -35px rgba(28,58,122,.8)}
+.glance::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;
+  background-image:linear-gradient(rgba(130,203,245,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(130,203,245,.07) 1px,transparent 1px);
+  background-size:26px 26px;-webkit-mask-image:radial-gradient(ellipse at 70% 20%,#000,transparent 75%);mask-image:radial-gradient(ellipse at 70% 20%,#000,transparent 75%)}
+.glance-head{display:flex;align-items:center;justify-content:space-between;gap:10px;font:600 10px/1 var(--mono);letter-spacing:.18em;color:#a4c8ed}
+.glance-head .live{display:inline-flex;align-items:center;gap:6px;color:var(--green)}
+.glance-head .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:breathe 2s ease-in-out infinite}
+.glance-price{margin-top:18px;padding:14px 16px;border-radius:16px;background:rgba(11,32,76,.35);border:1px solid rgba(216,231,255,.12)}
+.glance-price span{display:block;font-size:12px;color:#c3d3ee}
+.glance-price b{display:block;margin-top:2px;font-size:clamp(24px,2.6vw,30px);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glance-price small{font-size:12px;color:#9fb4d6}
+.glance-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 0}
+.glance-stats div{padding:11px 13px;border-radius:13px;background:rgba(9,15,30,.55);border:1px solid var(--line)}
+.glance-stats div:last-child:nth-child(odd){grid-column:1/-1}
+.glance-stats dt{font-size:11px;color:var(--faint)}
+.glance-stats dd{margin:2px 0 0;font-size:15px;font-weight:800;color:var(--text);line-height:1.5}
+.glance .checks{margin-top:14px}
+.glance .btn{width:100%;margin-top:16px}
+.glance-note{margin:10px 0 0;font-size:11.5px;color:#8ea3bb;text-align:center}
+
+/* sections */
+section{padding:34px 0}
+h2{font-size:clamp(21px,2.5vw,28px);margin:0 0 12px;font-weight:800;letter-spacing:-.015em;line-height:1.5}
+h3{font-size:16px;margin:0 0 6px;font-weight:800}
+p{margin:0 0 14px;color:var(--muted)}
+.sec-head{margin-bottom:18px}
+.sec-head .kicker{display:inline-flex;align-items:center;gap:8px;font:500 10px/1 var(--mono);letter-spacing:.2em;color:#8fb3d9;margin-bottom:10px}
+.sec-head .kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.sec-head p{max-width:70ch}
+
+/* prose: numbered article blocks */
+.prose{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:18px 40px;padding:26px 28px;border-radius:22px;border:1px solid var(--line);background:var(--card-bg)}
+.prose .num{display:block;font:600 11px/1 var(--mono);letter-spacing:.2em;color:#6f89a8;margin-bottom:10px}
+.prose h2{font-size:clamp(19px,2.1vw,23px);margin:0}
+.prose .body p{font-size:14.5px;line-height:2.05}
+.prose .body p:last-child{margin-bottom:0}
+
+/* cards */
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{position:relative;padding:20px;border-radius:20px;border:1px solid var(--line);background:var(--card-bg);transition:border-color .3s,transform .3s}
+.card:hover{border-color:#3a5580;transform:translateY(-2px)}
+.card .icon{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;margin-bottom:12px;color:#9bd9ff;
+  background:rgba(80,143,204,.12);border:1px solid var(--line-2);font:700 12px/1 var(--mono)}
+.card h3{color:var(--text)}
+.card > p{font-size:13.5px;line-height:1.95}
+ul.checks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ul.checks li{position:relative;padding-right:26px;color:#b3c5d9;font-size:13.5px;line-height:1.85}
+ul.checks li::before{content:"✓";position:absolute;right:0;top:3px;display:grid;place-items:center;width:17px;height:17px;border-radius:5px;
+  font-size:10px;font-weight:700;color:#9bd9ff;background:rgba(80,143,204,.16)}
+
+/* table */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:var(--card-bg)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px}
+th,td{padding:14px 18px;text-align:right;border-bottom:1px solid rgba(168,202,255,.08)}
+th{color:#7f98b8;font-size:11.5px;font-weight:600;background:rgba(9,15,30,.45)}
+tbody tr{transition:background .2s}
+tbody tr:hover{background:rgba(91,143,208,.07)}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;color:var(--text)}
+td bdi{font-family:var(--mono);font-size:12.5px;color:#c5d9ec}
+td b{display:inline-block;padding:3px 10px;border-radius:8px;font-weight:700;color:#d6ecfb;background:rgba(36,55,90,.8)}
+
+/* countries */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:10px;font-size:13px;color:#d3e4f5;
+  background:#14213a;border:1px solid var(--line)}
+.chips small{font:500 10.5px/1 var(--mono);color:#7f98b8}
+
+/* faq */
+.faq{display:grid;gap:8px}
+details{border:1px solid var(--line);border-radius:16px;background:var(--card-bg);padding:0 18px;transition:border-color .25s}
+details[open]{border-color:#3a5580}
+details summary{cursor:pointer;font-weight:700;font-size:14.5px;list-style:none;min-height:56px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";flex-shrink:0;display:grid;place-items:center;width:26px;height:26px;border-radius:8px;
+  color:var(--accent);background:rgba(80,143,204,.12);font-weight:400;font-size:18px;transition:transform .25s}
+details[open] summary{color:var(--accent)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 16px;font-size:14px;line-height:2}
+
+/* cta band */
+.band{position:relative;overflow:hidden;border-radius:26px;padding:40px 28px;text-align:center;color:#f1f6ff;
+  background:linear-gradient(140deg,#2563c8 0%,#3e58c7 48%,#7151bc 100%);border:1px solid #8099ec;
+  box-shadow:0 20px 60px -25px rgba(42,79,192,.7),inset 0 1px 0 rgba(255,255,255,.25)}
+.band::after{content:"";position:absolute;inset:-50% -10% auto auto;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.16),transparent 65%);pointer-events:none}
+.band h2{color:#fff;margin-bottom:8px}
+.band p{max-width:60ch;margin:0 auto;color:#e6edff}
+.band .btn{margin-top:22px;background:#fff;color:#1b2f66;border-color:#fff;box-shadow:0 8px 24px rgba(10,20,60,.3)}
+.band .btn:hover{background:#eef3ff}
+
+/* footer */
+footer{border-top:1px solid rgba(255,255,255,.08);margin-top:34px;padding:36px 0 26px;font-size:13.5px;background:rgba(9,15,30,.5)}
+.fcols{display:grid;gap:26px;grid-template-columns:1.2fr repeat(3,1fr)}
+.fbrand p{font-size:12.5px;line-height:2;max-width:32ch;margin-top:10px}
+footer h4{font-size:12px;margin:0 0 12px;color:var(--text);font-weight:700}
+footer li{list-style:none;margin-bottom:8px}
+footer ul{margin:0;padding:0}
+footer a{color:var(--muted);transition:color .2s}
+footer a:hover{color:var(--accent)}
+.legal{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.07);
+  color:var(--faint);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.seo-note{color:var(--faint);font-size:12.5px;line-height:2.1;margin-top:14px}
+
+@keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:26px}
+  .prose{grid-template-columns:minmax(0,1fr);gap:10px;padding:20px}
+  .fcols{grid-template-columns:1fr 1fr}
+  .fbrand{grid-column:1/-1}
+}
+@media(max-width:560px){
+  .hero{padding-top:22px}
+  .cta-row .btn{flex:1}
+  .glance{padding:18px;border-radius:20px}
+  section{padding:24px 0}
+  .band{padding:30px 18px;border-radius:22px}
+  th,td{padding:12px 14px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://noderio.com/#org","name":"Noderio","url":"https://noderio.com/","logo":"https://noderio.com/icon-512.png"},{"@type":"WebPage","@id":"https://noderio.com/vps#page","url":"https://noderio.com/vps","name":"خرید سرور مجازی (VPS) — لینوکس، ویندوز و مک | Noderio","description":"خرید سرور مجازی با منابع اختصاصی روی KVM در ۴۰ کشور. لینوکس، ویندوز سرور و macOS، دسترسی کامل SSH و VNC، پرداخت ریالی و تحویل خودکار.","inLanguage":"fa-IR","isPartOf":{"@id":"https://noderio.com/#site"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"خانه","item":"https://noderio.com/"},{"@type":"ListItem","position":2,"name":"سرور مجازی","item":"https://noderio.com/vps"}]},{"@type":"Product","name":"خرید سرور مجازی (VPS)","description":"خرید سرور مجازی با منابع اختصاصی روی KVM در ۴۰ کشور. لینوکس، ویندوز سرور و macOS، دسترسی کامل SSH و VNC، پرداخت ریالی و تحویل خودکار.","brand":{"@id":"https://noderio.com/#org"},"image":"https://noderio.com/icon-512.png","offers":{"@type":"AggregateOffer","priceCurrency":"IRR","lowPrice":26380000,"offerCount":612,"availability":"https://schema.org/InStock","url":"https://noderio.com/vps","priceValidUntil":"2026-10-30","highPrice":377270000}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"سرور مجازی با هاست اشتراکی چه فرقی دارد؟","acceptedAnswer":{"@type":"Answer","text":"در هاست اشتراکی منابع سرور بین ده‌ها سایت تقسیم می‌شود و دسترسی شما محدود به یک کنترل‌پنل است. در سرور مجازی سهم مشخصی از پردازنده، رم و دیسک فقط مال شماست و دسترسی کامل ریشه دارید، پس هر نرم‌افزاری را می‌توانید نصب کنید."}},{"@type":"Question","name":"بعد از پرداخت چقدر طول می‌کشد سرور تحویل شود؟","acceptedAnswer":{"@type":"Answer","text":"سفارش به‌صورت خودکار ثبت می‌شود و آماده‌سازی سرور معمولاً چند دقیقه طول می‌کشد. وضعیت آن را در پنل می‌بینید و به‌محض آماده شدن، مشخصات اتصال همان‌جا نمایش داده می‌شود."}},{"@type":"Question","name":"سرور ویندوز هم دارید؟ لایسنس ویندوز حساب می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"بله، ویندوز سرور هنگام سفارش قابل انتخاب است. لایسنس ویندوز جدا از هزینه‌ی سرور محاسبه می‌شود و در قیمت پایه‌ی پلن لینوکسی نیست."}},{"@type":"Question","name":"می‌توانم بعداً منابع سرور را بیشتر کنم؟","acceptedAnswer":{"@type":"Answer","text":"برای بیشتر پلن‌ها، رم و فضای دیسک بیشتر به‌عنوان افزونه هنگام سفارش قابل انتخاب است. برای تغییر بعد از خرید با پشتیبانی هماهنگ کنید، چون بسته به پلن ممکن است نیاز به انتقال باشد."}},{"@type":"Question","name":"آی‌پی سرور اختصاصی است؟","acceptedAnswer":{"@type":"Answer","text":"بله. هر سرور مجازی دست‌کم یک آی‌پی نسخه‌ی چهار اختصاصی دارد که فقط در اختیار شماست و با کسی به اشتراک گذاشته نمی‌شود."}},{"@type":"Question","name":"اگر سرور را تمدید نکنم چه می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"پیش از انقضا در داشبورد به شما هشدار داده می‌شود. می‌توانید تمدید خودکار را روشن کنید تا هزینه در سررسید از کیف پولتان کم شود و سرویس بدون وقفه ادامه پیدا کند."}}]}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><img src="/media/site_logo_url-bbde69f806e7f393.png" alt="Noderio" width="30" height="30">Noderio</a>
+<nav aria-label="منوی اصلی"><a href="/proxy">پروکسی</a><a href="/vps" aria-current="page">سرور مجازی</a><a href="/dedicated">سرور اختصاصی</a><a href="/storage">فضای ذخیره‌سازی</a></nav>
+<a class="btn btn-primary btn-sm" href="/login">ورود / ثبت‌نام <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+</div></header>
+<nav class="subnav" aria-label="منوی سرویس‌ها"><a href="/proxy">پروکسی</a><a href="/vps" aria-current="page">سرور مجازی</a><a href="/dedicated">سرور اختصاصی</a><a href="/storage">فضای ذخیره‌سازی</a></nav>
+<div class="wrap"><nav class="crumb" aria-label="مسیر صفحه"><a href="/">خانه</a><span class="sep" aria-hidden="true">‹</span><span aria-current="page">سرور مجازی</span></nav></div>
+<main><section class="hero"><div class="wrap">
+<div>
+<span class="eyebrow"><span class="dot"></span>تحویل خودکار، بلافاصله بعد از پرداخت</span>
+<h1>خرید سرور مجازی (VPS)</h1>
+<p class="lede">سرور مجازی با منابع اختصاصی روی مجازی‌ساز KVM، در ۴۰ کشور و با انتخاب لینوکس، ویندوز سرور یا macOS. کیف پولتان را به تومان شارژ می‌کنید، مشخصات سرور را انتخاب می‌کنید و سرور بدون دخالت اپراتور تحویل داده می‌شود.</p>
+<div class="cta-row">
+  <a class="btn btn-primary" href="/login">ساخت حساب و دیدن قیمت‌ها <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+  <a class="btn btn-ghost" href="#faq">سوال‌های رایج</a>
+</div>
+<div class="trust"><span>پرداخت به تومان</span><span>تحویل خودکار</span><span>یک کیف پول برای همه سرویس‌ها</span></div>
+</div>
+<aside class="glance" aria-label="خلاصه‌ی سرویس">
+<div class="glance-head"><span dir="ltr">CLOUD VPS · KVM</span><span class="live">LIVE CATALOGUE</span></div>
+<div class="glance-price"><span>شروع قیمت</span><b>۲٬۶۳۸٬۰۰۰</b><small>تومان در ماه</small></div><dl class="glance-stats"><div><dt>پلن قابل سفارش</dt><dd>۶۱۲</dd></div><div><dt>کشور</dt><dd>۴۰</dd></div><div><dt>سیستم‌عامل</dt><dd>لینوکس، ویندوز، مک</dd></div></dl>
+<a class="btn btn-primary" href="/login">ساخت حساب و دیدن قیمت‌ها <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+<p class="glance-note">ثبت‌نام رایگان است؛ قیمت نهایی پیش از پرداخت نمایش داده می‌شود.</p>
+</aside>
+</div></section><section><div class="wrap"><article class="prose"><div><span class="num" dir="ltr">01</span><h2>سرور مجازی چیست و چه وقت به آن نیاز دارید؟</h2></div><div class="body"><p>سرور مجازی یا VPS بخش جداشده‌ای از یک سرور فیزیکی است که پردازنده، رم و فضای دیسک آن فقط در اختیار شماست. برخلاف هاست اشتراکی که منابعش بین ده‌ها سایت تقسیم می‌شود، در سرور مجازی هیچ‌کس دیگری روی کارایی شما اثر نمی‌گذارد و دسترسی کامل ریشه (root) دارید؛ یعنی هر نرم‌افزاری را که لازم دارید خودتان نصب می‌کنید.</p><p>معمولاً وقتی سراغ سرور مجازی می‌آیند که هاست اشتراکی کم آورده باشد: سایتی که بازدیدش بالا رفته، رباتی که باید شبانه‌روز روشن بماند، پنلی که باید همیشه در دسترس باشد، یا پروژه‌ای که به نسخه‌ی خاصی از یک زبان یا پایگاه داده نیاز دارد. اگر کارتان فقط یک سایت کوچک و کم‌بازدید است، هاست اشتراکی هنوز ارزان‌تر و ساده‌تر است.</p><p>همه‌ی سرورهای این فروشگاه روی مجازی‌سازی KVM اجرا می‌شوند. KVM یعنی هسته‌ی سیستم‌عامل شما واقعاً جداست و می‌توانید کرنل دلخواهتان را اجرا کنید — برخلاف مجازی‌سازی‌های اشتراکی‌تری مثل OpenVZ که کرنل را با بقیه به اشتراک می‌گذارند.</p></div></article></div></section><section><div class="wrap"><article class="prose"><div><span class="num" dir="ltr">02</span><h2>سیستم‌عامل: لینوکس، ویندوز یا مک</h2></div><div class="body"><p>هنگام سفارش، سیستم‌عامل را خودتان انتخاب می‌کنید و سرور با همان سیستم‌عامل نصب‌شده تحویل داده می‌شود. لینوکس (اوبونتو) پیش‌فرض و ارزان‌ترین گزینه است و برای سایت، ربات، پنل و تقریباً هر کار سروری مناسب است.</p><p>ویندوز سرور وقتی لازم می‌شود که به محیط گرافیکی، Remote Desktop یا نرم‌افزاری نیاز دارید که فقط روی ویندوز اجرا می‌شود. دقت کنید که لایسنس ویندوز جدا از هزینه‌ی خود سرور حساب می‌شود و در قیمت پایه نیست. سرور macOS هم موجود است و کاربرد اصلی‌اش توسعه و تست نرم‌افزارهای اپل است که روی سیستم‌عامل دیگری ساخته نمی‌شوند.</p></div></article></div></section><section><div class="wrap"><article class="prose"><div><span class="num" dir="ltr">03</span><h2>انتخاب کشور و اثر آن بر سرعت</h2></div><div class="body"><p>کشور سرور دو چیز را تعیین می‌کند: تأخیر (پینگ) تا کاربران شما، و اینکه سرویس‌های بیرونی آی‌پی شما را از کجا می‌بینند. برای کاربران ایرانی، سرورهای اروپای مرکزی و شمالی — به‌خصوص آلمان، هلند و فنلاند — معمولاً کمترین تأخیر را دارند و به همین دلیل پرطرفدارترین انتخاب‌اند.</p><p>اگر مخاطب اصلی‌تان جای دیگری است، سرور را نزدیک همان‌جا بگیرید: آمریکا برای مخاطب آمریکای شمالی، سنگاپور یا ژاپن برای شرق آسیا، و امارات یا ترکیه وقتی هم به ایران و هم به منطقه نزدیک باشید بهتر است.</p></div></article></div></section><section><div class="wrap"><div class="sec-head"><span class="kicker" dir="ltr">WHAT YOU GET</span><h2>چه چیزی تحویل می‌گیرید</h2></div><div class="grid g3"><div class="card"><span class="icon" dir="ltr" aria-hidden="true">01</span><h3>منابع واقعاً اختصاصی</h3><p>پردازنده، رم و دیسک سهم خودتان است و بین کاربران دیگر تقسیم نمی‌شود.</p><ul class="checks"><li>مجازی‌سازی KVM با کرنل مستقل</li><li>دسترسی کامل root یا Administrator</li><li>دیسک NVMe روی بیشتر پلن‌ها</li></ul></div><div class="card"><span class="icon" dir="ltr" aria-hidden="true">02</span><h3>تحویل خودکار</h3><p>سفارش مستقیم به تأمین‌کننده می‌رود؛ آماده‌سازی معمولاً چند دقیقه طول می‌کشد.</p><ul class="checks"><li>بدون انتظار برای تأیید دستی اپراتور</li><li>مشخصات اتصال در پنل خودتان</li><li>وضعیت هر سفارش را در پنل دنبال می‌کنید</li></ul></div><div class="card"><span class="icon" dir="ltr" aria-hidden="true">03</span><h3>مدیریت کامل از پنل</h3><p>بعد از تحویل، سرور را از همان پنل مدیریت می‌کنید.</p><ul class="checks"><li>مصرف پردازنده، رم و ترافیک به‌صورت زنده</li><li>تغییر رمز SSH و تنظیم rDNS</li><li>تمدید دستی یا خودکار از کیف پول</li></ul></div><div class="card"><span class="icon" dir="ltr" aria-hidden="true">04</span><h3>پرداخت ریالی</h3><p>بدون نیاز به کارت بانکی خارجی یا حساب ارزی.</p><ul class="checks"><li>شارژ کیف پول به تومان</li><li>کیف پول مشترک با بخش پروکسی</li><li>قیمت نهایی پیش از تأیید نمایش داده می‌شود</li></ul></div></div></div></section><section id="plans"><div class="wrap"><div class="sec-head"><span class="kicker" dir="ltr">PLANS &amp; PRICING</span><h2>نمونه‌ای از پلن‌های موجود</h2><p>یک نمونه از هر رده‌ی منابع، از سبک‌ترین تا سنگین‌ترین.</p></div><div class="tbl-wrap"><table><thead><tr><th>رده</th><th>پردازنده</th><th>رم</th><th>دیسک</th><th>شروع از</th></tr></thead><tbody><tr><td>Lite</td><td><bdi>Xeon 2.90 GHz</bdi></td><td><bdi>1 Gb</bdi></td><td><bdi>20GB NVMe</bdi></td><td><b>۲٬۶۳۸٬۰۰۰ تومان</b></td></tr><tr><td>Start</td><td><bdi>Xeon 2x2.90 GHz</bdi></td><td><bdi>2 Gb</bdi></td><td><bdi>30GB NVMe</bdi></td><td><b>۴٬۵۲۴٬۰۰۰ تومان</b></td></tr><tr><td>Medium</td><td><bdi>Xeon 3x2.90 GHz</bdi></td><td><bdi>4 Gb</bdi></td><td><bdi>40GB NVMe</bdi></td><td><b>۹٬۴۲۹٬۰۰۰ تومان</b></td></tr><tr><td>Premium</td><td><bdi>Xeon 4x2.90 GHz</bdi></td><td><bdi>8 Gb</bdi></td><td><bdi>50GB NVMe</bdi></td><td><b>۱۵٬۰۸۹٬۰۰۰ تومان</b></td></tr><tr><td>Elite</td><td><bdi>Xeon 6x2.90 GHz</bdi></td><td><bdi>16 Gb</bdi></td><td><bdi>80GB NVMe</bdi></td><td><b>۲۲٬۶۳۵٬۰۰۰ تومان</b></td></tr><tr><td>Exclusive</td><td><bdi>Xeon 8x2.90 GHz</bdi></td><td><bdi>32 Gb</bdi></td><td><bdi>100GB NVMe</bdi></td><td><b>۳۳٬۹۵۴٬۰۰۰ تومان</b></td></tr></tbody></table></div><p class="seo-note">قیمت‌ها به تومان و بر اساس نرخ روز است و بسته به کشور و مدت انتخابی تغییر می‌کند. فهرست کامل پلن‌ها پس از ورود به حساب در دسترس است.</p></div></section><section id="countries"><div class="wrap"><div class="sec-head"><span class="kicker" dir="ltr">LOCATIONS</span><h2>کشورهای موجود</h2></div><div class="chips"><span>فنلاند<small>۲۷ پلن</small></span><span>آلمان<small>۲۷ پلن</small></span><span>هلند<small>۲۷ پلن</small></span><span>آمریکا<small>۲۷ پلن</small></span><span>استرالیا<small>۱۴ پلن</small></span><span>اتریش<small>۱۴ پلن</small></span><span>بلژیک<small>۱۴ پلن</small></span><span>برزیل<small>۱۴ پلن</small></span><span>بلغارستان<small>۱۴ پلن</small></span><span>کانادا<small>۱۴ پلن</small></span><span>چک<small>۱۴ پلن</small></span><span>دانمارک<small>۱۴ پلن</small></span><span>EE<small>۱۴ پلن</small></span><span>فرانسه<small>۱۴ پلن</small></span><span>هنگ‌کنگ<small>۱۴ پلن</small></span><span>مجارستان<small>۱۴ پلن</small></span><span>اندونزی<small>۱۴ پلن</small></span><span>ایرلند<small>۱۴ پلن</small></span></div><p class="seo-note">همه‌ی لوکیشن‌ها با پلن‌های یکسان عرضه نمی‌شوند؛ فهرست کامل و قیمت هر کشور پس از ورود به حساب در صفحه‌ی خرید نمایش داده می‌شود.</p></div></section><section id="faq"><div class="wrap"><div class="sec-head"><span class="kicker" dir="ltr">FAQ</span><h2>سوال‌های رایج</h2></div><div class="faq"><details><summary>سرور مجازی با هاست اشتراکی چه فرقی دارد؟</summary><p>در هاست اشتراکی منابع سرور بین ده‌ها سایت تقسیم می‌شود و دسترسی شما محدود به یک کنترل‌پنل است. در سرور مجازی سهم مشخصی از پردازنده، رم و دیسک فقط مال شماست و دسترسی کامل ریشه دارید، پس هر نرم‌افزاری را می‌توانید نصب کنید.</p></details><details><summary>بعد از پرداخت چقدر طول می‌کشد سرور تحویل شود؟</summary><p>سفارش به‌صورت خودکار ثبت می‌شود و آماده‌سازی سرور معمولاً چند دقیقه طول می‌کشد. وضعیت آن را در پنل می‌بینید و به‌محض آماده شدن، مشخصات اتصال همان‌جا نمایش داده می‌شود.</p></details><details><summary>سرور ویندوز هم دارید؟ لایسنس ویندوز حساب می‌شود؟</summary><p>بله، ویندوز سرور هنگام سفارش قابل انتخاب است. لایسنس ویندوز جدا از هزینه‌ی سرور محاسبه می‌شود و در قیمت پایه‌ی پلن لینوکسی نیست.</p></details><details><summary>می‌توانم بعداً منابع سرور را بیشتر کنم؟</summary><p>برای بیشتر پلن‌ها، رم و فضای دیسک بیشتر به‌عنوان افزونه هنگام سفارش قابل انتخاب است. برای تغییر بعد از خرید با پشتیبانی هماهنگ کنید، چون بسته به پلن ممکن است نیاز به انتقال باشد.</p></details><details><summary>آی‌پی سرور اختصاصی است؟</summary><p>بله. هر سرور مجازی دست‌کم یک آی‌پی نسخه‌ی چهار اختصاصی دارد که فقط در اختیار شماست و با کسی به اشتراک گذاشته نمی‌شود.</p></details><details><summary>اگر سرور را تمدید نکنم چه می‌شود؟</summary><p>پیش از انقضا در داشبورد به شما هشدار داده می‌شود. می‌توانید تمدید خودکار را روشن کنید تا هزینه در سررسید از کیف پولتان کم شود و سرویس بدون وقفه ادامه پیدا کند.</p></details></div></div></section><section><div class="wrap"><div class="band">
+<h2>حساب بسازید و قیمت‌ها را ببینید</h2><p>ثبت‌نام رایگان است و تعهدی ایجاد نمی‌کند. کیف پول شما بین بخش پروکسی و بخش سرورها مشترک است.</p>
+<a class="btn" href="/login">ساخت حساب و دیدن قیمت‌ها <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+</div></div></section><div class="wrap"><p class="seo-note">در Noderio می‌توانید سرور مجازی لینوکس، ویندوز و مک را با پرداخت ریالی و تحویل خودکار بخرید. همه‌ی سرورها روی مجازی‌سازی KVM با منابع اختصاصی و دسترسی کامل SSH و VNC ارائه می‌شوند و در بیش از ۴۰ کشور از جمله آلمان، هلند، فنلاند، آمریکا، انگلیس، فرانسه، امارات و ترکیه در دسترس‌اند. مدیریت، تمدید، تغییر رمز SSH و تنظیم rDNS همه از داخل همین پنل انجام می‌شود.</p></div></main>
+<footer><div class="wrap">
+<div class="fcols"><div class="fbrand"><a class="brand" href="/"><img src="/media/site_logo_url-bbde69f806e7f393.png" alt="" width="30" height="30">Noderio</a><p>پروکسی، سرور مجازی و اختصاصی و فضای ذخیره‌سازی؛ با پرداخت ریالی و یک کیف پول مشترک برای همه‌ی سرویس‌ها.</p></div><div><h4>سرویس‌های ابری</h4><ul><li><a href="/vps">خرید سرور مجازی</a></li><li><a href="/vps/windows">سرور مجازی ویندوز</a></li><li><a href="/vps/linux">سرور مجازی لینوکس</a></li><li><a href="/vps/germany">سرور مجازی آلمان</a></li><li><a href="/dedicated">سرور اختصاصی</a></li><li><a href="/storage">فضای ذخیره‌سازی</a></li></ul></div><div><h4>پروکسی</h4><ul><li><a href="/proxy">خرید پروکسی</a></li><li><a href="/proxy/residential">پروکسی خانگی</a></li><li><a href="/proxy/datacenter">پروکسی دیتاسنتر</a></li><li><a href="/proxy/mobile">پروکسی موبایل</a></li><li><a href="/proxy/rotating">پروکسی چرخشی</a></li></ul></div><div><h4>حساب کاربری</h4><ul><li><a href="/login">ورود و ثبت‌نام</a></li><li><a href="/">صفحه‌ی اصلی</a></li></ul></div></div>
+<div class="legal"><span>© ۲٬۰۲۶ Noderio — همه‌ی حقوق محفوظ است.</span>
+<span>پرداخت ریالی · تحویل خودکار · یک کیف پول</span></div>
+</div></footer>
+</body>
+</html>

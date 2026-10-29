@@ -1,0 +1,27 @@
+{
+  "provider": "logicserver",
+  "url": "https://logicserver.org/iran-vps/",
+  "attempted_at_utc": "2026-10-29T02:23:52.815872+00:00",
+  "status": 200,
+  "final_url": "https://logicserver.org/iran-vps/",
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Expires": "0",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:47 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=(), payment=(), usb=()",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Pragma": "no-cache",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 105424,
+  "text_chars": 13351,
+  "saved_at_utc": "2026-10-29T02:23:53.313751+00:00",
+  "sha256": "9f47db367c79f51e889519810edfdf01440ed0e1b582a8c18d9f5ad47229d1e4"
+}

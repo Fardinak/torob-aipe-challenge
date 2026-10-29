@@ -165,14 +165,14 @@ function BillingDetails({ plan }: { plan: Plan }) {
           عبارت ثبت‌شده منبع: <bdi>{plan.traffic_terms}</bdi>
         </p>
         {plan.evidence.sources.map((id) => (
-          <a
-            key={id}
-            href={catalog.sources[id].url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {catalog.sources[id].label} ↗
-          </a>
+          <p key={id}>
+            <a href={catalog.sources[id].url} target="_blank" rel="noreferrer">
+              {catalog.sources[id].label} ↗
+            </a>{" "}
+            <a href={`${import.meta.env.BASE_URL}evidence/${id}.txt`} download>
+              دریافت شاهد نگهداری‌شده
+            </a>
+          </p>
         ))}
         {plan.verification_attempts.map((attempt, i) => (
           <p key={i}>
@@ -218,7 +218,8 @@ const unpricedReasons: Record<string, string> = {
   unknown_overage: "تعرفه ترافیک اضافه نامشخص است.",
   missing_traffic_rate: "نرخ لازم برای محاسبه ترافیک مشخص نیست.",
   unknown_allowance: "سهمیه لازم برای محاسبه مشخص نیست.",
-  unknown_traffic_policy: "شرایط ترافیک مشخص نیست.",
+  unknown_traffic_policy:
+    "برآورد ترافیک با شواهد و سیاست محاسبه فعلی در دسترس نیست.",
   arithmetic_out_of_range: "مصرف از محدوده محاسبه دقیق خارج است.",
 };
 function catalogHref(provider: string | null) {
@@ -717,8 +718,8 @@ function App() {
                   رکورد / {number(Object.keys(catalog.providers).length)}{" "}
                   ارائه‌دهنده
                 </strong>
-                <p>نمونه زیرساخت با وضعیت شواهد هر پیشنهاد</p>
-                <small>نمونه محدود بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
+                <p>فهرست بررسی‌شده با وضعیت شواهد هر پیشنهاد</p>
+                <small>پوشش بررسی‌شده بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
               </aside>
             </section>
             <nav className="provider-links" aria-label="کاتالوگ ارائه‌دهندگان">

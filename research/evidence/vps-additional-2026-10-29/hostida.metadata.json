@@ -1,0 +1,22 @@
+{
+  "provider": "hostida",
+  "url": "https://hostida.com/cloud/vps/iran/",
+  "attempted_at_utc": "2026-10-29T02:22:59.674442+00:00",
+  "status": 200,
+  "final_url": "https://hostida.com/cloud/vps/iran/",
+  "headers": {
+    "Connection": "close",
+    "Last-Modified": "Tue, 27 Oct 2026 13:38:12 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Cache-Control": "public, max-age=0",
+    "Expires": "Thu, 29 Oct 2026 02:22:54 GMT",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:22:54 GMT",
+    "Vary": "User-Agent,Accept-Encoding",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 187360,
+  "text_chars": 16564,
+  "saved_at_utc": "2026-10-29T02:23:00.174003+00:00",
+  "sha256": "d1343d73ef17d42c8be3b3b0ff15152b3c30b3140983c1729281dd6fba96aae1"
+}

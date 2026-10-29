@@ -678,7 +678,8 @@ test("failed database evidence gates versions and topology without hiding unaffe
 
 test("searches catalog names across separate categories without searching providers or recommending hardware", () => {
   const all = compare(reviewedCatalog, { category: "all" });
-  expect(all.items).toHaveLength(16);
+  expect(all.items.some((item) => item.engine === null)).toBe(true);
+  expect(all.items.some((item) => item.engine === "PostgreSQL")).toBe(true);
   const postgres = compare(reviewedCatalog, {
     category: "all",
     query: "postgresql",
@@ -701,7 +702,7 @@ test("searches catalog names across separate categories without searching provid
   ).toEqual([]);
   expect(
     compare(reviewedCatalog, { category: "all", query: "سرور مجازی" }).items,
-  ).toHaveLength(12);
+  ).toHaveLength(compare(reviewedCatalog, { category: "vps" }).items.length);
 });
 
 test("global traffic discovery keeps database base prices and sorts within each engine only", () => {

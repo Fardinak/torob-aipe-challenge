@@ -1,0 +1,22 @@
+{
+  "provider": "userver",
+  "url": "https://userver.ir/vps-iran/",
+  "attempted_at_utc": "2026-10-29T02:22:59.673018+00:00",
+  "status": 200,
+  "final_url": "https://userver.ir/vps-iran/",
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 02:23:00 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "X-Powered-By": "PHP/8.2.35",
+    "Last-Modified": "Wed, 28 Oct 2026 18:06:00 GMT",
+    "Vary": "Accept-Encoding",
+    "X-Cache-Status": "MISS"
+  },
+  "bytes": 461933,
+  "text_chars": 16060,
+  "saved_at_utc": "2026-10-29T02:23:06.419651+00:00",
+  "sha256": "59ab46dfeb299a97ba77748dbfb9462c36ad57f974be3ac5a61a2f764ffd14d8"
+}

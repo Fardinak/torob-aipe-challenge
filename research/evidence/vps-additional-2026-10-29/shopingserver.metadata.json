@@ -1,0 +1,23 @@
+{
+  "provider": "shopingserver",
+  "url": "https://shopingserver.com/vps/iran-vps/",
+  "attempted_at_utc": "2026-10-29T02:23:52.818051+00:00",
+  "status": 200,
+  "final_url": "https://shopingserver.net/vps/iran-vps/",
+  "headers": {
+    "content-type": "text/html; charset=UTF-8",
+    "link": "<https://shopingserver.net/wp-json/>; rel=\"https://api.w.org/\"",
+    "x-litespeed-cache-control": "public,max-age=604800",
+    "x-litespeed-tag": "c85_page,c85_URL.a77286019e6c4eea20eb162597ce381d,c85_Po.50942,c85_PGS,c85_,c85_MIN.93017de875c023e04e5bd4898079f243.css,c85_MIN.a3371f827afcd6719b6af032e9bc2dd2.js",
+    "x-litespeed-cache": "miss",
+    "transfer-encoding": "chunked",
+    "date": "Thu, 29 Oct 2026 02:24:09 GMT",
+    "server": "LiteSpeed",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
+    "connection": "close"
+  },
+  "bytes": 536417,
+  "text_chars": 7800,
+  "saved_at_utc": "2026-10-29T02:24:16.039039+00:00",
+  "sha256": "9f45ddc1800cff84d54948b72281200981deec0fe7eaf4251d288457513492f1"
+}

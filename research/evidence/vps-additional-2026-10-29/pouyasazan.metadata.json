@@ -1,0 +1,30 @@
+{
+  "provider": "pouyasazan",
+  "url": "https://panel.pouyasazan.org/store/iran-vps",
+  "attempted_at_utc": "2026-10-29T02:22:59.674849+00:00",
+  "status": 200,
+  "final_url": "https://panel.pouyasazan.org/store/iran-vps",
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 02:23:00 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Cache-Control": "public, max-age=300, s-maxage=3600, stale-while-revalidate=60, stale-if-error=86400",
+    "expires": "Thu, 29 Oct 2026 02:28:00 GMT",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "vary": "Accept-Encoding",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "last-modified": "Thu, 29 Oct 2026 02:23:00 GMT",
+    "cf-cache-status": "EXPIRED",
+    "X-Robots-Tag": "noindex, follow",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "Server-Timing": "cfCacheStatus;desc=\"EXPIRED\"",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PrJP9zoR5o4VLobTa1Lj3U34035OehB%2FEFFIIrS%2BwFXXIyLeCKbEVZIPanqn7aZOhDFIF3N6Sqm3ZIEft8FToWOBXBMFTbb0075IxdosYoVz5n5FeZ4mylGyf8zqmspM9GVUOWDc\"}]}",
+    "Server": "cloudflare",
+    "CF-RAY": "a51eb7384cc85499-FRA"
+  },
+  "bytes": 465302,
+  "text_chars": 6219,
+  "saved_at_utc": "2026-10-29T02:23:06.729747+00:00",
+  "sha256": "788944fa6aca8d6430b795106b1c55652fea80267571ccf0a7484718c9d7f9b9"
+}

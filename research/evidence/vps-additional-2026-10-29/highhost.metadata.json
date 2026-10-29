@@ -1,0 +1,26 @@
+{
+  "provider": "highhost",
+  "url": "https://client.highhost.org/store/iran-normal-vps?language=farsi",
+  "attempted_at_utc": "2026-10-29T02:23:53.495023+00:00",
+  "status": 200,
+  "final_url": "https://client.highhost.org/store/iran-normal-vps?language=farsi",
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 02:23:54 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Set-Cookie": "WHMCS86SBSLuFZ7Jr=6sorrc8bcou5o59edbsg2071o0; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "bytes": 47322,
+  "text_chars": 3501,
+  "saved_at_utc": "2026-10-29T02:23:59.697699+00:00",
+  "sha256": "4af5ca42ece83c3f7f8e0eb1be9ddbcad2932d96cf294510838e347f162646d8"
+}

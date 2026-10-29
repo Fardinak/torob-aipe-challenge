@@ -1,0 +1,28 @@
+{
+  "provider": "onlineserver-ssd",
+  "url": "https://onlineserver.ir/virtual-server/iran-virtual-ssd-server",
+  "attempted_at_utc": "2026-10-29T02:26:39.420557+00:00",
+  "status": 200,
+  "final_url": "https://onlineserver.ir/virtual-server/iran-virtual-ssd-server",
+  "headers": {
+    "Server": "openresty",
+    "Date": "Thu, 29 Oct 2026 02:26:39 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "251706",
+    "Connection": "close",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; frame-src 'self' https:; media-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://blog.onlineserver.ir https://rustdesk.onlineserver.ir",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
+    "Cache-Control": "private, no-cache, max-age=0, must-revalidate",
+    "X-Powered-By": "Next.js",
+    "ETag": "\"2cnd8askaq4naj\"",
+    "Vary": "Accept-Encoding",
+    "X-Served-By": "onlineserver.ir"
+  },
+  "bytes": 251706,
+  "text_chars": 8962,
+  "saved_at_utc": "2026-10-29T02:26:45.987310+00:00",
+  "sha256": "90dd70b3848c52b63e03c686ac2abdbe5d86906b9e4a94ba430444817c16626f"
+}

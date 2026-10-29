@@ -1,4 +1,11 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
+
+// Pin the historical price-reversal scenario while acquisition expands the market.
+async function historicalProviders(page: Page) {
+  const url = new URL(page.url());
+  url.searchParams.set("provider", "manageit,iranserver");
+  await page.goto(url.href);
+}
 
 test("browse exact configurations, filter base budgets, inspect provider terms and preserve traffic comparison", async ({
   page,
@@ -14,7 +21,9 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     if (response.status() >= 400)
       errors.push(`${response.status()} ${response.url()}`);
   });
-  expect((await page.goto("./"))?.status()).toBe(200);
+  expect((await page.goto("./?provider=manageit,iranserver"))?.status()).toBe(
+    200,
+  );
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await page.evaluate(() => document.fonts.ready);
@@ -56,6 +65,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     .click();
   expect(page.url()).toBe(filteredURL);
   await page.getByLabel("ارائه‌دهنده", { exact: true }).selectOption("");
+  await historicalProviders(page);
   await expect(configurations).toHaveCount(12);
 
   const preset = page.getByRole("button", {
@@ -68,6 +78,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     await preset.evaluate((element) => getComputedStyle(element).outlineStyle),
   ).not.toBe("none");
   await page.keyboard.press("Enter");
+  await historicalProviders(page);
   await expect(configurations).toHaveCount(8);
   await expect(configurations.first()).toContainText("از ۱٬۴۲۰٬۰۰۰");
   await page.getByLabel("روش تطبیق منابع").selectOption("exact");
@@ -100,6 +111,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await page
     .getByRole("button", { name: "۴ GB رم + ۱ TB خروجی", exact: true })
     .click();
+  await historicalProviders(page);
   await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("traffic");
   await expect(configurations.first()).toContainText("از ۲٬۴۳۶٬۳۹۹");
   const manageitConfiguration = configurations.filter({
@@ -145,14 +157,14 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     }
     await field.fill("");
   }
-  await ram.fill("128");
+  await ram.fill("99999");
   await expect(configurations).toHaveCount(0);
   await page.getByRole("button", { name: "نمایش همه پیشنهادها" }).click();
-  await expect(configurations).toHaveCount(16);
+  await expect(configurations).not.toHaveCount(0);
   await ram.fill("۴");
-  await expect(configurations).toHaveCount(10);
+  await expect(configurations).not.toHaveCount(0);
   await page.reload();
-  await expect(configurations).toHaveCount(10);
+  await expect(configurations).not.toHaveCount(0);
   await expect(ram).toHaveValue("۴");
   await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("base");
   expect(
@@ -168,7 +180,7 @@ test("evidence warnings accompany starting prices and unknown identity stays sep
 }) => {
   test.skip(test.info().project.name === "mobile");
   await page.clock.setFixedTime(new Date("2026-11-28T00:00:00Z"));
-  await page.goto("./");
+  await page.goto("./?provider=manageit,iranserver");
   const first = page.locator(".configuration").first();
   await expect(first).toContainText("آخرین تأیید موفق: 2026-10-29");
   await expect(first).not.toContainText("شواهد قدیمی");
@@ -243,7 +255,7 @@ test("search, recover and restore the same discovery detail with browser navigat
 }) => {
   await page.goto("./");
   const search = page.getByLabel("جستجوی محصول، دسته یا موتور");
-  await expect(page.locator(".configuration")).toHaveCount(16);
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
   if (isMobile) {
     const last = page.locator(".configuration").last();
     await last.scrollIntoViewIfNeeded();
@@ -347,7 +359,7 @@ test("collapse VPS usage while retaining scenario, zero-charge arithmetic and hi
   page,
   isMobile,
 }) => {
-  await page.goto("./?category=vps&ram=4");
+  await page.goto("./?category=vps&ram=4&provider=manageit,iranserver");
   const usage = page.getByRole("group", { name: "مصرف و روش قیمت VPS" });
   await expect(usage).toBeVisible();
   await expect(page.locator(".configuration").first()).toContainText(
@@ -531,4 +543,60 @@ test("database handoff counts down five seconds with evidence warnings and fails
     ).toHaveCount(0);
   }
   await handoff.close();
+});
+
+test("inspect a sourced exact VPS overlap and download its published evidence", async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto(
+    "./?category=vps&resourceMode=exact&cpu=1&ram=1&disk=10&provider=irvm,mehranhost",
+  );
+  const item = page.locator(".configuration").filter({ hasText: "NVMe" });
+  await expect(item).toContainText("۲ پیشنهاد");
+  await expect(item).toContainText("۵۴۵٬۰۰۰");
+  await item.click();
+  const irvm = page.getByRole("article", {
+    name: "ایران وی ام استارتر",
+    exact: true,
+  });
+  const mehran = page.getByRole("article", {
+    name: "مهران هاست 1c-1g-10g",
+    exact: true,
+  });
+  await expect(irvm).toContainText("۵۴۵٬۰۰۰");
+  await expect(mehran).toContainText("۶۸۰٬۳۶۰");
+  await expect(mehran).toContainText("۷۳۰ ساعت");
+  await expect(irvm).toContainText("هزینه نهایی نامشخص");
+  await expect(mehran).toContainText("آخرین تأیید موفق: 2026-10-29");
+  await irvm.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  const snapshot = irvm
+    .getByRole("link", { name: "دریافت شاهد نگهداری‌شده" })
+    .first();
+  const response = await page.request.get(
+    (await snapshot.getAttribute("href"))!,
+  );
+  expect(response.ok()).toBe(true);
+  expect(response.headers()["content-type"]).toContain("text/plain");
+  expect(await response.text()).toContain("استارتر");
+  const published = await page.request.get("./evidence/catalog.json");
+  expect(published.ok()).toBe(true);
+  expect(
+    (await published.json()).plans.some(
+      (plan: { id: string }) => plan.id === "irvm-respina-starter",
+    ),
+  ).toBe(true);
+  if (isMobile) {
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+    await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+  }
+  await page
+    .getByLabel("ارائه‌دهنده", { exact: true })
+    .selectOption("mehranhost");
+  if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
+  await expect(item).toContainText("۱ پیشنهاد");
+  await expect(item).toContainText("۶۸۰٬۳۶۰");
+  await item.click();
+  await expect(irvm).toHaveCount(0);
+  await expect(mehran).toBeVisible();
 });

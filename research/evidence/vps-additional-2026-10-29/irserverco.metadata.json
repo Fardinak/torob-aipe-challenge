@@ -1,0 +1,24 @@
+{
+  "provider": "irserverco",
+  "url": "https://irserverco.ir/vps-iran/",
+  "attempted_at_utc": "2026-10-29T02:23:53.520179+00:00",
+  "status": 200,
+  "final_url": "https://irserverco.ir/vps-iran/",
+  "headers": {
+    "Connection": "close",
+    "X-Powered-By": "PHP/7.4.33",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Link": "<https://irserverco.ir/wp-json/>; rel=\"https://api.w.org/\"",
+    "X-LiteSpeed-Cache-Control": "public,max-age=604800",
+    "X-LiteSpeed-Tag": "6a3_page,6a3_URL.a75d74b71a4581ad02a2dbd45f14befd,6a3_Po.389,6a3_PGS,6a3_",
+    "Etag": "\"932-1793240629;;;\"",
+    "X-Litespeed-Cache": "miss",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:23:49 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 110815,
+  "text_chars": 13355,
+  "saved_at_utc": "2026-10-29T02:23:54.653836+00:00",
+  "sha256": "e60b56b2fbc9e91b00f9faa3497aea8ed8f69a8e20693c5ada0fca41454cc668"
+}
