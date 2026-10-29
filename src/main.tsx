@@ -197,11 +197,10 @@ function BillingDetails({ plan }: { plan: Plan }) {
             {revision.evidence.sources.map((id) => (
               <a
                 key={id}
-                href={catalog.sources[id].url}
-                target="_blank"
-                rel="noreferrer"
+                href={`${import.meta.env.BASE_URL}evidence/${id}.txt`}
+                download
               >
-                منبع نسخه پیشین ↗
+                شاهد نسخه پیشین
               </a>
             ))}
           </p>
