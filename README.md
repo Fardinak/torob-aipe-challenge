@@ -166,3 +166,23 @@ cheaper provider cannot supply a starting price. Production VPS and database
 journeys exercise provider filtering, catalog prices, all-engine coverage and
 restoration. The reviewed release sample still has no established genuine
 cross-provider exact match; #12's acquisition/release gate remains outstanding.
+
+## VPS usage controls (#18)
+
+The **مصرف و روش قیمت VPS** disclosure sits above results on desktop and mobile,
+separate from the filter drawer. It opens initially and can be collapsed. The
+active mode, entered outbound/inbound GB, decimal TB conversion, base-budget
+meaning and applicable product interpretations remain visible below it.
+Entering usage retains base mode until the buyer explicitly chooses traffic
+mode (or uses the traffic preset). Traffic details show billable GB, applicable
+rate, traffic charge and base-plus-traffic arithmetic even when the charge is
+zero. Unknown required traffic remains inspectable outside ranked subtotals.
+Invalid usage displays an error even while controls are collapsed and removes
+quotes until corrected. Database and provider catalogs retain base prices.
+
+For a visible ordering change, browse VPS with minimum 4 GB RAM: base mode
+starts at ManageIT's 1,420,000 toman. Enter 1,000 GB outbound and select traffic
+mode: IranServer NGP-small40 leads at 2,436,399 toman, while ManageIT becomes
+2,620,000. Collapse usage, inspect the zero-charge IranServer breakdown, and
+share/reload the selected-detail URL. Back/Forward restores the scenario;
+changing the base budget still filters published base prices only.

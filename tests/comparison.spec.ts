@@ -283,9 +283,9 @@ test("search, recover and restore the same discovery detail with browser navigat
   await expect(page.getByRole("article")).toContainText("زحل");
   if (isMobile)
     await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+  await page.getByLabel("خروجی ماهانه (GB)", { exact: true }).fill("invalid");
   if (isMobile)
     await page.getByRole("button", { name: "فیلترها", exact: true }).click();
-  await page.getByLabel("خروجی ماهانه (GB)", { exact: true }).fill("invalid");
   await page.getByLabel("دسته خدمات").selectOption("database");
   await expect(page.getByRole("alert")).toHaveCount(0);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
@@ -341,4 +341,62 @@ test("search, recover and restore the same discovery detail with browser navigat
     await expect(page.locator(".configuration")).toHaveCount(0);
     await expect(page.getByRole("article")).toHaveCount(0);
   }
+});
+
+test("collapse VPS usage while retaining scenario, zero-charge arithmetic and history", async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto("./?category=vps&ram=4");
+  const usage = page.getByRole("group", { name: "مصرف و روش قیمت VPS" });
+  await expect(usage).toBeVisible();
+  await expect(page.locator(".configuration").first()).toContainText(
+    "از ۱٬۴۲۰٬۰۰۰",
+  );
+  await page.getByLabel("خروجی ماهانه (GB)", { exact: true }).fill("۱۰۰۰");
+  await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("base");
+  await page.getByLabel("روش مقایسه قیمت").selectOption("traffic");
+  await expect(page.locator(".configuration").first()).toContainText(
+    "از ۲٬۴۳۶٬۳۹۹",
+  );
+  await usage.getByText("مصرف و روش قیمت VPS", { exact: true }).click();
+  await expect(
+    page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
+  ).not.toBeVisible();
+  const scenario = page.getByRole("region", { name: "سناریوی فعال VPS" });
+  await expect(scenario).toContainText("۱۰۰۰ GB");
+  await expect(scenario).toContainText("جمع برآوردی پایه و ترافیک");
+  await expect(scenario).toContainText("سقف بودجه فقط قیمت پایه");
+  await expect(scenario).toContainText("ورودی رایگان");
+  await page.locator(".configuration").first().click();
+  await expect(page.getByRole("article")).toContainText(
+    "ترافیک قابل پرداخت: ۰ GB",
+  );
+  await expect(page.getByRole("article")).toContainText(
+    "۲٬۴۳۶٬۳۹۹ + ۰ = ۲٬۴۳۶٬۳۹۹",
+  );
+  const shared = page.url();
+  await page.reload();
+  await expect(page.getByRole("article")).toContainText(
+    "۲٬۴۳۶٬۳۹۹ + ۰ = ۲٬۴۳۶٬۳۹۹",
+  );
+  if (isMobile)
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+  await page.getByLabel("روش مقایسه قیمت").selectOption("base");
+  await expect(page.locator(".configuration").first()).toContainText(
+    "از ۱٬۴۲۰٬۰۰۰",
+  );
+  await page.goBack();
+  await expect(page.getByLabel("روش مقایسه قیمت")).toHaveValue("traffic");
+  await expect(page.locator(".configuration").first()).toContainText(
+    "از ۲٬۴۳۶٬۳۹۹",
+  );
+  await page.goForward();
+  await expect(page.locator(".configuration").first()).toContainText(
+    "از ۱٬۴۲۰٬۰۰۰",
+  );
+  await page.goto(shared);
+  await expect(page.getByRole("article")).toContainText(
+    "۲٬۴۳۶٬۳۹۹ + ۰ = ۲٬۴۳۶٬۳۹۹",
+  );
 });

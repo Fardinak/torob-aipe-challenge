@@ -562,3 +562,23 @@ select {
 .provider-profile {
   margin-bottom: 24px;
 }
+
+.usage-controls {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #a9b9c3;
+  border-radius: 12px;
+  background: #f7faf9;
+}
+.usage-controls .fields {
+  margin-top: 16px;
+}
+.usage-controls p {
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 720px) {
+  .show-detail > .usage-controls {
+    display: none;
+  }
+}

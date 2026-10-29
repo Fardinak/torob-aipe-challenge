@@ -94,6 +94,49 @@ test("provider selection isolates own prices before consolidation, including mul
   expect(compare(sample, { provider: "missing" }).items).toEqual([]);
 });
 
+test("traffic starting prices use eligible subtotals inside an exact listing, keeping unknown charges inspectable", () => {
+  const sample = overlappingCatalog();
+  sample.plans[1].traffic_assumption = "unspecified-shared";
+  sample.plans[1].traffic_policy = {
+    direction: "shared",
+    includedGb: 1000,
+    overage: { kind: "unknown" },
+  };
+  expect(compare(sample, {}).items[0].startingOfferId).toBe(
+    "manageit-1c-1g-25g",
+  );
+  const traffic = compare(sample, { priceMode: "traffic", egress: 1000 });
+  expect(traffic.errors).toEqual({});
+  expect(traffic.items).toHaveLength(1);
+  expect(traffic.items[0]).toMatchObject({
+    startingOfferId: "second",
+    startingPriceToman: 800000,
+  });
+  const excess = compare(sample, { priceMode: "traffic", egress: 1200 });
+  expect(excess.items[0]).toMatchObject({
+    startingOfferId: "manageit-1c-1g-25g",
+    startingPriceToman: 2150000,
+  });
+  expect(excess.items[0].offers).toHaveLength(2);
+  expect(excess.unpriced[0]).toMatchObject({
+    plan: { id: "second" },
+    billableGb: 200,
+    reasons: ["unknown_overage"],
+  });
+  expect(
+    excess.items[0].offers.find(({ plan }) => plan.id === "second")?.quote,
+  ).toBeUndefined();
+  const budget = compare(sample, {
+    priceMode: "traffic",
+    egress: 1000,
+    budget: 710000,
+  });
+  expect(budget.items[0]).toMatchObject({
+    startingOfferId: "manageit-1c-1g-25g",
+    startingPriceToman: 1910000,
+  });
+});
+
 test("exact mode constrains every selected resource, including zero, while blanks impose no constraint", () => {
   expect(
     compare(catalog, { ram: 4, resourceMode: "exact" }).ranked.map(

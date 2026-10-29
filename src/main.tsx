@@ -8,6 +8,7 @@ import {
   type Quote,
   type ProviderOffer,
   type ListingItem,
+  type Comparison,
 } from "./comparison";
 import "@fontsource/vazirmatn/400.css";
 import "@fontsource/vazirmatn/700.css";
@@ -30,6 +31,51 @@ const fields: { key: InputField; label: string }[] = [
   { key: "egress", label: "خروجی ماهانه (GB)" },
   { key: "ingress", label: "ورودی ماهانه (GB، اختیاری)" },
 ];
+
+function AmountInput({
+  field: { key, label },
+  request,
+  comparison,
+  setRequest,
+}: {
+  field: (typeof fields)[number];
+  request: Request;
+  comparison: Comparison;
+  setRequest: (request: Request) => void;
+}) {
+  return (
+    <div>
+      <label htmlFor={key}>
+        {request.resourceMode === "exact"
+          ? label.replace("حداقل", "دقیق")
+          : label}
+      </label>
+      <input
+        id={key}
+        inputMode="numeric"
+        type="text"
+        value={request[key] ?? ""}
+        placeholder={
+          key === "egress" || key === "ingress" ? "۰" : "بدون محدودیت"
+        }
+        aria-invalid={Boolean(comparison.errors[key])}
+        aria-describedby={
+          comparison.errors[key]
+            ? `${key}-error`
+            : key === "egress" || key === "ingress"
+              ? "usage-help"
+              : "input-help"
+        }
+        onChange={(e) => setRequest({ ...request, [key]: e.target.value })}
+      />
+      {comparison.errors[key] && (
+        <p className="field-error" id={`${key}-error`}>
+          {comparison.errors[key]}
+        </p>
+      )}
+    </div>
+  );
+}
 
 function BillingDetails({ plan }: { plan: Plan }) {
   const provider = catalog.providers[plan.provider];
@@ -301,7 +347,7 @@ function Offer({
         </div>
       </div>
       {quote ? (
-        quote.trafficChargeToman > 0 && (
+        quote.reasons.includes("base_plus_traffic") && (
           <div className="breakdown">
             <p>
               ترافیک قابل پرداخت: <bdi>{number(quote.billableGb)} GB</bdi>؛ نرخ:{" "}
@@ -766,7 +812,33 @@ function App() {
                       <option value="exact">منابع دقیق</option>
                     </select>
                   </div>
-                  {!databaseCategory && (
+                </div>
+                <div className="fields">
+                  {fields
+                    .filter(({ key }) => key !== "egress" && key !== "ingress")
+                    .map((field) => (
+                      <AmountInput
+                        key={field.key}
+                        field={field}
+                        request={request}
+                        comparison={comparison}
+                        setRequest={setRequest}
+                      />
+                    ))}
+                </div>
+                <p id="input-help" className="muted">
+                  منابع خالی یعنی بدون محدودیت. مصرف VPS خالی یعنی صفر. ۱ TB
+                  برابر ۱٬۰۰۰ GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد
+                  اعلام‌شده ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛
+                  هزینه‌های اجباری نامشخص ممکن است به آن اضافه شوند.
+                </p>
+              </section>
+            </dialog>
+            {!databaseCategory && (
+              <section className="usage-controls" aria-label="سناریوی فعال VPS">
+                <details open aria-label="مصرف و روش قیمت VPS">
+                  <summary>مصرف و روش قیمت VPS</summary>
+                  <div className="fields">
                     <div>
                       <label htmlFor="price-mode">روش مقایسه قیمت</label>
                       <select
@@ -786,58 +858,51 @@ function App() {
                         </option>
                       </select>
                     </div>
-                  )}
-                </div>
-                <div className="fields">
-                  {fields
-                    .filter(
-                      ({ key }) =>
-                        !databaseCategory ||
-                        (key !== "egress" && key !== "ingress"),
-                    )
-                    .map(({ key, label }) => (
-                      <div key={key}>
-                        <label htmlFor={key}>
-                          {request.resourceMode === "exact"
-                            ? label.replace("حداقل", "دقیق")
-                            : label}
-                        </label>
-                        <input
-                          id={key}
-                          inputMode="numeric"
-                          type="text"
-                          value={request[key] ?? ""}
-                          placeholder={
-                            key === "egress" || key === "ingress"
-                              ? "۰"
-                              : "بدون محدودیت"
-                          }
-                          aria-invalid={Boolean(comparison.errors[key])}
-                          aria-describedby={
-                            comparison.errors[key]
-                              ? `${key}-error`
-                              : "input-help"
-                          }
-                          onChange={(e) =>
-                            setRequest({ ...request, [key]: e.target.value })
-                          }
+
+                    {fields
+                      .filter(
+                        ({ key }) => key === "egress" || key === "ingress",
+                      )
+                      .map((field) => (
+                        <AmountInput
+                          key={field.key}
+                          field={field}
+                          request={request}
+                          comparison={comparison}
+                          setRequest={setRequest}
                         />
-                        {comparison.errors[key] && (
-                          <p className="field-error" id={`${key}-error`}>
-                            {comparison.errors[key]}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                </div>
-                <p id="input-help" className="muted">
-                  منابع خالی یعنی بدون محدودیت. مصرف VPS خالی یعنی صفر. ۱ TB
-                  برابر ۱٬۰۰۰ GB است. عدد صحیح صفر یا بیشتر؛ واحد GB همان واحد
-                  اعلام‌شده ارائه‌دهنده است. سقف بودجه فقط قیمت پایه است؛
-                  هزینه‌های اجباری نامشخص ممکن است به آن اضافه شوند.
+                      ))}
+                  </div>
+                </details>
+                <p>
+                  حالت فعال:{" "}
+                  {comparison.priceMode === "traffic"
+                    ? "جمع برآوردی پایه و ترافیک"
+                    : "قیمت پایه اعلام‌شده"}
+                  ؛ خروجی: <bdi>{request.egress || "۰"} GB</bdi>؛ ورودی:{" "}
+                  <bdi>{request.ingress || "۰"} GB</bdi>.
                 </p>
+                <p id="usage-help">
+                  مصرف خالی یعنی صفر؛ ۱ TB = ۱٬۰۰۰ GB. سقف بودجه فقط قیمت پایه
+                  است؛ هزینه نهایی ممکن است بیشتر باشد.
+                </p>
+                {comparison.priceMode === "traffic" && (
+                  <p>
+                    قاعده محصول فقط برای پیشنهادهای دارای این تفسیر: دانلود
+                    منیجیت خروجی سرور و آپلود آن ورودی رایگان است. سهمیه با جهت
+                    نامشخص، طبق تفسیر ثبت‌شده همان پیشنهاد، مشترک بین ورودی و
+                    خروجی محاسبه می‌شود؛ جهت منبع همچنان نامشخص است. این قواعد
+                    برای دیتابیس یا ارائه‌دهنده جدید تعمیم داده نمی‌شوند.
+                  </p>
+                )}
+                {(comparison.errors.egress || comparison.errors.ingress) && (
+                  <p className="field-error">
+                    مصرف نامعتبر است؛ ورودی را اصلاح کنید. برآوردی نمایش داده
+                    نمی‌شود.
+                  </p>
+                )}
               </section>
-            </dialog>
+            )}
           </>
         )}
         <section aria-labelledby="results-title" className="results">
@@ -925,13 +990,7 @@ function App() {
             منابع یکسان به معنی عملکرد برابر نیست. نوع دیسک یا منابع نامشخص،
             برابری دو پیشنهاد را ثابت نمی‌کند.
           </p>
-          {comparison.priceMode === "traffic" && (
-            <p className="muted">
-              قاعده ثابت محصول: دانلود منیجیت خروجی سرور و آپلود آن ورودی رایگان
-              است. سهمیه با جهت نامشخص را مشترک بین ورودی و خروجی حساب می‌کنیم؛
-              این تفسیر محصول است، نه تأیید جهت مصرف توسط ارائه‌دهنده.
-            </p>
-          )}
+
           {invalid ? (
             <div className="empty" role="alert">
               {comparison.errors.catalog ??
