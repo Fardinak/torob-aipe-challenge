@@ -162,3 +162,48 @@ and representative journeys agree with the documentation and #21's approved
 boundary. Deployment verification and ticket closure remain required final actions.
 
 Review totals: Standards 0 findings; Spec 0 findings; no material issue in either axis.
+
+## Parent #12 completion audit — 2026-10-30
+
+All ten direct sub-issues are closed. Their bodies and resolution comments were
+checked against the parent specification and the integrated release at
+`d4b7b5ad00efb865cba13b8e4366a57994589b7c`:
+
+- #13–#15: evidence lifecycle, exact configurations and separate managed-engine discovery.
+- #16–#19: search/restoration, provider catalogs, traffic comparison and cancellable handoff.
+- #20–#21: breadth acquisition, real VPS overlap and the approved database completion boundary.
+- #22: integrated release review, production/deployed checks and current operating/demo guidance.
+
+The explicit approval in [#21's final resolution](https://github.com/Fardinak/torob-aipe-challenge/issues/21#issuecomment-6533023155)
+also governs parent completion: **“Publish verified configurations; retain gaps.”**
+The parent’s original all-configurations wording must be read with that later
+scope decision. Deferred custom/shared families remain resumable acquisition
+work. Recording/submission remain subsequent work as specified by #12.
+
+The [release workflow for the audited implementation](https://github.com/Fardinak/torob-aipe-challenge/actions/runs/41126671687)
+completed successfully, including its post-publication desktop/mobile journeys.
+A fresh local run of `BASE_PATH=/torob-aipe-challenge/ npm test` passed all 42
+comparison tests and 17 browser journeys, with three intentional mobile skips;
+type checking, catalog/evidence hashes and the production build passed as well.
+Parent completion preserves the dated evidence and approved gaps rather than
+claiming a new successful source verification. Pre-existing untracked research,
+context and specification files are outside this audit commit.
+
+### Standards review
+
+Independent review of `git diff 02aa858...d4b7b5a` (the implementation since
+before #13) found no documented-standard violations or material baseline smells
+in application code, validation, delivery configuration or representative tests.
+Catalog values were assessed through validation/publication paths; this review
+does not constitute fresh provider research. The parent audit's documentation
+diff also passes `git diff --check`.
+
+### Specification review
+
+Independent review against #12 and the recorded #21 approval found no missing or
+incorrect requirements or scope creep. The real VPS overlap satisfies the match
+gate; retained database gaps follow the approved boundary. Reviews assess the
+implementation and evidence, independently of the final push and ticket closure.
+
+Parent review totals: Standards 0 findings, no material issue; Specification 0
+findings, no material issue.
