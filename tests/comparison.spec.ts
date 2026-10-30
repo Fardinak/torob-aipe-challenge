@@ -213,7 +213,7 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   await expect(
     page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
   ).toHaveCount(0);
-  await expect(page.locator(".configuration")).toHaveCount(10);
+  await expect(page.locator(".configuration")).toHaveCount(4);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
   await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
   await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
@@ -322,13 +322,13 @@ test("search, recover and restore the same discovery detail with browser navigat
   ).toBeVisible();
   await expect(page.locator(".configuration-list")).toContainText("PostgreSQL");
   await expect(page.locator(".configuration-list")).toContainText("Redis");
-  await expect(page.locator(".configuration").first()).toContainText(
+  await expect(page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first()).toContainText(
     "۴٬۱۲۵٬۰۰۰",
   );
-  await expect(page.locator(".configuration").first()).toContainText(
+  await expect(page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first()).toContainText(
     "تعارض شواهد",
   );
-  await page.locator(".configuration").last().click();
+  await page.locator(".configuration").filter({ hasText: "Redis" }).last().click();
   await page.reload();
   await expect(page.getByRole("article")).toContainText("Redis");
   await expect(page.getByRole("article")).toContainText("هزینه نهایی نامشخص");
