@@ -168,3 +168,10 @@ Custom-resource grids and ambiguous shared bundles remain unfinished acquisition
 not an implicitly approved cap at named plans. The progress ledger records the
 remaining source/orderability/allocation questions. Return an evidence-backed
 inability to cover them to the human before changing the agreed scope.
+
+On 2026-10-30, after that evidence checkpoint, the user explicitly chose
+“Publish verified configurations; retain gaps.” This is #21’s approved completion
+boundary: publish the reviewed configurations and preserve the ledger’s
+custom/shared families and other unverified leads for resumable future work.
+Do not treat ticket closure as evidence that those families were acquired.
+Integrated release and deployed verification remain #22.

@@ -1,6 +1,6 @@
 # Managed database acquisition review — 2026-10-30
 
-Reviewed by Codex on 2026-10-30. This is the catalog publication checkpoint for #21, not a declaration that its unfinished custom/shared families or #22 release verification are complete. The [breadth-search report](database-source-breadth-2026-10-30.md) retains search rounds, selected/excluded sources and every engine reviewed. [Progress](database-acquisition-progress.json) is the resumable work ledger; the underlying response metadata, original bodies and hashes are under [the evidence directory](evidence/database-breadth-2026-10-30/).
+Reviewed by Codex on 2026-10-30. The user approved publishing the verified configurations and retaining the custom/shared families as acquisition gaps on 2026-10-30 ("Publish verified configurations; retain gaps"). This completes #21 under that revised boundary; further custom/shared-family acquisition and #22 release verification are not claimed complete. The [breadth-search report](database-source-breadth-2026-10-30.md) retains search rounds, selected/excluded sources and every engine reviewed. [Progress](database-acquisition-progress.json) is the resumable work ledger; the underlying response metadata, original bodies and hashes are under [the evidence directory](evidence/database-breadth-2026-10-30/).
 
 ## Admitted named configurations
 
@@ -44,7 +44,7 @@ The source breadth search reached saturation after two successive varied rounds 
 
 Actively checked nominal overlaps include Chabokan Diamond/Weblines Large/Liara Uranus at 4 CPU/8 GB/80 GB, Weblines Small/Liara Jupiter at 1/2/20, Weblines Medium/Liara Saturn at 2/4/40 and Arvan SSD classes/Liara Mars at 1/1/10. Chabokan custom quote responses also cover several familiar vectors. Engine equality is necessary. Chabokan/Weblines storage types and all relevant precise node topologies remain unknown, so **no exact database cross-provider match is asserted**. Liara 0.512 GB RAM and Chabokan 0.5 GB remain distinct. The existing genuine VPS matches satisfy the parent category match requirement; synthetic fixtures do not count as acquisition or real overlap.
 
-Custom Chabokan resource domains/orderability, Arvan custom disk/node/region matrices and shared-resource bundles are unfinished. They were returned to the human before treating named plans as a completion boundary. No accounts, contacts or purchases were used. **Do not close #21 on this checkpoint alone without resolving or explicitly approving the documented remaining scope.**
+Custom Chabokan resource domains/orderability, Arvan custom disk/node/region matrices and shared-resource bundles are unfinished. They were returned to the human before treating named plans as a completion boundary. No accounts, contacts or purchases were used. The user subsequently explicitly approved "Publish verified configurations; retain gaps" on 2026-10-30. The named/published verified configurations are therefore the completion boundary for #21. Custom/shared-family modeling and acquisition remain documented, resumable gaps; their facts, prices and matches are not inferred.
 
 ## Validation
 
@@ -60,6 +60,7 @@ source before the successful web fallback, leaving final facts restored.
 Spec review found two issues: the unresolved custom/shared-family acquisition
 blocks completion, and the Liara Silver/Gold backup quota disagreement needed
 explicit conflicting status. The latter is fixed with both claims retained in
-108 affected offers. The former remains an explicit human checkpoint; no
-approval or ticket completion is inferred. No additional code correctness or
+108 affected offers. The former was returned to the user, who explicitly approved publishing the
+verified configurations and retaining the gaps. The scope decision resolves the
+completion blocker without claiming that the deferred families were acquired. No additional code correctness or
 standards findings were reported.

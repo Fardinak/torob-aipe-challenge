@@ -1,5 +1,9 @@
 # Iranian managed database source breadth — 2026-10-30
 
+## Subsequent human scope decision
+
+On 2026-10-30, after reviewing the acquisition gaps, the user selected "Publish verified configurations; retain gaps". The findings below retain the original research handoff and unfinished leads. Their custom/shared-family work is deferred under #21’s approved completion boundary; see [the acquisition review](database-acquisition-review-2026-10-30.md) and [progress ledger](database-acquisition-progress.json). No deferred configuration is claimed acquired.
+
 ## Result and scope
 
 Chabokan and Weblines provide substantial additional, publicly priced engine/configuration coverage. ArvanCloud is also assessable using its first-party documentation and the web retrieval transcript even though direct HTTP downloads return an interstitial. ManageIT publishes real database tariffs, but its engine-to-plan applicability needs a more explicit source before multiplying its six rows across six engines. Darmant has one clearly engine-specific entry-level offer with incomplete resource detail. SakooCloud prices shared platform quotas, which must not become invented per-database allocations.

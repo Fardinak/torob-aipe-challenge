@@ -2,7 +2,7 @@
   "issue": "https://github.com/Fardinak/torob-aipe-challenge/issues/21",
   "checked_at": "2026-10-30",
   "reviewer": "Codex",
-  "status": "named-configurations-reviewed; custom/shared-scope-awaiting-human",
+  "status": "complete-under-human-approved-verified-configuration-boundary",
   "source_search": "saturated after two successive varied search rounds; see database-source-breadth-2026-10-30.md",
   "catalog": "research/vps-reviewed-catalog.json",
   "admitted": [
@@ -1540,5 +1540,13 @@
     ],
     "parent_match_gate": "Existing real VPS matches from #20, not synthetic fixtures"
   },
-  "human_checkpoint": "Asked in session before reducing scope; no approval recorded. Ticket must remain open pending unresolved custom/shared scope."
+  "human_checkpoint": "On 2026-10-30 the user explicitly selected: \"Publish verified configurations; retain gaps\". Publish the verified named/published configurations and retain custom/shared families and other unverified leads as acquisition gaps; extending the catalog model/acquisition to those families is deferred, not required to close #21.",
+  "scope_decision": {
+    "approved_at": "2026-10-30",
+    "approved_by": "user in implementation session",
+    "instruction": "Publish verified configurations; retain gaps",
+    "completion_boundary": "The 1316 verified configuration/billing-variant records already published; retain unfinished custom/shared families in the existing remaining ledger.",
+    "deferred_work": "Further custom/shared-family modeling and acquisition; no additional offer facts or exact database matches are inferred.",
+    "integrated_release": "Remains #22."
+  }
 }
