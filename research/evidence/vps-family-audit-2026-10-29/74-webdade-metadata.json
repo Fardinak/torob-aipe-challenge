@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی",
+  "url": "https://webdade.com/vps",
+  "discovered_in": "34-webdade-links.json",
+  "source_key": "74-webdade",
+  "requested_url": "https://webdade.com/vps",
+  "capture_time": "2026-10-29T19:16:42.320479+00:00",
+  "status": 200,
+  "final_url": "https://webdade.com/vps",
+  "sha256": "c3bcbd1718a8ff10e67a3ce9cd4ac669a2d0ae450bccb8a8434f1579d01cf7c0",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/74-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/74-webdade.txt",
+  "bytes": 1142555,
+  "title": "خرید سرور مجازی (VPS) | ۹ لوکیشن، تحویل آنی | وب داده"
+}

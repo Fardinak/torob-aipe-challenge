@@ -1,0 +1,16 @@
+{
+  "provider": "liara",
+  "label": "سرور مجازی ابری",
+  "url": "https://liara.ir/products/cloud-server",
+  "discovered_in": "50-liara-links.json",
+  "source_key": "80-liara",
+  "requested_url": "https://liara.ir/products/cloud-server",
+  "capture_time": "2026-10-29T19:16:42.727790+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/products/cloud-server/",
+  "sha256": "c8a496beaff33defdb64d2e222e97e66f88830adcf74fa85d3c144ad152b7775",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/80-liara.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/80-liara.txt",
+  "bytes": 158319,
+  "title": "خرید VPS | خرید سرور مجازی ساعتی | وی پی اس ارزان - لیارا"
+}

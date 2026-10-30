@@ -1,0 +1,18 @@
+{
+  "url": "https://vidaserver.ir/vps-iran",
+  "status": 404,
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/89-vidaserver-error.html",
+  "sha256": "4a43e654b357574cc424aa035791b8bc8373608f7051d5133e604fd90657d398",
+  "capture_time": "2026-10-29T19:20:18.259028+00:00",
+  "response_headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 19:20:12 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "Cache-Control": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "Link": "<https://vidaserver.ir/wp-json/>; rel=\"https://api.w.org/\"",
+    "Vary": "Accept-Encoding"
+  }
+}

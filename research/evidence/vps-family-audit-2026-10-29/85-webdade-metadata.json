@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی میکروتیک « !محصول جدید »",
+  "url": "https://my.webdade.com/store/mikrotik-vps",
+  "discovered_in": "65-webdade-links.json",
+  "source_key": "85-webdade",
+  "requested_url": "https://my.webdade.com/store/mikrotik-vps",
+  "capture_time": "2026-10-29T19:16:43.675316+00:00",
+  "status": 200,
+  "final_url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=mikrotik-vps",
+  "sha256": "9fb0ab6dd3a141d6008840f0c465f76971b5a19d1a646ec20dbf2da11fb8423a",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/85-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/85-webdade.txt",
+  "bytes": 613520,
+  "title": "خرید و راه اندازی سرویس جدید - وب داده"
+}

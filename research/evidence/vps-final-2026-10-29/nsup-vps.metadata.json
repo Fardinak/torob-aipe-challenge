@@ -1,0 +1,25 @@
+{
+  "requested_url": "https://www.nsup.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C/",
+  "attempt_utc": "2026-10-29T09:53:50.933227+00:00",
+  "final_url": "https://www.nsup.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:53:44 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Tue, 13 Oct 2026 07:47:30 GMT",
+    "ETag": "\"12cbc-65db406d7a288\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "76988",
+    "Vary": "Accept-Encoding,Cookie",
+    "Cache-Control": "max-age=0, public, public",
+    "Expires": "Thu, 29 Oct 2026 09:53:44 GMT",
+    "X-Powered-By": "W3 Total Cache/2.1.2",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Pragma": "public",
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "bytes": 76988,
+  "sha256": "20aef0d526c1ad872e5407158cbfa1c39b69fd28063212574e5c0be5b36094b9",
+  "saved_utc": "2026-10-29T09:53:51.243324+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی ایران",
+  "url": "https://webdade.com/iran-vps-server",
+  "source_key": "34-webdade",
+  "requested_url": "https://webdade.com/iran-vps-server",
+  "capture_time": "2026-10-29T19:09:55.565928+00:00",
+  "status": 200,
+  "final_url": "https://webdade.com/iran-vps-server",
+  "sha256": "89896ed5cc72bfbde644c5fa175b9c4d4f16ba7c37b1a1a6f4795199f961d75b",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/34-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/34-webdade.txt",
+  "bytes": 1265422,
+  "title": "سرور مجازی ایران [ متصل به اینترنت بین الملل - دارای تست ]"
+}

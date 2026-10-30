@@ -41,6 +41,33 @@ function overlappingCatalog(): Catalog {
   return sample;
 }
 
+test("retains a native tariff without inventing a monthly toman starting price", () => {
+  const sample = overlappingCatalog();
+  Object.assign(sample.providers.other, { currency: "USD" });
+  Object.assign(sample.plans[1], {
+    advertised_monthly_toman: null,
+    published_tariff: { amount: 50, currency: "USD", basis: "month" },
+  });
+  sample.plans[1].evidence.facts.advertised_monthly_toman = "unknown";
+  Object.assign(sample.plans[1].evidence.facts, {
+    published_tariff: "verified",
+  });
+  const result = compare(sample, { provider: "other" });
+  expect(result.errors).toEqual({});
+  expect(result.ranked).toEqual([]);
+  expect(result.items[0].startingPriceToman).toBeNull();
+  expect(result.items[0].offers[0].plan).toMatchObject({
+    advertised_monthly_toman: null,
+    published_tariff: { amount: 50, currency: "USD", basis: "month" },
+  });
+  expect(result.unpriced[0].reasons).toContain("monthly_reference_unavailable");
+  const budgeted = compare(sample, { provider: "other", budget: 1000000 });
+  expect(budgeted.items).toEqual([]);
+  expect(
+    budgeted.excluded.find((offer) => offer.plan.id === "second")?.reasons,
+  ).toContain("monthly_reference_unavailable");
+});
+
 test("consolidates only evidenced exact resources and storage type, retaining offer prices", () => {
   const sample = overlappingCatalog();
   const grouped = compare(sample, {});

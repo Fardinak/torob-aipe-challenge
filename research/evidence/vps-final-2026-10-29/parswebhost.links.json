@@ -1,0 +1,726 @@
+[
+  {
+    "text": "ناحیه کاربری",
+    "url": "https://my.parswebhost.net/dologin.php?goto=clientarea.php/clientarea.php"
+  },
+  {
+    "text": "ثبت نام",
+    "url": "https://my.parswebhost.net/register.php"
+  },
+  {
+    "text": "دریافت رمز",
+    "url": "https://my.parswebhost.net/pwreset.php"
+  },
+  {
+    "text": "شماره حساب",
+    "url": "https://parswebhost.net/شماره-حساب"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://parswebhost.net/درباره-ما"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://parswebhost.net/تماس-باما"
+  },
+  {
+    "text": "گفت گوی انلاین",
+    "url": "https://my.parswebhost.net/index.php"
+  },
+  {
+    "text": "پشتیبانی",
+    "url": "https://my.parswebhost.net/supporttickets.php"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net"
+  },
+  {
+    "text": "میزبانی وب",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست بکاپ",
+    "url": "https://parswebhost.net/هاست-بکاپ"
+  },
+  {
+    "text": "هاست دانلود خارج",
+    "url": "https://parswebhost.net/هاست-دانلود"
+  },
+  {
+    "text": "هاست دانلود ایران(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست ویندوز(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست لینوکس ابری سی پنل",
+    "url": "https://parswebhost.net/هاست-لینوکس-سی-پنل/"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین",
+    "url": "https://parswebhost.net/هاست-دایرکت-ادمین"
+  },
+  {
+    "text": "هاست اختصاصی  سی پنل",
+    "url": "https://parswebhost.net/هاست-لینوکس-پربازدید-سی-پنل"
+  },
+  {
+    "text": "هاست پربازدید دایرکت ادمین",
+    "url": "https://parswebhost.net/هاست-پربازدید-دایرکت-ادمین"
+  },
+  {
+    "text": "هاست ربات تلگرام",
+    "url": "https://parswebhost.net/هاست-ربات-تلگرام"
+  },
+  {
+    "text": "هاست کم حجم سی پنل",
+    "url": "https://parswebhost.net/هاست-کم-حجم-سی-پنل"
+  },
+  {
+    "text": "دامنه",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://parswebhost.net/ثبت-دامنه"
+  },
+  {
+    "text": "تعرفه ثبت دامنه",
+    "url": "https://parswebhost.net/دامین"
+  },
+  {
+    "text": "جستجو دامنه",
+    "url": "https://parswebhost.net/دامین"
+  },
+  {
+    "text": "انتقال دامنه",
+    "url": "https://my.parswebhost.net/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "نمایندگی فروش",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل",
+    "url": "https://parswebhost.net/نمایندگی-هاست-سی-پنل"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین",
+    "url": "https://parswebhost.net/نمایندگی-هاست-دایرکت-ادمین"
+  },
+  {
+    "text": "نمایندگی هاست چت روم",
+    "url": "https://parswebhost.net/نمایندگی-هاست-چت-روم"
+  },
+  {
+    "text": "مستر ریسلر",
+    "url": "https://parswebhost.net/مستر-ریسلر"
+  },
+  {
+    "text": "نمایندگی هاست دانلود",
+    "url": "https://parswebhost.net/نمایندگی-هاست-دانلود"
+  },
+  {
+    "text": "نمایندگی ثبت دامین(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور مجازی المان هارد SSDNVMe",
+    "url": "https://parswebhost.net/سرور-مجازی-المان"
+  },
+  {
+    "text": "سرور مجازی مدیریت شده سی پنل",
+    "url": "https://parswebhost.net/سرور-مجازی-مدیریت-شده-سی-پنل"
+  },
+  {
+    "text": "سرور مجازی مدیریت شده دایرکت ادمین",
+    "url": "https://parswebhost.net/سرور-مجازی-مدیریت-شده-دایرکت-ادمین"
+  },
+  {
+    "text": "سرور مجازی ربات تلگرام,ضد لینگ,ضد اسپم",
+    "url": "https://parswebhost.net/سرور-مجازی-ربات-تلگرام"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور اختصاصی مارکتی هتزنر آلمان(حراجی)",
+    "url": "https://parswebhost.net/سرور-اختصاصی-هتزنر-المان"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان با قطعات آکبند",
+    "url": "https://parswebhost.net/سرور-اختصاصی-ستاپ-دار-هتزنر-المان"
+  },
+  {
+    "text": "سرور اختصاصی هلند(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور اختصاصی فرانسه(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "پشتیبانی و تماس",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "info@parswebhost.net",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "suuport@parswebhost.net",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "۰۲۱۹۱۳۰۲۰۱۹",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "۰۲۱۹۵۱۱۹۹۶۵",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "چرا پارس وب هاست",
+    "url": "https://parswebhost.net/چرا-ما"
+  },
+  {
+    "text": "سابقه پارس وب هاست",
+    "url": "https://parswebhost.net/سابقه-پارس-وب-هاست"
+  },
+  {
+    "text": "قوانین  پارس وب هاست",
+    "url": "https://parswebhost.net/قوانین-پارس-وب-هاست"
+  },
+  {
+    "text": "تماس باما",
+    "url": "https://parswebhost.net/تماس-باما"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://parswebhost.net/سوالات-متداول"
+  },
+  {
+    "text": "ارسال درخواست پشتیبانی",
+    "url": "https://my.parswebhost.net/contact.php"
+  },
+  {
+    "text": "درخواست تماس رایگان",
+    "url": "https://parswebhost.net/درخواست-تماس-رایگان"
+  },
+  {
+    "text": "میزبانی وب",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست بکاپ",
+    "url": "https://parswebhost.net/هاست-بکاپ"
+  },
+  {
+    "text": "هاست دانلود خارج",
+    "url": "https://parswebhost.net/هاست-دانلود"
+  },
+  {
+    "text": "هاست دانلود ایران(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست ویندوز(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "هاست لینوکس ابری سی پنل",
+    "url": "https://parswebhost.net/هاست-لینوکس-سی-پنل/"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین",
+    "url": "https://parswebhost.net/هاست-دایرکت-ادمین"
+  },
+  {
+    "text": "هاست پربازدید سی پنل",
+    "url": "https://parswebhost.net/هاست-لینوکس-پربازدید-سی-پنل"
+  },
+  {
+    "text": "هاست پربازدید دایرکت ادمین",
+    "url": "https://parswebhost.net/هاست-پربازدید-دایرکت-ادمین"
+  },
+  {
+    "text": "هاست ربات تلگرام",
+    "url": "https://parswebhost.net/هاست-ربات-تلگرام"
+  },
+  {
+    "text": "هاست لینوکس چت روم",
+    "url": "https://parswebhost.net/هاست-چت-روم"
+  },
+  {
+    "text": "دامنه",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://parswebhost.net/ثبت-دامنه"
+  },
+  {
+    "text": "تعرفه ثبت دامنه",
+    "url": "https://parswebhost.net/دامین"
+  },
+  {
+    "text": "جستجو دامنه",
+    "url": "https://parswebhost.net/دامین"
+  },
+  {
+    "text": "انتقال دامنه",
+    "url": "https://my.parswebhost.net/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "نمایندگی فروش",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل",
+    "url": "https://parswebhost.net/نمایندگی-هاست-سی-پنل"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین",
+    "url": "https://parswebhost.net/نمایندگی-هاست-دایرکت-ادمین"
+  },
+  {
+    "text": "نمایندگی هاست چت روم",
+    "url": "https://parswebhost.net/نمایندگی-هاست-چت-روم"
+  },
+  {
+    "text": "مستر ریسلر",
+    "url": "https://parswebhost.net/مستر-ریسلر"
+  },
+  {
+    "text": "نمایندگی هاست دانلود",
+    "url": "https://parswebhost.net/نمایندگی-هاست-دانلود"
+  },
+  {
+    "text": "نمایندگی ثبت دامین(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://parswebhost.net/سرور-مجازی-المان"
+  },
+  {
+    "text": "سرور مجازی مدیریت شده سی پنل",
+    "url": "https://parswebhost.net/سرور-مجازی-مدیریت-شده-سی-پنل"
+  },
+  {
+    "text": "سرور مجازی مدیریت شده دایرکت ادمین",
+    "url": "https://parswebhost.net/سرور-مجازی-مدیریت-شده-دایرکت-ادمین"
+  },
+  {
+    "text": "سرور مجازی ربات تلگرام,ضد لینگ,ضد اسپم",
+    "url": "https://parswebhost.net/سرور-مجازی-ربات-تلگرام"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور اختصاصی مارکتی هتزنر آلمان(حراجی)",
+    "url": "https://parswebhost.net/سرور-اختصاصی-هتزنر-المان"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان با قطعات آکبند",
+    "url": "https://parswebhost.net/سرور-اختصاصی-ستاپ-دار-هتزنر-المان"
+  },
+  {
+    "text": "سرور اختصاصی هلند(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "سرور اختصاصی فرانسه(به زودی)",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "پشتیبانی و تماس",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "info@parswebhost.net",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "suuport@parswebhost.net",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "۰۲۱۹۱۳۰۲۰۱۹",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "۰۲۱۹۵۱۱۹۹۶۵",
+    "url": "https://parswebhost.net/#"
+  },
+  {
+    "text": "چرا پارس وب هاست",
+    "url": "https://parswebhost.net/چرا-ما"
+  },
+  {
+    "text": "سابقه پارس وب هاست",
+    "url": "https://parswebhost.net/سابقه-پارس-وب-هاست"
+  },
+  {
+    "text": "قوانین  پارس وب هاست",
+    "url": "https://parswebhost.net/قوانین-پارس-وب-هاست"
+  },
+  {
+    "text": "تماس باما",
+    "url": "https://parswebhost.net/تماس-باما"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://parswebhost.net/سوالات-متداول"
+  },
+  {
+    "text": "ارسال درخواست پشتیبانی",
+    "url": "https://my.parswebhost.net/contact.php"
+  },
+  {
+    "text": "درخواست تماس رایگان",
+    "url": "https://parswebhost.net/درخواست-تماس-رایگان"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/#myCarousel"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/#myCarousel"
+  },
+  {
+    "text": "هاست میزبانی",
+    "url": "https://parswebhost.net/#red"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل",
+    "url": "https://parswebhost.net/#orange"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://parswebhost.net/#yellow"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://parswebhost.net/#green"
+  },
+  {
+    "text": "سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=177"
+  },
+  {
+    "text": "سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=178"
+  },
+  {
+    "text": "سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=179"
+  },
+  {
+    "text": "سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=180"
+  },
+  {
+    "text": "بیشتر",
+    "url": "https://parswebhost.net/%d9%87%d9%85%db%8c%d8%b4%d9%87-%d8%af%d8%b1-%d8%af%d8%b3%d8%aa%d8%b1%d8%b3/"
+  },
+  {
+    "text": "بیشتر",
+    "url": "https://parswebhost.net/%D9%86%DA%AF%D8%B1%D8%A7%D9%86-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D9%86%D8%A8%D8%A7%D8%B4%DB%8C%D8%AF/"
+  },
+  {
+    "text": "بیشتر",
+    "url": "https://parswebhost.net/%d9%81%d8%b9%d8%a7%d9%84-%d8%b3%d8%a7%d8%b2%db%8c-ssl-%d8%b1%d8%a7%db%8c%da%af%d8%a7%d9%86/"
+  },
+  {
+    "text": "بیشتر",
+    "url": "https://parswebhost.net/"
+  },
+  {
+    "text": "هاست لینوکس ابری سی پنل",
+    "url": "https://parswebhost.net/#tab_default_1"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین",
+    "url": "https://parswebhost.net/#tab_default_2"
+  },
+  {
+    "text": "نمایندگی هاست لینوکس سی پنل",
+    "url": "https://parswebhost.net/#tab_default_3"
+  },
+  {
+    "text": "سرور مجازی هتزنر آلمان",
+    "url": "https://parswebhost.net/#tab_default_4"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان",
+    "url": "https://parswebhost.net/#tab_default_5"
+  },
+  {
+    "text": "مشاهده پلن های بیشتر",
+    "url": "https://my.parswebhost.net/cart.php"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=1"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=4"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=5"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=7"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=8"
+  },
+  {
+    "text": "مشاهده پلن های بیشتر",
+    "url": "https://my.parswebhost.net/cart.php?gid=3"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=16"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=17"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=18"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=20"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=21"
+  },
+  {
+    "text": "مشاهده پلن های بیشتر",
+    "url": "https://my.parswebhost.net/cart.php?gid=10"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=55"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=52"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=53"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=54"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/contact.php"
+  },
+  {
+    "text": "Hetzner",
+    "url": "https://www.hetzner.de/"
+  },
+  {
+    "text": "مشاهده پلن های بیشتر",
+    "url": "https://my.parswebhost.net/cart.php?gid=18"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=75"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=77"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=78"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=79"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=80"
+  },
+  {
+    "text": "مشاهده پلن های بیشتر",
+    "url": "https://my.parswebhost.net/contact.php"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=110"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=141"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=142"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=144"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.parswebhost.net/cart.php?a=add&pid=176"
+  },
+  {
+    "text": "مطاب بیشتر",
+    "url": "https://parswebhost.net/?cat=2"
+  },
+  {
+    "text": "رفع خطا Defer parsing of JavaScript در Gtmetrix وردپرس 19/01/21",
+    "url": "https://parswebhost.net/%d8%b1%d9%81%d8%b9-%d8%ae%d8%b7%d8%a7-defer-parsing-of-javascript-%d8%af%d8%b1-gtmetrix-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+  },
+  {
+    "text": "آموزش تنظیمات پنل نمایندگی ثبت دامنه بین المللی 19/01/01",
+    "url": "https://parswebhost.net/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%aa%d9%86%d8%b8%db%8c%d9%85%d8%a7%d8%aa-%d9%be%d9%86%d9%84-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c-%d8%ab%d8%a8%d8%aa-%d8%af%d8%a7%d9%85%d9%86%d9%87-%d8%a8/"
+  },
+  {
+    "text": "چگونه فایل های بزرگ و حجیم را بوسیله shell در لینوکس پیدا کنیم؟ 18/12/11",
+    "url": "https://parswebhost.net/%da%86%da%af%d9%88%d9%86%d9%87-%d9%81%d8%a7%db%8c%d9%84-%d9%87%d8%a7%db%8c-%d8%a8%d8%b2%d8%b1%da%af-%d9%88-%d8%ad%d8%ac%db%8c%d9%85-%d8%b1%d8%a7-%d8%a8%d9%88%d8%b3%db%8c%d9%84%d9%87-shell-%d8%af%d8%b1/"
+  },
+  {
+    "text": "آموزش ایجاد اکانت ایمیل دایرکت ادمین 18/03/17",
+    "url": "https://parswebhost.net/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%a7%db%8c%d8%ac%d8%a7%d8%af-%d8%a7%da%a9%d8%a7%d9%86%d8%aa-%d8%a7%db%8c%d9%85%db%8c%d9%84-%d8%af%d8%a7%db%8c%d8%b1%da%a9%d8%aa-%d8%a7%d8%af%d9%85%db%8c%d9%86/"
+  },
+  {
+    "text": "مطاب بیشتر",
+    "url": "https://parswebhost.net/?cat=3"
+  },
+  {
+    "text": "اطلاعیه حذف بکاپ های موجود در سرور های میزبانی وب 19/05/30",
+    "url": "https://parswebhost.net/%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%db%8c%d9%87-%d8%ad%d8%b0%d9%81-%d8%a8%da%a9%d8%a7%d9%be-%d9%87%d8%a7%db%8c-%d9%85%d9%88%d8%ac%d9%88%d8%af-%d8%af%d8%b1-%d8%b3%d8%b1%d9%88%d8%b1-%d9%87%d8%a7%db%8c-%d9%85/"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین 18/09/26",
+    "url": "https://parswebhost.net/%d9%87%d8%a7%d8%b3%d8%aa-%d9%84%db%8c%d9%86%d9%88%da%a9%d8%b3-%d8%af%d8%a7%db%8c%d8%b1%da%a9%d8%aa-%d8%a7%d8%af%d9%85%db%8c%d9%86/"
+  },
+  {
+    "text": "تولد ۵ سالگی پـارس وب هـاست 18/08/18",
+    "url": "https://parswebhost.net/%d8%aa%d9%88%d9%84%d8%af-5-%d8%b3%d8%a7%d9%84%da%af%db%8c-%d9%be%d9%80%d8%a7%d8%b1%d8%b3-%d9%88%d8%a8-%d9%87%d9%80%d8%a7%d8%b3%d8%aa/"
+  },
+  {
+    "text": "سوالات متداول 18/07/15",
+    "url": "https://parswebhost.net/%d8%b3%d9%88%d8%a7%d9%84%d8%a7%d8%aa-%d9%85%d8%aa%d8%af%d8%a7%d9%88%d9%84/"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/#quote-carousel"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/#quote-carousel"
+  },
+  {
+    "text": "هاست لینوکس سی پنل",
+    "url": "https://parswebhost.net/هاست-لینوکس-سی-پنل"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین",
+    "url": "https://parswebhost.net/هاست-لینوکس-دایرکت-ادمین"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل",
+    "url": "https://parswebhost.net/نمایندگی-هاست-سی-پنل"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین",
+    "url": "https://parswebhost.net/نمایندگی-هاست-دایرکت-ادمین"
+  },
+  {
+    "text": "سرور مجازی المان",
+    "url": "https://parswebhost.net/سرور-مجازی-المان"
+  },
+  {
+    "text": "رفع خطا Defer parsing of JavaScript در Gtmetrix وردپرس",
+    "url": "https://parswebhost.net/%d8%b1%d9%81%d8%b9-%d8%ae%d8%b7%d8%a7-defer-parsing-of-javascript-%d8%af%d8%b1-gtmetrix-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3/"
+  },
+  {
+    "text": "آموزش تنظیمات پنل نمایندگی ثبت دامنه بین المللی",
+    "url": "https://parswebhost.net/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%aa%d9%86%d8%b8%db%8c%d9%85%d8%a7%d8%aa-%d9%be%d9%86%d9%84-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c-%d8%ab%d8%a8%d8%aa-%d8%af%d8%a7%d9%85%d9%86%d9%87-%d8%a8/"
+  },
+  {
+    "text": "چگونه فایل های بزرگ و حجیم را بوسیله shell در لینوکس پیدا کنیم؟",
+    "url": "https://parswebhost.net/%da%86%da%af%d9%88%d9%86%d9%87-%d9%81%d8%a7%db%8c%d9%84-%d9%87%d8%a7%db%8c-%d8%a8%d8%b2%d8%b1%da%af-%d9%88-%d8%ad%d8%ac%db%8c%d9%85-%d8%b1%d8%a7-%d8%a8%d9%88%d8%b3%db%8c%d9%84%d9%87-shell-%d8%af%d8%b1/"
+  },
+  {
+    "text": "آموزش ایجاد اکانت ایمیل دایرکت ادمین",
+    "url": "https://parswebhost.net/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%a7%db%8c%d8%ac%d8%a7%d8%af-%d8%a7%da%a9%d8%a7%d9%86%d8%aa-%d8%a7%db%8c%d9%85%db%8c%d9%84-%d8%af%d8%a7%db%8c%d8%b1%da%a9%d8%aa-%d8%a7%d8%af%d9%85%db%8c%d9%86/"
+  },
+  {
+    "text": "نحوه تغییر نسخه PHP در هاست سی پنل",
+    "url": "https://parswebhost.net/%d9%86%d8%ad%d9%88%d9%87-%d8%aa%d8%ba%db%8c%db%8c%d8%b1-%d9%86%d8%b3%d8%ae%d9%87-php-%d9%87%d8%a7%d8%b3%d8%aa-%d8%b3%db%8c-%d9%be%d9%86%d9%84/"
+  },
+  {
+    "text": "اطلاعیه حذف بکاپ های موجود در سرور های میزبانی وب",
+    "url": "https://parswebhost.net/%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%db%8c%d9%87-%d8%ad%d8%b0%d9%81-%d8%a8%da%a9%d8%a7%d9%be-%d9%87%d8%a7%db%8c-%d9%85%d9%88%d8%ac%d9%88%d8%af-%d8%af%d8%b1-%d8%b3%d8%b1%d9%88%d8%b1-%d9%87%d8%a7%db%8c-%d9%85/"
+  },
+  {
+    "text": "هاست لینوکس دایرکت ادمین",
+    "url": "https://parswebhost.net/%d9%87%d8%a7%d8%b3%d8%aa-%d9%84%db%8c%d9%86%d9%88%da%a9%d8%b3-%d8%af%d8%a7%db%8c%d8%b1%da%a9%d8%aa-%d8%a7%d8%af%d9%85%db%8c%d9%86/"
+  },
+  {
+    "text": "تولد ۵ سالگی پـارس وب هـاست",
+    "url": "https://parswebhost.net/%d8%aa%d9%88%d9%84%d8%af-5-%d8%b3%d8%a7%d9%84%da%af%db%8c-%d9%be%d9%80%d8%a7%d8%b1%d8%b3-%d9%88%d8%a8-%d9%87%d9%80%d8%a7%d8%b3%d8%aa/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://parswebhost.net/%d8%b3%d9%88%d8%a7%d9%84%d8%a7%d8%aa-%d9%85%d8%aa%d8%af%d8%a7%d9%88%d9%84/"
+  },
+  {
+    "text": "سابقه پارس وب هاست",
+    "url": "https://parswebhost.net/%d8%b3%d8%a7%d8%a8%d9%82%d9%87-%d9%be%d8%a7%d8%b1%d8%b3-%d9%88%d8%a8-%d9%87%d8%a7%d8%b3%d8%aa/"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/"
+  },
+  {
+    "text": "",
+    "url": "https://parswebhost.net/"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/parswebhost_net"
+  },
+  {
+    "text": "",
+    "url": "https://telegram.me/parswebhost_net"
+  },
+  {
+    "text": "",
+    "url": "http://pangash.ir/"
+  }
+]

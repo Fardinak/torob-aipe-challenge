@@ -1,0 +1,230 @@
+[
+  {
+    "provider": "servervds",
+    "label": "سرور مجازی با منابع اختصاصی  المان",
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-ooss-uuossoo1-ossoroaouossouuoe-ossuuossu",
+    "discovered_in": "20-servervds-links.json"
+  },
+  {
+    "provider": "iranica",
+    "label": "سرور مجازی",
+    "url": "https://iranicaserver.com/vps",
+    "discovered_in": "02-iranica-links.json"
+  },
+  {
+    "provider": "iranica",
+    "label": "سرور مجازی مخصوص گیم",
+    "url": "https://iranicaserver.com/game-server",
+    "discovered_in": "02-iranica-links.json"
+  },
+  {
+    "provider": "iranica",
+    "label": "سرور میکروتیک",
+    "url": "https://iranicaserver.com/mikrotik",
+    "discovered_in": "02-iranica-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی کاهش پینگ",
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%da%a9%d8%a7%d9%87%d8%b4-%d9%be%db%8c%d9%86%da%af",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی کلاس آنلاین",
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%da%a9%d9%84%d8%a7%d8%b3-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی استونی",
+    "url": "https://negarnovin.com/estonia",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "🇮🇷 سرور مجازی ایران Tehran • ترافیک داخلی نامحدود",
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی آسیاتک",
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7%D8%AA%DA%A9",
+    "discovered_in": "30-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "🏢 سرور مجازی رسپینا",
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B1%D8%B3%D9%BE%DB%8C%D9%86%D8%A7",
+    "discovered_in": "30-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی زیرساخت",
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%b2%db%8c%d8%b1-%d8%b3%d8%a7%d8%ae%d8%aa",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "سرور مجازی نامحدود",
+    "url": "https://negarnovin.com/unlimited-traffic-virtual-server",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی",
+    "url": "https://webdade.com/vps",
+    "discovered_in": "34-webdade-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی رایگان",
+    "url": "https://webdade.com/free-vps",
+    "discovered_in": "34-webdade-links.json"
+  },
+  {
+    "provider": "mihanwebhost",
+    "label": "سرور مجازی Trade",
+    "url": "https://mihanwebhost.com/my/trade-server",
+    "discovered_in": "11-mihanwebhost-links.json"
+  },
+  {
+    "provider": "mihanwebhost",
+    "label": "حراج سرور مجازی",
+    "url": "https://mihanwebhost.com/my/vpsoffer",
+    "discovered_in": "11-mihanwebhost-links.json"
+  },
+  {
+    "provider": "mihanwebhost",
+    "label": "سرور مجازی",
+    "url": "https://mihanwebhost.com/my/submitticket.php?step=2&deptid=21",
+    "discovered_in": "11-mihanwebhost-links.json"
+  },
+  {
+    "provider": "spadserver",
+    "label": "پلن های ویژه‌ ساعتی BigBlueButton",
+    "url": "https://crm.spadserver.com/cart.php?gid=28",
+    "discovered_in": "14-spadserver-links.json"
+  },
+  {
+    "provider": "spadserver",
+    "label": "پلن های ویژه‌ ساعتی BigBlueButton",
+    "url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+    "discovered_in": "14-spadserver-links.json"
+  },
+  {
+    "provider": "liara",
+    "label": "سرور مجازی لینوکس ساعتی",
+    "url": "https://liara.ir/products/linux-server",
+    "discovered_in": "50-liara-links.json"
+  },
+  {
+    "provider": "liara",
+    "label": "سرور مجازی ابری",
+    "url": "https://liara.ir/products/cloud-server",
+    "discovered_in": "50-liara-links.json"
+  },
+  {
+    "provider": "tadserver",
+    "label": "سرور مجازی ۸ گیگ رم",
+    "url": "https://tadserver.ir/wp-login.php?redirect_to=https%3A%2F%2Ftadserver.ir%2Fwp-admin%2F&reauth=1",
+    "discovered_in": "39-tadserver-links.json"
+  },
+  {
+    "provider": "irvm",
+    "label": "سرور مجازی والتر",
+    "url": "https://irvm.org/virtual-server-vultr",
+    "discovered_in": "06-irvm-links.json"
+  },
+  {
+    "provider": "irvm",
+    "label": "سرور مجازی دیجیتال اوشن",
+    "url": "https://irvm.org/virtual-server-digitalocean",
+    "discovered_in": "06-irvm-links.json"
+  },
+  {
+    "provider": "liara",
+    "label": "خرید سرور مجازی گیم",
+    "url": "https://console.liara.ir/vms",
+    "discovered_in": "50-liara-links.json"
+  },
+  {
+    "provider": "sonhost",
+    "label": "سرور مجازی حجیم",
+    "url": "https://7ho.st/vps-hosting/storage",
+    "discovered_in": "32-sonhost-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "خرید سرور مجازی میکروتیک با 50% تخفیف",
+    "url": "https://my.webdade.com/order/mikrotik-vps?promocode=Mikrotik",
+    "discovered_in": "57-webdade-links.json"
+  },
+  {
+    "provider": "logicserver",
+    "label": "سرور مجازی تریدینگ",
+    "url": "https://logicserver.org/trade-vps",
+    "discovered_in": "12-logicserver-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی ابری PAYG",
+    "url": "https://my.webdade.com/cloud.php",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "🇮🇷 سرور مجازی ایران ارزان (همین صفحه) Tehran • SSD/NVMe • قیمت اقتصادی",
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A7%D8%B1%D8%B2%D8%A7%D9%86",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "negarnovin",
+    "label": "🇪🇸 سرور مجازی اسپانیا Sevilla • GDPR • NVMe SSD",
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7",
+    "discovered_in": "27-negarnovin-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی پلاتینیوم ایران HPe Gen11",
+    "url": "https://my.webdade.com/order/iran-vps-platinum",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی ایران Standard",
+    "url": "https://my.webdade.com/store/iran-vps",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی امارات",
+    "url": "https://my.webdade.com/store/uae-server",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی میکروتیک « !محصول جدید »",
+    "url": "https://my.webdade.com/store/mikrotik-vps",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "webdade",
+    "label": "سرور مجازی بورس",
+    "url": "https://my.webdade.com/order/bourse",
+    "discovered_in": "65-webdade-links.json"
+  },
+  {
+    "provider": "milad",
+    "label": "سرور مجازی انگلستان",
+    "url": "https://www.miladserver.ir/vps/uk",
+    "discovered_in": "33-milad-links.json"
+  },
+  {
+    "provider": "milad",
+    "label": "سرور مجازی لهستان",
+    "url": "https://www.miladserver.ir/vps/poland",
+    "discovered_in": "33-milad-links.json"
+  }
+]

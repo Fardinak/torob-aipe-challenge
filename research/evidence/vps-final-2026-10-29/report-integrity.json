@@ -1,0 +1,18 @@
+{
+  "report": "research/vps-final-search-2026-10-29.md",
+  "generated_utc": "2026-10-29T18:46:03.957987+00:00",
+  "report_sha256": "f4a8c8cf063470be59f84d5e994f06681408e38d7070046cf47ebfec1a960e41",
+  "observations": 521,
+  "request_records": 125,
+  "request_statuses": {
+    "200": 114,
+    "522": 1,
+    "403": 1,
+    "error": 4,
+    "404": 3,
+    "500": 2
+  },
+  "snapshot_integrity_failures": [],
+  "saturation_established": false,
+  "catalog_edited": false
+}

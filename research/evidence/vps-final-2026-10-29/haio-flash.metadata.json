@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://haio.ir/haio-flash/",
+  "attempt_utc": "2026-10-29T09:49:46.319479+00:00",
+  "final_url": "https://haio.ir/haio-flash/",
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 29 Oct 2026 09:31:17 GMT",
+    "Last-Modified": "Sat, 24 Oct 2026 15:37:13 GMT",
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "bytes": 102754,
+  "sha256": "7f3bb4f032ca503d041d9d401e1c995b39e6c65ece43dc0ce45691a216f5e70f",
+  "saved_utc": "2026-10-29T09:49:46.616864+00:00"
+}

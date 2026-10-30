@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://portal.kermanhosting.ir/cart.php?gid=43",
+  "attempt_utc": "2026-10-29T09:53:50.935895+00:00",
+  "final_url": "https://portal.kermanhosting.ir/cart.php?gid=43",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=utf-8",
+    "set-cookie": "WHMCSy551iLvnhYt7=2572dee49aa73b4943ce100d27ab32f3; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 09:53:46 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 46381,
+  "sha256": "5d1e012125bdae1cf0526c631bb024b2dd1e72f08e14f42c2dd26222a82a9aad",
+  "saved_utc": "2026-10-29T09:53:52.392998+00:00"
+}

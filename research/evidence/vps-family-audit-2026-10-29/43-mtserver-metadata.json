@@ -1,0 +1,16 @@
+{
+  "provider": "mtserver",
+  "label": "سرور مجازی آسیاتک",
+  "url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb",
+  "discovered_in": "35-mtserver-links.json",
+  "source_key": "43-mtserver",
+  "requested_url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb",
+  "capture_time": "2026-10-29T19:10:46.025694+00:00",
+  "status": 200,
+  "final_url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb",
+  "sha256": "ed6e97efdbece83e50347c3fa402b9dc40549775265314832d7211647d06950b",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/43-mtserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/43-mtserver.txt",
+  "bytes": 69113,
+  "title": "کارت خرید - ام تی سرور"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "irvm",
+  "label": "سرور مجازی ایران",
+  "url": "https://irvm.org/virtual-server-iran/",
+  "source_key": "06-irvm",
+  "requested_url": "https://irvm.org/virtual-server-iran/",
+  "capture_time": "2026-10-29T19:09:35.687527+00:00",
+  "status": 200,
+  "final_url": "https://irvm.org/virtual-server-iran/",
+  "sha256": "2b25c7995cf2252a65634bc1aacf65e667192c8f1e87569e87c324ac27d463e7",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/06-irvm.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/06-irvm.txt",
+  "bytes": 472396,
+  "title": "سرور مجازی ایران | ایران وی ام"
+}

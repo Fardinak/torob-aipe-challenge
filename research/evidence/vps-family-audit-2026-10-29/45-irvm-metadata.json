@@ -1,0 +1,15 @@
+{
+  "provider": "irvm",
+  "label": "سرور مجازی شاتل",
+  "url": "https://irvm.org/سرور-مجازی-شاتل/",
+  "source_key": "45-irvm",
+  "requested_url": "https://irvm.org/سرور-مجازی-شاتل/",
+  "capture_time": "2026-10-29T19:10:46.027775+00:00",
+  "status": 200,
+  "final_url": "https://irvm.org/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B4%D8%A7%D8%AA%D9%84/",
+  "sha256": "d0bea8c47179fb68a1eb58d51d23f271c0db763134e955698879b8a155f776b2",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/45-irvm.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/45-irvm.txt",
+  "bytes": 424255,
+  "title": "سرور مجازی شاتل | ایران وی ام"
+}

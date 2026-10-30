@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی ویندوز",
+  "url": "https://liara.ir/products/windows-vps/",
+  "provider": "liara",
+  "discovered_in": "01-liara",
+  "source_key": "48-liara",
+  "requested_url": "https://liara.ir/products/windows-vps/",
+  "capture_time": "2026-10-29T19:11:46.779152+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/products/windows-vps/",
+  "sha256": "48f0adda34064be3cee62edc665216852289b8928215aa4327665d5815291e2a",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/48-liara.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/48-liara.txt",
+  "bytes": 125053,
+  "title": "خرید سرور مجازی (VPS) ویندوز | وی پی اس ویندوز - لیارا"
+}

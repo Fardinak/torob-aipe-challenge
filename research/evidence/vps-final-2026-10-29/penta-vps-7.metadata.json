@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://pentaserver.net/vps/buy-cheap-iran-vps",
+  "attempt_utc": "2026-10-29T09:49:47.513351+00:00",
+  "final_url": "https://pentaserver.net/vps/buy-cheap-iran-vps",
+  "status": 200,
+  "headers": {
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=120, public, s-maxage=120",
+    "Date": "Thu, 29 Oct 2026 09:49:41 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  },
+  "bytes": 134576,
+  "sha256": "f7a1a80f17ba283875a70e0172c6d8201aa95e56e29c37f097c76999fa2a1a9c",
+  "saved_utc": "2026-10-29T09:49:47.843202+00:00"
+}

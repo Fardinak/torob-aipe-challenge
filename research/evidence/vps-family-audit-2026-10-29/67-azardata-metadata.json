@@ -1,0 +1,16 @@
+{
+  "label": "مشاهده پلن ها",
+  "url": "https://azardata.net/vps/managed/iran/",
+  "provider": "azardata",
+  "discovered_in": "62-azardata",
+  "source_key": "67-azardata",
+  "requested_url": "https://azardata.net/vps/managed/iran/",
+  "capture_time": "2026-10-29T19:15:51.293093+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/managed/iran/",
+  "sha256": "811066330b0cc9b135b5c5171ad52cff565c858c3c4ed86b2dd17da8363d19e9",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/67-azardata.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/67-azardata.txt",
+  "bytes": 355577,
+  "title": "سرور مجازی مدیریت شده ایران | خرید سرور مجازی مدیریت شده ایران - آذردیتا"
+}

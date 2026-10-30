@@ -1,0 +1,174 @@
+[
+  {
+    "label": "",
+    "url": "https://my.webdade.com/"
+  },
+  {
+    "label": "",
+    "url": "https://my.webdade.com/"
+  },
+  {
+    "label": "مشاهده کارت خرید 0",
+    "url": "https://my.webdade.com/cart.php?a=view"
+  },
+  {
+    "label": "گزارش تخلف",
+    "url": "https://my.webdade.com/index.php?m=AbuseCenter&action=report"
+  },
+  {
+    "label": "Persian",
+    "url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=iran-vps#"
+  },
+  {
+    "label": "English",
+    "url": "https://my.webdade.com/order.php?gid=iran-vps&language=english"
+  },
+  {
+    "label": "Persian",
+    "url": "https://my.webdade.com/order.php?gid=iran-vps&language=farsi"
+  },
+  {
+    "label": "وب داده",
+    "url": "https://webdade.com/"
+  },
+  {
+    "label": "داشبورد",
+    "url": "https://my.webdade.com/"
+  },
+  {
+    "label": "راه اندازی سرویس",
+    "url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=iran-vps#"
+  },
+  {
+    "label": "سرور مجازی پلاتینیوم ایران HPe Gen11",
+    "url": "https://my.webdade.com/order/iran-vps-platinum"
+  },
+  {
+    "label": "سرور مجازی ایران Standard",
+    "url": "https://my.webdade.com/store/iran-vps"
+  },
+  {
+    "label": "سرور مجازی هلند | سری VIP HPe Gen11",
+    "url": "https://my.webdade.com/store/nl-vps"
+  },
+  {
+    "label": "سرور مجازی هلند | سری Lite HPe Gen10+",
+    "url": "https://my.webdade.com/store/lite-vps-nl"
+  },
+  {
+    "label": "سرور مجازی ابری",
+    "url": "https://my.webdade.com/cloud.php"
+  },
+  {
+    "label": "سرور مجازی آلمان",
+    "url": "https://my.webdade.com/store/de-vps"
+  },
+  {
+    "label": "سرور مجازی آمریکا",
+    "url": "https://my.webdade.com/store/usa-vps"
+  },
+  {
+    "label": "سرور مجازی امارات",
+    "url": "https://my.webdade.com/store/uae-server"
+  },
+  {
+    "label": "سرور مجازی میکروتیک « !محصول جدید »",
+    "url": "https://my.webdade.com/store/mikrotik-vps"
+  },
+  {
+    "label": "سرور مجازی بورس",
+    "url": "https://my.webdade.com/order/bourse"
+  },
+  {
+    "label": "سرور اختصاصی ایران",
+    "url": "https://my.webdade.com/store/ir-dedicated"
+  },
+  {
+    "label": "خدمات کولوکیشن",
+    "url": "https://my.webdade.com/order/colocation"
+  },
+  {
+    "label": "خدمات اجاره IP",
+    "url": "https://my.webdade.com/store/lease-ip"
+  },
+  {
+    "label": "هاست سی پنل",
+    "url": "https://my.webdade.com/store/cpanel-hosting"
+  },
+  {
+    "label": "هاست دانلود",
+    "url": "https://my.webdade.com/store/cpanel-storage-host"
+  },
+  {
+    "label": "هاست بکاپ",
+    "url": "https://my.webdade.com/store/cpanel-storage-host"
+  },
+  {
+    "label": "نمایندگی هاست سی پنل",
+    "url": "https://my.webdade.com/store/reseller-hosting"
+  },
+  {
+    "label": "سرور مجازی ابری PAYG",
+    "url": "https://my.webdade.com/cloud.php"
+  },
+  {
+    "label": "دامنه",
+    "url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=iran-vps#"
+  },
+  {
+    "label": "ثبت دامنه",
+    "url": "https://my.webdade.com/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "لیست قیمت دامنه",
+    "url": "https://my.webdade.com/domain/pricing"
+  },
+  {
+    "label": "انتقال دامنه بین المللی به وب داده",
+    "url": "https://my.webdade.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "label": "انتقال دامنه ir",
+    "url": "https://my.webdade.com/index.php?m=IrnicResellerClient&mrp=/transfer"
+  },
+  {
+    "label": "تمدید دامنه ir",
+    "url": "https://my.webdade.com/index.php?m=IrnicResellerClient&mrp=/renew"
+  },
+  {
+    "label": "بلاگ وب داده",
+    "url": "https://webdade.com/blog/"
+  },
+  {
+    "label": "پشتیبانی",
+    "url": "https://my.webdade.com/submitticket.php"
+  },
+  {
+    "label": "ورود",
+    "url": "https://my.webdade.com/login.php"
+  },
+  {
+    "label": "ثبت نام",
+    "url": "https://my.webdade.com/register.php"
+  },
+  {
+    "label": "",
+    "url": "https://my.webdade.com/"
+  },
+  {
+    "label": "درخواست پشتیبانی",
+    "url": "https://my.webdade.com/submitticket.php"
+  },
+  {
+    "label": "دریافت اطلاعات سرویس خریداری شده",
+    "url": "https://my.webdade.com/clientarea.php?action=emails"
+  },
+  {
+    "label": "0313740",
+    "url": "tel:0313740"
+  },
+  {
+    "label": "02191300210",
+    "url": "tel:02191300210"
+  }
+]

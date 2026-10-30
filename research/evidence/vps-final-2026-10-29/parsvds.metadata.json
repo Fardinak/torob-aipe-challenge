@@ -1,0 +1,24 @@
+{
+  "requested_url": "https://parsvds.com/iran-vps/",
+  "attempt_utc": "2026-10-29T02:37:15.273352+00:00",
+  "final_url": "https://parsvds.com/iran-vps/",
+  "status": 500,
+  "headers": {
+    "Connection": "close",
+    "set-cookie": "PHPSESSID=de78cadee07af12990a3a568ba6ebb67; path=/; secure",
+    "Pragma": "no-cache",
+    "X-Pingback": "https://parsvds.com/xmlrpc.php",
+    "Strict-Transport-Security": "max-age=10886400",
+    "Link": "<https://parsvds.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "Cache-Control": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:37:44 GMT",
+    "Vary": "User-Agent,Accept-Encoding",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 60643,
+  "sha256": "3cc42396c525714f00ffa5dd4aa4eba44399fabc0f5660cde8770b86076367d7",
+  "saved_utc": "2026-10-29T02:37:16.513614+00:00"
+}

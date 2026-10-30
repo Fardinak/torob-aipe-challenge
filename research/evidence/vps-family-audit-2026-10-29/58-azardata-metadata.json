@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی",
+  "url": "https://azardata.net/vps/",
+  "provider": "azardata",
+  "discovered_in": "46-azardata",
+  "source_key": "58-azardata",
+  "requested_url": "https://azardata.net/vps/",
+  "capture_time": "2026-10-29T19:12:44.238720+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/",
+  "sha256": "01f612aa180dc3b266174b6b6b3bb660c55fe51352078839c46595dca1fcfb1e",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/58-azardata.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/58-azardata.txt",
+  "bytes": 321171,
+  "title": "خرید سرور مجازی | سرور مجازی ایران، آلمان و هلند، لینوکس و ویندوز - آذردیتا"
+}

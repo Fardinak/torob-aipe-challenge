@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "Bourse listing",
+  "url": "https://my.webdade.com/store/bourse",
+  "discovered_in": "56-webdade",
+  "source_key": "65-webdade",
+  "requested_url": "https://my.webdade.com/store/bourse",
+  "capture_time": "2026-10-29T19:12:44.254373+00:00",
+  "status": 200,
+  "final_url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=bourse",
+  "sha256": "32b5305c7b9511f0bb02db59cccc9eab72b5a00d1f20ab4b3feb612b92ce8c95",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/65-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/65-webdade.txt",
+  "bytes": 613496,
+  "title": "خرید و راه اندازی سرویس جدید - وب داده"
+}

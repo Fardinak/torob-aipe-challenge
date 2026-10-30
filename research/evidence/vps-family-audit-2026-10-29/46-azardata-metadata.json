@@ -1,0 +1,15 @@
+{
+  "provider": "azardata",
+  "label": "سرور گیت لب شخصی - GitLab سرور گیت لب Gitlab : گیت (Git) یک نرم‌افزار کنترل نسخه است که به تیم ها برای کار بر روی پروژه ها کمک میکند و از تداخل در کار جلوگیری میکند. مناسب ترین و بهترین پلتفرم موجود برای کنترل سورس گیت لب (Gitlab) است.که متاسفانه به تازگی با مهاجرت به فضای ابری گوگل ، ایران را تحریم و کاربران ایرانی را با مشکل بزرگی روبرو کرده است. تیم فنی مجموعه آذردیتا با ارائه راهکار دور زدن این تحریم تصمیم بر ارائه محصول سرور مجازی گیت لب کرده است تا به صورت کاملا شخصی و بدون مشکل تحریم از آن استفاده کنید. وقتی تحریم و محدودیت گیت لب بی معنا میشود!",
+  "url": "https://azardata.net/vps/gitlab/",
+  "source_key": "46-azardata",
+  "requested_url": "https://azardata.net/vps/gitlab/",
+  "capture_time": "2026-10-29T19:10:46.031540+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/gitlab/",
+  "sha256": "184695188487ab543bc70a93a0ba0b8b67657bc2061b8fe705ec2819caa97ca1",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/46-azardata.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/46-azardata.txt",
+  "bytes": 271804,
+  "title": "سرور گیت لب GitLab | خرید سرور گیت لب شخصی ایران و آلمان - آذردیتا"
+}

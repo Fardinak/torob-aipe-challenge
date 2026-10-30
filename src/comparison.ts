@@ -207,6 +207,14 @@ export function compare(
       result.excluded.push({ plan, reasons });
       continue;
     }
+    if (plan.advertised_monthly_toman === null) {
+      const destination =
+        String(request.budget ?? "").trim() !== ""
+          ? result.excluded
+          : result.unpriced;
+      destination.push({ plan, reasons: ["monthly_reference_unavailable"] });
+      continue;
+    }
     if (plan.evidence.facts.advertised_monthly_toman !== "verified") {
       result.unpriced.push({ plan, reasons: ["base_price_unresolved"] });
       continue;

@@ -1,0 +1,15 @@
+{
+  "provider": "logicserver",
+  "label": "سرور مجازی مدیریت شده ایران",
+  "url": "https://logicserver.org/vps-management/",
+  "source_key": "12-logicserver",
+  "requested_url": "https://logicserver.org/vps-management/",
+  "capture_time": "2026-10-29T19:09:35.697060+00:00",
+  "status": 200,
+  "final_url": "https://logicserver.org/vps-management/",
+  "sha256": "940c3bc9d18c6c83009cfe846b09e0abb1972593535b6aa5690c8ca69ef975fb",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/12-logicserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/12-logicserver.txt",
+  "bytes": 117461,
+  "title": "مدیریت سرور مجازی ایران (VPS مدیریت شده) | مانیتورینگ 24/7، امنیت، کنترل‌پنل"
+}

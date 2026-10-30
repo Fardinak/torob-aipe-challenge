@@ -1,0 +1,16 @@
+{
+  "label": "مشاهده پلن ها",
+  "url": "https://azardata.net/vps/gitlab/iran/",
+  "provider": "azardata",
+  "discovered_in": "46-azardata",
+  "source_key": "63-azardata",
+  "requested_url": "https://azardata.net/vps/gitlab/iran/",
+  "capture_time": "2026-10-29T19:12:44.246360+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/gitlab/iran/",
+  "sha256": "60bbadb884f45cf40350767ba583bbc5ade444433c0912881c39883b4945a426",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/63-azardata.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/63-azardata.txt",
+  "bytes": 356562,
+  "title": "سرور گیت لب GitLab ایران | خرید سرور گیت لب شخصی ایران - آذردیتا"
+}

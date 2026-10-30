@@ -1,0 +1,19 @@
+{
+  "requested_url": "https://samanhosting.ir/index.php",
+  "attempt_utc": "2026-10-29T10:01:51.852293+00:00",
+  "final_url": "https://samanhosting.ir/maintenance/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 10:01:46 GMT",
+    "Content-Type": "text/html",
+    "Content-Length": "3420",
+    "Connection": "close",
+    "Last-Modified": "Sat, 03 Oct 2026 16:08:59 GMT",
+    "Accept-Ranges": "bytes",
+    "Vary": "Accept-Encoding"
+  },
+  "bytes": 3420,
+  "sha256": "9c7a47eb41f31188e5cd653e36b1ae29160bbc0ec19534a4351150a6be04beb9",
+  "saved_utc": "2026-10-29T10:01:52.706825+00:00"
+}

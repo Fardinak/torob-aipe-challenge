@@ -1,0 +1,30 @@
+{
+  "requested_url": "https://www.mizbandade.com/shiraz-server",
+  "attempt_utc": "2026-10-29T09:53:51.333631+00:00",
+  "final_url": "https://www.mizbandade.com/shiraz-server/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:53:45 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://www.mizbandade.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "X-LiteSpeed-Cache-Control": "public,max-age=604800",
+    "X-LiteSpeed-Tag": "1eb_page,1eb_URL.5cf021d0fad0caff51d554f9960de4f8,1eb_Po.5253,1eb_PGS,1eb_",
+    "Etag": "\"16-1790880707;;;\"",
+    "X-Litespeed-Cache": "miss",
+    "X-Mcdn-Shield": "HIT",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "interest-cohort=(), browsing-topics=()",
+    "X-XSS-Protection": "0",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Cache": "HIT",
+    "X-Edge": "Mizbandade"
+  },
+  "bytes": 1024065,
+  "sha256": "d4ac242511dd5bd793afba54c68eb63ab8fb642c0fb691f7e6ced1add531e01d",
+  "saved_utc": "2026-10-29T09:53:51.894977+00:00"
+}

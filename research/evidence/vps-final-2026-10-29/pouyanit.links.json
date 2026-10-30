@@ -1,0 +1,710 @@
+[
+  {
+    "text": "",
+    "url": "https://pouyanit.com/"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/"
+  },
+  {
+    "text": "277 277 38 081",
+    "url": "tel:08138277277"
+  },
+  {
+    "text": "ایجاد تیکت",
+    "url": "https://pouyanit.com/client/submitticket.php"
+  },
+  {
+    "text": "ورود / ثبت نام",
+    "url": "https://pouyanit.com/client/login"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/client/login"
+  },
+  {
+    "text": "0",
+    "url": "https://pouyanit.com/client/cart.php?a=view"
+  },
+  {
+    "text": "خدمات ابری",
+    "url": "https://pouyanit.com/cloud/"
+  },
+  {
+    "text": "چت آنلاین",
+    "url": "https://pouyanit.com/cloud-saas-chat/"
+  },
+  {
+    "text": "VS Code",
+    "url": "https://pouyanit.com/cloud-saas-vscode/"
+  },
+  {
+    "text": "GitLab",
+    "url": "https://pouyanit.com/cloud-saas-gitlab/"
+  },
+  {
+    "text": "میرور داکر رایگان",
+    "url": "https://pouyanit.com/cloud-saas-docker-mirror/"
+  },
+  {
+    "text": "n8n",
+    "url": "https://pouyanit.com/cloud-saas-n8n/"
+  },
+  {
+    "text": "Uptime kuma جدید",
+    "url": "https://pouyanit.com/cloud-saas-uptime-kuma/"
+  },
+  {
+    "text": "Docker جدید",
+    "url": "https://pouyanit.com/cloud-paas-docker/"
+  },
+  {
+    "text": "آبجکت استوریج جدید",
+    "url": "https://pouyanit.com/cloud-iaas-object-storage/"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://pouyanit.com/colocation/"
+  },
+  {
+    "text": "کولوکیشن ایران جدید",
+    "url": "https://pouyanit.com/colocation-iran/"
+  },
+  {
+    "text": "کولوکیشن هلند جدید",
+    "url": "https://pouyanit.com/colocation-netherland/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://pouyanit.com/dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر  (Hetzner)",
+    "url": "https://pouyanit.com/dedicated-hetzneronline/"
+  },
+  {
+    "text": "سرور اختصاصی او وی اچ (OVH)",
+    "url": "https://pouyanit.com/dedicated-ovh/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://pouyanit.com/dedicated-iran/"
+  },
+  {
+    "text": "سرور اختصاصی هلند",
+    "url": "https://pouyanit.com/dedicated-netherland/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://pouyanit.com/virtual-server/"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://pouyanit.com/virtual-iran/"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://pouyanit.com/virtual-deutsche/"
+  },
+  {
+    "text": "سرور مجازی فنلاند",
+    "url": "https://pouyanit.com/virtual-finland/"
+  },
+  {
+    "text": "سرور مجازی هلند",
+    "url": "https://pouyanit.com/virtual-netherland/"
+  },
+  {
+    "text": "سرور مجازی فرانسه",
+    "url": "https://pouyanit.com/virtual-france/"
+  },
+  {
+    "text": "سرور مجازی انگلیس",
+    "url": "https://pouyanit.com/virtual-united-kingdom/"
+  },
+  {
+    "text": "سرور مجازی لهستان",
+    "url": "https://pouyanit.com/virtual-poland/"
+  },
+  {
+    "text": "سرور مجازی سنگاپور",
+    "url": "https://pouyanit.com/virtual-singapore/"
+  },
+  {
+    "text": "سرور کلود هتزنر (Hetzner)",
+    "url": "https://pouyanit.com/virtual-cloud-hetzner/"
+  },
+  {
+    "text": "سرور مجازی مدیریت شده",
+    "url": "https://pouyanit.com/virtual-managed/"
+  },
+  {
+    "text": "سرور مجازی با منابع سفارشی",
+    "url": "https://pouyanit.com/virtual-custom/"
+  },
+  {
+    "text": "سرور مجازی ماینکرافت",
+    "url": "https://pouyanit.com/virtual-minecraft/"
+  },
+  {
+    "text": "نمایندگی اعتباری سرور مجازی",
+    "url": "https://pouyanit.com/virtual-reseller-credit/"
+  },
+  {
+    "text": "میزبانی وب",
+    "url": "https://pouyanit.com/webhosting/"
+  },
+  {
+    "text": "میزبانی دانلود (هاست دانلود)",
+    "url": "https://pouyanit.com/webhosting-download/"
+  },
+  {
+    "text": "هاست سی پنل ایران",
+    "url": "https://pouyanit.com/webhosting-cpanel-iran-host/"
+  },
+  {
+    "text": "هاست سی پنل اروپا",
+    "url": "https://pouyanit.com/webhosting-cpanel-europe-host/"
+  },
+  {
+    "text": "هاست دایرکت ادمین اروپا",
+    "url": "https://pouyanit.com/webhosting-directadmin-europe-host/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://pouyanit.com/webhosting-wordpress-host/"
+  },
+  {
+    "text": "هاست پایتون",
+    "url": "https://pouyanit.com/webhosting-python-host/"
+  },
+  {
+    "text": "هاست ووکامرس",
+    "url": "https://pouyanit.com/webhosting-woocommerce-host/"
+  },
+  {
+    "text": "هاست ربات تلگرام",
+    "url": "https://pouyanit.com/webhosting-telegrambot-host/"
+  },
+  {
+    "text": "هاست ایمیل",
+    "url": "https://pouyanit.com/webhosting-email-host/"
+  },
+  {
+    "text": "هاست با منابع سفارشی",
+    "url": "https://pouyanit.com/webhosting-custom/"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل ایران",
+    "url": "https://pouyanit.com/webhosting-cpanel-iran-reseller/"
+  },
+  {
+    "text": "نمایندگی هاست سی پنل اروپا",
+    "url": "https://pouyanit.com/webhosting-cpanel-europe-reseller/"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین اروپا",
+    "url": "https://pouyanit.com/webhosting-directadmin-europe-reseller/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://pouyanit.com/webhosting-download-iran-host/"
+  },
+  {
+    "text": "نمایندگی هاست دانلود ایران",
+    "url": "https://pouyanit.com/webhosting-download-iran-reseller/"
+  },
+  {
+    "text": "فضای بکاپ",
+    "url": "https://pouyanit.com/webhosting-backup-europe-host/"
+  },
+  {
+    "text": "هاست دانلود اروپا",
+    "url": "https://pouyanit.com/webhosting-download-europe-host/"
+  },
+  {
+    "text": "نمایندگی هاست دانلود اروپا",
+    "url": "https://pouyanit.com/webhosting-download-europe-reseller/"
+  },
+  {
+    "text": "خدمات دامنه",
+    "url": "https://pouyanit.com/domain/"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://pouyanit.com/domain-registration/"
+  },
+  {
+    "text": "انتقال دامنه",
+    "url": "https://pouyanit.com/domain-transfer/"
+  },
+  {
+    "text": "سفارش بک اوردر",
+    "url": "https://pouyanit.com/domain-backorder/"
+  },
+  {
+    "text": "لیست کامل قیمت ها",
+    "url": "https://pouyanit.com/domain-pricing/"
+  },
+  {
+    "text": "دیگر خدمات",
+    "url": "https://pouyanit.com/other/"
+  },
+  {
+    "text": "خدمات طراحی وب‌سایت جدید",
+    "url": "https://pouyanit.com/other-web-design/"
+  },
+  {
+    "text": "خدمات توسعه و برنامه‌نویسی جدید",
+    "url": "https://pouyanit.com/other-web-development/"
+  },
+  {
+    "text": "پشتیبانی ویژه جدید",
+    "url": "https://pouyanit.com/other-vip-support/"
+  },
+  {
+    "text": "پشتیبانی وب‌سایت جدید",
+    "url": "https://pouyanit.com/other-website-support/"
+  },
+  {
+    "text": "پنل مدیریت سئو جدید تست رایگان",
+    "url": "https://pouyanit.com/other-seo-panel/"
+  },
+  {
+    "text": "تولید محتوا",
+    "url": "https://pouyanit.com/other-content-production/"
+  },
+  {
+    "text": "نقد کردن درآمد ارزی",
+    "url": "https://pouyanit.com/other-cashing/"
+  },
+  {
+    "text": "پرداخت در سایت‌های خارجی",
+    "url": "https://pouyanit.com/other-purchase/"
+  },
+  {
+    "text": "اجاره سابنت IP",
+    "url": "https://pouyanit.com/other-ip-rent/"
+  },
+  {
+    "text": "لایسنس اشتراکی",
+    "url": "https://pouyanit.com/other-license/"
+  },
+  {
+    "text": "گواهینامه SSL",
+    "url": "https://pouyanit.com/other-ssl/"
+  },
+  {
+    "text": "دانلود CMS رایگان",
+    "url": "https://pouyanit.com/other-cms-downloads/"
+  },
+  {
+    "text": "وبلاگ",
+    "url": "https://pouyanit.com/blog/"
+  },
+  {
+    "text": "پویان آی تی",
+    "url": "https://pouyanit.com/"
+  },
+  {
+    "text": "آشنایی با پویان آی تی",
+    "url": "https://pouyanit.com/pouyanit-about-us/"
+  },
+  {
+    "text": "فرصت های شغلی",
+    "url": "https://pouyanit.com/pouyanit-employment/"
+  },
+  {
+    "text": "سرمایه گذاری",
+    "url": "https://pouyanit.com/pouyanit-investment/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://pouyanit.com/pouyanit-contact-us/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://pouyanit.com/pouyanit-faq/"
+  },
+  {
+    "text": "دریافت پیشنهادات کاربران جدید",
+    "url": "https://pouyanit.com/pouyanit-suggestions/"
+  },
+  {
+    "text": "ارسال شکایت",
+    "url": "https://pouyanit.com/client/submitticket.php?step=2&deptid=10"
+  },
+  {
+    "text": "اطلاعیه‌های پویان آی تی",
+    "url": "https://pouyanit.com/pouyanit-announcements/"
+  },
+  {
+    "text": "خبرنامه پویان آی تی",
+    "url": "https://pouyanit.com/blog/category/newsletter/"
+  },
+  {
+    "text": "پیشنهادهای ویژه",
+    "url": "https://pouyanit.com/pouyanit-offers/"
+  },
+  {
+    "text": "وضعیت سرورها",
+    "url": "https://pouyanit.com/pouyanit-server-status/"
+  },
+  {
+    "text": "قوانین و شرایط",
+    "url": "https://pouyanit.com/pouyanit-terms/"
+  },
+  {
+    "text": "حریم خصوصی",
+    "url": "https://pouyanit.com/pouyanit-privacy-policy/"
+  },
+  {
+    "text": "شماره حساب ها",
+    "url": "https://pouyanit.com/pouyanit-bank-accounts/"
+  },
+  {
+    "text": "277 277 38 081",
+    "url": "tel:08138277277"
+  },
+  {
+    "text": "صفحه اصلی",
+    "url": "https://pouyanit.com/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://pouyanit.com/virtual-server/"
+  },
+  {
+    "text": "مجازی ساز VMware",
+    "url": "https://pouyanit.com/virtual-iran/#vmware"
+  },
+  {
+    "text": "مجازی ساز KVM",
+    "url": "https://pouyanit.com/virtual-iran/#kvm"
+  },
+  {
+    "text": "قیمت مناسب‌تری سراغ دارید؟",
+    "url": "https://pouyanit.com/virtual-iran/"
+  },
+  {
+    "text": "سرور مجازی با منابع سفارشی",
+    "url": "https://pouyanit.com/virtual-custom/"
+  },
+  {
+    "text": "هارد اضافه (SSD NVMe)",
+    "url": "https://pouyanit.com/virtual-iran/#tab1"
+  },
+  {
+    "text": "آی پی اضافه",
+    "url": "https://pouyanit.com/virtual-iran/#tab2"
+  },
+  {
+    "text": "پردازنده اضافه",
+    "url": "https://pouyanit.com/virtual-iran/#tab3"
+  },
+  {
+    "text": "ترافیک ورودی اضافه",
+    "url": "https://pouyanit.com/virtual-iran/#addtraffic"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/vcenter/5-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/vcenter/4-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/vcenter/3-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/vcenter/2-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/vcenter/1-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/5-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/4-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/3-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/2-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/1-full.webp"
+  },
+  {
+    "text": "",
+    "url": "https://pouyanit.com/template/images/page/panel/virtualizor/6-full.webp"
+  },
+  {
+    "text": "ارسال درخواست",
+    "url": "https://pouyanit.com/virtual-iran/"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/pouyanit_com"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://www.linkedin.com/company/pouyanit/"
+  },
+  {
+    "text": "سرور اختصاصی ایران این سرور با سخت‌ افزار قدرتمند و منابع کاملا اختصاصی، در بین کاربران بسیار محبوب است. سرور اختصاصی ایران، دسترسی سریع و پایدار به داده‌ها را در داخل کشور فراهم می‌کند.",
+    "url": "https://pouyanit.com/dedicated-iran/"
+  },
+  {
+    "text": "لایسنس اشتراکی این سرویس امکان ثبت دامنه بلافاصله پس از منقضی شدن را فراهم می‌کند. این روش همچنین امنیت لازم برای مدیریت نرم‌ افزارهای سرور و کنترل پنل شما را فراهم می‌کند.",
+    "url": "https://pouyanit.com/other-lincese/"
+  },
+  {
+    "text": "میرور داکر پلتفرمی امن و پایدار برای عبور از تحریم‌های اعمال شده داکر، با استفاده از آی پی ثابت. این سرویس فرایند دریافت ایمیج‌ها را سریع‌تر می‌کند.",
+    "url": "https://pouyanit.com/cloud-saas-docker-mirror/"
+  },
+  {
+    "text": "هاست سی پنل ایران هاست سی پنل ایران با سخت افزار‌های به روز، سرعت بالا و قابلیت آنتی تحریم ارائه می‌شود. این سرویس مناسب مدیران وب سایت‌های ایرانی است، که به آپتایم بالا و پینگ کم نیاز دارند.",
+    "url": "https://pouyanit.com/webhosting-cpanel-iran-host/"
+  },
+  {
+    "text": "ارسال تیکت",
+    "url": "https://pouyanit.com/client/submitticket.php?step=2&deptid=2"
+  },
+  {
+    "text": "برای مشاهده سایر سوالات کلیک کنید .",
+    "url": "https://pouyanit.com/pouyanit-faq/"
+  },
+  {
+    "text": "سیاست حفظ حریم خصوصی",
+    "url": "https://pouyanit.com/pouyanit-privacy-policy/"
+  },
+  {
+    "text": "تماس تلفنی",
+    "url": "tel:08138277277"
+  },
+  {
+    "text": "ارسال تیکت",
+    "url": "https://pouyanit.com/client/submitticket.php?step=2&deptid=2"
+  },
+  {
+    "text": "",
+    "url": "https://trustseal.enamad.ir/?id=37143&Code=YIficzuVxgUQe2J3gj0MDdAErvLm4uHn"
+  },
+  {
+    "text": "",
+    "url": "https://whdir.ir/provider/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://trustseal.enamad.ir/?id=37143&Code=YIficzuVxgUQe2J3gj0MDdAErvLm4uHn"
+  },
+  {
+    "text": "",
+    "url": "https://whdir.ir/provider/pouyanit/"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://pouyanit.com/domain-registration/"
+  },
+  {
+    "text": "هاست",
+    "url": "https://pouyanit.com/webhosting/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://pouyanit.com/virtual-server/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://pouyanit.com/dedicated-server/"
+  },
+  {
+    "text": "لایسنس اشتراکی",
+    "url": "https://pouyanit.com/other-lincese/"
+  },
+  {
+    "text": "درباره پویان آی تی",
+    "url": "https://pouyanit.com/pouyanit-about-us/"
+  },
+  {
+    "text": "ورود به حساب کاربری",
+    "url": "https://pouyanit.com/client/clientarea.php"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://pouyanit.com/pouyanit-faq/"
+  },
+  {
+    "text": "قوانین و شرایط",
+    "url": "https://pouyanit.com/pouyanit-terms/"
+  },
+  {
+    "text": "حریم خصوصی",
+    "url": "https://pouyanit.com/pouyanit-privacy-policy/"
+  },
+  {
+    "text": "آبجکت استوریج ابری",
+    "url": "https://pouyanit.com/cloud-iaas-object-storage/"
+  },
+  {
+    "text": "خدمات توسعه و برنامه نویسی",
+    "url": "https://pouyanit.com/other-web-development/"
+  },
+  {
+    "text": "خدمات پشتیبانی ویژه",
+    "url": "https://pouyanit.com/other-vip-support/"
+  },
+  {
+    "text": "خدمات طراحی وب سایت",
+    "url": "https://pouyanit.com/other-web-design/"
+  },
+  {
+    "text": "هاست با منابع سفارشی",
+    "url": "https://pouyanit.com/webhosting-custom/"
+  },
+  {
+    "text": "277 277 38 081",
+    "url": "tel:08138277277"
+  },
+  {
+    "text": "info@pouyanit.com",
+    "url": "mailto:info@pouyanit.com"
+  },
+  {
+    "text": "pouyanit@",
+    "url": "https://t.me/pouyanit"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://pouyanit.com/domain-registration/"
+  },
+  {
+    "text": "هاست",
+    "url": "https://pouyanit.com/webhosting/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://pouyanit.com/virtual-server/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://pouyanit.com/dedicated-server/"
+  },
+  {
+    "text": "لایسنس اشتراکی",
+    "url": "https://pouyanit.com/other-lincese/"
+  },
+  {
+    "text": "درباره پویان آی تی",
+    "url": "https://pouyanit.com/pouyanit-about-us/"
+  },
+  {
+    "text": "ورود به حساب کاربری",
+    "url": "https://pouyanit.com/client/clientarea.php"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://pouyanit.com/pouyanit-faq/"
+  },
+  {
+    "text": "قوانین و شرایط",
+    "url": "https://pouyanit.com/pouyanit-terms/"
+  },
+  {
+    "text": "حریم خصوصی",
+    "url": "https://pouyanit.com/pouyanit-privacy-policy/"
+  },
+  {
+    "text": "آبجکت استوریج ابری",
+    "url": "https://pouyanit.com/cloud-iaas-object-storage/"
+  },
+  {
+    "text": "خدمات توسعه و برنامه نویسی",
+    "url": "https://pouyanit.com/other-web-development/"
+  },
+  {
+    "text": "خدمات پشتیبانی ویژه",
+    "url": "https://pouyanit.com/other-vip-support/"
+  },
+  {
+    "text": "خدمات طراحی وب سایت",
+    "url": "https://pouyanit.com/other-web-design/"
+  },
+  {
+    "text": "هاست با منابع سفارشی",
+    "url": "https://pouyanit.com/webhosting-custom/"
+  },
+  {
+    "text": "277 277 38 081",
+    "url": "tel:08138277277"
+  },
+  {
+    "text": "info@pouyanit.com",
+    "url": "mailto:info@pouyanit.com"
+  },
+  {
+    "text": "pouyanit@",
+    "url": "https://t.me/pouyanit"
+  },
+  {
+    "text": "",
+    "url": "https://medium.com/@pouyanit"
+  },
+  {
+    "text": "",
+    "url": "https://www.tumblr.com/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://www.behance.net/pouyanit"
+  },
+  {
+    "text": "",
+    "url": "https://www.youtube.com/@pouyanitco"
+  },
+  {
+    "text": "",
+    "url": "https://www.pinterest.com/pouyanIT/"
+  },
+  {
+    "text": "",
+    "url": "https://x.com/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://www.facebook.com/Pouyanit"
+  },
+  {
+    "text": "",
+    "url": "https://www.linkedin.com/company/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/pouyanit/"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/pouyanit_com"
+  },
+  {
+    "text": "",
+    "url": "https://github.com/pouyanit"
+  }
+]

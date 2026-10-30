@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی ایران Standard",
+  "url": "https://my.webdade.com/store/iran-vps",
+  "discovered_in": "65-webdade-links.json",
+  "source_key": "84-webdade",
+  "requested_url": "https://my.webdade.com/store/iran-vps",
+  "capture_time": "2026-10-29T19:16:43.410544+00:00",
+  "status": 200,
+  "final_url": "https://my.webdade.com/order.php?m=OneStepOrder&gid=iran-vps",
+  "sha256": "b33899efb7d67a64715d32227f06d6cc7711f181a188744c68b4f61ebbfe0c7d",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/84-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/84-webdade.txt",
+  "bytes": 613504,
+  "title": "خرید و راه اندازی سرویس جدید - وب داده"
+}

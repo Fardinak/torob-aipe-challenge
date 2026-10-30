@@ -1,0 +1,15 @@
+{
+  "provider": "milad",
+  "label": "سرور مجازی ایران",
+  "url": "https://www.miladserver.ir/cart.php?gid=1",
+  "source_key": "25-milad",
+  "requested_url": "https://www.miladserver.ir/cart.php?gid=1",
+  "capture_time": "2026-10-29T19:09:36.692378+00:00",
+  "status": 200,
+  "final_url": "https://www.miladserver.ir/store/pln-qtsdy",
+  "sha256": "31ae4881c99a5371a403d5e1a08853bd1452a1eb4d37b5b48521eb7a77fa3c6f",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/25-milad.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/25-milad.txt",
+  "bytes": 83070,
+  "title": "خرید پلن اقتصادی سرور مجازی ایران | لیست پلن‌ها و قیمت — میلاد سرور"
+}

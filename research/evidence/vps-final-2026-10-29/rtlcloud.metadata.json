@@ -1,0 +1,5 @@
+{
+  "requested_url": "https://rtlcloud.ir/",
+  "attempt_utc": "2026-10-29T09:49:46.474052+00:00",
+  "error": "URLError(gaierror(-5, 'No address associated with hostname'))"
+}

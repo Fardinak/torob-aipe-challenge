@@ -1,0 +1,798 @@
+[
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server"
+  },
+  {
+    "text": "سرور مجازی میکروتیک",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server"
+  },
+  {
+    "text": "مشاهده همه",
+    "url": "https://www.mizbandade.com/server"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p0"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host"
+  },
+  {
+    "text": "هاست ابری ایران",
+    "url": "https://www.mizbandade.com/ir-cloud"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir"
+  },
+  {
+    "text": "نمایندگی هاست ابری آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host"
+  },
+  {
+    "text": "مشاهده همه",
+    "url": "https://www.mizbandade.com/host"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/wordpress-hosting/ir-wp-1"
+  },
+  {
+    "text": "سایت ساز",
+    "url": "https://www.mizbandade.com/site-builder"
+  },
+  {
+    "text": "خدمات voip",
+    "url": "https://www.mizbandade.com/voip-service"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://www.mizbandade.com/collocation"
+  },
+  {
+    "text": "وبلاگ",
+    "url": "https://www.mizbandade.com/blog"
+  },
+  {
+    "text": "ورود به پنل",
+    "url": "https://crm.mizbandade.com/login"
+  },
+  {
+    "text": "02192039",
+    "url": "tel:02192039"
+  },
+  {
+    "text": "سرور",
+    "url": "https://www.mizbandade.com/server/"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server/"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server/"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server/"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server/"
+  },
+  {
+    "text": "سرور مجازی میکروتیک ایران",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server/"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server/"
+  },
+  {
+    "text": "هاست",
+    "url": "https://www.mizbandade.com/host/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host/"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host/"
+  },
+  {
+    "text": "هاست کلود ایران",
+    "url": "https://www.mizbandade.com/ir-cloud/"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir/"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host/"
+  },
+  {
+    "text": "نمایندگی هاست کلود آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host/"
+  },
+  {
+    "text": "سایت ساز",
+    "url": "https://www.mizbandade.com/site-builder/"
+  },
+  {
+    "text": "سایر خدمات",
+    "url": "https://www.mizbandade.com/ir-server/#"
+  },
+  {
+    "text": "خدمات ویپ",
+    "url": "https://www.mizbandade.com/voip-service/"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://www.mizbandade.com/collocation/"
+  },
+  {
+    "text": "بلاگ",
+    "url": "https://www.mizbandade.com/blog/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://www.mizbandade.com/contact-us-1/"
+  },
+  {
+    "text": "",
+    "url": "tel:07191010068"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com"
+  },
+  {
+    "text": "ورود به پنل",
+    "url": "https://crm.mizbandade.com/login"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com"
+  },
+  {
+    "text": "ورود به پنل",
+    "url": "https://crm.mizbandade.com/login"
+  },
+  {
+    "text": "",
+    "url": "tel:07191010068"
+  },
+  {
+    "text": "مشاهده پلن‌ها",
+    "url": "https://www.mizbandade.com/ir-server/#plan"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p0"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p1"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p2"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p3"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p4"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p5"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p6"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p7"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p8"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p9"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p10"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p11"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-p12"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-s1"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-s2"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-s3"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-s4"
+  },
+  {
+    "text": "خرید کنید",
+    "url": "https://crm.mizbandade.com/store/dcnew/md-10-s5"
+  },
+  {
+    "text": "در خواست مشاوره",
+    "url": "tel:07152624568"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com/cloud-server"
+  },
+  {
+    "text": "سرور ابری (ساعتی)",
+    "url": "https://www.mizbandade.com/cloud-server"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com/irans-dedicated-server"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://www.mizbandade.com/irans-dedicated-server"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com/international-server"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://www.mizbandade.com/irans-dedicated-server"
+  },
+  {
+    "text": "Mikrotik RouterOS",
+    "url": "https://mikrotik.com/"
+  },
+  {
+    "text": "ارسال تیکت",
+    "url": "https://crm.mizbandade.com/submitticket.php"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server/"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server/"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server/"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server/"
+  },
+  {
+    "text": "سرور مجازی میکروتیک ایران",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server/"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server/"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server/"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server/"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server/"
+  },
+  {
+    "text": "سرور مجازی میکروتیک ایران",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host/"
+  },
+  {
+    "text": "هاست کلود ایران",
+    "url": "https://www.mizbandade.com/ir-cloud/"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host/"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir/"
+  },
+  {
+    "text": "نمایندگی هاست کلود آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud/"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host/"
+  },
+  {
+    "text": "هاست کلود ایران",
+    "url": "https://www.mizbandade.com/ir-cloud/"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host/"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir/"
+  },
+  {
+    "text": "نمایندگی هاست کلود آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud/"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "خدمات ویپ",
+    "url": "https://www.mizbandade.com/voip-service/"
+  },
+  {
+    "text": "سایت ساز",
+    "url": "https://www.mizbandade.com/site-builder/"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://www.mizbandade.com/collocation/"
+  },
+  {
+    "text": "خدمات ویپ",
+    "url": "https://www.mizbandade.com/voip-service/"
+  },
+  {
+    "text": "سایت ساز",
+    "url": "https://www.mizbandade.com/site-builder/"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://www.mizbandade.com/collocation/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://www.mizbandade.com/about-us/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://www.mizbandade.com/contact-us-1/"
+  },
+  {
+    "text": "بلاگ",
+    "url": "https://www.mizbandade.com/blog/"
+  },
+  {
+    "text": "فرصت شغلی",
+    "url": "https://www.mizbandade.com/job-opportunity/"
+  },
+  {
+    "text": "سخن مدیر",
+    "url": "https://www.mizbandade.com/ceo-speech/"
+  },
+  {
+    "text": "شرکای تجاری",
+    "url": "https://www.mizbandade.com/business-partners/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://www.mizbandade.com/about-us/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://www.mizbandade.com/contact-us-1/"
+  },
+  {
+    "text": "بلاگ",
+    "url": "https://www.mizbandade.com/blog/"
+  },
+  {
+    "text": "فرصت شغلی",
+    "url": "https://www.mizbandade.com/job-opportunity/"
+  },
+  {
+    "text": "سخن مدیر",
+    "url": "https://www.mizbandade.com/ceo-speech/"
+  },
+  {
+    "text": "شرکای تجاری",
+    "url": "https://www.mizbandade.com/business-partners/"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server/"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server/"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server/"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server/"
+  },
+  {
+    "text": "سرور مجازی میکروتیک ایران",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server/"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://www.mizbandade.com/ir-server/"
+  },
+  {
+    "text": "سرور مجازی شیراز",
+    "url": "https://www.mizbandade.com/shiraz-server/"
+  },
+  {
+    "text": "سرور مجازی خارج",
+    "url": "https://www.mizbandade.com/international-server/"
+  },
+  {
+    "text": "سرور ابری",
+    "url": "https://www.mizbandade.com/cloud-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://www.mizbandade.com/irans-dedicated-server/"
+  },
+  {
+    "text": "سرور مجازی میکروتیک ایران",
+    "url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/"
+  },
+  {
+    "text": "سرور بورس",
+    "url": "https://www.mizbandade.com/exchange-server/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host/"
+  },
+  {
+    "text": "هاست کلود ایران",
+    "url": "https://www.mizbandade.com/ir-cloud/"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host/"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir/"
+  },
+  {
+    "text": "نمایندگی هاست کلود آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud/"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host/"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://www.mizbandade.com/wp-host/"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://www.mizbandade.com/download-host/"
+  },
+  {
+    "text": "هاست کلود ایران",
+    "url": "https://www.mizbandade.com/ir-cloud/"
+  },
+  {
+    "text": "هاست اختصاصی",
+    "url": "https://www.mizbandade.com/dedicated-host/"
+  },
+  {
+    "text": "نمایندگی هاست ایران",
+    "url": "https://www.mizbandade.com/h-representations-ir/"
+  },
+  {
+    "text": "نمایندگی هاست کلود آلمان",
+    "url": "https://www.mizbandade.com/r-gr-cloud/"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://www.mizbandade.com/iranian-linux-host/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://www.mizbandade.com/faq/"
+  },
+  {
+    "text": "رادار میزبان داده",
+    "url": "https://radar.mizbandade.com/"
+  },
+  {
+    "text": "آپ تایم سرویس",
+    "url": "https://uptime.mizbandade.com/status/uptime"
+  },
+  {
+    "text": "قوانین و مقررات",
+    "url": "https://www.mizbandade.com/terms-of-service/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://www.mizbandade.com/about-us/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://www.mizbandade.com/contact-us-1/"
+  },
+  {
+    "text": "بلاگ",
+    "url": "https://www.mizbandade.com/blog/"
+  },
+  {
+    "text": "فرصت شغلی",
+    "url": "https://www.mizbandade.com/job-opportunity/"
+  },
+  {
+    "text": "سخن مدیر",
+    "url": "https://www.mizbandade.com/ceo-speech/"
+  },
+  {
+    "text": "شرکای تجاری",
+    "url": "https://www.mizbandade.com/business-partners/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://www.mizbandade.com/about-us/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://www.mizbandade.com/contact-us-1/"
+  },
+  {
+    "text": "بلاگ",
+    "url": "https://www.mizbandade.com/blog/"
+  },
+  {
+    "text": "فرصت شغلی",
+    "url": "https://www.mizbandade.com/job-opportunity/"
+  },
+  {
+    "text": "سخن مدیر",
+    "url": "https://www.mizbandade.com/ceo-speech/"
+  },
+  {
+    "text": "شرکای تجاری",
+    "url": "https://www.mizbandade.com/business-partners/"
+  },
+  {
+    "text": "",
+    "url": "https://www.mizbandade.com"
+  },
+  {
+    "text": "07191010068",
+    "url": "tel:07191010068"
+  },
+  {
+    "text": "Whatsapp",
+    "url": "https://api.whatsapp.com/send?phone=989931480483"
+  },
+  {
+    "text": "Telegram",
+    "url": "https://t.me/mizban_dade_pardis"
+  },
+  {
+    "text": "Instagram",
+    "url": "https://www.instagram.com/mdp.co.ir/"
+  },
+  {
+    "text": "info@mizbandade.com",
+    "url": "mailto:info@mizbandade.com"
+  },
+  {
+    "text": "نمادها",
+    "url": "https://www.mizbandade.com/namad"
+  }
+]

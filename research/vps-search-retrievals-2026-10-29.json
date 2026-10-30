@@ -7,7 +7,8 @@
     "bytes": 192773,
     "saved_at": "2026-10-29T02:20:38.893360+00:00",
     "snapshot": "research/evidence/iranica-breadth-2026-10-29.html",
-    "sha256": "22574c1d88c5e977cf05b48a3712a848f9f0e04498113f90b1a8bad1085d18bf"
+    "sha256": "22574c1d88c5e977cf05b48a3712a848f9f0e04498113f90b1a8bad1085d18bf",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "tadserver",
@@ -17,7 +18,8 @@
     "bytes": 231901,
     "saved_at": "2026-10-29T02:20:34.432731+00:00",
     "snapshot": "research/evidence/tadserver-breadth-2026-10-29.html",
-    "sha256": "41c462d17a284451706e0c51664451ae2e079dd07c5e839038182ac863975b96"
+    "sha256": "41c462d17a284451706e0c51664451ae2e079dd07c5e839038182ac863975b96",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "artin",
@@ -27,7 +29,8 @@
     "bytes": 93444,
     "saved_at": "2026-10-29T02:20:36.362564+00:00",
     "snapshot": "research/evidence/artin-breadth-2026-10-29.html",
-    "sha256": "1265b2355468237c7060045772800765efdc19148145b81a1b1ed086c85670cb"
+    "sha256": "1265b2355468237c7060045772800765efdc19148145b81a1b1ed086c85670cb",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "irvm",
@@ -37,7 +40,8 @@
     "bytes": 439767,
     "saved_at": "2026-10-29T02:20:41.869842+00:00",
     "snapshot": "research/evidence/irvm-breadth-2026-10-29.html",
-    "sha256": "8afbe0c3777674f72758387bf5133bb4d65da3fdab7170e224b526e631fbd507"
+    "sha256": "8afbe0c3777674f72758387bf5133bb4d65da3fdab7170e224b526e631fbd507",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "webdade",
@@ -47,7 +51,8 @@
     "bytes": 721000,
     "saved_at": "2026-10-29T02:20:42.134817+00:00",
     "snapshot": "research/evidence/webdade-breadth-2026-10-29.html",
-    "sha256": "df20b136342a5116a19e289cf4d0f918039df2b58c3eda1be2a44ebf698d12ee"
+    "sha256": "df20b136342a5116a19e289cf4d0f918039df2b58c3eda1be2a44ebf698d12ee",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "mehranhost",
@@ -57,7 +62,8 @@
     "bytes": 194281,
     "saved_at": "2026-10-29T02:20:40.716763+00:00",
     "snapshot": "research/evidence/mehranhost-breadth-2026-10-29.html",
-    "sha256": "02e865e4be21764c59c6bfa0d59cabb6a3f8d7b78522cc4a2191e476b2a0ad34"
+    "sha256": "02e865e4be21764c59c6bfa0d59cabb6a3f8d7b78522cc4a2191e476b2a0ad34",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "iranhost",
@@ -67,7 +73,8 @@
     "bytes": 249888,
     "saved_at": "2026-10-29T02:20:35.084260+00:00",
     "snapshot": "research/evidence/iranhost-breadth-2026-10-29.html",
-    "sha256": "f866e1d1911e8708635263218ce9f44185fc870de9fa22b09187671a0d4991c4"
+    "sha256": "f866e1d1911e8708635263218ce9f44185fc870de9fa22b09187671a0d4991c4",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "parspack",
@@ -77,7 +84,8 @@
     "bytes": 787934,
     "saved_at": "2026-10-29T02:20:34.355507+00:00",
     "snapshot": "research/evidence/parspack-breadth-2026-10-29.html",
-    "sha256": "e93116dab09be7f463f537de82a5fb30ef3f8a65bb2bcf480fd398484bc491bd"
+    "sha256": "e93116dab09be7f463f537de82a5fb30ef3f8a65bb2bcf480fd398484bc491bd",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "arvan",
@@ -87,12 +95,14 @@
     "bytes": 6141,
     "saved_at": "2026-10-29T02:20:34.463031+00:00",
     "snapshot": "research/evidence/arvan-breadth-2026-10-29.html",
-    "sha256": "94296691bab75d7551f428e8c2b19c878878e95422f44845852410100d5a7915"
+    "sha256": "94296691bab75d7551f428e8c2b19c878878e95422f44845852410100d5a7915",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver",
     "url": "https://onlineserver.ir/vps/",
-    "error": "HTTP Error 404: Not Found"
+    "error": "HTTP Error 404: Not Found",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "bertina",
@@ -102,22 +112,26 @@
     "bytes": 487676,
     "saved_at": "2026-10-29T02:20:35.060181+00:00",
     "snapshot": "research/evidence/bertina-breadth-2026-10-29.html",
-    "sha256": "093a8f4b654618bb48becf6eb40bc7cfdf673c9cb3c4d701ef839c03024a9b61"
+    "sha256": "093a8f4b654618bb48becf6eb40bc7cfdf673c9cb3c4d701ef839c03024a9b61",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hostiran",
     "url": "https://hostiran.net/virtual-server",
-    "error": "HTTP Error 404: Not Found"
+    "error": "HTTP Error 404: Not Found",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "parsdev",
     "url": "https://parsdev.com/iran-vps",
-    "error": "HTTP Error 404: Not Found"
+    "error": "HTTP Error 404: Not Found",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "mihanwebhost",
     "url": "https://mihanwebhost.com/vps.php",
-    "error": "HTTP Error 404: Not Found"
+    "error": "HTTP Error 404: Not Found",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "inet",
@@ -127,7 +141,8 @@
     "bytes": 36544,
     "saved_at": "2026-10-29T02:20:35.538075+00:00",
     "snapshot": "research/evidence/inet-breadth-2026-10-29.html",
-    "sha256": "cbb92fda21a8adb30b0fb0720c541d1966bba58953182ea0d89a09a1bcfee2b5"
+    "sha256": "cbb92fda21a8adb30b0fb0720c541d1966bba58953182ea0d89a09a1bcfee2b5",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hakan",
@@ -137,7 +152,8 @@
     "bytes": 175944,
     "saved_at": "2026-10-29T02:20:47.755187+00:00",
     "snapshot": "research/evidence/hakan-breadth-2026-10-29.html",
-    "sha256": "434bba87cba6a691e557d40d01f74c504087e6d7a438798d00c6c22e24edd2f3"
+    "sha256": "434bba87cba6a691e557d40d01f74c504087e6d7a438798d00c6c22e24edd2f3",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "irvm-pricing",
@@ -147,7 +163,8 @@
     "bytes": 496822,
     "saved_at": "2026-10-29T02:23:19.724551+00:00",
     "snapshot": "research/evidence/irvm-pricing-breadth-2026-10-29.html",
-    "sha256": "f1c00087767536f8176fde5a4236c707fd798d9348685a5939ea887e53757ce2"
+    "sha256": "f1c00087767536f8176fde5a4236c707fd798d9348685a5939ea887e53757ce2",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "bertina-iran",
@@ -157,7 +174,8 @@
     "bytes": 380269,
     "saved_at": "2026-10-29T02:23:13.310969+00:00",
     "snapshot": "research/evidence/bertina-iran-breadth-2026-10-29.html",
-    "sha256": "f84dc726aba31e4dc37d86637b0d01e2275cf71efbf09a907c335d929ee1b70a"
+    "sha256": "f84dc726aba31e4dc37d86637b0d01e2275cf71efbf09a907c335d929ee1b70a",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver-home",
@@ -167,7 +185,8 @@
     "bytes": 415968,
     "saved_at": "2026-10-29T02:23:14.124049+00:00",
     "snapshot": "research/evidence/onlineserver-home-breadth-2026-10-29.html",
-    "sha256": "294fda58b0245d07eddfb5b4773fb7607533d6570de20ad7a9352345eba8bff5"
+    "sha256": "294fda58b0245d07eddfb5b4773fb7607533d6570de20ad7a9352345eba8bff5",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hostiran-home",
@@ -177,7 +196,8 @@
     "bytes": 1037029,
     "saved_at": "2026-10-29T02:23:13.966080+00:00",
     "snapshot": "research/evidence/hostiran-home-breadth-2026-10-29.html",
-    "sha256": "d1c3523f7975ea6fbe8a201d8da351c8b32e53aaa919995515914c572e96edda"
+    "sha256": "d1c3523f7975ea6fbe8a201d8da351c8b32e53aaa919995515914c572e96edda",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "parsdev-home",
@@ -187,7 +207,8 @@
     "bytes": 156895,
     "saved_at": "2026-10-29T02:23:13.426249+00:00",
     "snapshot": "research/evidence/parsdev-home-breadth-2026-10-29.html",
-    "sha256": "a16e252c8a11963e6c6da9d1606261fdf1c8e2a9811c4f5e5d8e99b9f08db22a"
+    "sha256": "a16e252c8a11963e6c6da9d1606261fdf1c8e2a9811c4f5e5d8e99b9f08db22a",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "mihanwebhost-home",
@@ -197,7 +218,8 @@
     "bytes": 232569,
     "saved_at": "2026-10-29T02:23:13.570757+00:00",
     "snapshot": "research/evidence/mihanwebhost-home-breadth-2026-10-29.html",
-    "sha256": "4537be47b2d0434cf490bccd384e05de97ab9c3ed3553fdce64abdf2c1854c0c"
+    "sha256": "4537be47b2d0434cf490bccd384e05de97ab9c3ed3553fdce64abdf2c1854c0c",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver-iran",
@@ -207,7 +229,8 @@
     "bytes": 255076,
     "saved_at": "2026-10-29T02:24:32.618874+00:00",
     "snapshot": "research/evidence/onlineserver-iran-breadth-2026-10-29.html",
-    "sha256": "cf055cf8bd5ea5b0cb13c48314249f2af9c2d2095ba324b46726f86b20637780"
+    "sha256": "cf055cf8bd5ea5b0cb13c48314249f2af9c2d2095ba324b46726f86b20637780",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hostiran-cloud",
@@ -217,7 +240,8 @@
     "bytes": 1188242,
     "saved_at": "2026-10-29T02:24:26.554988+00:00",
     "snapshot": "research/evidence/hostiran-cloud-breadth-2026-10-29.html",
-    "sha256": "17bd896f9547abe5dc9408efc2357fd821a304675d10a67be1600e66cf9555cc"
+    "sha256": "17bd896f9547abe5dc9408efc2357fd821a304675d10a67be1600e66cf9555cc",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hostiran-vps",
@@ -227,7 +251,8 @@
     "bytes": 1163833,
     "saved_at": "2026-10-29T02:24:26.823459+00:00",
     "snapshot": "research/evidence/hostiran-vps-breadth-2026-10-29.html",
-    "sha256": "93b1cdb7873cc4ca08b5e7333c5a369deb120dd4b88b56b3cec4ea37ee631ea6"
+    "sha256": "93b1cdb7873cc4ca08b5e7333c5a369deb120dd4b88b56b3cec4ea37ee631ea6",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "mihanwebhost-iran",
@@ -237,7 +262,8 @@
     "bytes": 194547,
     "saved_at": "2026-10-29T02:24:26.901957+00:00",
     "snapshot": "research/evidence/mihanwebhost-iran-breadth-2026-10-29.html",
-    "sha256": "313fca7921ea6abf940c827b59e15cce5c2e19bc448de2648f4ee6580ab0e268"
+    "sha256": "313fca7921ea6abf940c827b59e15cce5c2e19bc448de2648f4ee6580ab0e268",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "parsdev-vps",
@@ -247,7 +273,8 @@
     "bytes": 207668,
     "saved_at": "2026-10-29T02:25:52.910670+00:00",
     "snapshot": "research/evidence/parsdev-vps-breadth-2026-10-29.html",
-    "sha256": "aad4c42e60857a8ddef55d01858b369197b8af9c63fa7c4d0190dc7c2cc62fbe"
+    "sha256": "aad4c42e60857a8ddef55d01858b369197b8af9c63fa7c4d0190dc7c2cc62fbe",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver-ssd",
@@ -257,7 +284,8 @@
     "bytes": 251706,
     "saved_at": "2026-10-29T02:27:33.457275+00:00",
     "snapshot": "research/evidence/onlineserver-ssd-breadth-2026-10-29.html",
-    "sha256": "90dd70b3848c52b63e03c686ac2abdbe5d86906b9e4a94ba430444817c16626f"
+    "sha256": "90dd70b3848c52b63e03c686ac2abdbe5d86906b9e4a94ba430444817c16626f",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver-legendary",
@@ -267,7 +295,8 @@
     "bytes": 253623,
     "saved_at": "2026-10-29T02:27:33.477496+00:00",
     "snapshot": "research/evidence/onlineserver-legendary-breadth-2026-10-29.html",
-    "sha256": "7a65281ea639e089f7256d271723c25a109ff136f183f384aa1c55aa713ee2f2"
+    "sha256": "7a65281ea639e089f7256d271723c25a109ff136f183f384aa1c55aa713ee2f2",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "onlineserver-managed",
@@ -277,7 +306,8 @@
     "bytes": 246188,
     "saved_at": "2026-10-29T02:27:33.373283+00:00",
     "snapshot": "research/evidence/onlineserver-managed-breadth-2026-10-29.html",
-    "sha256": "d264d82d79f95f476e68aaccebf02a622ada6991e0cc34ff06f8995c4b3a4046"
+    "sha256": "d264d82d79f95f476e68aaccebf02a622ada6991e0cc34ff06f8995c4b3a4046",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "hidata",
@@ -287,7 +317,8 @@
     "bytes": 533692,
     "saved_at": "2026-10-29T02:32:33.733527+00:00",
     "snapshot": "research/evidence/hidata-breadth-2026-10-29.html",
-    "sha256": "3142a4b4317e3f39285a971041327d1f108b115a9c86c79ba65c3b553d661189"
+    "sha256": "3142a4b4317e3f39285a971041327d1f108b115a9c86c79ba65c3b553d661189",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "shetaban",
@@ -297,12 +328,14 @@
     "bytes": 74653,
     "saved_at": "2026-10-29T02:32:33.050299+00:00",
     "snapshot": "research/evidence/shetaban-breadth-2026-10-29.html",
-    "sha256": "6b7bdfacdee7b6d6758615bf79e5bcbdeca3a755a5e2846a5204f2301b862907"
+    "sha256": "6b7bdfacdee7b6d6758615bf79e5bcbdeca3a755a5e2846a5204f2301b862907",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "itpiran",
     "url": "https://www.client.itpiran.net/store/iran-vps?language=english",
-    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.client.itpiran.net'. (_ssl.c:1082)>"
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.client.itpiran.net'. (_ssl.c:1082)>",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "seedcloud",
@@ -312,7 +345,8 @@
     "bytes": 105490,
     "saved_at": "2026-10-29T02:32:39.784021+00:00",
     "snapshot": "research/evidence/seedcloud-breadth-2026-10-29.html",
-    "sha256": "c651cc0fe1b4733280d2f8b94318629ada5b55ed1214a5ddfb040d7cdbba3ff4"
+    "sha256": "c651cc0fe1b4733280d2f8b94318629ada5b55ed1214a5ddfb040d7cdbba3ff4",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "itpiran-valid-host",
@@ -322,7 +356,8 @@
     "bytes": 206160,
     "saved_at": "2026-10-29T09:46:30.062547+00:00",
     "snapshot": "research/evidence/itpiran-valid-host-breadth-2026-10-29.html",
-    "sha256": "1f6fd324ae1b7d101fadfdeafd84edbd6239068338ad4b51dc0279e2008c387e"
+    "sha256": "1f6fd324ae1b7d101fadfdeafd84edbd6239068338ad4b51dc0279e2008c387e",
+    "attempted_on": "2026-10-29"
   },
   {
     "provider": "seedcloud-iran",
@@ -332,6 +367,162 @@
     "bytes": 93341,
     "saved_at": "2026-10-29T09:47:50.878854+00:00",
     "snapshot": "research/evidence/seedcloud-iran-breadth-2026-10-29.html",
-    "sha256": "a8f53463bd3e6add203d1fe0f213ac2a274a78b5a7c9f988bf8139d85a366df9"
+    "sha256": "a8f53463bd3e6add203d1fe0f213ac2a274a78b5a7c9f988bf8139d85a366df9",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "abrasim-retry",
+    "url": "https://abrasim.ir/vps",
+    "error": "HTTP Error 522: <none>",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "sky-cloud",
+    "url": "https://sky-cloud.eu/price",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mizban-iran-group-0",
+    "url": "https://crm.mizbandade.com/store/dcnew",
+    "final_url": "https://crm.mizbandade.com/login",
+    "status": 200,
+    "bytes": 47445,
+    "saved_at": "2026-10-29T19:02:42.671182+00:00",
+    "snapshot": "research/evidence/mizban-iran-group-0-breadth-2026-10-29.html",
+    "sha256": "35e6da0a9d2f700263e948d66a78d8387ad4a0c9dd0824d70d51813f82f58ac3",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mizban-iran-group-1",
+    "url": "https://crm.mizbandade.com/store/wordpress-hosting",
+    "final_url": "https://crm.mizbandade.com/login",
+    "status": 200,
+    "bytes": 47445,
+    "saved_at": "2026-10-29T19:02:42.600917+00:00",
+    "snapshot": "research/evidence/mizban-iran-group-1-breadth-2026-10-29.html",
+    "sha256": "fb814724549c62a631b5dfc9130514a6def5cf6021a54fc920cc5618c295c29e",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mizban-shiraz-group-2",
+    "url": "https://crm.mizbandade.com/store/iran-virtual-server-hafez",
+    "final_url": "https://crm.mizbandade.com/login",
+    "status": 200,
+    "bytes": 47445,
+    "saved_at": "2026-10-29T19:02:42.603469+00:00",
+    "snapshot": "research/evidence/mizban-shiraz-group-2-breadth-2026-10-29.html",
+    "sha256": "c457643aa048b098d0135252a6082f5a52741cd3646937f10d30ad7949c2a682",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-12-group-3",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fvps-iran-shatel-10gb",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb",
+    "status": 200,
+    "bytes": 69113,
+    "saved_at": "2026-10-29T19:02:42.307327+00:00",
+    "snapshot": "research/evidence/mt-12-group-3-breadth-2026-10-29.html",
+    "sha256": "119a3f9f148a1a189863d448210e9a78d8293a4510e8fcb3829c18c72e293ba3",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-12-group-4",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fvps-iran-asia-10gb",
+    "final_url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fvps-iran-asia-10gb",
+    "status": 200,
+    "bytes": 69184,
+    "saved_at": "2026-10-29T19:02:41.798377+00:00",
+    "snapshot": "research/evidence/mt-12-group-4-breadth-2026-10-29.html",
+    "sha256": "010846d04aa9d1749f345ef070df459ae707131c71eb273336627e74e64fdedb",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-15-group-5",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Ffanava",
+    "final_url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Ffanava",
+    "status": 200,
+    "bytes": 68171,
+    "saved_at": "2026-10-29T19:02:41.834733+00:00",
+    "snapshot": "research/evidence/mt-15-group-5-breadth-2026-10-29.html",
+    "sha256": "538f38ddd80c3373b6734a3f4dec447120e4dffc8bf7ce49e00d9f586d6f7915",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-16-group-6",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Frespina",
+    "final_url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Frespina",
+    "status": 200,
+    "bytes": 68817,
+    "saved_at": "2026-10-29T19:02:41.873428+00:00",
+    "snapshot": "research/evidence/mt-16-group-6-breadth-2026-10-29.html",
+    "sha256": "8967aff2ad44fe60af03378c8365c58f3dd8f10d999a99e7264bfa9edb20e6ac",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-18-group-7",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fsrwr-mjzy-gym-yrn-ssd-pro",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/vps-game",
+    "status": 200,
+    "bytes": 78534,
+    "saved_at": "2026-10-29T19:02:42.428351+00:00",
+    "snapshot": "research/evidence/mt-18-group-7-breadth-2026-10-29.html",
+    "sha256": "b2448334eb3190c4794b6663a84cb0a21a04e72c89c3dc922dfb779f5c7d1115",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-19-group-8",
+    "url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fserver-nvme-iran",
+    "final_url": "https://my.mtserver.ir/index.php?rp=%2Fstore%2Fserver-nvme-iran",
+    "status": 200,
+    "bytes": 68173,
+    "saved_at": "2026-10-29T19:02:42.490448+00:00",
+    "snapshot": "research/evidence/mt-19-group-8-breadth-2026-10-29.html",
+    "sha256": "7ab0fccb75418c2479ff5d9a88dac347b64d77c14161d7b635300b69e9901da5",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-mobin-store",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone-ir",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/mobinone-ir",
+    "status": 200,
+    "bytes": 68101,
+    "saved_at": "2026-10-29T19:05:05.747843+00:00",
+    "snapshot": "research/evidence/mt-mobin-store-breadth-2026-10-29.html",
+    "sha256": "5b1ee6b15ae14d9e6d24c97f361ff3723774926f7bf19df52528b5901edb5bd2",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-rightel-store",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/rightel",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/rightel",
+    "status": 200,
+    "bytes": 69020,
+    "saved_at": "2026-10-29T19:05:05.766926+00:00",
+    "snapshot": "research/evidence/mt-rightel-store-breadth-2026-10-29.html",
+    "sha256": "c2d62706330ba89166ace3fdceaef7369a5e8367e0294a37c910823edb902520",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-shatel-store",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/shatel",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/shatel",
+    "status": 200,
+    "bytes": 69008,
+    "saved_at": "2026-10-29T19:05:05.692412+00:00",
+    "snapshot": "research/evidence/mt-shatel-store-breadth-2026-10-29.html",
+    "sha256": "bb1aeb198605b79c97414ba0d0a828f42bfb3437d3994a5b5103e6daf0402e7f",
+    "attempted_on": "2026-10-29"
+  },
+  {
+    "provider": "mt-unlimited-store",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/unlimeted-traffic",
+    "final_url": "https://my.mtserver.ir/index.php?rp=/store/unlimeted-traffic",
+    "status": 200,
+    "bytes": 63753,
+    "saved_at": "2026-10-29T19:05:05.697830+00:00",
+    "snapshot": "research/evidence/mt-unlimited-store-breadth-2026-10-29.html",
+    "sha256": "8fd5611b47c2752d93652051969095566b4bdd82fd442a5d6812d3238ca29911",
+    "attempted_on": "2026-10-29"
   }
 ]

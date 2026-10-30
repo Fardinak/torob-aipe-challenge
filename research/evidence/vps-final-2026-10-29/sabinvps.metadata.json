@@ -1,0 +1,24 @@
+{
+  "requested_url": "https://sabinserver.com/iran-vps/",
+  "attempt_utc": "2026-10-29T09:52:31.309002+00:00",
+  "final_url": "https://sabinserver.com/iran-vps/",
+  "status": 404,
+  "headers": {
+    "Connection": "close",
+    "X-DNS-Prefetch-Control": "on",
+    "Expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "Cache-Control": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Link": "<https://sabinserver.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "X-LiteSpeed-Cache-Control": "public,max-age=3600",
+    "X-LiteSpeed-Tag": "b02_HTTP.404,b02_404,b02_URL.d103499eda70778c15a96b30a95802ba,b02_,b02_MIN.5bf539025a83db5ce58d160df6a0e754.css,b02_MIN.c8599327084d96c082e5e0138a1656e6.js",
+    "X-Litespeed-Cache": "miss",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 09:52:25 GMT",
+    "Vary": "User-Agent",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 279101,
+  "sha256": "445f7d34ed3450f0d98f9b646f70004d1907db2075d583b6f0bf119f60250189",
+  "saved_utc": "2026-10-29T09:52:32.140306+00:00"
+}

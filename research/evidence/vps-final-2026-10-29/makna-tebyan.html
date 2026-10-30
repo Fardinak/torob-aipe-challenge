@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>کارت خرید - مکنانت</title>
+    <!-- Styling -->
+<link href="/templates/Simurgh/css/style.rtl1.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/style.rtl3.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/style.rtl4.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/style.rtl5.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/style.rtl6.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/style.rtl2.css?v=e49655" rel="stylesheet">
+<link href="/templates/Simurgh/css/font-awesome.min.css?v=e49655" rel="stylesheet">
+
+<script>
+    var csrfToken = '491ad2532ea75711e6f97020fb254fdc70c8d5e4',
+        markdownGuide = 'راهنمای Markdown',
+        locale = 'en',
+        saved = 'ذخیره شد',
+        saving = 'ذخیره اتوماتیک',
+        whmcsBaseUrl = "";
+    </script>
+
+<script src="/templates/Simurgh/js/scripts.min.js?v=e49655"></script>
+<script src="/templates/Simurgh/js/menu.js?v=e49655"></script>
+
+    
+
+
+
+<link rel="icon" href="/templates/Simurgh/whmcsco/img/favicon.png" type="image/png" sizes="16x16">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="/templates/Simurgh/whmcsco/img/favicon.png">
+
+    <!--title-->
+    <title>مکنانت - سرورهای اختصاصی،مجازی،ابری و اشتراک فضا</title>
+
+
+
+
+
+
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css" />
+
+</head>
+
+<body class="primary-bg-color app sidebar-mini" data-phone-cc-input="1">
+        
+    
+        <!-- Sidebar menu-->
+        <aside class="nabsbar">
+            <div class="sidebar-img active">
+                <ul class="nab-menu">
+                                            <ul class="nab-menu">
+   <li class="nabs">
+      <a class="nab-menu__item" href="/clientarea.php"> <i class="fa fa-home"></i> <span
+            class="nab-menu__label">صفحه نخست</span></a>
+   </li>
+   <li class="nabs">
+      <a class="nab-menu__item affili" href="/cart.php"> <i class="fas fa-shopping-cart"></i> <span
+            class="nab-menu__label">ثبت سفارش جدید</span></a>
+   </li>
+   <li class="nabs">
+      <a href="#" class="nab-menu__item" data-toggle="nabs"> <i class="fa fa-globe"></i> </i><span
+            class="nab-menu__label">دامنه ها </span><i class="angle fa fa-angle-left"></i></a>
+      <ul class="nabs-menu">
+                                 </ul>
+   </li>
+   <li class="nabs">
+      <a class="nab-menu__item" href="/submitticket.php"> <i class="fa fa-comment"></i> <span
+            class="nab-menu__label">ارسال تیکت</span></a>
+   </li>
+
+   <li class="nabs">
+      <a class="nab-menu__item" href="/downloads.php"> <i class="fa fa-download"></i> <span
+            class="nab-menu__label">مرکز دانلود</span></a>
+   </li>
+   <li class="nabs">
+      <a class="nab-menu__item" href="/announcements.php"> <i class="fa fa-rss"></i> <span
+            class="nab-menu__label">اخبار و اطلاعیه ها</span></a>
+   </li>
+
+   <li class="nabs"><a class="nab-menu__item" href="/knowledgebase.php"> <i class="fa fa-life-ring"
+            aria-hidden="true"></i><span class="nab-menu__label">مرکز آموزش</span></a></li>
+
+</ul>                                    </ul>
+            </div>
+        </aside>
+        <!-- Sidebar menu-->
+
+        <div class="app-content ">
+
+            <header id="header" class="header">
+                <div class="navbar navbar-light">
+                    <div class="container">
+                        
+                        <a class="navbar-brand active" href="/index.html">
+<img alt="مکنانت" class="navbar-brand-img main-logo" src="/templates/Simurgh/whmcsco/img/logol.png">                
+                        </a>
+                        
+                        <form method="post" action="/knowledgebase/search" class="form-inline">
+<input type="hidden" name="token" value="491ad2532ea75711e6f97020fb254fdc70c8d5e4" />
+                            <div class="input-group search d-none d-xl-flex">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <input class="form-control appended-form-control font-weight-light" type="text"
+                                    name="search" placeholder="جستجو در مرکز آموزش ...">
+                            </div>
+                        </form>
+
+                        <ul class="navbar-nav toolbar form-inline ml-auto">
+                            
+               <li class="nav-item ml-1">
+                              <a class="btn nav-link" href="/cart.php?a=view">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>             
+                            
+                            
+                            
+
+                                                                                                                        <button id="notifications" class="btn nav-link" data-toggle="modal" data-target="#myModal">
+                                    <i class="far fa-flag"></i>
+                                    <span class="client-top-access-item-count">
+                                                                                    <span class="d-sm-none">0</span>
+                                                                            </span>
+                                </button>
+
+
+
+
+
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <li>
+                                                    
+                                                        </a>
+                                                        <div class="alert alert-info margin-5 padding-5 text-center"> هیچ پیامی وجود
+                                                            ندارد </div><br>
+                                                                                                    </li>
+                                                <button type="button" class="btn btn-danger btn-sm light float-right"
+                                                    data-dismiss="modal">بستن</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                        </ul>
+
+                       
+                      <div class="client-menu-container">
+                            <div class="client-menu">
+                                    <li menuItemName="Account"
+        class=" no-collapse dropdown no-collapse"
+        id="Secondary_Navbar-Account">
+        <a class="" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" href="#" >
+        <i class="glassb fas fa-user"></i>             </a><i class="angle fa fa-angle-down"></i>
+        <ul class="dropdown-menu dropdown-menu-left">
+                        <li menuItemName="Login"
+            class="dropdown-item" id="Secondary_Navbar-Account-Login">
+            <a href="/clientarea.php" class="dropdown-item px-2 py-0" >
+                <i class="fa fa-angle-left" aria-hidden="true"></i>                 ورود
+                            </a>
+        </li>
+                                <li menuItemName="Register"
+            class="dropdown-item" id="Secondary_Navbar-Account-Register">
+            <a href="/register.php" class="dropdown-item px-2 py-0" >
+                <i class="fa fa-angle-left" aria-hidden="true"></i>                 ثبت نام
+                            </a>
+        </li>
+                                <div class="dropdown-divider"></div>
+                                <li menuItemName="Forgot Password?"
+            class="dropdown-item" id="Secondary_Navbar-Account-Forgot_Password?">
+            <a href="/password/reset" class="dropdown-item px-2 py-0" >
+                <i class="fa fa-angle-left" aria-hidden="true"></i>                 رمز عبور را فراموش کرده اید؟
+                            </a>
+        </li>
+                    </ul>
+    </li>
+                            </div>
+                        </div>  
+                       
+                       
+                        <ul class="navbar-nav">
+                            <li class="nav-item ml-1 d-xl-none">
+                                <button class="btn nav-link" type="button" data-toggle="sidebar" data-target="#mainNavbar">
+                                    <span class="fas fa-bars fa-fw"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </header>
+
+        
+        
+                
+            <section id="main-body">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div
+                            class="col-12 primary-content">
+
+
+
+<link rel="stylesheet" type="text/css" href="/templates/orderforms/standard_cart/css/all.min.css?v=e49655" />
+<script type="text/javascript" src="/templates/orderforms/standard_cart/js/scripts.min.js?v=e49655"></script>
+<div id="order-standard_cart">
+    <div class="row">
+        <div class="cart-sidebar sidebar">
+                <div menuItemName="Categories" class="panel card card-sidebar mb-3 panel-sidebar">
+        <div class="panel-heading card-header">
+            <h3 class="panel-title">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;
+                
+                سرویس های ما
+
+                
+                <i class="fas fa-chevron-up card-minimise panel-minimise pull-left float-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group collapsable-card-body">
+                                                            <a menuItemName="سرور مجازی ایران - های وب" href="/store/iran-vps-hiweb" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران_-_های_وب">
+                            
+                            سرور مجازی ایران - های وب
+
+                                                    </a>
+                                                                                <a menuItemName="سرور اختصاصی ایران" href="/store/iran-dedicated-server" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_اختصاصی_ایران">
+                            
+                            سرور اختصاصی ایران
+
+                                                    </a>
+                                                                                <a menuItemName="  اشتراک فضای دیتاسنتر" href="/store/iran-co-location" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-__اشتراک_فضای_دیتاسنتر">
+                            
+                              اشتراک فضای دیتاسنتر
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی ایران - پارس آنلاین" href="/store/iran-vps-parsonline" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران_-_پارس_آنلاین">
+                            
+                            سرور مجازی ایران - پارس آنلاین
+
+                                                    </a>
+                                                                                <a menuItemName="ایمیل سرور سازمانی - ایران" href="/store/email-server" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-ایمیل_سرور_سازمانی_-_ایران">
+                            
+                            ایمیل سرور سازمانی - ایران
+
+                                                    </a>
+                                                                                <a menuItemName="پلن های بکاپ سرور - ایران" href="/store/back-up" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-پلن_های_بکاپ_سرور_-_ایران">
+                            
+                            پلن های بکاپ سرور - ایران
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی ایران - شاتل" href="/store/shatel" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران_-_شاتل">
+                            
+                            سرور مجازی ایران - شاتل
+
+                                                    </a>
+                                                                                <a menuItemName="هاست سی پنل" href="/store/hst-sy-pnl" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-هاست_سی_پنل">
+                            
+                            هاست سی پنل
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی آلمان " href="/store/srwr-mjzy-almn" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_آلمان_">
+                            
+                            سرور مجازی آلمان 
+
+                                                    </a>
+                                                                                <a menuItemName="سرورهای اجاره بشرط تملیک" href="/store/srwrhy-jrh-bshrt-tmlykh" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرورهای_اجاره_بشرط_تملیک">
+                            
+                            سرورهای اجاره بشرط تملیک
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی ایران - تبیان" href="/store/iran-vps-tebyan" class="list-group-item list-group-item-action active" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران_-_تبیان">
+                            
+                            سرور مجازی ایران - تبیان
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+        <div menuItemName="Actions" class="panel card card-sidebar mb-3 panel-sidebar">
+        <div class="panel-heading card-header">
+            <h3 class="panel-title">
+                                    <i class="fas fa-plus"></i>&nbsp;
+                
+                عملیات
+
+                
+                <i class="fas fa-chevron-up card-minimise panel-minimise pull-left float-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group collapsable-card-body">
+                                                            <a menuItemName="View Cart" href="/cart.php?a=view" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Actions-View_Cart">
+                                                            <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+                            
+                            مشاهده کارت خرید
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+            </div>
+        <div class="cart-body">
+
+            <div class="header-lined">
+                <h1 class="font-size-36">
+                                            سرور مجازی ایران - تبیان
+                                    </h1>
+                            </div>
+            
+            <div class="sidebar-collapsed">
+
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-shopping-cart"></i>&nbsp;
+            
+            سرویس های ما
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="سرور مجازی ایران - های وب" value="/store/iran-vps-hiweb" class="list-group-item" >
+                        سرور مجازی ایران - های وب
+
+                                            </option>
+                                                        <option menuItemName="سرور اختصاصی ایران" value="/store/iran-dedicated-server" class="list-group-item" >
+                        سرور اختصاصی ایران
+
+                                            </option>
+                                                        <option menuItemName="  اشتراک فضای دیتاسنتر" value="/store/iran-co-location" class="list-group-item" >
+                          اشتراک فضای دیتاسنتر
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی ایران - پارس آنلاین" value="/store/iran-vps-parsonline" class="list-group-item" >
+                        سرور مجازی ایران - پارس آنلاین
+
+                                            </option>
+                                                        <option menuItemName="ایمیل سرور سازمانی - ایران" value="/store/email-server" class="list-group-item" >
+                        ایمیل سرور سازمانی - ایران
+
+                                            </option>
+                                                        <option menuItemName="پلن های بکاپ سرور - ایران" value="/store/back-up" class="list-group-item" >
+                        پلن های بکاپ سرور - ایران
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی ایران - شاتل" value="/store/shatel" class="list-group-item" >
+                        سرور مجازی ایران - شاتل
+
+                                            </option>
+                                                        <option menuItemName="هاست سی پنل" value="/store/hst-sy-pnl" class="list-group-item" >
+                        هاست سی پنل
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی آلمان " value="/store/srwr-mjzy-almn" class="list-group-item" >
+                        سرور مجازی آلمان 
+
+                                            </option>
+                                                        <option menuItemName="سرورهای اجاره بشرط تملیک" value="/store/srwrhy-jrh-bshrt-tmlykh" class="list-group-item" >
+                        سرورهای اجاره بشرط تملیک
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی ایران - تبیان" value="/store/iran-vps-tebyan" class="list-group-item" selected="selected">
+                        سرور مجازی ایران - تبیان
+
+                                            </option>
+                                                                                                            </select>
+        </form>
+    </div>
+
+            </div>
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-plus"></i>&nbsp;
+            
+            عملیات
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="View Cart" value="/cart.php?a=view" class="list-group-item" >
+                        مشاهده کارت خرید
+
+                                            </option>
+                                                                        <option value="" class="list-group-item" selected=""selected>- انتخاب گروه دیگر -</option>
+                            </select>
+        </form>
+    </div>
+
+            </div>
+    
+    
+</div>
+
+            <div class="products" id="products">
+                <div class="row row-eq-height">
+                                                                <div class="col-md-6">
+                        <div class="product clearfix" id="product70">
+                            <header>
+                                <span id="product70-name">VDS - 09</span>
+                                                            </header>
+                            <div class="product-desc">
+                                                                    <p id="product70-description">
+                                        ✔ CPU 2x (Cores) Intel® Xeon<br />
+✔ RAM 2 GB DDR4 <br />
+✔ Hard 20 GB (HP-SAS-SSD) <br />
+✔ IP /30<br />
+✔ Traffic  100 GB<br />
+<strong>✅ترافیک داخل کشور-رایگان</strong><br />
+<strong>✅پیکربندی با سرورهای نسل10</strong><br />
+
+                                    </p>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                <div class="product-pricing" id="product70-price">
+                                                                                                                        شروع از
+                                            <br />
+                                                                                <span class="price">830,000تومان</span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                                <a href="/store/iran-vps-tebyan/vds-9" class="btn btn-success btn-sm btn-order-now" id="product70-order-button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    سفارش دهید
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                                                                                    <div class="col-md-6">
+                        <div class="product clearfix" id="product71">
+                            <header>
+                                <span id="product71-name">VDS - 10</span>
+                                                            </header>
+                            <div class="product-desc">
+                                                                    <p id="product71-description">
+                                        ✔ CPU 4x (Cores) Intel® Xeon<br />
+✔ RAM 4 GB DDR4 <br />
+✔ Hard 40 GB (HP-SAS-SSD) <br />
+✔ IP /30<br />
+✔ Traffic  100 GB<br />
+<strong>✅ترافیک داخل کشور-رایگان</strong><br />
+<strong>✅پیکربندی با سرورهای نسل10</strong><br />
+
+                                    </p>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                <div class="product-pricing" id="product71-price">
+                                                                                                                        شروع از
+                                            <br />
+                                                                                <span class="price">960,000تومان</span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                                <a href="/store/iran-vps-tebyan/vds-10" class="btn btn-success btn-sm btn-order-now" id="product71-order-button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    سفارش دهید
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="row row-eq-height">
+                                                                                    <div class="col-md-6">
+                        <div class="product clearfix" id="product72">
+                            <header>
+                                <span id="product72-name">VDS - 11</span>
+                                                            </header>
+                            <div class="product-desc">
+                                                                    <p id="product72-description">
+                                        ✔ CPU 6x (Cores) Intel® Xeon<br />
+✔ RAM 6 GB DDR4 <br />
+✔ Hard 60 GB (HP-SAS-SSD) <br />
+✔ IP /30<br />
+✔ Traffic  200 GB<br />
+<strong>✅ترافیک داخل کشور-رایگان</strong><br />
+<strong>✅پیکربندی با سرورهای نسل10</strong><br />
+
+                                    </p>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                <div class="product-pricing" id="product72-price">
+                                                                                                                        شروع از
+                                            <br />
+                                                                                <span class="price">1,120,000تومان</span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                                <a href="/store/iran-vps-tebyan/vds-11" class="btn btn-success btn-sm btn-order-now" id="product72-order-button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    سفارش دهید
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                                                                                    <div class="col-md-6">
+                        <div class="product clearfix" id="product73">
+                            <header>
+                                <span id="product73-name">VDS - 12</span>
+                                                            </header>
+                            <div class="product-desc">
+                                                                    <p id="product73-description">
+                                        ✔ CPU 8x (Cores) Intel® Xeon<br />
+✔ RAM 6 GB DDR4 <br />
+✔ Hard 80 GB (HP-SAS-SSD) <br />
+✔ IP /30<br />
+✔ Traffic  200 GB<br />
+<strong>✅ترافیک داخل کشور-رایگان</strong><br />
+<strong>✅پیکربندی با سرورهای نسل10</strong><br />
+
+                                    </p>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                <div class="product-pricing" id="product73-price">
+                                                                                                                        شروع از
+                                            <br />
+                                                                                <span class="price">1,380,000تومان</span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                                <a href="/store/iran-vps-tebyan/vds-12" class="btn btn-success btn-sm btn-order-now" id="product73-order-button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    سفارش دهید
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="row row-eq-height">
+                                                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="recommendationsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="float-left pull-left">
+                                            به سبد خرید اضافه شد
+                                    </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-body">
+                <div class="product-recommendations-container">
+    <div class="product-recommendations">
+                    <p>بر اساس این محصول، توصیه می کنیم:</p>
+                    </div>
+</div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="#" id="btnContinueRecommendationsModal" data-dismiss="modal" role="button">
+                    <span class="w-hidden hidden"><i class="fas fa-spinner fa-spin"></i>&nbsp;</span>ادامه
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-recommendation clonable w-hidden hidden">
+        <div class="header">
+            <div class="cta">
+                <div class="price">
+                    <span class="w-hidden hidden">رایگان!</span>
+                    <span class="breakdown-price"></span>
+                    <span class="setup-fee"><small>&nbsp;هزینه تنظیم </small></span>
+                </div>
+                <button type="button" class="btn btn-sm btn-add">
+                    <span class="text">افزودن به کارت</span>
+                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                </button>
+            </div>
+            <div class="expander">
+                <i class="fas fa-chevron-right rotate" data-toggle="tooltip" data-placement="right" title="برای کسب اطلاعات بیشتر کلیک کنید."></i>
+            </div>
+            <div class="content">
+                <div class="headline truncate"></div>
+                <div class="tagline truncate">
+                    توضیحات (تگ لاین) برای این محصول موجود نیست.
+                </div>
+            </div>
+        </div>
+        <div class="body clearfix"><p></p></div>
+    </div>
+</div>
+
+
+                    </div>
+                    
+
+
+                                            
+                                                                                            </div>
+                                                                                    <div class="clearfix"></div>
+                    </div>
+                    </div>
+                    </section>
+
+                                            <footer id="footer" class="footer">
+                            <div class="container">
+                                
+                                                        
+<p class="copyright-text pb-0 mb-0"> <span class="date">سال 1405</span> © کلیه حقوق مادی و معنوی این سایت برای مکنانت محفوظ است
+                           
+                            <a class="text-decoration-none" href="https://maknanet.com/" target="_blank">| MAKNANET.com </a>
+                            
+                            </div>
+                        </footer>
+                    
+                    <div id="fullpage-overlay" class="w-hidden">
+                        <div class="outer-wrapper">
+                            <div class="inner-wrapper">
+                                <img src="/assets/img/overlay-spinner.svg">
+                                <br>
+                                <span class="msg"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"></h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">بستن</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    بارگذاری ... 
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="float-left loader">
+                                        <i class="fas fa-circle-notch fa-spin"></i>
+                                        بارگذاری ... 
+                                    </div>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                        بستن
+                                    </button>
+                                    <button type="button" class="btn btn-primary modal-submit">
+                                        ارسال
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form method="get" action="/store/iran-vps-tebyan?">
+                        <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close text-light" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                                                                                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-default">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    
+                    <form action="#" id="frmGeneratePassword">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">
+                        ایجاد گذرواژه
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger w-hidden" id="generatePwLengthError">
+                        لطفاً برای طول گذرواژه عددی بین 8 تا 64 وارد کنید
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwLength"
+                            class="col-sm-4 col-form-label">طول رمز عبور</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1"
+                                class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwOutput"
+                            class="col-sm-4 col-form-label">رمز عبور ایجاد شده</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                ایجاد رمز عبور جدید
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard"
+                                data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert"
+                        data-clipboard-target="#inputGeneratePasswordOutput">
+                        کپی و وارد کردن
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+                    
+
+                    </body>
+
+</html>

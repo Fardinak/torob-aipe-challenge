@@ -1,0 +1,690 @@
+[
+  {
+    "text": "مشاهده تخفیف‌ها",
+    "url": "https://bia2host.com/deals/"
+  },
+  {
+    "text": "۰۲۱-۹۱۰۹-۹۳۹۱",
+    "url": "tel:+982191099391"
+  },
+  {
+    "text": "۰۹۳۶-۵۶۷-۷۴۸۲",
+    "url": "tel:+989365677482"
+  },
+  {
+    "text": "",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "صفحه اصلی",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "سرور ابری و مجازی",
+    "url": "https://bia2host.com/vps/"
+  },
+  {
+    "text": "سرور ابری ساعتی ایران تحویل آنی پرداخت به‌ازای مصرف ساعتی با KVM و آپلود رایگان",
+    "url": "https://bia2host.com/iran-hourly-vps/"
+  },
+  {
+    "text": "سرور مجازی گرافیک‌دار (GPU) Tesla V100 شتاب‌دهنده گرافیکی تسلا برای هوش مصنوعی، رندرینگ و گیمینگ",
+    "url": "https://bia2host.com/gpu-vps/"
+  },
+  {
+    "text": "سرور مجازی ایران (نامحدود) پورت ۱۰G ترافیک ۱۰۰٪ نامحدود واقعی با پورت ۱۰ گیگابیت اختصاصی",
+    "url": "https://bia2host.com/iran-vps/#unlimited"
+  },
+  {
+    "text": "سرور مجازی ایران (ترافیکی) پلن اقتصادی حجمی، منابع اختصاصی KVM و آپلود رایگان",
+    "url": "https://bia2host.com/iran-vps/#traffic"
+  },
+  {
+    "text": "سرور کلاس آنلاین و وبینار بهینه برای بیگ‌بلوباتن و ادوبی کانکت با پایداری کامل",
+    "url": "https://bia2host.com/server-online-class/"
+  },
+  {
+    "text": "مشاهده تمام سرورهای مجازی",
+    "url": "https://bia2host.com/vps/"
+  },
+  {
+    "text": "سرور مجازی آلمان PIO ترافیک نامحدود دیتاسنتر PIO با ترافیک ۱۰۰٪ نامحدود و هارد NVMe",
+    "url": "https://bia2host.com/germany-vps/#pio"
+  },
+  {
+    "text": "سرور ابری هتزنر آلمان پورت ۱۰G دیتاسنتر Hetzner Cloud، پردازنده‌های ابری و فایروال",
+    "url": "https://bia2host.com/germany-vps/#hetzner"
+  },
+  {
+    "text": "سرور مجازی فنلاند هتزنر حریم خصوصی بالا با استانداردهای سخت‌گیرانه شمال اروپا",
+    "url": "https://bia2host.com/finland-vps/"
+  },
+  {
+    "text": "سرور مجازی آمریکا هتزنر لوکیشن آمریکا با پورت ۱۰ گیگ و اتصال به سرویس‌های بین‌المللی",
+    "url": "https://bia2host.com/usa-vps/"
+  },
+  {
+    "text": "سرور مجازی سنگاپور هتزنر پورت ۱۰G ابری، پینگ فوق‌العاده پایین برای بازارهای آسیایی",
+    "url": "https://bia2host.com/singapore-vps/"
+  },
+  {
+    "text": "سرور مجازی ترکیه بزودی پینگ عالی منطقه‌ای — در حال ارتقا و تأمین زیرساخت جدید",
+    "url": "https://bia2host.com/turkiye-vps/"
+  },
+  {
+    "text": "خرید هاست",
+    "url": "https://bia2host.com/host/"
+  },
+  {
+    "text": "هاست وردپرس ابری پیشنهاد ویژه مجهز به لایت‌اسپید اینترپرایز، کش LSCache و آنتی‌ویروس ابری",
+    "url": "https://bia2host.com/wordpress-host/"
+  },
+  {
+    "text": "هاست لینوکس cPanel کنترل‌پنل سی‌پنل اورجینال در دیتاسنترهای ایران و آلمان",
+    "url": "https://bia2host.com/linux-cpanel/"
+  },
+  {
+    "text": "هاست دایرکت ادمین سریع، پایدار، اقتصادی با وب‌سرور پرسرعت",
+    "url": "https://bia2host.com/directadmin-host/"
+  },
+  {
+    "text": "هاست دانلود پرسرعت پورت پرظرفیت ۱۰ گیگابیت بدون محدودیت کانکشن",
+    "url": "https://bia2host.com/download-host/"
+  },
+  {
+    "text": "هاست بکاپ اختصاصی فضای ایزوله و امن جهت پشتیبان‌گیری خودکار سایت‌ها",
+    "url": "https://bia2host.com/backup-host/"
+  },
+  {
+    "text": "هاست نود جی‌اس (Node.js) پشتیبانی کامل از NPM، فرآیند PM2 و پورت وب‌سوکت",
+    "url": "https://bia2host.com/nodejs-host/"
+  },
+  {
+    "text": "هاست پایتون (Python) سازگاری با جنگو، فست‌ای‌پی‌آی و فلاسک با وب‌سرور ابری",
+    "url": "https://bia2host.com/python-host/"
+  },
+  {
+    "text": "هاست لاراول (Laravel) اجرای سریع با Composer، Artisan و توابع باز PHP 8.x",
+    "url": "https://bia2host.com/laravel-host/"
+  },
+  {
+    "text": "هاست ربات تلگرام آی‌پی بدون فیلتر، اتصال وب‌هوک و اجرای دائمی ۲۴/۷",
+    "url": "https://bia2host.com/telegram-bot-host/"
+  },
+  {
+    "text": "هاست ربات بومی (ایتا، روبیکا، بله) سرورهای داخل کشور برای پیام‌رسان‌های ایرانی",
+    "url": "https://bia2host.com/iran-bot-host/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://bia2host.com/dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران پینگ فوق‌العاده پایین با ترافیک نامحدود دیتاسنترهای داخلی",
+    "url": "https://bia2host.com/iran-dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی آلمان سخت‌افزار قدرتمند نسل جدید دیتاسنتر هتزنر با پورت ۱۰ گیگ",
+    "url": "https://bia2host.com/germany-dedicated-server/"
+  },
+  {
+    "text": "کولوکیشن سرور (Colocation) میزبانی سخت‌افزار اختصاصی شما در امن‌ترین رک‌های ایران",
+    "url": "https://bia2host.com/colocation/"
+  },
+  {
+    "text": "مشاهده تمام سرورهای اختصاصی",
+    "url": "https://bia2host.com/dedicated-server/"
+  },
+  {
+    "text": "نمایندگی",
+    "url": "https://bia2host.com/reseller/"
+  },
+  {
+    "text": "نمایندگی هاست سی‌پنل (WHM) شروع آسان کسب‌وکار هاستینگ با کنترل‌پنل کامل WHM",
+    "url": "https://bia2host.com/reseller-host-cpanel/"
+  },
+  {
+    "text": "نمایندگی هاست وردپرس بهینه برای شرکت‌های طراحی سایت و آژانس‌های دیجیتال",
+    "url": "https://bia2host.com/reseller-host-wordpress/"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین پایدار و اقتصادی با قابلیت تعریف پلن‌های دلخواه",
+    "url": "https://bia2host.com/reseller-host-directadmin/"
+  },
+  {
+    "text": "مستر ریسلر (Master Reseller) فروش هم‌زمان هاست و اکانت‌های نمایندگی مستقل",
+    "url": "https://bia2host.com/master-reseller/"
+  },
+  {
+    "text": "آلفا مستر ریسلر (Alpha Master) بالاترین سطح دسترسی؛ ایجاد مستر ریسلر با سود حداکثری",
+    "url": "https://bia2host.com/alpha-master-reseller/"
+  },
+  {
+    "text": "نمایندگی پنل پیامک ارائه سامانه پیامکی اختصاصی با خطوط خدماتی رایگان",
+    "url": "https://bia2host.com/sms-panel-reseller/"
+  },
+  {
+    "text": "خدمات دیگر",
+    "url": "https://bia2host.com/license/"
+  },
+  {
+    "text": "خرید لایسنس اورجینال لایسنس cPanel، لایت‌اسپید، کلودلینوکس و دایرکت ادمین",
+    "url": "https://bia2host.com/license/"
+  },
+  {
+    "text": "ثبت و انتقال دامنه ثبت آنی بیش از ۵۰۰ پسوند ملی و بین‌المللی با مالکیت قطعی",
+    "url": "https://my.bia2host.com/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "سامانه پیامک انبوه ارسال سریع به بلک‌لیست با خط خدماتی رایگان و وب‌سرویس",
+    "url": "https://bia2host.com/sms-panel/"
+  },
+  {
+    "text": "تلگرام پرمیوم قانونی فعال‌سازی بدون نیاز به پسورد، با تایید رسمی تلگرام",
+    "url": "https://bia2host.com/telegram-premium/"
+  },
+  {
+    "text": "درباره ما و تاریخچه بیا تو هاست",
+    "url": "https://bia2host.com/about-us/"
+  },
+  {
+    "text": "تماس با ما و شعب دیتاسنتر",
+    "url": "https://bia2host.com/contact-us/"
+  },
+  {
+    "text": "ویژه تخفیف‌ها",
+    "url": "https://bia2host.com/deals/"
+  },
+  {
+    "text": "وبلاگ",
+    "url": "https://bia2host.com/blog/"
+  },
+  {
+    "text": "سبد خرید",
+    "url": "https://my.bia2host.com/cart.php?a=view"
+  },
+  {
+    "text": "ورود",
+    "url": "https://my.bia2host.com/login.php"
+  },
+  {
+    "text": "ثبت‌نام",
+    "url": "https://my.bia2host.com/register.php"
+  },
+  {
+    "text": "",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "صفحه اصلی",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "سرور ابری و مجازی",
+    "url": "https://bia2host.com/vps/"
+  },
+  {
+    "text": "سرور ابری ساعتی ایران تحویل آنی",
+    "url": "https://bia2host.com/iran-hourly-vps/"
+  },
+  {
+    "text": "سرور مجازی گرافیک‌دار (GPU) Tesla V100",
+    "url": "https://bia2host.com/gpu-vps/"
+  },
+  {
+    "text": "سرور مجازی ایران (نامحدود) پورت ۱۰G",
+    "url": "https://bia2host.com/iran-vps/#unlimited"
+  },
+  {
+    "text": "سرور مجازی ایران (ترافیکی و اقتصادی)",
+    "url": "https://bia2host.com/iran-vps/#traffic"
+  },
+  {
+    "text": "سرور کلاس آنلاین و وبینار",
+    "url": "https://bia2host.com/server-online-class/"
+  },
+  {
+    "text": "سرور مجازی آلمان PIO نامحدود",
+    "url": "https://bia2host.com/germany-vps/#pio"
+  },
+  {
+    "text": "سرور ابری هتزنر آلمان پورت ۱۰G",
+    "url": "https://bia2host.com/germany-vps/#hetzner"
+  },
+  {
+    "text": "سرور مجازی فنلاند هتزنر",
+    "url": "https://bia2host.com/finland-vps/"
+  },
+  {
+    "text": "سرور مجازی آمریکا هتزنر",
+    "url": "https://bia2host.com/usa-vps/"
+  },
+  {
+    "text": "سرور مجازی سنگاپور هتزنر",
+    "url": "https://bia2host.com/singapore-vps/"
+  },
+  {
+    "text": "سرور مجازی ترکیه بزودی",
+    "url": "https://bia2host.com/turkiye-vps/"
+  },
+  {
+    "text": "مشاهده تمام سرورهای مجازی ➔",
+    "url": "https://bia2host.com/vps/"
+  },
+  {
+    "text": "خرید هاست",
+    "url": "https://bia2host.com/host/"
+  },
+  {
+    "text": "هاست وردپرس ابری پیشنهاد ویژه",
+    "url": "https://bia2host.com/wordpress-host/"
+  },
+  {
+    "text": "هاست لینوکس cPanel",
+    "url": "https://bia2host.com/linux-cpanel/"
+  },
+  {
+    "text": "هاست دایرکت ادمین",
+    "url": "https://bia2host.com/directadmin-host/"
+  },
+  {
+    "text": "هاست دانلود پرسرعت",
+    "url": "https://bia2host.com/download-host/"
+  },
+  {
+    "text": "هاست بکاپ اختصاصی",
+    "url": "https://bia2host.com/backup-host/"
+  },
+  {
+    "text": "هاست نود جی‌اس (Node.js)",
+    "url": "https://bia2host.com/nodejs-host/"
+  },
+  {
+    "text": "هاست پایتون (Python)",
+    "url": "https://bia2host.com/python-host/"
+  },
+  {
+    "text": "هاست لاراول (Laravel)",
+    "url": "https://bia2host.com/laravel-host/"
+  },
+  {
+    "text": "هاست ربات تلگرام",
+    "url": "https://bia2host.com/telegram-bot-host/"
+  },
+  {
+    "text": "هاست ربات ایران (ایتا، روبیکا)",
+    "url": "https://bia2host.com/iran-bot-host/"
+  },
+  {
+    "text": "مشاهده تمام پلن‌های هاستینگ ➔",
+    "url": "https://bia2host.com/host/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://bia2host.com/dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://bia2host.com/iran-dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی آلمان",
+    "url": "https://bia2host.com/germany-dedicated-server/"
+  },
+  {
+    "text": "کولوکیشن سرور (Colocation)",
+    "url": "https://bia2host.com/colocation/"
+  },
+  {
+    "text": "مشاهده تمام سرورهای اختصاصی ➔",
+    "url": "https://bia2host.com/dedicated-server/"
+  },
+  {
+    "text": "نمایندگی",
+    "url": "https://bia2host.com/reseller/"
+  },
+  {
+    "text": "نمایندگی هاست سی‌پنل (WHM)",
+    "url": "https://bia2host.com/reseller-host-cpanel/"
+  },
+  {
+    "text": "نمایندگی هاست وردپرس",
+    "url": "https://bia2host.com/reseller-host-wordpress/"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین",
+    "url": "https://bia2host.com/reseller-host-directadmin/"
+  },
+  {
+    "text": "مستر ریسلر (Master Reseller)",
+    "url": "https://bia2host.com/master-reseller/"
+  },
+  {
+    "text": "آلفا مستر ریسلر (Alpha Master)",
+    "url": "https://bia2host.com/alpha-master-reseller/"
+  },
+  {
+    "text": "نمایندگی پنل پیامک",
+    "url": "https://bia2host.com/sms-panel-reseller/"
+  },
+  {
+    "text": "مشاهده تمام خدمات نمایندگی ➔",
+    "url": "https://bia2host.com/reseller/"
+  },
+  {
+    "text": "خدمات دیگر و لایسنس",
+    "url": "https://bia2host.com/license/"
+  },
+  {
+    "text": "خرید لایسنس اورجینال",
+    "url": "https://bia2host.com/license/"
+  },
+  {
+    "text": "ثبت و انتقال دامنه",
+    "url": "https://my.bia2host.com/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "سامانه پیامک انبوه",
+    "url": "https://bia2host.com/sms-panel/"
+  },
+  {
+    "text": "تلگرام پرمیوم قانونی",
+    "url": "https://bia2host.com/telegram-premium/"
+  },
+  {
+    "text": "درباره ما و تاریخچه بیا تو هاست",
+    "url": "https://bia2host.com/about-us/"
+  },
+  {
+    "text": "تماس با ما و شعب دیتاسنتر",
+    "url": "https://bia2host.com/contact-us/"
+  },
+  {
+    "text": "جشنواره تخفیف‌ها ویژه",
+    "url": "https://bia2host.com/deals/"
+  },
+  {
+    "text": "وبلاگ و آموزش‌ها",
+    "url": "https://bia2host.com/blog/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://bia2host.com/about-us/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://bia2host.com/contact-us/"
+  },
+  {
+    "text": "ورود به حساب",
+    "url": "https://my.bia2host.com/login.php"
+  },
+  {
+    "text": "ثبت‌نام جدید",
+    "url": "https://my.bia2host.com/register.php"
+  },
+  {
+    "text": "مشاهده سبد خرید",
+    "url": "https://my.bia2host.com/cart.php?a=view"
+  },
+  {
+    "text": "تماس: ۰۲۱-۹۱۰۹-۹۳۹۱",
+    "url": "tel:+982191099391"
+  },
+  {
+    "text": "خانه",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://bia2host.com/vps/"
+  },
+  {
+    "text": "مشاهده پلن‌ها و قیمت‌ها",
+    "url": "https://bia2host.com/iran-hourly-vps/#plans"
+  },
+  {
+    "text": "مشاورهٔ رایگان",
+    "url": "tel:+982191099391"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-1-gygbyt-rm"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-2-gygbyt-rm"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-3-gygbyt-rm"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-4-gygbyt-rm"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-8-gygbyt-rm"
+  },
+  {
+    "text": "سفارش و تحویل آنی",
+    "url": "https://my.bia2host.com/store/hourlyvps/srwr-bry-sty-16-gygbyt-rm"
+  },
+  {
+    "text": "شروع خرید بدون ریسک",
+    "url": "https://bia2host.com/iran-hourly-vps/#plans"
+  },
+  {
+    "text": "مشاهدهٔ پلن‌ها و خرید",
+    "url": "https://bia2host.com/iran-hourly-vps/#plans"
+  },
+  {
+    "text": "مشاورهٔ رایگان: ۰۲۱-۹۱۰۹-۹۳۹۱",
+    "url": "tel:+982191099391"
+  },
+  {
+    "text": "",
+    "url": "https://bia2host.com/"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/bia2host"
+  },
+  {
+    "text": "",
+    "url": "https://ble.ir/bia2host"
+  },
+  {
+    "text": "",
+    "url": "https://eitaa.com/bia2host"
+  },
+  {
+    "text": "",
+    "url": "https://instagram.com/bia2host"
+  },
+  {
+    "text": "",
+    "url": "https://x.com/bia2host"
+  },
+  {
+    "text": "سرور ابری ساعتی ایران تحویل آنی",
+    "url": "https://bia2host.com/iran-hourly-vps/"
+  },
+  {
+    "text": "سرور مجازی ایران (نامحدود ۱۰G)",
+    "url": "https://bia2host.com/iran-vps/#unlimited"
+  },
+  {
+    "text": "سرور مجازی ایران (ترافیکی)",
+    "url": "https://bia2host.com/iran-vps/#traffic"
+  },
+  {
+    "text": "سرور مجازی آلمان PIO (نامحدود)",
+    "url": "https://bia2host.com/germany-vps/#pio"
+  },
+  {
+    "text": "سرور ابری هتزنر آلمان",
+    "url": "https://bia2host.com/germany-vps/#hetzner"
+  },
+  {
+    "text": "سرور مجازی فنلاند هتزنر",
+    "url": "https://bia2host.com/finland-vps/"
+  },
+  {
+    "text": "سرور مجازی آمریکا هتزنر",
+    "url": "https://bia2host.com/usa-vps/"
+  },
+  {
+    "text": "سرور مجازی سنگاپور هتزنر",
+    "url": "https://bia2host.com/singapore-vps/"
+  },
+  {
+    "text": "سرور مجازی ترکیه بزودی",
+    "url": "https://bia2host.com/turkiye-vps/"
+  },
+  {
+    "text": "سرور کلاس آنلاین و وبینار",
+    "url": "https://bia2host.com/server-online-class/"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://bia2host.com/iran-dedicated-server/"
+  },
+  {
+    "text": "سرور اختصاصی آلمان",
+    "url": "https://bia2host.com/germany-dedicated-server/"
+  },
+  {
+    "text": "کولوکیشن دیتاسنتر (Colocation)",
+    "url": "https://bia2host.com/colocation/"
+  },
+  {
+    "text": "هاست وردپرس ابری ویژه",
+    "url": "https://bia2host.com/wordpress-host/"
+  },
+  {
+    "text": "هاست لینوکس cPanel",
+    "url": "https://bia2host.com/linux-cpanel/"
+  },
+  {
+    "text": "هاست دایرکت ادمین",
+    "url": "https://bia2host.com/directadmin-host/"
+  },
+  {
+    "text": "هاست دانلود پرسرعت",
+    "url": "https://bia2host.com/download-host/"
+  },
+  {
+    "text": "هاست بکاپ اختصاصی",
+    "url": "https://bia2host.com/backup-host/"
+  },
+  {
+    "text": "هاست نود جی‌اس (Node.js)",
+    "url": "https://bia2host.com/nodejs-host/"
+  },
+  {
+    "text": "هاست پایتون و جنگو",
+    "url": "https://bia2host.com/python-host/"
+  },
+  {
+    "text": "هاست لاراول (Laravel)",
+    "url": "https://bia2host.com/laravel-host/"
+  },
+  {
+    "text": "هاست ربات تلگرام",
+    "url": "https://bia2host.com/telegram-bot-host/"
+  },
+  {
+    "text": "هاست ربات بومی ایران",
+    "url": "https://bia2host.com/iran-bot-host/"
+  },
+  {
+    "text": "نمایندگی هاست cPanel (WHM)",
+    "url": "https://bia2host.com/reseller-host-cpanel/"
+  },
+  {
+    "text": "نمایندگی هاست وردپرس",
+    "url": "https://bia2host.com/reseller-host-wordpress/"
+  },
+  {
+    "text": "نمایندگی هاست دایرکت ادمین",
+    "url": "https://bia2host.com/reseller-host-directadmin/"
+  },
+  {
+    "text": "مستر ریسلر (Master Reseller)",
+    "url": "https://bia2host.com/master-reseller/"
+  },
+  {
+    "text": "آلفا مستر ریسلر",
+    "url": "https://bia2host.com/alpha-master-reseller/"
+  },
+  {
+    "text": "نمایندگی پنل پیامک",
+    "url": "https://bia2host.com/sms-panel-reseller/"
+  },
+  {
+    "text": "ثبت و استعلام دامنه",
+    "url": "https://bia2host.com/search-domain/"
+  },
+  {
+    "text": "خرید لایسنس نرم‌افزار",
+    "url": "https://bia2host.com/license/"
+  },
+  {
+    "text": "سامانه پیامک انبوه",
+    "url": "https://bia2host.com/sms-panel/"
+  },
+  {
+    "text": "تلگرام پرمیوم قانونی",
+    "url": "https://bia2host.com/telegram-premium/"
+  },
+  {
+    "text": "وبلاگ و مقالات آموزشی",
+    "url": "https://bia2host.com/blog/"
+  },
+  {
+    "text": "",
+    "url": "https://bia2host.com/enamad.html"
+  },
+  {
+    "text": "",
+    "url": "https://tehran.irannsr.org/fa/trade_unit/3282721/from_refer_code/1/%D8%A7%D8%B9%D8%B6%D8%A7%D9%8A-%D8%AD%D9%82%D9%88%D9%82%D9%8A-%D9%85%D9%8A%D8%B2%D8%A8%D8%A7%D9%86%D9%8A-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D9%85%D9%87%D8%B1-%D8%A2%D9%81%D8%B1%D9%8A%D9%86.html#cntReferCodeBlock"
+  },
+  {
+    "text": "ارسال تیکت شبانه‌روزی",
+    "url": "https://my.bia2host.com/submitticket.php"
+  },
+  {
+    "text": "دفتر: ۰۲۱-۹۱۰۹-۹۳۹۱",
+    "url": "tel:+982191099391"
+  },
+  {
+    "text": "همراه: ۰۹۳۶-۵۶۷-۷۴۸۲",
+    "url": "tel:+989365677482"
+  },
+  {
+    "text": "🔥 کدهای تخفیف و جشنواره",
+    "url": "https://bia2host.com/deals/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://bia2host.com/about-us/"
+  },
+  {
+    "text": "ارتباط با ما",
+    "url": "https://bia2host.com/contact-us/"
+  },
+  {
+    "text": "قوانین و مقررات سرویس‌دهی",
+    "url": "https://bia2host.com/rules/"
+  },
+  {
+    "text": "حریم خصوصی کاربران",
+    "url": "https://bia2host.com/privacy-policy/"
+  },
+  {
+    "text": "وضعیت سرورها و شبکه",
+    "url": "https://my.bia2host.com/serverstatus.php"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "provider": "liara",
+  "label": "سرور مجازی لینوکس ساعتی",
+  "url": "https://liara.ir/products/linux-server",
+  "discovered_in": "50-liara-links.json",
+  "source_key": "79-liara",
+  "requested_url": "https://liara.ir/products/linux-server",
+  "capture_time": "2026-10-29T19:16:42.329540+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/products/linux-server/",
+  "sha256": "967b2016940e199fd2efbd21bbc0080d830c84ca8d75286579b61ab582a48b7f",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/79-liara.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/79-liara.txt",
+  "bytes": 139173,
+  "title": "سرور مجازی لینوکس ساعتی | خرید وی پی اس (VPS) لینوکس - لیارا"
+}

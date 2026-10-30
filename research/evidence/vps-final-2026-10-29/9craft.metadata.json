@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://9craft.ir",
+  "attempt_utc": "2026-10-29T09:53:14.897231+00:00",
+  "final_url": "https://9craft.ir",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:53:09 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Cache-Control": "no-cache",
+    "Strict-Transport-Security": "max-age=16070400; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "bytes": 1297024,
+  "sha256": "5a2d1c61f9e72ef4b848570da400be15664df877e6fafe28d306004a7d6d259c",
+  "saved_utc": "2026-10-29T09:53:15.866623+00:00"
+}

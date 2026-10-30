@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی NVMe (VPS)",
+  "url": "https://azardata.net/vps/nvme/",
+  "provider": "azardata",
+  "discovered_in": "46-azardata",
+  "source_key": "64-azardata",
+  "requested_url": "https://azardata.net/vps/nvme/",
+  "capture_time": "2026-10-29T19:12:44.250103+00:00",
+  "status": 200,
+  "final_url": "https://azardata.net/vps/nvme/",
+  "sha256": "2403921a07510c941328b05135b344c838a06313930e93402b7fa6724620dac6",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/64-azardata.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/64-azardata.txt",
+  "bytes": 276413,
+  "title": "سرور مجازی NVMe | خرید سرور مجازی NVMe ایران، آلمان و هلند - آذردیتا"
+}

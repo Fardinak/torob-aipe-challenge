@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی ترافیک نامحدود پهنای باند",
+  "url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-phny-bnd",
+  "provider": "servervds",
+  "discovered_in": "19-servervds",
+  "source_key": "53-servervds",
+  "requested_url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-phny-bnd",
+  "capture_time": "2026-10-29T19:11:46.782429+00:00",
+  "status": 200,
+  "final_url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-phny-bnd",
+  "sha256": "de18de180bbce13bb1111104c89c359ff82f59b8fdcae53fc7cb916e8ac1a813",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/53-servervds.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/53-servervds.txt",
+  "bytes": 65315,
+  "title": "کارت خرید - سرور وی‌دی‌اس"
+}

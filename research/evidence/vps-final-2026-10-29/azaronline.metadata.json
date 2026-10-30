@@ -1,0 +1,27 @@
+{
+  "requested_url": "https://azaronline.com",
+  "attempt_utc": "2026-10-29T09:53:14.898798+00:00",
+  "final_url": "https://azaronline.com",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:53:14 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "x-powered-by": "Express",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "vary": "Accept-Encoding",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OrNQY%2B7lEDg3miy7pyznUgWBcoEjFypkM4eCsSHua9LW7YJ6THM%2B79i6MNSYwYvG%2F9GWLgRZ%2BFL%2BdkuxOKihSnEvDM%2BRhW7v3x4waQCY3CSRK7R0OUTxhFl6QiwDu9MZ\"}]}",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Age": "33785",
+    "Cache-Control": "max-age=432000",
+    "cf-cache-status": "HIT",
+    "Strict-Transport-Security": "max-age=0; preload",
+    "Server": "cloudflare",
+    "CF-RAY": "a5214ac1beaf14e2-FRA"
+  },
+  "bytes": 247990,
+  "sha256": "7e53ee900dc8b8f6da07726dad3a48823de9e16264f253e7fe446f62b2dd1d8d",
+  "saved_utc": "2026-10-29T09:53:21.435600+00:00"
+}

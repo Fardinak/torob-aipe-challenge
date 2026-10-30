@@ -1,0 +1,26 @@
+{
+  "requested_url": "https://datak.ir/vps/",
+  "attempt_utc": "2026-10-29T09:53:50.934891+00:00",
+  "final_url": "https://datak.ir/vps/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:53:46 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://datak.ir/wp-json/>; rel=\"https://api.w.org/\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), payment=(), usb=()",
+    "Content-Security-Policy-Report-Only": "default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; object-src 'none'; base-uri 'self'; frame-ancestors 'self' https://*.datak.ir",
+    "Server": "My own webserver",
+    "Last-Modified": "Thursday, 29-Oct-2026 09:53:46 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+  },
+  "bytes": 336761,
+  "sha256": "a4597c25b15ceb304bbf62c6998c332fe611a3b090ff279abef0eb1fcb92b419",
+  "saved_utc": "2026-10-29T09:53:52.749781+00:00"
+}

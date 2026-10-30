@@ -1,0 +1,16 @@
+{
+  "provider": "irvm",
+  "label": "فناپ",
+  "url": "https://irvm.org/virtual-server-fanap/",
+  "discovered_in": "06-irvm-links.json",
+  "source_key": "40-irvm",
+  "requested_url": "https://irvm.org/virtual-server-fanap/",
+  "capture_time": "2026-10-29T19:10:46.021865+00:00",
+  "status": 200,
+  "final_url": "https://irvm.org/virtual-server-fanap/",
+  "sha256": "f23071269e38acaeff520923ad959b1c0c21ed0c7db43752f4ef55e2d1891b82",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/40-irvm.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/40-irvm.txt",
+  "bytes": 422116,
+  "title": "خرید سرور مجازی فناپ | ایران وی ام"
+}

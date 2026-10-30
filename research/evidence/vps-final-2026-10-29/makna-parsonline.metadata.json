@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://maknanet.com/store/iran-vps-parsonline",
+  "attempt_utc": "2026-10-29T09:49:45.421838+00:00",
+  "final_url": "https://maknanet.com/store/iran-vps-parsonline",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:49:39 GMT",
+    "Server": "Apache",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Set-Cookie": "WHMCSJ1dzJKPJko8Q=28dc6b6a8e158b008d0bdba7bc3c42bf; path=/; secure; HttpOnly",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "bytes": 41501,
+  "sha256": "9473e9f652caa7811533bae4cedc1db0de892bcf3050b74b4de7d772aebd28a7",
+  "saved_utc": "2026-10-29T09:49:46.304153+00:00"
+}

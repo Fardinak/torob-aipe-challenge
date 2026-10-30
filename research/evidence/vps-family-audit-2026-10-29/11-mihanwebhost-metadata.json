@@ -1,0 +1,15 @@
+{
+  "provider": "mihanwebhost",
+  "label": "سرور مجازی ایران مدیریت شده",
+  "url": "https://mihanwebhost.com/my/managed-vps",
+  "source_key": "11-mihanwebhost",
+  "requested_url": "https://mihanwebhost.com/my/managed-vps",
+  "capture_time": "2026-10-29T19:09:35.696415+00:00",
+  "status": 200,
+  "final_url": "https://mihanwebhost.com/my/managed-vps",
+  "sha256": "9d41d8c84a1e6fabcb6ee199f2a63d6b129e8e8fa5e7819f39521fcd2f67dbac",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/11-mihanwebhost.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/11-mihanwebhost.txt",
+  "bytes": 195178,
+  "title": "خرید سرور مجازی مدیریت شده ایران | میهن وب هاست"
+}

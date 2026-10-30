@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ورود - شرکت میزبان داده پردیس</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="shortcut icon" type="image/png" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.ico">
+
+<!-- فونت‌های سلف‌هاست (Vazirmatn + JetBrains Mono) -->
+<link href="/templates/mizban/css/fonts.css?v=r72" rel="stylesheet">
+
+<!-- Styling -->
+<link href="/assets/fonts/css/open-sans-family.css" rel="stylesheet" type="text/css" />
+<link href="/templates/mizban/css/all.min.css?v=3207f6" rel="stylesheet">
+<link href="/templates/mizban/css/theme.min.css?v=3207f6" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome.min.css" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome-solid.min.css" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome-regular.min.css" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome-light.min.css" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome-brands.min.css" rel="stylesheet">
+<link href="/assets/fonts/css/fontawesome-duotone.min.css" rel="stylesheet">
+<link href="/templates/mizban/css/custom.css" rel="stylesheet">
+<link href="/templates/mizban/css/tokens.css?v=r1" rel="stylesheet">
+<link href="/templates/mizban/css/app-shell.css?v=r88" rel="stylesheet">
+<link href="/templates/mizban/css/dashboard.css?v=r102" rel="stylesheet">
+<link href="/templates/mizban/css/native-theme.css?v=r82" rel="stylesheet">
+        <link href="/templates/mizban/css/auth.css?v=r76" rel="stylesheet">
+<script src="/templates/mizban/js/app-shell.js?v=r92" defer></script>
+
+<script>
+    var csrfToken = 'd7b9ecdfcdef9e669c356eb75c581d131ef3a7c3',
+        markdownGuide = 'راهنمای Markdown',
+        locale = 'en',
+        saved = 'ذخیره شد',
+        saving = 'ذخیره اتوماتیک',
+        whmcsBaseUrl = "";
+    </script>
+<script src="/templates/mizban/js/scripts.min.js?v=3207f6"></script>
+
+    
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome.min.css" />
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome-solid.min.css" />
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome-regular.min.css" />
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome-light.min.css" />
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome-brands.min.css" />
+
+
+<!-- Dynamic Template Compatibility -->
+<!-- Please update your theme to include or have a comment on the following to negate dynamic inclusion -->
+<link rel="stylesheet" type="text/css" href="/assets/fonts/css/fontawesome-duotone.min.css" />
+
+</head>
+<body data-phone-cc-input="0" class="app-shell-body">
+        
+
+    <div class="app-shell is-auth-page" id="appShell">
+        
+        <div class="app-main">
+            
+            
+                        
+            
+            <section id="main-body" class="app-content">
+                <div class="container-fluid">
+                    <div class="row">
+
+                    <div class="col-12 primary-content">
+                                                                        <script>
+(function(){
+  const digitMap={'0':'۰','1':'۱','2':'۲','3':'۳','4':'۴','5':'۵','6':'۶','7':'۷','8':'۸','9':'۹'};
+  function toPersianDigits(s){return s.replace(/[0-9]/g,d=>digitMap[d]);}
+  function isPersianAlready(t){return /[۰-۹]|فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند/.test(t);}
+  function g2j(gy,gm,gd){
+    let g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334];
+    let jy=(gy<=1600)?0:979;
+    gy-=(gy<=1600)?621:1600;
+    let gy2=(gm>2)?(gy+1):gy;
+    let days=(365*gy)+Math.floor((gy2+3)/4)-Math.floor((gy2+99)/100)+Math.floor((gy2+399)/400)-80+gd+g_d_m[gm-1];
+    jy+=33*Math.floor(days/12053); days%=12053;
+    jy+=4*Math.floor(days/1461); days%=1461;
+    jy+=Math.floor((days-1)/365);
+    if(days>365) days=(days-1)%365;
+    let jm=(days<186)?1+Math.floor(days/31):7+Math.floor((days-186)/30);
+    let jd=1+((days<186)?(days%31):((days-186)%30));
+    return [jy,jm,jd];
+  }
+  function formatJ(y,m,d,H=null,I=null,S=null){
+    function pad(x){return (''+x).padStart(2,'0');}
+    let out='Y/m/d';
+    if(H!==null){ out='Y/m/d H:i'; }
+    let map={
+      'Y':y,'y':(''+y).slice(2),
+      'm':pad(m),'n':m,
+      'd':pad(d),'j':d,
+      'H':H!==null?pad(H):'00',
+      'i':I!==null?pad(I):'00',
+      's':S!==null?pad(S):'00'
+    };
+    let res='';
+    for(let ch of out){
+      res+= (map[ch]!==undefined)?map[ch]:ch;
+    }
+    return toPersianDigits(res);
+  }
+  function convertText(t){
+    if(isPersianAlready(t)) return t;
+    // Remove ordinal suffix
+    t=t.replace(/\b([0-3]?\d)(st|nd|rd|th)\b/gi,'$1');
+
+    const patterns=[
+      // YYYY/MM/DD (HH:MM[:SS])
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s*\(\s*(\d{2}):(\d{2})(?::(\d{2}))?\s*\)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD HH:MM[:SS]
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s+(\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      // YYYY-MM-DD HH:MM(:SS)
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY-MM-DD
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\/([0-1]?\d)\/(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/g,f:(m)=>{let d=(''+m[1]).padStart(2,'0'),mo=(''+m[2]).padStart(2,'0'),y=m[3];let a=g2j(+y,+mo,+d);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,jan:1,february:2,feb:2,march:3,mar:3,april:4,apr:4,may:5,june:6,jun:6,july:7,jul:7,august:8,aug:8,september:9,sep:9,sept:9,october:10,oct:10,november:11,nov:11,december:12,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let mon=map[m[1].toLowerCase()]||0;let day=(''+m[2]).padStart(2,'0');let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)-(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};let mon=map[m[2].toLowerCase()]||0;let day=(''+m[3]).padStart(2,'0');let year=m[4];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[5]?formatJ(a[0],a[1],a[2],m[5],m[6],m[7]||'00'):formatJ(a[0],a[1],a[2]);}}
+    ];
+    let orig=t;
+    patterns.forEach(p=>{
+      t=t.replace(p.r,(...m)=>p.f(m));
+    });
+    return t;
+  }
+  function walk(node){
+    if(node.nodeType===3){
+      let txt=node.textContent;
+      let newTxt=convertText(txt);
+      if(newTxt!==txt) node.textContent=newTxt;
+    } else if(node.nodeType===1){
+      // Attributes
+      if(true){
+        Array.from(node.attributes).forEach(attr=>{
+          let v=attr.value;
+            let nv=convertText(v);
+            if(nv!==v) attr.value=nv;
+        });
+      }
+      node.childNodes.forEach(walk);
+    }
+  }
+  function initial(){ if(document.body) walk(document.body); }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initial);
+  } else {
+    initial();
+  }
+  if(true){
+    const obs=new MutationObserver(muts=>{
+      muts.forEach(m=>{
+        m.addedNodes.forEach(n=>{ walk(n); });
+        if(m.type==='characterData'){ let n=m.target; let t=n.textContent; let nt=convertText(t); if(nt!==t) n.textContent=nt; }
+      });
+    });
+    obs.observe(document.body,{childList:true,subtree:true,characterData:true});
+  }
+})();
+</script>
+
+<div class="auth-stage">
+    <div class="providerLinkingFeedback"></div>
+
+    <div class="auth-form-side">
+        <div class="auth-form-inner">
+
+            <div class="auth-head">
+                <div class="auth-brand">
+                    <span class="auth-head-mark">
+                            <img src="/assets/img/logo.png" alt="شرکت میزبان داده پردیس">
+                    </span>
+                    <span class="auth-brand-name">شرکت میزبان داده پردیس</span>
+                </div>
+                <h1>ورود به حساب کاربری</h1>
+                <p>برای ادامه، اطلاعات حساب کاربری خود را وارد کنید.</p>
+            </div>
+
+            <div class="auth-switch">
+                <span class="is-current">
+                    <svg class="app-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                    ورود
+                </span>
+                <a href="/register.php">
+                    <svg class="app-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                    ثبت‌نام
+                </a>
+            </div>
+
+            
+            <form method="post" action="/login" class="login-form" role="form" id="authLoginForm">
+<input type="hidden" name="token" value="d7b9ecdfcdef9e669c356eb75c581d131ef3a7c3" />
+                <input type="hidden" name="token" value="d7b9ecdfcdef9e669c356eb75c581d131ef3a7c3">
+
+                <div class="auth-field">
+                    <label for="inputEmail" class="auth-sr">آدرس ایمیل</label>
+                    <div class="auth-control">
+                        <input type="email" class="app-input" name="username" id="inputEmail"
+                               placeholder="آدرس ایمیل" autocomplete="username"
+                               required autofocus>
+                        <svg class="app-icon auth-control-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="inputPassword" class="auth-sr">کلمه عبور</label>
+                    <div class="auth-control has-reveal">
+                        <button class="btn-reveal-pw" type="button" tabindex="-1" aria-label="نمایش کلمه عبور">
+                            <svg class="app-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <input type="password" class="app-input pw-input" name="password" id="inputPassword"
+                               placeholder="کلمه عبور" autocomplete="current-password" required>
+                        <svg class="app-icon auth-control-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                </div>
+
+                
+                <label class="auth-remember">
+                    <input type="checkbox" name="rememberme">
+                    <span>مرا به خاطر بسپار</span>
+                </label>
+
+                <button id="login" type="submit" class="auth-submit">
+                    <span class="auth-submit-label">ورود به حساب</span>
+                    <span class="auth-spinner" aria-hidden="true"></span>
+                </button>
+            </form>
+
+            <a href="/index.php?m=mobile_login" class="auth-alt-btn">
+                <svg class="app-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                ورود با احراز هویت پیامکی
+            </a>
+
+            
+            <a href="/password/reset" class="auth-forgot">رمز عبور را فراموش کرده اید؟</a>
+
+        </div>
+    </div>
+
+    <aside class="auth-showcase" aria-hidden="true">
+    <div class="auth-show-frame">
+
+        <div class="auth-show-main">
+            <div class="auth-show-copy">
+                <span class="auth-show-kicker">شرکت میزبان داده پردیس</span>
+                <h2>قدرت زیرساخت،<strong>در دستان شما</strong></h2>
+                <p>ارائه‌دهنده سرورهای ابری و مجازی با بالاترین سطح امنیت و پایداری</p>
+            </div>
+
+            <div class="auth-show-cards">
+                <div class="auth-card">
+                    <span class="auth-card-icon">
+                        <svg class="app-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M12 13v5"/><path d="m9.5 15.5 2.5-2.5 2.5 2.5"/></svg>
+                    </span>
+                    <span class="auth-card-text">
+                        <strong>سرورهای ابری</strong>
+                        <span>انعطاف‌پذیر و مقیاس‌پذیر</span>
+                    </span>
+                </div>
+                <div class="auth-card">
+                    <span class="auth-card-icon">
+                        <svg class="app-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="5" r="1.6"/><circle cx="20" cy="5" r="1.6"/><circle cx="4" cy="19" r="1.6"/><circle cx="20" cy="19" r="1.6"/><path d="m5.3 6.2 4.5 3.8"/><path d="m18.7 6.2-4.5 3.8"/><path d="m5.3 17.8 4.5-3.8"/><path d="m18.7 17.8-4.5-3.8"/></svg>
+                    </span>
+                    <span class="auth-card-text">
+                        <strong>شبکه سراسری</strong>
+                        <span>سرعت و پایداری بالا</span>
+                    </span>
+                </div>
+                <div class="auth-card">
+                    <span class="auth-card-icon">
+                        <svg class="app-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18"/><path d="M17 3v18"/><path d="M3 9h4"/><path d="M3 15h4"/><path d="M17 9h4"/><path d="M17 15h4"/><path d="M10 8h4"/><path d="M10 12h4"/></svg>
+                    </span>
+                    <span class="auth-card-text">
+                        <strong>مراکز داده معتبر</strong>
+                        <span>ایران و اروپا</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="auth-art">
+                <svg viewBox="0 0 640 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <radialGradient id="authGround" cx="50%" cy="50%" r="50%">
+                            <stop offset="0" stop-color="#2563eb" stop-opacity=".55"/>
+                            <stop offset=".55" stop-color="#1d4ed8" stop-opacity=".18"/>
+                            <stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/>
+                        </radialGradient>
+                        <linearGradient id="authCloud" x1="0" y1="0" x2=".9" y2="1">
+                            <stop offset="0" stop-color="#bae6fd"/>
+                            <stop offset=".35" stop-color="#38bdf8"/>
+                            <stop offset=".75" stop-color="#2563eb"/>
+                            <stop offset="1" stop-color="#1e3a8a"/>
+                        </linearGradient>
+                        <linearGradient id="authCloudDepth" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#1e40af"/>
+                            <stop offset="1" stop-color="#172554"/>
+                        </linearGradient>
+                        <linearGradient id="authBeam" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0" stop-color="#7dd3fc" stop-opacity=".9"/>
+                            <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="authSlabTop" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#1e293b"/>
+                            <stop offset="1" stop-color="#0f172a"/>
+                        </linearGradient>
+                        <linearGradient id="authSlabTopHi" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#1e3a8a"/>
+                            <stop offset="1" stop-color="#0b1633"/>
+                        </linearGradient>
+                        <filter id="authBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+                        <filter id="authSoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+
+                        <g id="authCube">
+                            <polygon points="0,0 24,12 0,24 -24,12" fill="#7dd3fc"/>
+                            <polygon points="-24,12 0,24 0,50 -24,38" fill="#1d4ed8"/>
+                            <polygon points="24,12 0,24 0,50 24,38" fill="#2563eb"/>
+                            <polygon points="0,0 24,12 0,24 -24,12" fill="none" stroke="#e0f2fe" stroke-opacity=".6" stroke-width="1"/>
+                        </g>
+                    </defs>
+
+                    <ellipse cx="320" cy="420" rx="300" ry="110" fill="url(#authGround)"/>
+
+                    <g class="auth-circuit" stroke="#3b82f6" stroke-width="1.3" fill="none" stroke-opacity=".45">
+                        <path d="M130 420 L40 465 L40 500"/>
+                        <path d="M170 440 L110 470 L180 505"/>
+                        <path d="M510 420 L600 465 L600 500"/>
+                        <path d="M470 440 L530 470 L460 505"/>
+                        <path d="M320 515 L320 540"/>
+                        <path d="M250 500 L200 525"/>
+                        <path d="M390 500 L440 525"/>
+                    </g>
+                    <g fill="#38bdf8">
+                        <circle class="auth-spark" cx="40" cy="500" r="3"/>
+                        <circle class="auth-spark auth-spark-2" cx="180" cy="505" r="3"/>
+                        <circle class="auth-spark auth-spark-3" cx="600" cy="500" r="3"/>
+                        <circle class="auth-spark" cx="460" cy="505" r="3"/>
+                        <circle class="auth-spark auth-spark-2" cx="200" cy="525" r="2.5"/>
+                        <circle class="auth-spark auth-spark-3" cx="440" cy="525" r="2.5"/>
+                    </g>
+
+                    <polygon points="320,305 510,400 320,495 130,400" fill="url(#authSlabTop)" stroke="#334155" stroke-width="1"/>
+                    <polygon points="130,400 320,495 320,523 130,428" fill="#0b1220"/>
+                    <polygon points="510,400 320,495 320,523 510,428" fill="#111c33"/>
+                    <path d="M130 428 L320 523 L510 428" fill="none" stroke="#38bdf8" stroke-opacity=".55" stroke-width="1.5"/>
+
+                    <polygon points="320,305 470,380 320,455 170,380" fill="url(#authSlabTop)" stroke="#1e3a8a" stroke-width="1"/>
+                    <polygon points="170,380 320,455 320,476 170,401" fill="#0d1628"/>
+                    <polygon points="470,380 320,455 320,476 470,401" fill="#13203b"/>
+                    <path d="M170 401 L320 476 L470 401" fill="none" stroke="#60a5fa" stroke-opacity=".5" stroke-width="1.2"/>
+
+                    <polygon points="320,307 438,366 320,425 202,366" fill="url(#authSlabTopHi)"/>
+                    <polygon points="202,366 320,425 320,441 202,382" fill="#0e1a33"/>
+                    <polygon points="438,366 320,425 320,441 438,382" fill="#16254a"/>
+                    <polygon class="auth-rim" points="320,307 438,366 320,425 202,366" fill="none" stroke="#38bdf8" stroke-width="2"/>
+                    <g stroke="#60a5fa" stroke-opacity=".35" stroke-width="1" fill="none">
+                        <path d="M261 336.5 L379 395.5"/>
+                        <path d="M379 336.5 L261 395.5"/>
+                        <polygon points="320,336 379,366 320,396 261,366"/>
+                    </g>
+                    <ellipse class="auth-halo" cx="320" cy="366" rx="70" ry="30" fill="#38bdf8" opacity=".35" filter="url(#authBlur)"/>
+
+                    <rect class="auth-beam" x="296" y="232" width="48" height="136" fill="url(#authBeam)" filter="url(#authSoft)"/>
+
+                    <g class="auth-cloud">
+                        <path d="M205 262 C160 262 150 204 192 190 C188 140 246 122 276 150 C292 94 382 90 396 150 C442 132 484 176 456 216 C488 236 470 264 436 262 Z" fill="#38bdf8" opacity=".55" filter="url(#authBlur)"/>
+                        <path d="M205 276 C160 276 150 218 192 204 C188 154 246 136 276 164 C292 108 382 104 396 164 C442 146 484 190 456 230 C488 250 470 278 436 276 Z" fill="url(#authCloudDepth)"/>
+                        <path d="M205 262 C160 262 150 204 192 190 C188 140 246 122 276 150 C292 94 382 90 396 150 C442 132 484 176 456 216 C488 236 470 264 436 262 Z" fill="url(#authCloud)"/>
+                        <path d="M196 196 C194 150 244 134 272 160 M284 146 C300 104 372 102 388 150" fill="none" stroke="#f0f9ff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M205 262 C160 262 150 204 192 190 C188 140 246 122 276 150 C292 94 382 90 396 150 C442 132 484 176 456 216 C488 236 470 264 436 262 Z" fill="none" stroke="#e0f2fe" stroke-opacity=".5" stroke-width="1.5"/>
+                    </g>
+
+                    <g transform="translate(96 150)"><use class="auth-cube" href="#authCube"/></g>
+                    <g transform="translate(548 108) scale(.8)"><use class="auth-cube auth-cube-2" href="#authCube"/></g>
+                    <g transform="translate(578 282) scale(.7)"><use class="auth-cube auth-cube-3" href="#authCube"/></g>
+                    <g transform="translate(64 300) scale(.62)"><use class="auth-cube auth-cube-2" href="#authCube"/></g>
+                    <g transform="translate(470 250) scale(.5)"><use class="auth-cube auth-cube-3" href="#authCube"/></g>
+                    <g transform="translate(176 62) scale(.45)"><use class="auth-cube" href="#authCube"/></g>
+                    <g transform="translate(470 40) scale(.4)"><use class="auth-cube auth-cube-2" href="#authCube"/></g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="auth-show-strip">
+            <div class="auth-strip-item">
+                <svg class="app-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span><strong>مراکز داده داخلی و خارجی</strong><small>ایران و اروپا</small></span>
+            </div>
+            <div class="auth-strip-item">
+                <svg class="app-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                <span><strong>پشتیبانی ۲۴ ساعته</strong><small>همیشه در کنار شما</small></span>
+            </div>
+            <div class="auth-strip-item">
+                <svg class="app-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span><strong>پایداری و دسترس‌پذیری</strong><small>آپتایم تضمینی</small></span>
+            </div>
+            <div class="auth-strip-item">
+                <svg class="app-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span><strong>امنیت بالا</strong><small>فایروال‌های پیشرفته</small></span>
+            </div>
+        </div>
+
+    </div>
+</aside>
+</div>
+
+
+<script>
+// وضعیت «در حال ارسال» روی دکمه ورود. اگه مرورگر فرم رو نامعتبر بدونه
+// (فیلد خالی)، رویداد submit اصلاً شلیک نمی‌شه و دکمه قفل نمی‌مونه.
+(function () {
+    var form = document.getElementById('authLoginForm');
+    if (!form) return;
+    form.addEventListener('submit', function () {
+        var btn = form.querySelector('.auth-submit');
+        if (!btn || btn.classList.contains('is-busy')) return;
+        btn.classList.add('is-busy');
+        // دکمه رو disable نمی‌کنیم چون اون‌وقت مقدارش با فرم ارسال نمی‌شه.
+        btn.setAttribute('aria-busy', 'true');
+    });
+})();
+</script>
+
+<script>
+(function(){
+  const digitMap={'0':'۰','1':'۱','2':'۲','3':'۳','4':'۴','5':'۵','6':'۶','7':'۷','8':'۸','9':'۹'};
+  function toPersianDigits(s){return s.replace(/[0-9]/g,d=>digitMap[d]);}
+  function isPersianAlready(t){return /[۰-۹]|فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند/.test(t);}
+  function g2j(gy,gm,gd){
+    let g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334];
+    let jy=(gy<=1600)?0:979;
+    gy-=(gy<=1600)?621:1600;
+    let gy2=(gm>2)?(gy+1):gy;
+    let days=(365*gy)+Math.floor((gy2+3)/4)-Math.floor((gy2+99)/100)+Math.floor((gy2+399)/400)-80+gd+g_d_m[gm-1];
+    jy+=33*Math.floor(days/12053); days%=12053;
+    jy+=4*Math.floor(days/1461); days%=1461;
+    jy+=Math.floor((days-1)/365);
+    if(days>365) days=(days-1)%365;
+    let jm=(days<186)?1+Math.floor(days/31):7+Math.floor((days-186)/30);
+    let jd=1+((days<186)?(days%31):((days-186)%30));
+    return [jy,jm,jd];
+  }
+  function formatJ(y,m,d,H=null,I=null,S=null){
+    function pad(x){return (''+x).padStart(2,'0');}
+    let out='Y/m/d';
+    if(H!==null){ out='Y/m/d H:i'; }
+    let map={
+      'Y':y,'y':(''+y).slice(2),
+      'm':pad(m),'n':m,
+      'd':pad(d),'j':d,
+      'H':H!==null?pad(H):'00',
+      'i':I!==null?pad(I):'00',
+      's':S!==null?pad(S):'00'
+    };
+    let res='';
+    for(let ch of out){
+      res+= (map[ch]!==undefined)?map[ch]:ch;
+    }
+    return toPersianDigits(res);
+  }
+  function convertText(t){
+    if(isPersianAlready(t)) return t;
+    // Remove ordinal suffix
+    t=t.replace(/\b([0-3]?\d)(st|nd|rd|th)\b/gi,'$1');
+
+    const patterns=[
+      // YYYY/MM/DD (HH:MM[:SS])
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s*\(\s*(\d{2}):(\d{2})(?::(\d{2}))?\s*\)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD HH:MM[:SS]
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s+(\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      // YYYY-MM-DD HH:MM(:SS)
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY-MM-DD
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\/([0-1]?\d)\/(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/g,f:(m)=>{let d=(''+m[1]).padStart(2,'0'),mo=(''+m[2]).padStart(2,'0'),y=m[3];let a=g2j(+y,+mo,+d);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,jan:1,february:2,feb:2,march:3,mar:3,april:4,apr:4,may:5,june:6,jun:6,july:7,jul:7,august:8,aug:8,september:9,sep:9,sept:9,october:10,oct:10,november:11,nov:11,december:12,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let mon=map[m[1].toLowerCase()]||0;let day=(''+m[2]).padStart(2,'0');let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)-(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};let mon=map[m[2].toLowerCase()]||0;let day=(''+m[3]).padStart(2,'0');let year=m[4];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[5]?formatJ(a[0],a[1],a[2],m[5],m[6],m[7]||'00'):formatJ(a[0],a[1],a[2]);}}
+    ];
+    let orig=t;
+    patterns.forEach(p=>{
+      t=t.replace(p.r,(...m)=>p.f(m));
+    });
+    return t;
+  }
+  function walk(node){
+    if(node.nodeType===3){
+      let txt=node.textContent;
+      let newTxt=convertText(txt);
+      if(newTxt!==txt) node.textContent=newTxt;
+    } else if(node.nodeType===1){
+      // Attributes
+      if(true){
+        Array.from(node.attributes).forEach(attr=>{
+          let v=attr.value;
+            let nv=convertText(v);
+            if(nv!==v) attr.value=nv;
+        });
+      }
+      node.childNodes.forEach(walk);
+    }
+  }
+  function initial(){ if(document.body) walk(document.body); }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initial);
+  } else {
+    initial();
+  }
+  if(true){
+    const obs=new MutationObserver(muts=>{
+      muts.forEach(m=>{
+        m.addedNodes.forEach(n=>{ walk(n); });
+        if(m.type==='characterData'){ let n=m.target; let t=n.textContent; let nt=convertText(t); if(nt!==t) n.textContent=nt; }
+      });
+    });
+    obs.observe(document.body,{childList:true,subtree:true,characterData:true});
+  }
+})();
+</script>
+
+                    </div>
+
+                    </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /.app-content -->
+        </div>
+        <!-- /.app-main -->
+    </div>
+    <!-- /.app-shell -->
+
+    <div id="fullpage-overlay" class="w-hidden">
+        <div class="outer-wrapper">
+            <div class="inner-wrapper">
+                <img src="/assets/img/overlay-spinner.svg" alt="">
+                <br>
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">بستن</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    بارگذاری ... 
+                </div>
+                <div class="modal-footer">
+                    <div class="float-left loader">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        بارگذاری ... 
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary modal-submit">
+                        ارسال
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="get" action="/login?">
+        <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                                                                            <p class="h5 pt-5 pb-3">واحد پول</p>
+                            <div class="row item-selector">
+                                <input type="hidden" name="currency" data-current="1" value="">
+                                                                    <div class="col-4">
+                                        <a href="#" class="item active" data-value="1">
+                                             IR
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="2">
+                                            یورو EUR
+                                        </a>
+                                    </div>
+                                                            </div>
+                                            </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default">درخواست دادن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <form action="#" id="frmGeneratePassword">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">
+                        ایجاد گذرواژه
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger w-hidden" id="generatePwLengthError">
+                        لطفاً برای طول گذرواژه عددی بین 8 تا 64 وارد کنید
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwLength" class="col-sm-4 col-form-label">طول رمز عبور</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwOutput" class="col-sm-4 col-form-label">رمز عبور ایجاد شده</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                ایجاد رمز عبور جدید
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                کپی
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        در کلیپ بورد کپی و درج کنید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+    
+
+</body>
+</html>
+<script>
+(function(){
+  const digitMap={'0':'۰','1':'۱','2':'۲','3':'۳','4':'۴','5':'۵','6':'۶','7':'۷','8':'۸','9':'۹'};
+  function toPersianDigits(s){return s.replace(/[0-9]/g,d=>digitMap[d]);}
+  function isPersianAlready(t){return /[۰-۹]|فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند/.test(t);}
+  function g2j(gy,gm,gd){
+    let g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334];
+    let jy=(gy<=1600)?0:979;
+    gy-=(gy<=1600)?621:1600;
+    let gy2=(gm>2)?(gy+1):gy;
+    let days=(365*gy)+Math.floor((gy2+3)/4)-Math.floor((gy2+99)/100)+Math.floor((gy2+399)/400)-80+gd+g_d_m[gm-1];
+    jy+=33*Math.floor(days/12053); days%=12053;
+    jy+=4*Math.floor(days/1461); days%=1461;
+    jy+=Math.floor((days-1)/365);
+    if(days>365) days=(days-1)%365;
+    let jm=(days<186)?1+Math.floor(days/31):7+Math.floor((days-186)/30);
+    let jd=1+((days<186)?(days%31):((days-186)%30));
+    return [jy,jm,jd];
+  }
+  function formatJ(y,m,d,H=null,I=null,S=null){
+    function pad(x){return (''+x).padStart(2,'0');}
+    let out='Y/m/d';
+    if(H!==null){ out='Y/m/d H:i'; }
+    let map={
+      'Y':y,'y':(''+y).slice(2),
+      'm':pad(m),'n':m,
+      'd':pad(d),'j':d,
+      'H':H!==null?pad(H):'00',
+      'i':I!==null?pad(I):'00',
+      's':S!==null?pad(S):'00'
+    };
+    let res='';
+    for(let ch of out){
+      res+= (map[ch]!==undefined)?map[ch]:ch;
+    }
+    return toPersianDigits(res);
+  }
+  function convertText(t){
+    if(isPersianAlready(t)) return t;
+    // Remove ordinal suffix
+    t=t.replace(/\b([0-3]?\d)(st|nd|rd|th)\b/gi,'$1');
+
+    const patterns=[
+      // YYYY/MM/DD (HH:MM[:SS])
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s*\(\s*(\d{2}):(\d{2})(?::(\d{2}))?\s*\)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD HH:MM[:SS]
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\s+(\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY/MM/DD
+      {r:/\b(20\d{2})\/([0-1]?\d)\/([0-3]?\d)\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      // YYYY-MM-DD HH:MM(:SS)
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00');}},
+      // YYYY-MM-DD
+      {r:/\b(20\d{2})-(\d{2})-(\d{2})\b/g,
+       f:(m)=>{let a=g2j(+m[1],+m[2],+m[3]);return formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\/([0-1]?\d)\/(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/g,f:(m)=>{let d=(''+m[1]).padStart(2,'0'),mo=(''+m[2]).padStart(2,'0'),y=m[3];let a=g2j(+y,+mo,+d);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,jan:1,february:2,feb:2,march:3,mar:3,april:4,apr:4,may:5,june:6,jun:6,july:7,jul:7,august:8,aug:8,september:9,sep:9,sept:9,october:10,oct:10,november:11,nov:11,december:12,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let mon=map[m[1].toLowerCase()]||0;let day=(''+m[2]).padStart(2,'0');let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b([0-3]?\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)-(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};let day=(''+m[1]).padStart(2,'0');let mon=map[m[2].toLowerCase()]||0;let year=m[3];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[4]?formatJ(a[0],a[1],a[2],m[4],m[5],m[6]||'00'):formatJ(a[0],a[1],a[2]);}},
+      {r:/\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+([0-3]?\d),\s+(20\d{2})(?:\s+(\d{2}):(\d{2})(?::(\d{2}))?)?\b/gi,f:(m)=>{let map={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};let mon=map[m[2].toLowerCase()]||0;let day=(''+m[3]).padStart(2,'0');let year=m[4];if(!mon)return m[0];let a=g2j(+year,+mon,+day);return m[5]?formatJ(a[0],a[1],a[2],m[5],m[6],m[7]||'00'):formatJ(a[0],a[1],a[2]);}}
+    ];
+    let orig=t;
+    patterns.forEach(p=>{
+      t=t.replace(p.r,(...m)=>p.f(m));
+    });
+    return t;
+  }
+  function walk(node){
+    if(node.nodeType===3){
+      let txt=node.textContent;
+      let newTxt=convertText(txt);
+      if(newTxt!==txt) node.textContent=newTxt;
+    } else if(node.nodeType===1){
+      // Attributes
+      if(true){
+        Array.from(node.attributes).forEach(attr=>{
+          let v=attr.value;
+            let nv=convertText(v);
+            if(nv!==v) attr.value=nv;
+        });
+      }
+      node.childNodes.forEach(walk);
+    }
+  }
+  function initial(){ if(document.body) walk(document.body); }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initial);
+  } else {
+    initial();
+  }
+  if(true){
+    const obs=new MutationObserver(muts=>{
+      muts.forEach(m=>{
+        m.addedNodes.forEach(n=>{ walk(n); });
+        if(m.type==='characterData'){ let n=m.target; let t=n.textContent; let nt=convertText(t); if(nt!==t) n.textContent=nt; }
+      });
+    });
+    obs.observe(document.body,{childList:true,subtree:true,characterData:true});
+  }
+})();
+</script>

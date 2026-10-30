@@ -1,0 +1,28 @@
+{
+  "requested_url": "https://whdir.ir/provider/azaronline/",
+  "attempt_utc": "2026-10-29T09:52:32.393574+00:00",
+  "final_url": "https://whdir.ir/provider/azaronline/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:52:31 GMT",
+    "Content-Type": "text/html",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "last-modified": "Thu, 29 Oct 2026 03:55:14 GMT",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=u0TqYIGd7w6wlIQwQB%2Bz%2BgOU%2BNvUyzGrkSZJWaKxAOt2YEhPpcxeeuGfUnXeEOhY%2FFiMgri2CrKysrQAqoTHqv2RWpz8YKkUnWYev49Bw%2FzSGOhqBf4eaTAmQw%3D%3D\"}]}",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "content-security-policy": "frame-ancestors 'self'; base-uri 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=15552000",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "Server": "cloudflare",
+    "CF-RAY": "a52149b60b8f14e2-FRA"
+  },
+  "bytes": 307202,
+  "sha256": "3ead6e7ba2d4068ad5d6e1988be82f4cd19451663afdb35d933e28c07927ab84",
+  "saved_utc": "2026-10-29T09:52:38.638691+00:00"
+}

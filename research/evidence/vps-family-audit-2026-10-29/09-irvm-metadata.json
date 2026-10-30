@@ -1,0 +1,15 @@
+{
+  "provider": "irvm",
+  "label": "سرور مجازی آسیاتک",
+  "url": "https://irvm.org/virtual-server-asiatech/",
+  "source_key": "09-irvm",
+  "requested_url": "https://irvm.org/virtual-server-asiatech/",
+  "capture_time": "2026-10-29T19:09:35.690704+00:00",
+  "status": 200,
+  "final_url": "https://irvm.org/virtual-server-asiatech/",
+  "sha256": "630bf1f7b6a3413395e62481431cc7fcedcc7dff189ace70ac5e4c11da3cda47",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/09-irvm.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/09-irvm.txt",
+  "bytes": 423153,
+  "title": "سرور مجازی آسیاتک | ایران وی ام"
+}

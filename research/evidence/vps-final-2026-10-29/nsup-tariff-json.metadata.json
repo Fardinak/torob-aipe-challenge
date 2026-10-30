@@ -1,0 +1,25 @@
+{
+  "requested_url": "https://www.nsup.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=8843&target_action=get-all-data&default_sorting=old_first&ninja_table_public_nonce=3e9d33a603",
+  "attempt_utc": "2026-10-29T09:58:41.130911+00:00",
+  "final_url": "https://www.nsup.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=8843&target_action=get-all-data&default_sorting=old_first&ninja_table_public_nonce=3e9d33a603",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:58:35 GMT",
+    "Server": "Apache",
+    "X-Powered-By": "PHP/7.4.33",
+    "X-Robots-Tag": "noindex",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "Cache-Control": "no-cache, must-revalidate, max-age=0",
+    "Set-Cookie": "PETcNGLF_WIMRnA=kI917aOSxM; expires=Fri, 30-Oct-2026 09:58:37 GMT; Max-Age=86400; path=/; secure",
+    "Vary": "Accept-Encoding",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "bytes": 9343,
+  "sha256": "d4954e06cb025b476e39e724853ab3630e4c0cbf64ea9e670990428c00552ad3",
+  "saved_utc": "2026-10-29T09:58:46.223714+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "Vmware auto vps",
+  "url": "https://clients.servervds.com/index.php?rp=/store/vmware-auto-vps",
+  "provider": "servervds",
+  "discovered_in": "19-servervds",
+  "source_key": "51-servervds",
+  "requested_url": "https://clients.servervds.com/index.php?rp=/store/vmware-auto-vps",
+  "capture_time": "2026-10-29T19:11:46.781035+00:00",
+  "status": 200,
+  "final_url": "https://clients.servervds.com/index.php?rp=/store/vmware-auto-vps",
+  "sha256": "b685695672f0fb92b3afb411b6ea82af07ab188c3287d872c1b58fbf9c4f4c53",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/51-servervds.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/51-servervds.txt",
+  "bytes": 64852,
+  "title": "کارت خرید - سرور وی‌دی‌اس"
+}

@@ -213,7 +213,7 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   await expect(
     page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
   ).toHaveCount(0);
-  await expect(page.locator(".configuration")).toHaveCount(4);
+  await expect(page.locator(".configuration")).toHaveCount(10);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
   await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
   await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
@@ -316,7 +316,7 @@ test("search, recover and restore the same discovery detail with browser navigat
     .getByRole("article")
     .getByRole("link", { name: "کاتالوگ لیارا" })
     .click();
-  await expect(page.locator(".configuration")).toHaveCount(4);
+  await expect(page.locator(".configuration")).toHaveCount(10);
   await expect(
     page.getByText("شامل همه محصولات آن شرکت نیست", { exact: false }),
   ).toBeVisible();
@@ -337,7 +337,7 @@ test("search, recover and restore the same discovery detail with browser navigat
   expect(page.url()).toBe(discoveryURL);
   await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
   await page.goForward();
-  await expect(page.locator(".configuration")).toHaveCount(4);
+  await expect(page.locator(".configuration")).toHaveCount(10);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -561,7 +561,7 @@ test("inspect a sourced exact VPS overlap and download its published evidence", 
     exact: true,
   });
   const mehran = page.getByRole("article", {
-    name: "مهران هاست 1c-1g-10g",
+    name: "مهران هاست کوچک‌ترین پیکربندی",
     exact: true,
   });
   await expect(irvm).toContainText("۵۴۵٬۰۰۰");
@@ -599,4 +599,18 @@ test("inspect a sourced exact VPS overlap and download its published evidence", 
   await item.click();
   await expect(irvm).toHaveCount(0);
   await expect(mehran).toBeVisible();
+
+  await page.goto("./?category=vps&provider=vpsoto");
+  await page.locator(".configuration").first().click();
+  await expect(page.getByRole("article")).toContainText("دلار آمریکا / ماه");
+  await expect(page.getByRole("article")).toContainText(
+    "مرجع ماهانه به تومان در دسترس نیست؛ تبدیل قیمت انجام نشده است.",
+  );
+  if (isMobile) {
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+    await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+  }
+  await page.getByLabel("سقف قیمت پایه ماهانه (تومان)").fill("1000000");
+  if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
+  await expect(page.locator(".configuration")).toHaveCount(0);
 });

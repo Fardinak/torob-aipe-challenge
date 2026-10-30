@@ -14,7 +14,7 @@ const source = z.object({
 });
 const provider = z.object({
   name: text,
-  currency: z.literal("toman"),
+  currency: z.enum(["toman", "USD"]),
   billing: text,
   cpu_allocation: text.nullable(),
   base_ipv4_included: z.boolean().nullable(),
@@ -47,6 +47,7 @@ const facts = z.object({
   traffic_allowance: factStatus,
   traffic_rate: factStatus,
   traffic_overage: factStatus,
+  published_tariff: factStatus.optional(),
 });
 const evidence = z.object({
   last_verified_at: date.nullable(),
@@ -87,7 +88,14 @@ const published = configuration.extend({
     .enum(["download-as-egress-free-upload", "unspecified-shared"])
     .nullable(),
   provider_plan_name: text.nullable(),
-  advertised_monthly_toman: whole,
+  advertised_monthly_toman: whole.nullable(),
+  published_tariff: z
+    .object({
+      amount: z.number().nonnegative().max(Number.MAX_SAFE_INTEGER),
+      currency: z.enum(["toman", "USD"]),
+      basis: z.enum(["hour", "day", "month"]),
+    })
+    .optional(),
   traffic_allowance_gb_unspecified_direction: whole.nullable(),
   source: text,
   availability: z.literal("not_verified"),
@@ -150,6 +158,27 @@ export const catalogSchema = z
       const revisions = new Set<string>();
       let previousDate: string | null = null;
       for (const revision of [...offer.revisions, offer]) {
+        if (
+          revision.advertised_monthly_toman === null &&
+          revision.evidence.facts.advertised_monthly_toman === "verified"
+        )
+          issue(`Verified monthly reference requires a value: ${offer.id}`);
+        if (
+          revision.published_tariff &&
+          revision.published_tariff.currency !==
+            catalog.providers[offer.provider]?.currency
+        )
+          issue(`Native tariff currency mismatch: ${offer.id}`);
+        if (
+          catalog.providers[offer.provider]?.currency === "USD" &&
+          revision.advertised_monthly_toman !== null
+        )
+          issue(`Foreign tariff cannot imply a toman conversion: ${offer.id}`);
+        if (
+          revision.evidence.facts.published_tariff === "verified" &&
+          !revision.published_tariff
+        )
+          issue(`Verified native tariff requires a value: ${offer.id}`);
         references.push(revision.source, ...revision.evidence.sources);
         if (!revision.evidence.sources.includes(revision.source))
           issue(`Missing primary evidence: ${offer.id}`);

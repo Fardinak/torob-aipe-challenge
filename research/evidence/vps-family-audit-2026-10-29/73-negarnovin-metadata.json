@@ -1,0 +1,16 @@
+{
+  "provider": "negarnovin",
+  "label": "سرور مجازی نامحدود",
+  "url": "https://negarnovin.com/unlimited-traffic-virtual-server",
+  "discovered_in": "27-negarnovin-links.json",
+  "source_key": "73-negarnovin",
+  "requested_url": "https://negarnovin.com/unlimited-traffic-virtual-server",
+  "capture_time": "2026-10-29T19:16:42.319743+00:00",
+  "status": 200,
+  "final_url": "https://negarnovin.com/unlimited-traffic-virtual-server/",
+  "sha256": "183041d98a63976ed21bb45f054f0a0f0541ea1ffbb12fd8ff82ae1c761b8cdd",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/73-negarnovin.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/73-negarnovin.txt",
+  "bytes": 623877,
+  "title": "خرید سرور مجازی ترافیک نامحدود | VPS 10G NVMe — نگارنوین"
+}

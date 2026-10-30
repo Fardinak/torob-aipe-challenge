@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://pentaserver.net/vps/%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+  "attempt_utc": "2026-10-29T09:49:46.912980+00:00",
+  "final_url": "https://pentaserver.net/vps/%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+  "status": 200,
+  "headers": {
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=120, public, s-maxage=120",
+    "Date": "Thu, 29 Oct 2026 09:49:41 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  },
+  "bytes": 217110,
+  "sha256": "745fdd5c66a46d8133d33855ff53c76a54847ea264e5b2d90221b4f273cf9e70",
+  "saved_utc": "2026-10-29T09:49:47.472036+00:00"
+}

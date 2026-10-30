@@ -1,0 +1,254 @@
+[
+  {
+    "label": "021-91092534",
+    "url": "tel:02191009829"
+  },
+  {
+    "label": "info@logicserver.org",
+    "url": "mailto:info@logicserver.org"
+  },
+  {
+    "label": "ورود",
+    "url": "https://crm.logicserver.org/index.php?rp=/login"
+  },
+  {
+    "label": "ثبت نام",
+    "url": "https://crm.logicserver.org/register.php"
+  },
+  {
+    "label": "لاجیک سرور",
+    "url": "https://logicserver.org/"
+  },
+  {
+    "label": "خانه",
+    "url": "https://logicserver.org/"
+  },
+  {
+    "label": "هاست",
+    "url": "https://logicserver.org/vps-management/#"
+  },
+  {
+    "label": "هاست وردپرس ایران",
+    "url": "https://logicserver.org/wordpress-hosting/"
+  },
+  {
+    "label": "هاست وردپرس آلمان",
+    "url": "https://logicserver.org/wordpress-hosting-germany/"
+  },
+  {
+    "label": "هاست اختصاصی ایران",
+    "url": "https://logicserver.org/dedicated-hosting/"
+  },
+  {
+    "label": "هاست اختصاصی آلمان",
+    "url": "https://logicserver.org/dedicated-hosting-germany/"
+  },
+  {
+    "label": "هاست دانلود",
+    "url": "https://logicserver.org/download-host/"
+  },
+  {
+    "label": "هاست نمایندگی",
+    "url": "https://logicserver.org/reseller-hosting/"
+  },
+  {
+    "label": "سرور مجازی",
+    "url": "https://logicserver.org/vps-management/#"
+  },
+  {
+    "label": "سرور مجازی ایران",
+    "url": "https://logicserver.org/iran-vps/"
+  },
+  {
+    "label": "سرور مجازی آلمان",
+    "url": "https://logicserver.org/germany-vps/"
+  },
+  {
+    "label": "سرور مجازی فنلاند",
+    "url": "https://logicserver.org/finland-vps/"
+  },
+  {
+    "label": "سرور مجازی آمریکا",
+    "url": "https://logicserver.org/usa-vps/"
+  },
+  {
+    "label": "سرور مجازی تریدینگ",
+    "url": "https://logicserver.org/trade-vps/"
+  },
+  {
+    "label": "سرور مجازی مدیریت شده ایران",
+    "url": "https://logicserver.org/vps-management/"
+  },
+  {
+    "label": "سرور مجازی مدیریت شده آلمان",
+    "url": "https://logicserver.org/vps-management-germany/"
+  },
+  {
+    "label": "سرور اختصاصی",
+    "url": "https://logicserver.org/vps-management/#"
+  },
+  {
+    "label": "سرور اختصاصی ایران",
+    "url": "https://logicserver.org/dedicated-server-iran/"
+  },
+  {
+    "label": "سرور اختصاصی آلمان",
+    "url": "https://logicserver.org/dedicated-server-germany/"
+  },
+  {
+    "label": "دامنه",
+    "url": "https://logicserver.org/domains/"
+  },
+  {
+    "label": "سایر",
+    "url": "https://logicserver.org/vps-management/#"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://logicserver.org/colocation/"
+  },
+  {
+    "label": "SSL",
+    "url": "https://logicserver.org/ssl/"
+  },
+  {
+    "label": "قوانین و مقررات",
+    "url": "https://logicserver.org/terms/"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://logicserver.org/contact-us/"
+  },
+  {
+    "label": "مشاهده پکیج‌ها",
+    "url": "https://logicserver.org/vps-management/#plans"
+  },
+  {
+    "label": "مقایسه پلن‌ها",
+    "url": "https://logicserver.org/vps-management/#comparison"
+  },
+  {
+    "label": "سفارش پلن 1",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/srwr-mjzy-mdyryt-shdh/plan1"
+  },
+  {
+    "label": "سفارش پلن 2",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan2"
+  },
+  {
+    "label": "سفارش پلن 3",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan3"
+  },
+  {
+    "label": "سفارش پلن 4",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan4"
+  },
+  {
+    "label": "خرید",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/srwr-mjzy-mdyryt-shdh/plan1"
+  },
+  {
+    "label": "خرید",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan2"
+  },
+  {
+    "label": "خرید",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan3"
+  },
+  {
+    "label": "خرید",
+    "url": "https://crm.logicserver.org/index.php?rp=/store/managevps/plan4"
+  },
+  {
+    "label": "شروع کنید",
+    "url": "https://logicserver.org/vps-management/#pricing"
+  },
+  {
+    "label": "مشاهده VPS ایران",
+    "url": "https://logicserver.org/iran-vps/"
+  },
+  {
+    "label": "مشاهده سرور اختصاصی",
+    "url": "https://logicserver.org/dedicated-server-iran/"
+  },
+  {
+    "label": "مشاهده هاست وردپرس",
+    "url": "https://logicserver.org/wordpress-hosting/"
+  },
+  {
+    "label": "",
+    "url": "https://t.me/Logicserver"
+  },
+  {
+    "label": "",
+    "url": "https://t.me/Logicserver_org"
+  },
+  {
+    "label": "هاست لینوکس",
+    "url": "https://logicserver.org/hosting/"
+  },
+  {
+    "label": "هاست وردپرس ایران",
+    "url": "https://logicserver.org/wordpress-hosting/"
+  },
+  {
+    "label": "هاست وردپرس آلمان",
+    "url": "https://logicserver.org/wordpress-hosting-germany/"
+  },
+  {
+    "label": "هاست دانلود",
+    "url": "https://logicserver.org/download-host/"
+  },
+  {
+    "label": "هاست نمایندگی",
+    "url": "https://logicserver.org/reseller-hosting/"
+  },
+  {
+    "label": "سرور مجازی ایران",
+    "url": "https://logicserver.org/iran-vps/"
+  },
+  {
+    "label": "سرور مجازی آلمان",
+    "url": "https://logicserver.org/germany-vps/"
+  },
+  {
+    "label": "سرور مجازی مدیریت شده",
+    "url": "https://logicserver.org/vps-management/"
+  },
+  {
+    "label": "سرور اختصاصی ایران",
+    "url": "https://logicserver.org/dedicated-server-iran/"
+  },
+  {
+    "label": "سرور اختصاصی آلمان",
+    "url": "https://logicserver.org/dedicated-hosting-germany/"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://logicserver.org/colocation/"
+  },
+  {
+    "label": "021-91092534",
+    "url": "tel:02191092534"
+  },
+  {
+    "label": "info@logicserver.org",
+    "url": "mailto:info@logicserver.org"
+  },
+  {
+    "label": "",
+    "url": "https://enamad.ir"
+  },
+  {
+    "label": "قوانین و مقررات",
+    "url": "https://logicserver.org/terms/"
+  },
+  {
+    "label": "حریم خصوصی",
+    "url": "https://logicserver.org/privacy/"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://logicserver.org/contact-us/"
+  }
+]

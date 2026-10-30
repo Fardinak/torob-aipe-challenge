@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://haio.ir/",
+  "attempt_utc": "2026-10-29T02:38:02.290323+00:00",
+  "final_url": "https://haio.ir/",
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 29 Oct 2026 02:19:34 GMT",
+    "Link": "<https://haio.ir/wp-json/>; rel=\"https://api.w.org/\"",
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "bytes": 111312,
+  "sha256": "d56671b3253887c202323123cb420b82ca222fd7b1f6499c9b7150ef0d07fcf8",
+  "saved_utc": "2026-10-29T02:38:02.876706+00:00"
+}

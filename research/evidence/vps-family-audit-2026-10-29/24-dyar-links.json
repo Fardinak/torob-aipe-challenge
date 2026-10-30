@@ -1,0 +1,474 @@
+[
+  {
+    "label": "دیارهاست",
+    "url": "https://client.dyarhost.com/index.php"
+  },
+  {
+    "label": "0 کارت خرید",
+    "url": "https://client.dyarhost.com/cart.php?a=view"
+  },
+  {
+    "label": "ناحیه کاربری",
+    "url": "https://client.dyarhost.com/index.php"
+  },
+  {
+    "label": "فروشگاه",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "مشاهده همه",
+    "url": "https://client.dyarhost.com/store"
+  },
+  {
+    "label": "هاست لینوکس ایران",
+    "url": "https://client.dyarhost.com/store/host-linux-iran"
+  },
+  {
+    "label": "هاست وردپرس ایران",
+    "url": "https://client.dyarhost.com/store/wordpress-host-iran"
+  },
+  {
+    "label": "نمایندگی هاست لینوکس ایران",
+    "url": "https://client.dyarhost.com/store/reseller-linux-host-iran"
+  },
+  {
+    "label": "هاست ربات تلگرام آلمان",
+    "url": "https://client.dyarhost.com/store/telegram-host-germany"
+  },
+  {
+    "label": "هاست ربات میدلاین آلمان",
+    "url": "https://client.dyarhost.com/store/madelineproto-host-germany"
+  },
+  {
+    "label": "هاست وردپرس آلمان",
+    "url": "https://client.dyarhost.com/store/wordpress-host-germany"
+  },
+  {
+    "label": "هاست ووکامرس آلمان",
+    "url": "https://client.dyarhost.com/store/woocommerce-host-germany"
+  },
+  {
+    "label": "نمایندگی هاست لینوکس آلمان",
+    "url": "https://client.dyarhost.com/store/reseller-linux-host-germany"
+  },
+  {
+    "label": "سرور مجازی کلاود Hetzner",
+    "url": "https://client.dyarhost.com/store/hetzner-cloud-vps"
+  },
+  {
+    "label": "سرور مجازی LeaseWeb",
+    "url": "https://client.dyarhost.com/store/leaseweb-vps"
+  },
+  {
+    "label": "سرور مجازی ovh",
+    "url": "https://client.dyarhost.com/store/ovh-vps"
+  },
+  {
+    "label": "سرور مجازی NVMe پیشگامان ایران",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-nvme-vps"
+  },
+  {
+    "label": "سرور مجازی اقتصادی پیشگامان ایران",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps"
+  },
+  {
+    "label": "سرور اختصاصی ایران پیشگامان",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-dedicated"
+  },
+  {
+    "label": "سرور اختصاصی ایران رسپینا",
+    "url": "https://client.dyarhost.com/store/iran-respina-dedicated"
+  },
+  {
+    "label": "سرور مجازی NVMe رسپینا ایران",
+    "url": "https://client.dyarhost.com/store/iran-respina-nvme-vps"
+  },
+  {
+    "label": "سرور اختصاصی Hetzner",
+    "url": "https://client.dyarhost.com/store/hetzner-dedicated-server"
+  },
+  {
+    "label": "سرور اختصاصی ovh",
+    "url": "https://client.dyarhost.com/store/ovh-dedicated"
+  },
+  {
+    "label": "سیستم لایسنس",
+    "url": "https://client.dyarhost.com/store/system-license"
+  },
+  {
+    "label": "لایسنس کنسلی",
+    "url": "https://client.dyarhost.com/store/canceled-licensing-system"
+  },
+  {
+    "label": "خدمات کانفیگ و پشتیبانی",
+    "url": "https://client.dyarhost.com/store/support-and-configuration"
+  },
+  {
+    "label": "ماژول های WHMCS",
+    "url": "https://client.dyarhost.com/store/whmcs-modules"
+  },
+  {
+    "label": "پنل ارسال پیامک",
+    "url": "https://client.dyarhost.com/store/sms-panel"
+  },
+  {
+    "label": "رنج ایپی",
+    "url": "https://client.dyarhost.com/store/range-ip"
+  },
+  {
+    "label": "نمایندگی فروش سرور مجازی",
+    "url": "https://client.dyarhost.com/store/vps-reseller"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://client.dyarhost.com/store/colocation"
+  },
+  {
+    "label": "هاست ووکامرس ایران",
+    "url": "https://client.dyarhost.com/store/host-woocommerce-iran"
+  },
+  {
+    "label": "هاست دانلود ایران",
+    "url": "https://client.dyarhost.com/store/host-download-iran"
+  },
+  {
+    "label": "هاست ایمیل",
+    "url": "https://client.dyarhost.com/store/host-email"
+  },
+  {
+    "label": "هاست پایتون ایران",
+    "url": "https://client.dyarhost.com/store/host-python-iran"
+  },
+  {
+    "label": "ثبت دامنه جدید",
+    "url": "https://client.dyarhost.com/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "انتقال دامنه به ما",
+    "url": "https://client.dyarhost.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "label": "اخبار",
+    "url": "https://client.dyarhost.com/announcements"
+  },
+  {
+    "label": "مرکز آموزش",
+    "url": "https://client.dyarhost.com/knowledgebase"
+  },
+  {
+    "label": "وضعیت شبکه",
+    "url": "https://client.dyarhost.com/serverstatus.php"
+  },
+  {
+    "label": "بازاریابی",
+    "url": "https://client.dyarhost.com/affiliates.php"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://client.dyarhost.com/contact.php"
+  },
+  {
+    "label": "ارسال تیکت",
+    "url": "https://client.dyarhost.com/submitticket.php"
+  },
+  {
+    "label": "حساب",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "ورود",
+    "url": "https://client.dyarhost.com/clientarea.php"
+  },
+  {
+    "label": "ثبت نام",
+    "url": "https://client.dyarhost.com/register.php"
+  },
+  {
+    "label": "رمز عبور را فراموش کرده اید؟",
+    "url": "https://client.dyarhost.com/password/reset"
+  },
+  {
+    "label": "هاست لینوکس ایران",
+    "url": "https://client.dyarhost.com/store/host-linux-iran"
+  },
+  {
+    "label": "هاست وردپرس ایران",
+    "url": "https://client.dyarhost.com/store/wordpress-host-iran"
+  },
+  {
+    "label": "نمایندگی هاست لینوکس ایران",
+    "url": "https://client.dyarhost.com/store/reseller-linux-host-iran"
+  },
+  {
+    "label": "هاست ربات تلگرام آلمان",
+    "url": "https://client.dyarhost.com/store/telegram-host-germany"
+  },
+  {
+    "label": "هاست ربات میدلاین آلمان",
+    "url": "https://client.dyarhost.com/store/madelineproto-host-germany"
+  },
+  {
+    "label": "هاست وردپرس آلمان",
+    "url": "https://client.dyarhost.com/store/wordpress-host-germany"
+  },
+  {
+    "label": "هاست ووکامرس آلمان",
+    "url": "https://client.dyarhost.com/store/woocommerce-host-germany"
+  },
+  {
+    "label": "نمایندگی هاست لینوکس آلمان",
+    "url": "https://client.dyarhost.com/store/reseller-linux-host-germany"
+  },
+  {
+    "label": "سرور مجازی کلاود Hetzner",
+    "url": "https://client.dyarhost.com/store/hetzner-cloud-vps"
+  },
+  {
+    "label": "سرور مجازی LeaseWeb",
+    "url": "https://client.dyarhost.com/store/leaseweb-vps"
+  },
+  {
+    "label": "سرور مجازی ovh",
+    "url": "https://client.dyarhost.com/store/ovh-vps"
+  },
+  {
+    "label": "سرور مجازی NVMe پیشگامان ایران",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-nvme-vps"
+  },
+  {
+    "label": "سرور مجازی اقتصادی پیشگامان ایران",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps"
+  },
+  {
+    "label": "سرور اختصاصی ایران پیشگامان",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-dedicated"
+  },
+  {
+    "label": "سرور اختصاصی ایران رسپینا",
+    "url": "https://client.dyarhost.com/store/iran-respina-dedicated"
+  },
+  {
+    "label": "سرور مجازی NVMe رسپینا ایران",
+    "url": "https://client.dyarhost.com/store/iran-respina-nvme-vps"
+  },
+  {
+    "label": "سرور اختصاصی Hetzner",
+    "url": "https://client.dyarhost.com/store/hetzner-dedicated-server"
+  },
+  {
+    "label": "سرور اختصاصی ovh",
+    "url": "https://client.dyarhost.com/store/ovh-dedicated"
+  },
+  {
+    "label": "سیستم لایسنس",
+    "url": "https://client.dyarhost.com/store/system-license"
+  },
+  {
+    "label": "لایسنس کنسلی",
+    "url": "https://client.dyarhost.com/store/canceled-licensing-system"
+  },
+  {
+    "label": "خدمات کانفیگ و پشتیبانی",
+    "url": "https://client.dyarhost.com/store/support-and-configuration"
+  },
+  {
+    "label": "ماژول های WHMCS",
+    "url": "https://client.dyarhost.com/store/whmcs-modules"
+  },
+  {
+    "label": "پنل ارسال پیامک",
+    "url": "https://client.dyarhost.com/store/sms-panel"
+  },
+  {
+    "label": "رنج ایپی",
+    "url": "https://client.dyarhost.com/store/range-ip"
+  },
+  {
+    "label": "نمایندگی فروش سرور مجازی",
+    "url": "https://client.dyarhost.com/store/vps-reseller"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://client.dyarhost.com/store/colocation"
+  },
+  {
+    "label": "هاست ووکامرس ایران",
+    "url": "https://client.dyarhost.com/store/host-woocommerce-iran"
+  },
+  {
+    "label": "هاست دانلود ایران",
+    "url": "https://client.dyarhost.com/store/host-download-iran"
+  },
+  {
+    "label": "هاست ایمیل",
+    "url": "https://client.dyarhost.com/store/host-email"
+  },
+  {
+    "label": "هاست پایتون ایران",
+    "url": "https://client.dyarhost.com/store/host-python-iran"
+  },
+  {
+    "label": "ثبت دامنه جدید",
+    "url": "https://client.dyarhost.com/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "انتقال در دامنه",
+    "url": "https://client.dyarhost.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "label": "مشاهده کارت خرید",
+    "url": "https://client.dyarhost.com/cart.php?a=view"
+  },
+  {
+    "label": "ادامه",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "دیارهاست",
+    "url": "https://client.dyarhost.com/index.php"
+  },
+  {
+    "label": "ناحیه کاربری",
+    "url": "https://client.dyarhost.com/clientarea.php"
+  },
+  {
+    "label": "سفارش خدمات",
+    "url": "https://client.dyarhost.com/cart.php"
+  },
+  {
+    "label": "اطلاعیه‌ها",
+    "url": "https://client.dyarhost.com/announcements.php"
+  },
+  {
+    "label": "ارسال تیکت",
+    "url": "https://client.dyarhost.com/submitticket.php"
+  },
+  {
+    "label": "مرکز آموزش",
+    "url": "https://client.dyarhost.com/knowledgebase.php"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://client.dyarhost.com/contact.php"
+  },
+  {
+    "label": "شرایط سرویس",
+    "url": "https://dyarhost.com/terms"
+  },
+  {
+    "label": "ارسال تیکت",
+    "url": "https://client.dyarhost.com/submitticket.php"
+  },
+  {
+    "label": "العربية",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Azerbaijani",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Català",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "中文",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Hrvatski",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Čeština",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Dansk",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Nederlands",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "English",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Estonian",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Persian",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Français",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Deutsch",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "עברית",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Magyar",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Italiano",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Macedonian",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Norwegian",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Português",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Português",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Română",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Русский",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Español",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Svenska",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Türkçe",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "Українська",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "IRT",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  },
+  {
+    "label": "EURO",
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps#"
+  }
+]

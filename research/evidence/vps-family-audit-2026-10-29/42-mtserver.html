@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>کارت خرید - ام تی سرور</title>
+<!-- Styling -->
+<link href="/assets/fonts/css/open-sans-family.css" rel="stylesheet" type="text/css" />
+<link href="/templates/mtserver/css/main.css?v=305ede" rel="stylesheet">
+<link href="/templates/mtserver/css/style.css?v=305ede" rel="stylesheet">
+<link href="/templates/mtserver/css/libs.css?v=305ede" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="/templates/mtserver/css/custom.css" rel="stylesheet">
+
+<script>
+    var csrfToken = '95f17c219065af4fc100cf6c36335bec657fc57c',
+        markdownGuide = 'راهنمای Markdown',
+        locale = 'en',
+        saved = 'ذخیره شد',
+        saving = 'ذخیره اتوماتیک',
+        whmcsBaseUrl = "";
+    </script>
+<script src="/templates/mtserver/js/scripts.min.js?v=305ede"></script>
+
+<script>window.dateFormat="YYYY/MM/DD"; window.targetDateFormat="jYYYY/jMM/jDD (YYYY/MM/DDD)"; window.shamsidateTranslations={"jan":"یان","january":"ژانویه","feb":"فوریه","february":"فوریه","mar":"مارس","march":"مارس","apr":"آوریل","april":"آوریل","may":"می","jun":"ژوئن","june":"ژوئن","jul":"جولای","july":"جولای","aug":"اگوست","august":"اوت","sep":"سپتامبر","september":"سپتامبر","oct":"اکتبر","october":"اکتبر","nov":"نوامبر","november":"نوامبر","dec":"دسامبر","december":"دسامبر"};</script>
+<script type="text/javascript" src="https://my.mtserver.ir/modules/addons/ShamsiDate/assets/shamsidate.min.js?v=1787727296"></script>
+
+<link href="/templates/mtserver/css/mtserver.css?v=1.0.1" rel="stylesheet" />
+</head>
+<body class="primary-bg-color mt-theme" data-phone-cc-input="1">
+<a class="mt-skip-link" href="#mt-main-content">رفتن به محتوای صفحه</a>
+
+<header id="header" class="mt-site-header">
+<div class="mt-header-top container">
+<a class="mt-brand" href="/clientarea.php" aria-label="ام‌تی‌سرور؛ ناحیه کاربری">
+<img src="/assets/img/logo.png" alt="ام تی سرور" /><small>ناحیه کاربری مشتریان</small></a>
+<div class="mt-header-actions">
+<a class="mt-icon-link" href="/cart.php?a=view" aria-label="سبد خرید"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+<a class="btn btn-primary" href="/login.php">ورود / ثبت‌نام</a></div></div>
+<nav class="mt-navigation navbar navbar-expand-xl" aria-label="منوی اصلی"><div class="container">
+<button class="navbar-toggler mt-mobile-menu" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="باز کردن منو"><i class="fas fa-bars" aria-hidden="true"></i> منو</button>
+<div class="collapse navbar-collapse" id="mainNavbar"><ul id="mtPrimaryNav" class="navbar-nav mt-main-nav"><li menuItemName="Home" id="Primary_Navbar-Home" class="nav-item">
+<a class="nav-link" href="/index.php">
+ ناحیه کاربری</a>
+</li><li menuItemName="Store" id="Primary_Navbar-Store" class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ فروشگاه</a>
+<ul class="dropdown-menu"><li menuItemName="Browse Products Services" id="Primary_Navbar-Store-Browse_Products_Services" class=""><a class="dropdown-item" href="/index.php?rp=/store">مشاهده همه</a></li>
+<li class="dropdown-divider" role="separator"></li><li menuItemName="سرور مجازی مبین وان  (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_مبین_وان__(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/mobinone-ir">سرور مجازی مبین وان  (Port 10GB )</a></li>
+<li menuItemName="سرور مجازی رسپینا (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_رسپینا_(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/respina">سرور مجازی رسپینا (Port 10GB )</a></li>
+<li menuItemName="سرور مجازی فن آوا (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_فن_آوا_(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/fanava">سرور مجازی فن آوا (Port 10GB )</a></li>
+<li menuItemName="سرور مجازی رایتل (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_رایتل_(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/rightel">سرور مجازی رایتل (Port 10GB )</a></li>
+<li menuItemName="سرور مجازی آسیاتک  (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_آسیاتک__(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/vps-iran-asia-10gb">سرور مجازی آسیاتک  (Port 10GB )</a></li>
+<li menuItemName="سرور مجازی شاتل (Port 10GB )" id="Primary_Navbar-Store-سرور_مجازی_شاتل_(Port_10GB_)" class=""><a class="dropdown-item" href="/index.php?rp=/store/shatel">سرور مجازی شاتل (Port 10GB )</a></li>
+<li menuItemName="سرور اختصاصی ایران" id="Primary_Navbar-Store-سرور_اختصاصی_ایران" class=""><a class="dropdown-item" href="/index.php?rp=/store/dedicated-server-iran">سرور اختصاصی ایران</a></li>
+<li menuItemName="سرور مجازی گیم ایران  SSD pro" id="Primary_Navbar-Store-سرور_مجازی_گیم_ایران__SSD_pro" class=""><a class="dropdown-item" href="/index.php?rp=/store/vps-game">سرور مجازی گیم ایران  SSD pro</a></li>
+<li menuItemName="سرور مجازی (آلمان، فنلاند، آمریکا)" id="Primary_Navbar-Store-سرور_مجازی_(آلمان،_فنلاند،_آمریکا)" class=""><a class="dropdown-item" href="/index.php?rp=/store/vps-cloud-hetzner">سرور مجازی (آلمان، فنلاند، آمریکا)</a></li>
+<li menuItemName="نمایندگی سرور تیم اسپیک" id="Primary_Navbar-Store-نمایندگی_سرور_تیم_اسپیک" class=""><a class="dropdown-item" href="/index.php?rp=/store/reseller-teamspeak">نمایندگی سرور تیم اسپیک</a></li>
+<li menuItemName="هاست اشتراکی لینوکس" id="Primary_Navbar-Store-هاست_اشتراکی_لینوکس" class=""><a class="dropdown-item" href="/index.php?rp=/store/host-linux">هاست اشتراکی لینوکس</a></li>
+<li menuItemName="هاست وردپرس" id="Primary_Navbar-Store-هاست_وردپرس" class=""><a class="dropdown-item" href="/index.php?rp=/store/host-wordpress">هاست وردپرس</a></li>
+<li menuItemName="نمایندگی هاست وردپرس " id="Primary_Navbar-Store-نمایندگی_هاست_وردپرس_" class=""><a class="dropdown-item" href="/index.php?rp=/store/reseller-wp">نمایندگی هاست وردپرس </a></li>
+<li menuItemName="نمایندگی هاست  لینوکس" id="Primary_Navbar-Store-نمایندگی_هاست__لینوکس" class=""><a class="dropdown-item" href="/index.php?rp=/store/reseller-host">نمایندگی هاست  لینوکس</a></li>
+<li menuItemName="مستر ریسلر سی پنل" id="Primary_Navbar-Store-مستر_ریسلر_سی_پنل" class=""><a class="dropdown-item" href="/index.php?rp=/store/mstr-ryslr-yrn">مستر ریسلر سی پنل</a></li>
+<li menuItemName="خدمات whmcs و طراحی سایت" id="Primary_Navbar-Store-خدمات_whmcs_و_طراحی_سایت" class=""><a class="dropdown-item" href="/index.php?rp=/store/web-design-config">خدمات whmcs و طراحی سایت</a></li>
+<li menuItemName="نمایندگی دامنه" id="Primary_Navbar-Store-نمایندگی_دامنه" class=""><a class="dropdown-item" href="/index.php?rp=/store/nmyndgy-dmnh">نمایندگی دامنه</a></li>
+<li menuItemName="کولوکیشن" id="Primary_Navbar-Store-کولوکیشن" class=""><a class="dropdown-item" href="/index.php?rp=/store/colocation">کولوکیشن</a></li>
+<li menuItemName="نمایندگی سرور مجازی " id="Primary_Navbar-Store-نمایندگی_سرور_مجازی_" class=""><a class="dropdown-item" href="/index.php?rp=/store/reseller-vps">نمایندگی سرور مجازی </a></li>
+<li menuItemName="سرورمجازی نامحدود (پهنای باندی)" id="Primary_Navbar-Store-سرورمجازی_نامحدود_(پهنای_باندی)" class=""><a class="dropdown-item" href="/index.php?rp=/store/unlimeted-traffic">سرورمجازی نامحدود (پهنای باندی)</a></li>
+<li menuItemName="لایسنس اشتراکی" id="Primary_Navbar-Store-لایسنس_اشتراکی" class=""><a class="dropdown-item" href="/index.php?rp=/store/license">لایسنس اشتراکی</a></li>
+<li menuItemName="اجاره آیپی" id="Primary_Navbar-Store-اجاره_آیپی" class=""><a class="dropdown-item" href="/index.php?rp=/store/ip-rent">اجاره آیپی</a></li>
+<li menuItemName="Register a New Domain" id="Primary_Navbar-Store-Register_a_New_Domain" class=""><a class="dropdown-item" href="/cart.php?a=add&domain=register">ثبت دامنه جدید</a></li>
+<li menuItemName="Transfer a Domain to Us" id="Primary_Navbar-Store-Transfer_a_Domain_to_Us" class=""><a class="dropdown-item" href="/cart.php?a=add&domain=transfer">انتقال دامنه به ما</a></li>
+</ul></li><li menuItemName="Announcements" id="Primary_Navbar-Announcements" class="nav-item">
+<a class="nav-link" href="/index.php?rp=/announcements">
+ اخبار</a>
+</li><li menuItemName="Knowledgebase" id="Primary_Navbar-Knowledgebase" class="nav-item">
+<a class="nav-link" href="/index.php?rp=/knowledgebase">
+ مرکز آموزش</a>
+</li><li menuItemName="Network Status" id="Primary_Navbar-Network_Status" class="nav-item">
+<a class="nav-link" href="/serverstatus.php">
+ وضعیت شبکه</a>
+</li><li menuItemName="Affiliates" id="Primary_Navbar-Affiliates" class="nav-item">
+<a class="nav-link" href="/affiliates.php">
+ بازاریابی</a>
+</li><li menuItemName="Contact Us" id="Primary_Navbar-Contact_Us" class="nav-item">
+<a class="nav-link" href="/contact.php">
+ تماس با ما</a>
+</li></ul><a class="mt-support-link" href="/submitticket.php"><i class="fas fa-headset" aria-hidden="true"></i> ارسال تیکت</a></div></div></nav>
+</header>
+<div class="container mt-system-notices">
+</div>
+<section id="main-body" class="mt-main-body"><div class="container"><div class="row mt-content-row">
+<main id="mt-main-content" class="col-12 primary-content">
+
+
+<link rel="stylesheet" type="text/css" href="/templates/orderforms/mtservercart/css/all.min.css?v=305ede" />
+<script type="text/javascript" src="/templates/orderforms/mtservercart/js/scripts.min.js?v=305ede"></script>
+<link rel="stylesheet" href="/templates/orderforms/mtservercart/css/mtservercart.css?v=1.0.1" />
+
+<style>
+#order-standard_cart.mt-modern-pricing{font-family:inherit;color:#2b3b56;padding:0}
+#order-standard_cart.mt-modern-pricing>.row{align-items:flex-start}
+#order-standard_cart.mt-modern-pricing .cart-body{padding:0 22px 24px;min-width:0}
+#order-standard_cart.mt-modern-pricing .header-lined{border:0;margin:0 0 27px;padding:0}
+#order-standard_cart.mt-modern-pricing .header-lined h1{font-size:26px!important;line-height:1.8;font-weight:700;color:#293d5b;border:0;margin:0 0 9px;padding:0}
+#order-standard_cart.mt-modern-pricing .header-lined p{color:#7c8da5;font-size:12px;line-height:2;margin:0}
+#order-standard_cart.mt-modern-pricing .mtp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+#order-standard_cart.mt-modern-pricing .mtp-cell{min-width:0;display:flex}
+#order-standard_cart.mt-modern-pricing .products .product{display:flex!important;flex-direction:column;width:100%;min-width:0;border:1px solid #e1e8f4!important;border-radius:16px!important;background:#fff!important;box-shadow:0 5px 23px #2343a304;margin:0!important;padding:0!important;overflow:hidden;transition:border-color .18s,box-shadow .18s}
+#order-standard_cart.mt-modern-pricing .products .product:hover{border-color:#a6b9e8!important;box-shadow:0 10px 32px #2343a30a}
+#order-standard_cart.mt-modern-pricing .products .product header{padding:23px 22px 0!important;border:0!important;background:#fff!important;display:flex;flex-direction:column;align-items:flex-start;text-align:right;position:relative;min-height:137px}
+#order-standard_cart.mt-modern-pricing .products .product .mtp-plan-icon{display:grid!important;place-items:center;width:42px;height:42px;background:#eef3ff;color:#2343a3!important;border-radius:12px;margin-bottom:17px;font-size:17px;font-weight:400}
+#order-standard_cart.mt-modern-pricing .products .product header>span[id$="-name"]{display:block;position:static;float:none;font-size:15px!important;line-height:1.9;color:#2e4365!important;font-weight:650;overflow-wrap:anywhere}
+#order-standard_cart.mt-modern-pricing .products .product header .qty{position:absolute;top:24px;left:17px;float:none;background:#f3f6fc;border:1px solid #e8edf6;color:#8898b1!important;padding:4px 8px;border-radius:7px;font-size:10px!important;line-height:1.7;font-weight:400}
+#order-standard_cart.mt-modern-pricing .products .product .product-pricing{padding:19px 22px 20px!important;text-align:right!important;font-size:11px!important;line-height:1.9;color:#8391a8!important;border-bottom:1px solid #edf1f8;margin:0 22px;padding-left:0!important;padding-right:0!important;min-height:100px}
+#order-standard_cart.mt-modern-pricing .products .product .product-pricing .price{display:inline-block;font-size:25px!important;line-height:1.8;color:#2343a3!important;font-weight:750;letter-spacing:-.3px;direction:ltr;unicode-bidi:isolate;max-width:100%;overflow-wrap:anywhere}
+#order-standard_cart.mt-modern-pricing .products .product .product-pricing small{font-size:10px;line-height:1.9;color:#8e9ab0}
+#order-standard_cart.mt-modern-pricing .products .product .product-desc{padding:19px 22px!important;flex:1;color:#7587a1;font-size:12px;line-height:2.25;text-align:right;border:0!important;background:#fff!important;min-height:0}
+#order-standard_cart.mt-modern-pricing .mtp-description{color:#7587a1!important;font-size:12px!important;line-height:2.25!important;margin:0!important;overflow-wrap:anywhere}
+#order-standard_cart.mt-modern-pricing .mtp-description p{font-size:12px;line-height:2.25;margin:0 0 7px;color:inherit}
+#order-standard_cart.mt-modern-pricing .products .product .product-desc ul{margin:0;padding:0;list-style:none}
+#order-standard_cart.mt-modern-pricing .products .product .product-desc li{font-size:12px;line-height:2;padding:9px 0;margin:0;border-bottom:1px solid #f0f3f9;display:flex;justify-content:space-between;gap:10px;color:#7a8aa3;text-align:right}
+#order-standard_cart.mt-modern-pricing .products .product .product-desc li:last-child{border-bottom:0}
+#order-standard_cart.mt-modern-pricing .products .product .feature-value{font-weight:600;color:#3e567a}
+#order-standard_cart.mt-modern-pricing .products .product footer{border:0!important;background:#fff!important;padding:4px 22px 23px!important;margin-top:auto;display:block}
+#order-standard_cart.mt-modern-pricing .products .product footer .mtp-order-button{display:flex!important;align-items:center;justify-content:center;gap:10px;width:100%;float:none;background:#2343a3!important;color:#fff!important;border:1px solid #2343a3!important;border-radius:10px!important;padding:11px 9px!important;min-height:45px;font-size:12px!important;line-height:1.9;box-shadow:0 4px 12px #2343a312;white-space:normal}
+#order-standard_cart.mt-modern-pricing .products .product footer .mtp-order-button:hover{background:#193585!important}
+#order-standard_cart.mt-modern-pricing .products .product footer .mtp-order-button.disabled{background:#f1f4f9!important;color:#94a0b4!important;border-color:#e7ecf4!important;box-shadow:none;opacity:1;pointer-events:none}
+#order-standard_cart.mt-modern-pricing .cart-sidebar .panel,#order-standard_cart.mt-modern-pricing .cart-sidebar .card{border:1px solid #e3eaf5;border-radius:13px;box-shadow:none;overflow:hidden}
+#order-standard_cart.mt-modern-pricing .cart-sidebar .panel-heading{background:#fff;border-bottom:1px solid #edf1f8;padding:18px;font-size:13px}
+#order-standard_cart.mt-modern-pricing .cart-sidebar .list-group-item{font-size:11px;line-height:1.9;padding:13px 17px;color:#7d8ca3;border-color:#edf1f8}
+#order-standard_cart.mt-modern-pricing .cart-sidebar .list-group-item.active{background:#eef3ff;color:#2343a3;border-color:#e4ebff}
+@media(max-width:1200px){#order-standard_cart.mt-modern-pricing .mtp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:991px){#order-standard_cart.mt-modern-pricing .cart-body{padding:0 0 24px}}
+@media(max-width:575px){#order-standard_cart.mt-modern-pricing .mtp-grid{grid-template-columns:1fr;gap:17px}#order-standard_cart.mt-modern-pricing .header-lined h1{font-size:23px!important}#order-standard_cart.mt-modern-pricing .products .product header{min-height:0}#order-standard_cart.mt-modern-pricing .products .product .product-pricing{min-height:0}#order-standard_cart.mt-modern-pricing .products .product .product-desc{font-size:13px}#order-standard_cart.mt-modern-pricing .products .product .mtp-description{font-size:13px!important}}
+</style>
+<div id="order-standard_cart" class="mt-modern-pricing">
+    <div class="row">
+        <div class="cart-sidebar sidebar">
+            <style>
+#order-standard_cart .mt-category-navigation{font-family:inherit;text-align:right}
+#order-standard_cart .mt-category-navigation .panel,#order-standard_cart .mt-category-navigation .card{border:1px solid #e1e8f4!important;border-radius:14px!important;background:#fff;box-shadow:0 4px 19px #2343a303;overflow:hidden;margin-bottom:17px}
+#order-standard_cart .mt-category-navigation .panel-heading,#order-standard_cart .mt-category-navigation .card-header{padding:19px 17px!important;background:#fff!important;border-bottom:1px solid #edf1f8!important}
+#order-standard_cart .mt-category-navigation .panel-title{display:flex;align-items:center;gap:9px;font-size:14px!important;font-weight:600;line-height:1.9;color:#2f4466;margin:0!important}
+#order-standard_cart .mt-category-navigation .panel-title>i:first-child{color:#6886c8;font-size:14px}
+#order-standard_cart .mt-category-navigation .panel-title .card-minimise{margin-right:auto;font-size:10px;color:#95a7c8;cursor:pointer}
+#order-standard_cart .mt-category-navigation .mtc-category-list{padding:8px 10px!important;border:0!important;display:block}
+#order-standard_cart .mt-category-navigation .mtc-category-list>details{border:0;border-bottom:1px solid #edf1f8;padding:4px 0;margin:0;background:#fff;border-radius:0}
+#order-standard_cart .mt-category-navigation .mtc-category-list>details:last-child{border-bottom:0}
+#order-standard_cart .mt-category-navigation .mtc-category-list summary{display:flex;align-items:center;gap:9px;list-style:none;padding:13px 8px;color:#536d94;font-size:12px;line-height:1.9;font-weight:500;cursor:pointer;border-radius:9px;outline-offset:2px}
+#order-standard_cart .mt-category-navigation .mtc-category-list summary::-webkit-details-marker{display:none}
+#order-standard_cart .mt-category-navigation .mtc-category-list summary>i{width:20px;text-align:center;font-size:13px;color:#7c96c7}
+#order-standard_cart .mt-category-navigation .mtc-category-list summary:after{content:'+';font-family:Arial,sans-serif;font-size:17px;color:#8ba0c5;margin-right:auto;line-height:1}
+#order-standard_cart .mt-category-navigation .mtc-category-list details[open]>summary:after{content:'−'}
+#order-standard_cart .mt-category-navigation .mtc-category-list details:has(.active)>summary{color:#2343a3}
+#order-standard_cart .mt-category-navigation .mtc-group-links{padding:1px 0 10px!important}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item,#order-standard_cart .mt-category-navigation .mtc-group-links>div.list-group-item{padding:10px 12px 10px 30px!important;margin:3px 0!important;line-height:2;font-size:11px!important;color:#7d8ea7;border:0!important;border-radius:9px!important;background:#fff;display:block;position:relative;overflow-wrap:anywhere;text-align:right}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item:before{content:'';position:absolute;right:14px;top:19px;width:4px;height:4px;border-radius:50%;background:#b9c7de}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item{padding-right:29px!important;padding-left:10px!important}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item.active{background:#edf3ff!important;color:#2343a3!important;font-weight:500;border:0!important}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item.active:before{background:#2343a3}
+#order-standard_cart .mt-category-navigation .mtc-group-links>a.list-group-item:hover{background:#f7f9fe;color:#2343a3}
+#order-standard_cart .mt-category-navigation .mtc-group-links .disabled{opacity:.5;pointer-events:none}
+#order-standard_cart .mt-category-navigation .panel-footer,#order-standard_cart .mt-category-navigation .card-footer{padding:15px 17px;background:#fafcff;border-top:1px solid #edf1f8;font-size:11px}
+#order-standard_cart .mt-category-navigation .form-control{border:1px solid #dfe6f2;border-radius:9px;font-size:12px;min-height:42px}
+#order-standard_cart .mt-category-navigation summary:focus-visible{outline:2px solid #6b8ed6}
+</style>
+<div class="mt-category-navigation">
+    <div menuItemName="Categories" class="panel card card-sidebar mb-3 panel-sidebar">
+        <div class="panel-heading card-header">
+            <h3 class="panel-title">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;
+                
+                دسته بندی ها
+
+                
+                <i class="fad fa-chevron-up card-minimise panel-minimise pull-left float-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div data-mt-category-list="Categories" class="list-group collapsable-card-body">
+                                                            <a menuItemName="سرور مجازی مبین وان  (Port 10GB )" href="/index.php?rp=/store/mobinone-ir" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_مبین_وان__(Port_10GB_)">
+                            
+                            سرور مجازی مبین وان  (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی رسپینا (Port 10GB )" href="/index.php?rp=/store/respina" class="list-group-item list-group-item-action active" id="Secondary_Sidebar-Categories-سرور_مجازی_رسپینا_(Port_10GB_)">
+                            
+                            سرور مجازی رسپینا (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی فن آوا (Port 10GB )" href="/index.php?rp=/store/fanava" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_فن_آوا_(Port_10GB_)">
+                            
+                            سرور مجازی فن آوا (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی رایتل (Port 10GB )" href="/index.php?rp=/store/rightel" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_رایتل_(Port_10GB_)">
+                            
+                            سرور مجازی رایتل (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی آسیاتک  (Port 10GB )" href="/index.php?rp=/store/vps-iran-asia-10gb" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_آسیاتک__(Port_10GB_)">
+                            
+                            سرور مجازی آسیاتک  (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی شاتل (Port 10GB )" href="/index.php?rp=/store/shatel" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_شاتل_(Port_10GB_)">
+                            
+                            سرور مجازی شاتل (Port 10GB )
+
+                                                    </a>
+                                                                                <a menuItemName="سرور اختصاصی ایران" href="/index.php?rp=/store/dedicated-server-iran" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_اختصاصی_ایران">
+                            
+                            سرور اختصاصی ایران
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی گیم ایران  SSD pro" href="/index.php?rp=/store/vps-game" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_گیم_ایران__SSD_pro">
+                            
+                            سرور مجازی گیم ایران  SSD pro
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی (آلمان، فنلاند، آمریکا)" href="/index.php?rp=/store/vps-cloud-hetzner" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرور_مجازی_(آلمان،_فنلاند،_آمریکا)">
+                            
+                            سرور مجازی (آلمان، فنلاند، آمریکا)
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی سرور تیم اسپیک" href="/index.php?rp=/store/reseller-teamspeak" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-نمایندگی_سرور_تیم_اسپیک">
+                            
+                            نمایندگی سرور تیم اسپیک
+
+                                                    </a>
+                                                                                <a menuItemName="هاست اشتراکی لینوکس" href="/index.php?rp=/store/host-linux" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-هاست_اشتراکی_لینوکس">
+                            
+                            هاست اشتراکی لینوکس
+
+                                                    </a>
+                                                                                <a menuItemName="هاست وردپرس" href="/index.php?rp=/store/host-wordpress" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-هاست_وردپرس">
+                            
+                            هاست وردپرس
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی هاست وردپرس " href="/index.php?rp=/store/reseller-wp" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-نمایندگی_هاست_وردپرس_">
+                            
+                            نمایندگی هاست وردپرس 
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی هاست  لینوکس" href="/index.php?rp=/store/reseller-host" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-نمایندگی_هاست__لینوکس">
+                            
+                            نمایندگی هاست  لینوکس
+
+                                                    </a>
+                                                                                <a menuItemName="مستر ریسلر سی پنل" href="/index.php?rp=/store/mstr-ryslr-yrn" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-مستر_ریسلر_سی_پنل">
+                            
+                            مستر ریسلر سی پنل
+
+                                                    </a>
+                                                                                <a menuItemName="خدمات whmcs و طراحی سایت" href="/index.php?rp=/store/web-design-config" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-خدمات_whmcs_و_طراحی_سایت">
+                            
+                            خدمات whmcs و طراحی سایت
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی دامنه" href="/index.php?rp=/store/nmyndgy-dmnh" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-نمایندگی_دامنه">
+                            
+                            نمایندگی دامنه
+
+                                                    </a>
+                                                                                <a menuItemName="کولوکیشن" href="/index.php?rp=/store/colocation" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-کولوکیشن">
+                            
+                            کولوکیشن
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی سرور مجازی " href="/index.php?rp=/store/reseller-vps" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-نمایندگی_سرور_مجازی_">
+                            
+                            نمایندگی سرور مجازی 
+
+                                                    </a>
+                                                                                <a menuItemName="سرورمجازی نامحدود (پهنای باندی)" href="/index.php?rp=/store/unlimeted-traffic" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-سرورمجازی_نامحدود_(پهنای_باندی)">
+                            
+                            سرورمجازی نامحدود (پهنای باندی)
+
+                                                    </a>
+                                                                                <a menuItemName="لایسنس اشتراکی" href="/index.php?rp=/store/license" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-لایسنس_اشتراکی">
+                            
+                            لایسنس اشتراکی
+
+                                                    </a>
+                                                                                <a menuItemName="اجاره آیپی" href="/index.php?rp=/store/ip-rent" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Categories-اجاره_آیپی">
+                            
+                            اجاره آیپی
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+        <div menuItemName="Actions" class="panel card card-sidebar mb-3 panel-sidebar">
+        <div class="panel-heading card-header">
+            <h3 class="panel-title">
+                                    <i class="fas fa-plus"></i>&nbsp;
+                
+                عملیات
+
+                
+                <i class="fad fa-chevron-up card-minimise panel-minimise pull-left float-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div data-mt-category-list="Actions" class="list-group collapsable-card-body">
+                                                            <a menuItemName="Domain Registration" href="/cart.php?a=add&domain=register" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Actions-Domain_Registration">
+                                                            <i class="fas fa-globe fa-fw"></i>&nbsp;
+                            
+                            ثبت دامنه جدید
+
+                                                    </a>
+                                                                                <a menuItemName="Domain Transfer" href="/cart.php?a=add&domain=transfer" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Actions-Domain_Transfer">
+                                                            <i class="fas fa-share fa-fw"></i>&nbsp;
+                            
+                            انتقال در دامنه
+
+                                                    </a>
+                                                                                <a menuItemName="View Cart" href="/cart.php?a=view" class="list-group-item list-group-item-action" id="Secondary_Sidebar-Actions-View_Cart">
+                                                            <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+                            
+                            مشاهده کارت خرید
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+    
+</div>
+
+<script>
+(function(){
+'use strict';
+function normalize(text){return text.replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200d]/g,' ').replace(/\s+/g,' ').trim();}
+function classify(text){
+ var t=normalize(text).toLowerCase();
+ if(/نمایندگی|ریسلر|reseller|مستر/.test(t))return 'reseller';
+ if(/کولوکیشن|اختصاصی|colocation|dedicated|اجاره.*(?:آیپی|آی پی|ip)/.test(t))return 'datacenter';
+ if(/تیم.*اسپیک|تیمسپیک|teamspeak|teaspeak/.test(t))return 'voice';
+ if(/هاست|میزبانی|hosting|وردپرس/.test(t))return 'hosting';
+ if(/مجازی|vps|vds/.test(t))return /خارج|آلمان|فنلاند|آمریکا|امریکا|اروپا|هلند|germany|finland|europe|usa/.test(t)?'international':'iran';
+ return 'other';
+}
+function init(){document.querySelectorAll('.mt-category-navigation [data-mt-category-list]').forEach(function(list){
+ if(list.dataset.mtGrouped==='1')return;
+ var panel=list.closest('[menuitemname]');
+ var title=panel?panel.querySelector('.panel-title'):null;
+ if(!/categor/i.test(list.getAttribute('data-mt-category-list')||'') && !(title && /دسته/.test(title.textContent)))return;
+ var items=Array.prototype.filter.call(list.children,function(n){return n.classList.contains('list-group-item');});
+ if(!items.length)return;
+ var groups=[['iran','سرور مجازی ایران','server'],['international','سرور مجازی خارج','globe'],['hosting','هاست و میزبانی','laptop-code'],['datacenter','سرور و کولوکیشن','hdd'],['voice','تیم‌اسپیک','headphones'],['reseller','خدمات نمایندگی','users'],['other','سایر خدمات','th-large']];
+ var buckets={};groups.forEach(function(g){buckets[g[0]]=[];});
+ items.forEach(function(n){buckets[classify(n.textContent)].push(n);});
+ list.dataset.mtGrouped='1';list.classList.add('mtc-category-list');
+ var anyActive=items.some(function(n){return n.classList.contains('active');}),opened=false;
+ groups.forEach(function(g){var nodes=buckets[g[0]];if(!nodes.length)return;
+  var details=document.createElement('details');var summary=document.createElement('summary');var icon=document.createElement('i');
+  icon.className='fas fa-'+g[2];icon.setAttribute('aria-hidden','true');summary.appendChild(icon);summary.appendChild(document.createTextNode(g[1]));details.appendChild(summary);
+  var links=document.createElement('div');links.className='mtc-group-links';
+  nodes.forEach(function(n){links.appendChild(n);});details.appendChild(links);
+  var active=nodes.some(function(n){return n.classList.contains('active');});
+  details.open=active || (!anyActive && !opened);if(details.open)opened=true;
+  list.appendChild(details);
+ });
+});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+        </div>
+        <div class="cart-body">
+
+            <div class="header-lined">
+                <h1 class="font-size-36">
+                                            سرور مجازی رسپینا
+                                    </h1>
+                                    <p>باپورت 10 گیگ نهایت سرعت را تجربه کنید</p>
+                            </div>
+            
+            <div class="sidebar-collapsed">
+
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-shopping-cart"></i>&nbsp;
+            
+            دسته بندی ها
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="سرور مجازی مبین وان  (Port 10GB )" value="/index.php?rp=/store/mobinone-ir" class="list-group-item" >
+                        سرور مجازی مبین وان  (Port 10GB )
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی رسپینا (Port 10GB )" value="/index.php?rp=/store/respina" class="list-group-item" selected="selected">
+                        سرور مجازی رسپینا (Port 10GB )
+
+                                            </option>
+                                                                                                    <option menuItemName="سرور مجازی فن آوا (Port 10GB )" value="/index.php?rp=/store/fanava" class="list-group-item" >
+                        سرور مجازی فن آوا (Port 10GB )
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی رایتل (Port 10GB )" value="/index.php?rp=/store/rightel" class="list-group-item" >
+                        سرور مجازی رایتل (Port 10GB )
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی آسیاتک  (Port 10GB )" value="/index.php?rp=/store/vps-iran-asia-10gb" class="list-group-item" >
+                        سرور مجازی آسیاتک  (Port 10GB )
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی شاتل (Port 10GB )" value="/index.php?rp=/store/shatel" class="list-group-item" >
+                        سرور مجازی شاتل (Port 10GB )
+
+                                            </option>
+                                                        <option menuItemName="سرور اختصاصی ایران" value="/index.php?rp=/store/dedicated-server-iran" class="list-group-item" >
+                        سرور اختصاصی ایران
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی گیم ایران  SSD pro" value="/index.php?rp=/store/vps-game" class="list-group-item" >
+                        سرور مجازی گیم ایران  SSD pro
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی (آلمان، فنلاند، آمریکا)" value="/index.php?rp=/store/vps-cloud-hetzner" class="list-group-item" >
+                        سرور مجازی (آلمان، فنلاند، آمریکا)
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی سرور تیم اسپیک" value="/index.php?rp=/store/reseller-teamspeak" class="list-group-item" >
+                        نمایندگی سرور تیم اسپیک
+
+                                            </option>
+                                                        <option menuItemName="هاست اشتراکی لینوکس" value="/index.php?rp=/store/host-linux" class="list-group-item" >
+                        هاست اشتراکی لینوکس
+
+                                            </option>
+                                                        <option menuItemName="هاست وردپرس" value="/index.php?rp=/store/host-wordpress" class="list-group-item" >
+                        هاست وردپرس
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی هاست وردپرس " value="/index.php?rp=/store/reseller-wp" class="list-group-item" >
+                        نمایندگی هاست وردپرس 
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی هاست  لینوکس" value="/index.php?rp=/store/reseller-host" class="list-group-item" >
+                        نمایندگی هاست  لینوکس
+
+                                            </option>
+                                                        <option menuItemName="مستر ریسلر سی پنل" value="/index.php?rp=/store/mstr-ryslr-yrn" class="list-group-item" >
+                        مستر ریسلر سی پنل
+
+                                            </option>
+                                                        <option menuItemName="خدمات whmcs و طراحی سایت" value="/index.php?rp=/store/web-design-config" class="list-group-item" >
+                        خدمات whmcs و طراحی سایت
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی دامنه" value="/index.php?rp=/store/nmyndgy-dmnh" class="list-group-item" >
+                        نمایندگی دامنه
+
+                                            </option>
+                                                        <option menuItemName="کولوکیشن" value="/index.php?rp=/store/colocation" class="list-group-item" >
+                        کولوکیشن
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی سرور مجازی " value="/index.php?rp=/store/reseller-vps" class="list-group-item" >
+                        نمایندگی سرور مجازی 
+
+                                            </option>
+                                                        <option menuItemName="سرورمجازی نامحدود (پهنای باندی)" value="/index.php?rp=/store/unlimeted-traffic" class="list-group-item" >
+                        سرورمجازی نامحدود (پهنای باندی)
+
+                                            </option>
+                                                        <option menuItemName="لایسنس اشتراکی" value="/index.php?rp=/store/license" class="list-group-item" >
+                        لایسنس اشتراکی
+
+                                            </option>
+                                                        <option menuItemName="اجاره آیپی" value="/index.php?rp=/store/ip-rent" class="list-group-item" >
+                        اجاره آیپی
+
+                                            </option>
+                                                                </select>
+        </form>
+    </div>
+
+            </div>
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-plus"></i>&nbsp;
+            
+            عملیات
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="Domain Registration" value="/cart.php?a=add&domain=register" class="list-group-item" >
+                        ثبت دامنه جدید
+
+                                            </option>
+                                                        <option menuItemName="Domain Transfer" value="/cart.php?a=add&domain=transfer" class="list-group-item" >
+                        انتقال در دامنه
+
+                                            </option>
+                                                        <option menuItemName="View Cart" value="/cart.php?a=view" class="list-group-item" >
+                        مشاهده کارت خرید
+
+                                            </option>
+                                                                        <option value="" class="list-group-item" selected=""selected>- انتخاب گروه دیگر -</option>
+                            </select>
+        </form>
+    </div>
+
+            </div>
+    
+    
+</div>
+
+            <div class="products" id="products">
+                <div class="mtp-grid">
+                                                                <div class="mtp-cell">
+                        <div class="product clearfix" id="product218">
+                            <header><span class="mtp-plan-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                                <span id="product218-name">سرور مجازی رسپینا Plan-1 </span>
+                                                                    <span class="qty">
+ناموجود                                        </span>
+                                                            </header>
+<div class="product-pricing" id="product218-price">
+                                                                                                                    <span class="price">550,000تومان </span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                            <div class="product-desc">
+                                                                    <div class="mtp-description" id="product218-description">
+                                        رم - 1 گیگابایت<br />
+پردازنده - 1 هسته<br />
+ هارد - 20 گیگابایت  Nvme<br />
+ ترافیک 100 گیگ<br />
+امکان تهیه ترافیک اضافه وجود دارد<br />
+امکان استفاده مصرف یک به یک<br />
+پورت شبکه 10Gb <br />
+دیتاسنتر رسپینا<br />
+امکان ارتقا هنگام سفارش<br />
+تحویل آنی و خودکار<br />
+
+                                    </div>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                
+                                <a href="/index.php?rp=/store/respina/respina1" class="btn mtp-order-button disabled" id="product218-order-button" aria-disabled="true" tabindex="-1" onclick="event.preventDefault();event.stopPropagation();return false;">
+فعلاً ناموجود                                </a>
+
+                            </footer>
+                        </div>
+                    </div>
+                                                                <div class="mtp-cell">
+                        <div class="product clearfix" id="product219">
+                            <header><span class="mtp-plan-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                                <span id="product219-name">سرور مجازی رسپینا Plan-2 </span>
+                                                                    <span class="qty">
+ناموجود                                        </span>
+                                                            </header>
+<div class="product-pricing" id="product219-price">
+                                                                                                                    <span class="price">690,000تومان </span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                            <div class="product-desc">
+                                                                    <div class="mtp-description" id="product219-description">
+                                        رم - 2 گیگابایت<br />
+پردازنده - 2 هسته<br />
+ هارد - 25 گیگابایت  Nvme<br />
+ ترافیک 100 گیگ<br />
+امکان تهیه ترافیک اضافه وجود دارد<br />
+امکان استفاده مصرف یک به یک<br />
+پورت شبکه 10Gb <br />
+دیتاسنتر رسپینا<br />
+امکان ارتقا هنگام سفارش<br />
+تحویل آنی و خودکار<br />
+
+                                    </div>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                
+                                <a href="/index.php?rp=/store/respina/respina2" class="btn mtp-order-button disabled" id="product219-order-button" aria-disabled="true" tabindex="-1" onclick="event.preventDefault();event.stopPropagation();return false;">
+فعلاً ناموجود                                </a>
+
+                            </footer>
+                        </div>
+                    </div>
+                                                                <div class="mtp-cell">
+                        <div class="product clearfix" id="product220">
+                            <header><span class="mtp-plan-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                                <span id="product220-name">سرور مجازی رسپینا Plan-3 </span>
+                                                                    <span class="qty">
+ناموجود                                        </span>
+                                                            </header>
+<div class="product-pricing" id="product220-price">
+                                                                                                                    <span class="price">850,000تومان </span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                            <div class="product-desc">
+                                                                    <div class="mtp-description" id="product220-description">
+                                        رم - 4 گیگابایت<br />
+پردازنده - 2 هسته<br />
+ هارد - 30 گیگابایت  Nvme<br />
+ ترافیک 100 گیگ<br />
+امکان تهیه ترافیک اضافه وجود دارد<br />
+امکان استفاده مصرف یک به یک<br />
+پورت شبکه 10Gb <br />
+دیتاسنتر رسپینا <br />
+امکان ارتقا هنگام سفارش<br />
+تحویل آنی و خودکار<br />
+
+                                    </div>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                
+                                <a href="/index.php?rp=/store/respina/respina3" class="btn mtp-order-button disabled" id="product220-order-button" aria-disabled="true" tabindex="-1" onclick="event.preventDefault();event.stopPropagation();return false;">
+فعلاً ناموجود                                </a>
+
+                            </footer>
+                        </div>
+                    </div>
+                                                                <div class="mtp-cell">
+                        <div class="product clearfix" id="product221">
+                            <header><span class="mtp-plan-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                                <span id="product221-name">سرور مجازی رسپینا Plan-4 </span>
+                                                            </header>
+<div class="product-pricing" id="product221-price">
+                                                                                                                    <span class="price">1,500,000تومان </span>
+                                        <br />
+                                                                                    ماهانه
+                                                                                <br>
+                                                                                                            </div>
+                            <div class="product-desc">
+                                                                    <div class="mtp-description" id="product221-description">
+                                        رم - 8 گیگابایت<br />
+پردازنده - 4 هسته<br />
+ هارد - 40 گیگابایت  Nvme<br />
+ ترافیک 100 گیگ<br />
+امکان تهیه ترافیک اضافه وجود دارد<br />
+امکان استفاده مصرف یک به یک<br />
+پورت شبکه 10Gb <br />
+دیتاسنتر رسپینا<br />
+امکان ارتقا هنگام سفارش<br />
+تحویل آنی و خودکار<br />
+
+                                    </div>
+                                                                <ul>
+                                                                    </ul>
+                            </div>
+                            <footer>
+                                
+                                <a href="/index.php?rp=/store/respina/respina4" class="btn mtp-order-button" id="product221-order-button">
+سفارش دهید <i class="fas fa-arrow-left" aria-hidden="true"></i>                                </a>
+
+                            </footer>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="recommendationsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="float-left pull-left">
+                                            اضافه شده به سبد خرید
+                                    </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-body">
+                <div class="product-recommendations-container">
+    <div class="product-recommendations">
+                    <p>بر اساس این محصول، ما توصیه می کنیم:</p>
+                    </div>
+</div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="#" id="btnContinueRecommendationsModal" data-dismiss="modal" role="button">
+                    <span class="w-hidden hidden"><i class="fas fa-spinner fa-spin"></i>&nbsp;</span>ادامه
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-recommendation clonable w-hidden hidden">
+        <div class="header">
+            <div class="cta">
+                <div class="price">
+                    <span class="w-hidden hidden">رایگان!</span>
+                    <span class="breakdown-price"></span>
+                    <span class="setup-fee"><small>&nbsp;هزینه تنظیم </small></span>
+                </div>
+                <button type="button" class="btn btn-sm btn-add">
+                    <span class="text">افزودن به کارت</span>
+                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                </button>
+            </div>
+            <div class="expander">
+                <i class="fas fa-chevron-right rotate" data-toggle="tooltip" data-placement="right" title="برای کسب اطلاعات بیشتر کلیک کنید."></i>
+            </div>
+            <div class="content">
+                <div class="headline truncate"></div>
+                <div class="tagline truncate">
+                    توضیحات (شعار) برای این محصول در دسترس نیست.
+                </div>
+            </div>
+        </div>
+        <div class="body clearfix"><p></p></div>
+    </div>
+</div>
+
+
+</main></div></div></section>
+<footer class="mt-site-footer" aria-label="اطلاعات و پیوندهای ام‌تی‌سرور"><div class="container">
+<div class="mt-footer-columns">            <div class="text-right"><a class="mt-footer-brand" href="https://mtserver.ir/" aria-label="ام‌تی‌سرور">MT<span>Server</span></a>
+                <p class="mt-4 text-sm leading-6 text-slate-600"> ما در ایران با استفاده از جدیدترین تکنولوژی‌های نظارتی، به‌صورت 24 ساعته در 7 روز هفته از امنیت سرورها و شبکه شما محافظت می‌کنیم. </p>
+                                </div>
+            <div class="text-right text-sm">
+                <h4 class="footer-title">سرویس‌ها</h4>
+                <ul class="mt-4 space-y-3 text-slate-500">
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/mobinone"> سرور مجازی مبین وان </a></li>
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb"> سرور مجازی آسیاتک </a></li>
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/respina"> سرورمجازی رسپینا </a></li>
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/colocation"> کولوکیشن </a></li>
+                </ul>
+            </div>
+            
+            <div class="text-right text-sm">
+                <h4 class="footer-title">خدمات ما</h4>
+                <ul class="mt-4 space-y-3 text-slate-500">
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/license"> لایسنس اشتراکی </a></li>
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/ip-rent"> اجاره آیپی </a></li>
+                    <li><a href="https://my.mtserver.ir/cart.php?a=add&domain=register"> ثبت دامنه  </a></li>
+                    <li><a href="https://my.mtserver.ir/index.php?rp=/store/web-design-config"> طراحی سایت </a></li>
+                </ul>
+            </div>
+            
+            <div class="text-right text-sm">
+                <h4 class="footer-title">ارتباط با ما</h4>
+                <ul class="mt-4 space-y-3 text-slate-500">
+                    <li><a href="https://mtserver.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86-%d9%88-%d9%85%d9%82%d8%b1%d8%b1%d8%a7%d8%aa/"> قوانین و مقررات </a></li>
+                    <li><a href="https://mtserver.ir/about/"> درباره ما </a></li>
+                    <li><a href="https://mtserver.ir/contact/"> ارتباط با ما </a></li>
+                    <li><a href="https://mtserver.ir/namad-etemad/"> نمادهای اعتماد </a></li>
+                </ul>
+            </div>
+</div>
+<div class="mt-footer-bottom"><p>کلیه حقوق مادی و معنوی این سایت محفوظ است.<br />طراحی توسط <a href="https://mtserver.ir/">MTserver.ir</a></p><span>© 2026 MTServer</span></div>
+</div></footer>
+<div id="fullpage-overlay" class="w-hidden">
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+            <img src="/assets/img/overlay-spinner.svg" alt="">
+            <br>
+            <span class="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">بستن</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                بارگذاری ... 
+            </div>
+            <div class="modal-footer">
+                <div class="float-left loader">
+                    <i class="fas fa-circle-notch fa-spin"></i> بارگذاری ... 
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                        ارسال
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+<form method="get" action="/index.php?rp=%2Fstore%2Frespina&">
+    <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>                  </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default">درخواست دادن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+ <form action="#" id="frmGeneratePassword">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">
+                        ایجاد گذرواژه
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger w-hidden" id="generatePwLengthError">
+                        لطفاً برای طول گذرواژه عددی بین 8 تا 64 وارد کنید
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwLength" class="col-sm-4 col-form-label">طول رمز عبور</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwOutput" class="col-sm-4 col-form-label">رمز عبور ایجاد شده</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                ایجاد رمز عبور جدید
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                کپی
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        در کلیپ بورد کپی و درج کنید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <script src="/templates/mtserver/js/libs.js?v=305ede"></script>
+	<script>
+	if (typeof WOW !== "undefined") { new WOW().init(); }
+	</script>
+	
+	
+	<script
+    src="https://ai.mtserver.ir/widget.js"
+    data-endpoint="https://ai.mtserver.ir"
+    data-brand="MT Server"
+    data-color="#2343A3"
+    data-welcome="سلام! برای انتخاب سرویس مناسب یا پاسخ به سؤالات قبل از خرید در خدمتم.">
+</script>
+<script src="/templates/mtserver/js/mtserver.js?v=1.0.1"></script>
+        <script>
+$(document).ready(function(){
+  var yuirotkmdfyeuiro = {companyname:"",address1:"",address2:"",city:"",state:"",postcode:"321652",country:"IR"};  
+
+  $.each(yuirotkmdfyeuiro,function(k,v){
+    yuirkaaaa =  $(document).find('[name="'+k+'"]');
+  if(yuirkaaaa.length ){
+   
+ yuirkaaaa.closest('div[class^="col-"]').css('display','none');  
+ 
+ 
+  if(yuirkaaaa.prop("tagName").toLowerCase() == 'input'){
+       yuirkaaaa.val(v);
+   }
+  else if(yuirkaaaa.prop("tagName").toLowerCase() == 'select'){
+       if(k=='state')
+  yuirkaaaa.find('option:contains("'+v+'")').attr('selected',true);
+  else
+      yuirkaaaa.find('option[value="'+v+'" ]').attr('selected',true);
+   }
+  
+  yuirkaaaa.attr('required',false);
+   }
+  
+   });
+  
+  
+});
+
+
+</script>
+
+<script>window.MTServerAIIdentity="";</script>
+        <script >
+                 $(document).ready(function(){
+                // $("#Primary_Sidebar-Domain_Details_Management-Manage_Private_Nameservers").remove();
+            });
+        </script>
+
+</body>
+
+</html>

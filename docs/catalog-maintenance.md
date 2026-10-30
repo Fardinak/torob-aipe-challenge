@@ -132,7 +132,13 @@ is served as plain text so its scripts cannot execute on the catalog origin.
 Both current and historical referenced snapshots are emitted; build validation
 checks their original byte hashes before publication.
 
-Monthly reference prices remain the ranking basis. Preserve other published
+Monthly toman reference prices remain the ranking basis. A missing reference is
+`null`, never zero. A verified `published_tariff` records native amount, currency
+and hour/day/month basis; `evidence.facts.published_tariff` and verification
+attempts follow the same fact-specific lifecycle. Native tariffs without a toman
+monthly reference remain inspectable outside ranking and cannot satisfy a toman
+budget. The validator rejects a USD offer claiming a fabricated toman reference.
+Preserve other published
 billing periods in evidence, without inventing monthly/hourly conversions.
 Unknown storage type permits base-price admission but cannot prove exact
 identity. Mixed-media offers retain their composition; any decimal aggregate

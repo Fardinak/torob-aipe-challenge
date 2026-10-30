@@ -41,7 +41,7 @@ No accounts, login, cart additions, purchases or provider contact. Public order 
 
 Unknown disk type, mixed media or source conflict does not have to hide a verified base tariff. The catalog admits those priced configurations with unresolved type, separate listing identity and prominent evidence status. This applies to Bertina, Shopingserver, Pouyasazan and Afagh, plus Famaserver's ambiguous/mixed-disk rows. Visnet's public product page is a valid general handoff despite empty per-plan buy links; disclose that destination rather than assert direct checkout. Mobinhost's two unambiguous unlimited base prices remain incomplete because selectable bandwidth is unresolved; ambiguous “million” price labels are held. These admission decisions refine conservative research holds under #12's explicit base-price/general-handoff contract; they do not resolve the underlying gaps.
 
-All active new configurations have public numeric base tariffs, identified resources, retained first-party sources/check dates and a general source handoff. Mandatory extras remain unknown unless explicitly evidenced. No copied provider's traffic rule is generalized to another. Unsupported ingress/packet policies are preserved as facts and excluded from nonzero usage estimates, rather than converted to a false zero charge. Mixed-media aggregate GB is explicitly decimal derived arithmetic, with original components retained and no single-type grouping.
+All active new configurations retain public numeric tariffs and identified resource claims, with uncertain claims excluded from exact comparison,, retained first-party sources/check dates and a general source handoff. Mandatory extras remain unknown unless explicitly evidenced. No copied provider's traffic rule is generalized to another. Unsupported ingress/packet policies are preserved as facts and excluded from nonzero usage estimates, rather than converted to a false zero charge. Mixed-media aggregate GB is explicitly decimal derived arithmetic, with original components retained and no single-type grouping.
 
 Provider records currently represented (counts are outcomes, never ceilings):
 
@@ -50,28 +50,59 @@ Provider records currently represented (counts are outcomes, never ceilings):
 | منیجیت (manageit) | 6 |
 | ایران‌سرور (iranserver) | 6 |
 | ایرانیکاسرور (iranica) | 5 |
-| تاد سرور (tadserver) | 11 |
+| تاد سرور (tadserver) | 28 |
 | آرتین پردازش (artin) | 24 |
 | آی نت (inet) | 6 |
 | مهران هاست (mehranhost) | 5 |
 | ایران‌هاست (iranhost) | 6 |
 | برتینا (bertina) | 8 |
-| ایران وی ام (irvm) | 4 |
+| ایران وی ام (irvm) | 5 |
 | آنلاین سرور (onlineserver) | 15 |
-| میهن وب هاست (mihanwebhost) | 5 |
+| میهن وب هاست (mihanwebhost) | 20 |
 | هاستیدا (hostida) | 19 |
 | های دیتا (hidata) | 25 |
 | فاما سرور (famaserver) | 24 |
-| لاجیک سرور (logicserver) | 5 |
-| اسپاد سرور (spadserver) | 9 |
+| لاجیک سرور (logicserver) | 9 |
+| اسپاد سرور (spadserver) | 20 |
 | شتابان هاست (shetabanhost) | 4 |
-| آذر دیتا (azardata) | 5 |
+| آذر دیتا (azardata) | 13 |
 | مبین هاست (mobinhost) | 4 |
 | شاپینگ سرور (shopingserver) | 4 |
 | ویس نت (visnet) | 5 |
 | پویاسازان (pouyasazan) | 6 |
 | آفاق (afagh) | 5 |
-| سرور وی دی اس (servervds) | 5 |
+| سرور وی دی اس (servervds) | 26 |
+| صفر و یک (safroone) | 34 |
+| پارس وی دی اس (parsvds) | 11 |
+| پارس وب سرور (parswebserver) | 6 |
+| زاگرس هاست (zagros) | 6 |
+| دیار هاست (dyar) | 11 |
+| مکنانت (maknanet) | 16 |
+| ماهان نت (mahan) | 16 |
+| سپنتا پیکسل (sepanta) | 7 |
+| میلاد سرور (milad) | 7 |
+| سرورستاپ (serversetup) | 13 |
+| نگار نوین (negarnovin) | 16 |
+| بیا تو هاست (bia2host) | 12 |
+| وب رمز (webramz) | 4 |
+| ویدا سرور (vidaserver) | 2 |
+| پنتا سرور (pentaserver) | 15 |
+| سابین سرور (sabinserver) | 6 |
+| کرمان هاستینگ (kermanhosting) | 8 |
+| آذر آنلاین (azaronline) | 9 |
+| ام تی سرور (mtserver) | 11 |
+| قائم هاست (qaemhost) | 22 |
+| راست چین کلود (rtlcloud) | 5 |
+| سون هاست (sonhost) | 5 |
+| ایران وب هاست (iranwebhost) | 3 |
+| روناک هاست (ronakhost) | 7 |
+| هایو (haio) | 24 |
+| نت ساپ (nsup) | 5 |
+| وب پویان (webpouyan) | 29 |
+| VPSoto (vpsoto) | 4 |
+| وب داده (webdade) | 14 |
+| ناین کرفت (9craft) | 7 |
+| لیارا (liara) | 6 |
 
 Verified exact overlap examples:
 
@@ -92,4 +123,12 @@ Existing comparison tests and representative desktop/mobile production journeys 
 
 ## Stopping decision and continuation
 
-Pending final breadth audit. Initial and additional rounds continued to add meaningful coverage, so those checkpoints alone do not justify closure. Complete the linked later search audit before finalizing this decision. Access gaps and held rows remain durable resume points; a failed request never becomes successful verification.
+The public acquisition checkpoint is complete. The earlier additional and final-search reports were checkpoints that correctly required continuation. The [public-store resolution](vps-public-store-resolution-2026-10-29.md) resolved MT and 9craft tariffs. The [linked-family audit](vps-family-audit-2026-10-29.md) followed remaining relevant families to reviewed pages, exact aliases, exclusions or precise evidence gaps: 103 newly reviewable rows admitted, 46 exact duplicates corroborated, 47 unavailable rows excluded, 29 unresolved gaps retained.
+
+The [last broad search](vps-stopping-search-2026-10-29.json) repeats reviewed Webdade, IRVM, Iranica, Tadserver, MehranHost and Sabin sources. Their remaining linked families have now been followed. Repeated discovery plus family-queue closure supplies the stopping rationale; no count or provider ceiling was imposed. This is a bounded public-search assessment, not proof of exhaustive market coverage.
+
+Resume when specific evidence changes: Mizban groups require login; Abrasim/SkyCloud access failed; Didi units, Kelon labels, Jahesh storage options and Hakan GHz/core mapping remain unresolved. Tad Shatel identity and incomplete ServerVDS/MikroTik resources remain holds. Private/unlinked products and checkout availability remain outside the evidence. Failed access is neither withdrawal nor successful verification.
+
+Final retained catalog: **643 records: 639 VPS records across 56 providers and four original database records**. These include native tariffs, conflicts and historical unresolved records, not 639 verified ranked offers. Native USD/hour/day prices have no invented monthly or FX conversion and cannot satisfy monthly toman budgets. WebPouyan's 29 price conflicts, Bertina's 4GB conflict and two ServerVDS price conflicts remain unranked. Tad resource conflicts and Webdade “from” resource values cannot prove exact identity. SAS/SATA interfaces do not imply HDD.
+
+The [521-observation search report](vps-final-search-2026-10-29.md) retains the intervening acquisition detail. Managed database breadth #21 and integrated release #22 remain separate obligations; real VPS overlaps do not relax either gate.

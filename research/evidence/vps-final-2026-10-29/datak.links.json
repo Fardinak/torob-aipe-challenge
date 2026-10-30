@@ -1,0 +1,594 @@
+[
+  {
+    "text": "",
+    "url": "https://datak.ir/"
+  },
+  {
+    "text": "",
+    "url": "https://my.datak.ir/panel/"
+  },
+  {
+    "text": "ورود",
+    "url": "https://my.datak.ir/panel/"
+  },
+  {
+    "text": "خانه",
+    "url": "https://datak.ir/"
+  },
+  {
+    "text": "محصولات",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "سازمانی",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "مجموعه خدمات",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "پهنای باند اختصاصی",
+    "url": "https://datak.ir/dedicated_broadband/"
+  },
+  {
+    "text": "سرور مجازی(vps)",
+    "url": "https://datak.ir/vps/"
+  },
+  {
+    "text": "وایرلس حجمی",
+    "url": "https://datak.ir/airdsl/"
+  },
+  {
+    "text": "سرویس برج‌ها",
+    "url": "https://datak.ir/towers_service/"
+  },
+  {
+    "text": "اینترنت عمومی",
+    "url": "https://datak.ir/public_wifi/"
+  },
+  {
+    "text": "اشتراک فضای دیتاسنتر",
+    "url": "https://datak.ir/co_location/"
+  },
+  {
+    "text": "خانگی",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "ADSL2+",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "VDSL",
+    "url": "https://datak.ir/vdsl/"
+  },
+  {
+    "text": "FD-LTE",
+    "url": "https://datak.ir/fd_lte/"
+  },
+  {
+    "text": "فیبرنوری",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "خدمات فیبر",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "اطلاعات فیبر",
+    "url": "https://datak.ir/fiber_service/"
+  },
+  {
+    "text": "هوشمندسازی",
+    "url": "https://datak.ir/smart_building/"
+  },
+  {
+    "text": "پشتیبانی",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "تماس با پشتیبانی",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "صدای مشتریان",
+    "url": "https://datak.ir/customer_care/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://datak.ir/faq/"
+  },
+  {
+    "text": "داتک پلاس",
+    "url": "https://datak.ir/blog/"
+  },
+  {
+    "text": "سینما داتک",
+    "url": "https://datak.ir/cinema/"
+  },
+  {
+    "text": "تازه‌ها و اخبار",
+    "url": "https://datak.ir/blog/"
+  },
+  {
+    "text": "پرکاربردترین‌های ایران",
+    "url": "https://datak.ir/most-visited-iranian-websites-and-apps/"
+  },
+  {
+    "text": "بازی و چالش آنلاین",
+    "url": "https://datak.ir/questions/"
+  },
+  {
+    "text": "درباره داتک",
+    "url": "https://datak.ir/about-us/"
+  },
+  {
+    "text": "راه‌های ارتباطی",
+    "url": "https://datak.ir/contact-us/"
+  },
+  {
+    "text": "نمایندگی‌ها",
+    "url": "https://datak.ir/province_resellers/"
+  },
+  {
+    "text": "همکاری با داتک",
+    "url": "https://datak.ir/joboffer/"
+  },
+  {
+    "text": "فرصت‌های شغلی",
+    "url": "https://job.ssic.ir:8080"
+  },
+  {
+    "text": "ساختار داتک",
+    "url": "https://datak.ir/managers/"
+  },
+  {
+    "text": "تاریخچه",
+    "url": "https://datak.ir/about-us/"
+  },
+  {
+    "text": "هیئت مدیره",
+    "url": "https://datak.ir/managers/"
+  },
+  {
+    "text": "معاونین و مدیران داخلی",
+    "url": "https://datak.ir/ceo_vice/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/"
+  },
+  {
+    "text": "ورود به پنل کاربری",
+    "url": "https://my.datak.ir/panel/"
+  },
+  {
+    "text": "خانه",
+    "url": "https://datak.ir/"
+  },
+  {
+    "text": "محصولات",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "سازمانی",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "مجموعه خدمات",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "پهنای باند اختصاصی",
+    "url": "https://datak.ir/dedicated_broadband/"
+  },
+  {
+    "text": "سرور مجازی(vps)",
+    "url": "https://datak.ir/vps/"
+  },
+  {
+    "text": "وایرلس حجمی",
+    "url": "https://datak.ir/airdsl/"
+  },
+  {
+    "text": "سرویس برج‌ها",
+    "url": "https://datak.ir/towers_service/"
+  },
+  {
+    "text": "اینترنت عمومی",
+    "url": "https://datak.ir/public_wifi/"
+  },
+  {
+    "text": "اشتراک فضای دیتاسنتر",
+    "url": "https://datak.ir/co_location/"
+  },
+  {
+    "text": "خانگی",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "ADSL2+",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "VDSL",
+    "url": "https://datak.ir/vdsl/"
+  },
+  {
+    "text": "FD-LTE",
+    "url": "https://datak.ir/fd_lte/"
+  },
+  {
+    "text": "فیبرنوری",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "خدمات فیبر",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "اطلاعات فیبر",
+    "url": "https://datak.ir/fiber_service/"
+  },
+  {
+    "text": "هوشمندسازی",
+    "url": "https://datak.ir/smart_building/"
+  },
+  {
+    "text": "پشتیبانی",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "تماس با پشتیبانی",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "صدای مشتریان",
+    "url": "https://datak.ir/customer_care/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://datak.ir/faq/"
+  },
+  {
+    "text": "داتک پلاس",
+    "url": "https://datak.ir/blog/"
+  },
+  {
+    "text": "سینما داتک",
+    "url": "https://datak.ir/cinema/"
+  },
+  {
+    "text": "تازه‌ها و اخبار",
+    "url": "https://datak.ir/blog/"
+  },
+  {
+    "text": "پرکاربردترین‌های ایران",
+    "url": "https://datak.ir/most-visited-iranian-websites-and-apps/"
+  },
+  {
+    "text": "بازی و چالش آنلاین",
+    "url": "https://datak.ir/questions/"
+  },
+  {
+    "text": "درباره داتک",
+    "url": "https://datak.ir/about-us/"
+  },
+  {
+    "text": "راه‌های ارتباطی",
+    "url": "https://datak.ir/contact-us/"
+  },
+  {
+    "text": "نمایندگی‌ها",
+    "url": "https://datak.ir/province_resellers/"
+  },
+  {
+    "text": "همکاری با داتک",
+    "url": "https://datak.ir/joboffer/"
+  },
+  {
+    "text": "فرصت‌های شغلی",
+    "url": "https://job.ssic.ir:8080"
+  },
+  {
+    "text": "ساختار داتک",
+    "url": "https://datak.ir/managers/"
+  },
+  {
+    "text": "تاریخچه",
+    "url": "https://datak.ir/about-us/"
+  },
+  {
+    "text": "هیئت مدیره",
+    "url": "https://datak.ir/managers/"
+  },
+  {
+    "text": "معاونین و مدیران داخلی",
+    "url": "https://datak.ir/ceo_vice/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir"
+  },
+  {
+    "text": "",
+    "url": "tel:+982181681"
+  },
+  {
+    "text": "81681 021",
+    "url": "tel:+982181681"
+  },
+  {
+    "text": "داتک",
+    "url": "https://datak.ir/datak_plus/"
+  },
+  {
+    "text": "سرویس ها و محصولات",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://datak.ir/about-us/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "اینترنت خانگی پر سرعت",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "اینترنت و سرویس‌های سازمانی",
+    "url": "https://datak.ir/organizational_services/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/vps/"
+  },
+  {
+    "text": "سرور مجازی VPS",
+    "url": "https://datak.ir/vps/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "اینترنت فیبر نوری",
+    "url": "https://datak.ir/fiber/"
+  },
+  {
+    "text": "",
+    "url": "tel:02181681"
+  },
+  {
+    "text": "ارسال تیکت",
+    "url": "https://datak.ir/customer_care/"
+  },
+  {
+    "text": "سایر راه‌های ارتباطی",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "همه سرویس‌ها",
+    "url": "https://datak.ir/adsl/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "خرید سرویس!",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "خرید سرویس!",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "خرید سرویس!",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "خرید سرویس!",
+    "url": "https://datak.ir/adsl/#first_table"
+  },
+  {
+    "text": "ورود به پنل کاربری",
+    "url": "https://my.datak.ir/panel/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/macbook-pro-m6/"
+  },
+  {
+    "text": "مک بوک پرو M6 معرفی شد؛ شارژدهی ۲۴ ساعته و گرافیک تا ۳۰ درصد سریع‌تر",
+    "url": "https://datak.ir/macbook-pro-m6/"
+  },
+  {
+    "text": "ادامه مطلب",
+    "url": "https://datak.ir/macbook-pro-m6/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/offline-ai/"
+  },
+  {
+    "text": "هوش مصنوعی آفلاین؛ اجرای مدل‌های هوش مصنوعی بدون اینترنت",
+    "url": "https://datak.ir/offline-ai/"
+  },
+  {
+    "text": "ادامه مطلب",
+    "url": "https://datak.ir/offline-ai/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/tesla-roadster-flying-car/"
+  },
+  {
+    "text": "تسلا رودستر پرواز کرد؛ خودروی عجیب ایلان ماسک با فناوری اسپیس‌ ایکس رونمایی شد",
+    "url": "https://datak.ir/tesla-roadster-flying-car/"
+  },
+  {
+    "text": "ادامه مطلب",
+    "url": "https://datak.ir/tesla-roadster-flying-car/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/fiber-optic-contractor-tender/"
+  },
+  {
+    "text": "فراخوان عمومی مناقصه و جذب پیمانکار اجرای پروژه‌های فیبر نوری استان آذربایجان شرقی",
+    "url": "https://datak.ir/fiber-optic-contractor-tender/"
+  },
+  {
+    "text": "ادامه مطلب",
+    "url": "https://datak.ir/fiber-optic-contractor-tender/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/datak_plus/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir/support/"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir#top"
+  },
+  {
+    "text": "ارائه کننده ا ی ن ت ر ن ت خ ا ن گ ی ا ی ن ت ر ن ت ت ج ا ر ی پ ه ن ا ی ب ا ن د ا خ ت ص ا ص ی ف ی ب ر ن و ر ی س ر و ر م ج ا ز ی ر ا ه ک ا ر ه ا ی س ا ز م ا ن ی",
+    "url": "https://datak.ir"
+  },
+  {
+    "text": "",
+    "url": "https://195.cra1.ir/"
+  },
+  {
+    "text": "",
+    "url": "https://trustseal.enamad.ir/?id=637863&Code=GDRscQEQuwvh11eXhAQb76gkQRRQiWhx"
+  },
+  {
+    "text": "",
+    "url": "https://datak.ir#top"
+  },
+  {
+    "text": "ارائه کننده ا ی ن ت ر ن ت خ ا ن گ ی ا ی ن ت ر ن ت ت ج ا ر ی پ ه ن ا ی ب ا ن د ا خ ت ص ا ص ی ف ی ب ر ن و ر ی س ر و ر م ج ا ز ی ر ا ه ک ا ر ه ا ی س ا ز م ا ن ی",
+    "url": "https://datak.ir"
+  },
+  {
+    "text": "دسترسی سریع",
+    "url": "https://datak.ir#expand-ff2db0a"
+  },
+  {
+    "text": "شرکت سرمایه گذاری تأمین اجتماعی (شستا)",
+    "url": "https://www.ssic.ir/"
+  },
+  {
+    "text": "سازمان تنظیم مقررات و ارتباطات رادیویی",
+    "url": "https://www.cra1.ir/"
+  },
+  {
+    "text": "رایتل",
+    "url": "https://www.rightel.ir/"
+  },
+  {
+    "text": "نمایندگی ها",
+    "url": "https://datak.ir/province_resellers/"
+  },
+  {
+    "text": "همکاری با ما",
+    "url": "https://datak.ir/joboffer/"
+  },
+  {
+    "text": "سرویس ها و خدمات​",
+    "url": "https://datak.ir#expand-809f846"
+  },
+  {
+    "text": "مصوبات سازمان تنظیم",
+    "url": "https://asnad.cra1.ir/fa/Public/Documents?parentId=dcecfc9f-fae4-e511-973c-68b599781b58"
+  },
+  {
+    "text": "سامانه سنجش سرعت",
+    "url": "https://speedtest.datak.ir/"
+  },
+  {
+    "text": "قوانین و مقررارت",
+    "url": "https://datak.ir/policy_privacy/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://datak.ir/typical_questions/"
+  },
+  {
+    "text": "ارتباط با دفتر داتک",
+    "url": "https://datak.ir#expand-4837177"
+  },
+  {
+    "text": "81681 021",
+    "url": "tel:02181681"
+  },
+  {
+    "text": "شرکت سرمایه گذاری تأمین اجتماعی (شستا)",
+    "url": "https://www.ssic.ir/"
+  },
+  {
+    "text": "سازمان تنظیم مقررات و ارتباطات رادیویی",
+    "url": "https://www.cra1.ir/"
+  },
+  {
+    "text": "رایتل",
+    "url": "https://www.rightel.ir/"
+  },
+  {
+    "text": "نمایندگی ها",
+    "url": "https://datak.ir/province_resellers/"
+  },
+  {
+    "text": "همکاری با داتک",
+    "url": "https://job.ssic.ir:8080"
+  },
+  {
+    "text": "مصوبات سازمان تنظیم",
+    "url": "https://asnad.cra1.ir/fa/Public/Documents?parentId=dcecfc9f-fae4-e511-973c-68b599781b58"
+  },
+  {
+    "text": "سامانه سنجش سرعت",
+    "url": "https://speedtest.datak.ir/"
+  },
+  {
+    "text": "قوانین و مقررارت",
+    "url": "https://datak.ir/policy_privacy/"
+  },
+  {
+    "text": "سوالات متداول",
+    "url": "https://datak.ir/typical_questions/"
+  },
+  {
+    "text": "81681 021",
+    "url": "tel:%2002181681"
+  }
+]

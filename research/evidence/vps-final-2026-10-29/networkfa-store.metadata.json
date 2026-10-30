@@ -1,0 +1,5 @@
+{
+  "requested_url": "https://my.networkfa.net/",
+  "attempt_utc": "2026-10-29T09:51:09.797185+00:00",
+  "error": "URLError(gaierror(-2, 'Name or service not known'))"
+}

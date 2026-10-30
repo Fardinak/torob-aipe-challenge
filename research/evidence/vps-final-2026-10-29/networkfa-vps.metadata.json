@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://clients.networkfa.net/store/irmilad",
+  "attempt_utc": "2026-10-29T09:52:31.307856+00:00",
+  "final_url": "https://clients.networkfa.net/store/irmilad",
+  "status": 404,
+  "headers": {
+    "Connection": "close",
+    "set-cookie": "WHMCScwzN9cHjyJ9g=f4e4cf4d193fb29e479511f8eafbf998; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Content-Type": "text/plain; charset=utf-8",
+    "Content-Length": "9",
+    "Date": "Thu, 29 Oct 2026 09:52:26 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 9,
+  "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+  "saved_utc": "2026-10-29T09:52:32.473982+00:00"
+}

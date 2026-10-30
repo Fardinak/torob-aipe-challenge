@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="coodiv team (https://themeforest.net/user/coodiv)">
+	<link rel="icon" href="/templates/coowhm/favicon.ico">
+    <title>کارت خرید - اسپاد سرور</title>
+    <!-- Styling -->
+<!--<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:400,700" rel="stylesheet">-->
+<link href="/templates/coowhm/css/all.min.css?v=818878" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/templates/coowhm/css/animate.min.css">
+<link rel="stylesheet" href="/templates/coowhm/css/main.css">
+<link rel="stylesheet" href="/templates/coowhm/css/flickity.min.css">
+<link href="/templates/coowhm/css/RTL.css" rel="stylesheet">
+<link href="/templates/coowhm/css/custom.css" rel="stylesheet">
+<script type="text/javascript">
+    var csrfToken = '2c0b6661b15f9bd082a220802d71aa9b70728bba',
+        markdownGuide = 'راهنمای Markdown',
+        locale = 'en',
+        saved = 'ذخیره شد',
+        saving = 'ذخیره اتوماتیک',
+        whmcsBaseUrl = "",
+        requiredText = 'ضروری',
+        recaptchaSiteKey = "";
+</script>
+<script src="/templates/coowhm/js/scripts.min.js?v=818878"></script>
+ 
+	<script>const ContentLoadedModule=!![];</script>
+<script src="https://crm.spadserver.com/modules/addons/jalalidate_pro/assets/js/jalali-moment.js"></script><script src="https://crm.spadserver.com/modules/addons/jalalidate_pro/assets/js/jalalidate.js"></script>
+
+    </head>
+    <body class="body-move body-style-1 full-body-login" data-phone-cc-input="1">
+    
+	<!-- <div class="template-demo">
+<a class="settingbutton active"><i class="fa fa-cog" aria-hidden="true"></i></a>
+<div class="body-demo-t">
+<div class="template-skin-body">
+<div class="mode row">
+<div class="col-md-12">
+<h5 class="title">templates</h5>
+<a href="#" class="btd active">WhiteMode Plus <span>new!</span></a>
+<a href="#" class="btd">WhiteMode</a>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Soon" class="btd disabled">DarkMode</a>
+</div>
+</div>
+
+<div class="mode row color-changer">
+<div class="col-md-12">
+<h5 class="title">template styles</h5>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="default" class="bts one">1</a>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="style 1" class="bts two active">2</a>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Soon" class="bts tree disable">3</a>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Soon" class="bts four disable">4</a>
+<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Soon" class="bts five disable">5</a>
+</div>
+</div>
+
+<div class="mode row mods-changer">
+<div class="col-md-12">
+<h5 class="title">template modes</h5>
+<a class="btm sidebaro" href="#"><span>Collapse Sidebar</span></a>
+<a class="btm stickyo" href="#"><span>Sticky Header</span></a>
+<a class="btm navoff" href="#"><span>Hide Header</span></a>
+</div>
+</div>
+
+<a target="_blank" class="buy-template-folder" href="https://themeforest.net/item/coowhm-multipurpose-whmcs-template/24915313">buy now</a>
+</div>
+</div>
+</div> -->
+	<div id="loading-bg"><!-- start loading page -->
+	<div class="loading">
+	<div class="effect-1 effects"></div>
+	<div class="effect-2 effects"></div>
+	<div class="effect-3 effects"></div>
+	</div>
+	<div class="loading-text">بارگذاری ... </div>
+	</div><!-- end loading page -->
+	<!-- login and register page without the default header and footer -->
+    <nav class="coodiv-navbar">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a href="/index.php" class="the-logo">
+                    <!--<img class="logo" src="/templates/coowhm/img/logo.png" alt="اسپاد سرور"> -->
+                    <img class="logo" src="/images/spad-logo-official.jpg" alt="اسپاد سرور"><!-- site logo image -->
+                    <span class="b-title">اسپاد سرور</span><!-- website title -->
+                </a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav coodiv-inner-navbar">
+                    <span class="navigation-header"><i>سرویس های من</i></span>
+<li data-username="Home" class="nav-item">
+<a href="/index.php" class="nav-link active"><span class="coodiv-micon">
+<!-- <i class="feather icon-home"></i> -->
+    <img src="/images/menu-home.png" alt="">
+
+</span><span class="coodiv-mtext">ناحیه کاربری</span></a>
+</li>
+
+<li data-username="store" class="nav-item coodiv-hasmenu">
+<a class="nav-link "><span class="coodiv-micon">
+<!-- <i class="feather icon-box"></i> -->
+    <img src="/images/menu-service.png" alt="">
+
+</span><span class="coodiv-mtext">محصولات</span></a>
+<ul class="coodiv-submenu">
+<li><a href="/cart.php">مشاهده همه</a></li>
+<li><a href="/cart.php?gid=3">سرور مجازی ایران</a></li>
+<li><a href="/cart.php?gid=4">سرور مجازی پیشرفته ایران</a></li>
+<li><a href="/cart.php?gid=25">گیت لب ایران</a></li>
+<li><a href="/cart.php?gid=6">هاست اقتصادی سی پنل ایران</a></li>
+<li><a href="/cart.php?gid=7">هاست اقتصادی دایرکت ادمین ایران</a></li>
+<li><a href="/cart.php?gid=70">هاست لینوکس ایران</a></li>
+<li><a href="/cart.php?gid=52">هاست ویندوزی ایران </a></li>
+<li><a href="/cart.php?gid=48">نمایندگی Directadmin</a></li>
+<li><a href="/cart.php?gid=59">نمایندگی Plesk</a></li>
+<li><a href="/cart.php?gid=54">نمایندگی Cpanel</a></li>
+<li><a href="/cart.php?gid=62">هاست وردپرس ایران</a></li>
+<li><a href="/cart.php?gid=63">هاست ووکامرس ایران</a></li>
+<li><a href="/cart.php?gid=69">هاست دانلود ایران</a></li>
+<li><a href="/cart.php?gid=61">هاست ایمیل ایران</a></li>
+<li><a href="/cart.php?gid=67">هاست پایتون ایران</a></li>
+<li><a href="/cart.php?gid=10">سرور مجازی آلمان</a></li>
+<li><a href="/cart.php?gid=49">سرور مجازی پیشرفته آلمان</a></li>
+<li><a href="/cart.php?gid=11">هاست اقتصادی سی پنل آلمان</a></li>
+<li><a href="/cart.php?gid=12">هاست اقتصادی دایرکت ادمین آلمان</a></li>
+<li><a href="/cart.php?gid=71">هاست لینوکس آلمان</a></li>
+<li><a href="/cart.php?gid=65">هاست وردپرس آلمان</a></li>
+<li><a href="/cart.php?gid=66">هاست ایمیل آلمان</a></li>
+<li><a href="/cart.php?gid=68">هاست پایتون آلمان</a></li>
+<li><a href="/cart.php?gid=26">گیت لب آلمان</a></li>
+<li><a href="/cart.php?gid=56">مودل آلمان</a></li>
+<li><a href="/cart.php?gid=13">هاست پیشرفته سی پنل آلمان</a></li>
+<li><a href="/cart.php?gid=14">هاست پیشرفته دایرکت ادمین آلمان</a></li>
+<li><a href="/cart.php?gid=22">سرویس ابری اروپا</a></li>
+<li><a href="/cart.php?gid=24">License</a></li>
+<li><a href="/cart.php?gid=27">سرویس ترید</a></li>
+<li><a href="/cart.php?gid=28">پلن های ویژه‌ ساعتی BigBlueButton</a></li>
+<li><a href="/cart.php?gid=30">سرویس ویژه با دامنه شخصی BigBlueButton</a></li>
+<li><a href="/cart.php?gid=35">سرویس بکاپ</a></li>
+<li><a href="/cart.php?gid=32">پلن پیشرفته مودل</a></li>
+<li><a href="/cart.php?gid=39">OVH Discovery</a></li>
+<li><a href="/cart.php?gid=40">OVH General Purpose</a></li>
+<li><a href="/cart.php?gid=41">OVH CPU</a></li>
+<li><a href="/cart.php?gid=42">OVH RAM</a></li>
+<li><a href="/cart.php?gid=43">OVH GPU</a></li>
+<li><a href="/cart.php?gid=44">OVH IOPS</a></li>
+<li><a href="/cart.php?gid=45">OVH Metal </a></li>
+<li><a href="/cart.php?gid=55">SSL Certificate</a></li>
+<li><a href="/cart.php?gid=72">سرور N8N</a></li>
+<li><a href="/cart.php?a=add&domain=register">ثبت دامنه جدید</a></li>
+<li><a href="/cart.php?a=add&domain=transfer">انتقال در دامنه</a></li>
+</ul>
+</li>
+
+<li data-username="domains" class="nav-item coodiv-hasmenu">
+<a class="nav-link "><span class="coodiv-micon">
+<!-- <i class="feather icon-globe"></i> -->
+    <img src="/images/menu-domain.png" alt="">
+
+
+</span><span class="coodiv-mtext">دامنه ها</span></a>
+<ul class="coodiv-submenu">
+<li><a href="/clientarea.php?action=domains">دامنه های من</a></li>
+<li><a href="cart.php?gid=renewals"> تمدید دامنه </a></li>
+<li><a href="/cart.php?a=add&domain=register">ثبت دامنه جدید</a></li>
+<li><a href="/cart.php?a=add&domain=transfer">انتقال در دامنه</a></li>
+<li><a href="/cart.php?a=add&domain=register">جستجوی دامنه</a></li>
+</ul>
+</li>
+<li data-username="Home" class="nav-item">
+<a href="/affiliates.php" class="nav-link"><span class="coodiv-micon">
+<!-- <i class="feather icon-user-plus"></i> -->
+    <img src="/images/menu-affiliate.png" alt="">
+
+</span><span class="coodiv-mtext">بازاریابی</span></a>
+</li>
+<span class="navigation-header"><i>پشتیبانی</i></span>
+<li data-username="support" class="nav-item coodiv-hasmenu">
+<a class="nav-link "><span class="coodiv-micon">
+
+<!-- <i class="feather icon-life-buoy"></i> -->
+<img src="/images/menu-support.png" alt="support">
+
+</span><span class="coodiv-mtext">پشتیبانی</span></a>
+<ul class="coodiv-submenu">
+<li><a href="/supporttickets.php">تیکت ها</a></li>
+<li><a href="/submitticket.php">ارسال تیکت پشتیبانی</a></li>
+</ul>
+</li>
+
+<li data-username="announcements" class="nav-item">
+<a href="/announcements.php" class="nav-link "><span class="coodiv-micon"> <!--<i class="feather icon-file-text"></i>--> <img src="/images/menu-news.png" alt="news"> </span><span class="coodiv-mtext">اخبار</span></a>
+</li>
+<li data-username="knowledgebase" class="nav-item">
+<a href="/knowledgebase.php" class="nav-link "><span class="coodiv-micon"> <!-- <i class="feather icon-server"></i>--> <img src="/images/menu-learning-center.png" alt="learning center"> </span><span class="coodiv-mtext">مرکز آموزش</span></a>
+</li>
+<li data-username="Network" class="nav-item">
+<a href="/serverstatus.php" class="nav-link "><span class="coodiv-micon"> <!-- <i class="feather icon-pie-chart"></i>--> <img src="/images/menu-status.png" alt="network status"> </span><span class="coodiv-mtext">وضعیت شبکه</span></a>
+</li>
+<span class="navigation-header"><i>تماس با ما</i></span>
+<li data-username="contact" class="nav-item">
+<a href="/contact.php" class="nav-link "><span class="coodiv-micon"><!-- <i class="feather icon-mail"></i>--> <img src="/images/menu-contact.png" alt="contact us"></span><span class="coodiv-mtext">تماس با ما</span></a>
+</li>
+<li data-username="register" class="nav-item">
+<a href="/register.php" class="nav-link "><span class="coodiv-micon"><i class="feather icon-unlock"></i></span><span class="coodiv-mtext">ثبت نام</span></a>
+</li>
+<!-- the main menu -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+    $(window).on("scroll", function () {
+  var scrollTop = $(this).scrollTop();
+  $(".navbar-content").css("top", scrollTop + "px"); // Move sidebar with the page
+});
+</script>
+    <header class="navbar coodiv-header navbar-expand-lg navbar-light">
+        <div class="m-header">
+            <a class="mobile-menu" id="mobile-collapse1" href="javascript:"><span></span></a>
+            <a href="/index.php" class="the-logo">
+                    <!--<img class="logo" src="/templates/coowhm/img/logo.png" alt="اسپاد سرور"><!-- site logo image -->
+                    <img class="logo" src="/images/spad-logo-official.jpg" alt="اسپاد سرور"><!-- site logo image -->
+                    <span class="b-title">اسپاد سرور</span><!-- website title -->
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a class="mobile-menu" id="mobile-collapse"><span></span></a></li>
+                <li class="nav-item no-phone-display">
+<form class="main-search" method="post" action="/knowledgebase/search">
+<input type="hidden" name="token" value="2c0b6661b15f9bd082a220802d71aa9b70728bba" />
+	<i class="feather icon-search"></i>
+    <input type="text" id="m-search" class="form-control" placeholder="سوال خود را جهت جستجو در بخش آموزش ها وارد کنید...">
+	<button type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="مرکز آموزش" class="knowladge-header-search"><i class="feather icon-server"></i></button>
+</form>
+</li>
+
+<!-- search bar -->
+            </ul>
+            <ul class="navbar-nav ml-auto">
+            			<li>
+        <a class="f-15" href="/cart.php?a=view"><i class="icon feather icon-shopping-cart"></i></a>
+</li>  <!-- shopping cart -->
+			<li class="width-s-none-display">
+    <div class="dropdown">
+        <a class="dropdown-toggle f-15" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+        <div class="dropdown-menu dropdown-menu-right notification">
+            <div class="noti-head">
+                <h6 class="d-inline-block m-b-0">پیام ها</h6>
+                <div class="float-right">
+                <span class="notification-number">0</span>
+                </div>
+            </div>
+            <div class="noti-body">
+			            <span class="alert alert-danger notification-alert">شما هیچ پیامی در این لحظه ندارید</span>
+            			
+            </div>
+            <div class="noti-footer">
+            <a href="clientarea.php">نمایش همه</a>
+            </div>
+        </div>
+    </div>
+</li>  <!-- the notifications -->
+			<li>
+<div class="dropdown drp-user not-login">
+        <a href="javascript:" class="dropdown-toggle f-15" data-toggle="dropdown">
+			 
+		<i class="feather icon-user"></i>
+		        </a>
+		
+        <div class="dropdown-menu dropdown-menu-right profile-notification">
+				<div class="ligon-head">
+                <h6 class="d-inline-block m-b-0">ورود به کنترل پنل</h6>
+        </div>
+		<div class="header-login-container">
+        <form method="post" action="https://crm.spadserver.com/dologin.php" class="login-form">
+<input type="hidden" name="token" value="2c0b6661b15f9bd082a220802d71aa9b70728bba" />
+            <div class="form-group">
+			    <i class="feather icon-user"></i>
+                <input type="email" name="username" class="form-control" id="inputEmail" placeholder="ایمیل را وارد کنید" autofocus>
+            </div>
+            <div class="form-group">
+			   <i class="feather icon-lock"></i>
+                <input type="password" name="password" class="form-control" id="inputPassword" placeholder="کلمه عبور" autocomplete="off" >
+            </div>
+			<div class="row mr-bt-20">
+			<div class="col-md-6">
+			<div class="custom-control custom-checkbox p-t-5">
+            <input type="checkbox" class="custom-control-input" name="rememberme" id="rememberme">
+            <label class="custom-control-label" for="rememberme">مرا به خاطر بسپار</label>
+            </div>
+			</div>
+            <div class="col-md-6">
+			<input id="login" type="submit" class="header-login-button" value="وارد شوید" />
+			</div>
+			</div>
+            <div class="header-login-fgtpss">
+            <a href="https://crm.spadserver.com/pwreset.php" class="">رمز عبور را فراموش کرده اید؟</a> یا <a href="https://crm.spadserver.com/register.php" class="">ثبت نام</a>
+            </div>
+        </form>
+		<div class="header-social-login hidden">
+				</div>
+        </div>  		
+			
+        </div>
+</div>
+</li><!-- account informations -->
+            </ul>
+        </div>
+    </header>
+    <div class="header-hight-fixed"></div>
+    <div class="coodiv-main-container">
+        <div class="coodiv-wrapper">
+            <div class="coodiv-content">
+                <div class="coodiv-inner-content">
+                    <div class="main-body">
+                        <div class="page-wrapper">
+					
+                             
+														                            <section id="main-body">
+                                <div class="">
+                                    <div class="row">
+                                        <!-- Container for main page display content -->
+                                        <div class="col-xs-12 main-content">
+                                             
+											<!-- login and register page without the default header and footer -->
+                                            
+
+<link rel="stylesheet" type="text/css" href="/templates/orderforms/coowhm-cart/css/all.min.css?v=818878" />
+<script type="text/javascript" src="/templates/orderforms/coowhm-cart/js/scripts.min.js?v=818878"></script> 
+<link rel="stylesheet" type="text/css" href="/templates/orderforms/coowhm-cart/css/style.css?v=818878" />
+
+
+<div id="order-standard_cart">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="header-lined">
+                <h1>
+                                            گیت لب ایران
+                                    				</h1>
+				
+				<div class="d-flex">
+								<div class="side-bar-header-lined-drop-down">
+				<button id="show-more-sidebar" type="button" class="drop-down-btn show-more-sidebar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<i class="fas fa-bars"></i>
+				دسته‌بندی محصولات
+				</button>
+				<div class="dropdown-menu" aria-labelledby="show-more-sidebar">
+  			        <div menuItemName="Categories" class="item-drop-side">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                دسته بندی ها
+                            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="سرور مجازی ایران" href="/store/iran-vps" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران">
+
+                            سرور مجازی ایران
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی پیشرفته ایران" href="/store/iran-semi-dedicate" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_پیشرفته_ایران">
+
+                            سرور مجازی پیشرفته ایران
+
+                                                    </a>
+                                                                                <a menuItemName="گیت لب ایران" href="/store/gyt-gitlab-iran-yrn" class="list-group-item active" id="Secondary_Sidebar-Categories-گیت_لب_ایران">
+
+                            گیت لب ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست اقتصادی سی پنل ایران" href="/store/iran-host-cpnel" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_اقتصادی_سی_پنل_ایران">
+
+                            هاست اقتصادی سی پنل ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست اقتصادی دایرکت ادمین ایران" href="/store/iran-host-directadmin" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_اقتصادی_دایرکت_ادمین_ایران">
+
+                            هاست اقتصادی دایرکت ادمین ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست لینوکس ایران" href="/store/iran-host-linux" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_لینوکس_ایران">
+
+                            هاست لینوکس ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست ویندوزی ایران " href="/store/iran-host-widnows" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_ویندوزی_ایران_">
+
+                            هاست ویندوزی ایران 
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی Directadmin" href="/store/reseller-directadmin" class="list-group-item" id="Secondary_Sidebar-Categories-نمایندگی_Directadmin">
+
+                            نمایندگی Directadmin
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی Plesk" href="/store/nmyndgy-plesk" class="list-group-item" id="Secondary_Sidebar-Categories-نمایندگی_Plesk">
+
+                            نمایندگی Plesk
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی Cpanel" href="/store/reseller-cpanel" class="list-group-item" id="Secondary_Sidebar-Categories-نمایندگی_Cpanel">
+
+                            نمایندگی Cpanel
+
+                                                    </a>
+                                                                                <a menuItemName="هاست وردپرس ایران" href="/store/host-wordpress" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_وردپرس_ایران">
+
+                            هاست وردپرس ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست ووکامرس ایران" href="/store/host-woocommerce" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_ووکامرس_ایران">
+
+                            هاست ووکامرس ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست دانلود ایران" href="/store/host-download" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_دانلود_ایران">
+
+                            هاست دانلود ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست ایمیل ایران" href="/store/host-mail" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_ایمیل_ایران">
+
+                            هاست ایمیل ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست پایتون ایران" href="/store/host-python" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_پایتون_ایران">
+
+                            هاست پایتون ایران
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی آلمان" href="/store/germany-vps" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_آلمان">
+
+                            سرور مجازی آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی پیشرفته آلمان" href="/store/germany-semi-dedicate" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_پیشرفته_آلمان">
+
+                            سرور مجازی پیشرفته آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست اقتصادی سی پنل آلمان" href="/store/germany-host-cpanel" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_اقتصادی_سی_پنل_آلمان">
+
+                            هاست اقتصادی سی پنل آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست اقتصادی دایرکت ادمین آلمان" href="/store/germany-host-directadmin" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_اقتصادی_دایرکت_ادمین_آلمان">
+
+                            هاست اقتصادی دایرکت ادمین آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست لینوکس آلمان" href="/store/ge-host-linux" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_لینوکس_آلمان">
+
+                            هاست لینوکس آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست وردپرس آلمان" href="/store/host-wordpress-ge" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_وردپرس_آلمان">
+
+                            هاست وردپرس آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست ایمیل آلمان" href="/store/host-mail-ge" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_ایمیل_آلمان">
+
+                            هاست ایمیل آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست پایتون آلمان" href="/store/host-python-ge" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_پایتون_آلمان">
+
+                            هاست پایتون آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="گیت لب آلمان" href="/store/gitlab-germany" class="list-group-item" id="Secondary_Sidebar-Categories-گیت_لب_آلمان">
+
+                            گیت لب آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="مودل آلمان" href="/store/germany-moodle" class="list-group-item" id="Secondary_Sidebar-Categories-مودل_آلمان">
+
+                            مودل آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست پیشرفته سی پنل آلمان" href="/store/germany-prohost-cpanel" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_پیشرفته_سی_پنل_آلمان">
+
+                            هاست پیشرفته سی پنل آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست پیشرفته دایرکت ادمین آلمان" href="/store/germany-prohost-directadmin" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_پیشرفته_دایرکت_ادمین_آلمان">
+
+                            هاست پیشرفته دایرکت ادمین آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="سرویس ابری اروپا" href="/store/european-cloud" class="list-group-item" id="Secondary_Sidebar-Categories-سرویس_ابری_اروپا">
+
+                            سرویس ابری اروپا
+
+                                                    </a>
+                                                                                <a menuItemName="License" href="/store/license" class="list-group-item" id="Secondary_Sidebar-Categories-License">
+
+                            License
+
+                                                    </a>
+                                                                                <a menuItemName="سرویس ترید" href="/store/trade" class="list-group-item" id="Secondary_Sidebar-Categories-سرویس_ترید">
+
+                            سرویس ترید
+
+                                                    </a>
+                                                                                <a menuItemName="پلن های ویژه‌ ساعتی BigBlueButton" href="/store/bigbluebutton-iran" class="list-group-item" id="Secondary_Sidebar-Categories-پلن_های_ویژه‌_ساعتی_BigBlueButton">
+
+                            پلن های ویژه‌ ساعتی BigBlueButton
+
+                                                    </a>
+                                                                                <a menuItemName="سرویس ویژه با دامنه شخصی BigBlueButton" href="/store/bigbluebutton-pro-iran" class="list-group-item" id="Secondary_Sidebar-Categories-سرویس_ویژه_با_دامنه_شخصی_BigBlueButton">
+
+                            سرویس ویژه با دامنه شخصی BigBlueButton
+
+                                                    </a>
+                                                                                <a menuItemName="سرویس بکاپ" href="/store/backups" class="list-group-item" id="Secondary_Sidebar-Categories-سرویس_بکاپ">
+
+                            سرویس بکاپ
+
+                                                    </a>
+                                                                                <a menuItemName="پلن پیشرفته مودل" href="/store/moodle-pro" class="list-group-item" id="Secondary_Sidebar-Categories-پلن_پیشرفته_مودل">
+
+                            پلن پیشرفته مودل
+
+                                                    </a>
+                                                                                <a menuItemName="OVH Discovery" href="/store/ovh-discovery" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_Discovery">
+
+                            OVH Discovery
+
+                                                    </a>
+                                                                                <a menuItemName="OVH General Purpose" href="/store/general-purpose" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_General_Purpose">
+
+                            OVH General Purpose
+
+                                                    </a>
+                                                                                <a menuItemName="OVH CPU" href="/store/ovh-cpu" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_CPU">
+
+                            OVH CPU
+
+                                                    </a>
+                                                                                <a menuItemName="OVH RAM" href="/store/ovh-ram" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_RAM">
+
+                            OVH RAM
+
+                                                    </a>
+                                                                                <a menuItemName="OVH GPU" href="/store/ovh-gpu" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_GPU">
+
+                            OVH GPU
+
+                                                    </a>
+                                                                                <a menuItemName="OVH IOPS" href="/store/ovh-iops" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_IOPS">
+
+                            OVH IOPS
+
+                                                    </a>
+                                                                                <a menuItemName="OVH Metal " href="/store/ovh-metal" class="list-group-item" id="Secondary_Sidebar-Categories-OVH_Metal_">
+
+                            OVH Metal 
+
+                                                    </a>
+                                                                                <a menuItemName="SSL Certificate" href="/store/ssl-certificate" class="list-group-item" id="Secondary_Sidebar-Categories-SSL_Certificate">
+
+                            SSL Certificate
+
+                                                    </a>
+                                                                                <a menuItemName="سرور N8N" href="/store/n8n" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_N8N">
+
+                            سرور N8N
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+        <div menuItemName="Actions" class="item-drop-side">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                عملیات
+                            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="Domain Registration" href="/cart.php?a=add&domain=register" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Registration">
+
+                            ثبت دامنه جدید
+
+                                                    </a>
+                                                                                <a menuItemName="Domain Transfer" href="/cart.php?a=add&domain=transfer" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Transfer">
+
+                            انتقال در دامنه
+
+                                                    </a>
+                                                                                <a menuItemName="View Cart" href="/cart.php?a=view" class="list-group-item" id="Secondary_Sidebar-Actions-View_Cart">
+
+                            مشاهده کارت خرید
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+       			    </div>
+   			    </div>
+				</div>
+            </div>
+			
+			
+                    </div>
+
+        <div class="col-md-12">
+
+            <div class="categories-collapsed visible-xs visible-sm clearfix">
+
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-shopping-cart"></i>&nbsp;
+            
+            دسته بندی ها
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="سرور مجازی ایران" value="/store/iran-vps" class="list-group-item" >
+                        سرور مجازی ایران
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی پیشرفته ایران" value="/store/iran-semi-dedicate" class="list-group-item" >
+                        سرور مجازی پیشرفته ایران
+
+                                            </option>
+                                                        <option menuItemName="گیت لب ایران" value="/store/gyt-gitlab-iran-yrn" class="list-group-item" selected="selected">
+                        گیت لب ایران
+
+                                            </option>
+                                                                                                    <option menuItemName="هاست اقتصادی سی پنل ایران" value="/store/iran-host-cpnel" class="list-group-item" >
+                        هاست اقتصادی سی پنل ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست اقتصادی دایرکت ادمین ایران" value="/store/iran-host-directadmin" class="list-group-item" >
+                        هاست اقتصادی دایرکت ادمین ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست لینوکس ایران" value="/store/iran-host-linux" class="list-group-item" >
+                        هاست لینوکس ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست ویندوزی ایران " value="/store/iran-host-widnows" class="list-group-item" >
+                        هاست ویندوزی ایران 
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی Directadmin" value="/store/reseller-directadmin" class="list-group-item" >
+                        نمایندگی Directadmin
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی Plesk" value="/store/nmyndgy-plesk" class="list-group-item" >
+                        نمایندگی Plesk
+
+                                            </option>
+                                                        <option menuItemName="نمایندگی Cpanel" value="/store/reseller-cpanel" class="list-group-item" >
+                        نمایندگی Cpanel
+
+                                            </option>
+                                                        <option menuItemName="هاست وردپرس ایران" value="/store/host-wordpress" class="list-group-item" >
+                        هاست وردپرس ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست ووکامرس ایران" value="/store/host-woocommerce" class="list-group-item" >
+                        هاست ووکامرس ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست دانلود ایران" value="/store/host-download" class="list-group-item" >
+                        هاست دانلود ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست ایمیل ایران" value="/store/host-mail" class="list-group-item" >
+                        هاست ایمیل ایران
+
+                                            </option>
+                                                        <option menuItemName="هاست پایتون ایران" value="/store/host-python" class="list-group-item" >
+                        هاست پایتون ایران
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی آلمان" value="/store/germany-vps" class="list-group-item" >
+                        سرور مجازی آلمان
+
+                                            </option>
+                                                        <option menuItemName="سرور مجازی پیشرفته آلمان" value="/store/germany-semi-dedicate" class="list-group-item" >
+                        سرور مجازی پیشرفته آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست اقتصادی سی پنل آلمان" value="/store/germany-host-cpanel" class="list-group-item" >
+                        هاست اقتصادی سی پنل آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست اقتصادی دایرکت ادمین آلمان" value="/store/germany-host-directadmin" class="list-group-item" >
+                        هاست اقتصادی دایرکت ادمین آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست لینوکس آلمان" value="/store/ge-host-linux" class="list-group-item" >
+                        هاست لینوکس آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست وردپرس آلمان" value="/store/host-wordpress-ge" class="list-group-item" >
+                        هاست وردپرس آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست ایمیل آلمان" value="/store/host-mail-ge" class="list-group-item" >
+                        هاست ایمیل آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست پایتون آلمان" value="/store/host-python-ge" class="list-group-item" >
+                        هاست پایتون آلمان
+
+                                            </option>
+                                                        <option menuItemName="گیت لب آلمان" value="/store/gitlab-germany" class="list-group-item" >
+                        گیت لب آلمان
+
+                                            </option>
+                                                        <option menuItemName="مودل آلمان" value="/store/germany-moodle" class="list-group-item" >
+                        مودل آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست پیشرفته سی پنل آلمان" value="/store/germany-prohost-cpanel" class="list-group-item" >
+                        هاست پیشرفته سی پنل آلمان
+
+                                            </option>
+                                                        <option menuItemName="هاست پیشرفته دایرکت ادمین آلمان" value="/store/germany-prohost-directadmin" class="list-group-item" >
+                        هاست پیشرفته دایرکت ادمین آلمان
+
+                                            </option>
+                                                        <option menuItemName="سرویس ابری اروپا" value="/store/european-cloud" class="list-group-item" >
+                        سرویس ابری اروپا
+
+                                            </option>
+                                                        <option menuItemName="License" value="/store/license" class="list-group-item" >
+                        License
+
+                                            </option>
+                                                        <option menuItemName="سرویس ترید" value="/store/trade" class="list-group-item" >
+                        سرویس ترید
+
+                                            </option>
+                                                        <option menuItemName="پلن های ویژه‌ ساعتی BigBlueButton" value="/store/bigbluebutton-iran" class="list-group-item" >
+                        پلن های ویژه‌ ساعتی BigBlueButton
+
+                                            </option>
+                                                        <option menuItemName="سرویس ویژه با دامنه شخصی BigBlueButton" value="/store/bigbluebutton-pro-iran" class="list-group-item" >
+                        سرویس ویژه با دامنه شخصی BigBlueButton
+
+                                            </option>
+                                                        <option menuItemName="سرویس بکاپ" value="/store/backups" class="list-group-item" >
+                        سرویس بکاپ
+
+                                            </option>
+                                                        <option menuItemName="پلن پیشرفته مودل" value="/store/moodle-pro" class="list-group-item" >
+                        پلن پیشرفته مودل
+
+                                            </option>
+                                                        <option menuItemName="OVH Discovery" value="/store/ovh-discovery" class="list-group-item" >
+                        OVH Discovery
+
+                                            </option>
+                                                        <option menuItemName="OVH General Purpose" value="/store/general-purpose" class="list-group-item" >
+                        OVH General Purpose
+
+                                            </option>
+                                                        <option menuItemName="OVH CPU" value="/store/ovh-cpu" class="list-group-item" >
+                        OVH CPU
+
+                                            </option>
+                                                        <option menuItemName="OVH RAM" value="/store/ovh-ram" class="list-group-item" >
+                        OVH RAM
+
+                                            </option>
+                                                        <option menuItemName="OVH GPU" value="/store/ovh-gpu" class="list-group-item" >
+                        OVH GPU
+
+                                            </option>
+                                                        <option menuItemName="OVH IOPS" value="/store/ovh-iops" class="list-group-item" >
+                        OVH IOPS
+
+                                            </option>
+                                                        <option menuItemName="OVH Metal " value="/store/ovh-metal" class="list-group-item" >
+                        OVH Metal 
+
+                                            </option>
+                                                        <option menuItemName="SSL Certificate" value="/store/ssl-certificate" class="list-group-item" >
+                        SSL Certificate
+
+                                            </option>
+                                                        <option menuItemName="سرور N8N" value="/store/n8n" class="list-group-item" >
+                        سرور N8N
+
+                                            </option>
+                                                                </select>
+        </form>
+    </div>
+
+            </div>
+            <div class="panel card panel-default">
+                <div class="m-0 panel-heading card-header">
+        <h3 class="panel-title">
+                            <i class="fas fa-plus"></i>&nbsp;
+            
+            عملیات
+
+                    </h3>
+    </div>
+
+    <div class="panel-body card-body">
+        <form role="form">
+            <select class="form-control custom-select" onchange="selectChangeNavigate(this)">
+                                                    <option menuItemName="Domain Registration" value="/cart.php?a=add&domain=register" class="list-group-item" >
+                        ثبت دامنه جدید
+
+                                            </option>
+                                                        <option menuItemName="Domain Transfer" value="/cart.php?a=add&domain=transfer" class="list-group-item" >
+                        انتقال در دامنه
+
+                                            </option>
+                                                        <option menuItemName="View Cart" value="/cart.php?a=view" class="list-group-item" >
+                        مشاهده کارت خرید
+
+                                            </option>
+                                                                        <option value="" class="list-group-item" selected=""selected>- انتخاب گروه دیگر -</option>
+                            </select>
+        </form>
+    </div>
+
+            </div>
+    
+    
+</div>
+
+
+
+            <div class="coowhm-product" id="products">
+                <div class="row row-eq-height">
+                                            <div class="col-md-4 product ">
+                            <div class="clearfix" id="product1">
+                                <header>
+                                    <span class="product-name" id="product1-name">پلن یک گیت لب ایران</span>
+                                                                    </header>
+								
+								<div class="product-pricing" id="product1-price">
+                                                                                                                                    شروع از
+                                                                                        <span class="price">1,618,900 تومان </span>
+                                                                                            ماهانه
+                                                                                        <br>
+                                            
+                                                                        </div>
+
+								<div class="product-desc">
+                                                                        <ul class="prod-desc-ul">
+                                                                                    <li id="product1-feature1">
+                                                <span class="feature-value"><span>8 GB </span></span>
+                                                RAM
+                                            </li>
+                                                                                    <li id="product1-feature2">
+                                                <span class="feature-value"><span>4 Core</span></span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product1-feature3">
+                                                <span class="feature-value"><span>55 GB </span></span>
+                                                SSD
+                                            </li>
+                                                                            </ul>
+                                </div>
+								
+								
+                                <footer>
+                                    <a href="/store/gyt-gitlab-iran-yrn/pln1" class="btn btn-order-coowhm btn-order-now" id="-order-button">
+                                    سفارش دهید
+                                    </a>
+																		<small class="coowhm-setupFee">ستاپ رایگان</small>
+                                                                    </footer>
+                            </div>
+                        </div>
+                                                                    <div class="col-md-4 product ">
+                            <div class="clearfix" id="product2">
+                                <header>
+                                    <span class="product-name" id="product2-name">پلن دو گیت لب ایران</span>
+                                                                    </header>
+								
+								<div class="product-pricing" id="product2-price">
+                                                                                                                                    شروع از
+                                                                                        <span class="price">2,315,900 تومان </span>
+                                                                                            ماهانه
+                                                                                        <br>
+                                            
+                                                                        </div>
+
+								<div class="product-desc">
+                                                                        <ul class="prod-desc-ul">
+                                                                                    <li id="product2-feature1">
+                                                <span class="feature-value"><span>10 GB </span></span>
+                                                RAM
+                                            </li>
+                                                                                    <li id="product2-feature2">
+                                                <span class="feature-value"><span>6 Core</span></span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product2-feature3">
+                                                <span class="feature-value"><span>85 GB </span></span>
+                                                SSD
+                                            </li>
+                                                                            </ul>
+                                </div>
+								
+								
+                                <footer>
+                                    <a href="/store/gyt-gitlab-iran-yrn/pln2" class="btn btn-order-coowhm btn-order-now" id="-order-button">
+                                    سفارش دهید
+                                    </a>
+																		<small class="coowhm-setupFee">ستاپ رایگان</small>
+                                                                    </footer>
+                            </div>
+                        </div>
+                                                                    <div class="col-md-4 product ">
+                            <div class="clearfix" id="product3">
+                                <header>
+                                    <span class="product-name" id="product3-name">پلن سه گیت لب ایران</span>
+                                                                    </header>
+								
+								<div class="product-pricing" id="product3-price">
+                                                                                                                                    شروع از
+                                                                                        <span class="price">2,946,900 تومان </span>
+                                                                                            ماهانه
+                                                                                        <br>
+                                            
+                                                                        </div>
+
+								<div class="product-desc">
+                                                                        <ul class="prod-desc-ul">
+                                                                                    <li id="product3-feature1">
+                                                <span class="feature-value"><span>12 GB </span></span>
+                                                RAM
+                                            </li>
+                                                                                    <li id="product3-feature2">
+                                                <span class="feature-value"><span>6 Core</span></span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product3-feature3">
+                                                <span class="feature-value"><span>115 GB </span></span>
+                                                SSD
+                                            </li>
+                                                                            </ul>
+                                </div>
+								
+								
+                                <footer>
+                                    <a href="/store/gyt-gitlab-iran-yrn/pln3" class="btn btn-order-coowhm btn-order-now" id="-order-button">
+                                    سفارش دهید
+                                    </a>
+																		<small class="coowhm-setupFee">ستاپ رایگان</small>
+                                                                    </footer>
+                            </div>
+                        </div>
+                                                    </div>
+                            <div class="row row-eq-height">
+                                                            </div>
+            </div>
+
+   
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="recommendationsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="float-left pull-left">
+                                            اضافه شده به سبد خرید
+                                    </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-body">
+                <div class="product-recommendations-container">
+    <div class="product-recommendations">
+                    <p>بر اساس این محصول، ما توصیه می کنیم:</p>
+                    </div>
+</div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="#" id="btnContinueRecommendationsModal" data-dismiss="modal" role="button">
+                    <span class="w-hidden hidden"><i class="fas fa-spinner fa-spin"></i>&nbsp;</span>ادامه
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-recommendation clonable w-hidden hidden">
+        <div class="header">
+            <div class="cta">
+                <div class="price">
+                    <span class="w-hidden hidden">رایگان!</span>
+                    <span class="breakdown-price"></span>
+                    <span class="setup-fee"><small>&nbsp;هزینه تنظیم </small></span>
+                </div>
+                <button type="button" class="btn btn-sm btn-add">
+                    <span class="text">افزودن به کارت</span>
+                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                </button>
+            </div>
+            <div class="expander">
+                <i class="fas fa-chevron-right rotate" data-toggle="tooltip" data-placement="right" title="برای کسب اطلاعات بیشتر کلیک کنید."></i>
+            </div>
+            <div class="content">
+                <div class="headline truncate"></div>
+                <div class="tagline truncate">
+                    توضیحات (شعار) برای این محصول در دسترس نیست.
+                </div>
+            </div>
+        </div>
+        <div class="body clearfix"><p></p></div>
+    </div>
+</div>
+
+
+<!-- login and register page without the default header and footer -->
+                                        </div><!-- /.main-content -->
+                                    <div class="clearfix"></div>
+                                </div><!-- end row -->
+                            </div><!-- end container -->
+                        </section><!-- end main body section -->
+                    </div><!-- end page wrapper -->
+                </div><!-- end main body -->
+            </div><!-- end coodiv inner content -->
+        </div><!-- end coodiv content -->
+    </div><!-- end coodiv wrapper -->
+    <section id="footer"><!-- footer start -->
+<h6 class="d-none">this is footer</h6>
+<div class="footer-copyright text-center">تمامی حقوق این وب‌سایت متعلق به اسپاد سرور می‌باشد.</div>
+<!-- <div class="footer-menu">
+<a href="/cart.php" target="_blank">محصولات</a>
+<a href="/register.php" target="_blank">ثبت نام</a>
+<a href="/contact.php" target="_blank">تماس با ما</a>
+</div> -->
+</section><!-- footer end -->
+</div><!-- end coodiv main container -->
+
+
+<div id="fullpage-overlay" class="hidden">
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+            <img src="/assets/img/overlay-spinner.svg">
+            <br>
+            <span class="msg"></span>
+        </div>
+    </div>
+</div>
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">بستن</span>
+                </button>
+                <h4 class="modal-title">title</h4>
+            </div>
+            <div class="modal-body panel-body">
+                بارگذاری ... 
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                    بارگذاری ... 
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    بستن
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    ارسال
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="#" id="frmGeneratePassword" class="form-horizontal">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog generatepassword">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="feather icon-plus"></i></button>
+                    <h4 class="modal-title">
+                        ایجاد گذرواژه
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger hidden" id="generatePwLengthError">
+                        لطفاً برای طول گذرواژه عددی بین 8 تا 64 وارد کنید
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwLength" class="col-sm-4 control-label">طول رمز عبور</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwOutput" class="col-sm-4 control-label">رمز عبور ایجاد شده</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                ایجاد رمز عبور جدید
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                کپی
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        در کلیپ بورد کپی و درج کنید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/templates/coowhm/js/jquery.slimscroll.min.js"></script>
+<script src="/templates/coowhm/js/main.js"></script>
+<script src="/templates/coowhm/js/md5.js"></script>
+<script src="/templates/coowhm/js/flickity.pkgd.min.js"></script>
+<script src="/templates/coowhm/js/wow.js"></script>
+<script src="/templates/coowhm/js/demo.js"></script>
+<script>
+$(document).ready(function(){
+    if ($('#gravataremail').length) {
+	var email = document.getElementById('gravataremail').innerText;
+	if(email != ''){
+		var imgUrl = 'https://gravatar.com/avatar/'+MD5(email)+'';
+		$.ajax({
+		    url:imgUrl,
+		    type:"HEAD",
+		    crossDomain:true,
+		    success:function(){
+		        $(".gravatar").attr("src",imgUrl);
+		    }
+		});
+	}
+	}
+});
+</script>
+<script>
+$('.header-main-slider').flickity({
+  prevNextButtons: false,
+  pageDots: true,
+  autoPlay: 5000
+  
+});
+$('.header-main-nav').flickity({
+  asNavFor: '.header-main-slider',
+  prevNextButtons: false,
+  pageDots: false,
+  contain: true
+  
+});
+$('.banner-slider').flickity({
+  prevNextButtons: false,
+  pageDots: true,
+});
+</Script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>

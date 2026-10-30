@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://ronakhost.com/",
+  "attempt_utc": "2026-10-29T02:38:02.292733+00:00",
+  "final_url": "https://ronakhost.com/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "X-DNS-Prefetch-Control": "on",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Link": "<https://ronakhost.com/>; rel=shortlink",
+    "Etag": "\"16171-1793214326;;;\"",
+    "X-LiteSpeed-Cache": "hit",
+    "Content-Length": "170578",
+    "Date": "Thu, 29 Oct 2026 02:37:57 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 170578,
+  "sha256": "dec52b266a114a13bd34dbcf8c76500504e70e9c3c3503901430248881384c9f",
+  "saved_utc": "2026-10-29T02:38:02.660650+00:00"
+}

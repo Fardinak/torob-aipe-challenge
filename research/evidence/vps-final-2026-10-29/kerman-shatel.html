@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سبد خرید - کرمان هاستینگ</title>
+
+    <!-- Styling -->
+<link href="/templates/kermanhostingnew/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="/templates/kermanhostingnew/css/global.css" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    var csrfToken = '0c6d86f76b33bf197dedb4625d29e91322c53a50',
+        markdownGuide = 'راهنمای کدها',
+        locale = 'en',
+        saved = 'ذخیره شد',
+        saving = 'ذخیره خودکار',
+        whmcsBaseUrl = "",
+        requiredText = 'ضروری',
+        recaptchaSiteKey = "";
+</script>
+<script src="/templates/kermanhostingnew/js/scripts.min.js"></script>
+<script src="/templates/kermanhostingnew/js/whmcsco.js"></script>
+
+ <link href="/templates/kermanhostingnew/whmcsco/css/global.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/kermanhostingnew/whmcsco/css/whmcsco-style.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/kermanhostingnew/whmcsco/css/table-list.css" rel="stylesheet" type="text/css"/>
+<link href="/templates/kermanhostingnew/whmcsco/css/mdb.min.css" rel="stylesheet" type="text/css"/>
+ <link rel="stylesheet" href="modules/addons/ippanel_sms/assets/css/sweetalert.min.css" />
+			<script src="modules/addons/ippanel_sms/assets/js/sweetalert.min.js"></script>
+			<script type="text/javascript" src="modules/addons/ippanel_sms/assets/js/bootbox.min.js"></script>
+
+
+</head>
+
+<body data-phone-cc-input="1">
+
+      <section class="top-bar padding-15 bg-market-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-7 client-menu-container">
+
+                <div class="client-menu">
+                    <ul class="list-unstyled">
+                                                <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <img class="client-avatar" src="https://www.gravatar.com/avatar/123456" />
+                                <span class="title">حساب کاربری</span>
+                                <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li menuitemname="Login" id="Secondary_Navbar-Account-Login">
+                                    <a href="/clientarea.php">
+                                        <span class="client-menu-item-icon"><i class="fas fa-sign-in"></i></span>
+                                        <span class="client-menu-item-title">ورود</span>
+                                    </a>
+                                </li>
+                                <li menuitemname="Register" id="Secondary_Navbar-Account-Register">
+                                    <a href="/register.php">
+                                        <span class="client-menu-item-icon"><i class="fas fa-user-plus"></i></span>
+                                        <span class="client-menu-item-title">ثبت نام</span>
+                                    </a>
+                                </li>
+                                <li menuitemname="Forgot Password?" id="Secondary_Navbar-Account-Forgot_Password?">
+                                    <a href="/pwreset.php">
+                                        <span class="client-menu-item-icon"><i class="fas fa-question-circle"></i></span>
+                                        <span class="client-menu-item-title">رمز عبور را فراموش کرده اید؟</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                                             </ul>
+                </div>
+            </div>
+            <div class="col-xs-5 col-sm-6 client-top-access">
+                <div class="btn-group" role="group">
+
+                    <a href="/cart.php?a=view" data-toggle="tooltip" title="سبد خرید" data-placement="bottom" class="btn btn-sq-36 dropdown-toggle margin-left-10 remove-padding">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="client-top-access-item-count">0</span>
+                    </a>
+                                      </div>
+            </div>
+        </div>
+    </div>
+</section> <section id="top-logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div id="top-logo-img">
+                                        <a href="/index.php" class="logo"><img src="/assets/img/logo.png" alt="کرمان هاستینگ"></a>
+                     </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 padding-top-15 home-kb-search">
+                <form role="form" method="post" action="clientarea.php?action=kbsearch">
+<input type="hidden" name="token" value="0c6d86f76b33bf197dedb4625d29e91322c53a50" />
+                    <div class="home-kb-search">
+                        <input type="text" name="search" class="form-control input-lg" placeholder="جستجو در مرکز آموزش" />
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+
+                            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div id="top-logo-contacts">
+                                        <span class="top-logo-contact padding-top-20">
+                        <i class="fas fa-phone"></i>
+                        <span>0913-9431126 ++ 034-91011126</span>
+                    </span>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section id="main-menu">
+    <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="primary-nav">
+                <ul class="nav navbar-nav">
+
+                                    				<li><a href="index.php"><i style="font-size:20px;color:blue;" class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li><a id="Menu-Services-Order_New_Services" href="/cart.php">  <i class="fa fa-server" aria-hidden="true"></i> خدمات و محصولات ما</a></li>
+
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i> دامنه ها <b class="caret"></b></a>
+        			<ul class="dropdown-menu">
+						<li><a id="Menu-Domains-Register_a_New_Domain" href="/cart.php?a=add&domain=register">  <i class="fa fa-angle-left" aria-hidden="true"></i>  ثبت یک دامنه جدید</a></li>
+						<li><a id="Menu-Domains-Transfer_Domains_to_Us" href="/cart.php?a=add&domain=transfer">  <i class="fa fa-angle-left" aria-hidden="true"></i>  انتقال دامنه به ما</a></li>
+        			</ul>
+        		</li>
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ticket" aria-hidden="true"></i> پشتیبانی <b class="caret"></b></a>
+        			<ul class="dropdown-menu">
+						<li><a id="Menu-Open_Ticket" href="/submitticket.php">  <i class="fa fa-angle-left" aria-hidden="true"></i>  بازکردن تیکت</a></li>
+						<li><a id="Menu-download" href="/download">  <i class="fa fa-angle-left" aria-hidden="true"></i>  مرکز دانلود</a></li>
+						<li><a id="Menu-state" href="/serverstatus.php">  <i class="fa fa-angle-left" aria-hidden="true"></i>  وضعیت سرور</a></li>
+        			</ul>
+        		</li>
+				<li><a href="/announcements.php"><i class="fa fa-graduation-cap" aria-hidden="true"></i> اخبار و اطلاعیه ها  </a></li>
+				<li><a id="Menu-Knowledgebase" href="/knowledgebase.php">  <i class="fa fa-info" aria-hidden="true"></i>  مرکز آموزش </a></li>
+                                </ul>
+
+                <ul class="nav navbar-left">
+                    <li>
+                        <a class="btn top-access-open-ticket btn-sm" href="/submitticket.php">
+                            <i class="fas fa-comment-plus"></i>
+                            <span>ارسال تیکت</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</section>    
+    <section id="main-body">
+        <div class="container main-content">
+            <div class="breadcrumb">
+            <li class="active">
+                        سبد خرید
+                    </li>
+    </div>
+            <div class="row">
+                
+                <!-- Container for main page display content -->
+                <div class="col-xs-12">
+                          
+
+<link rel="stylesheet" type="text/css" href="/templates/orderforms/standard_cart/css/all.min.css" />
+<script type="text/javascript" src="/templates/orderforms/standard_cart/js/scripts.min.js"></script>
+
+<div id="order-standard_cart">
+
+    <div class="row">
+
+        <div class="pull-md-left col-md-9">
+
+            <div class="header-lined">
+                <h1>
+                                            برای دریافت تست 1 روز تیکت ارسال کنید
+                                    </h1>
+                            </div>
+                    </div>
+
+        <div class="col-md-3 pull-md-right sidebar hidden-xs hidden-sm">
+                <div menuItemName="Categories" class="panel panel-sidebar">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;
+                
+                بخش ها
+
+                
+                <i class="fas fa-chevron-up panel-minimise pull-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="هاست لینوکس سی پنل  آلمان" href="/cart.php?gid=1" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_لینوکس_سی_پنل__آلمان">
+                            
+                            هاست لینوکس سی پنل  آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست لینوکس پربازدید سی پنل  آلمان" href="/cart.php?gid=2" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_لینوکس_پربازدید_سی_پنل__آلمان">
+                            
+                            هاست لینوکس پربازدید سی پنل  آلمان
+
+                                                    </a>
+                                                                                <a menuItemName="هاست وردپرس  " href="/cart.php?gid=45" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_وردپرس__">
+                            
+                            هاست وردپرس  
+
+                                                    </a>
+                                                                                <a menuItemName="هاست لینوکس سی پنل ایران" href="/cart.php?gid=7" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_لینوکس_سی_پنل_ایران">
+                            
+                            هاست لینوکس سی پنل ایران
+
+                                                    </a>
+                                                                                <a menuItemName="هاست سی پنل ایران پر بازدید" href="/cart.php?gid=17" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_سی_پنل_ایران_پر_بازدید">
+                            
+                            هاست سی پنل ایران پر بازدید
+
+                                                    </a>
+                                                                                <a menuItemName="هاست دایرکت ادمین" href="/cart.php?gid=9" class="list-group-item" id="Secondary_Sidebar-Categories-هاست_دایرکت_ادمین">
+                            
+                            هاست دایرکت ادمین
+
+                                                    </a>
+                                                                                <a menuItemName=" هاست دانلود ایران" href="/cart.php?gid=10" class="list-group-item" id="Secondary_Sidebar-Categories-_هاست_دانلود_ایران">
+                            
+                             هاست دانلود ایران
+
+                                                    </a>
+                                                                                <a menuItemName="نمایندگی هاست سی پنل پربازدید" href="/cart.php?gid=3" class="list-group-item" id="Secondary_Sidebar-Categories-نمایندگی_هاست_سی_پنل_پربازدید">
+                            
+                            نمایندگی هاست سی پنل پربازدید
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی ایران  رسپینا " href="/cart.php?gid=43" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_ایران__رسپینا_">
+                            
+                            سرور مجازی ایران  رسپینا 
+
+                                                    </a>
+                                                                                <a menuItemName="سرور اختصاصی ایران" href="/cart.php?gid=42" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_اختصاصی_ایران">
+                            
+                            سرور اختصاصی ایران
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی هتزنر آلمان " href="/cart.php?gid=5" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_هتزنر_آلمان_">
+                            
+                            سرور مجازی هتزنر آلمان 
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی OVH" href="/cart.php?gid=22" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_OVH">
+                            
+                            سرور مجازی OVH
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی کلو کراسینگ " href="/cart.php?gid=46" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی_کلو_کراسینگ_">
+                            
+                            سرور مجازی کلو کراسینگ 
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجازی  Vultr" href="/cart.php?gid=19" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجازی__Vultr">
+                            
+                            سرور مجازی  Vultr
+
+                                                    </a>
+                                                                                <a menuItemName="طراحی سایت" href="/cart.php?gid=8" class="list-group-item" id="Secondary_Sidebar-Categories-طراحی_سایت">
+                            
+                            طراحی سایت
+
+                                                    </a>
+                                                                                <a menuItemName="سرور مجاری DigitalOcean " href="/cart.php?gid=20" class="list-group-item" id="Secondary_Sidebar-Categories-سرور_مجاری_DigitalOcean_">
+                            
+                            سرور مجاری DigitalOcean 
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+        <div menuItemName="Actions" class="panel panel-sidebar">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                                    <i class="fas fa-plus"></i>&nbsp;
+                
+                عملیات
+
+                
+                <i class="fas fa-chevron-up panel-minimise pull-left"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="Domain Registration" href="/cart.php?a=add&domain=register" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Registration">
+                                                            <i class="fas fa-globe fa-fw"></i>&nbsp;
+                            
+                            ثبت یک دامنه جدید
+
+                                                    </a>
+                                                                                <a menuItemName="Domain Transfer" href="/cart.php?a=add&domain=transfer" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Transfer">
+                                                            <i class="fas fa-share fa-fw"></i>&nbsp;
+                            
+                            انتقال یک دامنه
+
+                                                    </a>
+                                                                                <a menuItemName="View Cart" href="/cart.php?a=view" class="list-group-item" id="Secondary_Sidebar-Actions-View_Cart">
+                                                            <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+                            
+                            سبد خرید
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+            </div>
+
+        <div class="col-md-9 pull-md-left">
+
+            <div class="categories-collapsed visible-xs visible-sm clearfix">
+
+    <div class="pull-left form-inline">
+        <form method="get" action="/cart.php">
+            <select name="gid" onchange="submit()" class="form-control">
+                <optgroup label="Product Categories">
+                                            <option value="1">هاست لینوکس سی پنل  آلمان</option>
+                                            <option value="2">هاست لینوکس پربازدید سی پنل  آلمان</option>
+                                            <option value="45">هاست وردپرس  </option>
+                                            <option value="7">هاست لینوکس سی پنل ایران</option>
+                                            <option value="17">هاست سی پنل ایران پر بازدید</option>
+                                            <option value="9">هاست دایرکت ادمین</option>
+                                            <option value="10"> هاست دانلود ایران</option>
+                                            <option value="3">نمایندگی هاست سی پنل پربازدید</option>
+                                            <option value="43">سرور مجازی ایران  رسپینا </option>
+                                            <option value="42">سرور اختصاصی ایران</option>
+                                            <option value="5">سرور مجازی هتزنر آلمان </option>
+                                            <option value="22">سرور مجازی OVH</option>
+                                            <option value="46">سرور مجازی کلو کراسینگ </option>
+                                            <option value="19">سرور مجازی  Vultr</option>
+                                            <option value="8">طراحی سایت</option>
+                                            <option value="20">سرور مجاری DigitalOcean </option>
+                                    </optgroup>
+                <optgroup label="Actions">
+                                                                <option value="registerdomain">ثبت یک دامنه جدید</option>
+                                                                <option value="transferdomain">انتقال یک دامنه</option>
+                                        <option value="viewcart">سبد خرید</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
+
+    
+</div>
+
+            
+            <div class="products" id="products">
+                <div class="row row-eq-height">
+                                            <div class="col-md-6">
+                            <div class="product clearfix" id="product1">
+                                <header>
+                                    <span id="product1-name">پلن اول شاتل</span>
+                                                                    </header>
+                                <div class="product-desc">
+                                                                        <ul>
+                                                                                    <li id="product1-feature1">
+                                                <span class="feature-value">10گیگ</span>
+                                                فضا پرسرعت SSD
+                                            </li>
+                                                                                    <li id="product1-feature2">
+                                                <span class="feature-value">1 گیگ</span>
+                                                رم
+                                            </li>
+                                                                                    <li id="product1-feature3">
+                                                <span class="feature-value">1 هسته</span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product1-feature4">
+                                                <span class="feature-value">ipv4 ,ipv6</span>
+                                                نوع ارتباط
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                <footer>
+                                    <div class="product-pricing" id="product1-price">
+                                                                                                                                    شروع از
+                                                <br />
+                                                                                        <span class="price">450,000تومان</span>
+                                            <br />
+                                                                                            ماهانه
+                                                                                        <br>
+                                                                                                                        </div>
+                                    <a href="cart.php?a=add&pid=72" class="btn btn-success btn-sm" id="product1-order-button">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        سفارش دهید
+                                    </a>
+                                </footer>
+                            </div>
+                        </div>
+                                                                    <div class="col-md-6">
+                            <div class="product clearfix" id="product2">
+                                <header>
+                                    <span id="product2-name">پلن دوم شاتل</span>
+                                                                    </header>
+                                <div class="product-desc">
+                                                                        <ul>
+                                                                                    <li id="product2-feature1">
+                                                <span class="feature-value">15گیگ</span>
+                                                فضا پرسرعت SSD
+                                            </li>
+                                                                                    <li id="product2-feature2">
+                                                <span class="feature-value">2 گیگ</span>
+                                                رم
+                                            </li>
+                                                                                    <li id="product2-feature3">
+                                                <span class="feature-value">2 هسته</span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product2-feature4">
+                                                <span class="feature-value">ipv4,ipv6</span>
+                                                ارتباط
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                <footer>
+                                    <div class="product-pricing" id="product2-price">
+                                                                                                                                    شروع از
+                                                <br />
+                                                                                        <span class="price">560,000تومان</span>
+                                            <br />
+                                                                                            ماهانه
+                                                                                        <br>
+                                                                                                                        </div>
+                                    <a href="cart.php?a=add&pid=73" class="btn btn-success btn-sm" id="product2-order-button">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        سفارش دهید
+                                    </a>
+                                </footer>
+                            </div>
+                        </div>
+                                                    </div>
+                            <div class="row row-eq-height">
+                                                                    <div class="col-md-6">
+                            <div class="product clearfix" id="product3">
+                                <header>
+                                    <span id="product3-name">پلن سوم شاتل</span>
+                                                                    </header>
+                                <div class="product-desc">
+                                                                        <ul>
+                                                                                    <li id="product3-feature1">
+                                                <span class="feature-value">15گیگ</span>
+                                                فضا پرسرعت SSD
+                                            </li>
+                                                                                    <li id="product3-feature2">
+                                                <span class="feature-value">4 گیگ</span>
+                                                رم
+                                            </li>
+                                                                                    <li id="product3-feature3">
+                                                <span class="feature-value">3 هسته</span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product3-feature4">
+                                                <span class="feature-value">ipv4,ipv6</span>
+                                                ارتباط
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                <footer>
+                                    <div class="product-pricing" id="product3-price">
+                                                                                                                                    شروع از
+                                                <br />
+                                                                                        <span class="price">820,000تومان</span>
+                                            <br />
+                                                                                            ماهانه
+                                                                                        <br>
+                                                                                                                        </div>
+                                    <a href="cart.php?a=add&pid=74" class="btn btn-success btn-sm" id="product3-order-button">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        سفارش دهید
+                                    </a>
+                                </footer>
+                            </div>
+                        </div>
+                                                                    <div class="col-md-6">
+                            <div class="product clearfix" id="product4">
+                                <header>
+                                    <span id="product4-name">پلن چهارم آسیاتک حرفه ای</span>
+                                                                    </header>
+                                <div class="product-desc">
+                                                                        <ul>
+                                                                                    <li id="product4-feature1">
+                                                <span class="feature-value">30گیگ</span>
+                                                فضا پرسرعت SSD
+                                            </li>
+                                                                                    <li id="product4-feature2">
+                                                <span class="feature-value">6 گیگ</span>
+                                                رم
+                                            </li>
+                                                                                    <li id="product4-feature3">
+                                                <span class="feature-value">4 هسته</span>
+                                                CPU
+                                            </li>
+                                                                                    <li id="product4-feature4">
+                                                <span class="feature-value">ipv4,ipv6</span>
+                                                ارتباط
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                <footer>
+                                    <div class="product-pricing" id="product4-price">
+                                                                                                                                    شروع از
+                                                <br />
+                                                                                        <span class="price">1,050,000تومان</span>
+                                            <br />
+                                                                                            ماهانه
+                                                                                        <br>
+                                                                                                                        </div>
+                                    <a href="cart.php?a=add&pid=75" class="btn btn-success btn-sm" id="product4-order-button">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        سفارش دهید
+                                    </a>
+                                </footer>
+                            </div>
+                        </div>
+                                                    </div>
+                            <div class="row row-eq-height">
+                                                            </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+<!-- /.main-content -->
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</section>
+  <div class="copy-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 float-right">
+                <p>
+                    <span>کلیه حقوق مادی و معنوی این سایت برای </span>
+                    <a target="_blank" href="https://kermanhosting.ir">  کرمان هاستینگ  </a>
+                    <span>محفوظ می باشد</span>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 float-left">
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/kermanhosting_support"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/kermandadeh/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div style="z-index:1000;position:fixed;bottom:0px;left:0px;">
+                       
+                       <img id = 'nbqejxlzesgtesgtnbqeesgt' style = 'cursor:pointer' onclick = 'window.open("https://trustseal.enamad.ir/Verify.aspx?id=196253&p=5dsD5F99uWyVrO8TjLOY", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=600, height=630, top=30")' alt = 'اینماد' src = 'https://kermanhosting.ir/img/enamad-logo.png' />
+                                                                                                   
+                                
+                </div>
+</div> 
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Title</h4>
+            </div>
+            <div class="modal-body panel-body">
+                Loading...
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="#" id="frmGeneratePassword" class="form-horizontal">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content panel-primary">
+                <div class="modal-header panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        ایجاد گذرواژه
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger hidden" id="generatePwLengthError">
+                        لطفاً برای طول رمز عبور یک عدد بین 8 تا 64 وارد کنید
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwLength" class="col-sm-4 control-label">طول رمز عبور</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwOutput" class="col-sm-4 control-label">رمز عبور تولید شده</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                گذرواژه جدید ایجاد کنید
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        بستن
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        ذخیره در حافظه و ورود در فرم
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+ <script type="text/javascript">
+					  $(window).on("load",function(){
+						  $("#hook-modal").modal("show");
+					  });
+					  
+					  $("#resend-otp").click(function(e){
+							var activeelement = $(this);
+							if(activeelement.hasClass("disable")) return false;
+							activeelement.addClass("disable");
+							  $.ajax({
+									  url: "clientarea.php",
+									  type: "post",
+									  data: {"otp_id": $("input[name=otp_id]").val()  , "action":"resendOtp" },
+									  //async: false,
+									  beforeSend: function () {
+										  //Can we add anything here.
+										  $("#frmOtpVerification .modal-body .alert").remove();
+										  //$("#resend-otp").remove();
+									  },
+									  cache: false,
+									  dataType: "json",
+									  crossDomain: true,
+									  success: function (data) {
+										  if (data.code == 1) {
+											  
+											  swal({
+													  title: "ارسال شد",
+													  text: data.message,
+													  type: "success"
+												  }, function() {
+													  //window.location = "clientarea.php";
+												  });
+											  
+										  } else {
+											  $("#frmOtpVerification .modal-body").prepend("<div class='alert alert-danger'>"+data.message+"</div>");
+										  }
+										  activeelement.removeClass("disable");
+									  },
+									  error: function (data) {
+										  console.log("Error:", data);
+										  activeelement.removeClass("disable");
+									  }
+								  });
+							  
+
+					  });
+					  
+					  function checkOtpForm(elements) {
+							if($("#frmOtpVerification").hasClass("disable")) return false;
+							$("#frmOtpVerification").addClass("disable");
+							$("#frmOtpVerification .modal-body .alert").remove();
+						  if(elements.otp.value == "") {
+							$("#frmOtpVerification .modal-body").prepend("<div class='alert alert-danger'>لطفا کد تأييد را وارد کنيد</div>");
+							  elements.otp.focus();
+							  $("#frmOtpVerification").removeClass("disable");
+						  } else {
+							  
+							  $.ajax({
+									  url: "clientarea.php",
+									  type: "post",
+									  data: $(elements).serialize(),
+									  //async: false,
+									  beforeSend: function () {
+										  //Can we add anything here.
+										  $("#frmOtpVerification .modal-body .alert").remove();
+									  },
+									  cache: true,
+									  dataType: "json",
+									  crossDomain: true,
+									  success: function (data) {
+										  console.log(data);
+										  if (data.code == 1) {
+											  
+											  swal({
+													  title: "تأیید شد!",
+													  text: data.message,
+													  type: "success"
+												  }, function() {
+													  window.location = "clientarea.php";
+												  });
+											  
+										  } else {
+											  $("#frmOtpVerification .modal-body").prepend("<div class='alert alert-danger'>"+data.message+"</div>");
+										  }
+										  $("#frmOtpVerification").removeClass("disable");
+									  },
+									  error: function (data) {
+										  console.log("Error:", data);
+										  $("#frmOtpVerification").removeClass("disable");
+									  }
+								  });
+							  
+							  
+						  }
+						  
+						  return false;
+					  }					  
+				  </script>
+        <script >
+                 $(document).ready(function(){
+                // $("#Primary_Sidebar-Domain_Details_Management-Manage_Private_Nameservers").remove();
+            });
+        </script>
+
+</body>
+
+</html>

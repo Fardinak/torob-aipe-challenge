@@ -1,0 +1,16 @@
+{
+  "label": "",
+  "url": "https://webdade.com/mikrotik-vps",
+  "provider": "webdade",
+  "discovered_in": "34-webdade",
+  "source_key": "57-webdade",
+  "requested_url": "https://webdade.com/mikrotik-vps",
+  "capture_time": "2026-10-29T19:11:46.787438+00:00",
+  "status": 200,
+  "final_url": "https://webdade.com/mikrotik-vps",
+  "sha256": "cf228294267a5549faf6f46980a143b529898962e9961627f32d9fae2c2c4f5a",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/57-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/57-webdade.txt",
+  "bytes": 822162,
+  "title": "سرور مجازی میکروتیک | وب داده"
+}

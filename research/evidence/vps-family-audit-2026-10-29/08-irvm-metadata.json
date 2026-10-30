@@ -1,0 +1,15 @@
+{
+  "provider": "irvm",
+  "label": "سرور مجازی افرانت",
+  "url": "https://irvm.org/virtual-server-afranet/",
+  "source_key": "08-irvm",
+  "requested_url": "https://irvm.org/virtual-server-afranet/",
+  "capture_time": "2026-10-29T19:09:35.690005+00:00",
+  "status": 200,
+  "final_url": "https://irvm.org/virtual-server-afranet/",
+  "sha256": "9116344fd03ce662be897eb93b2d3f02afcef52fdf8206c42b21320993ac2c64",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/08-irvm.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/08-irvm.txt",
+  "bytes": 423861,
+  "title": "سرور مجازی افرانت | ایران وی ام"
+}

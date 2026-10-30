@@ -1,0 +1,186 @@
+VPS hosting in Tehran from $50.00/mo · VPSoto
+VPS
+Dedicated
+Domains
+Locations
+Use cases
+Blog
+Sign in
+Get started
+Home
+›
+VPS hosting
+›
+Tehran
+VPS ·
+IR
+🇮🇷
+VPS hosting in
+Tehran
+NVMe-backed virtual servers in
+Tehran
+. Full root access, 99.9% uptime,
+plans from
+$
+50.00
+/mo
+,
+deployment under 2 hours. Pay
+by card
+in your currency.
+Unmetered transfer
+1 Gbps port, no overage
+1× IPv4 + IPv6
+Reverse DNS included
+KVM virtualization
+Dedicated vCPU cores
+DDoS protection
+Always-on, edge-scrubbed
+Full root access
+OOB console included
+7-day money-back
+No setup, cancel any time
+Monthly
+Quarterly
+−
+5
+%
+Annual
+−
+20
+%
+Prices in
+USD
+Every plan runs
+and more — your choice at deploy.
+Starter
+VPS ·
+SSD
+vCPU
+2 cores
+RAM
+1 GB
+Storage
+40 GB SSD
+Transfer
+Unlimited
+$50.00
+/
+mo
+or
+$40.00
+/mo
+billed annually
+(save
+20
+%)
+Add to cart
+Standard
+VPS ·
+SSD
+vCPU
+4 cores
+RAM
+2 GB
+Storage
+70 GB SSD
+Transfer
+Unlimited
+$90.00
+/
+mo
+or
+$72.00
+/mo
+billed annually
+(save
+20
+%)
+Add to cart
+Most popular
+Performance
+VPS ·
+SSD
+vCPU
+6 cores
+RAM
+4 GB
+Storage
+100 GB SSD
+Transfer
+Unlimited
+$130.00
+/
+mo
+or
+$104.00
+/mo
+billed annually
+(save
+20
+%)
+Add to cart
+Pro
+VPS ·
+SSD
+vCPU
+8 cores
+RAM
+8 GB
+Storage
+150 GB SSD
+Transfer
+Unlimited
+$166.00
+/
+mo
+or
+$132.80
+/mo
+billed annually
+(save
+20
+%)
+Add to cart
+Why host in
+Tehran
+?
+Tehran
+sits in
+IR
+on a Tier-3+ datacenter footprint with sub-millisecond peering to regional ISPs. Our infrastructure partners run redundant power, N+1 cooling, and DDoS scrubbing at the edge — the same building blocks behind every major cloud, at a fraction of the price.
+Every VPS ships with: full root access on Linux (Ubuntu, Debian, AlmaLinux, Rocky, Fedora, CentOS), IPv4 + IPv6, KVM virtualization, and an out-of-band console for emergency recovery. Snapshot your machine before risky changes; roll it back in seconds if something goes wrong.
+Order with confidence: 7-day money-back, cancel any time, no setup fees, and we'll email the moment your server is live (typically under 2 hours after payment confirmation).
+Performance-tier infrastructure across 19 global locations. Pay
+by card
+, in your currency.
+Talk to us
+19 datacenters
+7-day refund
+Products
+VPS hosting
+Dedicated servers
+Domains
+Add-ons
+Locations
+All datacenters
+USA — New York
+UK — London
+UAE — Dubai
+Company
+About
+Contact
+Pricing
+Use cases
+Compare
+Blog
+Legal
+Terms
+Privacy
+Refunds
+Acceptable use
+©
+2026
+VPSoto · A Xecutors Ltd brand. All rights reserved.
+82_ag#KM7
+Cards via Stripe

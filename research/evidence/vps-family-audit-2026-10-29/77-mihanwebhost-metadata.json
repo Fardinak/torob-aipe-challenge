@@ -1,0 +1,16 @@
+{
+  "provider": "mihanwebhost",
+  "label": "حراج سرور مجازی",
+  "url": "https://mihanwebhost.com/my/vpsoffer",
+  "discovered_in": "11-mihanwebhost-links.json",
+  "source_key": "77-mihanwebhost",
+  "requested_url": "https://mihanwebhost.com/my/vpsoffer",
+  "capture_time": "2026-10-29T19:16:42.328257+00:00",
+  "status": 200,
+  "final_url": "https://mihanwebhost.com/my/vpsoffer",
+  "sha256": "c8902e41c327986885209db529457f65d9a9ba6f629c2318079cd083d64cf804",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/77-mihanwebhost.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/77-mihanwebhost.txt",
+  "bytes": 164602,
+  "title": "خرید سرور مجازی vps  | میهن وب هاست"
+}

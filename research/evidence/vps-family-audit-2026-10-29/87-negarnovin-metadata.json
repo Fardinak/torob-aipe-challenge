@@ -1,0 +1,16 @@
+{
+  "provider": "negarnovin",
+  "label": "VPS overview",
+  "url": "https://negarnovin.com/vps/",
+  "discovered_in": "71-negarnovin",
+  "source_key": "87-negarnovin",
+  "requested_url": "https://negarnovin.com/vps/",
+  "capture_time": "2026-10-29T19:20:08.590243+00:00",
+  "status": 200,
+  "final_url": "https://negarnovin.com/vps/",
+  "sha256": "3f39a3559ac05adfbbd472ec45f5dabc8ead27f00a1d43c80ad82151c14041bb",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/87-negarnovin.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/87-negarnovin.txt",
+  "bytes": 408293,
+  "title": "خرید سرور مجازی ابری | VPS NVMe پورت ۱۰ گیگ — نگارنوین"
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "iranica",
+  "label": "سرور میکروتیک",
+  "url": "https://iranicaserver.com/mikrotik",
+  "discovered_in": "02-iranica-links.json",
+  "source_key": "70-iranica",
+  "requested_url": "https://iranicaserver.com/mikrotik",
+  "capture_time": "2026-10-29T19:16:42.316970+00:00",
+  "status": 200,
+  "final_url": "https://iranicaserver.com/mikrotik/",
+  "sha256": "dfe64c276d85e8015b3d97bf47a476e3fc1dc5cd6028f3d9348d9e759fc64838",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/70-iranica.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/70-iranica.txt",
+  "bytes": 77164,
+  "title": "سرور میکروتیک – ایرانیکاسرور"
+}

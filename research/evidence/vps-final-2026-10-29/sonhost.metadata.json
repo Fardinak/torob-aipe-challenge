@@ -1,0 +1,18 @@
+{
+  "requested_url": "https://7ho.st/",
+  "attempt_utc": "2026-10-29T10:01:51.852973+00:00",
+  "final_url": "https://7ho.st/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "no-cache, private",
+    "set-cookie": "XSRF-TOKEN=eyJpdiI6Ii82Y0x3ZHpuOG50THhMaGhJS3lYQVE9PSIsInZhbHVlIjoieGlZdDh6M3A4d2FoNXhUZVBIVzZaOFphcUZGSTlodHBrenY4cmNXS2ZWeHNtcmVkSUFqSlJoT28vQ095SkdmZUJqcW13V2pDWGpKcS9TRFJmVk9EZGxldUJ3N3BCL0d0N290eUZVdllEZ09OcTEvTUZraGdFY09mdHBydWpVaFEiLCJtYWMiOiI0OGY5NjVjOTY4NjBhODg0MDg3ZThjNmY3MDliZjM1N2YxMDJlNWM4OWRiNDVjNWRhMzIxZTVkNDU1MWJkMDU2IiwidGFnIjoiIn0%3D; expires=Thu, 29 Oct 2026 12:01:45 GMT; Max-Age=7200; path=/; secure; samesite=lax",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 10:01:45 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 257003,
+  "sha256": "0d800877eeb5e225edc7058fbe6d6e0ab536309f710cd7438595b91b59476f44",
+  "saved_utc": "2026-10-29T10:01:52.557346+00:00"
+}

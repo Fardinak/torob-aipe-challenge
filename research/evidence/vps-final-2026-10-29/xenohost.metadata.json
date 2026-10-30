@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://clients.xenohost.ir/store/vps",
+  "attempt_utc": "2026-10-29T09:49:44.920149+00:00",
+  "final_url": "https://clients.xenohost.ir/store/vps",
+  "status": 500,
+  "headers": {
+    "Connection": "close",
+    "content-type": "text/html; charset=UTF-8",
+    "content-length": "0",
+    "date": "Thu, 29 Oct 2026 09:49:44 GMT",
+    "server": "LiteSpeed",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+  },
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "saved_utc": "2026-10-29T09:49:50.914627+00:00"
+}

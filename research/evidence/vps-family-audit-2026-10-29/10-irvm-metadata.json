@@ -1,0 +1,10 @@
+{
+  "provider": "irvm",
+  "label": "سرور مجازی شاتل",
+  "url": "https://irvm.org/سرور-مجازی-شاتل/",
+  "source_key": "10-irvm",
+  "requested_url": "https://irvm.org/سرور-مجازی-شاتل/",
+  "capture_time": "2026-10-29T19:09:35.693865+00:00",
+  "status": "access-error",
+  "error": "'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)"
+}

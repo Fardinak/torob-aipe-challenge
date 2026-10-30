@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://maknanet.com/vps-hosting.html",
+  "attempt_utc": "2026-10-29T09:51:09.941306+00:00",
+  "final_url": "https://maknanet.com/vps-hosting.html",
+  "status": 404,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:51:03 GMT",
+    "Server": "Apache",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Set-Cookie": "WHMCSJ1dzJKPJko8Q=a6e0c1b3eaecb6a2a976df22fd0463e2; path=/; secure; HttpOnly",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "bytes": 18303,
+  "sha256": "20faaec48ea325e13645b68e29cf239f3f9158e7d1e893ffa43f6c52eb5fb802",
+  "saved_utc": "2026-10-29T09:51:10.848691+00:00"
+}

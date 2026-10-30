@@ -1,0 +1,26 @@
+{
+  "requested_url": "https://my.bia2host.com/store/iran-vps-unmetered",
+  "attempt_utc": "2026-10-29T02:38:02.676228+00:00",
+  "final_url": "https://my.bia2host.com/store/iran-vps-unlimited",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 02:37:58 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Set-Cookie": "WHMCSKnp5w4rzbres=12hgd3pvecs7pc693hevsevmq7; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "bytes": 386562,
+  "sha256": "8c44bf450fed6009d776783911e11bd13468e8f246684de2d2bd6f7e6f1d08b2",
+  "saved_utc": "2026-10-29T02:38:04.071582+00:00"
+}

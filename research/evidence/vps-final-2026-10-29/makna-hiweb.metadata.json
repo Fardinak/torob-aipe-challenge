@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://maknanet.com/store/iran-vps-hiweb",
+  "attempt_utc": "2026-10-29T09:49:45.521739+00:00",
+  "final_url": "https://maknanet.com/store/iran-vps-hiweb",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:49:39 GMT",
+    "Server": "Apache",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Set-Cookie": "WHMCSJ1dzJKPJko8Q=3bf55b19e50dfb21dd3ed26f84a35488; path=/; secure; HttpOnly",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "bytes": 41476,
+  "sha256": "8206143504062ca68c2ca1b36d9b7f34346116834125bdde3036091ed6158f06",
+  "saved_utc": "2026-10-29T09:49:46.441718+00:00"
+}

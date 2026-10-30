@@ -1,0 +1,21 @@
+{
+  "requested_url": "https://mahannet.ir/",
+  "attempt_utc": "2026-10-29T02:38:02.293788+00:00",
+  "final_url": "https://mahannet.ir/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 02:37:57 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Last-Modified": "Wed, 28 Oct 2026 22:02:37 GMT",
+    "Cache-Control": "max-age=0",
+    "Expires": "Thu, 29 Oct 2026 02:37:57 GMT",
+    "X-Cache-Status": "MISS"
+  },
+  "bytes": 256097,
+  "sha256": "34ec35426b6d145f3b346f3df1891cdf76a578d6e027f567c325ab448326aed4",
+  "saved_utc": "2026-10-29T02:38:02.876512+00:00"
+}

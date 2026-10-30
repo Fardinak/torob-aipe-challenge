@@ -1,0 +1,23 @@
+{
+  "requested_url": "https://bia2host.com/iran-vps/",
+  "attempt_utc": "2026-10-29T02:37:15.274499+00:00",
+  "final_url": "https://bia2host.com/iran-vps/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Date": "Thu, 29 Oct 2026 02:37:15 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Last-Modified": "Sun, 18 Oct 2026 11:33:54 GMT",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-FastCGI-Cache": "MISS"
+  },
+  "bytes": 282082,
+  "sha256": "923ba489c6aea326194a1a9f95bb9469215e656f9050997fc17ed004d8b7a250",
+  "saved_utc": "2026-10-29T02:37:21.465741+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://didicloud.ir/%D8%AA%D8%B9%D8%B1%D9%81%D9%87-%D9%87%D8%A7/",
+  "attempt_utc": "2026-10-29T09:53:50.932530+00:00",
+  "final_url": "https://didicloud.ir/%D8%AA%D8%B9%D8%B1%D9%81%D9%87-%D9%87%D8%A7/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "X-Powered-By": "PHP/8.1.34",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Permissions-Policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+    "Link": "<https://didicloud.ir/wp-json/>; rel=\"https://api.w.org/\"",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 09:53:53 GMT",
+    "Server": "LiteSpeed",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 233100,
+  "sha256": "44723600a0dc9f8272b2e7b03b215a51d42662b96fb4a5f30d9ddb1bdf3b486e",
+  "saved_utc": "2026-10-29T09:53:59.901240+00:00"
+}

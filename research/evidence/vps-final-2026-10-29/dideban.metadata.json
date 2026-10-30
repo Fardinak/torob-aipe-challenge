@@ -1,0 +1,5 @@
+{
+  "requested_url": "https://cloud.didehban.net/",
+  "attempt_utc": "2026-10-29T02:38:02.291722+00:00",
+  "error": "URLError(gaierror(-2, 'Name or service not known'))"
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "tadserver",
+  "label": "سرور مجازی NVMe",
+  "url": "https://tadserver.com/iran-vps-nvme/",
+  "discovered_in": "04-tadserver-links.json",
+  "source_key": "39-tadserver",
+  "requested_url": "https://tadserver.com/iran-vps-nvme/",
+  "capture_time": "2026-10-29T19:10:46.021102+00:00",
+  "status": 200,
+  "final_url": "https://tadserver.com/iran-vps-nvme/",
+  "sha256": "08eba4b7971037a0be46948e1b4204f3ce8b06ac29e05ef6417d005e03bed1f8",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/39-tadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/39-tadserver.txt",
+  "bytes": 210417,
+  "title": "سرور مجازی NVMe - تاد سرور"
+}

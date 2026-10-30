@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://maknanet.com/store/iran-vps-tebyan",
+  "attempt_utc": "2026-10-29T09:49:46.238003+00:00",
+  "final_url": "https://maknanet.com/store/iran-vps-tebyan",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:49:40 GMT",
+    "Server": "Apache",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Set-Cookie": "WHMCSJ1dzJKPJko8Q=cd8f082381e2ef033cf13a8a2de9d5a3; path=/; secure; HttpOnly",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "bytes": 41475,
+  "sha256": "7041d422dff61356d29cacbe8c32eb58304eadd2b7e5eb8294ec7cb7853c7e8a",
+  "saved_utc": "2026-10-29T09:49:47.040527+00:00"
+}

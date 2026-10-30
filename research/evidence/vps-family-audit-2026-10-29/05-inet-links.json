@@ -1,0 +1,334 @@
+[
+  {
+    "label": "",
+    "url": "https://inetisp.ir/index.php"
+  },
+  {
+    "label": "نسخه قدیمی سایت",
+    "url": "https://inetisp.ir/old/index.php"
+  },
+  {
+    "label": "ورود کاربران",
+    "url": "https://my.inetisp.ir"
+  },
+  {
+    "label": "آی نت کلود",
+    "url": "https://cloud.inetisp.ir"
+  },
+  {
+    "label": "خانه",
+    "url": "https://inetisp.ir/index.php"
+  },
+  {
+    "label": "سیم کارت هوشمند FD-LTE",
+    "url": "https://inetisp.ir/fd-lte.php"
+  },
+  {
+    "label": "سیم کارت پرسرعت TD-LTE 5G",
+    "url": "https://inetisp.ir/td-lte.php"
+  },
+  {
+    "label": "اینترنت بی سیم وایرلس 5.8Ghz , 6Ghz",
+    "url": "https://inetisp.ir/internet-bisim.php"
+  },
+  {
+    "label": "اینترنت مکان های عمومی و مجتمع ها",
+    "url": "https://inetisp.ir/public-internet.php"
+  },
+  {
+    "label": "تلفن ثابت",
+    "url": "https://inetisp.ir/L-phone.php"
+  },
+  {
+    "label": "آی پی اختصاصی (Ip Static)",
+    "url": "https://inetisp.ir/ip-static.php"
+  },
+  {
+    "label": "پهنای باند اختصاصی",
+    "url": "https://inetisp.ir/bandwidths.php"
+  },
+  {
+    "label": "سرویس اینترنت ملی (اینترانت)",
+    "url": "https://inetisp.ir/interanet.php"
+  },
+  {
+    "label": "شبکه خصوصی VPLS-MPLS-VPN",
+    "url": "https://inetisp.ir/private-networks.php"
+  },
+  {
+    "label": "انتقال تصویر دوربین مدار بسته",
+    "url": "https://inetisp.ir/camera.php"
+  },
+  {
+    "label": "خدمات دیتاسنتر (هاست - دامنه)",
+    "url": "https://inetisp.ir/host-domain.php"
+  },
+  {
+    "label": "سامانه پیام کوتاه",
+    "url": "https://inetisp.ir/panel-sms.php"
+  },
+  {
+    "label": "درباره ما",
+    "url": "https://inetisp.ir/about-us.php"
+  },
+  {
+    "label": "ارزش های سازمانی",
+    "url": "https://inetisp.ir/why-us.php"
+  },
+  {
+    "label": "خط مشی آی نت",
+    "url": "https://inetisp.ir/awards.php"
+  },
+  {
+    "label": "پرسش و پاسخ",
+    "url": "https://inetisp.ir/faqs.php"
+  },
+  {
+    "label": "فرصت های شغلی",
+    "url": "https://inetisp.ir/job-opportunity.php"
+  },
+  {
+    "label": "مجوزها",
+    "url": "https://inetisp.ir/licenses.php"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://inetisp.ir/contact-us.php"
+  },
+  {
+    "label": "نمایندگان ما",
+    "url": "https://inetisp.ir/our-agents"
+  },
+  {
+    "label": "گزارش سایت های تحریمی",
+    "url": "https://inetisp.ir/sanction-website.php"
+  },
+  {
+    "label": "دریافت عاملیت فروش",
+    "url": "https://inetisp.ir/sales-agency.php"
+  },
+  {
+    "label": "ثبت شکایات",
+    "url": "https://inetisp.ir/report.php"
+  },
+  {
+    "label": "تعرفه سیم‌کارت FD-LTE",
+    "url": "https://inetisp.ir/pricing-fdlte.php"
+  },
+  {
+    "label": "تعرفه TD-LTE (5G)",
+    "url": "https://inetisp.ir/pricing-lte.php"
+  },
+  {
+    "label": "تعرفه اینترنت وایرلس",
+    "url": "https://inetisp.ir/pricing-wireless.php"
+  },
+  {
+    "label": "تعرفه تلفن ثابت",
+    "url": "https://inetisp.ir/pricing-phone.php"
+  },
+  {
+    "label": "تعرفه سامانه پیام کوتاه",
+    "url": "https://inetisp.ir/pricing-sms.php"
+  },
+  {
+    "label": "هاست cPanel ایران",
+    "url": "https://inetisp.ir/pricing-host-cpanel.php"
+  },
+  {
+    "label": "هاست DirectAdmin ایران",
+    "url": "https://inetisp.ir/pricing-host-directadmin.php"
+  },
+  {
+    "label": "نمایندگی هاست cPanel",
+    "url": "https://inetisp.ir/pricing-reseller-cpanel.php"
+  },
+  {
+    "label": "نمایندگی هاست DirectAdmin",
+    "url": "https://inetisp.ir/pricing-reseller-directadmin.php"
+  },
+  {
+    "label": "دامنه",
+    "url": "https://inetisp.ir/pricing-domain.php"
+  },
+  {
+    "label": "سرور اختصاصی",
+    "url": "https://inetisp.ir/pricing-dedicated.php"
+  },
+  {
+    "label": "سرور مجازی ایران SSD",
+    "url": "https://inetisp.ir/pricing-vps.php"
+  },
+  {
+    "label": "همه تعرفه‌های دیتاسنتر",
+    "url": "https://inetisp.ir/pricing-datacenter.php"
+  },
+  {
+    "label": "خدمات دیتاسنتر",
+    "url": "https://inetisp.ir/host-domain.php"
+  },
+  {
+    "label": "مناطق تحت پوشش TD-LTE",
+    "url": "https://inetisp.ir/coverd_area_tdlte.php"
+  },
+  {
+    "label": "مناطق تحت پوشش وایرلس",
+    "url": "https://inetisp.ir/coverd_area_wireless.php"
+  },
+  {
+    "label": "پوشش سیم‌کارت FD-LTE",
+    "url": "https://inetisp.ir/coverd_area_fdlte.php"
+  },
+  {
+    "label": "FD-LTE",
+    "url": "https://inetisp.ir/pricing-fdlte.php"
+  },
+  {
+    "label": "TD-LTE / 5G",
+    "url": "https://inetisp.ir/pricing-lte.php"
+  },
+  {
+    "label": "وایرلس",
+    "url": "https://inetisp.ir/pricing-wireless.php"
+  },
+  {
+    "label": "تلفن ثابت",
+    "url": "https://inetisp.ir/pricing-phone.php"
+  },
+  {
+    "label": "پیام کوتاه",
+    "url": "https://inetisp.ir/pricing-sms.php"
+  },
+  {
+    "label": "دیتاسنتر",
+    "url": "https://inetisp.ir/pricing-datacenter.php"
+  },
+  {
+    "label": "همه دیتاسنتر",
+    "url": "https://inetisp.ir/pricing-datacenter.php"
+  },
+  {
+    "label": "سرور اختصاصی",
+    "url": "https://inetisp.ir/pricing-dedicated.php"
+  },
+  {
+    "label": "سرور مجازی",
+    "url": "https://inetisp.ir/pricing-vps.php"
+  },
+  {
+    "label": "هاست cPanel",
+    "url": "https://inetisp.ir/pricing-host-cpanel.php"
+  },
+  {
+    "label": "هاست DirectAdmin",
+    "url": "https://inetisp.ir/pricing-host-directadmin.php"
+  },
+  {
+    "label": "نمایندگی cPanel",
+    "url": "https://inetisp.ir/pricing-reseller-cpanel.php"
+  },
+  {
+    "label": "نمایندگی DirectAdmin",
+    "url": "https://inetisp.ir/pricing-reseller-directadmin.php"
+  },
+  {
+    "label": "دامنه",
+    "url": "https://inetisp.ir/pricing-domain.php"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 1 Core 1 GB"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 2 Core 2 GB"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 3 Core 3 GB"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 4 Core 4 GB"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 6 Core 6 GB"
+  },
+  {
+    "label": "سفارش",
+    "url": "https://inetisp.ir/order.php?service=VPS 8 Core 8 GB"
+  },
+  {
+    "label": "سیم کارت هوشمند FD-LTE",
+    "url": "https://inetisp.ir/fd-lte.php"
+  },
+  {
+    "label": "سیم کارت پرسرعت TD-LTE",
+    "url": "https://inetisp.ir/td-lte.php"
+  },
+  {
+    "label": "اینترنت بی سیم وایرلس",
+    "url": "https://inetisp.ir/internet-bisim.php"
+  },
+  {
+    "label": "اینترنت مکان ها و مجتمع ها",
+    "url": "https://inetisp.ir/public-internet.php"
+  },
+  {
+    "label": "تلفن ثابت",
+    "url": "https://inetisp.ir/L-phone.php"
+  },
+  {
+    "label": "آی پی اختصاصی (Ip Static)",
+    "url": "https://inetisp.ir/ip-static.php"
+  },
+  {
+    "label": "پهنای باند اختصاصی",
+    "url": "https://inetisp.ir/bandwidths.php"
+  },
+  {
+    "label": "سرویس اینترنت ملی (اینترانت)",
+    "url": "https://inetisp.ir/interanet.php"
+  },
+  {
+    "label": "شبکه خصوصی VPLS-MPLS",
+    "url": "https://inetisp.ir/private-networks.php"
+  },
+  {
+    "label": "انتقال تصویر دوربین مدار بسته",
+    "url": "https://inetisp.ir/camera.php"
+  },
+  {
+    "label": "خدمات دیتاسنتر (هاست - دامنه)",
+    "url": "https://inetisp.ir/host-domain.php"
+  },
+  {
+    "label": "سامانه پیام کوتاه",
+    "url": "https://inetisp.ir/panel-sms.php"
+  },
+  {
+    "label": "ورود کاربران",
+    "url": "https://my.inetisp.ir"
+  },
+  {
+    "label": "آی نت کلود",
+    "url": "https://cloud.inetisp.ir"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://inetisp.ir/contact-us.php"
+  },
+  {
+    "label": "",
+    "url": "https://inetisp.ir/licenses.php"
+  },
+  {
+    "label": "میهن میزبان دنا",
+    "url": "https://mihanmizbandena.ir"
+  },
+  {
+    "label": "سامانه پاسخگویی وزارت ارتباطات و فناوری اطلاعات (195)",
+    "url": "https://195.cra.ir/"
+  }
+]

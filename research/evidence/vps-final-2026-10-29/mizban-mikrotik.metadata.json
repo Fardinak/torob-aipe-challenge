@@ -1,0 +1,30 @@
+{
+  "requested_url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran",
+  "attempt_utc": "2026-10-29T09:53:51.333777+00:00",
+  "final_url": "https://www.mizbandade.com/makrotik-virtual-server-of-iran/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:53:45 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://www.mizbandade.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "X-LiteSpeed-Cache-Control": "public,max-age=604800",
+    "X-LiteSpeed-Tag": "1eb_page,1eb_URL.f52a01a3967befec8581c7061b164132,1eb_Po.1229,1eb_PGS,1eb_",
+    "Etag": "\"17-1790880711;;;\"",
+    "X-Litespeed-Cache": "miss",
+    "X-Mcdn-Shield": "HIT",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "interest-cohort=(), browsing-topics=()",
+    "X-XSS-Protection": "0",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Cache": "HIT",
+    "X-Edge": "Mizbandade"
+  },
+  "bytes": 1026259,
+  "sha256": "bc4bb48a8cfcb7cf614aedd23510098de09535b7a0bfde70c092b9d1fac9df45",
+  "saved_utc": "2026-10-29T09:53:52.113405+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی ترافیک نامحدود حجمی",
+  "url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-hjmy",
+  "provider": "servervds",
+  "discovered_in": "19-servervds",
+  "source_key": "52-servervds",
+  "requested_url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-hjmy",
+  "capture_time": "2026-10-29T19:11:46.781718+00:00",
+  "status": 200,
+  "final_url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-hjmy",
+  "sha256": "d6fa420c5caba65e865f688e9635615731bdeaf187fbc7e918aef98f205024e1",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/52-servervds.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/52-servervds.txt",
+  "bytes": 65191,
+  "title": "کارت خرید - سرور وی‌دی‌اس"
+}

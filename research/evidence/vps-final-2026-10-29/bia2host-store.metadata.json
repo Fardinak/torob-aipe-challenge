@@ -1,0 +1,26 @@
+{
+  "requested_url": "https://my.bia2host.com/store/iran-vps-traffic",
+  "attempt_utc": "2026-10-29T02:37:15.274961+00:00",
+  "final_url": "https://my.bia2host.com/store/iran-vps-traffic",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 02:37:10 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Set-Cookie": "WHMCSKnp5w4rzbres=0ppcuh46qcn2ur1egr1r68teap; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "bytes": 358898,
+  "sha256": "6c4dbdb928a7c6002cb5b68ef5ae46ffc1fce56c6fe6176d8fd2964f0c07c8e8",
+  "saved_utc": "2026-10-29T02:37:16.249794+00:00"
+}

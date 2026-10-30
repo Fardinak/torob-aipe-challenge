@@ -1,0 +1,27 @@
+{
+  "requested_url": "https://sepantapixel.ir/",
+  "attempt_utc": "2026-10-29T02:38:02.306097+00:00",
+  "final_url": "https://sepantapixel.ir/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 02:37:57 GMT",
+    "Content-Type": "text/html",
+    "Content-Length": "2061",
+    "Connection": "close",
+    "Last-Modified": "Thu, 22 Oct 2026 21:27:06 GMT",
+    "Accept-Ranges": "bytes",
+    "Cache-Control": "max-age=0",
+    "Expires": "Thu, 29 Oct 2026 02:37:57 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Security-Policy": "frame-ancestors 'self' https://trustseal.enamad.ir https://*.enamad.ir;",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  },
+  "bytes": 2061,
+  "sha256": "97adc8bd42951864a8fd73a2c858def58504b8d663cac31a3ec2507e3676164f",
+  "saved_utc": "2026-10-29T02:38:02.536388+00:00"
+}

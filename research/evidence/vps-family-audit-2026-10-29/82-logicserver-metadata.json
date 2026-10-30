@@ -1,0 +1,16 @@
+{
+  "provider": "logicserver",
+  "label": "سرور مجازی تریدینگ",
+  "url": "https://logicserver.org/trade-vps",
+  "discovered_in": "12-logicserver-links.json",
+  "source_key": "82-logicserver",
+  "requested_url": "https://logicserver.org/trade-vps",
+  "capture_time": "2026-10-29T19:16:43.329364+00:00",
+  "status": 200,
+  "final_url": "https://logicserver.org/trade-vps",
+  "sha256": "cb4da9e7706e000056199d73c297e42d8924cbc7ec75bf491a7c69b7467ea877",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/82-logicserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/82-logicserver.txt",
+  "bytes": 108727,
+  "title": "خرید سرور مجازی ترید (Trade VPS) | NVME، IP ثابت اروپا، ویندوز سرور"
+}

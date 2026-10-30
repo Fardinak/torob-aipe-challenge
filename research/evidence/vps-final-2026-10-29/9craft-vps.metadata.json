@@ -1,0 +1,25 @@
+{
+  "requested_url": "https://9craft.ir/vps/",
+  "attempt_utc": "2026-10-29T09:53:50.934052+00:00",
+  "final_url": "https://9craft.ir/vps/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:53:44 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "184781",
+    "Last-Modified": "Wed, 28 Oct 2026 20:24:50 GMT",
+    "Connection": "close",
+    "ETag": "\"6ae25a12-2d1cd\"",
+    "Cache-Control": "no-cache",
+    "Strict-Transport-Security": "max-age=16070400; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Accept-Ranges": "bytes"
+  },
+  "bytes": 184781,
+  "sha256": "d396874c34ed77fdab635c573d5212f43167115c9c1a16cd0d50f5362636d701",
+  "saved_utc": "2026-10-29T09:53:51.143091+00:00"
+}

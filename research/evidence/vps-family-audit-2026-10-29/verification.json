@@ -1,0 +1,26 @@
+{
+  "reviewed_rows": 225,
+  "exact_duplicate_mappings": 46,
+  "new_reviewable": 103,
+  "source_attempt_records": 88,
+  "link_closure_decisions": 185,
+  "seed_sha256": "eb5a3c89153f0532700ca78d8403676b66999993e6d6dfd9db7127ca10b25d2e",
+  "checks": [
+    "all source referenced snapshot hashes match",
+    "all providers and exact duplicate IDs exist",
+    "duplicate resource fields match where non-null",
+    "native hour/day monthly reference null",
+    "SAS/SATA-only media null",
+    "no unresolved closure decision"
+  ],
+  "disposition_counts": {
+    "new-reviewable": 103,
+    "gap-incomplete-resources": 11,
+    "gap-alias-or-distinct-datacenter": 11,
+    "gap-conflicting-resources": 1,
+    "existing-catalog-identity": 46,
+    "excluded-explicitly-unavailable": 47,
+    "gap-no-resource-identity": 1,
+    "gap-iran-location-unconfirmed": 5
+  }
+}

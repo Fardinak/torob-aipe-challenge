@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://pentaserver.net/vps/iran-cloud-server",
+  "attempt_utc": "2026-10-29T09:49:47.529271+00:00",
+  "final_url": "https://pentaserver.net/vps/iran-cloud-server",
+  "status": 200,
+  "headers": {
+    "Server": "nginx/1.24.0 (Ubuntu)",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=120, public, s-maxage=120",
+    "Date": "Thu, 29 Oct 2026 09:49:41 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  },
+  "bytes": 109994,
+  "sha256": "6bd787cca819571f047fede9c117be70585be817a009fb9e9611b17c1012cde5",
+  "saved_utc": "2026-10-29T09:49:47.829241+00:00"
+}

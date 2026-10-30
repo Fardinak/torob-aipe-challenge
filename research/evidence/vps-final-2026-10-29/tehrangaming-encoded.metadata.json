@@ -1,0 +1,21 @@
+{
+  "requested_url": "https://tehrangaming.com/%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C-vds/",
+  "attempt_utc": "2026-10-29T09:49:46.658472+00:00",
+  "final_url": "https://tehrangaming.com/%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C-vds/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:50:16 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Last-Modified": "Thu, 29 Oct 2026 06:14:53 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "bytes": 395326,
+  "sha256": "542201cec55c2181a62f85906b6a94015324fdf416eb25377160d9e26848fd29",
+  "saved_utc": "2026-10-29T09:49:46.999743+00:00"
+}

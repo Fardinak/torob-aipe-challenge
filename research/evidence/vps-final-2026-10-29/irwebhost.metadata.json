@@ -1,0 +1,18 @@
+{
+  "requested_url": "https://irwebhost.com/",
+  "attempt_utc": "2026-10-29T10:04:37.559779+00:00",
+  "final_url": "https://irwebhost.com/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Permissions-Policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+    "Link": "<https://irwebhost.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 10:04:34 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 1580183,
+  "sha256": "da6df4c3a6bb1f618a4701c1eb09ac98a6a5b41870b1625983e1feea59464fd3",
+  "saved_utc": "2026-10-29T10:04:40.630826+00:00"
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "text": "رفتن به محتوای اصلی",
+    "url": "https://haio.ir/#main"
+  },
+  {
+    "text": "",
+    "url": "https://haio.ir/"
+  },
+  {
+    "text": "مشاهده همه خدمات ←",
+    "url": "https://haio.ir/services/"
+  },
+  {
+    "text": "استقرار اپلیکیشن (PaaS) Git، کانتینر، Compose و ZIP",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "دسکتاپ ابری و ماشین مجازی در منابع مشترک حساب",
+    "url": "https://haio.ir/cloud-desktop/"
+  },
+  {
+    "text": "مدیریت زیرساخت با MCP برای ابزارها و عامل‌های هوش مصنوعی",
+    "url": "https://haio.ir/mcp/"
+  },
+  {
+    "text": "هایو فلش Haio Flash؛ سرویس سرور ابری",
+    "url": "https://haio.ir/haio-flash/"
+  },
+  {
+    "text": "تحریم شکن شرایط و تعرفهٔ مستقل",
+    "url": "https://haio.ir/anti-sanction/"
+  },
+  {
+    "text": "پایگاه‌های داده و ذخیره‌سازی MySQL، PostgreSQL، Redis و حجم پایدار؛ برای جزئیات تماس بگیرید",
+    "url": "https://haio.ir/contact/?service=database-storage#contact-form"
+  },
+  {
+    "text": "توابع بدون سرور برای شرایط فعلی تماس بگیرید",
+    "url": "https://haio.ir/contact/?service=serverless#contact-form"
+  },
+  {
+    "text": "ساخت و آزمون اندروید و macOS برای محیط‌های پشتیبانی‌شده تماس بگیرید",
+    "url": "https://haio.ir/contact/?service=app-build-test#contact-form"
+  },
+  {
+    "text": "مارکت‌پلیس نرم‌افزار فهرست نرم‌افزارهای آماده در پنل",
+    "url": "https://haio.ir/marketplace/"
+  },
+  {
+    "text": "استقرار و مدیریت پروژه تاریخچه، دامنه، TLS، لاگ و پایش",
+    "url": "https://haio.ir/docs/paas/"
+  },
+  {
+    "text": "مدیریت منابع حساب ظرفیت مشترک برای اپ‌ها و دسکتاپ",
+    "url": "https://haio.ir/docs/account-resources/"
+  },
+  {
+    "text": "بررسی خدمات هایو ←",
+    "url": "https://haio.ir/services/"
+  },
+  {
+    "text": "توسعه‌دهندگان مستقل استقرار با PaaS، هایو فلش و پایگاه داده",
+    "url": "https://haio.ir/solutions/independent-developers/"
+  },
+  {
+    "text": "همه اپلیکیشن‌ها ←",
+    "url": "https://haio.ir/marketplace/"
+  },
+  {
+    "text": "وردپرس",
+    "url": "https://haio.ir/marketplace/wordpress/"
+  },
+  {
+    "text": "گوست",
+    "url": "https://haio.ir/marketplace/ghost/"
+  },
+  {
+    "text": "ویکی‌جی‌اس",
+    "url": "https://haio.ir/marketplace/wikijs/"
+  },
+  {
+    "text": "سوپابیس",
+    "url": "https://haio.ir/marketplace/supabase/"
+  },
+  {
+    "text": "n8n",
+    "url": "https://haio.ir/marketplace/n8n/"
+  },
+  {
+    "text": "مترموست",
+    "url": "https://haio.ir/marketplace/mattermost/"
+  },
+  {
+    "text": "تعرفه‌ها",
+    "url": "https://haio.ir/pricing/"
+  },
+  {
+    "text": "راهنما",
+    "url": "https://haio.ir/docs/"
+  },
+  {
+    "text": "تماس",
+    "url": "https://haio.ir/contact/"
+  },
+  {
+    "text": "ورود",
+    "url": "https://my.haio.ir/login"
+  },
+  {
+    "text": "ساخت حساب",
+    "url": "https://my.haio.ir/register"
+  },
+  {
+    "text": "ساخت حساب و شروع",
+    "url": "https://my.haio.ir/register"
+  },
+  {
+    "text": "آشنایی با خدمات",
+    "url": "https://haio.ir/services/"
+  },
+  {
+    "text": "۰۱ استقرار اپلیکیشن Build / Deploy",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "۰۲ دسکتاپ ابری Work / Create",
+    "url": "https://haio.ir/cloud-desktop/"
+  },
+  {
+    "text": "۰۳ مدیریت زیرساخت MCP / Manage",
+    "url": "https://haio.ir/mcp/"
+  },
+  {
+    "text": "کشف مسیرها ↓",
+    "url": "https://haio.ir/#services"
+  },
+  {
+    "text": "جزئیات استقرار اپلیکیشن",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "جزئیات دسکتاپ ابری",
+    "url": "https://haio.ir/cloud-desktop/"
+  },
+  {
+    "text": "جزئیات مدیریت زیرساخت با MCP",
+    "url": "https://haio.ir/mcp/"
+  },
+  {
+    "text": "جزئیات هایو فلش",
+    "url": "https://haio.ir/haio-flash/"
+  },
+  {
+    "text": "جزئیات تحریم شکن",
+    "url": "https://haio.ir/anti-sanction/"
+  },
+  {
+    "text": "بررسی شرایط این خدمت",
+    "url": "https://haio.ir/contact/?service=database-storage#contact-form"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=database-storage#contact-form"
+  },
+  {
+    "text": "بررسی شرایط این خدمت",
+    "url": "https://haio.ir/contact/?service=serverless#contact-form"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=serverless#contact-form"
+  },
+  {
+    "text": "بررسی شرایط این خدمت",
+    "url": "https://haio.ir/contact/?service=app-build-test#contact-form"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=app-build-test#contact-form"
+  },
+  {
+    "text": "دیدن کاتالوگ مارکت‌پلیس",
+    "url": "https://haio.ir/marketplace/"
+  },
+  {
+    "text": "دیدن همهٔ اپلیکیشن‌ها",
+    "url": "https://haio.ir/marketplace/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/wordpress/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/n8n/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/ghost/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/wikijs/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/supabase/"
+  },
+  {
+    "text": "مشاهده جزئیات ←",
+    "url": "https://haio.ir/marketplace/mattermost/"
+  },
+  {
+    "text": "وردپرس مدیریت محتوا ←",
+    "url": "https://haio.ir/#marketplace-app-1"
+  },
+  {
+    "text": "n8n اتوماسیون ←",
+    "url": "https://haio.ir/#marketplace-app-2"
+  },
+  {
+    "text": "گوست مدیریت محتوا ←",
+    "url": "https://haio.ir/#marketplace-app-3"
+  },
+  {
+    "text": "ویکی‌جی‌اس پایگاه دانش ←",
+    "url": "https://haio.ir/#marketplace-app-4"
+  },
+  {
+    "text": "سوپابیس پایگاه داده ←",
+    "url": "https://haio.ir/#marketplace-app-5"
+  },
+  {
+    "text": "مترموست گفت‌وگوی تیمی ←",
+    "url": "https://haio.ir/#marketplace-app-6"
+  },
+  {
+    "text": "وردپرس",
+    "url": "https://haio.ir/marketplace/wordpress/"
+  },
+  {
+    "text": "n8n",
+    "url": "https://haio.ir/marketplace/n8n/"
+  },
+  {
+    "text": "گوست",
+    "url": "https://haio.ir/marketplace/ghost/"
+  },
+  {
+    "text": "ویکی‌جی‌اس",
+    "url": "https://haio.ir/marketplace/wikijs/"
+  },
+  {
+    "text": "سوپابیس",
+    "url": "https://haio.ir/marketplace/supabase/"
+  },
+  {
+    "text": "مترموست",
+    "url": "https://haio.ir/marketplace/mattermost/"
+  },
+  {
+    "text": "آشنایی با ایرج ↗",
+    "url": "https://irajai.ir/"
+  },
+  {
+    "text": "راهنماهای شروع را بخوانید",
+    "url": "https://haio.ir/docs/"
+  },
+  {
+    "text": "توضیح کامل مدل منابع",
+    "url": "https://haio.ir/docs/account-resources/"
+  },
+  {
+    "text": "فعال‌سازی طرح رایگان",
+    "url": "https://my.haio.ir/register"
+  },
+  {
+    "text": "ساخت حساب و بررسی طرح",
+    "url": "https://my.haio.ir/register"
+  },
+  {
+    "text": "ساخت حساب و بررسی طرح",
+    "url": "https://my.haio.ir/register"
+  },
+  {
+    "text": "تماس دربارهٔ Business",
+    "url": "https://haio.ir/contact/?service=business-plan#contact-form"
+  },
+  {
+    "text": "درخواست مشاورهٔ سازمانی",
+    "url": "https://haio.ir/contact/?service=enterprise-plan#contact-form"
+  },
+  {
+    "text": "وارد شوید",
+    "url": "https://my.haio.ir/login"
+  },
+  {
+    "text": "جزئیات تعرفه‌ها",
+    "url": "https://haio.ir/pricing/"
+  },
+  {
+    "text": "آشنایی با استقرار اپلیکیشن",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "راهنمای شروع استقرار",
+    "url": "https://haio.ir/docs/paas/"
+  },
+  {
+    "text": "مسیر استقرار اپلیکیشن",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "راهنمای منابع حساب",
+    "url": "https://haio.ir/docs/account-resources/"
+  },
+  {
+    "text": "مقایسهٔ طرح‌ها",
+    "url": "https://haio.ir/pricing/"
+  },
+  {
+    "text": "",
+    "url": "https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/"
+  },
+  {
+    "text": "اطلاعیه به‌روزرسانی قیمت سرویس‌های ابری هایو (۶ فوریه ۲۰۲۶)",
+    "url": "https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/"
+  },
+  {
+    "text": "خواندن مقاله",
+    "url": "https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/"
+  },
+  {
+    "text": "",
+    "url": "https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/"
+  },
+  {
+    "text": "نصب n8n بر روی سرور مجازی اوبونتو 24",
+    "url": "https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/"
+  },
+  {
+    "text": "خواندن مقاله",
+    "url": "https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/"
+  },
+  {
+    "text": "",
+    "url": "https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/"
+  },
+  {
+    "text": "خرید سرور مجازی ماهانه ارزان در ایران و خارج",
+    "url": "https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/"
+  },
+  {
+    "text": "خواندن مقاله",
+    "url": "https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/"
+  },
+  {
+    "text": "دیدن همهٔ نوشته‌ها",
+    "url": "https://haio.ir/?post_type=post"
+  },
+  {
+    "text": "بررسی خدمات",
+    "url": "https://haio.ir/services/"
+  },
+  {
+    "text": "",
+    "url": "https://haio.ir/"
+  },
+  {
+    "text": "استقرار اپلیکیشن",
+    "url": "https://haio.ir/paas/"
+  },
+  {
+    "text": "دسکتاپ ابری",
+    "url": "https://haio.ir/cloud-desktop/"
+  },
+  {
+    "text": "مدیریت زیرساخت با MCP",
+    "url": "https://haio.ir/mcp/"
+  },
+  {
+    "text": "تحریم شکن",
+    "url": "https://haio.ir/anti-sanction/"
+  },
+  {
+    "text": "هایو فلش",
+    "url": "https://haio.ir/haio-flash/"
+  },
+  {
+    "text": "همه خدمات",
+    "url": "https://haio.ir/services/"
+  },
+  {
+    "text": "مارکت‌پلیس در پنل",
+    "url": "https://my.haio.ir/marketplace"
+  },
+  {
+    "text": "تعرفه‌ها",
+    "url": "https://haio.ir/pricing/"
+  },
+  {
+    "text": "مستندات",
+    "url": "https://haio.ir/docs/"
+  },
+  {
+    "text": "منابع حساب",
+    "url": "https://haio.ir/docs/account-resources/"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://haio.ir/contact/"
+  },
+  {
+    "text": "ورود به پنل",
+    "url": "https://my.haio.ir/login"
+  },
+  {
+    "text": "info@haio.ir",
+    "url": "mailto:info@haio.ir"
+  },
+  {
+    "text": "۰۲۱-۵۶۱۳۸۴۶۱",
+    "url": "tel:+982156138461"
+  },
+  {
+    "text": "همه راه‌های تماس و نشانی ←",
+    "url": "https://haio.ir/contact/"
+  },
+  {
+    "text": "پنل کاربری",
+    "url": "https://my.haio.ir/"
+  },
+  {
+    "text": "تماس و اطلاعات شرکت",
+    "url": "https://haio.ir/contact/"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=database-storage#contact-form"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=serverless#contact-form"
+  },
+  {
+    "text": "ثبت درخواست",
+    "url": "https://haio.ir/contact/?service=app-build-test#contact-form"
+  }
+]

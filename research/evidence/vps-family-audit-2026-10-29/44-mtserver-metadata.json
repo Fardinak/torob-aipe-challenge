@@ -1,0 +1,16 @@
+{
+  "provider": "mtserver",
+  "label": "سرور مجازی گیم ایران  SSD pro",
+  "url": "https://my.mtserver.ir/index.php?rp=/store/vps-game",
+  "discovered_in": "35-mtserver-links.json",
+  "source_key": "44-mtserver",
+  "requested_url": "https://my.mtserver.ir/index.php?rp=/store/vps-game",
+  "capture_time": "2026-10-29T19:10:46.027088+00:00",
+  "status": 200,
+  "final_url": "https://my.mtserver.ir/index.php?rp=/store/vps-game",
+  "sha256": "496b4c75a360de702880e717b12a276b80c39789640e61aa83670bb3bce39a2d",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/44-mtserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/44-mtserver.txt",
+  "bytes": 78534,
+  "title": "کارت خرید - ام تی سرور"
+}

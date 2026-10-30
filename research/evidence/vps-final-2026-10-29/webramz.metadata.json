@@ -1,0 +1,29 @@
+{
+  "requested_url": "https://webramz.com/server/vps/iran",
+  "attempt_utc": "2026-10-29T09:52:31.308307+00:00",
+  "final_url": "https://webramz.com/server/vps/iran",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:52:31 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Content-Length": "227661",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Last-Modified": "Sun, 25 Oct 2026 06:35:02 GMT",
+    "Cache-Control": "no-cache, must-revalidate, max-age=0",
+    "Expires": "Mon, 29 Oct 1923 20:30:00 GMT",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "Pragma": "no-cache",
+    "Server": "CloudArya",
+    "CA-Cache-Status": "HIT",
+    "X-CloudArya-Node": "edge-de2",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "Accept-Ranges": "bytes"
+  },
+  "bytes": 227661,
+  "sha256": "cedc39cb6165ce747e5abc3565db37a4f06e3155e7ec45d2c2915847e7519306",
+  "saved_utc": "2026-10-29T09:52:37.893743+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "provider": "vidaserver",
+  "label": "سرور مجازی ایران (برج میلاد)",
+  "url": "https://vidaserver.ir/vps-iran",
+  "source_key": "31-vidaserver",
+  "requested_url": "https://vidaserver.ir/vps-iran",
+  "capture_time": "2026-10-29T19:09:54.489031+00:00",
+  "status": "access-error",
+  "error": "HTTP Error 404: Not Found"
+}

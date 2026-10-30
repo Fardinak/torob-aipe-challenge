@@ -1,0 +1,18 @@
+{
+  "requested_url": "https://pentaserver.com/",
+  "attempt_utc": "2026-10-29T02:37:15.276037+00:00",
+  "final_url": "https://pentaserver.com/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 02:37:15 GMT",
+    "Server": "Apache",
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+    "cf-edge-cache": "no-cache",
+    "Content-Length": "11811",
+    "Connection": "close"
+  },
+  "bytes": 11811,
+  "sha256": "3761701b6e68d79f42222f79c71d244a4b2b149d3e53daa2e620585aa00384b7",
+  "saved_utc": "2026-10-29T02:37:21.311526+00:00"
+}

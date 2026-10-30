@@ -1,0 +1,16 @@
+{
+  "provider": "mihanwebhost",
+  "label": "سرور مجازی Trade",
+  "url": "https://mihanwebhost.com/my/trade-server",
+  "discovered_in": "11-mihanwebhost-links.json",
+  "source_key": "76-mihanwebhost",
+  "requested_url": "https://mihanwebhost.com/my/trade-server",
+  "capture_time": "2026-10-29T19:16:42.325824+00:00",
+  "status": 200,
+  "final_url": "https://mihanwebhost.com/my/trade-server",
+  "sha256": "12eeff1dd1eb348fba14cc1193580c666a778460d3447b05e233bb854206e6a3",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/76-mihanwebhost.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/76-mihanwebhost.txt",
+  "bytes": 135272,
+  "title": "سرور مجازی trade برای امنیت معاملات آنلاین | میهن وب هاست"
+}

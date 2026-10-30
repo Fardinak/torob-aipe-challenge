@@ -1,0 +1,4334 @@
+[
+  {
+    "text": "پرش به محتوا",
+    "url": "https://whdir.ir/c/vps/vps-ir/#main"
+  },
+  {
+    "text": "",
+    "url": "https://whdir.ir/"
+  },
+  {
+    "text": "میزبانی وب",
+    "url": "https://whdir.ir/c/web-hosting/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://whdir.ir/c/vps/"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://whdir.ir/c/dedicated/"
+  },
+  {
+    "text": "خدمات ابری",
+    "url": "https://whdir.ir/c/cloud/"
+  },
+  {
+    "text": "دامنه",
+    "url": "https://whdir.ir/c/domain/"
+  },
+  {
+    "text": "امنیت و لایسنس",
+    "url": "https://whdir.ir/c/security/"
+  },
+  {
+    "text": "شبکه و CDN",
+    "url": "https://whdir.ir/c/network/"
+  },
+  {
+    "text": "خدمات جانبی",
+    "url": "https://whdir.ir/c/services/"
+  },
+  {
+    "text": "راهنمای انتخاب",
+    "url": "https://whdir.ir/wizard/"
+  },
+  {
+    "text": "ارائه‌دهنده‌ها",
+    "url": "https://whdir.ir/providers/"
+  },
+  {
+    "text": "خانه",
+    "url": "https://whdir.ir/"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://whdir.ir/c/vps/"
+  },
+  {
+    "text": "پشتیبانان شبکه",
+    "url": "https://whdir.ir/provider/nsup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پشتیبانان شبکه",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/nsup/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=nsup&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد پشتیبانان شبکه ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/nsup/"
+  },
+  {
+    "text": "پنتا سرور",
+    "url": "https://whdir.ir/provider/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pentaserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pentaserver&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد پنتا سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pentaserver/"
+  },
+  {
+    "text": "ابر دیده بان نت",
+    "url": "https://whdir.ir/provider/didicloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ابر دیده بان نت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/didicloud/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=didicloud&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد ابر دیده بان نت ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/didicloud/"
+  },
+  {
+    "text": "صفرویک",
+    "url": "https://whdir.ir/provider/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/0-1/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=0-1&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد صفرویک ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/0-1/"
+  },
+  {
+    "text": "پنتا سرور",
+    "url": "https://whdir.ir/provider/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pentaserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pentaserver&plan=vps-ir-4-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۴ گیگابایت رم نزد پنتا سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pentaserver/"
+  },
+  {
+    "text": "ناین کرفت",
+    "url": "https://whdir.ir/provider/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/9craft/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=9craft&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد ناین کرفت ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/9craft/"
+  },
+  {
+    "text": "سپنتا پیکسل",
+    "url": "https://whdir.ir/provider/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/sepantapixel/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=sepantapixel&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد سپنتا پیکسل ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/sepantapixel/"
+  },
+  {
+    "text": "پنتا سرور",
+    "url": "https://whdir.ir/provider/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/pentaserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pentaserver&plan=vps-ir-6-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۶ گیگابایت رم نزد پنتا سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/pentaserver/"
+  },
+  {
+    "text": "صفرویک",
+    "url": "https://whdir.ir/provider/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/0-1/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=0-1&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد صفرویک ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/0-1/"
+  },
+  {
+    "text": "پویان آی تی",
+    "url": "https://whdir.ir/provider/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-minecraft-1-ir/pouyanit/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pouyanit&plan=vps-ir-512mb-minecraft-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۵۱۲ مگابایت — ماینکرافت نزد پویان آی تی ←",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-minecraft-1-ir/pouyanit/"
+  },
+  {
+    "text": "هایو",
+    "url": "https://whdir.ir/provider/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۵۶ مگابایت — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-256mb-trafiki-1-ir/haio/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=haio&plan=vps-ir-256mb-trafiki-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲۵۶ مگابایت — ترافیکی نزد هایو ←",
+    "url": "https://whdir.ir/plan/vps-ir-256mb-trafiki-1-ir/haio/"
+  },
+  {
+    "text": "بیا تو هاست",
+    "url": "https://whdir.ir/provider/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/bia2host/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=bia2host&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد بیا تو هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/bia2host/"
+  },
+  {
+    "text": "مکنانت",
+    "url": "https://whdir.ir/provider/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/maknanet/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=maknanet&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد مکنانت ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/maknanet/"
+  },
+  {
+    "text": "داتک",
+    "url": "https://whdir.ir/provider/datak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — داتک",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/datak/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=datak&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد داتک ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/datak/"
+  },
+  {
+    "text": "هایو",
+    "url": "https://whdir.ir/provider/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۵۶ مگابایت — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-256mb-1-ir/haio/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=haio&plan=vps-ir-256mb-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲۵۶ مگابایت نزد هایو ←",
+    "url": "https://whdir.ir/plan/vps-ir-256mb-1-ir/haio/"
+  },
+  {
+    "text": "کرمان هاستینگ",
+    "url": "https://whdir.ir/provider/kermanhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — کرمان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/kermanhosting/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=kermanhosting&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد کرمان هاستینگ ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/kermanhosting/"
+  },
+  {
+    "text": "های دیتا",
+    "url": "https://whdir.ir/provider/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/hidata/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=hidata&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد های دیتا ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/hidata/"
+  },
+  {
+    "text": "آذرآنلاین",
+    "url": "https://whdir.ir/provider/azaronline/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — آذرآنلاین",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/azaronline/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=azaronline&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد آذرآنلاین ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/azaronline/"
+  },
+  {
+    "text": "پویان آی تی",
+    "url": "https://whdir.ir/provider/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-1-ir/pouyanit/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pouyanit&plan=vps-ir-minecraft-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم — ماینکرافت نزد پویان آی تی ←",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-1-ir/pouyanit/"
+  },
+  {
+    "text": "جهش سرور",
+    "url": "https://whdir.ir/provider/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/jaheshserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=jaheshserver&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد جهش سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/jaheshserver/"
+  },
+  {
+    "text": "میزبان داده",
+    "url": "https://whdir.ir/provider/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mizbandade/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=mizbandade&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد میزبان داده ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mizbandade/"
+  },
+  {
+    "text": "ابر دیده بان نت",
+    "url": "https://whdir.ir/provider/didicloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابر دیده بان نت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/didicloud/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=didicloud&plan=vps-ir-4-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۴ گیگابایت رم نزد ابر دیده بان نت ←",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/didicloud/"
+  },
+  {
+    "text": "پنتا سرور",
+    "url": "https://whdir.ir/provider/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/pentaserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=pentaserver&plan=vps-ir-8-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۸ گیگابایت رم نزد پنتا سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/pentaserver/"
+  },
+  {
+    "text": "پارس وی دی اس",
+    "url": "https://whdir.ir/provider/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-kvm/parsvds/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=parsvds&plan=vps-ir-1-ir-kvm"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم — KVM نزد پارس وی دی اس ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-kvm/parsvds/"
+  },
+  {
+    "text": "روناک هاست",
+    "url": "https://whdir.ir/provider/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۱ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-1-1-ir/ronakhost/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=ronakhost&plan=vps-ir-plan-1-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران — پلن ۱ نزد روناک هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-plan-1-1-ir/ronakhost/"
+  },
+  {
+    "text": "بیا تو هاست",
+    "url": "https://whdir.ir/provider/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/bia2host/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=bia2host&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد بیا تو هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/bia2host/"
+  },
+  {
+    "text": "تهران گیمینگ",
+    "url": "https://whdir.ir/provider/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/tehrangaming/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=tehrangaming&plan=vps-ir-3-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۳ گیگابایت رم نزد تهران گیمینگ ←",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/tehrangaming/"
+  },
+  {
+    "text": "ایران وی ام",
+    "url": "https://whdir.ir/provider/irvm/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ایران وی ام",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/irvm/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=irvm&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد ایران وی ام ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/irvm/"
+  },
+  {
+    "text": "ناین کرفت",
+    "url": "https://whdir.ir/provider/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/9craft/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=9craft&plan=vps-ir-4-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۴ گیگابایت رم نزد ناین کرفت ←",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/9craft/"
+  },
+  {
+    "text": "ام تی سرور",
+    "url": "https://whdir.ir/provider/mtserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ام تی سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mtserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=mtserver&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد ام تی سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mtserver/"
+  },
+  {
+    "text": "تهران گیمینگ",
+    "url": "https://whdir.ir/provider/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/tehrangaming/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=tehrangaming&plan=vps-ir-4-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۴ گیگابایت رم نزد تهران گیمینگ ←",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/tehrangaming/"
+  },
+  {
+    "text": "شتابان هاست",
+    "url": "https://whdir.ir/provider/shetabanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — شتابان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/shetabanhost/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=shetabanhost&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد شتابان هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/shetabanhost/"
+  },
+  {
+    "text": "یوسرور",
+    "url": "https://whdir.ir/provider/userver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — یوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/userver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=userver&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد یوسرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/userver/"
+  },
+  {
+    "text": "کرمان هاستینگ",
+    "url": "https://whdir.ir/provider/kermanhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — کرمان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/kermanhosting/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=kermanhosting&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد کرمان هاستینگ ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/kermanhosting/"
+  },
+  {
+    "text": "پشتیبانان شبکه",
+    "url": "https://whdir.ir/provider/nsup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پشتیبانان شبکه",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/nsup/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=nsup&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد پشتیبانان شبکه ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/nsup/"
+  },
+  {
+    "text": "های دیتا",
+    "url": "https://whdir.ir/provider/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hidata/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=hidata&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد های دیتا ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hidata/"
+  },
+  {
+    "text": "ماهان نت",
+    "url": "https://whdir.ir/provider/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mahannet/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=mahannet&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد ماهان نت ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mahannet/"
+  },
+  {
+    "text": "زاگرس هاست",
+    "url": "https://whdir.ir/provider/zagroshost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — زاگرس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/zagroshost/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=zagroshost&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد زاگرس هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/zagroshost/"
+  },
+  {
+    "text": "پارس وب هاست",
+    "url": "https://whdir.ir/provider/parswebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parswebhost/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=parswebhost&plan=vps-ir-2-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۲ گیگابایت رم نزد پارس وب هاست ←",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parswebhost/"
+  },
+  {
+    "text": "میلاد سرور",
+    "url": "https://whdir.ir/provider/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/miladserver/"
+  },
+  {
+    "text": "خرید",
+    "url": "https://whdir.ir/go/?p=miladserver&plan=vps-ir-1-ir"
+  },
+  {
+    "text": "مشخصات کامل سرور مجازی ایران ۱ گیگابایت رم نزد میلاد سرور ←",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-trafiki-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — دیار هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/dyarhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — وب پویان",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/webpouyan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — دیار هاست",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/dyarhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران وی‌پی‌اس (iranvps.org)",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranvps-org/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آذرآنلاین",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/azaronline/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۵۶ مگابایت — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-256mb-auto-scale-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — یوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/userver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-2-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایکس زد ان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/xzn/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ابری — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-2-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — رسپینا — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-rspina-2-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — VMware — آتنا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-vmware/atenahost/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۲ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-2-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ام تی سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mtserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس وب سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parswebserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — دیار هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/dyarhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — منیجیت",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/manageitcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — شتابان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/shetabanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — داتک",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/datak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — وب پویان",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/webpouyan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پارس وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/parswebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-4-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پالس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pulseserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-4-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — زاگرس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/zagroshost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — SSD — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-2-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — کرمان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/kermanhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — تلاش نت",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/talashnet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — میکروتیک — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-mikrotik-1-ir/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ام تی سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mtserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — پارس دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-1-ir/parsdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرور بورس",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverbours/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-auto-scale-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parswebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ابر دیده بان نت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/didicloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایران وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/iranvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ویندوز — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-4-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ایران وی‌پی‌اس (iranvps.org)",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/iranvps-org/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — شتابان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/shetabanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پشتیبانان شبکه",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/nsup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — داتک",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/datak/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۳ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-3-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — شبکه پیشداد",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pishdad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — SSD — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-4-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابری — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-4-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — رسپینا — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-rspina-4-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پارس دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/parsdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — منیجیت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/manageitcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-2-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — یوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/userver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — میکروتیک — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-mikrotik-1-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ویندوز — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-windows-2-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — VMware — آتنا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-vmware/atenahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایکس زد ان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/xzn/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پالس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/pulseserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سرور بورس",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/serverbours/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — کرمان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/kermanhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — SSD — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-3-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-2-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — تلاش نت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/talashnet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — وب پویان",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/webpouyan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-6-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پارس وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/parswebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ماناسرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/manaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — KVM — سون هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-kvm/7ho/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — کلود دات آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/cloudir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۴ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-4-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — شتابان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/shetabanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-8-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آذرآنلاین",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/azaronline/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-3-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس وب سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parswebserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — دیار هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/dyarhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ویندوز — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-6-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-8-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سرور فی",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/serverfee/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — شاپینگ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/shopingserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایران وی‌پی‌اس (iranvps.org)",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/iranvps-org/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ابر دیده بان نت",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/didicloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس راد",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parsrad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پشتیبانان شبکه",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/nsup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایران‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/iranhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-1-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آفاق هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/afaghhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — سون هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/7ho/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — VMware — آتنا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir-vmware/atenahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور بورس",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverbours/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — تلاش نت",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/talashnet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — KVM — ایران وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir-kvm/irwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parswebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — رسپینا — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-rspina-6-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آپ وب",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/upweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — زاگرس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/zagroshost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ویندوز — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-windows-4-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ایران وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/iranvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ویندوز — آسمان هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-8-ir/asemanhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — منیجیت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/manageitcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — سون هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/7ho/"
+  },
+  {
+    "text": "سرور مجازی ایران ۷ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-7-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — فراسو",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/faraso/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — SSD — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-4-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران وی ام",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/irvm/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — متادیجی",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/metadigi/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ام تی سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mtserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — وب پویان",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/webpouyan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ایران وی‌پی‌اس (iranvps.org)",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/iranvps-org/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — کلود دات آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/cloudir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سابین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/sabinserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — شبکه پیشداد",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/pishdad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-12-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایکس زد ان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/xzn/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سرورها",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/serverha/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میکروتیک — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-2-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — فراسو",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/faraso/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — SSD — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-8-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — KVM — وب رمز",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-kvm/webramz/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-2-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — گنجه هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/ganje/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — رادکام",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/radcom/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — دیار هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/dyarhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ماناسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/manaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۵ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-5-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ابری — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-6-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-12-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران — Cloud IRP 01 — برتر وی اس",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-irp-01-1-ir/bartarvs/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایکس وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/xvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — شاپینگ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/shopingserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آذرآنلاین",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/azaronline/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-4-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — KVM — سون هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir-kvm/7ho/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parsdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور بورس",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverbours/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — میکروتیک — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-3-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — VMware — آتنا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-vmware/atenahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — یوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/userver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تلاش نت",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/talashnet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس وب سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parswebserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — رسپینا — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-rspina-8-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۶ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-6-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — دانلود — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-dl-2-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — ایران وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/irwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران — Pishgaman Mikrotik — برتر وی اس",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir-2/bartarvs/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — شبکه پیشداد",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/pishdad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-4-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — ایران وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/iranvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پالس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/pulseserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پارس دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/parsdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میکروتیک — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-4-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — توشن",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/toshan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور فی",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverfee/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — Gitlab — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-gitlab-6-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ماینکرافت — پویان آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-minecraft-16-ir/pouyanit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — وب رمز",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/webramz/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرور فی",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverfee/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — فراسو",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/faraso/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ماناسرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/manaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — شاپینگ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/shopingserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ابری — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-12-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — KVM — سون هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir-kvm/7ho/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ایکس زد ان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/xzn/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — رادکام",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/radcom/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ناین کرفت",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/9craft/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — زاگرس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/zagroshost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — وب پویان",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/webpouyan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سابین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/sabinserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس راد",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parsrad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — رسپینا — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-rspina-12-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آفاق هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/afaghhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ویندوز — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-windows-8-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — SSD — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-8-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — KVM — وب رمز",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir-kvm/webramz/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — کلون کلود",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/keloncloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تلاش نت",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/talashnet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آپ وب",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/upweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سپنتا پیکسل",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/sepantapixel/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آذرآنلاین",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/azaronline/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ویندوز — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-4-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-16-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — Gitlab — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-gitlab-8-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — SSD — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-ssd-16-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پشتیبانان شبکه",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/nsup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-4-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-9-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران — Cloud IRP 02 — برتر وی اس",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-irp-02-1-ir/bartarvs/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — نامحدود — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-4-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — دانلود — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-dl-4-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — Legendary — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-legendary-8-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ژینوتک",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/zhinotech/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — فراسو",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/faraso/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ماناسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/manaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — شاپینگ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/shopingserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایکس زد ان هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/xzn/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایکس وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/xvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parsdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — جهش سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/jaheshserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرورها",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverha/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — کلود دات آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/cloudir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — نامحدود — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-6-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — وب رمز",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/webramz/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — شبکه پیشداد",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pishdad/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایران وی ام",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/irvm/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — هاست نگار",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/hostnegar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — VIP Port — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-vip-port-8-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایران وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/iranvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آسان وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/asanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — مکنانت",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/maknanet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-8-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پالس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pulseserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — پارس وب سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/parswebserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۱ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-11-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-24-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — نامحدود — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-8-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — متادیجی",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/metadigi/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — شاپینگ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/shopingserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — زاگرس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/zagroshost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — Legendary — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-legendary-12-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ماناسرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/manaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — نامحدود — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-12-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — صفرویک",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/0-1/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — Gitlab — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-gitlab-10-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۷ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-7-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آراد هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/aradhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میکروتیک — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-4-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ویندوز — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-8-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران — پلن ۷ — روناک هاست",
+    "url": "https://whdir.ir/plan/vps-ir-plan-7-1-ir/ronakhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۳ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-13-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — بیا تو هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/bia2host/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ماهان کلود",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/mahancloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سابین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/sabinserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۴ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-14-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پرشین تولز",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/persiantools/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — هاست نگار",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hostnegar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — نامحدود — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-16-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پالس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/pulseserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — VIP Port — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-vip-port-16-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — PRO — سرورها",
+    "url": "https://whdir.ir/plan/vps-ir-pro-4-ir/serverha/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — Legendary — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-legendary-16-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — منیجیت",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/manageitcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران — Cloud IRP 03 — برتر وی اس",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-irp-03-1-ir/bartarvs/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — رادکام",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/radcom/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — KVM — نگارنوین",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir-kvm/negarnovin/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — PRO — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-pro-32-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۵ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-15-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — Gitlab — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-gitlab-12-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — هاست باران",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/hostbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-6-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ویندوز — پارس آپتایم",
+    "url": "https://whdir.ir/plan/vps-ir-windows-16-ir/parsuptime/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — فراسو",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/faraso/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور فی",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverfee/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — ایساتیس سرور",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/isatisserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۷ گیگابایت رم — هاست نگار",
+    "url": "https://whdir.ir/plan/vps-ir-7-ir/hostnegar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — هاستیدا",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/hostida/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-8-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — دانلود — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-dl-6-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — Legendary — آنلاین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-legendary-24-ir/onlineserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — میزبان داده",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mizbandade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایکس وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/xvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — سرور پلاس",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/serverplus/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ماهان نت",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/mahannet/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — پارس وب سرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/parswebserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران — Cloud IRP 04 — برتر وی اس",
+    "url": "https://whdir.ir/plan/vps-ir-cloud-irp-04-1-ir/bartarvs/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سابین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/sabinserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۰ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-20-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — آوابرید",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/avabarid/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-16-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — بلوسرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/blueserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آراد هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/aradhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — گنجه هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/ganje/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۰ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-20-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — متادیجی",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/metadigi/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۰ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-20-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۴ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-14-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرورستاپ",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serversetup/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرورها",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverha/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — کلود دات آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/cloudir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — آی آر سرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/irserverco/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ویندوز — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-16-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — مرواهاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/morvahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سرور فی",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/serverfee/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — برتینا",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/bertina/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹ گیگابایت رم — هاست نگار",
+    "url": "https://whdir.ir/plan/vps-ir-9-ir/hostnegar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — ابردیجیتال",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/clouddigit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پویاسازان",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/pouyasazan/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایران‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/iranhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — مایاهاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/mayahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — سابین سرور",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/sabinserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — ابر نوین",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/novincloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۸ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-18-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — VDS — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-16-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ترافیکی — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-trafiki-24-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲۸ گیگابایت رم — مبین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-128-ir/mobinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-16-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — KVM — پارس وی دی اس",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir-kvm/parsvds/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — گنجه هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/ganje/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — میزبان",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/mizban/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۰ گیگابایت رم — اینو سرور",
+    "url": "https://whdir.ir/plan/vps-ir-30-ir/inoserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — کلود دات آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/cloudir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — ویندوز — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-windows-32-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۰ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-40-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — نوین هاست",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/novinhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — افیکس‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/efixhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — VDS — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-24-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — Auto Scale — هایو",
+    "url": "https://whdir.ir/plan/vps-ir-auto-scale-24-ir/haio/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — VDS — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-32-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — فاماسرور",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/famaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — اِترنو کلود",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/eternocl/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایران‌هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/iranhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۶ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-56-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — پارس پک",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/parspack/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — VDS — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-32-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — هاست سنتر",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/hostcenter/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — VDS — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-48-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲۸ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-128-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۷۲ گیگابایت رم — پیشگام هاست",
+    "url": "https://whdir.ir/plan/vps-ir-72-ir/pishgamhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹۶ گیگابایت رم — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-96-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — VDS — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-64-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹۶ گیگابایت رم — هاست ایران",
+    "url": "https://whdir.ir/plan/vps-ir-96-ir/hostiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — VDS — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-48-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — لیارا",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/liara/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲۸ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-128-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲۸ گیگابایت رم — VDS — صباهاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-128-ir/saba/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — VDS — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-64-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸۰ گیگابایت رم — سرور آی‌آر",
+    "url": "https://whdir.ir/plan/vps-ir-80-ir/serverir/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹۶ گیگابایت رم — VDS — مارال هاست",
+    "url": "https://whdir.ir/plan/vps-ir-vds-96-ir/maralhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۹۲ گیگابایت رم — ایران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-192-ir/iranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ویدا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/vidaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — وی‌پی‌اس مارکت",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/vpsmarket/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ویدا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/vidaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — KVM — راست چین کلود",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-kvm/cloud-rtl-theme/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ابر باران",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/abrbaran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میلاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/miladserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — الماس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/almashost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — ویدا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/vidaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — تهران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/tehranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-1-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایران وی ام",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/irvm/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تهران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/tehranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — VMware — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir-vmware/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — KVM — ایران وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-kvm/irwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/pars/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — KVM — ویدا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-kvm/vidaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آفاق هاستینگ",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/afaghhosting/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — VMware — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir-vmware/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پارس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/pars/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — VMware — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir-vmware/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پارس وی پی اس",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/parsvps/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/pars/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — الماس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/almashost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — VMware — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir-vmware/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-5-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — میهن وب هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/mihanwebhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — دوریس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/doris/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تهران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/tehranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — الماس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/almashost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — VMware — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir-vmware/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پارس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/pars/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — تهران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/tehranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — AMD — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-amd-8-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۸ گیگابایت رم — تهران سرور",
+    "url": "https://whdir.ir/plan/vps-ir-18-ir/tehranserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/pars/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۹۶ گیگابایت رم — الماس هاست",
+    "url": "https://whdir.ir/plan/vps-ir-96-ir/almashost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — AMD — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-amd-16-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۰ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-20-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — پنتا سرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/pentaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — نامحدود — کیمیا هاست",
+    "url": "https://whdir.ir/plan/vps-ir-unlimited-4-ir/kimiahost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — AMD — تهران گیمینگ",
+    "url": "https://whdir.ir/plan/vps-ir-amd-32-ir/tehrangaming/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-8-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — های دیتا",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/hidata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴۸ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-48-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — حجیم — وی آی پی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-hjim-10-ir/viphost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — تجارت پایدار ایرانیان",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/itpiran/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — قائم هاست",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/qaemhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — تسنیم",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/tasnim/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایران اسپید",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/iranspeed/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — مرکز داده امین",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/aminidc/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۵۱۲ مگابایت — میکروتیک — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-512mb-mikrotik-1-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تسنیم",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/tasnim/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایران اسپید",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/iranspeed/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — مرکز داده امین",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/aminidc/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — ایزی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/ezhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پشتوار سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/poshtvarserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آبتین وب",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/abtinweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — G9 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g9-2-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — آریاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/ariyaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — میکروتیک — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-2-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — سرودیتا",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/sarvdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آداک سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/adakserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — پشتوار سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/poshtvarserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایران اسپید",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/iranspeed/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — ایزی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/ezhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میزبان سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mizbanserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — میزبان سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/mizbanserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آریاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/ariyaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آفاق هاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/afaghinfo/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آبتین وب",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/abtinweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پشتوار سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/poshtvarserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — آسام کلود",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/asamcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرور پاور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/serverpower/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-2-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تسنیم",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/tasnim/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مرکز داده امین",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/aminidc/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — میکروتیک — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-1-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سرودیتا",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/sarvdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — آداک سرور",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/adakserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — G9 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g9-4-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — پشتوار سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/poshtvarserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سرودیتا",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/sarvdata/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — آسام کلود",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/asamcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آفاق هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/afaghinfo/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — دهکده آی تی",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/dehkadeit/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — میزبان سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/mizbanserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — مشهدهاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/mashhadhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پشتوار سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/poshtvarserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — میکروتیک — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-mikrotik-4-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آداک سرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/adakserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ویندوز — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-windows-4-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آریاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/ariyaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — تسنیم",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/tasnim/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آبتین وب",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/abtinweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-3-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ابر فرتاک",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/fartak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سرور پاور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/serverpower/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — ایزی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/ezhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایران اسپید",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/iranspeed/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آفاق هاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/afaghinfo/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مرکز داده امین",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/aminidc/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — G11 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g11-1-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سرور پاور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/serverpower/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-4-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — آریاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/ariyaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — ویندوز — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-windows-6-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آفاق هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/afaghinfo/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — G9 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g9-8-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — سرور استار",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/serverstar/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — آسام کلود",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/asamcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آریاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/ariyaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ابر فرتاک",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/fartak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آبتین وب",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/abtinweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — سرور پاور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/serverpower/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ایزی هاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/ezhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — مرکز داده امین",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/aminidc/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آداک سرور",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/adakserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — ویندوز — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-windows-8-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — ابر فرتاک",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/fartak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — آفاق هاست",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/afaghinfo/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — مشهدهاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/mashhadhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-6-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — سرور پاور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/serverpower/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — آبتین وب",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/abtinweb/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — G11 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g11-2-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — G9 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g9-16-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-8-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — اسمارت هاست",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/smtcohost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — مشهدهاست",
+    "url": "https://whdir.ir/plan/vps-ir-12-ir/mashhadhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — آسام کلود",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/asamcloud/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — ایرانیکاسرور",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/iranicaserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — ابر فرتاک",
+    "url": "https://whdir.ir/plan/vps-ir-16-ir/fartak/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — G11 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g11-4-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-12-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲۴ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-24-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — دوربرد",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/dourbord/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۶ گیگابایت رم — Nvme — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-nvme-16-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳۲ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-32-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — G11 — وب داده",
+    "url": "https://whdir.ir/plan/vps-ir-g11-8-ir/webdade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶۴ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-64-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۲۸ گیگابایت رم — تاد سرور",
+    "url": "https://whdir.ir/plan/vps-ir-128-ir/tadserver/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — زویپ سرور",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/zoip/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — سوپرهاست",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/superhost/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۳ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-3-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۶ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-6-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱۰ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-10-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — هاستکده",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/hostkade/"
+  },
+  {
+    "text": "سرور مجازی ایران ۱ گیگابایت رم — پارس سیف",
+    "url": "https://whdir.ir/plan/vps-ir-1-ir/parssafe/"
+  },
+  {
+    "text": "سرور مجازی ایران ۲ گیگابایت رم — پارس سیف",
+    "url": "https://whdir.ir/plan/vps-ir-2-ir/parssafe/"
+  },
+  {
+    "text": "سرور مجازی ایران ۴ گیگابایت رم — پارس سیف",
+    "url": "https://whdir.ir/plan/vps-ir-4-ir/parssafe/"
+  },
+  {
+    "text": "سرور مجازی ایران ۸ گیگابایت رم — پارس سیف",
+    "url": "https://whdir.ir/plan/vps-ir-8-ir/parssafe/"
+  },
+  {
+    "text": "سرور مجازی سوئد ۴۵ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-se/"
+  },
+  {
+    "text": "سرور مجازی اتریش ۲۷ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-at/"
+  },
+  {
+    "text": "سرور مجازی بلغارستان ۲۹ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-bg/"
+  },
+  {
+    "text": "سرور مجازی چک ۱۹ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-cz/"
+  },
+  {
+    "text": "سرور مجازی استرالیا ۴۲ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-au/"
+  },
+  {
+    "text": "سرور مجازی بلژیک ۲۳ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-be/"
+  },
+  {
+    "text": "سرور مجازی کرواسی ۱۶ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-hr/"
+  },
+  {
+    "text": "سرور مجازی دانمارک ۱۶ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-dk/"
+  },
+  {
+    "text": "سرور مجازی شیلی ۱۲ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-cl/"
+  },
+  {
+    "text": "سرور مجازی لهستان ۶۹ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-pl/"
+  },
+  {
+    "text": "سرور مجازی روسیه ۶۶ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-ru/"
+  },
+  {
+    "text": "سرور مجازی هند ۵۰ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-in/"
+  },
+  {
+    "text": "سرور مجازی کانادا ۱۴۰ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-ca/"
+  },
+  {
+    "text": "سرور مجازی آلمان ۶۵۶ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-de/"
+  },
+  {
+    "text": "سرور مجازی هلند ۲۸۸ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-nl/"
+  },
+  {
+    "text": "سرور مجازی فنلاند ۳۱۴ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-fi/"
+  },
+  {
+    "text": "سرور مجازی فرانسه ۳۰۳ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-fr/"
+  },
+  {
+    "text": "سرور مجازی انگلستان ۲۲۷ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-uk/"
+  },
+  {
+    "text": "سرور مجازی ترکیه ۲۰۵ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-tr/"
+  },
+  {
+    "text": "سرور مجازی امارات ۶۸ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-ae/"
+  },
+  {
+    "text": "سرور مجازی آمریکا ۳۱۸ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-us/"
+  },
+  {
+    "text": "سرور مجازی سنگاپور ۱۷۲ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-sg/"
+  },
+  {
+    "text": "سرور مجازی ابری ۲۲۰ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-cloud/"
+  },
+  {
+    "text": "سرور ترید و بورس ۲۱۹ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-trading/"
+  },
+  {
+    "text": "سرور گرافیکی (GPU) ۲۹ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-gpu/"
+  },
+  {
+    "text": "سرور مجازی مدیریت‌شده ۶۰ پیشنهاد",
+    "url": "https://whdir.ir/c/vps/vps-managed/"
+  },
+  {
+    "text": "سرور اختصاصی ایران ۶۱۴ پیشنهاد",
+    "url": "https://whdir.ir/c/dedicated/ded-ir/"
+  },
+  {
+    "text": "هاست ایران ۳٬۲۲۷ پیشنهاد",
+    "url": "https://whdir.ir/c/web-hosting/host-ir/"
+  },
+  {
+    "text": "راهنما: دیتاسنتر ایران یا خارج؟ معیارهایی که واقعاً مهم‌اند ←",
+    "url": "https://whdir.ir/blog/datacenter-location/"
+  },
+  {
+    "text": "راهنما: هاست اشتراکی یا سرور مجازی؟ نشانه‌های زمان مهاجرت ←",
+    "url": "https://whdir.ir/blog/shared-vs-vps/"
+  },
+  {
+    "text": "درباره ما",
+    "url": "https://whdir.ir/about/"
+  },
+  {
+    "text": "ثبت ارائه‌دهنده",
+    "url": "https://whdir.ir/register-provider/"
+  },
+  {
+    "text": "پنل ارائه‌دهندگان",
+    "url": "https://whdir.ir/panel/"
+  },
+  {
+    "text": "اپلیکیشن",
+    "url": "https://whdir.ir/app/"
+  },
+  {
+    "text": "مجله",
+    "url": "https://whdir.ir/blog/"
+  },
+  {
+    "text": "پشتیبانی",
+    "url": "https://whdir.ir/support/"
+  }
+]

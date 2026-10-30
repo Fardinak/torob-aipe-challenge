@@ -1,0 +1,15 @@
+{
+  "provider": "servervds",
+  "label": "سرور مجازی NVMe ایران 402",
+  "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-nvme-ossuoeo-ossu-402",
+  "source_key": "20-servervds",
+  "requested_url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-nvme-ossuoeo-ossu-402",
+  "capture_time": "2026-10-29T19:09:36.328865+00:00",
+  "status": 200,
+  "final_url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-nvme-ossuoeo-ossu-402",
+  "sha256": "ffdb965a00ff19a3d6ca6741e0709fbc7192e69182ee5789772ce1a74d33c687",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/20-servervds.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/20-servervds.txt",
+  "bytes": 88704,
+  "title": "کارت خرید - سرور وی‌دی‌اس"
+}

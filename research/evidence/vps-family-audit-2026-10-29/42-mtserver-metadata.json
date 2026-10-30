@@ -1,0 +1,16 @@
+{
+  "provider": "mtserver",
+  "label": "سرورمجازی رسپینا",
+  "url": "https://my.mtserver.ir/index.php?rp=/store/respina",
+  "discovered_in": "35-mtserver-links.json",
+  "source_key": "42-mtserver",
+  "requested_url": "https://my.mtserver.ir/index.php?rp=/store/respina",
+  "capture_time": "2026-10-29T19:10:46.023848+00:00",
+  "status": 200,
+  "final_url": "https://my.mtserver.ir/index.php?rp=/store/respina",
+  "sha256": "0eb0c0613a7e81cfa42d67e6d7ecc66bcda18361f25ac44737c716d8db1cc99c",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/42-mtserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/42-mtserver.txt",
+  "bytes": 68746,
+  "title": "کارت خرید - ام تی سرور"
+}

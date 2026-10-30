@@ -1,0 +1,16 @@
+{
+  "provider": "spadserver",
+  "label": "BBB listing alias",
+  "url": "https://crm.spadserver.com/cart.php?gid=28",
+  "discovered_in": "13-spadserver",
+  "source_key": "88-spadserver",
+  "requested_url": "https://crm.spadserver.com/cart.php?gid=28",
+  "capture_time": "2026-10-29T19:20:08.591078+00:00",
+  "status": 200,
+  "final_url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+  "sha256": "8373c08dac51febdbb7ea2e0ecbf2206e35a857204c368fe3bffd5bd957a1144",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/88-spadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/88-spadserver.txt",
+  "bytes": 60908,
+  "title": "کارت خرید - اسپاد سرور"
+}

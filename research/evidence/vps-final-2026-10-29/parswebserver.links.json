@@ -1,0 +1,630 @@
+[
+  {
+    "text": "",
+    "url": "https://portal.parswebserver.com/index.php"
+  },
+  {
+    "text": "",
+    "url": "https://portal.parswebserver.com/index.php"
+  },
+  {
+    "text": "View Cart 0",
+    "url": "https://portal.parswebserver.com/cart.php?a=view"
+  },
+  {
+    "text": "IRR",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "IRR",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn¤cy=1"
+  },
+  {
+    "text": "",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "Login",
+    "url": "https://portal.parswebserver.com/login.php"
+  },
+  {
+    "text": "Register",
+    "url": "https://portal.parswebserver.com/register.php"
+  },
+  {
+    "text": "Forgot Password?",
+    "url": "https://portal.parswebserver.com/index.php?rp=/password/reset"
+  },
+  {
+    "text": "Products",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "میزبانی وب لینوکس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-rwp"
+  },
+  {
+    "text": "میزبانی وب لینوکس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-yrn"
+  },
+  {
+    "text": "هاست ووکامرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-rwp"
+  },
+  {
+    "text": "هاست ووکامرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-yrn"
+  },
+  {
+    "text": "هاست وردپرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-rwp"
+  },
+  {
+    "text": "هاست وردپرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-yrn"
+  },
+  {
+    "text": "میزبانی وب پربازدید اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-rwp"
+  },
+  {
+    "text": "میزبانی وب پربازدید ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-yrn"
+  },
+  {
+    "text": "هاست حرفه ای اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-rwp"
+  },
+  {
+    "text": "هاست  حرفه ای ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-yrn"
+  },
+  {
+    "text": "هاست اختصاصی آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-almn"
+  },
+  {
+    "text": "هاست اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-yrn"
+  },
+  {
+    "text": "هاست NodeJs اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-rwp"
+  },
+  {
+    "text": "هاست NodeJs ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-yrn"
+  },
+  {
+    "text": "هاست پایتون اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-rwp"
+  },
+  {
+    "text": "هاست پایتون ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-yrn"
+  },
+  {
+    "text": "هاست لاراول اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-rwp"
+  },
+  {
+    "text": "هاست لاراول ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-yrn"
+  },
+  {
+    "text": "هاست دانلود",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd-yrn"
+  },
+  {
+    "text": "نمایندگی میزبانی وب اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-rwp"
+  },
+  {
+    "text": "نمایندگی میزبانی وب ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-yrn"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn"
+  },
+  {
+    "text": "سرور مجازی ابری آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-almn"
+  },
+  {
+    "text": "سرور مجازی ابری آمریکا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-amrykh-bry"
+  },
+  {
+    "text": "سرور مجازی ابری سنگاپور",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-sngpwr"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-htznr-almn"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-yrn"
+  },
+  {
+    "text": "ssl گواهینامه امنیتی",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/ssl-gwhynmh-mnyty"
+  },
+  {
+    "text": "Domains",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "Register a New Domain",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "Transfer Domains to Us",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "text": "Domain Pricing",
+    "url": "https://portal.parswebserver.com/index.php?rp=/domain/pricing"
+  },
+  {
+    "text": "Support",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "ارسال تیکت",
+    "url": "https://portal.parswebserver.com/submitticket.php"
+  },
+  {
+    "text": "Contact Us",
+    "url": "https://portal.parswebserver.com/contact.php"
+  },
+  {
+    "text": "Network Status",
+    "url": "https://portal.parswebserver.com/serverstatus.php"
+  },
+  {
+    "text": "Knowledgebase",
+    "url": "https://portal.parswebserver.com/index.php?rp=/knowledgebase"
+  },
+  {
+    "text": "News",
+    "url": "https://portal.parswebserver.com/index.php?rp=/announcements"
+  },
+  {
+    "text": "View Cart 0",
+    "url": "https://portal.parswebserver.com/cart.php?a=view"
+  },
+  {
+    "text": "IRR",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "IRR",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn¤cy=1"
+  },
+  {
+    "text": "",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "Login",
+    "url": "https://portal.parswebserver.com/login.php"
+  },
+  {
+    "text": "Register",
+    "url": "https://portal.parswebserver.com/register.php"
+  },
+  {
+    "text": "Forgot Password?",
+    "url": "https://portal.parswebserver.com/index.php?rp=/password/reset"
+  },
+  {
+    "text": "میزبانی وب لینوکس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-rwp"
+  },
+  {
+    "text": "میزبانی وب لینوکس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-yrn"
+  },
+  {
+    "text": "هاست ووکامرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-rwp"
+  },
+  {
+    "text": "هاست ووکامرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-yrn"
+  },
+  {
+    "text": "هاست وردپرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-rwp"
+  },
+  {
+    "text": "هاست وردپرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-yrn"
+  },
+  {
+    "text": "میزبانی وب پربازدید اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-rwp"
+  },
+  {
+    "text": "میزبانی وب پربازدید ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-yrn"
+  },
+  {
+    "text": "هاست حرفه ای اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-rwp"
+  },
+  {
+    "text": "هاست  حرفه ای ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-yrn"
+  },
+  {
+    "text": "هاست اختصاصی آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-almn"
+  },
+  {
+    "text": "هاست اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-yrn"
+  },
+  {
+    "text": "هاست NodeJs اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-rwp"
+  },
+  {
+    "text": "هاست NodeJs ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-yrn"
+  },
+  {
+    "text": "هاست پایتون اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-rwp"
+  },
+  {
+    "text": "هاست پایتون ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-yrn"
+  },
+  {
+    "text": "هاست لاراول اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-rwp"
+  },
+  {
+    "text": "هاست لاراول ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-yrn"
+  },
+  {
+    "text": "هاست دانلود",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd-yrn"
+  },
+  {
+    "text": "نمایندگی میزبانی وب اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-rwp"
+  },
+  {
+    "text": "نمایندگی میزبانی وب ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-yrn"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn"
+  },
+  {
+    "text": "سرور مجازی ابری آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-almn"
+  },
+  {
+    "text": "سرور مجازی ابری آمریکا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-amrykh-bry"
+  },
+  {
+    "text": "سرور مجازی ابری سنگاپور",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-sngpwr"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-htznr-almn"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-yrn"
+  },
+  {
+    "text": "ssl گواهینامه امنیتی",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/ssl-gwhynmh-mnyty"
+  },
+  {
+    "text": "Register a New Domain",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "Transfer in a Domain",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "text": "View Cart",
+    "url": "https://portal.parswebserver.com/cart.php?a=view"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "میزبانی وب لینوکس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-rwp"
+  },
+  {
+    "text": "میزبانی وب لینوکس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-lynwkhs-yrn"
+  },
+  {
+    "text": "هاست ووکامرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-rwp"
+  },
+  {
+    "text": "هاست ووکامرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wwkhmrs-yrn"
+  },
+  {
+    "text": "هاست وردپرس اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-rwp"
+  },
+  {
+    "text": "هاست وردپرس ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-wrdprs-yrn"
+  },
+  {
+    "text": "میزبانی وب پربازدید اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-rwp"
+  },
+  {
+    "text": "میزبانی وب پربازدید ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/myzbny-wb-prbzdyd-yrn"
+  },
+  {
+    "text": "هاست حرفه ای اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-rwp"
+  },
+  {
+    "text": "هاست  حرفه ای ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-hrfh-y-yrn"
+  },
+  {
+    "text": "هاست اختصاصی آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-almn"
+  },
+  {
+    "text": "هاست اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-khtssy-yrn"
+  },
+  {
+    "text": "هاست NodeJs اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-rwp"
+  },
+  {
+    "text": "هاست NodeJs ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-nodejs-yrn"
+  },
+  {
+    "text": "هاست پایتون اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-rwp"
+  },
+  {
+    "text": "هاست پایتون ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-pytwn-yrn"
+  },
+  {
+    "text": "هاست لاراول اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-rwp"
+  },
+  {
+    "text": "هاست لاراول ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-lrwl-yrn"
+  },
+  {
+    "text": "هاست دانلود",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd"
+  },
+  {
+    "text": "هاست دانلود ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/hst-dnlwd-yrn"
+  },
+  {
+    "text": "نمایندگی میزبانی وب اروپا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-rwp"
+  },
+  {
+    "text": "نمایندگی میزبانی وب ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/nmyndgy-myzbny-wb-yrn"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn"
+  },
+  {
+    "text": "سرور مجازی ابری آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-almn"
+  },
+  {
+    "text": "سرور مجازی ابری آمریکا",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-amrykh-bry"
+  },
+  {
+    "text": "سرور مجازی ابری سنگاپور",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-bry-sngpwr"
+  },
+  {
+    "text": "سرور اختصاصی هتزنر آلمان",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-htznr-almn"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-khtssy-yrn"
+  },
+  {
+    "text": "ssl گواهینامه امنیتی",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/ssl-gwhynmh-mnyty"
+  },
+  {
+    "text": "Register a New Domain",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=register"
+  },
+  {
+    "text": "Transfer in a Domain",
+    "url": "https://portal.parswebserver.com/cart.php?a=add&domain=transfer"
+  },
+  {
+    "text": "View Cart",
+    "url": "https://portal.parswebserver.com/cart.php?a=view"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/2gb-vps-iran"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/2gb-v2-vps-iran"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/4gb-vps-iran"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/8gb-vps-iran"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/16gb-vps-iran"
+  },
+  {
+    "text": "Order Now",
+    "url": "https://portal.parswebserver.com/index.php?rp=/store/srwr-mjzy-yrn/32gb-vps-iran"
+  },
+  {
+    "text": "Continue",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "English",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  },
+  {
+    "text": "العربية",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=arabic"
+  },
+  {
+    "text": "Azerbaijani",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=azerbaijani"
+  },
+  {
+    "text": "Català",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=catalan"
+  },
+  {
+    "text": "中文",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=chinese"
+  },
+  {
+    "text": "Hrvatski",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=croatian"
+  },
+  {
+    "text": "Čeština",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=czech"
+  },
+  {
+    "text": "Dansk",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=danish"
+  },
+  {
+    "text": "Nederlands",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=dutch"
+  },
+  {
+    "text": "English",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=english"
+  },
+  {
+    "text": "Estonian",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=estonian"
+  },
+  {
+    "text": "Persian",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=farsi-new"
+  },
+  {
+    "text": "Persian",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=farsi"
+  },
+  {
+    "text": "Français",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=french"
+  },
+  {
+    "text": "Deutsch",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=german"
+  },
+  {
+    "text": "עברית",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=hebrew"
+  },
+  {
+    "text": "Magyar",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=hungarian"
+  },
+  {
+    "text": "Italiano",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=italian"
+  },
+  {
+    "text": "Macedonian",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=macedonian"
+  },
+  {
+    "text": "Norwegian",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=norwegian"
+  },
+  {
+    "text": "Português",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=portuguese-br"
+  },
+  {
+    "text": "Português",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=portuguese-pt"
+  },
+  {
+    "text": "Română",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=romanian"
+  },
+  {
+    "text": "Русский",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=russian"
+  },
+  {
+    "text": "Español",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=spanish"
+  },
+  {
+    "text": "Svenska",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=swedish"
+  },
+  {
+    "text": "Türkçe",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=turkish"
+  },
+  {
+    "text": "Українська",
+    "url": "https://portal.parswebserver.com/index.php?rp=%2Fstore%2Fsrwr-mjzy-yrn&language=ukranian"
+  },
+  {
+    "text": "Back to top",
+    "url": "https://portal.parswebserver.com/index.php?language=english&rp=%2Fstore%2Fsrwr-mjzy-yrn"
+  }
+]

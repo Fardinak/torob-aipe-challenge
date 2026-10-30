@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://cloud.rtl-theme.com/virtual-server/",
+  "attempt_utc": "2026-10-29T10:02:46.465344+00:00",
+  "final_url": "https://cloud.rtl-theme.com/virtual-server/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "x-powered-by": "PHP/8.1.34",
+    "Content-Type": "text/html; charset=UTF-8",
+    "link": "<https://cloud.rtl-theme.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "etag": "\"32012-1793263905;;;\"",
+    "X-LiteSpeed-Cache": "hit",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 10:02:40 GMT",
+    "Vary": "User-Agent",
+    "Access-Control-Allow-Origin": "*",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 274979,
+  "sha256": "dd006a811d38dff643c884bd017a3da43a4aa7de9cf72e04b510dcb2edac762e",
+  "saved_utc": "2026-10-29T10:02:46.682509+00:00"
+}

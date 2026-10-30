@@ -1,0 +1,15 @@
+{
+  "provider": "tadserver",
+  "label": "سرور مجازی شاتل",
+  "url": "https://tadserver.com/shatel-vps/",
+  "source_key": "04-tadserver",
+  "requested_url": "https://tadserver.com/shatel-vps/",
+  "capture_time": "2026-10-29T19:09:35.686156+00:00",
+  "status": 200,
+  "final_url": "https://tadserver.com/shatel-vps/",
+  "sha256": "008850fa5c8d5d351fef4d4eab2d7d7e604efa51fd676d1220ad005de87fc2d8",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/04-tadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/04-tadserver.txt",
+  "bytes": 232743,
+  "title": "سرور مجازی شاتل - تاد سرور"
+}

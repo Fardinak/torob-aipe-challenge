@@ -1,0 +1,15 @@
+{
+  "provider": "inet",
+  "label": "سرور مجازی ایران SSD",
+  "url": "https://inetisp.ir/pricing-vps.php",
+  "source_key": "05-inet",
+  "requested_url": "https://inetisp.ir/pricing-vps.php",
+  "capture_time": "2026-10-29T19:09:35.686834+00:00",
+  "status": 200,
+  "final_url": "https://inetisp.ir/pricing-vps",
+  "sha256": "cbb92fda21a8adb30b0fb0720c541d1966bba58953182ea0d89a09a1bcfee2b5",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/05-inet.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/05-inet.txt",
+  "bytes": 36544,
+  "title": "تعرفه سرور مجازی | آی نت"
+}

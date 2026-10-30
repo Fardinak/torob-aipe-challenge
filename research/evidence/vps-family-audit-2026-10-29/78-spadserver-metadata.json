@@ -1,0 +1,16 @@
+{
+  "provider": "spadserver",
+  "label": "پلن های ویژه‌ ساعتی BigBlueButton",
+  "url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+  "discovered_in": "14-spadserver-links.json",
+  "source_key": "78-spadserver",
+  "requested_url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+  "capture_time": "2026-10-29T19:16:42.328832+00:00",
+  "status": 200,
+  "final_url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+  "sha256": "66a0e230672e9fcfcfaee354ba0c51b1716060e46ff20d01a7b825ab50652a99",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/78-spadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/78-spadserver.txt",
+  "bytes": 60908,
+  "title": "کارت خرید - اسپاد سرور"
+}

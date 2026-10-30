@@ -1,0 +1,15 @@
+{
+  "provider": "liara",
+  "label": "سرور مجازی ایرانی",
+  "url": "https://liara.ir/products/iranian-vps/",
+  "source_key": "01-liara",
+  "requested_url": "https://liara.ir/products/iranian-vps/",
+  "capture_time": "2026-10-29T19:09:35.684483+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/products/iranian-vps/",
+  "sha256": "fdbd1b4a8c70cff2bbd502003f32ef6569d35232cbf94bf0723a88545889ffee",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/01-liara.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/01-liara.txt",
+  "bytes": 141856,
+  "title": "خرید سرور مجازی ایران | VPS ایرانی ترافیک نامحدود - لیارا"
+}

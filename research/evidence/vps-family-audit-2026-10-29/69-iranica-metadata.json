@@ -1,0 +1,16 @@
+{
+  "provider": "iranica",
+  "label": "سرور مجازی مخصوص گیم",
+  "url": "https://iranicaserver.com/game-server",
+  "discovered_in": "02-iranica-links.json",
+  "source_key": "69-iranica",
+  "requested_url": "https://iranicaserver.com/game-server",
+  "capture_time": "2026-10-29T19:16:42.316170+00:00",
+  "status": 200,
+  "final_url": "https://iranicaserver.com/game-server/",
+  "sha256": "328f8ff610e82f9486daaf13761b5cc2b49509f739d04bd18da79d90d8a939b2",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/69-iranica.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/69-iranica.txt",
+  "bytes": 114093,
+  "title": "خرید گیم سرور | سرور مجازی گیمینگ با پینگ مناسب | ایرانیکاسرور"
+}

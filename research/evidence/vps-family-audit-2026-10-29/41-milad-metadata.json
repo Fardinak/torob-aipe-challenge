@@ -1,0 +1,16 @@
+{
+  "provider": "milad",
+  "label": "سرور ایران حرفه‌ای",
+  "url": "https://www.miladserver.ir/cart.php?gid=3",
+  "discovered_in": "33-milad-links.json",
+  "source_key": "41-milad",
+  "requested_url": "https://www.miladserver.ir/cart.php?gid=3",
+  "capture_time": "2026-10-29T19:10:46.022837+00:00",
+  "status": 200,
+  "final_url": "https://www.miladserver.ir/store/pln-hrfh-y",
+  "sha256": "dcb8e6fedd90a75637b294f33e84c0ae6aed0c57c68a18eeb2cba22f48a1742b",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/41-milad.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/41-milad.txt",
+  "bytes": 82959,
+  "title": "خرید پلن حرفه ای سرور مجازی ایران | لیست پلن‌ها و قیمت — میلاد سرور"
+}

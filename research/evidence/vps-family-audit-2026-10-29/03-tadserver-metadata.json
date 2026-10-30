@@ -1,0 +1,15 @@
+{
+  "provider": "tadserver",
+  "label": "سرور مجازی رسپینا",
+  "url": "https://tadserver.com/respina-vps/",
+  "source_key": "03-tadserver",
+  "requested_url": "https://tadserver.com/respina-vps/",
+  "capture_time": "2026-10-29T19:09:35.685733+00:00",
+  "status": 200,
+  "final_url": "https://tadserver.com/respina-vps/",
+  "sha256": "ae22933643c24dfee810cd5da533f35365ba2b742a85e5d341ff79ba03047cf9",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/03-tadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/03-tadserver.txt",
+  "bytes": 231967,
+  "title": "سرور مجازی رسپینا - تاد سرور"
+}

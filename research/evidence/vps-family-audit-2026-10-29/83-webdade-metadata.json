@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی ابری PAYG",
+  "url": "https://my.webdade.com/cloud.php",
+  "discovered_in": "65-webdade-links.json",
+  "source_key": "83-webdade",
+  "requested_url": "https://my.webdade.com/cloud.php",
+  "capture_time": "2026-10-29T19:16:43.410128+00:00",
+  "status": 200,
+  "final_url": "https://my.webdade.com/cloud.php",
+  "sha256": "74498a4dbeaa0f7b66b031e4bea0e56036c33d707f4b09d20bd034a9db5df1f6",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/83-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/83-webdade.txt",
+  "bytes": 418567,
+  "title": "سرور ابری وب داده - وب داده"
+}

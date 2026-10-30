@@ -1,0 +1,16 @@
+{
+  "provider": "iranica",
+  "label": "سرور مجازی",
+  "url": "https://iranicaserver.com/vps",
+  "discovered_in": "02-iranica-links.json",
+  "source_key": "68-iranica",
+  "requested_url": "https://iranicaserver.com/vps",
+  "capture_time": "2026-10-29T19:16:42.315366+00:00",
+  "status": 200,
+  "final_url": "https://iranicaserver.com/vps/",
+  "sha256": "56eb7c05ee6df53d8f369cef21569546f3cc0963c8c37da66633e5e67df0bca3",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/68-iranica.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/68-iranica.txt",
+  "bytes": 108290,
+  "title": "خرید سرور مجازی (VPS) | لینوکس و ویندوز، ایران و خارج – ایرانیکاسرور"
+}

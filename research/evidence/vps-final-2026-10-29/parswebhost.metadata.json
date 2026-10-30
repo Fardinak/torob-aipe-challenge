@@ -1,0 +1,19 @@
+{
+  "requested_url": "https://parswebhost.net/",
+  "attempt_utc": "2026-10-29T09:53:14.906628+00:00",
+  "final_url": "https://parswebhost.net/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8",
+    "link": "<https://parswebhost.net/wp-json/>; rel=\"https://api.w.org/\"",
+    "etag": "\"18-1793104599;;;\"",
+    "x-litespeed-cache": "hit",
+    "transfer-encoding": "chunked",
+    "date": "Thu, 29 Oct 2026 09:53:09 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 116808,
+  "sha256": "0c54ad1a3ce7c733496b3f86eb935fbee36b5f367a6ac660d0ee15f91a3115d5",
+  "saved_utc": "2026-10-29T09:53:15.428009+00:00"
+}

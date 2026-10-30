@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://webpouyan.com/iran-vps/",
+  "attempt_utc": "2026-10-29T18:38:31.770411+00:00",
+  "final_url": "https://webpouyan.com/iran-vps/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 18:35:40 GMT",
+    "Server": "Apache/2.4.52 (Ubuntu)",
+    "Vary": "RSC,Next-Router-State-Tree,Next-Router-Prefetch,Accept-Encoding",
+    "link": "</_next/static/media/22ad496f1bb20f84-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/269b444bb35841f5-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/54b4529efaa12236-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/b45449992cf6b63e-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/d8640ae5b1256408-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "X-Powered-By": "Next.js",
+    "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "Content-Type": "text/html; charset=utf-8",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "bytes": 1774095,
+  "sha256": "b78e052a57bc0b4d58416d45ed3a6bed1d440dd089de33be371d10fc255d0245",
+  "saved_utc": "2026-10-29T18:38:33.391565+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "spadserver",
+  "label": "گیت لب ایران",
+  "url": "https://crm.spadserver.com/store/gyt-gitlab-iran-yrn",
+  "discovered_in": "14-spadserver-links.json",
+  "source_key": "38-spadserver",
+  "requested_url": "https://crm.spadserver.com/store/gyt-gitlab-iran-yrn",
+  "capture_time": "2026-10-29T19:10:46.020719+00:00",
+  "status": 200,
+  "final_url": "https://crm.spadserver.com/store/gyt-gitlab-iran-yrn",
+  "sha256": "77086310d70a5e6c731172e098fc464ac64eb8b8cb7cef3666958fed5f81fa9d",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/38-spadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/38-spadserver.txt",
+  "bytes": 67365,
+  "title": "کارت خرید - اسپاد سرور"
+}

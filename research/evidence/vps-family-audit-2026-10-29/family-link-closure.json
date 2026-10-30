@@ -1,0 +1,1112 @@
+[
+  {
+    "url": "https://webdade.com/vps",
+    "label": "سرور مجازی",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "retrieved 74-webdade"
+  },
+  {
+    "url": "https://webdade.com/iran-vps-server",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "retrieved 34-webdade"
+  },
+  {
+    "url": "https://webdade.com/vps-server-netherlands",
+    "label": "سرور مجازی هلند",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://webdade.com/vps-server-germany",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://webdade.com/vps-server-america",
+    "label": "سرور مجازی آمریکا",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://webdade.com/free-vps",
+    "label": "سرور مجازی رایگان",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "retrieved 75-webdade"
+  },
+  {
+    "url": "https://webdade.com/cloud-vps",
+    "label": "سرور مجازی ابری",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "already admitted/retrieved source webdade"
+  },
+  {
+    "url": "https://webdade.com/bourse-vps",
+    "label": "سرور مجازی بورس",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "retrieved 56-webdade"
+  },
+  {
+    "url": "https://webdade.com/mikrotik-vps",
+    "label": "سرور مجازی میکروتیک",
+    "discovered_in": "74-webdade-links.json",
+    "resolution": "retrieved 57-webdade"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-u-uoeu-o3o-uo-ossuoeo-ossu",
+    "label": "سرور مجازی گیم سرور ایران",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 19-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-ooss-uuossoo1-ossoroaouossouuoe-ossuuossu",
+    "label": "سرور مجازی با منابع اختصاصی  المان",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-nvme-ossuoeo-ossu-402",
+    "label": "سرور مجازی NVMe ایران 402",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 20-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-ossuoeo-ossu-ssd402",
+    "label": "سرور مجازی ایران SSD402",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 21-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-ossuoeo-ossu-raid10-ossuoeuoao-u34o-ossuoeo2402",
+    "label": "سرور مجازی ایران Raid10 اینترپرایز402",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 22-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/o3o-uo-uoosso2uoe-ossuoeo-ossu-uosso-o-ossoroaouossouuoe-402",
+    "label": "سرور مجازی ایران هارد اختصاصی 402",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 23-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-hjmy",
+    "label": "سرور مجازی ترافیک نامحدود حجمی",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 52-servervds"
+  },
+  {
+    "url": "https://clients.servervds.com/index.php?rp=/store/srwr-mjzy-trfykh-nmhdwd-phny-bnd",
+    "label": "سرور مجازی ترافیک نامحدود پهنای باند",
+    "discovered_in": "52-servervds-links.json",
+    "resolution": "retrieved 53-servervds"
+  },
+  {
+    "url": "https://inetisp.ir/pricing-vps.php",
+    "label": "سرور مجازی ایران SSD",
+    "discovered_in": "05-inet-links.json",
+    "resolution": "retrieved 05-inet"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%b1%d8%b3%d9%be%db%8c%d9%86%d8%a7/",
+    "label": "سرور رسپینا",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 29-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a2%d8%b3%db%8c%d8%a7%d8%aa%da%a9/",
+    "label": "سرور آسیاتک",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 30-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86/",
+    "label": "سرور مجازی ارزان ایران",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 27-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%da%a9%d8%a7%d9%87%d8%b4-%d9%be%db%8c%d9%86%da%af/",
+    "label": "سرور مجازی کاهش پینگ",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 71-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%da%a9%d9%84%d8%a7%d8%b3-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86/",
+    "label": "سرور مجازی کلاس آنلاین",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 72-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/estonia/",
+    "label": "سرور مجازی استونی",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/cloud2",
+    "label": "سرور مجازی لیتوانی",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%db%8c%d8%b1%d8%a7%d9%86/",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 28-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%81%d8%b1%d8%a7%d9%86%d8%b3%d9%87/",
+    "label": "سرور مجازی فرانسه",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A2%D9%84%D9%85%D8%A7%D9%86/",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%81%d9%86%d9%84%d8%a7%d9%86%d8%af/",
+    "label": "سرور مجازی فنلاند",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%da%a9%d8%a7%d9%86%d8%a7%d8%af%d8%a7/",
+    "label": "سرور مجازی کانادا",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/usaserver/",
+    "label": "سرور مجازی آمریکا",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%86%da%af%d9%84%db%8c%d8%b3/",
+    "label": "سرور مجازی انگلیس",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d8%a7%d8%ae%d8%aa%d8%b5%d8%a7%d8%b5%db%8c-%d8%b1%d8%b3%d9%be%db%8c%d9%86%d8%a7/",
+    "label": "سرور اختصاصی رسپینا هارد SSD ترافیک نامحدود",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d8%a7%d8%ae%d8%aa%d8%b5%d8%a7%d8%b5%db%8c-%d8%a2%d8%b3%db%8c%d8%a7%d8%aa%da%a9/",
+    "label": "سرور اختصاصی آسیاتک هارد SSD ترافیک نامحدود",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://negarnovin.com/vps/",
+    "label": "سرور مجازی",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 87-negarnovin; generic global offer location unconfirmed"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p1",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p2",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p3",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p4",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p5",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p6",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p7",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://my.negarnovin.com/store/irkvm/p8",
+    "label": "سفارش VPS گیم",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://negarnovin.com/%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%b2%db%8c%d8%b1-%d8%b3%d8%a7%d8%ae%d8%aa/",
+    "label": "سرور مجازی زیرساخت",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 86-negarnovin"
+  },
+  {
+    "url": "https://negarnovin.com/unlimited-traffic-virtual-server/",
+    "label": "سرور مجازی نامحدود",
+    "discovered_in": "71-negarnovin-links.json",
+    "resolution": "retrieved 73-negarnovin"
+  },
+  {
+    "url": "https://liara.ir/products/windows-vps/",
+    "label": "سرور مجازی ویندوز",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "retrieved 48-liara"
+  },
+  {
+    "url": "https://liara.ir/products/trade-vps/",
+    "label": "سرور مجازی ترید ساعتی",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "retrieved 49-liara"
+  },
+  {
+    "url": "https://liara.ir/products/linux-server/",
+    "label": "سرور مجازی لینوکس ساعتی",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "retrieved 79-liara"
+  },
+  {
+    "url": "https://liara.ir/products/iranian-vps/",
+    "label": "سرور مجازی ایرانی",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "retrieved 01-liara"
+  },
+  {
+    "url": "https://liara.ir/products/cloud-server/",
+    "label": "سرور مجازی ابری ( IaaS )",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "retrieved 80-liara"
+  },
+  {
+    "url": "https://console.liara.ir/vms",
+    "label": "خرید سرور مجازی لینوکس دائمی",
+    "discovered_in": "79-liara-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://iranicaserver.com/iran-vps/",
+    "label": "VPS ایران پینگ پایین، دیتاسنترهای داخلی",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "already admitted/retrieved source iranica"
+  },
+  {
+    "url": "https://iranicaserver.com/europe-vps/",
+    "label": "VPS اروپا دیتاسنتر آلمان و فرانسه",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://iranicaserver.com/us-vps/",
+    "label": "VPS آمریکا دیتاسنتر نیویورک، پهنای باند بالا",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://iranicaserver.com/vps/",
+    "label": "همه سرورهای مجازی مشاهده همه پلن‌های VPS",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "retrieved 68-iranica"
+  },
+  {
+    "url": "https://iranicaserver.com/game-server/",
+    "label": "سرور مجازی مخصوص گیم مناسب برای انواع بازی‌های آنلاین و رقابتی",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "retrieved 69-iranica"
+  },
+  {
+    "url": "https://iranicaserver.com/mikrotik-server/",
+    "label": "میکروتیک ایران سرور میکروتیک داخل ایران، پینگ پایین",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "retrieved 02-iranica"
+  },
+  {
+    "url": "https://iranicaserver.com/europe-mikrotik-vps/",
+    "label": "میکروتیک اروپا دیتاسنتر آلمان و هلند",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://iranicaserver.com/mikrotik/",
+    "label": "همه سرورهای میکروتیک مشاهده همه پلن‌های میکروتیک",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "retrieved 70-iranica"
+  },
+  {
+    "url": "https://iranicaserver.com/Blog/category/vps/",
+    "label": "مقالات سرور مجازی",
+    "discovered_in": "02-iranica-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone-ir",
+    "label": "سرور مجازی مبین وان  (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "already admitted/retrieved source last-mt-mobin-store"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/respina",
+    "label": "سرور مجازی رسپینا (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "retrieved 42-mtserver"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava",
+    "label": "سرور مجازی فن آوا (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "retrieved 35-mtserver"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/rightel",
+    "label": "سرور مجازی رایتل (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "already admitted/retrieved source last-mt-rightel-store"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb",
+    "label": "سرور مجازی آسیاتک  (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "retrieved 43-mtserver"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/shatel",
+    "label": "سرور مجازی شاتل (Port 10GB )",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "already admitted/retrieved source last-mt-shatel-store"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-game",
+    "label": "سرور مجازی گیم ایران  SSD pro",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "retrieved 44-mtserver"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-cloud-hetzner",
+    "label": "سرور مجازی (آلمان، فنلاند، آمریکا)",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-vps",
+    "label": "نمایندگی سرور مجازی",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "non-individual-compute service excluded"
+  },
+  {
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone",
+    "label": "سرور مجازی مبین وان",
+    "discovered_in": "44-mtserver-links.json",
+    "resolution": "retrieved 35-mtserver"
+  },
+  {
+    "url": "https://azardata.net/vps",
+    "label": "سرور مجازی",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 58-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/nvme/iran/",
+    "label": "سرور مجازی SSD NVMe ایران سرور مجازی (VPS) ایران آسیاتک به دلیل استفاده از سخت افزار های حرفه ای و پینگ بسیار عالی (به داخل و خارج کشور) به همراه پورت ۱ گیگ اختصاصی و پهنای باند نامحدود مناسب کلیه مصارف حرفه ای مانند سرور هاستینگ و یا هر سرویس دیگری خواهند بود. در حال حاضر دیتاسنتر آسیاتک برج میلاد بهترین گزینه جهت سرور های مجازی (VPS) و اختصاصی داخل کشور است. شروع یک موفقیت آنلاین، هوشمندانه و بصرفه",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "already admitted/retrieved source additional-azardata"
+  },
+  {
+    "url": "javascript:void(0);",
+    "label": "سرور مجازی (VPS) ایران آسیاتک به دلیل استفاده از سخت افزار های حرفه ای و پینگ بسیار عالی (به داخل و خارج کشور) به همراه پورت ۱ گیگ اختصاصی و پهنای باند نامحدود مناسب کلیه مصارف حرفه ای مانند سرور هاستینگ و یا هر سرویس دیگری خواهند بود. در حال حاضر دیتاسنتر آسیاتک برج میلاد بهترین گزینه جهت سرور های مجازی (VPS) و اختصاصی داخل کشور است.",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "non-navigable javascript excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/nvme/germany/",
+    "label": "سرور مجازی SSD NVMe آلمان سرور پرسرعت NVMe آلمان و ایران دارای ارتباط زیرساختی بسیار مناسب با ایران و گوگل می‎باشد که آن را گزینه بسیار مناسبی برای راه اندازی وب سایت و یا اپلیکیشن کرده است، سرور مجازی NVMe که از دیسک های پرسرعت SSD NVMe بهره می‎گیرند با توجه به تکنولوژی و رابط PCIe تا 6X سریعتر از سرور مجازی SSD و تا 20X سریعتر از سرور مجازی با HDD هستند، همچنین این دیسک ها دارای قابلیت اطمینان بسیار بیشتر نسبت به SSD و HDD هستند که تضمین کننده سرعت و کیفیت بسیار عالی سرور مجازی ارائه شده خواهد بود. سرعتی بالاتر از آنچه که تصور میکنید ...",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 16-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/nvme/netherlands/",
+    "label": "سرور مجازی SSD NVMe هلند اگر به دنبال یک سرور با کیفیت و پر سرعت از کشور هلند هستید ، سرور مجازی با هارد SSD NVMe هلند را به شما توصیه می کنیم ، این سرور ها با بهره گیری از مجازی ساز حرفه ای virtualizor و vmware ارائه می گردد و به دلیل ارائه منابع اختصاصی از پایداری و کیفیت همیشگی برخوردار می باشد. مزیت اصلی سرور مجازی SSD NVMe استفاده از هارد SSD NVMe با سرعت چندین برابر بیشتر که میتوانند تجربه ای متفاوتی را برای کاربران رقم بزند. شروع یک موفقیت آنلاین، هوشمندانه و بصرفه",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/storage/",
+    "label": "سرور مجازی حجیم سرور های استفاده شده برای پلن های سرور مجازی حجیم ما فقط در اختیار تعداد کمی کاربر قرار می گیرند تا بهترین بازدهی را برای کسانی که قصد دارند با سرعت بالا دانلود داشته باشند ذخیره سازی اطلاعات شما بر روی سرور های مجازی حجیم؛ آسان و کم هزینه!",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 60-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/telegram/",
+    "label": "سرور مخصوص ربات تلگرام سرور های ارائه شده توسط آذردیتا بار ها توسط کارشناسان و همچنین کاربران برای انواع ربات تلگرام تست شده و بهترین انتخاب برای کسانی که نیاز به سرور مجازی یا همان VPS برای راه اندازی ربات های خود را دارند می باشد. سرور های ارائه شده توسط آذردیتا بسیار پرقدرت و سخت افزار بروز ، سرعت پورت و اینترنت بسیار بالا ، اخرین نسخه سیستم عامل ها ، پنل بسیار پیشرفته جهت مدیریت کامل بر روی سرور است. ربات پر سرعت شما همیشه آنلاین است ...",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 61-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/gitlab/",
+    "label": "سرور گیت لب شخصی - GitLab سرور گیت لب Gitlab : گیت (Git) یک نرم‌افزار کنترل نسخه است که به تیم ها برای کار بر روی پروژه ها کمک میکند و از تداخل در کار جلوگیری میکند. مناسب ترین و بهترین پلتفرم موجود برای کنترل سورس گیت لب (Gitlab) است.که متاسفانه به تازگی با مهاجرت به فضای ابری گوگل ، ایران را تحریم و کاربران ایرانی را با مشکل بزرگی روبرو کرده است. تیم فنی مجموعه آذردیتا با ارائه راهکار دور زدن این تحریم تصمیم بر ارائه محصول سرور مجازی گیت لب کرده است تا به صورت کاملا شخصی و بدون مشکل تحریم از آن استفاده کنید. وقتی تحریم و محدودیت گیت لب بی معنا میشود!",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 46-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/managed/",
+    "label": "سرور مجازی مدیریت شده در حال حاضر مشکل بسیاری از کاربران در استفاده از سرور مجازی، عدم دانش کافی در کانفیگ، مدیریت و رفع مشکل سرورهای مجازی است. در صورتی که سرور مجازی شما با مشکل مواجه شود، وب سایت‌های شما از دسترس خارج شده و کسب و کارتان با مشکل مواجه خواهد شد. پیشنهاد ما به شما استفاده از سرور مجازی مدیریت شده لینوکس و ویندوز مجموعه آذردیتا می‌باشد. در سرورهای مجازی مدیریت شده، شما دغدغه‌ای در مورد مدیریت سرور، بروزرسانی نرم افزارها و رفع مشکلات احتمالی نخواهید داشت. پشتیبانی شبانه روزی فقط با یک اشاره شما!",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 62-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/telegram/germany/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/telegram/netherlands/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/nvme/",
+    "label": "سرور مجازی NVMe (VPS)",
+    "discovered_in": "61-azardata-links.json",
+    "resolution": "retrieved 64-azardata"
+  },
+  {
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D9%87%D9%84%D9%86%D8%AF/",
+    "label": "🇳🇱 سرور مجازی هلند",
+    "discovered_in": "30-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/semi-dedicated/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "58-azardata-links.json",
+    "resolution": "retrieved 59-azardata"
+  },
+  {
+    "url": "https://mihanwebhost.com/my/iran-vps",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "11-mihanwebhost-links.json",
+    "resolution": "already admitted/retrieved source mihanwebhost-iran"
+  },
+  {
+    "url": "https://mihanwebhost.com/my/germany-vps",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "11-mihanwebhost-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://mihanwebhost.com/my/trade-server",
+    "label": "سرور مجازی Trade",
+    "discovered_in": "11-mihanwebhost-links.json",
+    "resolution": "retrieved 76-mihanwebhost"
+  },
+  {
+    "url": "https://mihanwebhost.com/my/vpsoffer",
+    "label": "حراج سرور مجازی",
+    "discovered_in": "11-mihanwebhost-links.json",
+    "resolution": "retrieved 77-mihanwebhost"
+  },
+  {
+    "url": "https://mihanwebhost.com/my/submitticket.php?step=2&deptid=21",
+    "label": "سرور مجازی",
+    "discovered_in": "11-mihanwebhost-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/store/pln-qtsdy",
+    "label": "پلن اقتصادی سرور مجازی ایران",
+    "discovered_in": "54-milad-links.json",
+    "resolution": "retrieved 25-milad"
+  },
+  {
+    "url": "https://www.miladserver.ir/store/pln-pyh",
+    "label": "پلن پایه سرور مجازی ایران",
+    "discovered_in": "54-milad-links.json",
+    "resolution": "already admitted/retrieved source final-milad-base"
+  },
+  {
+    "url": "https://www.miladserver.ir/store/pln-hrfh-y",
+    "label": "پلن حرفه ای سرور مجازی ایران",
+    "discovered_in": "54-milad-links.json",
+    "resolution": "retrieved 41-milad"
+  },
+  {
+    "url": "https://www.miladserver.ir/cart.php?gid=1",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "54-milad-links.json",
+    "resolution": "retrieved 25-milad"
+  },
+  {
+    "url": "https://www.miladserver.ir/store/srwr-hy-rwp",
+    "label": "خرید سرور مجازی خارجی",
+    "discovered_in": "54-milad-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://crm.spadserver.com/cart.php?gid=3",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 13-spadserver"
+  },
+  {
+    "url": "https://crm.spadserver.com/cart.php?gid=4",
+    "label": "سرور مجازی پیشرفته ایران",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 36-spadserver"
+  },
+  {
+    "url": "https://crm.spadserver.com/cart.php?gid=10",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://crm.spadserver.com/cart.php?gid=49",
+    "label": "سرور مجازی پیشرفته آلمان",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://crm.spadserver.com/cart.php?gid=28",
+    "label": "پلن های ویژه‌ ساعتی BigBlueButton",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 88-spadserver; same BBB listing as 78-spadserver, session service with no VPS resource identity"
+  },
+  {
+    "url": "https://crm.spadserver.com/store/iran-vps",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 13-spadserver"
+  },
+  {
+    "url": "https://crm.spadserver.com/store/iran-semi-dedicate",
+    "label": "سرور مجازی پیشرفته ایران",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 14-spadserver"
+  },
+  {
+    "url": "https://crm.spadserver.com/store/germany-vps",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://crm.spadserver.com/store/germany-semi-dedicate",
+    "label": "سرور مجازی پیشرفته آلمان",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://crm.spadserver.com/store/bigbluebutton-iran",
+    "label": "پلن های ویژه‌ ساعتی BigBlueButton",
+    "discovered_in": "13-spadserver-links.json",
+    "resolution": "retrieved 78-spadserver"
+  },
+  {
+    "url": "https://tadserver.com/shatel/",
+    "label": "سرور اختصاصی شاتل",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://tadserver.com/respina-vps/#",
+    "label": "سرور مجازی",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "retrieved 03-tadserver"
+  },
+  {
+    "url": "https://tadserver.com/iran-vps/",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "already admitted/retrieved source tadserver"
+  },
+  {
+    "url": "https://tadserver.com/shatel-vps/",
+    "label": "سرور مجازی شاتل",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "retrieved 04-tadserver"
+  },
+  {
+    "url": "https://tadserver.com/iran-vps-nvme/",
+    "label": "سرور مجازی NVMe",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "retrieved 39-tadserver"
+  },
+  {
+    "url": "https://tadserver.ir/wp-login.php?redirect_to=https%3A%2F%2Ftadserver.ir%2Fwp-admin%2F&reauth=1",
+    "label": "سرور مجازی ۲ گیگ رم",
+    "discovered_in": "03-tadserver-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/storage/iran/#",
+    "label": "مدیریت سرور مجازی و اختصاصی",
+    "discovered_in": "66-azardata-links.json",
+    "resolution": "retrieved 66-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/managed/iran/#",
+    "label": "مدیریت سرور مجازی و اختصاصی",
+    "discovered_in": "67-azardata-links.json",
+    "resolution": "retrieved 67-azardata"
+  },
+  {
+    "url": "https://irvm.org/virtual-server/",
+    "label": "سرور مجازی ارائه سرور مجازی ایران و خارج پورت ۱۰ گیگابیت",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "already admitted/retrieved source irvm-family"
+  },
+  {
+    "url": "https://irvm.org/dedicated-server/",
+    "label": "سرور اختصاصی سرور اختصاصی رسپینا و کولوکیشن",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-iran/",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 06-irvm"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-germany/",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-finland/",
+    "label": "سرور مجازی فنلاند",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-netherland/",
+    "label": "سرور مجازی هلند",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-france/",
+    "label": "سرور مجازی فرانسه",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-raspina/",
+    "label": "سرور مجازی رسپینا",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 07-irvm"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-afranet/",
+    "label": "سرور مجازی افرانت",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 08-irvm"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-asiatech/",
+    "label": "سرور مجازی آسیاتک",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 09-irvm"
+  },
+  {
+    "url": "https://irvm.org/سرور-مجازی-شاتل/",
+    "label": "سرور مجازی شاتل",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 45-irvm"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-fanap/",
+    "label": "سرور مجازی فناپ",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "retrieved 40-irvm"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-hetzner/",
+    "label": "سرور مجازی هتزنر",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-vultr/",
+    "label": "سرور مجازی والتر",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/virtual-server-digitalocean/",
+    "label": "سرور مجازی دیجیتال اوشن",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://irvm.org/dedicated-server-iran/",
+    "label": "ایران (رسپینا)",
+    "discovered_in": "08-irvm-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/managed/germany/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "62-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://docs.liara.ir/iaas/about/",
+    "label": "آموزش استفاده از سرور مجازی",
+    "discovered_in": "01-liara-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting",
+    "label": "بازار سرور مجازی مقایسه و انتخاب پلن‌های VPS از همه لوکیشن‌ها",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "retrieved 32-sonhost"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting/cloud-vps-europe",
+    "label": "سرور ابری اروپا Cloud VPS اروپا با منابع منعطف و زیرساخت پایدار",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting/germany-kvm",
+    "label": "سرور مجازی آلمان KVM آلمان با منابع اختصاصی و شبکه اروپایی پایدار",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting/iran-kvm",
+    "label": "سرور مجازی ایران KVM ایران با تاخیر پایین و دسترسی سریع داخل کشور",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "already admitted/retrieved source final-sonhost-iran"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting/lithuania-kvm",
+    "label": "سرور مجازی لیتوانی KVM لیتوانی با منابع اختصاصی و شبکه پایدار اروپا",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://7ho.st/vps-hosting/storage",
+    "label": "سرور مجازی حجیم Storage VPS برای بکاپ، آرشیو و نگهداری داده‌های حجیم",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "retrieved 81-sonhost"
+  },
+  {
+    "url": "https://blog.7ho.st/benefits-vps-comparing-shared-hosting/",
+    "label": "مزایای سرور مجازی (VPS) در مقایسه با هاست اشتراکی چیست؟",
+    "discovered_in": "32-sonhost-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://my.webdade.com/order/mikrotik-vps?promocode=Mikrotik",
+    "label": "خرید سرور مجازی میکروتیک با 50% تخفیف",
+    "discovered_in": "57-webdade-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://webdade.com/blog/installing-mikrotik-on-vps-server",
+    "label": "نصب میکروتیک روی سرور مجازی",
+    "discovered_in": "57-webdade-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://webdade.com/blog/log-in-mikrotik-virtual-server",
+    "label": "آموزش ورود به سرور مجازی میکروتیک",
+    "discovered_in": "57-webdade-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://webdade.com/blog/mikrotik-security-and-hack-prevention",
+    "label": "امنیت میکروتیک+6 روش جلوگیری از هک میکروتیک Port knocking",
+    "discovered_in": "57-webdade-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://webdade.com/blog/installing-mikrotik-accounting-and-user-manager",
+    "label": "نصب User manager در میکروتیک+معرفی تنظیمات اکانتینگ",
+    "discovered_in": "57-webdade-links.json",
+    "resolution": "article/documentation/account/contact excluded"
+  },
+  {
+    "url": "https://my.webdade.com/order/iran-vps-platinum",
+    "label": "سرور مجازی پلاتینیوم ایران HPe Gen11",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "order endpoint excluded; marketing product family already fully reviewed"
+  },
+  {
+    "url": "https://my.webdade.com/store/iran-vps",
+    "label": "سرور مجازی ایران Standard",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "retrieved 84-webdade"
+  },
+  {
+    "url": "https://my.webdade.com/store/nl-vps",
+    "label": "سرور مجازی هلند | سری VIP HPe Gen11",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.webdade.com/store/lite-vps-nl",
+    "label": "سرور مجازی هلند | سری Lite HPe Gen10+",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.webdade.com/cloud.php",
+    "label": "سرور مجازی ابری",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "retrieved 83-webdade"
+  },
+  {
+    "url": "https://my.webdade.com/store/de-vps",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.webdade.com/store/usa-vps",
+    "label": "سرور مجازی آمریکا",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.webdade.com/store/uae-server",
+    "label": "سرور مجازی امارات",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://my.webdade.com/store/mikrotik-vps",
+    "label": "سرور مجازی میکروتیک « !محصول جدید »",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "retrieved 85-webdade"
+  },
+  {
+    "url": "https://my.webdade.com/order/bourse",
+    "label": "سرور مجازی بورس",
+    "discovered_in": "85-webdade-links.json",
+    "resolution": "order endpoint excluded; marketing product family already fully reviewed"
+  },
+  {
+    "url": "https://azardata.net/vps/gitlab/iran/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "46-azardata-links.json",
+    "resolution": "retrieved 63-azardata"
+  },
+  {
+    "url": "https://azardata.net/vps/gitlab/germany/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "46-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://azardata.net/vps/storage/germany/",
+    "label": "مشاهده پلن ها",
+    "discovered_in": "60-azardata-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://liara.ir/products/gaming-vps/",
+    "label": "سرور مجازی گیم",
+    "discovered_in": "80-liara-links.json",
+    "resolution": "retrieved 50-liara"
+  },
+  {
+    "url": "https://logicserver.org/vps-management/#",
+    "label": "سرور مجازی",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "retrieved 12-logicserver"
+  },
+  {
+    "url": "https://logicserver.org/iran-vps/",
+    "label": "سرور مجازی ایران",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "already admitted/retrieved source additional-logicserver"
+  },
+  {
+    "url": "https://logicserver.org/germany-vps/",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://logicserver.org/finland-vps/",
+    "label": "سرور مجازی فنلاند",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://logicserver.org/usa-vps/",
+    "label": "سرور مجازی آمریکا",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://logicserver.org/trade-vps/",
+    "label": "سرور مجازی تریدینگ",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "retrieved 82-logicserver"
+  },
+  {
+    "url": "https://logicserver.org/vps-management-germany/",
+    "label": "سرور مجازی مدیریت شده آلمان",
+    "discovered_in": "12-logicserver-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/hetzner-cloud-vps",
+    "label": "سرور مجازی کلاود Hetzner",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/leaseweb-vps",
+    "label": "سرور مجازی LeaseWeb",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/ovh-vps",
+    "label": "سرور مجازی ovh",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-nvme-vps",
+    "label": "سرور مجازی NVMe پیشگامان ایران",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "already admitted/retrieved source final-dyar-pishgaman"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/iran-pishgaman-eco-vps",
+    "label": "سرور مجازی اقتصادی پیشگامان ایران",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "retrieved 24-dyar"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/iran-respina-dedicated",
+    "label": "سرور اختصاصی ایران رسپینا",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "dedicated physical server/colocation excluded"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/iran-respina-nvme-vps",
+    "label": "سرور مجازی NVMe رسپینا ایران",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "already admitted/retrieved source final-dyar-respina"
+  },
+  {
+    "url": "https://client.dyarhost.com/store/vps-reseller",
+    "label": "نمایندگی فروش سرور مجازی",
+    "discovered_in": "24-dyar-links.json",
+    "resolution": "non-individual-compute service excluded"
+  },
+  {
+    "url": "https://negarnovin.com/turkey-vps/",
+    "label": "🇹🇷 سرور مجازی ترکیه Istanbul • پینگ نزدیک به ایران",
+    "discovered_in": "27-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/germany-vps/",
+    "label": "🇩🇪 سرور مجازی آلمان Frankfurt • شبکهٔ پرسرعت",
+    "discovered_in": "27-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://negarnovin.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7/",
+    "label": "🇪🇸 سرور مجازی اسپانیا Sevilla • GDPR • NVMe SSD",
+    "discovered_in": "27-negarnovin-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/germany/",
+    "label": "سرور مجازی آلمان",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/netherlands/",
+    "label": "سرور مجازی هلند",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/france/",
+    "label": "سرور مجازی فرانسه",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/uk/",
+    "label": "سرور مجازی انگلستان",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign UK location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/finland/",
+    "label": "سرور مجازی فنلاند",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://www.miladserver.ir/vps/poland/",
+    "label": "سرور مجازی لهستان",
+    "discovered_in": "33-milad-links.json",
+    "resolution": "foreign location excluded"
+  },
+  {
+    "url": "https://crm.7ho.st/index.php?rp=/store/srwr-mjzy-hjym/lt-st-01",
+    "label": "سفارش سرور مجازی ←",
+    "discovered_in": "81-sonhost-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://crm.7ho.st/index.php?rp=/store/lt-servers/1-tb",
+    "label": "سفارش سرور مجازی ←",
+    "discovered_in": "81-sonhost-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://crm.7ho.st/index.php?rp=/store/lt-servers/2-tb",
+    "label": "سفارش سرور مجازی ←",
+    "discovered_in": "81-sonhost-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://crm.7ho.st/index.php?rp=/store/lt-servers/3-tb",
+    "label": "سفارش سرور مجازی ←",
+    "discovered_in": "81-sonhost-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  },
+  {
+    "url": "https://crm.7ho.st/index.php?rp=/store/lt-servers/4-tb",
+    "label": "سفارش سرور مجازی ←",
+    "discovered_in": "81-sonhost-links.json",
+    "resolution": "individual order link; product listing already reviewed, no order action"
+  }
+]

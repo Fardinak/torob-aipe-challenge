@@ -1,0 +1,526 @@
+[
+  {
+    "label": "",
+    "url": "https://console.liara.ir/"
+  },
+  {
+    "label": "",
+    "url": "https://liara.ir/"
+  },
+  {
+    "label": "سرور مجازی ویندوز",
+    "url": "https://liara.ir/products/windows-vps/"
+  },
+  {
+    "label": "هاست اشتراکی ساعتی",
+    "url": "https://liara.ir/products/shared-host/"
+  },
+  {
+    "label": "هاست ایرانی ساعتی",
+    "url": "https://liara.ir/products/iranian-host/"
+  },
+  {
+    "label": "سرور مجازی ترید ساعتی",
+    "url": "https://liara.ir/products/trade-vps/"
+  },
+  {
+    "label": "سرور مجازی لینوکس ساعتی",
+    "url": "https://liara.ir/products/linux-server/"
+  },
+  {
+    "label": "هاست ابری ساعتی",
+    "url": "https://liara.ir/products/cloud-host/"
+  },
+  {
+    "label": "هاست ابری رایگان",
+    "url": "https://liara.ir/products/free-cloud-host/"
+  },
+  {
+    "label": "هاست پربازدید",
+    "url": "https://liara.ir/products/high-traffic-host/"
+  },
+  {
+    "label": "هاست ووکامرس",
+    "url": "https://liara.ir/products/woocommerce-hosting/"
+  },
+  {
+    "label": "هاست لینوکس ساعتی",
+    "url": "https://liara.ir/products/linux-host/"
+  },
+  {
+    "label": "خرید هاست ارزان",
+    "url": "https://liara.ir/products/buy-host/"
+  },
+  {
+    "label": "هاست دانلود ساعتی",
+    "url": "https://liara.ir/products/download-host/"
+  },
+  {
+    "label": "سرور مجازی ایرانی",
+    "url": "https://liara.ir/products/iranian-vps/"
+  },
+  {
+    "label": "بازی‌های آنلاین و سرورهای گیم",
+    "url": "https://liara.ir/products/gaming-vps/"
+  },
+  {
+    "label": "هاست ایمیل سازمانی",
+    "url": "https://liara.ir/products/business-email/"
+  },
+  {
+    "label": "هاست اختصاصی",
+    "url": "https://liara.ir/products/dedicated-host/"
+  },
+  {
+    "label": "دیتابیس ابری",
+    "url": "https://liara.ir/products/cloud-database/"
+  },
+  {
+    "label": "هوش مصنوعی ارزان",
+    "url": "https://liara.ir/products/free-ai/"
+  },
+  {
+    "label": "هوش مصنوعی GPT",
+    "url": "https://liara.ir/products/chatgpt/"
+  },
+  {
+    "label": "هوش مصنوعی Google Gemini",
+    "url": "https://liara.ir/products/google-gemini/"
+  },
+  {
+    "label": "هوش مصنوعی کوئن (Qwen)",
+    "url": "https://liara.ir/products/qwen/"
+  },
+  {
+    "label": "هوش مصنوعی پرپلکسیتی (Perplexity)",
+    "url": "https://liara.ir/products/perplexity/"
+  },
+  {
+    "label": "هوش مصنوعی گروک (Grok)",
+    "url": "https://liara.ir/products/grok/"
+  },
+  {
+    "label": "هوش مصنوعی کلاد (Claude)",
+    "url": "https://liara.ir/products/claude/"
+  },
+  {
+    "label": "هوش مصنوعی دیپ سیک (DeepSeek)",
+    "url": "https://liara.ir/products/deepseek/"
+  },
+  {
+    "label": "هوش مصنوعی متا (لاما)",
+    "url": "https://liara.ir/products/meta/"
+  },
+  {
+    "label": "هوش مصنوعی میسترال",
+    "url": "https://liara.ir/products/mistral/"
+  },
+  {
+    "label": "هوش مصنوعی مونشات کیمی",
+    "url": "https://liara.ir/products/moonshot/"
+  },
+  {
+    "label": "هوش مصنوعی مینی مکس (MiniMax)",
+    "url": "https://liara.ir/products/minimax/"
+  },
+  {
+    "label": "هوش مصنوعی تولید عکس",
+    "url": "https://liara.ir/products/image-generator/"
+  },
+  {
+    "label": "هوش مصنوعی زد ای آی (Z.AI)",
+    "url": "https://liara.ir/products/zai/"
+  },
+  {
+    "label": "قیمت‌ها",
+    "url": "https://liara.ir/pricing/"
+  },
+  {
+    "label": "آموزش",
+    "url": "https://docs.liara.ir/tv"
+  },
+  {
+    "label": "مستندات",
+    "url": "https://docs.liara.ir/"
+  },
+  {
+    "label": "وبلاگ",
+    "url": "https://liara.ir/blog/"
+  },
+  {
+    "label": "میرورها",
+    "url": "https://liara.ir/mirrors/"
+  },
+  {
+    "label": "تغییرات اخیر",
+    "url": "https://liara.ir/changelog/"
+  },
+  {
+    "label": "۰۲۵ ۳۲۰۹۸۰۰۰",
+    "url": "tel:02532098000"
+  },
+  {
+    "label": "ورود يا ثبت‌نام",
+    "url": "https://console.liara.ir/auth"
+  },
+  {
+    "label": "هوش مصنوعی ( AI )",
+    "url": "https://liara.ir/products/ai/"
+  },
+  {
+    "label": "ایمیل ( Email )",
+    "url": "https://liara.ir/products/email/"
+  },
+  {
+    "label": "سامانه مدیریت دامنه ( DNS )",
+    "url": "https://liara.ir/products/dns/"
+  },
+  {
+    "label": "ذخیره‌سازی ابری ( Object Storage )",
+    "url": "https://liara.ir/products/object-storage/"
+  },
+  {
+    "label": "برنامه‌های آماده ( One Click App )",
+    "url": "https://liara.ir/one-click-apps/"
+  },
+  {
+    "label": "وردپرس‌ اختصاصی جدید ( Wordpress )",
+    "url": "https://liara.ir/products/wordpress-host/"
+  },
+  {
+    "label": "سرور مجازی ابری ( IaaS )",
+    "url": "https://liara.ir/products/cloud-server/"
+  },
+  {
+    "label": "دیتابیس‌ ( DBaaS )",
+    "url": "https://liara.ir/products/linux-server/#"
+  },
+  {
+    "label": "پلتفرم ( PaaS )",
+    "url": "https://liara.ir/products/linux-server/#"
+  },
+  {
+    "label": "",
+    "url": "https://liara.ir/"
+  },
+  {
+    "label": "",
+    "url": "tel:02532098000"
+  },
+  {
+    "label": "ورود يا ثبت‌نام",
+    "url": "https://console.liara.ir/auth"
+  },
+  {
+    "label": "درباره ما",
+    "url": "https://liara.ir/about/"
+  },
+  {
+    "label": "قیمت‌ها",
+    "url": "https://liara.ir/pricing/"
+  },
+  {
+    "label": "میرورها",
+    "url": "https://liara.ir/mirrors/"
+  },
+  {
+    "label": "تغییرات اخیر",
+    "url": "https://liara.ir/changelog/"
+  },
+  {
+    "label": "پشتیبانی",
+    "url": "https://console.liara.ir/tickets"
+  },
+  {
+    "label": "ورود يا ثبت‌نام",
+    "url": "https://console.liara.ir/auth"
+  },
+  {
+    "label": "وبلاگ",
+    "url": "https://liara.ir/blog/"
+  },
+  {
+    "label": "ویدیوها",
+    "url": "https://docs.liara.ir/tv"
+  },
+  {
+    "label": "مستندات",
+    "url": "https://docs.liara.ir"
+  },
+  {
+    "label": "خرید سرور مجازی لینوکس دائمی",
+    "url": "https://console.liara.ir/vms"
+  },
+  {
+    "label": "شروع کنید",
+    "url": "https://console.liara.ir/"
+  },
+  {
+    "label": "سرور مجازی ابری",
+    "url": "https://liara.ir/products/cloud-server"
+  },
+  {
+    "label": "ارسال تیکت (۲۴ ساعته)",
+    "url": "https://console.liara.ir/tickets/create"
+  },
+  {
+    "label": "تلفن واحد فروش: ۰۲۵-۳۲۰۹۸۰۰۰",
+    "url": "tel:02532098000"
+  },
+  {
+    "label": "لینکدین",
+    "url": "https://www.linkedin.com/company/liara-cloud/"
+  },
+  {
+    "label": "اینستاگرام",
+    "url": "https://www.instagram.com/liara_cloud/"
+  },
+  {
+    "label": "تلگرام",
+    "url": "https://t.me/liara_cloud"
+  },
+  {
+    "label": "گیت‌هاب",
+    "url": "https://github.com/liara-cloud"
+  },
+  {
+    "label": "PHP",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%BE%DB%8C-%D8%A7%DA%86-%D9%BE%DB%8C-php/"
+  },
+  {
+    "label": "VueJS",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%88%DB%8C%D9%88-%D8%AC%DB%8C-%D8%A7%D8%B3-vue/"
+  },
+  {
+    "label": "Flask",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%81%D9%84%D8%B3%DA%A9-flask/"
+  },
+  {
+    "label": "Net.",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-dotnet/"
+  },
+  {
+    "label": "React",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%B1%DB%8C-%D8%A7%DA%A9%D8%AA-react/"
+  },
+  {
+    "label": "Angular",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D9%86%DA%AF%D9%88%D9%84%D8%A7%D8%B1-angular/"
+  },
+  {
+    "label": "NodeJS",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%86%D9%88%D8%AF-%D8%AC%DB%8C-%D8%A7%D8%B3-node/"
+  },
+  {
+    "label": "Laravel",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%84%D8%A7%D8%B1%D8%A7%D9%88%D9%84-laravel/"
+  },
+  {
+    "label": "Python",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-python/"
+  },
+  {
+    "label": "Django",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%AC%D9%86%DA%AF%D9%88-django/"
+  },
+  {
+    "label": "NextJS",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%86%DA%A9%D8%B3%D8%AA-%D8%AC%DB%8C-%D8%A7%D8%B3-next/"
+  },
+  {
+    "label": "NuxtJS",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D9%86%D8%A7%DA%A9%D8%B3%D8%AA-%D8%AC%DB%8C-%D8%A7%D8%B3-nuxt/"
+  },
+  {
+    "label": "Golang",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%DA%AF%D9%88%D9%84%D9%86%DA%AF-golang/"
+  },
+  {
+    "label": "Docker",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%AF%D8%A7%DA%A9%D8%B1-docker/"
+  },
+  {
+    "label": "MySQL",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-mysql/"
+  },
+  {
+    "label": "MariaDB",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-mariadb/"
+  },
+  {
+    "label": "PostgreSQL",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-postgre-sql/"
+  },
+  {
+    "label": "SQL Server",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-sql-server/"
+  },
+  {
+    "label": "MongoDB",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-mongo/"
+  },
+  {
+    "label": "Redis",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-redis/"
+  },
+  {
+    "label": "RabbitMQ",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-rabbit/"
+  },
+  {
+    "label": "Elastic",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-elastic-search/"
+  },
+  {
+    "label": "ClickHouse",
+    "url": "https://liara.ir/landing/%D9%87%D8%A7%D8%B3%D8%AA-%D8%A7%D8%A8%D8%B1%DB%8C-clickhouse/"
+  },
+  {
+    "label": "Ghost",
+    "url": "https://liara.ir/one-click-apps/ghost/"
+  },
+  {
+    "label": "Soketi",
+    "url": "https://liara.ir/one-click-apps/soketi/"
+  },
+  {
+    "label": "Grafana",
+    "url": "https://liara.ir/one-click-apps/grafana/"
+  },
+  {
+    "label": "Odoo",
+    "url": "https://liara.ir/one-click-apps/odoo/"
+  },
+  {
+    "label": "Code",
+    "url": "https://liara.ir/one-click-apps/code%20server/"
+  },
+  {
+    "label": "Metabase",
+    "url": "https://liara.ir/one-click-apps/metabase/"
+  },
+  {
+    "label": "Kibana",
+    "url": "https://liara.ir/one-click-apps/kibana/"
+  },
+  {
+    "label": "Mattermost",
+    "url": "https://liara.ir/one-click-apps/mattermost/"
+  },
+  {
+    "label": "همه‌ی برنامه‌های آماده",
+    "url": "https://liara.ir/one-click-apps/"
+  },
+  {
+    "label": "ایمیل",
+    "url": "https://liara.ir/products/email/"
+  },
+  {
+    "label": "وردپرس‌ اختصاصی",
+    "url": "https://liara.ir/products/wordpress-host/"
+  },
+  {
+    "label": "سامانه مدیریت دامنه",
+    "url": "https://liara.ir/products/dns/"
+  },
+  {
+    "label": "ذخیره‌سازی ابری",
+    "url": "https://liara.ir/products/object-storage/"
+  },
+  {
+    "label": "سرور مجازی ابری",
+    "url": "https://liara.ir/products/cloud-server/"
+  },
+  {
+    "label": "هوش مصنوعی",
+    "url": "https://liara.ir/products/ai/"
+  },
+  {
+    "label": "مخزن نرم‌افزاری",
+    "url": "https://liara.ir/mirrors/"
+  },
+  {
+    "label": "قیمت‌ها",
+    "url": "https://liara.ir/pricing/"
+  },
+  {
+    "label": "وبلاگ",
+    "url": "https://liara.ir/blog/"
+  },
+  {
+    "label": "مستندات",
+    "url": "https://docs.liara.ir/"
+  },
+  {
+    "label": "درباره ما",
+    "url": "https://liara.ir/about/"
+  },
+  {
+    "label": "شرایط استفاده از خدمات",
+    "url": "https://liara.ir/terms/"
+  },
+  {
+    "label": "توافق‌نامه سطح کیفیت",
+    "url": "https://liara.ir/sla/"
+  },
+  {
+    "label": "سیاست حفظ حریم خصوصی",
+    "url": "https://liara.ir/privacy-policy/"
+  },
+  {
+    "label": "کشف آسیب‌پذیری (Bug Bounty)",
+    "url": "https://liara.ir/bug-bounty/"
+  },
+  {
+    "label": "گزارش سوءاستفاده (Report Abuse)",
+    "url": "https://liara.ir/abuse/"
+  },
+  {
+    "label": "سرور مجازی ویندوز",
+    "url": "https://liara.ir/products/windows-vps/"
+  },
+  {
+    "label": "هاست لینوکس ساعتی",
+    "url": "https://liara.ir/products/linux-host/"
+  },
+  {
+    "label": "سرور مجازی لینوکس ساعتی",
+    "url": "https://liara.ir/products/linux-server/"
+  },
+  {
+    "label": "بازی‌های آنلاین و سرورهای گیم",
+    "url": "https://liara.ir/products/gaming-vps/"
+  },
+  {
+    "label": "هاست ابری ساعتی",
+    "url": "https://liara.ir/products/cloud-host/"
+  },
+  {
+    "label": "هاست ابری رایگان",
+    "url": "https://liara.ir/products/free-cloud-host/"
+  },
+  {
+    "label": "هاست اختصاصی",
+    "url": "https://liara.ir/products/dedicated-host/"
+  },
+  {
+    "label": "هاست پربازدید",
+    "url": "https://liara.ir/products/high-traffic-host/"
+  },
+  {
+    "label": "خرید هاست ارزان",
+    "url": "https://liara.ir/products/buy-host/"
+  },
+  {
+    "label": "sales[@]liara.ir",
+    "url": "mailto:sales@liara.ir"
+  },
+  {
+    "label": "۰۲۵-۳۲۰۹۸۰۰۰",
+    "url": "tel:02532098000"
+  },
+  {
+    "label": "",
+    "url": "https://trustseal.enamad.ir/?id=341854&Code=YcecWnyU0rb1dXAsfwGz"
+  }
+]

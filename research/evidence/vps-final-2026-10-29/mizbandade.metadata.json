@@ -1,0 +1,28 @@
+{
+  "requested_url": "https://www.mizbandade.com",
+  "attempt_utc": "2026-10-29T09:53:14.899894+00:00",
+  "final_url": "https://www.mizbandade.com",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Thu, 29 Oct 2026 09:53:09 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://www.mizbandade.com/wp-json/>; rel=\"https://api.w.org/\"",
+    "Etag": "\"29-1792770287;;;\"",
+    "X-LiteSpeed-Cache": "hit",
+    "X-Mcdn-Shield": "HIT",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "interest-cohort=(), browsing-topics=()",
+    "X-XSS-Protection": "0",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Cache": "HIT",
+    "X-Edge": "Mizbandade"
+  },
+  "bytes": 572633,
+  "sha256": "3810a541dd8d13bbfa1bade0906eb6d085d18d169dc50ba151dac841f37fa252",
+  "saved_utc": "2026-10-29T09:53:15.630539+00:00"
+}

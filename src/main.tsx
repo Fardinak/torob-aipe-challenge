@@ -187,8 +187,10 @@ function BillingDetails({ plan }: { plan: Plan }) {
         {plan.revisions.map((revision) => (
           <p key={revision.revision_id}>
             <bdi>{revision.evidence.last_verified_at ?? "نامشخص"}</bdi> —{" "}
-            {number(revision.advertised_monthly_toman)} تومان؛{" "}
-            {number(revision.ram_gb)} GB رم
+            {revision.advertised_monthly_toman === null
+              ? "مرجع ماهانه نامشخص"
+              : `${number(revision.advertised_monthly_toman)} تومان`}
+            ؛ {number(revision.ram_gb)} GB رم
             {evidenceIsStale(revision.evidence.last_verified_at) && (
               <small className="evidence-warning">
                 شواهد تاریخی قدیمی؛ بیش از ۳۰ روز از تأیید گذشته است.
@@ -211,6 +213,8 @@ function BillingDetails({ plan }: { plan: Plan }) {
 }
 
 const unpricedReasons: Record<string, string> = {
+  monthly_reference_unavailable:
+    "مرجع ماهانه به تومان در دسترس نیست؛ تبدیل قیمت انجام نشده است.",
   base_price_unresolved:
     "قیمت پایه تأیید نشده یا متعارض است؛ قابل مقایسه نیست.",
   traffic_evidence_unresolved: "شواهد لازم برای محاسبه ترافیک حل‌نشده است.",
@@ -297,11 +301,19 @@ function Offer({
         <div className="price">
           {cheapest && <span className="badge">قیمت شروع این پیکربندی</span>}
           <strong>
-            {plan.evidence.facts.advertised_monthly_toman === "verified"
+            {plan.evidence.facts.advertised_monthly_toman === "verified" &&
+            plan.advertised_monthly_toman !== null
               ? number(quote?.subtotalToman ?? plan.advertised_monthly_toman)
-              : "قیمت نامشخص"}
+              : plan.published_tariff &&
+                  plan.evidence.facts.published_tariff === "verified"
+                ? number(plan.published_tariff.amount)
+                : "قیمت نامشخص"}
           </strong>
-          <span>تومان / ماه</span>
+          <span>
+            {plan.advertised_monthly_toman === null && plan.published_tariff
+              ? `${plan.published_tariff.currency === "USD" ? "دلار آمریکا" : "تومان"} / ${{ hour: "ساعت", day: "روز", month: "ماه" }[plan.published_tariff.basis]}`
+              : "تومان / ماه"}
+          </span>
           <small>{plan.billing_display}</small>
           <small>
             آخرین تأیید موفق:{" "}

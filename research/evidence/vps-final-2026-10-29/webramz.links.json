@@ -1,0 +1,678 @@
+[
+  {
+    "text": "",
+    "url": "https://webramz.com/"
+  },
+  {
+    "text": "آژانس فناوری اطلاعات",
+    "url": "https://webramz.com/"
+  },
+  {
+    "text": "",
+    "url": "https://webramz.com/"
+  },
+  {
+    "text": "خرید سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://webramz.com/server/dedicated"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://webramz.com/server/vps/iran"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://webramz.com/server/dedicated/iran"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://webramz.com/server/vps/germany"
+  },
+  {
+    "text": "سرور اختصاصی آلمان",
+    "url": "https://webramz.com/server/dedicated/germany"
+  },
+  {
+    "text": "سرور مجازی فرانسه",
+    "url": "https://webramz.com/server/vps/france"
+  },
+  {
+    "text": "مدیریت سرور",
+    "url": "https://webramz.com/server/management"
+  },
+  {
+    "text": "خرید هاست",
+    "url": "https://webramz.com/hosting"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://webramz.com/hosting/wordpress"
+  },
+  {
+    "text": "هاست ووکامرس",
+    "url": "https://webramz.com/hosting/woocommerce"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://webramz.com/hosting/linux"
+  },
+  {
+    "text": "هاست ایمیل",
+    "url": "https://webramz.com/hosting/email"
+  },
+  {
+    "text": "هاست پایتون",
+    "url": "https://webramz.com/hosting/python"
+  },
+  {
+    "text": "هاست پربازدید",
+    "url": "https://webramz.com/hosting/high-traffic"
+  },
+  {
+    "text": "هاست ویندوز",
+    "url": "https://webramz.com/hosting/windows"
+  },
+  {
+    "text": "هاست دانلود",
+    "url": "https://webramz.com/hosting/download"
+  },
+  {
+    "text": "دامنه اینترنتی",
+    "url": "https://webramz.com/domain/registration"
+  },
+  {
+    "text": "خرید دامنه",
+    "url": "https://webramz.com/domain/registration"
+  },
+  {
+    "text": "تمدید دامنه",
+    "url": "https://webramz.com/domain/renew"
+  },
+  {
+    "text": "دامنه IR",
+    "url": "https://webramz.com/domain/ir"
+  },
+  {
+    "text": "ایرنیک",
+    "url": "https://webramz.com/domain/irnic"
+  },
+  {
+    "text": "خرید SSL",
+    "url": "https://webramz.com/domain/ssl-certificate"
+  },
+  {
+    "text": "انتقال دامنه",
+    "url": "https://webramz.com/domain/transfer"
+  },
+  {
+    "text": "طراحی سایت",
+    "url": "https://webramz.com/website-design"
+  },
+  {
+    "text": "طراحی سایت شرکتی",
+    "url": "https://webramz.com/website-design/corporate"
+  },
+  {
+    "text": "طراحی سایت اختصاصی",
+    "url": "https://webramz.com/website-design/exclusive"
+  },
+  {
+    "text": "طراحی سایت فروشگاهی",
+    "url": "https://webramz.com/website-design/ecommerce"
+  },
+  {
+    "text": "طراحی سایت شخصی",
+    "url": "https://webramz.com/website-design/personal"
+  },
+  {
+    "text": "طراحی سایت پزشکی",
+    "url": "https://webramz.com/website-design/medical"
+  },
+  {
+    "text": "طراحی سایت وردپرس",
+    "url": "https://webramz.com/website-design/wordpress"
+  },
+  {
+    "text": "نمونه طراحی سایت",
+    "url": "https://webramz.com/website-design/portfolio"
+  },
+  {
+    "text": "پشتیبانی سایت وردپرس",
+    "url": "https://webramz.com/website-design/wordpress-website-support"
+  },
+  {
+    "text": "بازاریابی دیجیتال",
+    "url": "https://webramz.com/marketing"
+  },
+  {
+    "text": "سئو سایت",
+    "url": "https://webramz.com/marketing/seo"
+  },
+  {
+    "text": "تحلیل سئو",
+    "url": "https://webramz.com/marketing/seo/analysis"
+  },
+  {
+    "text": "سئوی شرکتی",
+    "url": "https://webramz.com/marketing/seo/corporate"
+  },
+  {
+    "text": "سئوی فروشگاهی",
+    "url": "https://webramz.com/marketing/seo/ecommerce"
+  },
+  {
+    "text": "سئو سایت پزشکی",
+    "url": "https://webramz.com/marketing/seo/medical"
+  },
+  {
+    "text": "تولید محتوا",
+    "url": "https://webramz.com/marketing/content-production"
+  },
+  {
+    "text": "تبلیغات گوگل",
+    "url": "https://webramz.com/marketing/google-ads"
+  },
+  {
+    "text": "نمونه کار سئو سایت",
+    "url": "https://webramz.com/marketing/seo/portfolio"
+  },
+  {
+    "text": "درباره وب رمز",
+    "url": "https://webramz.com/about-us"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://webramz.com/contact"
+  },
+  {
+    "text": "ارتباط با مدیران",
+    "url": "https://webramz.com/contact-managers"
+  },
+  {
+    "text": "وبلاگ",
+    "url": "https://webramz.com/blog"
+  },
+  {
+    "text": "روش های پرداخت",
+    "url": "https://webramz.com/payment-methods"
+  },
+  {
+    "text": "شرایط و ضوابط سرویسها",
+    "url": "https://webramz.com/terms-of-services"
+  },
+  {
+    "text": "حریم خصوصی",
+    "url": "https://webramz.com/privacy-policy"
+  },
+  {
+    "text": "فرم استخدام",
+    "url": "https://webramz.com/employment"
+  },
+  {
+    "text": "تخفیف ها",
+    "url": "https://webramz.com/promos"
+  },
+  {
+    "text": "پرتال کاربران",
+    "url": "https://my.webramz.com/app/?action=login"
+  },
+  {
+    "text": "دریافت مشاوره",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "32968 - 021",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "32968 - 021",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "",
+    "url": "https://my.webramz.com/app/?action=login"
+  },
+  {
+    "text": "",
+    "url": "https://webramz.com/"
+  },
+  {
+    "text": "",
+    "url": "https://my.webramz.com/app/?action=login"
+  },
+  {
+    "text": "خانه",
+    "url": "https://webramz.com"
+  },
+  {
+    "text": "سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "",
+    "url": "https://webramz.com/server/vps/iran"
+  },
+  {
+    "text": "خانه",
+    "url": "https://webramz.com"
+  },
+  {
+    "text": "سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "مشاهده پلن‌ها",
+    "url": "https://webramz.com/server/vps/iran#iran-vps-plans"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://webramz.com/server/vps/germany"
+  },
+  {
+    "text": "سرور مجازی فرانسه",
+    "url": "https://webramz.com/server/vps/france"
+  },
+  {
+    "text": "سرور مجازی ویندوز",
+    "url": "https://webramz.com/server/vps/windows"
+  },
+  {
+    "text": "سرور مجازی لینوکس",
+    "url": "https://webramz.com/server/vps/linux"
+  },
+  {
+    "text": "سرور مجازی ترید",
+    "url": "https://webramz.com/server/vps/trade"
+  },
+  {
+    "text": "سرور مجازی تلگرام",
+    "url": "https://webramz.com/server/vps/telegram-bot-vps"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://webramz.com/server/dedicated"
+  },
+  {
+    "text": "خرید سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "مدیریت سرور",
+    "url": "https://webramz.com/server/management"
+  },
+  {
+    "text": "ماهانه",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.webramz.com/cart.php?a=add&pid=265"
+  },
+  {
+    "text": "ماهانه",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.webramz.com/cart.php?a=add&pid=266"
+  },
+  {
+    "text": "ماهانه",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.webramz.com/cart.php?a=add&pid=267"
+  },
+  {
+    "text": "ماهانه",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "ثبت سفارش",
+    "url": "https://my.webramz.com/cart.php?a=add&pid=268"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://webramz.com/server/vps/germany"
+  },
+  {
+    "text": "سرور مجازی فرانسه",
+    "url": "https://webramz.com/server/vps/france"
+  },
+  {
+    "text": "پلن‌ها و قیمت سرور مجازی ایران",
+    "url": "https://webramz.com/server/vps/iran#iran-vps-plans"
+  },
+  {
+    "text": "هاست لینوکس ایران",
+    "url": "https://webramz.com/hosting/linux"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://webramz.com/server/dedicated"
+  },
+  {
+    "text": "خرید سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "مدیریت سرور",
+    "url": "https://webramz.com/server/management"
+  },
+  {
+    "text": "قیمت VPS آلمان",
+    "url": "https://webramz.com/server/vps/germany"
+  },
+  {
+    "text": "قیمت VPS فرانسه",
+    "url": "https://webramz.com/server/vps/france"
+  },
+  {
+    "text": "021 - 32968",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "خرید سرور",
+    "url": "https://webramz.com/server"
+  },
+  {
+    "text": "سرور ایران",
+    "url": "https://webramz.com/server/iran"
+  },
+  {
+    "text": "سرور مجازی",
+    "url": "https://webramz.com/server/vps"
+  },
+  {
+    "text": "سرور مجازی ایران",
+    "url": "https://webramz.com/server/vps/iran"
+  },
+  {
+    "text": "سرور مجازی آلمان",
+    "url": "https://webramz.com/server/vps/germany"
+  },
+  {
+    "text": "سرور مجازی فرانسه",
+    "url": "https://webramz.com/server/vps/france"
+  },
+  {
+    "text": "سرور مجازی بات تلگرام",
+    "url": "https://webramz.com/server/vps/telegram-bot-vps"
+  },
+  {
+    "text": "سرور اختصاصی",
+    "url": "https://webramz.com/server/dedicated"
+  },
+  {
+    "text": "سرور اختصاصی ایران",
+    "url": "https://webramz.com/server/dedicated/iran"
+  },
+  {
+    "text": "سرور اختصاصی آلمان",
+    "url": "https://webramz.com/server/dedicated/germany"
+  },
+  {
+    "text": "مدیریت سرور",
+    "url": "https://webramz.com/server/management"
+  },
+  {
+    "text": "کولوکیشن",
+    "url": "https://webramz.com/server/colocation"
+  },
+  {
+    "text": "هاست و دامنه",
+    "url": "https://webramz.com/hosting"
+  },
+  {
+    "text": "ثبت دامنه",
+    "url": "https://webramz.com/domain/registration"
+  },
+  {
+    "text": "خرید هاست",
+    "url": "https://webramz.com/hosting"
+  },
+  {
+    "text": "هاست لینوکس",
+    "url": "https://webramz.com/hosting/linux"
+  },
+  {
+    "text": "هاست وردپرس",
+    "url": "https://webramz.com/hosting/wordpress"
+  },
+  {
+    "text": "هاست ووکامرس",
+    "url": "https://webramz.com/hosting/woocommerce"
+  },
+  {
+    "text": "هاست پربازدید",
+    "url": "https://webramz.com/hosting/high-traffic"
+  },
+  {
+    "text": "هاست ویندوز",
+    "url": "https://webramz.com/hosting/windows"
+  },
+  {
+    "text": "هاست ایمیل",
+    "url": "https://webramz.com/hosting/email"
+  },
+  {
+    "text": "هاست پایتون",
+    "url": "https://webramz.com/hosting/python"
+  },
+  {
+    "text": "هاست دانلود",
+    "url": "https://webramz.com/hosting/download"
+  },
+  {
+    "text": "گواهینامه SSL",
+    "url": "https://webramz.com/domain/ssl-certificate"
+  },
+  {
+    "text": "طراحی سایت",
+    "url": "https://webramz.com/website-design"
+  },
+  {
+    "text": "طراحی سایت شرکتی",
+    "url": "https://webramz.com/website-design/corporate"
+  },
+  {
+    "text": "طراحی سایت فروشگاهی",
+    "url": "https://webramz.com/website-design/ecommerce"
+  },
+  {
+    "text": "طراحی سایت شخصی",
+    "url": "https://webramz.com/website-design/personal"
+  },
+  {
+    "text": "طراحی سایت اختصاصی",
+    "url": "https://webramz.com/website-design/exclusive"
+  },
+  {
+    "text": "طراحی سایت پزشکی",
+    "url": "https://webramz.com/website-design/medical"
+  },
+  {
+    "text": "طراحی سایت وکالت",
+    "url": "https://webramz.com/website-design/lawyers"
+  },
+  {
+    "text": "طراحی سایت گردشگری",
+    "url": "https://webramz.com/website-design/tourism"
+  },
+  {
+    "text": "طراحی سایت ساختمانی",
+    "url": "https://webramz.com/website-design/construction"
+  },
+  {
+    "text": "طراحی سایت املاک",
+    "url": "https://webramz.com/website-design/realestate"
+  },
+  {
+    "text": "طراحی سایت وردپرس",
+    "url": "https://webramz.com/website-design/wordpress"
+  },
+  {
+    "text": "پشتیبانی سایت وردپرس",
+    "url": "https://webramz.com/website-design/wordpress-website-support"
+  },
+  {
+    "text": "دیجیتال مارکتینگ",
+    "url": "https://webramz.com/marketing"
+  },
+  {
+    "text": "سئو سایت",
+    "url": "https://webramz.com/marketing/seo"
+  },
+  {
+    "text": "مشاوره سئو",
+    "url": "https://webramz.com/marketing/seo/consulting"
+  },
+  {
+    "text": "گوگل ادز",
+    "url": "https://webramz.com/marketing/google-ads"
+  },
+  {
+    "text": "وبلاگ",
+    "url": "https://webramz.com/blog"
+  },
+  {
+    "text": "تماس با ما",
+    "url": "https://webramz.com/contact"
+  },
+  {
+    "text": "ارتباط با مدیران",
+    "url": "https://webramz.com/contact-managers"
+  },
+  {
+    "text": "روش های پرداخت",
+    "url": "https://webramz.com/payment-methods"
+  },
+  {
+    "text": "حفظ حریم خصوصی",
+    "url": "https://webramz.com/privacy-policy"
+  },
+  {
+    "text": "شرایط و ضوابط سرویسها",
+    "url": "https://webramz.com/terms-of-services"
+  },
+  {
+    "text": "نشان",
+    "url": "https://neshan.org/maps/share/2bvs22ex4bts"
+  },
+  {
+    "text": "گوگل",
+    "url": "https://www.google.com/maps/place/Webramz/@35.7713673,51.3521325,17z/data=!3m1!4b1!4m6!3m5!1s0x3f8dfcdf85f22de5:0xf7b53b9a71d90be7!8m2!3d35.771363!4d51.3547074!16s%2Fg%2F11f4plhscb?entry=ttu"
+  },
+  {
+    "text": "",
+    "url": "https://www.google.com/maps/place/Webramz/@35.7716203,51.3572518,17z/data=!3m1!4b1!4m5!3m4!1s0x3f8e07f29edfb871:0x41683c939aa45b4c!8m2!3d35.7716203!4d51.3572518?hl=en"
+  },
+  {
+    "text": "021 - 32968",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "021 - 22 11 81 20-30-40-50",
+    "url": "tel:02122118120"
+  },
+  {
+    "text": "",
+    "url": "https://www.linkedin.com/company/webramz?trk=public_post_follow-view-profile"
+  },
+  {
+    "text": "",
+    "url": "https://x.com/Webramz"
+  },
+  {
+    "text": "",
+    "url": "https://www.instagram.com/webramz/"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/Webramz"
+  },
+  {
+    "text": "",
+    "url": "https://eanjoman.ir/member/oya7kNsEUUA8msCF9LI2r1ufs"
+  },
+  {
+    "text": "",
+    "url": "https://tehran.irannsr.org/fa/page/104366-%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%B9%D8%B6%D8%A7.html?ctp_id=1086&id=38294"
+  },
+  {
+    "text": "",
+    "url": "https://trustseal.enamad.ir/?id=19423&Code=6fVE5FyUE5l6pIDpILH9"
+  },
+  {
+    "text": "وب رمز",
+    "url": "https://webramz.com"
+  },
+  {
+    "text": "WebRamz",
+    "url": "https://webramz.com"
+  },
+  {
+    "text": "ثبت نام کنید ساخت حساب کاربری در وب‌رمز برای مدیریت آسان سرویس‌ها، سفارش‌ها و پشتیبانی سریع",
+    "url": "https://my.webramz.com/app"
+  },
+  {
+    "text": "وارد پرتال شوید دسترسی کامل به سرویس‌ها، فاکتورها، تیکت‌ها و مدیریت دامنه و هاست در یک پنل حرفه‌ای و ساده",
+    "url": "https://my.webramz.com/app/?action=login"
+  },
+  {
+    "text": "تیکت ارسال کنید در هر ساعت از شبانه‌روز با تیم پشتیبانی در ارتباط باشید و درخواست‌های خود را سریع و آسان ثبت کنید",
+    "url": "https://my.webramz.com/submitticket.php"
+  },
+  {
+    "text": "آنلاین چت کنید پاسخگویی سریع و لحظه‌ای به سوالات شما از طریق گفت‌وگوی آنلاین با کارشناسان وب‌رمز",
+    "url": "https://webramz.com/server/vps/iran#"
+  },
+  {
+    "text": "021 - 32968",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "",
+    "url": "https://wa.me/989012423838"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/Saleswebramz"
+  },
+  {
+    "text": "021 - 32968",
+    "url": "tel:02132968"
+  },
+  {
+    "text": "",
+    "url": "https://wa.me/989012423838"
+  },
+  {
+    "text": "",
+    "url": "https://t.me/Saleswebramz"
+  }
+]

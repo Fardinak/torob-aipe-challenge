@@ -1,0 +1,2082 @@
+[
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS -SAS01; پردازنده; 1 vCore; رم; 1 GB; دیسک; 40 GB SAS; ترافیک; 100 GB; 770,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS - SAS02; پردازنده; 2 vCore; رم; 2 GB; دیسک; 80 GB SAS; ترافیک; 100 GB; 1,320,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS - SSD01; پردازنده; 2 vCore; رم; 2 GB; دیسک; 25 GB SSD; ترافیک; 100 GB; 1,275,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS - SSD02; پردازنده; 4 vCore; رم; 4 GB; دیسک; 75 GB SSD; ترافیک; 100 GB; 2,340,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS - NVMe01; پردازنده; 2 vCore; رم; 2 GB; دیسک; 25 GB NVMe; ترافیک; 100 GB; 1,440,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "H-VPS - NVMe02; پردازنده; 4 vCore; رم; 4 GB; دیسک; 50 GB NVMe; ترافیک; 100 GB; 2,220,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "SATA_ECO; پردازنده; 1 vCore; رم; 1 GB; دیسک; 15 GB; ترافیک; 100 GB; 295,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "SSD-ECO; پردازنده; 1 vCore; رم; 1 GB; دیسک; 15 GB; ترافیک; 100 GB; 405,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA01; پردازنده; 1 vCore; رم; 1 GB; دیسک; 40 GB SATA; ترافیک; 100 GB; 345,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA02; پردازنده; 1 vCore; رم; 2 GB; دیسک; 40 GB SATA; ترافیک; 100 GB; 405,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA03; پردازنده; 2 vCore; رم; 2 GB; دیسک; 80 GB SATA; ترافیک; 100 GB; 695,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA04; پردازنده; 2 vCore; رم; 4 GB; دیسک; 120 GB SATA; ترافیک; 100 GB; 955,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA05; پردازنده; 4 vCore; رم; 4 GB; دیسک; 120 GB SATA; ترافیک; 100 GB; 1,210,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA06; پردازنده; 4 vCore; رم; 8 GB; دیسک; 200 GB SATA; ترافیک; 100 GB; 1,650,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA07; پردازنده; 6 vCore; رم; 12 GB; دیسک; 200 GB SATA; ترافیک; 100 GB; 2,150,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA08; پردازنده; 6 vCore; رم; 16 GB; دیسک; 320 GB SATA; ترافیک; 100 GB; 2,695,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA09; پردازنده; 8 vCore; رم; 16 GB; دیسک; 320 GB SATA; ترافیک; 100 GB; 3,025,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SATA10; پردازنده; 8 vCore; رم; 24 GB; دیسک; 320 GB SATA; ترافیک; 100 GB; 3,400,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD01; پردازنده; 1 vCore; رم; 1 GB; دیسک; 25 GB SSD; ترافیک; 100 GB; 475,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD02; پردازنده; 1 vCore; رم; 2 GB; دیسک; 25 GB SSD; ترافیک; 100 GB; 525,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD03; پردازنده; 2 vCore; رم; 2 GB; دیسک; 50 GB SSD; ترافیک; 100 GB; 885,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD04; پردازنده; 2 vCore; رم; 4 GB; دیسک; 75 GB SSD; ترافیک; 100 GB; 1,185,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD05; پردازنده; 4 vCore; رم; 4 GB; دیسک; 75 GB SSD; ترافیک; 100 GB; 1,430,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD06; پردازنده; 4 vCore; رم; 8 GB; دیسک; 100 GB SSD; ترافیک; 100 GB; 1,910,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD07; پردازنده; 6 vCore; رم; 12 GB; دیسک; 150 GB SSD; ترافیک; 100 GB; 2,475,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD08; پردازنده; 6 vCore; رم; 16 GB; دیسک; 200 GB SSD; ترافیک; 100 GB; 3,315,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - SSD09; پردازنده; 8 vCore; رم; 16 GB; دیسک; 250 GB SSD; ترافیک; 100 GB; 4,050,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - NVMe02; پردازنده; 1 vCore; رم; 2 GB; دیسک; 25 GB NVMe; ترافیک; 100 GB; 630,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - NVMe04; پردازنده; 2 vCore; رم; 4 GB; دیسک; 50 GB NVMe; ترافیک; 100 GB; 1,230,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - NVMe06; پردازنده; 4 vCore; رم; 8 GB; دیسک; 75 GB NVMe; ترافیک; 100 GB; 2,150,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - NVMe07; پردازنده; 6 vCore; رم; 12 GB; دیسک; 100 GB NVMe; ترافیک; 100 GB; 3,150,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS - NVMe09; پردازنده; 8 vCore; رم; 16 GB; دیسک; 150 GB NVMe; ترافیک; 100 GB; 4,700,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS-Bourse01; پردازنده; 6 Core; رم; 8 GB; دیسک; 1 × 50 GB SSD; ترافیک; 100 GB; 1,775,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "safroone-vps",
+    "text": "VPS -VOIP01; پردازنده; 4 Core; رم; 4 GB; دیسک; 1 × 50 GB SSD; ترافیک; 100 GB; 1,235,000; تومان; خرید کنید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_GH; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۲ هسته; رم (GB); ۴ GB; هارد دیسک; ۲۰ GB; SSD; ترافیک; ۳۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۷۸۹,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_e2; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۱ هسته; رم (GB); ۱ GB; هارد دیسک; ۲۰ GB; NVME; ترافیک; ۱۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۵۱۰,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_01; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۱ هسته; رم (GB); ۲ GB; هارد دیسک; ۲۰ GB; NVME; ترافیک; ۱۵۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۶۹۹,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_02; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۱ هسته; رم (GB); ۳ GB; هارد دیسک; ۲۵ GB; NVME; ترافیک; ۲۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۷۶۵,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_03; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۲ هسته; رم (GB); ۴ GB; هارد دیسک; ۳۰ GB; NVME; ترافیک; ۳۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۸۷۹,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_04; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس; پردازنده; ۲ هسته; رم (GB); ۶ GB; هارد دیسک; ۵۰ GB; NVME; ترافیک; ۴۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۱,۲۷۵,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_05; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس بصورت رایگان; Firewall; ۴ هسته; رم (GB); ۱۰ GB; هارد دیسک; ۸۰ GB; NVME; ترافیک; ۵۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۱,۷۱۵,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_06; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس بصورت رایگان; Firewall; ۶ هسته; رم (GB); ۱۶ GB; هارد دیسک; ۱۲۰ GB; NVME; ترافیک; ۷۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۳,۱۰۰,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_07; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس بصورت رایگان; Firewall; ۸ هسته; رم (GB); ۳۲ GB; هارد دیسک; ۱۶۰ GB; NVME; ترافیک; ۱۰۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۴,۳۹۸,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_08; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس بصورت رایگان; Firewall; ۱۰ هسته; رم (GB); ۴۸ GB; هارد دیسک; ۲۸۰ GB; NVME; ترافیک; ۲۵۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۶,۷۳۰,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parsvds-iran",
+    "text": "نام پلان; IR_VPS_09; Firewall + Anti DDOS; فایروال قدرتمند; پارس وی دی اس بصورت رایگان; Firewall; ۱۲ هسته; رم (GB); ۶۴ GB; هارد دیسک; ۴۰۰ GB; NVME; ترافیک; ۴۰۰۰ GB; قابل ارتقا; در طول دوره امکان خرید افزونه ترافیکی میسر می باشد; سیستم عامل; همراه با پنل مدیریتی; کنترل تغییر سیستم عامل; تغییر پسورد ، دسترسی VNC ، Reboot و …; ۸,۹۰۰,۰۰۰; تومان",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "2GB VPS IRAN; 700,000 تومان; Monthly; Ram : 2GB; CPU : 1Core; Disk Space : 25GB; Disk : SSD; bandwidth : 400GB; Port : 10Gbit/s; OS : Linux; Backup : No; 700,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "2GB v2 VPS IRAN; 850,000 تومان; Monthly; Ram : 2GB; CPU : 2Core; Disk Space : 30GB; Disk : SSD; bandwidth : 500GB; Port : 10Gbit/s; OS : Linux; Backup : No; 850,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "4GB VPS IRAN; 1,200,000 تومان; Monthly; Ram : 4GB; CPU : 3Core; Disk Space : 40GB; Disk : SSD; bandwidth : 700GB; Port : 10Gbit/s; OS : Linux/Windows; Backup : No; 1,200,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "8GB VPS IRAN; 1,800,000 تومان; Monthly; Ram : 8GB; CPU : 4Core; Disk Space : 50GB; Disk : SSD; bandwidth : 900GB; Port : 10Gbit/s; OS : Linux/Windows; Backup : No; 1,800,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "16GB VPS IRAN; 3,000,000 تومان; Monthly; Ram : 16GB; CPU : 8Core; Disk Space : 70GB; Disk : SSD; bandwidth : 1.2TB; Port : 10Gbit/s; OS : Linux/Windows; Backup : No; 3,000,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "parswebserver",
+    "text": "32GB VPS IRAN; 5,000,000 تومان; Monthly; Ram : 32GB; CPU : 16Core; Disk Space : 100GB; Disk : SSD; bandwidth : 1.5TB; Port : 10Gbit/s; OS : Linux/Windows; Backup : No; 5,000,000 تومان; Monthly; Order Now",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "zagros",
+    "text": "پلن یک; 580,000 تومان; ماهانه; پردازنده 1 هسته; رم 1 گیگ; حافظه 20گیگ; پورت 10Gbps; ترافیک 20 گیگ; ترافیک مازاد 850 تا 800; انتقال ترافیک به دوره بعد; 580,000 تومان; ماهانه; سفارش دهید; 2 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "zagros",
+    "text": "پلن دو; 800,000 تومان; ماهانه; پردازنده 1هسته; رم 2 گیگ; حافظه 20 گیگ; پورت 10Gbps; ترافیک 50 گیگ; ترافیک مازاد 850 تا 800 تومان; انتقال ترافیک به دوره بعد; 800,000 تومان; ماهانه; سفارش دهید; 3 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "zagros",
+    "text": "ویژه; پلن سه; 1,100,000 تومان; ماهانه; پردازنده 2 هسته; رم 2 گیگ; حافظه 20 گیگ; پورت 10Gbps; ترافیک 50 گیگ; ترافیک مازاد 850 تا 800; انتقال ترافیک به دوره بعد; 1,100,000 تومان; ماهانه; سفارش دهید; 5 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "zagros",
+    "text": "پلن چهار; 1,400,000 تومان; ماهانه; پردازنده 2 هسته; رم 4 گیگ; حافظه 20 گیگ; پورت 10Gbps; ترافیک 50 گیگ; ترافیک مازاد 850 تا 800; انتقال ترافیک به دوره بعد; 1,400,000 تومان; ماهانه; سفارش دهید; 6 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "zagros",
+    "text": "پلن پنج; 2,300,000 تومان; ماهانه; پردازنده 4 هسته; رم 8 گیگ; حافظه 20 گیگ; پورت 10Gbps; ترافیک 50 گیگ; ترافیک مازاد 850 تا 800; انتقال ترافیک به دوره بعد; 2,300,000 تومان; ماهانه; سفارش دهید; 4 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "zagros",
+    "text": "پلن شش; 3,200,000 تومان; ماهانه; پردازنده 8 هسته; رم 16 گیگ; حافظه 20 گیگ; پورت 10Gbps; ترافیک 50 گیگ; ترافیک مازاد 850 تا 800; انتقال ترافیک به دوره بعد; 3,200,000 تومان; ماهانه; سفارش دهید; 2 موجود است",
+    "assessment": "Base reviewable with unknown storage; exact-type overlap held"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "اقتصادی; بسته ویژه اقتصادی; با خرید 5 ترابایت ترافیک اضافه سرور را رایگان تحویل بگیرید; معامله بسته نرم افزاری!; سفارش دهید",
+    "assessment": "Exclude: bundle without numeric tariff or CPU/RAM/disk"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe پلن1; 1 هسته; پردازنده; 1 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 599,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe میکروتیک1; 1 هسته; پردازنده; 1 گیگابایت; رم; 1 گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 600,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe پلن2; 1 هسته; پردازنده; 2 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 700,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe پلن3; 2 هسته; پردازنده; 2 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 899,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe پلن4; 3 هسته; پردازنده; 4 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 1,200,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-respina",
+    "text": "سرور مجازی رسپینا NVMe پلن5; 4 هسته; پردازنده; 6 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 1,600,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-pishgaman",
+    "text": "سرور مجازی پیشگامان NVMe پلن1; 1 هسته; پردازنده; 1 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 599,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-pishgaman",
+    "text": "سرور مجازی پیشگامان NVMe پلن2; 1 هسته; پردازنده; 2 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 700,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-pishgaman",
+    "text": "سرور مجازی پیشگامان NVMe پلن3; 2 هسته; پردازنده; 2 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 900,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-pishgaman",
+    "text": "سرور مجازی پیشگامان NVMe پلن4; 3 هسته; پردازنده; 4 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 1,200,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "dyar-pishgaman",
+    "text": "سرور مجازی پیشگامان NVMe پلن5; 4 هسته; پردازنده; 6 گیگابایت; رم; 10گیگابایت NVMe; هارد; 100 گیگابایت(قابل افزایش); ترافیک; 10 گیگابیت(اشتراکی); پورت شبکه; شروع از; 1,600,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-parsonline",
+    "text": "VDS - 01; ✔ CPU 2x (Cores) Intel® Xeon; ✔ RAM 2 GB DDR4; ✔ Hard 20 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 430,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-parsonline",
+    "text": "VDS - 02; ✔ CPU 4x (Cores) Intel® Xeon; ✔ RAM 4 GB DDR4; ✔ Hard 40 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 660,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-parsonline",
+    "text": "VDS - 03; ✔ CPU 6x (Cores) Intel® Xeon; ✔ RAM 6 GB DDR4; ✔ Hard 60 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 850,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-parsonline",
+    "text": "VDS - 04; ✔ CPU 8x (Cores) Intel® Xeon; ✔ RAM 6 GB DDR4; ✔ Hard 80 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 990,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-hiweb",
+    "text": "VDS - 05; ✔ CPU 6x (Cores) Intel® Xeon; ✔ RAM 06 GB DDR4; ✔ Hard 100 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 300 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 1,220,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-hiweb",
+    "text": "VDS - 06; ✔ CPU 12x (Cores) Intel® Xeon; ✔ RAM 08 GB DDR4; ✔ Hard 150 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 400 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 1,480,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-hiweb",
+    "text": "VDS - 07; ✔ CPU 16x (Cores) Intel® Xeon; ✔ RAM 16 GB DDR4; ✔ Hard 200 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 500 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 2,050,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-hiweb",
+    "text": "VDS - 08; ✔ CPU 32x (Cores) Intel® Xeon; ✔ RAM 32 GB DDR4; ✔ Hard 500 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 500 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 2,970,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-tebyan",
+    "text": "VDS - 09; ✔ CPU 2x (Cores) Intel® Xeon; ✔ RAM 2 GB DDR4; ✔ Hard 20 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 830,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-tebyan",
+    "text": "VDS - 10; ✔ CPU 4x (Cores) Intel® Xeon; ✔ RAM 4 GB DDR4; ✔ Hard 40 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 960,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-tebyan",
+    "text": "VDS - 11; ✔ CPU 6x (Cores) Intel® Xeon; ✔ RAM 6 GB DDR4; ✔ Hard 60 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 1,120,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-tebyan",
+    "text": "VDS - 12; ✔ CPU 8x (Cores) Intel® Xeon; ✔ RAM 6 GB DDR4; ✔ Hard 80 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 1,380,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-shatel",
+    "text": "VDS - 13; ✔ CPU 2x (Cores) Intel® Xeon; ✔ RAM 2 GB DDR4; ✔ Hard 20 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 430,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-shatel",
+    "text": "VDS - 14; ✔ CPU 4x (Cores) Intel® Xeon; ✔ RAM 4 GB DDR4; ✔ Hard 40 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 100 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 660,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-shatel",
+    "text": "VDS - 15; ✔ CPU 6x (Cores) Intel® Xeon; ✔ RAM 06 GB DDR4; ✔ Hard 60 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 850,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "makna-shatel",
+    "text": "VDS - 16; ✔ CPU 8x (Cores) Intel® Xeon; ✔ RAM 06 GB DDR4; ✔ Hard 80 GB (HP-SAS-SSD); ✔ IP /30; ✔ Traffic 200 GB; ✅ترافیک داخل کشور-رایگان; ✅پیکربندی با سرورهای نسل10; شروع از; 990,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 100GB; SSD18-1-2-100; CPU 2Core / RAM 1GB; 517,000 (ماهیانه) تومان; SSD 18GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 100GB; SSD20-2-2-100; CPU 2Core / RAM 2GB; 622,000 (ماهیانه) تومان; SSD 20GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 150GB; SSD50-2-2-150; CPU 2Core / RAM 2GB; 935,000 (ماهیانه) تومان; SSD 50GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 200GB; SSD70-4-2-200; CPU 2Core / RAM 4GB; 997,000 (ماهیانه) تومان; SSD 70GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 250GB; SSD90-8-4-250; CPU 4Core / RAM 8GB; 1,598,000 (ماهیانه) تومان; SSD 90GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 750GB; GOLD; CPU 8Core / RAM 16GB; 3,699,000 (ماهیانه) تومان; SSD 170GB / Windows/ Linux/Unix",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 100GB; HDD18-1-2-100; CPU 2Core / RAM 1GB; 493,000 (ماهیانه) تومان; HDD 18GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 100GB; HDD25-2-2-100; CPU 2Core / RAM 2GB; 562,000 (ماهیانه) تومان; HDD 25GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 150GB; HDD80-2-2-150; CPU 2Core / RAM 2GB; 862,000 (ماهیانه) تومان; HDD 80GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 200GB; HDD120-4-2-200; CPU 2Core / RAM 4GB; 937,000 (ماهیانه) تومان; HDD 120GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 250GB; HDD200-8-4-250; CPU 4Core / RAM 8GB; 1,598,000 (ماهیانه) تومان; HDD 200GB / Windows/ Linux/Unix / IPv4 & IPv6",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "ترافیک 550GB; Special Pro; CPU 8Core / RAM 16GB; 2,774,000 (ماهیانه) تومان; HDD 200GB / Windows/ Linux/Unix / IPv4",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "پهنای باند 20mbps; Elementry; CPU 2Core / RAM 2GB; 4,536,000 (ماهیانه) تومان; SSD 20GB / Linux",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "پهنای باند 50mbps; Intermediate; CPU 2Core / RAM 4GB; 9,995,000 (ماهیانه) تومان; SSD 40GB / Linux/Unix",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "پهنای باند 100mbps; Advance; CPU 4Core / RAM 4GB; 18,480,000 (ماهیانه) تومان; SSD 60GB / Linux/Unix",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mahan-vps",
+    "text": "پهنای باند 200mbps; Advance Plus; CPU 4Core / RAM 8GB; 34,620,000 (ماهیانه) تومان; SSD 80GB / Linux/Unix",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 1; شروع از; 380,000 تومان; ماهانه; رم: ۱ گیگابایت; پردازنده: ۲ هسته; هارد: ۲۵ گیگابایت; ترافیک: 90 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اشتراکی (NAT); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 380,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 2; شروع از; 590,000 تومان; ماهانه; رم: ۲ گیگابایت; پردازنده: ۳ هسته; هارد: ۳۰ گیگابایت; ترافیک: 160 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اشتراکی (NAT); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 590,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 3; شروع از; 690,000 تومان; ماهانه; رم: ۴ گیگابایت; پردازنده: ۴ هسته; هارد: ۳۵ گیگابایت; ترافیک: 250 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اشتراکی (NAT); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 690,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 4; شروع از; 1,250,000 تومان; ماهانه; رم: ۶ گیگابایت; پردازنده: ۵ هسته; هارد: ۴۵ گیگابایت; ترافیک: 420 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اختصاصی (Dedicated); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 1,250,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 5; شروع از; 1,550,000 تومان; ماهانه; رم: ۸ گیگابایت; پردازنده: ۶ هسته; هارد: ۵۰ گیگابایت; ترافیک: 520 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اختصاصی (Dedicated); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 1,550,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 6; شروع از; 2,050,000 تومان; ماهانه; رم: ۱۲ گیگابایت; پردازنده: ۷ هسته; هارد: ۶۰ گیگابایت; ترافیک: 750 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اختصاصی (Dedicated); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 2,050,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sepanta-vps",
+    "text": "سرور مجازی ایران پلن 7; شروع از; 2,450,000 تومان; ماهانه; رم: ۱۶ گیگابایت; پردازنده: ۸ هسته; هارد: ۷۰ گیگابایت; ترافیک: 900 گیگابایت; نوع پردازنده: Intel(R) Xeon(R) E5-2680 v4; نوع رم: DDR4; نوع هارد: NVMe SSD; موقعیت: ایران - شاتل; مجازی ساز: KVM; نوع آی‌پی: اختصاصی (Dedicated); پنل مدیریت در ناحیه کاربری: دارد; شروع از; 2,450,000 تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-eco",
+    "text": "سرور مجازی لینوکسی ایران ارزان سرور اقتصادی 1; 1 موجود است; 585,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x1; حافظه RAM; 1024MB; فضای ذخیره‌سازی; 30GB; ترافیک ماهانه; 300G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-eco",
+    "text": "سرور مجازی لینوکسی ایران اقتصادی 2; 0 موجود است; 610,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x2; حافظه RAM; 2GB; فضای ذخیره‌سازی; 45GB; ترافیک ماهانه; 300G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "milad-eco",
+    "text": "سرور مجازی لینوکسی ایران اقتصادی 3; 2 موجود است; 680,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x2; حافظه RAM; 3GB; فضای ذخیره‌سازی; 60GB; ترافیک ماهانه; 300G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-base",
+    "text": "سرور مجازی ایران پایه 1; 4 موجود است; 725,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x2; حافظه RAM; 4GB; فضای ذخیره‌سازی; 60GB; ترافیک ماهانه; 300G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-base",
+    "text": "سرور مجازی ایران پایه 2; 0 موجود است; 799,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x2; حافظه RAM; 4GB; فضای ذخیره‌سازی; 120GB; ترافیک ماهانه; 300G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "milad-base",
+    "text": "سرور مجازی ایران پایه 3; 5 موجود است; 855,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x2; حافظه RAM; 4GB; فضای ذخیره‌سازی; 150GB; ترافیک ماهانه; 500G; آی‌پی IPv4; 1; پورت شبکه; 10G",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-pro",
+    "text": "سرور مجازی ایران حرفه ای 1; 1 موجود است; 1,680,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x4; حافظه RAM; 8GB; فضای ذخیره‌سازی; 120GB; ترافیک ماهانه; 1000G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-pro",
+    "text": "سرور مجازی ایران حرفه ای 2; 5 موجود است; 2,680,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x8; حافظه RAM; 16GB; فضای ذخیره‌سازی; 200GB; ترافیک ماهانه; 1000G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "milad-pro",
+    "text": "سرور مجازی ایران حرفه ای 3; 5 موجود است; 2,150,000 تومان; ماهانه; سفارش دهید; ویژگی های پلن; پردازنده; vCORE x6; حافظه RAM; 12GB; فضای ذخیره‌سازی; 200GB; ترافیک ماهانه; 800G; آی‌پی IPv4; 1; پورت شبکه; 10Gbps",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN1; سرور مجازی ایران — NVMe; موجود; ⚡; 1,741,000; تومان /; ماهانه; 3 Core; CPU; 3G; RAM; 30G NVMe; دیسک; آپلود ۱۰۰G + دریافت نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN2; سرور مجازی ایران — NVMe; موجود; ⚡; 2,100,000; تومان /; ماهانه; 4 Core; CPU; 4G; RAM; 40G NVMe; دیسک; آپلود ۱۰۰G + دریافت نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN3; سرور مجازی ایران — NVMe; پیشنهادی; ⚡; 2,370,000; تومان /; ماهانه; 5 Core; CPU; 5G; RAM; 50G NVMe; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN4; سرور مجازی ایران — NVMe; موجود; ⚡; 2,686,000; تومان /; ماهانه; 6 Core; CPU; 6G; RAM; 60G NVMe; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN5; سرور مجازی ایران — NVMe; موجود; ⚡; 3,464,000; تومان /; ماهانه; 7 Core; CPU; 7G; RAM; 80G NVMe; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN6; سرور مجازی ایران — NVMe; موجود; ⚡; 4,000,000; تومان /; ماهانه; 8 Core; CPU; 8G; RAM; 100G NVMe; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRVN7; سرور مجازی ایران — NVMe; موجود; ⚡; 6,240,000; تومان /; ماهانه; 12 Core; CPU; 12G; RAM; 240G NVMe; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; شروع کن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV1; سرور مجازی ایران — SSD; موجود; 💾; 1,100,000; تومان /; ماهانه; 2 Core; CPU; 2G; RAM; 20G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV2; سرور مجازی ایران — SSD; موجود; 💾; 1,358,000; تومان /; ماهانه; 3 Core; CPU; 3G; RAM; 25G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV3; سرور مجازی ایران — SSD; پیشنهادی; 💾; 1,475,000; تومان /; ماهانه; 4 Core; CPU; 4G; RAM; 35G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV4; سرور مجازی ایران — SSD; موجود; 💾; 1,865,000; تومان /; ماهانه; 5 Core; CPU; 5G; RAM; 50G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV5; سرور مجازی ایران — SSD; موجود; 💾; 2,120,000; تومان /; ماهانه; 6 Core; CPU; 6G; RAM; 70G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "serversetup",
+    "text": "IRV6; سرور مجازی ایران — SSD; موجود; 💾; 2,638,000; تومان /; ماهانه; 8 Core; CPU; 12G; RAM; 100G SSD; دیسک; ترافیک نامحدود; دیتاسنتر آسیاتک; IP اختصاصی ایران; دسترسی Root و SSH; انتقال رایگان سایت; راه‌اندازی ۳۵۰,۰۰۰ تومان; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۱; استارتر; اقتصادی; 1,700,000; 19,300,000; تومان / ماهانه; Ram; 4G DDR4; CPU; 2Cores 2000MHz; Storage; 30G NVMe; Bandwidth; 500G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۲; پیشرفته; کاربردی; 2,000,000; 21,500,000; تومان / ماهانه; Ram; 6G DDR4; CPU; 4Cores 4000MHz; Storage; 40G NVMe; Bandwidth; 500G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۳; استاندارد; محبوب; 2,400,000; 26,000,000; تومان / ماهانه; Ram; 10G DDR4; CPU; 6Cores 6000MHz; Storage; 50G NVMe; Bandwidth; 500G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۴; تجاری; منابع بالا; 2,800,000; 30,500,000; تومان / ماهانه; Ram; 12G DDR4; CPU; 6Cores 6000MHz; Storage; 60G NVMe; Bandwidth; 500G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "⭐ پیشنهاد ویژه • پربازدیدترین; پلن ۵; پرطرفدار; فروش ویژه; 3,200,000; 34,500,000; تومان / ماهانه; Ram; 16G DDR4; CPU; 8Cores 8000MHz; Storage; 70G NVMe; Bandwidth; 1000G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۶; اینترپرایز; سازمانی; 3,500,000; 38,500,000; تومان / ماهانه; Ram; 24G DDR4; CPU; 12Cores 12000MHz; Storage; 80G NVMe; Bandwidth; 1000G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "پلن ۷; اولترا; حداکثر توان; 4,000,000; 41,000,000; تومان / ماهانه; Ram; 32G DDR4; CPU; 12Cores 12000MHz; Storage; 90G NVMe; Bandwidth; 2000G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "negarnovin",
+    "text": "👑 ابَر سرور • نهایت توان; ابَر سرور; ابَر سرور; VIP اختصاصی; 4,800,000; 51,000,000; تومان / ماهانه; Ram; 32G DDR4; CPU; 16Cores 16000MHz; Storage; 100G NVMe; Bandwidth; 2000G + داخلی نامحدود; OS; All Versions; DC; IR DataCenter; Port; 10G; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 1 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه; ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور); کاملاً رایگان و نامحدود; شروع قیمت از; 4,200,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 2 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه; ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور); کاملاً رایگان و نامحدود; شروع قیمت از; 5,400,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 3 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه; ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور); کاملاً رایگان و نامحدود; شروع قیمت از; 6,500,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 4 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه; ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور); کاملاً رایگان و نامحدود; شروع قیمت از; 7,900,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 8 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه; ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور); کاملاً رایگان و نامحدود; شروع قیمت از; 13,900,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-store",
+    "text": "سرور مجازی ایران - ترافیکی; سرور مجازی ایران (ترافیکی) - 16 گیگابایت رم; تحویل فوری; حافظه رم; Ram 16GB; پردازنده; CPU 8Core; هارد دیسک; Storage 50GB SAS Raid; پورت و شبکه; Port 10G; پورت و شبکه; Traffic 50GB  /  قابل ارتقاء بعد از خرید; مشخصات; Upload Free; مشخصات; IPv6; شروع قیمت از; 24,900,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold missing CPU/disk where absent; base tariff only"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 1 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 5,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 2 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 6,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 3 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 7,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 4 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 9,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 8 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 14,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 16 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 24,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - 32 گیگابایت رم; تحویل فوری; محل میزبانی; دیتاسنتر معتبر آسیاتک; پورت شبکه; پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی; ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل; متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران; پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل); کاملاً باز و بدون محدودیت سرعت; شروع قیمت از; 36,330,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-unmetered",
+    "text": "سرور مجازی ایران - پهنای باند اختصاصی - ترافیک نامحدود; سرور مجازی ایران (نامحدود) - پلن سفارشی; تحویل فوری; مشخصات; روی دکمه سفارش دهید کلیک نمایید و تنظیمات مد نظر خود را انجام دهید.; پورت و شبکه; Port 10G; پورت و شبکه; Traffic Unlimited; مشخصات; IPv6; شروع قیمت از; 21,430,000 ریال; ماهانه; بدون هزینه راه‌اندازی; سفارش و پیکربندی",
+    "assessment": "Hold CPU/disk and selectable-bandwidth basis; custom row not fixed"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "سرور ابری ساعتی ایران — ۱ گیگابایت رم; ۶۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۶۹۰ تومان در ساعت (۶,۹۰۰ ریال); سقف هزینه ماهانه: ۳۹۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۱ هسته پرقدرت KVM; حافظه رم اختصاصی: ۱ گیگابایت DDR4; فضای دیسک پرسرعت: ۲۵ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "پیشنهاد ویژه • محبوب‌ترین; سرور ابری ساعتی ایران — ۲ گیگابایت رم; ۹۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۹۹۰ تومان در ساعت (۹,۹۰۰ ریال); سقف هزینه ماهانه: ۵۵۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۲ هسته پرقدرت KVM; حافظه رم اختصاصی: ۲ گیگابایت DDR4; فضای دیسک پرسرعت: ۴۵ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "سرور ابری ساعتی ایران — ۳ گیگابایت رم; ۱٬۲۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۱,۲۹۰ تومان در ساعت (۱۲,۹۰۰ ریال); سقف هزینه ماهانه: ۷۲۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۲ هسته پرقدرت KVM; حافظه رم اختصاصی: ۳ گیگابایت DDR4; فضای دیسک پرسرعت: ۵۵ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "سرور ابری ساعتی ایران — ۴ گیگابایت رم; ۱٬۵۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۱,۵۹۰ تومان در ساعت (۱۵,۹۰۰ ریال); سقف هزینه ماهانه: ۸۹۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۲ هسته پرقدرت KVM; حافظه رم اختصاصی: ۴ گیگابایت DDR4; فضای دیسک پرسرعت: ۷۰ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "سرور ابری ساعتی ایران — ۸ گیگابایت رم; ۲٬۶۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۲,۶۹۰ تومان در ساعت (۲۶,۹۰۰ ریال); سقف هزینه ماهانه: ۱,۴۹۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۴ هسته پرقدرت KVM; حافظه رم اختصاصی: ۸ گیگابایت DDR4; فضای دیسک پرسرعت: ۱۲۰ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "bia2host-hourly",
+    "text": "سرور ابری ساعتی ایران — ۱۶ گیگابایت رم; ۴٬۴۹۰; تومان / ساعتی; هزینه سخت‌افزار: ۴,۴۹۰ تومان در ساعت (۴۴,۹۰۰ ریال); سقف هزینه ماهانه: ۲,۴۹۰,۰۰۰ تومان (تخفیف ویژه); پردازنده اختصاصی: ۶ هسته پرقدرت KVM; حافظه رم اختصاصی: ۱۶ گیگابایت DDR4; فضای دیسک پرسرعت: ۲۲۰ گیگابایت NVMe Enterprise; ترافیک اولیه هدیه: ۳۰۰ گیگابایت کاملاً رایگان; ترافیک مازاد: ۹۰۰ تومان به ازای هر گیگابایت دانلود; ترافیک آپلود (ارسال داده): ۱۰۰٪ نامحدود و رایگان; آدرس آی‌پی: ۱ عدد IPv4 اختصاصی و ثابت; امکانات: پنل مدیریت کامل، کنسول noVNC، ری‌بیلد آنی سیستم‌عامل; امکان ارتقای منابع و حذف سرور در هر لحظه; حداقل موجودی اولیه کیف پول: ۵۰,۰۰۰ تومان; سفارش و تحویل آنی",
+    "assessment": "Public hourly+monthly-cap base; fixed-month billing admission conditional"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 3; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 540,000; تومان; پردازنده:; 3GHz Xeon E5-v4; میزان رم:; 3 گیگابایت; DDR4; فضای هارد:; 30 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 4; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 670,000; تومان; پردازنده:; 4GHz Xeon E5-v4; میزان رم:; 4 گیگابایت; DDR4; فضای هارد:; 30 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 5; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 810,000; تومان; پردازنده:; 5GHz Xeon E5-v4; میزان رم:; 5 گیگابایت; DDR4; فضای هارد:; 35 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 6; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 920,000; تومان; پردازنده:; 6GHz Xeon E5-v4; میزان رم:; 6 گیگابایت; DDR4; فضای هارد:; 40 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 7; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,050,000; تومان; پردازنده:; 6GHz Xeon E5-v4; میزان رم:; 8 گیگابایت; DDR4; فضای هارد:; 45 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 8; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,245,000; تومان; پردازنده:; 6GHz Xeon E5-v4; میزان رم:; 10 گیگابایت; DDR4; فضای هارد:; 50 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 9; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,470,000; تومان; پردازنده:; 8GHz Xeon E5-v4; میزان رم:; 12 گیگابایت; DDR4; فضای هارد:; 55 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 10; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,750,000; تومان; پردازنده:; 10GHz Xeon E5-v4; میزان رم:; 16 گیگابایت; DDR4; فضای هارد:; 65 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 24; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 2,720,000; تومان; پردازنده:; 14GHz Xeon E5-v4; میزان رم:; 24 گیگابایت; DDR4; فضای هارد:; 85 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinSSD 32; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 3,280,000; تومان; پردازنده:; 15GHz Xeon E5-v4; میزان رم:; 32 گیگابایت; DDR4; فضای هارد:; 110 گیگابایت SSD PRO; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 1; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 799,000; تومان; پردازنده:; 4GHz Xeon E5-2667v4; میزان رم:; 4 گیگابایت; DDR4; فضای هارد:; 30 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 2; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 1,190,000; تومان; پردازنده:; 6GHz Xeon E5-2667v4; میزان رم:; 8 گیگابایت; DDR4; فضای هارد:; 40 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 3; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 1680,000; تومان; پردازنده:; 8GHz Xeon E5-2667v4; میزان رم:; 12 گیگابایت; DDR4; فضای هارد:; 50 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 4; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 2,530,000; تومان; پردازنده:; 12GHz Xeon E5-2667v4; میزان رم:; 16 گیگابایت; DDR4; فضای هارد:; 60 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 5; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 3,120,000; تومان; پردازنده:; 14GHz Xeon E5-2667v4; میزان رم:; 24 گیگابایت; DDR4; فضای هارد:; 70 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-WinPRO 6; (سرورمجازی ایران); (VPS); سفارش; ماهانه; 4,000,000; تومان; پردازنده:; 18GHz Xeon E5-2667v4; میزان رم:; 32 گیگابایت DDR4; فضای هارد:; 100 گیگابایت NVME; پورت شبکه :; 10 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-DDR3-R4; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 455,000; تومان; پردازنده:; 4GHz Xeon E5-v2; میزان رم:; 4 گیگابایت; DDR3; فضای هارد:; 40 گیگابایت SSD; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-DDR3-R8; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 699,000; تومان; پردازنده:; 4GHz Xeon E5-v2; میزان رم:; 8 گیگابایت; DDR3; فضای هارد:; 50 گیگابایت SSD; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-DDR3-R12; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 880,000; تومان; پردازنده:; 6GHz Xeon E5-v2; میزان رم:; 12 گیگابایت; DDR3; فضای هارد:; 60 گیگابایت SSD; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-DDR3-R16; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,099,000; تومان; پردازنده:; 8GHz Xeon E5-v2; میزان رم:; 16 گیگابایت; DDR3; فضای هارد:; 70 گیگابایت SSD; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "tehrangaming-vps",
+    "text": "IR-DDR3-R32; (سرورمجازی ایران) (VPS); سفارش; ماهانه; 1,855,000; تومان; پردازنده:; 10GHz Xeon E5-v2; میزان رم:; 32 گیگابایت; DDR3; فضای هارد:; 90 گیگابایت SSD; پورت شبکه: 1 گیگابیت; ترافیک: نامحدود; پنل مدیریتی پیشرفته; فایروال اختصاصی و آنتی دیداس",
+    "assessment": "Hold CPU core count: GHz is not vCPU count"
+  },
+  {
+    "source": "webramz",
+    "text": "VDS-20e; 1,580,000; تومان; ماهانه; 9,480,000; تومان; شش ماهه; 17,380,000; تومان; سالانه; 20GB NVMe; دیسک پرسرعت; NVMe +RAID; ترافیک ماهانه; 200GB; تعداد پردازنده; 1x ~2.5GHz; حجم رم; 1GB; مجازی ساز; KVM; کرنل اختصاصی; Yes; سیستم عامل; ویندوز / لینوکس; IP ولید; 1; دسترسی; VNC / Reboot; مانیتورینگ سرور; رایگان; موقعیت سرور; ایران; دیتاسنتر; شاتل / فناپ / آسیاتک; امکان فول بکاپ; دارد; هزینه راه اندازی; رایگان; ماهانه; سالانه; 1; میلیون و; 580; هزار تومان; 9; میلیون و; 480; هزار تومان; 18,960,000 تومان; 17; میلیون و; 380; هزار تومان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "webramz",
+    "text": "محبوب ترین; VDS-30e; 2,000,000; تومان; ماهانه; 12,000,000; تومان; شش ماهه; 22,000,000; تومان; سالانه; 30GB NVMe; دیسک پرسرعت; NVMe +RAID; ترافیک ماهانه; 600GB; تعداد پردازنده; 2x ~2.5GHz; حجم رم; 2GB; مجازی ساز; KVM; کرنل اختصاصی; Yes; سیستم عامل; ویندوز / لینوکس; IP ولید; 1; دسترسی; VNC / Reboot; مانیتورینگ سرور; رایگان; موقعیت سرور; ایران; دیتاسنتر; شاتل / فناپ / آسیاتک; امکان فول بکاپ; دارد; هزینه راه اندازی; رایگان; ماهانه; سالانه; 2; میلیون تومان; 12; میلیون تومان; 24,000,000 تومان; 22; میلیون تومان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "webramz",
+    "text": "VDS-40e; 2,420,000; تومان; ماهانه; 14,520,000; تومان; شش ماهه; 26,620,000; تومان; سالانه; 40GB NVMe; دیسک پرسرعت; NVMe +RAID; ترافیک ماهانه; 800GB; تعداد پردازنده; 3x ~2.5GHz; حجم رم; 3GB; مجازی ساز; KVM; کرنل اختصاصی; Yes; سیستم عامل; ویندوز / لینوکس; IP ولید; 1; دسترسی; VNC / Reboot; مانیتورینگ سرور; رایگان; موقعیت سرور; ایران; دیتاسنتر; شاتل / فناپ / آسیاتک; امکان فول بکاپ; دارد; هزینه راه اندازی; رایگان; ماهانه; سالانه; 2; میلیون و; 420; هزار تومان; 14; میلیون و; 520; هزار تومان; 29,040,000 تومان; 26; میلیون و; 620; هزار تومان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "webramz",
+    "text": "VDS-50e; 2,840,000; تومان; ماهانه; 17,040,000; تومان; شش ماهه; 31,240,000; تومان; سالانه; 50GB NVMe; دیسک پرسرعت; NVMe +RAID; ترافیک ماهانه; 1000GB; تعداد پردازنده; 4x ~2.5GHz; حجم رم; 4GB; مجازی ساز; KVM; کرنل اختصاصی; Yes; سیستم عامل; ویندوز / لینوکس; IP ولید; 1; دسترسی; VNC / Reboot; مانیتورینگ سرور; رایگان; موقعیت سرور; ایران; دیتاسنتر; شاتل / فناپ / آسیاتک; امکان فول بکاپ; دارد; هزینه راه اندازی; رایگان; ماهانه; سالانه; 2; میلیون و; 840; هزار تومان; 17; میلیون و; 40; هزار تومان; 34,080,000 تومان; 31; میلیون و; 240; هزار تومان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "vidaserver",
+    "text": "🔥; شروع قدرتمند; سرور مجازی ایران - پلن اول; 🖥️ پردازنده (CPU):; ۲ هسته CPU اختصاصی; ⚡ حافظه رم (RAM):; ۲ گیگابایت RAM High-Speed; 💾 دیسک (NVMe):; ۲۰ گیگابایت NVMe Gen4; 🌐 پورت و ترافیک:; پورت 10Gbps / نامحدود; پورت ۱۰ گیگابیت اختصاصی; تحویل آنی زیر ۶۰ ثانیه; دسترسی کامل VNC & SSH Root; قیمت:; ۷۰۰,۰۰۰ تومان / ماهانه; ثبت سفارش و تحویل آنی →",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "vidaserver",
+    "text": "🔥; ویژه; سرور مجازی ایران - پلن دوم; 🖥️ پردازنده (CPU):; ۴ هسته CPU اختصاصی; ⚡ حافظه رم (RAM):; ۴ گیگابایت RAM; 💾 دیسک (NVMe):; ۳۵ گیگابایت NVMe High-IOPS; 🌐 پورت و ترافیک:; پورت 10Gbps / نامحدود; پورت ۱۰ گیگابیت اختصاصی; سخت‌افزار اینترپرایز آسیاتک; فایروال Anti-DDoS هوشمند; قیمت:; ۱,۰۰۰,۰۰۰ تومان / ماهانه; ثبت سفارش و تحویل آنی →",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "vidaserver",
+    "text": "🔥; منابع سفارشی و دلخواه; سرور مجازی ایران - پلن سوم; 🖥️ پردازنده (CPU):; کانفیگ اختصاصی متناسب پروژه; ⚡ حافظه رم (RAM):; رم دلخواه بدون سقف; 💾 دیسک (NVMe):; فضای NVMe بدون محدودیت; 🌐 پورت و ترافیک:; پورت 10Gbps اختصاصی; اتصال چند آی‌پی مجزا و ساب‌نت; پشتیبانی VIP اختصاصی ۲۴/۷; تحویل و کانفیگ فوری; قیمت:; تماس بگیرید; ثبت سفارش و تحویل آنی →",
+    "assessment": "Exclude: custom quote, no numeric fixed tariff"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران آسیاتک (برج میلاد) SSD حرفه ای - پلان 1; ۴۴۲,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۳۰ ⁦GB⁩; ترافیک; ۱۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران آسیاتک (برج میلاد) SSD حرفه ای - پلان 2; ۵۷۱,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۲ ⁦GB⁩; دیسک; ۵۵ ⁦GB⁩; ترافیک; ۲۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران آسیاتک (برج میلاد) SSD حرفه ای - پلان 3; ۶۳۷,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۴ ⁦GB⁩; دیسک; ۷۵ ⁦GB⁩; ترافیک; ۳۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران آسیاتک (برج میلاد) SSD حرفه ای - پلان 4; ۷۵۰,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۶ ⁦GB⁩; دیسک; ۹۵ ⁦GB⁩; ترافیک; ۴۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران آسیاتک (برج میلاد) SSD حرفه ای - پلان 5; ۱,۱۶۳,۰۰۰; تومان / ماه; پردازنده; ۵ هسته; رم; ۸ ⁦GB⁩; دیسک; ۱۰۵ ⁦GB⁩; ترافیک; ۵۱۲ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "Core 1; ۶۷۳,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۳۰ ⁦GB⁩; ترافیک; ۱۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "Core 2; ۸۰۱,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۲ ⁦GB⁩; دیسک; ۳۵ ⁦GB⁩; ترافیک; ۲۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "Core 3; ۸۶۷,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۴ ⁦GB⁩; دیسک; ۵۵ ⁦GB⁩; ترافیک; ۳۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "Core 4; ۹۸۵,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۶ ⁦GB⁩; دیسک; ۷۵ ⁦GB⁩; ترافیک; ۳۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "Core 5; ۱,۳۹۵,۰۰۰; تومان / ماه; پردازنده; ۵ هسته; رم; ۸ ⁦GB⁩; دیسک; ۹۵ ⁦GB⁩; ترافیک; ۳۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران - پرمیوم 1; ۲,۱۸۰,۰۰۰; تومان / ماه; پردازنده; ۶ هسته; رم; ۱۰ ⁦GB⁩; دیسک; ۱۱۰ ⁦GB⁩; ترافیک; ۱۰۲۴ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران - پرمیوم 2; ۲,۶۸۷,۰۰۰; تومان / ماه; پردازنده; ۸ هسته; رم; ۱۲ ⁦GB⁩; دیسک; ۱۲۰ ⁦GB⁩; ترافیک; ۱۰۲۴ ⁦GB⁩; دیتاسنتر; پنتا سرور; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران - پرمیوم 3; ۳,۳۶۳,۰۰۰; تومان / ماه; پردازنده; ۱۰ هسته; رم; ۱۶ ⁦GB⁩; دیسک; ۱۴۰ ⁦GB⁩; ترافیک; ۱۰۲۴ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران - پرمیوم 4; ۴,۸۸۴,۰۰۰; تومان / ماه; پردازنده; ۱۲ هسته; رم; ۲۴ ⁦GB⁩; دیسک; ۱۶۰ ⁦GB⁩; ترافیک; ۲۰۴۸ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-1",
+    "text": "سرور مجازی ایران - پرمیوم 5; ۵,۵۶۰,۰۰۰; تومان / ماه; پردازنده; ۱۴ هسته; رم; ۳۲ ⁦GB⁩; دیسک; ۱۸۰ ⁦GB⁩; ترافیک; ۴۰۹۶ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-2",
+    "text": "پلن ۱; ۶۴۲,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۳۰ ⁦GB⁩; ترافیک; ۱۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-2",
+    "text": "پلن ۲; ۷۷۱,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۲ ⁦GB⁩; دیسک; ۳۵ ⁦GB⁩; ترافیک; ۱۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-2",
+    "text": "پلن ۳; ۸۳۷,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۴ ⁦GB⁩; دیسک; ۵۵ ⁦GB⁩; ترافیک; ۱۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-2",
+    "text": "پلن ۴; ۹۵۰,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۶ ⁦GB⁩; دیسک; ۷۵ ⁦GB⁩; ترافیک; ۲۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-2",
+    "text": "پلن ۵; ۱,۳۶۳,۰۰۰; تومان / ماه; پردازنده; ۵ هسته; رم; ۸ ⁦GB⁩; دیسک; ۹۵ ⁦GB⁩; ترافیک; ۲۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "پلن ۱; ۱,۱۷۵,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۲ ⁦GB⁩; دیسک; ۳۰ ⁦GB⁩; ترافیک; ۲۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "پلن ۲; ۱,۶۲۲,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۲ ⁦GB⁩; دیسک; ۳۵ ⁦GB⁩; ترافیک; ۲۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "پلن ۳; ۱,۸۲۴,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۴ ⁦GB⁩; دیسک; ۵۵ ⁦GB⁩; ترافیک; ۳۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "پلن ۴; ۲,۰۳۸,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۶ ⁦GB⁩; دیسک; ۷۵ ⁦GB⁩; ترافیک; ۴۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "پلن ۵; ۲,۸۱۹,۰۰۰; تومان / ماه; پردازنده; ۸ هسته; رم; ۸ ⁦GB⁩; دیسک; ۹۵ ⁦GB⁩; ترافیک; ۵۱۲ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-3",
+    "text": "سرور مجازی میکروتیک ایران - 10G; MikroTik / RouterOS; ۱,۱۷۵,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۱ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-4",
+    "text": "پلن ۱; ۷۷۱,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۲ ⁦GB⁩; دیسک; ۲۰۰ ⁦GB⁩; ترافیک; ۱۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-4",
+    "text": "پلن ۲; ۹۰۶,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۳ ⁦GB⁩; دیسک; ۴۰۰ ⁦GB⁩; ترافیک; ۲۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-4",
+    "text": "پلن ۳; ۱,۳۵۱,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۴ ⁦GB⁩; دیسک; ۱۰۲۴ ⁦GB⁩; ترافیک; ۳۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-4",
+    "text": "پلن ۴; ۱,۶۷۷,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۵ ⁦GB⁩; دیسک; ۱۵۳۶ ⁦GB⁩; ترافیک; ۵۱۲ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-4",
+    "text": "پلن ۵; ۲,۵۳۵,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۶ ⁦GB⁩; دیسک; ۲۰۴۸ ⁦GB⁩; ترافیک; ۷۶۸ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-5",
+    "text": "پلن ۱; ۱,۲۶۶,۰۰۰; تومان / ماه; پردازنده; ۴ هسته; رم; ۴ ⁦GB⁩; دیسک; ۵۰ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-5",
+    "text": "پلن ۲; ۱,۵۱۹,۰۰۰; تومان / ماه; پردازنده; ۶ هسته; رم; ۶ ⁦GB⁩; دیسک; ۶۰ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-5",
+    "text": "پلن ۳; ۱,۶۵۰,۰۰۰; تومان / ماه; پردازنده; ۸ هسته; رم; ۸ ⁦GB⁩; دیسک; ۷۰ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-5",
+    "text": "پلن ۴; ۱,۹۵۰,۰۰۰; تومان / ماه; پردازنده; ۱۰ هسته; رم; ۱۰ ⁦GB⁩; دیسک; ۸۰ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-5",
+    "text": "پلن ۵; ۲,۳۵۰,۰۰۰; تومان / ماه; پردازنده; ۱۲ هسته; رم; ۱۲ ⁦GB⁩; دیسک; ۹۰ ⁦GB⁩; ترافیک; ۵۰ ⁦GB⁩; دیتاسنتر; آسیاتک; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-6",
+    "text": "سرور مجازی میکروتیک ایران - آسیاتک; ۶۴۲,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۱ ⁦GB⁩; ترافیک; ۱۰۰ ⁦GB⁩; دیتاسنتر; آسیاتک; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-6",
+    "text": "سرور مجازی میکروتیک ایران - (دیتاسنتر 2); ۶۷۲,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; دیسک; ۱ ⁦GB⁩; ترافیک; ۲۰۰ ⁦GB⁩; دیتاسنتر; پنتا سرور; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "penta-vps-7",
+    "text": "اقتصادی ۱; شروع کار; ۲۲۹,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۱ ⁦GB⁩; حافظه; ۲۰ ⁦GB⁩ ⁦SSD⁩; ترافیک; ۱۰۰ ⁦GB⁩; پورت; ۱ ⁦Gbps⁩; آی‌پی; ۱ × ⁦IPv4⁩; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-7",
+    "text": "اقتصادی ۲; مصرف سبک; ۲۵۹,۰۰۰; تومان / ماه; پردازنده; ۱ هسته; رم; ۲ ⁦GB⁩; حافظه; ۳۰ ⁦GB⁩ ⁦SSD⁩; ترافیک; ۱۰۰ ⁦GB⁩; پورت; ۱ ⁦Gbps⁩; آی‌پی; ۱ × ⁦IPv4⁩; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-7",
+    "text": "اقتصادی ۳; مصرف متوسط; ۳۲۹,۰۰۰; تومان / ماه; پردازنده; ۲ هسته; رم; ۴ ⁦GB⁩; حافظه; ۳۵ ⁦GB⁩ ⁦SSD⁩; ترافیک; ۱۵۰ ⁦GB⁩; پورت; ۱ ⁦Gbps⁩; آی‌پی; ۱ × ⁦IPv4⁩; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-7",
+    "text": "پیشنهاد پنتا; اقتصادی ۴; محبوب‌ترین; ۳۹۹,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۶ ⁦GB⁩; حافظه; ۴۵ ⁦GB⁩ ⁦SSD⁩; ترافیک; ۲۰۰ ⁦GB⁩; پورت; ۱ ⁦Gbps⁩; آی‌پی; ۱ × ⁦IPv4⁩; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "penta-vps-7",
+    "text": "اقتصادی ۵; چند سرویس سبک; ۴۹۹,۰۰۰; تومان / ماه; پردازنده; ۳ هسته; رم; ۸ ⁦GB⁩; حافظه; ۵۰ ⁦GB⁩ ⁦SSD⁩; ترافیک; ۲۵۰ ⁦GB⁩; پورت; ۱ ⁦Gbps⁩; آی‌پی; ۱ × ⁦IPv4⁩; سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Pro; ماهانه:; 1,519,000; تومان; 2 هسته پردازنده; 4 گیگابایت رم; 1 عدد آیپی اختصاصی; 50 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Web; ماهانه:; 2,359,000; تومان; 4 هسته پردازنده; 8 گیگابایت رم; 1 عدد آیپی اختصاصی; 80 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Turbu; ماهانه:; 3,659,000; تومان; 6 هسته پردازنده; 12 گیگابایت رم; 1 عدد آیپی اختصاصی; 80 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Max; ماهانه:; 4,029,000; تومان; 8 هسته پردازنده; 12 گیگابایت رم; 1 عدد آیپی اختصاصی; 80 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Ultra; ماهانه:; 5,479,000; تومان; 8 هسته پردازنده; 16 گیگابایت رم; 1 عدد آیپی اختصاصی; 80 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Enterprise; ماهانه:; 7,819,000; تومان; 16 هسته پردازنده; 24 گیگابایت رم; 1 عدد آیپی اختصاصی; 80 گیگابایت دیسک NVME; دیتاسنتر افرانت; ترافیک نامحدود رایگان; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Basic; ماهانه:; 899,000; تومان; 1 هسته پردازنده; 1 گیگابایت رم; 1 عدد آیپی اختصاصی; 20 گیگابایت دیسک NVME; دیتاسنتر افرانت; 100 گیگابایت ترافیک رایگان; عدم موجودی سرویس",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "sabin-tariff",
+    "text": "Plus; ماهانه:; 1,319,000; تومان; 1 هسته پردازنده; 2 گیگابایت رم; 1 عدد آیپی اختصاصی; 30 گیگابایت دیسک NVME; دیتاسنتر افرانت; 100 گیگابایت ترافیک رایگان; عدم موجودی سرویس",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "kerman-shatel",
+    "text": "پلن اول شاتل; 10گیگ; فضا پرسرعت SSD; 1 گیگ; رم; 1 هسته; CPU; ipv4 ,ipv6; نوع ارتباط; شروع از; 450,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-shatel",
+    "text": "پلن دوم شاتل; 15گیگ; فضا پرسرعت SSD; 2 گیگ; رم; 2 هسته; CPU; ipv4,ipv6; ارتباط; شروع از; 560,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-shatel",
+    "text": "پلن سوم شاتل; 15گیگ; فضا پرسرعت SSD; 4 گیگ; رم; 3 هسته; CPU; ipv4,ipv6; ارتباط; شروع از; 820,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-shatel",
+    "text": "پلن چهارم آسیاتک حرفه ای; 30گیگ; فضا پرسرعت SSD; 6 گیگ; رم; 4 هسته; CPU; ipv4,ipv6; ارتباط; شروع از; 1,050,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-respina",
+    "text": "پلن اول رسپینا; 1 هسته; CPU; 1 گیگابایت; RAM; 400 گیگابایت; حجم اولیه; 10 گیگابایت SSD; هارد; KVM; پنل مدیریت; دارد; فایروال; شروع از; 700,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-respina",
+    "text": "پلن دوم رسپینا; 2 هسته; CPU; 2 گیگابایت; RAM; 20 گیگابایت SSD; هارد; KVM; پنل مدیریت; دارد; فایروال; شروع از; 1,250,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-respina",
+    "text": "پلن سوم رسپینا; 3 هسته; CPU; 4 گیگابایت; RAM; 15 گیگابایت SSD; هارد; KVM; پنل مدیریت; دارد; فایروال; شروع از; 2,500,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "kerman-respina",
+    "text": "پلن چهارم رسپینا; 4 هسته; CPU; 6 گیگابایت; RAM; 15 گیگابایت SSD; هارد; KVM; پنل مدیریت; دارد; فایروال; شروع از; 3,100,000تومان; ماهانه; سفارش دهید",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 9; پردازنده 6 هسته; رم 8192 مگابایت; هارد 150 گیگابایت; ترافیک ماهانه 6000 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۲٬۸۴۰٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 8; پردازنده 6 هسته; رم 8192 مگابایت; هارد 150 گیگابایت; ترافیک ماهانه 4200 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۲٬۴۵۷٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 7; پردازنده 4 هسته; رم 6144 مگابایت; هارد 100 گیگابایت; ترافیک ماهانه 4000 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۲٬۱۷۶٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 3; پردازنده 2 هسته; رم 2048 مگابایت; هارد 65 گیگابایت; ترافیک ماهانه 1000 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۷۳۰٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 6; پردازنده 4 هسته; رم 6144 مگابایت; هارد 100 گیگابایت; ترافیک ماهانه 2200 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۱٬۷۰۴٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 5; پردازنده 4 هسته; رم 4096 مگابایت; هارد 80 گیگابایت; ترافیک ماهانه 2000 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۱٬۳۵۲٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 4; پردازنده 4 هسته; رم 4096 مگابایت; هارد 80 گیگابایت; ترافیک ماهانه 1200 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۱٬۱۹۹٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 2; پردازنده 2 هسته; رم 2048 مگابایت; هارد 65 گیگابایت; ترافیک ماهانه 500 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۶۲۴٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "azar-iran",
+    "text": "سرور مجازی لینوکس ایران 1; پردازنده 2 هسته; رم 1024 مگابایت; هارد 50 گیگابایت; ترافیک ماهانه 300 گیگابایت; آی پی 1 عدد; منابع اختصاصی; ۴۵۹٬۰۰۰; تومان/ماهانه; در صورت خرید سالانه; سفارش آنلاین",
+    "assessment": "Hold one-month rental tariff; annual monthly equivalent only"
+  },
+  {
+    "source": "didicloud-tariff",
+    "text": "vps – DIDI2; پردازنده نسل پیشرفته 2 vcore; 4 Gb; رم نسل پیشرفته; 50 Gb; هارد دیسک; 100 گیگ; ترافیک ماهانه; 1 عدد; ipv4; 1 عدد; ipv6; 499.000 تومان; ماهانه; 1.430.000 تومان; سه ماهه; 2.750.000 تومان; شش ماهه; 5.210.000 تومان; یکساله; خرید VPS -DIDI2",
+    "assessment": "Hold plan-specific handoff and Iran location mapping; storage type unknown"
+  },
+  {
+    "source": "didicloud-tariff",
+    "text": "vps – DIDI3; پردازنده نسل پیشرفته 4 vcore; 8 Gb; رم نسل پیشرفته; 80 Gb; هارد دیسک; 100 گیگ; ترافیک ماهانه; 1 عدد; ipv4; 1 عدد; ipv6; 899.000 تومان; ماهانه; 2.570.000 تومان; سه ماهه; 4.900.000 تومان; شش ماهه; 4.380.000 تومان; یکساله; خرید VPS -DID3",
+    "assessment": "Hold plan-specific handoff and Iran location mapping; storage type unknown"
+  },
+  {
+    "source": "didicloud-tariff",
+    "text": "vps – DIDI1; پردازنده نسل پیشرفته 1 vcore; 2 Gb; رم نسل پیشرفته; 40 Gb; هارد دیسک; 100 گیگ; ترافیک ماهانه; 1 عدد; ipv4; 1 عدد; ipv6; 250.000 تومان; ماهانه; 7.15.000 تومان; سه ماهه; 1.364.000 تومان; شش ماهه; 2.610.000 تومان; یکساله; خرید VPS -DIDI1",
+    "assessment": "Hold plan-specific handoff and Iran location mapping; storage type unknown"
+  },
+  {
+    "source": "didicloud-tariff",
+    "text": "vps – DIDI5; پردازنده نسل پیشرفته 8 vcore; 16 Gb; رم نسل پیشرفته; 150 Gb; هارد دیسک; 100 گیگ; ترافیک ماهانه; 1 عدد; ipv4; 1 عدد; ipv6; 2.000.000 تومان; ماهانه; 5.720.000 تومان; سه ماهه; 10.910.000 تومان; شش ماهه; 5.210.000 تومان; یکساله; خرید VPS -DIDI5",
+    "assessment": "Hold plan-specific handoff and Iran location mapping; storage type unknown"
+  },
+  {
+    "source": "didicloud-tariff",
+    "text": "vps – DIDI4; پردازنده نسل پیشرفته 6 vcore; 12 Gb; رم نسل پیشرفته; 120 Gb; هارد دیسک; 100 گیگ; ترافیک ماهانه; 1 عدد; ipv4; 1 عدد; ipv6; 1.300.000 تومان; ماهانه; 3.720.000 تومان; سه ماهه; 7.100.000 تومان; شش ماهه; 13.550.000 تومان; یکساله; خرید VPS -DIDI4",
+    "assessment": "Hold plan-specific handoff and Iran location mapping; storage type unknown"
+  },
+  {
+    "source": "datak-vps",
+    "text": "CPU: 1CORE; RAM:1GB; فضای ذخیره سازی : ۲۰; ترافیک :; 200GB; NETWORK:10GB; مدت زمان : یکماهه; امکان خرید حجم اضافه دارد.; امکان خرید ip ثابت دارد.; 550,000; 449,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "datak-vps",
+    "text": "CPU: 2CORE; RAM:4GB; فضای ذخیره سازی : ۲۰; ترافیک :; 200GB; NETWORK:10GB; مدت زمان : یکماهه; امکان خرید حجم اضافه دارد.; امکان خرید ip ثابت دارد.; 850,000; 749,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "datak-vps",
+    "text": "CPU: 4CORE; RAM:6GB; فضای ذخیره سازی : 3۰; ترافیک :; 300GB; NETWORK:10GB; مدت زمان : یکماهه; امکان خرید حجم اضافه دارد.; امکان خرید ip ثابت دارد.; 1,250,000; 949,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "datak-vps",
+    "text": "نارنجی (یکماه); CPU:1CORE; RAM:1GB; فضای ذخیره‌سازی:20; ترافیک:; 200GB; NETWORK:10GB; امکان خرید ip ثابت دارد.; 550,000; 449,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "datak-vps",
+    "text": "نارنجی پرو (یکماه); CPU:2CORE; RAM:4GB; فضای دخیره‌سازی:20; ترافیک:; 200GB; NETWORK:10GB; امکان خرید ip ثابت دارد.; 850,000; 749,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "datak-vps",
+    "text": "نارنجی پرو+ (یکماه); CPU:4CORE; RAM:6GB; فضای دخیره‌سازی:30; ترافیک:; 300GB; NETWORK:10GB; امکان خرید ip ثابت دارد.; 1,250,000; 949,000 تومان; سفارش سرور مجازی",
+    "assessment": "Hold storage unit/type and mandatory IP/fee basis; review discounted base"
+  },
+  {
+    "source": "jahesh-vps",
+    "text": "سرور مجازی ایران; VpsIR 1; 1 گیگ رم; 1 هسته پردازنده; 30 گیگ هارد SSD یا 50 گیگ SATA; 50 گیگ ترافیک; 1 گیگ پهنای باند; تحویل آنی; 490,000; تومان ماهانه; خرید سرور",
+    "assessment": "Hold selectable SSD/SATA capacity mapping; numeric monthly base exists"
+  },
+  {
+    "source": "jahesh-vps",
+    "text": "سرور مجازی ایران; VpsIR 3; 4 گیگ رم; 3 هسته پردازنده; 50 گیگ هارد SSD یا 500 گیگ SATA; 200 گیگ ترافیک; 1 گیگ پهنای باند; تحویل آنی; 1,180,000; تومان ماهانه; خرید سرور",
+    "assessment": "Hold selectable SSD/SATA capacity mapping; numeric monthly base exists"
+  },
+  {
+    "source": "jahesh-vps",
+    "text": "سرور مجازی ایران; VpsIR 5; 8 گیگ رم; 5 هسته پردازنده; 100 گیگ هارد SSD یا 1000 گیگ SATA; 400 گیگ ترافیک; 1 گیگ پهنای باند; تحویل آنی; 1,980,000; تومان ماهانه; خرید سرور",
+    "assessment": "Hold selectable SSD/SATA capacity mapping; numeric monthly base exists"
+  },
+  {
+    "source": "jahesh-vps",
+    "text": "سرور مجازی ایران; VpsIR 6; 16 گیگ رم; 6 هسته پردازنده; 100 گیگ هارد SSD یا 1000 گیگ SATA; 500 گیگ ترافیک; 1 گیگ پهنای باند; تحویل آنی; 2,780,000; تومان ماهانه; خرید سرور",
+    "assessment": "Hold selectable SSD/SATA capacity mapping; numeric monthly base exists"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P0; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 490,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P1; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 500 گیگابایت; 675,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P2; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 1 ترابایت; 915,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P3; پردازنده; 1vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 2 ترابایت; 1,395,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P4; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 3 ترابایت; 1,940,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P5; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 4 ترابایت; 2,490,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P6; پردازنده; 3vCore; رم; 3GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 5 ترابایت; 3,040,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P7; پردازنده; 4vCore; رم; 6GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 6 ترابایت; 3,590,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P8; پردازنده; 4vCore; رم; 6GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 7 ترابایت; 4,140,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P9; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 8 ترابایت; 4,690,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P10; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 10 ترابایت; 5,790,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P11; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 15 ترابایت; 8,540,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-P12; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 20 ترابایت; 11,290,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-S1; پردازنده; 2vCore; رم; 2GB; فضا; 250GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 500 گیگابایت; 1،050,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-S2; پردازنده; 4vCore; رم; 2GB; فضا; 500GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 1 ترابایت; 1،770,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-S3; پردازنده; 4vCore; رم; 4GB; فضا; 1T SSD; پورت شبکه; 10GB; ترافیک اولیه; 2 ترابایت; 3،190,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-S4; پردازنده; 6vCore; رم; 8GB; فضا; 2T SSD; پورت شبکه; 10GB; ترافیک اولیه; 3 ترابایت; 5،699,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-iran",
+    "text": "MD-10-S5; پردازنده; 6vCore; رم; 8GB; فضا; 5T SSD; پورت شبکه; 10GB; ترافیک اولیه; 4 ترابایت; 9،699,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "G10-SHZ-Start; پردازنده; 1vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 1,290,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "G10-SHZ-Power; پردازنده; 2vCore; رم; 4GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 2,200,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "G10-SHZ-Ultra; پردازنده; 8vCore; رم; 10GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 4,000,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh3; پردازنده; 1vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 2 ترابایت; 1،435,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh4; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 3 ترابایت; 2،000,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh5; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 4 ترابایت; 2،570,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh6; پردازنده; 3vCore; رم; 3GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 5 ترابایت; 3،140,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh7; پردازنده; 4vCore; رم; 6GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 6 ترابایت; 3،710,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh8; پردازنده; 4vCore; رم; 6GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 7 ترابایت; 4،280,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh9; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 8 ترابایت; 4،850,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh10; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 10 ترابایت; 5،990,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh11; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 15 ترابایت; 8،540,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-shiraz",
+    "text": "MD-10-sh12; پردازنده; 6vCore; رم; 8GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 20 ترابایت; 11،690,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P0; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 490,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P1; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 500 گیگابایت; 675,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P2; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 1 ترابایت; 915,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P3; پردازنده; 1vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 2 ترابایت; 1,395,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P4; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 3 ترابایت; 1,940,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-P5; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 4 ترابایت; 2,490,000 تومان; خرید کنید",
+    "assessment": "Hold explicit one-month price period / bandwidth extras; exact resource facts retained"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh0; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 50 گیگابایت; 290,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh1; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 500 گیگابایت; 585,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh2; پردازنده; 1vCore; رم; 1GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 1 ترابایت; 935,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh3; پردازنده; 1vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 2 ترابایت; 1،435,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh4; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 3 ترابایت; 2،000,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mizban-mikrotik",
+    "text": "MD-10-sh5; پردازنده; 2vCore; رم; 2GB; فضا; 25GB SSD; پورت شبکه; 10GB; ترافیک اولیه; 4 ترابایت; 2،570,000 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mt-13",
+    "text": "MobinOne P1; اقتصادی و سبک; 550٬۰۰۰; تومان; / ماهانه; پردازنده; ۱ هسته; رم; ۱ گیگابایت; دیسک NVMe; ۲۰ گیگابایت; ترافیک; ۳۰۰ گیگابایت; آی‌پی; ۱ عدد IPv4; سفارش این پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mt-13",
+    "text": "پیشنهاد محبوب; MobinOne P2; مناسب وب‌سایت و ربات; 6۹۰٬۰۰۰; تومان; / ماهانه; پردازنده; ۲ هسته; رم; ۲ گیگابایت; دیسک NVMe; 25 گیگابایت; ترافیک; ۵۰۰ گیگابایت; آی‌پی; ۱ عدد IPv4; سفارش این پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mt-13",
+    "text": "MobinOne P3; مناسب پروژه‌های متوسط; ۸5۰٬۰۰۰; تومان; / ماهانه; پردازنده; 2 هسته; رم; ۴ گیگابایت; دیسک NVMe; 30 گیگابایت; ترافیک; 3۰۰ گیگابایت; آی‌پی; ۱ عدد IPv4; سفارش این پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mt-13",
+    "text": "MobinOne P4; قدرت بیشتر برای کسب‌وکار; ۱٬۴۹۰٬۰۰۰; تومان; / ماهانه; پردازنده; ۴ هسته; رم; ۸ گیگابایت; دیسک NVMe; 4۰ گیگابایت; ترافیک; 300 گیگابایت; آی‌پی; ۱ عدد IPv4; سفارش این پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "mt-12",
+    "text": "سرورمجازی Asiatech-P1; پردازنده 1 هسته 2699 v4; رم 1 گیگابایت DDR4; هارد 20 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 550 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-12",
+    "text": "سرورمجازی Asiatech-P2; پردازنده 1 هسته 2699 v4; رم 2 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 690 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-12",
+    "text": "سرورمجازی Asiatech-P3; پردازنده 1 هسته 2699 v4; رم 4 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 850 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-12",
+    "text": "سرورمجازی Asiatech-P4; پردازنده 1 هسته 2699 v4; رم 8 گیگابایت DDR4; هارد 40 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 1.500 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-14",
+    "text": "سرورمجازی Pishgaman-P1; پردازنده 1 هسته 2699 V4; رم 1 گیگابایت DDR4; هارد 20 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 250 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mt-14",
+    "text": "سرورمجازی Pishgaman-P2; پردازنده 2 هسته 2699 V4; رم 2 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 360 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-14",
+    "text": "سرورمجازی Pishgaman-P3; پردازنده 2 هسته 2699 V4; رم 4 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک اولیه 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 450 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-14",
+    "text": "سرورمجازی Pishgaman-P4; پردازنده 4 هسته 2699 V4; رم 8 گیگابایت DDR4; هارد 40 گیگ NVME; ترافیک اولیه 500 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 820 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-15",
+    "text": "سرورمجازی Fanava-P1; پردازنده 1 هسته 2699 V4; رم 1 گیگابایت DDR4; هارد 20 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 550 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-15",
+    "text": "سرورمجازی Fanava-P2; پردازنده 2 هسته 2699 V4; رم 2 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 690 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-15",
+    "text": "سرورمجازی Fanava-P3; پردازنده 2 هسته 2699 V4; رم 4 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک اولیه 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 850 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-15",
+    "text": "سرورمجازی Fanava-P4; پردازنده 4 هسته 2699 V4; رم 8 گیگابایت DDR4; هارد 40 گیگ NVME; ترافیک اولیه 500 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 1500 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-16",
+    "text": "پلن اقتصادی; پردازنده 1 هسته 2699 V4; رم 1 گیگابایت DDR4; هارد 20 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 550 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-16",
+    "text": "پلن پایه; پردازنده 2 هسته 2699 V4; رم 2 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 690 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-16",
+    "text": "پلن پیشرفته; پردازنده 2 هسته 2699 V4; رم 4 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک اولیه 300 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 850 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-16",
+    "text": "پلن حرفه ای; پردازنده 4 هسته 2699 V4; رم 8 گیگابایت DDR4; هارد 40 گیگ NVME; ترافیک اولیه 500 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 1.500 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-17",
+    "text": "سرورمجازی Shatel-P1; پردازنده 1 هسته 2699 V4; رم 1 گیگابایت DDR4; هارد 20 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 250 تومان; تکمیل ظرفیت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "mt-17",
+    "text": "سرورمجازی Shatel-P2; پردازنده 2 هسته 2699 V4; رم 2 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 360 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-17",
+    "text": "سرورمجازی Shatel-P3; پردازنده 2 هسته 2699 V4; رم 4 گیگابایت DDR4; هارد 25 گیگ NVME; ترافیک اولیه 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 450 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-17",
+    "text": "سرورمجازی Shatel-P4; پردازنده 4 هسته 2699 V4; رم 8 گیگابایت DDR4; هارد 40 گیگ NVME; ترافیک اولیه 100 GB; امکان خرید ترافیک وجود دارد; امکان مصرف 1 به 1; پورت شبکه 10GB; ipv6 رایگان; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; تحویل آنی و خودکار; ماهانه 820 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 1; 300 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 1 هسته; رم 1 گیگابایت; هارد 20 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 2; 350 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 1 هسته; رم 2 گیگابایت; هارد 25 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 3; 460 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 2 هسته; رم 3 گیگابایت; هارد 30 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 4; 550 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 2 هسته; رم 4 گیگابایت; هارد 40 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 5; 690 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 3 هسته; رم 6 گیگابایت; هارد 50 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی 6; 899 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 4 هسته; رم 8 گیگابایت; هارد 60 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-18",
+    "text": "سرور مجازی پلن 7; 1.599 تومان; ماهانه; منابع اختصاصی قدرتمند; پردازنده 8 هسته; رم 16 گیگابایت; هارد 70 گیگ SSD; آنتی دیداس تضمینی; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-19",
+    "text": "پلن ها و تعرفه ها; با انتخاب هر یک از سرویس های زیر میتوانید منابع دلخواه خودرا اضافه کنید.; سرورمجازی IR-VPS1; پردازنده 1 هسته; رم 1 گیگابایت; هارد 20 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 160 تومان; سه ماهه 470 تومان; سفارش; سرورمجازی IR-VPS2; پردازنده 1 هسته; رم 2 گیگابایت; هارد 25 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 190 تومان; سه ماهه 550 تومان; سفارش; سرورمجازی IR-VPS3; پردازنده 2 هسته; رم 2 گیگابایت; هارد 30 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 230 تومان; سه ماهه 670 تومان; سفارش; سرورمجازی IR-VPS1; پردازنده 2 هسته; رم 4 گیگابایت; هارد 35 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 280 تومان; سه ماهه 820 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-19",
+    "text": "سرورمجازی IR-VPS1; پردازنده 1 هسته; رم 1 گیگابایت; هارد 20 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 160 تومان; سه ماهه 470 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-19",
+    "text": "سرورمجازی IR-VPS2; پردازنده 1 هسته; رم 2 گیگابایت; هارد 25 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 190 تومان; سه ماهه 550 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-19",
+    "text": "سرورمجازی IR-VPS3; پردازنده 2 هسته; رم 2 گیگابایت; هارد 30 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 230 تومان; سه ماهه 670 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "mt-19",
+    "text": "سرورمجازی IR-VPS1; پردازنده 2 هسته; رم 4 گیگابایت; هارد 35 گیگ NVME; ترافیک 300 GB; امکان خرید ترافیک وجود دارد; پنل مدیریت پیشرفته; مانیتوریگ 24 ساعته; لوکیشن ایران; دسترسی کامل; دسترسی vnc; ماهانه 280 تومان; سه ماهه 820 تومان; سفارش",
+    "assessment": "Hold literal-toman versus intended-thousand tariff; public store reconciliation required"
+  },
+  {
+    "source": "keloncloud",
+    "text": "پلان اول; هزار تومان; 180; /ماهانه; 20 گیگابابت هارد SSD; رم 1 گیگابابت; 1 هسته cpu; ترافیک نامحدود; ارسال ایمیل; سفارش سرور مجازی ایران",
+    "assessment": "Monthly base reviewable; hold exact capacity-unit interpretation if uncorroborated"
+  },
+  {
+    "source": "keloncloud",
+    "text": "پلان دوم; هزار تومان; 280; /ماهانه; 30 گیگابابت هارد SSD; رم 2 گیگابابت; 1 هسته cpu; ترافیک نامحدود; ارسال ایمیل; سفارش سرور مجازی ایران",
+    "assessment": "Monthly base reviewable; hold exact capacity-unit interpretation if uncorroborated"
+  },
+  {
+    "source": "keloncloud",
+    "text": "پلان سوم; هزار تومان; 390; /ماهانه; 40 گیگابابت هارد SSD; رم 3 گیگابابت; 2 هسته cpu; ترافیک نامحدود; ارسال ایمیل; سفارش سرور مجازی ایران",
+    "assessment": "Monthly base reviewable; hold exact capacity-unit interpretation if uncorroborated"
+  },
+  {
+    "source": "keloncloud",
+    "text": "پلان چهارم; هزار تومان; 470; /ماهانه; 60 گیگابابت هارد SSD; رم 4 گیگابابت; 3 هسته cpu; ترافیک نامحدود; ارسال ایمیل; سفارش سرور مجازی ایران",
+    "assessment": "Monthly base reviewable; hold exact capacity-unit interpretation if uncorroborated"
+  },
+  {
+    "source": "keloncloud",
+    "text": "پلان پنجم; هزار تومان; 690; /ماهانه; 80 گیگابابت هارد SSD; رم 8 گیگابابت; 4 هسته cpu; ترافیک نامحدود; ارسال ایمیل; سفارش سرور مجازی ایران",
+    "assessment": "Monthly base reviewable; hold exact capacity-unit interpretation if uncorroborated"
+  },
+  {
+    "source": "qaemhost",
+    "text": "VPS اقتصادی NVMe; شروع کار و سایت های کم مصرف; 850,000 تومان; تومان / ماهانه; رم اختصاصی; 4 گیگابایت; پردازنده; 4 هسته; فضای NVMe; 35 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "VPS استاندارد NVMe; سایت های شرکتی و فروشگاهی; 1,100,000 تومان; تومان / ماهانه; رم اختصاصی; 6 گیگابایت; پردازنده; 6 هسته; فضای NVMe; 60 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "VPS حرفه ای NVMe; وردپرس پربازدید و چند سایته; 1,400,000 تومان; تومان / ماهانه; رم اختصاصی; 8 گیگابایت; پردازنده; 8 هسته; فضای NVMe; 100 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "VPS پیشرفته NVMe; دیتابیس سنگین و ترافیک بالا; 1,900,000 تومان; تومان / ماهانه; رم اختصاصی; 12 گیگابایت; پردازنده; 12 هسته; فضای NVMe; 150 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "VPS پرمیوم NVMe; پیشنهاد ویژه; 3,000,000 تومان; تومان / ماهانه; رم اختصاصی; 16 گیگابایت; پردازنده; 16 هسته; فضای NVMe; 200 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "استارتر SSD; پروژه های سبک; 850,000 تومان; تومان / ماهانه; رم اختصاصی; 4 گیگابایت; پردازنده; 4 هسته; فضای SSD; 60 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "کلاسیک SSD; سایت شرکتی; 1,100,000 تومان; تومان / ماهانه; رم اختصاصی; 6 گیگابایت; پردازنده; 6 هسته; فضای SSD; 75 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "حرفه ای SSD; چند سایت همزمان; 1,400,000 تومان; تومان / ماهانه; رم اختصاصی; 8 گیگابایت; پردازنده; 8 هسته; فضای SSD; 90 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "پلاس SSD; مصرف بالا; 1,900,000 تومان; تومان / ماهانه; رم اختصاصی; 12 گیگابایت; پردازنده; 12 هسته; فضای SSD; 150 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "ماکسیمم SSD; پیشنهاد ویژه; 3,000,000 تومان; تومان / ماهانه; رم اختصاصی; 16 گیگابایت; پردازنده; 16 هسته; فضای SSD; 200 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Aurora Cloud; ابری پایه; 850,000 تومان; تومان / ماهانه; رم اختصاصی; 4 گیگابایت; پردازنده; 4 هسته; فضای RAID 10; 50 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Nova Cloud; ابری استاندارد; 1,100,000 تومان; تومان / ماهانه; رم اختصاصی; 6 گیگابایت; پردازنده; 6 هسته; فضای RAID 10; 60 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Eclipse Cloud; ابری حرفه ای; 1,400,000 تومان; تومان / ماهانه; رم اختصاصی; 8 گیگابایت; پردازنده; 8 هسته; فضای RAID 10; 100 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Quantum Cloud; ابری پیشرفته; 1,900,000 تومان; تومان / ماهانه; رم اختصاصی; 12 گیگابایت; پردازنده; 12 هسته; فضای RAID 10; 150 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Infinity Cloud; پیشنهاد ویژه; 3,000,000 تومان; تومان / ماهانه; رم اختصاصی; 16 گیگابایت; پردازنده; 16 هسته; فضای RAID 10; 200 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Nimbus VDS; شروع سطح نیمه اختصاصی; 3,500,000 تومان; تومان / ماهانه; رم اختصاصی; 24 گیگابایت; پردازنده; 16 هسته; فضای NVMe; 200 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Vertex VDS; پروژه های سنگین; 4,990,000 تومان; تومان / ماهانه; رم اختصاصی; 32 گیگابایت; پردازنده; 24 هسته; فضای NVMe; 300 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Elysium VDS; بالاترین منابع VDS; 6,800,000 تومان; تومان / ماهانه; رم اختصاصی; 48 گیگابایت; پردازنده; 28 هسته; فضای NVMe; 400 گیگابایت; سیستم عامل; لینوکس یا ویندوز; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Swift TNG; ورود به پورت 10 گیگ; 2,500,000 تومان; تومان / ماهانه; رم اختصاصی; 8 گیگابایت; پردازنده; 8 هسته; فضای NVMe; 35 گیگابایت; پورت شبکه; 10 گیگابیت; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Blaze TNG; مصرف متوسط; 3,500,000 تومان; تومان / ماهانه; رم اختصاصی; 16 گیگابایت; پردازنده; 16 هسته; فضای NVMe; 45 گیگابایت; پورت شبکه; 10 گیگابیت; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Thunder TNG; بار پردازشی بالا; 5,500,000 تومان; تومان / ماهانه; رم اختصاصی; 32 گیگابایت; پردازنده; 32 هسته; فضای NVMe; 55 گیگابایت; پورت شبکه; 10 گیگابیت; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "qaemhost",
+    "text": "Infinity TNG; حداکثر منابع; 7,000,000 تومان; تومان / ماهانه; رم اختصاصی; 36 گیگابایت; پردازنده; 48 هسته; فضای NVMe; 100 گیگابایت; پورت شبکه; 10 گیگابیت; ثبت سفارش",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "1; vCPU; 2; GB RAM; 20; GB eHDD; 120; GB Traffic; ۳۴۸٬۰۰۰; تومان; ۳۵۸٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "2; vCPU; 4; GB RAM; 30; GB eHDD; 150; GB Traffic; ۵۴۹٬۰۰۰; تومان; ۵۶۴٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "4; vCPU; 6; GB RAM; 35; GB eHDD; 170; GB Traffic; ۷۶۵٬۰۰۰; تومان; ۷۸۸٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "4; vCPU; 8; GB RAM; 50; GB eHDD; 200; GB Traffic; ۹۱۸٬۰۰۰; تومان; ۹۴۳٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "6; vCPU; 12; GB RAM; 70; GB eHDD; 250; GB Traffic; ۱٬۲۶۸٬۰۰۰; تومان; ۱٬۳۰۳٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "8; vCPU; 16; GB RAM; 90; GB eHDD; 300; GB Traffic; ۱٬۶۱۵٬۰۰۰; تومان; ۱٬۶۶۱٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "12; vCPU; 24; GB RAM; 115; GB eHDD; 350; GB Traffic; ۲٬۲۴۳٬۰۰۰; تومان; ۲٬۳۱۳٬۰۰۰; تومان",
+    "assessment": "Base reviewable after location mapping; preserve eHDD; custom excluded"
+  },
+  {
+    "source": "9craft-vps",
+    "text": "Up to 40 vCPU; Up to 256GB RAM; Custom eHDD; Custom Traffic; به پشتیبانی تیکت بزنید.",
+    "assessment": "Exclude: custom quote, no fixed tariff"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 1 گیگابایت رم; ۳۹۰٬۰۰۰; تومان / ماهانه; Ram 1GB; CPU 1Core; Storage 10GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "پیشنهاد ویژه • محبوب‌ترین; سرور مجازی ایران (نامحدود) - 2 گیگابایت رم; ۴۹۰٬۰۰۰; تومان / ماهانه; Ram 2GB; CPU 2Core; Storage 15GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 3 گیگابایت رم; ۵۹۰٬۰۰۰; تومان / ماهانه; Ram 3GB; CPU 2Core; Storage 20GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 4 گیگابایت رم; ۷۹۰٬۰۰۰; تومان / ماهانه; Ram 4GB; CPU 2Core; Storage 20GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 8 گیگابایت رم; ۱٬۲۹۰٬۰۰۰; تومان / ماهانه; Ram 8GB; CPU 4Core; Storage 40GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 16 گیگابایت رم; ۲٬۲۹۰٬۰۰۰; تومان / ماهانه; Ram 16GB; CPU 8Core; Storage 50GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - 32 گیگابایت رم; ۳٬۴۹۰٬۰۰۰; تومان / ماهانه; Ram 32GB; CPU 16Core; Storage 80GB SSD; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و بین‌الملل): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; مناسب سرویس‌های دانلود، استریم، تانل، گیم‌سرور و مصارف تجاری پرمصرف; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (نامحدود) - پلن سفارشی; تماس با واحد فروش; پورت شبکه: ۱۰ گیگابیت اختصاصی; ترافیک مصرفی: ۱۰۰٪ نامحدود واقعی (بدون سقف حجم); دانلود بین‌الملل: متناسب با مگابیت انتخابی در سفارش (۱ تا ۵۰۰ مگابیت); سرعت شبکه داخل ایران: پورت ۱۰ گیگابیت باز و بدون محدودیت سرعت; آپلود سرور (ایران و خارج): کاملاً باز و بدون محدودیت سرعت; پشتیبانی از IPv6 اختصاصی رایگان; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (ترافیکی) - 1 گیگابایت رم; ۴۲۰٬۰۰۰; تومان / ماهانه; Ram 1GB; CPU 1Core; Storage 10GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "پیشنهاد ویژه • محبوب‌ترین; سرور مجازی ایران (ترافیکی) - 2 گیگابایت رم; ۵۴۰٬۰۰۰; تومان / ماهانه; Ram 2GB; CPU 2Core; Storage 15GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (ترافیکی) - 3 گیگابایت رم; ۶۵۰٬۰۰۰; تومان / ماهانه; Ram 3GB; CPU 2Core; Storage 20GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (ترافیکی) - 4 گیگابایت رم; ۷۹۰٬۰۰۰; تومان / ماهانه; Ram 4GB; CPU 2Core; Storage 20GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (ترافیکی) - 8 گیگابایت رم; ۱٬۳۹۰٬۰۰۰; تومان / ماهانه; Ram 8GB; CPU 4Core; Storage 40GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "bia2host",
+    "text": "سرور مجازی ایران (ترافیکی) - 16 گیگابایت رم; ۲٬۴۹۰٬۰۰۰; تومان / ماهانه; Ram 16GB; CPU 8Core; Storage 50GB SAS Raid; محل میزبانی: دیتاسنتر معتبر آسیاتک; پورت شبکه: پورت فوق‌سریع 10Gbps اختصاصی; ترافیک اولیه: ۵۰ گیگابایت (قابل ارتقاء و شارژ آنی در هر زمان); ترافیک آپلود (ارسال داده از سرور): کاملاً رایگان و نامحدود; پشتیبانی از IPv6 اختصاصی رایگان; امکان ارتقای ترافیک با تعرفه منصفانه در پنل کاربری; تحویل آنی و خودکار پس از پرداخت; سفارش و تحویل آنی",
+    "assessment": "Metered reviewable base; unlimited hold price/bandwidth discrepancy; custom excluded"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS1; 425; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 20 % تخفیف سالیانه; فضای هارد : 20GB SSD; پردازنده : 1Core CPU; حافظه رم : 1GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; ناموجود",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS2; 599; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 20 % تخفیف سالیانه; فضای هارد : 30GB SSD; پردازنده : 2Core CPU; حافظه رم : 2GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; سفارش پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS3; 725; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 30 % تخفیف سالیانه; فضای هارد : 50GB SSD; پردازنده : 2Core CPU; حافظه رم : 3GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; سفارش پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS4; 899; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 20 % تخفیف سالیانه; فضای هارد : 60GB SSD; پردازنده : 2Core CPU; حافظه رم : 4GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; سفارش پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS5; 1,025; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 20 % تخفیف سالیانه; فضای هارد : 80GB SSD; پردازنده : 4Core CPU; حافظه رم : 6GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; سفارش پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "rtl-vps",
+    "text": "IR-VPS6; 1,299; هزار تومان; ماهیـــــــانه; آسیاتک / همراه اول; 20 % تخفیف سالیانه; فضای هارد : 100GB SSD; پردازنده : 6Core CPU; حافظه رم : 8GB Ram; موقعیت سرور : ایران; IP اختصاصی; ترافیک : 100 گیگ ماهانه; مدت تحویل : 1روز کاری; راه اندازی کنترل پنل; سفارش پلن",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sonhost-iran",
+    "text": "بسته ۱; IR-KVM-01; آماده سفارش; فضای دیسک; 10 GB; ترافیک ماهانه; 100 GB; میزان RAM; 1 GB; میزان CPU; 1; دوره پرداخت; ماهانه; 1,150,000 تومان; سفارش سرور مجازی; ←",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sonhost-iran",
+    "text": "بسته ۲; IR-KVM-02; آماده سفارش; فضای دیسک; 20 GB; ترافیک ماهانه; 200 GB; میزان RAM; 2 GB; میزان CPU; 2; دوره پرداخت; ماهانه; 1,350,000 تومان; سفارش سرور مجازی; ←",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sonhost-iran",
+    "text": "بسته ۳; IR-KVM-03; آماده سفارش; فضای دیسک; 40 GB; ترافیک ماهانه; 300 GB; میزان RAM; 4 GB; میزان CPU; 3; دوره پرداخت; ماهانه; 1,425,000 تومان; سفارش سرور مجازی; ←",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sonhost-iran",
+    "text": "بسته ۴; IR-KVM-04; آماده سفارش; فضای دیسک; 60 GB; ترافیک ماهانه; 400 GB; میزان RAM; 6 GB; میزان CPU; 3; دوره پرداخت; ماهانه; 1,725,000 تومان; سفارش سرور مجازی; ←",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "sonhost-iran",
+    "text": "بسته ۵; IR-KVM-05; آماده سفارش; فضای دیسک; 80 GB; ترافیک ماهانه; 500 GB; میزان RAM; 8 GB; میزان CPU; 4; دوره پرداخت; ماهانه; 2,145,000 تومان; سفارش سرور مجازی; ←",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "irwebhost-vps",
+    "text": "IRVK1-SSD; 20GB SSD; فضای دیسک اختصاصی; ۹۸۰٬۰۰۰; تومان / ماهانه; راه‌اندازی رایگان; سالانه:; ۹٬۹۹۰٬۰۰۰; تومان; ۱۵٪ تخفیف; دیسک : 20GB SSD; ترافیک ماهیانه : 150GB/mo; حافظه : 2GB; تعداد آی پی : 1; پردازنده : 2Core; مجازی سازی : KVM; تکمیل ظرفیت; مقایسه مشخصات و قیمت",
+    "assessment": "Unavailable; retain evidence, exclude current choice"
+  },
+  {
+    "source": "irwebhost-vps",
+    "text": "IRVK2-SSD; 30GB; فضای دیسک اختصاصی; ۱٬۱۳۰٬۰۰۰; تومان / ماهانه; راه‌اندازی رایگان; سالانه:; ۱۱٬۵۲۰٬۰۰۰; تومان; ۱۵٪ تخفیف; فضای اس اس دی: 30GB; ترافیک ماهیانه: 100GB/mo; ترافیک مازاد: قابل سفارش; حافظه رم: 2.5GB; تعداد آی پی: 1; پردازنده: 2; خرید این پلن; مقایسه مشخصات و قیمت",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "irwebhost-vps",
+    "text": "IRVK3-SSD; 50GB; فضای دیسک اختصاصی; ۱٬۳۷۰٬۰۰۰; تومان / ماهانه; راه‌اندازی رایگان; سالانه:; ۱۳٬۹۷۰٬۰۰۰; تومان; ۱۵٪ تخفیف; فضای اس اس دی: 50GB; ترافیک ماهیانه: 100GB/mo; ترافیک مازاد: قابل سفارش; حافظه رم: 3GB; تعداد آی پی: 1; پردازنده: 4; خرید این پلن; مقایسه مشخصات و قیمت",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "irwebhost-vps",
+    "text": "IRVK4-SSD; 80GB; فضای دیسک اختصاصی; ۱٬۸۵۰٬۰۰۰; تومان / ماهانه; راه‌اندازی رایگان; سالانه:; ۱۸٬۸۷۰٬۰۰۰; تومان; ۱۵٪ تخفیف; فضای اس اس دی: 80GB; ترافیک ماهیانه: 100GB/mo; ترافیک مازاد: قابل سفارش; حافظه رم: 4GB; تعداد آی پی: 1; پردازنده: 8; خرید این پلن; مقایسه مشخصات و قیمت",
+    "assessment": "Reviewable published base; tax/mandatory-extra completeness unknown"
+  },
+  {
+    "source": "vpsoto",
+    "text": "Starter; VPS ·; SSD; vCPU; 2 cores; RAM; 1 GB; Storage; 40 GB SSD; Transfer; Unlimited; $50.00; /; mo; or; $40.00; /mo; billed annually; (save; 20; %); Add to cart",
+    "assessment": "Public monthly USD tariff; hold current toman-only schema; SSD/NVMe conflict"
+  },
+  {
+    "source": "vpsoto",
+    "text": "Standard; VPS ·; SSD; vCPU; 4 cores; RAM; 2 GB; Storage; 70 GB SSD; Transfer; Unlimited; $90.00; /; mo; or; $72.00; /mo; billed annually; (save; 20; %); Add to cart",
+    "assessment": "Public monthly USD tariff; hold current toman-only schema; SSD/NVMe conflict"
+  },
+  {
+    "source": "vpsoto",
+    "text": "Most popular; Performance; VPS ·; SSD; vCPU; 6 cores; RAM; 4 GB; Storage; 100 GB SSD; Transfer; Unlimited; $130.00; /; mo; or; $104.00; /mo; billed annually; (save; 20; %); Add to cart",
+    "assessment": "Public monthly USD tariff; hold current toman-only schema; SSD/NVMe conflict"
+  },
+  {
+    "source": "vpsoto",
+    "text": "Pro; VPS ·; SSD; vCPU; 8 cores; RAM; 8 GB; Storage; 150 GB SSD; Transfer; Unlimited; $166.00; /; mo; or; $132.80; /mo; billed annually; (save; 20; %); Add to cart",
+    "assessment": "Public monthly USD tariff; hold current toman-only schema; SSD/NVMe conflict"
+  }
+]

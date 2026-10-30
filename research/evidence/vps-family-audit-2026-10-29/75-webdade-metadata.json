@@ -1,0 +1,16 @@
+{
+  "provider": "webdade",
+  "label": "سرور مجازی رایگان",
+  "url": "https://webdade.com/free-vps",
+  "discovered_in": "34-webdade-links.json",
+  "source_key": "75-webdade",
+  "requested_url": "https://webdade.com/free-vps",
+  "capture_time": "2026-10-29T19:16:42.325074+00:00",
+  "status": 200,
+  "final_url": "https://webdade.com/free-vps",
+  "sha256": "453eead2d3dcc39085e065ea94e23e665e01b60d42b4b80cb178cbf5140b530c",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/75-webdade.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/75-webdade.txt",
+  "bytes": 626958,
+  "title": "وب داده | سرور مجازی رایگان | وی پی اس رایگان | vps رایگان"
+}

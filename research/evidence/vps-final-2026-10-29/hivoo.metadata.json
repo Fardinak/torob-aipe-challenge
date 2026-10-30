@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://hivoo.ir/",
+  "attempt_utc": "2026-10-29T02:37:15.275753+00:00",
+  "final_url": "https://hivoo.ir/cgi-sys/suspendedpage.cgi",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "text/html",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 02:37:10 GMT",
+    "Server": "LiteSpeed",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 7610,
+  "sha256": "ce215767b106c6b98476811773d508d997d8468c974aafdbcc9ccfe30b685f52",
+  "saved_utc": "2026-10-29T02:37:15.667389+00:00"
+}

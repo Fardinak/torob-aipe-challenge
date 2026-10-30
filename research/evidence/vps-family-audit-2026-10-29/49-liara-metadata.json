@@ -1,0 +1,16 @@
+{
+  "label": "سرور مجازی ترید ساعتی",
+  "url": "https://liara.ir/products/trade-vps/",
+  "provider": "liara",
+  "discovered_in": "01-liara",
+  "source_key": "49-liara",
+  "requested_url": "https://liara.ir/products/trade-vps/",
+  "capture_time": "2026-10-29T19:11:46.780201+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/products/trade-vps/",
+  "sha256": "b333914c4cbf767c30074ef47f8f8a24e198303058699637c34e3aa8513340ac",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/49-liara.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/49-liara.txt",
+  "bytes": 119476,
+  "title": "خرید سرور ترید | VPS ترید ساعتی با آی‌پی ثابت و پینگ پایین - لیارا"
+}

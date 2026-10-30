@@ -1,0 +1,16 @@
+{
+  "provider": "spadserver",
+  "label": "سرور مجازی پیشرفته ایران",
+  "url": "https://crm.spadserver.com/cart.php?gid=4",
+  "discovered_in": "14-spadserver-links.json",
+  "source_key": "36-spadserver",
+  "requested_url": "https://crm.spadserver.com/cart.php?gid=4",
+  "capture_time": "2026-10-29T19:10:46.019577+00:00",
+  "status": 200,
+  "final_url": "https://crm.spadserver.com/store/iran-semi-dedicate",
+  "sha256": "873a1c020ac100c7815251ae568480772cf169fc4ea4a40b41689995c17f6c14",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/36-spadserver.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/36-spadserver.txt",
+  "bytes": 84301,
+  "title": "کارت خرید - اسپاد سرور"
+}

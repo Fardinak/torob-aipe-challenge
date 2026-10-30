@@ -1,0 +1,21 @@
+{
+  "requested_url": "https://client.dyarhost.com/store/iran-respina-nvme-vps",
+  "attempt_utc": "2026-10-29T09:49:44.921754+00:00",
+  "final_url": "https://client.dyarhost.com/store/iran-respina-nvme-vps",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "X-Powered-By": "PHP/8.2.35",
+    "set-cookie": "WHMCSxXvndK0iWMtY=fl00mbhqh65qletcqd5nflp88f; path=/; secure; HttpOnly",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate",
+    "Pragma": "no-cache",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 09:49:39 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 127626,
+  "sha256": "9e5352a69529a3648a808662cec38a61a64b0cbba27fa8aa4909b46e08f9dc34",
+  "saved_utc": "2026-10-29T09:49:46.194947+00:00"
+}

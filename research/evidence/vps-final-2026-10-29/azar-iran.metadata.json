@@ -1,0 +1,27 @@
+{
+  "requested_url": "https://azaronline.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86/",
+  "attempt_utc": "2026-10-29T09:53:50.936824+00:00",
+  "final_url": "https://azaronline.com/%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 09:53:50 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "x-powered-by": "Express",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "vary": "Accept-Encoding",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ml6gDzt4HShi4nKHwMRPAxZw9aPhcTpYPc%2Fc2rVDw0MNlDDyzwSnQ40cUGHjMcFdLxZNPJaAMlby1dhXjiZaLlDA1pbHFZfMUqE9rVF3QiDfMYNDF%2F%2B94w03SWdF2Hpe\"}]}",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Age": "160062",
+    "Cache-Control": "max-age=432000",
+    "cf-cache-status": "HIT",
+    "Strict-Transport-Security": "max-age=0; preload",
+    "Server": "cloudflare",
+    "CF-RAY": "a5214ba4fc9d14e2-FRA"
+  },
+  "bytes": 1090627,
+  "sha256": "8d03ab24747f665d5c6ca157e8de40b929d0c247e6c95ff664d083b20093ae64",
+  "saved_utc": "2026-10-29T09:53:58.051307+00:00"
+}

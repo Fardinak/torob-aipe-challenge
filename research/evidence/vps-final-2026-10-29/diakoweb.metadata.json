@@ -1,0 +1,32 @@
+{
+  "requested_url": "https://diakoweb.com/",
+  "attempt_utc": "2026-10-29T02:37:15.273818+00:00",
+  "final_url": "https://diakoweb.com/",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 29 Oct 2026 02:37:15 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "x-powered-by": "Express",
+    "charset": "utf-8",
+    "Accept-Ranges": "bytes",
+    "Cache-Control": "private, max-age=0",
+    "last-modified": "Fri, 11 Sep 2026 09:04:34 GMT",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WUJsQLWNQ4dE%2FaDpPBszN9cTtSHpWaiCLvVZz9WyXIX95S6Y2lWM9BdQVGPzQzamniAiQX0gx25BIqCcy3RAVZI6Di1q0S7xOhx9dNPOOVcNN5iO%2BfvQHHk569AE7zc%3D\"}]}",
+    "x-cloud-trace-context": "8fd1e7e4f19c1f9cb994fe2c220ca02a;o=1",
+    "Set-Cookie": "GAESA=CrYBMDBlOGE0MDhiZGFmZmY5NWU2NjBkNTQ4NGY0NjJhOWFjYjcwNGI1ZDgxM2U2YWE1M2M3MjlhMWJlMTU0MGVhMDUzMDYyMTMyYmYwYzEyZDU5YzJkNjhjZWJiMmRjMTAxOTkzNDI4YTI2Y2NiYjA3NTM4MDA4ODYzMWY4MDA1MzY2Y2M4Zjc4MTExMzk1NzM0NGNhMjk5ZmY2ZGYyZjAwMDE3YzNiZDg5OTJjZmU5NmYzOGY0YjAQk5uTrJg0; expires=Sat, 28-Nov-2026 02:37:15 GMT; path=/",
+    "Server": "cloudflare",
+    "expires": "Thu, 29 Oct 2026 02:37:15 GMT",
+    "cf-cache-status": "DYNAMIC",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Strict-Transport-Security": "max-age=2592000; includeSubDomains; preload",
+    "X-Content-Type-Options": "nosniff",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "CF-RAY": "a51ecc1b0fef5499-FRA",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "bytes": 19874,
+  "sha256": "2ac7e0a2264bb15221165b3018f5fcf57212f5e00ac7512bf411d7691e41e15b",
+  "saved_utc": "2026-10-29T02:37:21.195990+00:00"
+}

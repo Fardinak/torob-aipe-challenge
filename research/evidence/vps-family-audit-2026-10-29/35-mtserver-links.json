@@ -1,0 +1,326 @@
+[
+  {
+    "label": "رفتن به محتوای صفحه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava#mt-main-content"
+  },
+  {
+    "label": "ناحیه کاربری مشتریان",
+    "url": "https://my.mtserver.ir/clientarea.php"
+  },
+  {
+    "label": "",
+    "url": "https://my.mtserver.ir/cart.php?a=view"
+  },
+  {
+    "label": "ورود / ثبت‌نام",
+    "url": "https://my.mtserver.ir/login.php"
+  },
+  {
+    "label": "ناحیه کاربری",
+    "url": "https://my.mtserver.ir/index.php"
+  },
+  {
+    "label": "فروشگاه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava#"
+  },
+  {
+    "label": "مشاهده همه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store"
+  },
+  {
+    "label": "سرور مجازی مبین وان  (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone-ir"
+  },
+  {
+    "label": "سرور مجازی رسپینا (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/respina"
+  },
+  {
+    "label": "سرور مجازی فن آوا (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava"
+  },
+  {
+    "label": "سرور مجازی رایتل (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/rightel"
+  },
+  {
+    "label": "سرور مجازی آسیاتک  (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb"
+  },
+  {
+    "label": "سرور مجازی شاتل (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/shatel"
+  },
+  {
+    "label": "سرور اختصاصی ایران",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/dedicated-server-iran"
+  },
+  {
+    "label": "سرور مجازی گیم ایران  SSD pro",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-game"
+  },
+  {
+    "label": "سرور مجازی (آلمان، فنلاند، آمریکا)",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-cloud-hetzner"
+  },
+  {
+    "label": "نمایندگی سرور تیم اسپیک",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-teamspeak"
+  },
+  {
+    "label": "هاست اشتراکی لینوکس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/host-linux"
+  },
+  {
+    "label": "هاست وردپرس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/host-wordpress"
+  },
+  {
+    "label": "نمایندگی هاست وردپرس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-wp"
+  },
+  {
+    "label": "نمایندگی هاست  لینوکس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-host"
+  },
+  {
+    "label": "مستر ریسلر سی پنل",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mstr-ryslr-yrn"
+  },
+  {
+    "label": "خدمات whmcs و طراحی سایت",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/web-design-config"
+  },
+  {
+    "label": "نمایندگی دامنه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/nmyndgy-dmnh"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/colocation"
+  },
+  {
+    "label": "نمایندگی سرور مجازی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-vps"
+  },
+  {
+    "label": "سرورمجازی نامحدود (پهنای باندی)",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/unlimeted-traffic"
+  },
+  {
+    "label": "لایسنس اشتراکی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/license"
+  },
+  {
+    "label": "اجاره آیپی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/ip-rent"
+  },
+  {
+    "label": "ثبت دامنه جدید",
+    "url": "https://my.mtserver.ir/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "انتقال دامنه به ما",
+    "url": "https://my.mtserver.ir/cart.php?a=add&domain=transfer"
+  },
+  {
+    "label": "اخبار",
+    "url": "https://my.mtserver.ir/index.php?rp=/announcements"
+  },
+  {
+    "label": "مرکز آموزش",
+    "url": "https://my.mtserver.ir/index.php?rp=/knowledgebase"
+  },
+  {
+    "label": "وضعیت شبکه",
+    "url": "https://my.mtserver.ir/serverstatus.php"
+  },
+  {
+    "label": "بازاریابی",
+    "url": "https://my.mtserver.ir/affiliates.php"
+  },
+  {
+    "label": "تماس با ما",
+    "url": "https://my.mtserver.ir/contact.php"
+  },
+  {
+    "label": "ارسال تیکت",
+    "url": "https://my.mtserver.ir/submitticket.php"
+  },
+  {
+    "label": "سرور مجازی مبین وان  (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone-ir"
+  },
+  {
+    "label": "سرور مجازی رسپینا (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/respina"
+  },
+  {
+    "label": "سرور مجازی فن آوا (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava"
+  },
+  {
+    "label": "سرور مجازی رایتل (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/rightel"
+  },
+  {
+    "label": "سرور مجازی آسیاتک  (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb"
+  },
+  {
+    "label": "سرور مجازی شاتل (Port 10GB )",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/shatel"
+  },
+  {
+    "label": "سرور اختصاصی ایران",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/dedicated-server-iran"
+  },
+  {
+    "label": "سرور مجازی گیم ایران  SSD pro",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-game"
+  },
+  {
+    "label": "سرور مجازی (آلمان، فنلاند، آمریکا)",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-cloud-hetzner"
+  },
+  {
+    "label": "نمایندگی سرور تیم اسپیک",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-teamspeak"
+  },
+  {
+    "label": "هاست اشتراکی لینوکس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/host-linux"
+  },
+  {
+    "label": "هاست وردپرس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/host-wordpress"
+  },
+  {
+    "label": "نمایندگی هاست وردپرس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-wp"
+  },
+  {
+    "label": "نمایندگی هاست  لینوکس",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-host"
+  },
+  {
+    "label": "مستر ریسلر سی پنل",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mstr-ryslr-yrn"
+  },
+  {
+    "label": "خدمات whmcs و طراحی سایت",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/web-design-config"
+  },
+  {
+    "label": "نمایندگی دامنه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/nmyndgy-dmnh"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/colocation"
+  },
+  {
+    "label": "نمایندگی سرور مجازی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/reseller-vps"
+  },
+  {
+    "label": "سرورمجازی نامحدود (پهنای باندی)",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/unlimeted-traffic"
+  },
+  {
+    "label": "لایسنس اشتراکی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/license"
+  },
+  {
+    "label": "اجاره آیپی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/ip-rent"
+  },
+  {
+    "label": "ثبت دامنه جدید",
+    "url": "https://my.mtserver.ir/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "انتقال در دامنه",
+    "url": "https://my.mtserver.ir/cart.php?a=add&domain=transfer"
+  },
+  {
+    "label": "مشاهده کارت خرید",
+    "url": "https://my.mtserver.ir/cart.php?a=view"
+  },
+  {
+    "label": "سفارش دهید",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava/fanava-plan-1"
+  },
+  {
+    "label": "سفارش دهید",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava/fanava-plan-2"
+  },
+  {
+    "label": "سفارش دهید",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava/fanava-plan-3"
+  },
+  {
+    "label": "سفارش دهید",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava/fanava-plan-4"
+  },
+  {
+    "label": "ادامه",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/fanava#"
+  },
+  {
+    "label": "MT Server",
+    "url": "https://mtserver.ir/"
+  },
+  {
+    "label": "سرور مجازی مبین وان",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/mobinone"
+  },
+  {
+    "label": "سرور مجازی آسیاتک",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/vps-iran-asia-10gb"
+  },
+  {
+    "label": "سرورمجازی رسپینا",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/respina"
+  },
+  {
+    "label": "کولوکیشن",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/colocation"
+  },
+  {
+    "label": "لایسنس اشتراکی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/license"
+  },
+  {
+    "label": "اجاره آیپی",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/ip-rent"
+  },
+  {
+    "label": "ثبت دامنه",
+    "url": "https://my.mtserver.ir/cart.php?a=add&domain=register"
+  },
+  {
+    "label": "طراحی سایت",
+    "url": "https://my.mtserver.ir/index.php?rp=/store/web-design-config"
+  },
+  {
+    "label": "قوانین و مقررات",
+    "url": "https://mtserver.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86-%d9%88-%d9%85%d9%82%d8%b1%d8%b1%d8%a7%d8%aa/"
+  },
+  {
+    "label": "درباره ما",
+    "url": "https://mtserver.ir/about/"
+  },
+  {
+    "label": "ارتباط با ما",
+    "url": "https://mtserver.ir/contact/"
+  },
+  {
+    "label": "نمادهای اعتماد",
+    "url": "https://mtserver.ir/namad-etemad/"
+  },
+  {
+    "label": "MTserver.ir",
+    "url": "https://mtserver.ir/"
+  }
+]

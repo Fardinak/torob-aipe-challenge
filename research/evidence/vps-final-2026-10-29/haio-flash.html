@@ -1,0 +1,649 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- بهینه‌سازی موتور جستجو توسط Rank Math PRO - https://rankmath.com/ -->
+<title>هایو فلش | سرور مجازی ابری هایو کلود</title><link rel="preload" data-rocket-preload as="image" href="https://haio.ir/wp-content/themes/haio-cloud/assets/services/haio-flash-hero.webp" fetchpriority="high">
+<meta name="description" content="هایو فلش سرویس سرور مجازی ابری هایو است. سه جدول طرح عادی، ترافیکی و Auto Scale را با منابع و قیمت ماهانه مقایسه کنید و گزینهٔ مناسب را در پنل انتخاب کنید."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://haio.ir/haio-flash/" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="هایو فلش | سرور مجازی ابری هایو کلود" />
+<meta property="og:description" content="هایو فلش سرویس سرور مجازی ابری هایو است. سه جدول طرح عادی، ترافیکی و Auto Scale را با منابع و قیمت ماهانه مقایسه کنید و گزینهٔ مناسب را در پنل انتخاب کنید." />
+<meta property="og:url" content="https://haio.ir/haio-flash/" />
+<meta property="og:site_name" content="هایو کلود" />
+<meta property="og:image" content="https://haio.ir/wp-content/uploads/2024/08/haio-04-2.png" />
+<meta property="og:image:secure_url" content="https://haio.ir/wp-content/uploads/2024/08/haio-04-2.png" />
+<meta property="og:image:width" content="1182" />
+<meta property="og:image:height" content="1182" />
+<meta property="og:image:alt" content="هایو فلش" />
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="هایو فلش | سرور مجازی ابری هایو کلود" />
+<meta name="twitter:description" content="هایو فلش سرویس سرور مجازی ابری هایو است. سه جدول طرح عادی، ترافیکی و Auto Scale را با منابع و قیمت ماهانه مقایسه کنید و گزینهٔ مناسب را در پنل انتخاب کنید." />
+<meta name="twitter:image" content="https://haio.ir/wp-content/uploads/2024/08/haio-04-2.png" />
+<meta name="twitter:label1" content="زمان خواندن" />
+<meta name="twitter:data1" content="کمتر از یک دقیقه" />
+<!-- /افزونه سئو ورپرس Rank Math -->
+
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://haio.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaio.ir%2Fhaio-flash%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://haio.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaio.ir%2Fhaio-flash%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='haio-tools-css' href='https://haio.ir/wp-content/cache/min/1/wp-content/plugins/haio-tools/assets/tools.css?ver=1792394473' media='all' />
+<link data-minify="1" rel='stylesheet' id='haio-cloud-main-css' href='https://haio.ir/wp-content/cache/min/1/wp-content/themes/haio-cloud/assets/css/main.css?ver=1792394473' media='all' />
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-8ec774e9-9d0c-4ff3-9153-1d3679b9431b) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script type="text/rocketlazyloadscript" data-minify="1" id="haio-cloud-theme-init-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/themes/haio-cloud/assets/js/theme-init.js?ver=1792394473" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://haio.ir/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://haio.ir/wp-json/wp/v2/pages/7233" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://haio.ir/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://haio.ir/?p=7233' />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.rll-youtube-player .play{--wpr-bg-8ec774e9-9d0c-4ff3-9153-1d3679b9431b: url('https://haio.ir/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-8ec774e9-9d0c-4ff3-9153-1d3679b9431b: url('https:\/\/haio.ir\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"8ec774e9-9d0c-4ff3-9153-1d3679b9431b","url":"https:\/\/haio.ir\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.23.3.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_automatic_lazy_rendering wpr_oci wpr_minify_css wpr_cdn wpr_preload_links wpr_host_fonts_locally wpr_desktop" /></head>
+<body class="rtl wp-singular page-template-default page page-id-7233 wp-theme-haio-cloud">
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+<header  class="site-header">
+    <div  class="container header-inner">
+        <a class="brand" href="https://haio.ir/" aria-label="هایو کلود، صفحه اصلی">
+            <img class="brand-logo brand-logo-light" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-dark-text.png" alt="" width="120" height="127">
+            <img class="brand-logo brand-logo-dark" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20127'%3E%3C/svg%3E" alt="" width="120" height="127" data-lazy-src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png"><noscript><img class="brand-logo brand-logo-dark" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png" alt="" width="120" height="127"></noscript>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-primary-nav" aria-expanded="false" hidden><span class="nav-toggle-lines" aria-hidden="true"></span><span>منو</span></button>
+        <nav class="site-nav" id="site-primary-nav" aria-label="منوی اصلی">
+                        <ul class="nav-list">
+                <li class="nav-mega-item"><details class="nav-mega nav-mega-services" data-mega-menu>
+  <summary aria-label="باز کردن منوی خدمات">خدمات<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div ><span class="eyebrow">هایو کلود</span><h2>خدمات</h2></div><a class="mega-all" href="https://haio.ir/services/">مشاهده همه خدمات <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>مسیرهای اصلی</h3><ul>
+        <li><a href="https://haio.ir/paas/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Weather
+tags: [weather, online]
+version: "1.0"
+unicode: "ea76"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+</svg>
+</span><span class="mega-item-copy"><strong>استقرار اپلیکیشن (PaaS)</strong><small>Git، کانتینر، Compose و ZIP</small></span></a></li><li><a href="https://haio.ir/cloud-desktop/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [monitor, computer, imac]
+version: "1.0"
+unicode: "ea89"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+  <path d="M7 20h10" />
+  <path d="M9 16v4" />
+  <path d="M15 16v4" />
+</svg>
+</span><span class="mega-item-copy"><strong>دسکتاپ ابری و ماشین مجازی</strong><small>در منابع مشترک حساب</small></span></a></li><li><a href="https://haio.ir/mcp/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: System
+tags: [cog, edit, gear, preferences, tools]
+version: "1.0"
+unicode: "eb20"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+</span><span class="mega-item-copy"><strong>مدیریت زیرساخت با MCP</strong><small>برای ابزارها و عامل‌های هوش مصنوعی</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>خدمات دیگر</h3><ul>
+        <li><a href="https://haio.ir/haio-flash/"><span class="mega-item-visual" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><span class="mega-item-copy"><strong>هایو فلش</strong><small>Haio Flash؛ سرویس سرور ابری</small></span></a></li><li><a href="https://haio.ir/anti-sanction/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: System
+tags: [secure, security, closed, key, safety]
+version: "1.30"
+unicode: "ed58"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+  <path d="M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M12 12l0 2.5" />
+</svg>
+</span><span class="mega-item-copy"><strong>تحریم شکن</strong><small>شرایط و تعرفهٔ مستقل</small></span></a></li><li><a href="https://haio.ir/contact/?service=database-storage#contact-form" data-service-request-open="service-request-nav-database-storage"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Database
+tags: [storage, data, memory]
+version: "1.0"
+unicode: "ea88"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+  <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+  <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+</svg>
+</span><span class="mega-item-copy"><strong>پایگاه‌های داده و ذخیره‌سازی</strong><small>MySQL، PostgreSQL، Redis و حجم پایدار؛ برای جزئیات تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/contact/?service=serverless#contact-form" data-service-request-open="service-request-nav-serverless"><span class="mega-item-visual" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><span class="mega-item-copy"><strong>توابع بدون سرور</strong><small>برای شرایط فعلی تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/contact/?service=app-build-test#contact-form" data-service-request-open="service-request-nav-app-build-test"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [iphone, phone, smartphone, cellphone]
+version: "1.0"
+unicode: "ea8a"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+  <path d="M11 4h2" />
+  <path d="M12 17v.01" />
+</svg>
+</span><span class="mega-item-copy"><strong>ساخت و آزمون اندروید و macOS</strong><small>برای محیط‌های پشتیبانی‌شده تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/marketplace/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>مارکت‌پلیس نرم‌افزار</strong><small>فهرست نرم‌افزارهای آماده در پنل</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>قابلیت‌های فنی پلتفرم</h3><ul>
+        <li><a href="https://haio.ir/docs/paas/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [storage, hosting, www]
+version: "1.0"
+unicode: "eb1f"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M7 8l0 .01" />
+  <path d="M7 16l0 .01" />
+</svg>
+</span><span class="mega-item-copy"><strong>استقرار و مدیریت پروژه</strong><small>تاریخچه، دامنه، TLS، لاگ و پایش</small></span></a></li><li><a href="https://haio.ir/docs/account-resources/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>مدیریت منابع حساب</strong><small>ظرفیت مشترک برای اپ‌ها و دسکتاپ</small></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+<li class="nav-mega-item"><details class="nav-mega nav-mega-solutions" data-mega-menu>
+  <summary aria-label="باز کردن منوی راهکارها">راهکارها<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div><span class="eyebrow">هایو کلود</span><h2>راهکارها</h2></div><a class="mega-all" href="https://haio.ir/services/">بررسی خدمات هایو <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>توسعه و رشد</h3><ul>
+        <li><a href="https://haio.ir/solutions/independent-developers/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Weather
+tags: [weather, online]
+version: "1.0"
+unicode: "ea76"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+</svg>
+</span><span class="mega-item-copy"><strong>توسعه‌دهندگان مستقل</strong><small>استقرار با PaaS، هایو فلش و پایگاه داده</small></span></a></li><li><a href="https://haio.ir/solutions/startup-teams/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>تیم‌های استارتاپی</strong><small>PaaS، محیط‌های پروژه و پایگاه‌های داده</small></span></a></li><li><a href="https://haio.ir/solutions/software-companies/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [storage, hosting, www]
+version: "1.0"
+unicode: "eb1f"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M7 8l0 .01" />
+  <path d="M7 16l0 .01" />
+</svg>
+</span><span class="mega-item-copy"><strong>شرکت‌های نرم‌افزاری</strong><small>پروژه‌ها، تیم‌ها و مدیریت زیرساخت با MCP</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>تیم و کسب‌وکار</h3><ul>
+        <li><a href="https://haio.ir/solutions/remote-teams/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [monitor, computer, imac]
+version: "1.0"
+unicode: "ea89"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+  <path d="M7 20h10" />
+  <path d="M9 16v4" />
+  <path d="M15 16v4" />
+</svg>
+</span><span class="mega-item-copy"><strong>تیم‌های دورکار</strong><small>دسکتاپ ابری و ابزارهای همکاری مارکت‌پلیس</small></span></a></li><li><a href="https://haio.ir/solutions/agencies/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>آژانس‌ها و تیم‌های چندپروژه‌ای</strong><small>استقرار چند اپلیکیشن و مدیریت منابع حساب</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>هوش مصنوعی و ابزارهای توسعه</h3><ul>
+        <li><a href="https://haio.ir/solutions/ai-builders/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: System
+tags: [cog, edit, gear, preferences, tools]
+version: "1.0"
+unicode: "eb20"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+</span><span class="mega-item-copy"><strong>سازندگان محصولات هوش مصنوعی</strong><small>نرم‌افزارهای AI در مارکت‌پلیس و مدیریت با MCP</small></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+<li class="nav-mega-item"><details class="nav-mega nav-mega-marketplace" data-mega-menu>
+  <summary aria-label="باز کردن منوی مارکت‌پلیس">مارکت‌پلیس<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div><span class="eyebrow">هایو کلود</span><h2>مارکت‌پلیس</h2></div><a class="mega-all" href="https://haio.ir/marketplace/">همه اپلیکیشن‌ها <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>وب و محتوا</h3><ul>
+        <li><a href="https://haio.ir/marketplace/wordpress/"><span class="mega-item-visual mega-logo-wordpress" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/wordpress.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>وردپرس</strong></span></a></li><li><a href="https://haio.ir/marketplace/ghost/"><span class="mega-item-visual mega-logo-ghost" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-ghost-logo.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>گوست</strong></span></a></li><li><a href="https://haio.ir/marketplace/wikijs/"><span class="mega-item-visual mega-logo-wikijs" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-wikijs-logo.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>ویکی‌جی‌اس</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>داده و بک‌اند</h3><ul>
+        <li><a href="https://haio.ir/marketplace/supabase/"><span class="mega-item-visual mega-logo-supabase" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-supabase-logo.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>سوپابیس</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>هوش مصنوعی و اتوماسیون</h3><ul>
+        <li><a href="https://haio.ir/marketplace/n8n/"><span class="mega-item-visual mega-logo-n8n" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-n8n-logo.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>n8n</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>تیم و کسب‌وکار</h3><ul>
+        <li><a href="https://haio.ir/marketplace/mattermost/"><span class="mega-item-visual mega-logo-mattermost" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-mattermost-logo.webp" class="attachment-thumbnail size-thumbnail" alt=""  decoding="async" /></span><span class="mega-item-copy"><strong>مترموست</strong></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+                <li><a href="https://haio.ir/pricing/"><strong>تعرفه‌ها</strong></a></li><li><a href="https://haio.ir/docs/"><strong>راهنما</strong></a></li><li><a href="https://haio.ir/contact/"><strong>تماس</strong></a></li>            </ul>
+        </nav>
+        <div  class="header-actions"><button class="theme-switch" type="button" data-theme-switch hidden aria-label="تغییر تم" aria-pressed="false"><!--
+category: Weather
+tags: [night, dark mode]
+version: "1.0"
+unicode: "eaf8"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+</svg>
+ <span>حالت تیره</span></button><a class="header-login" href="https://my.haio.ir/login">ورود</a><a class="button primary header-register" href="https://my.haio.ir/register">ساخت حساب</a></div>
+    </div>
+</header>
+<main  id="main">
+  <section  class="hero container service-hero page-hero">
+  <div>
+    <p class="eyebrow">سرور ابری متناسب با پروژه</p>    <h1>هایو فلش؛ سرور مجازی ابری هایو</h1>
+    <p class="lead">هایو فلش سرویس سرور مجازی ابری هایو برای اجرای نرم‌افزارها و محیط‌های سروری است. طرح‌های عادی، ترافیکی و Auto Scale را با منابع، ترافیک و قیمت ماهانه در همین صفحه مقایسه کنید؛ سپس سیستم‌عامل و روش اتصال را با نیاز پروژه تطبیق دهید و گزینهٔ مناسب را در پنل انتخاب کنید.</p>    <div class="actions"><a class="button primary" href="https://my.haio.ir/haioflash">دیدن گزینه‌های هایو فلش در پنل</a><a class="button secondary" href="#product-pricing">مقایسهٔ طرح‌ها و قیمت‌ها</a><a class="button text" href="https://haio.ir/docs/haio-flash-server-setup/">راهنمای ساخت سرور</a></div>  </div>
+  <div  class="service-hero-image"><img src="https://haio.ir/wp-content/themes/haio-cloud/assets/services/haio-flash-hero.webp" alt="تصویر مفهومی سرور مجازی ابری هایو فلش با منابع پردازنده، حافظه و ذخیره‌سازی" width="1672" height="941" loading="eager" fetchpriority="high" decoding="async"></div></section>
+  <section  class="section alt"><div  class="container"><h2>پیش از انتخاب سرور ابری چه چیزهایی را بسنجید؟</h2><div class="card-grid service-capabilities">
+    <article class="service-card"><h3>منابع متناسب با کار شما</h3><p>میزان پردازنده، حافظه و فضای ذخیره‌سازی مورد نیاز برنامه یا محیط سروری را مشخص کنید و آن را با گزینه‌های موجود هایو فلش تطبیق دهید.</p></article>
+<article class="service-card"><h3>محیط اجرا و نرم‌افزارهای مورد نیاز</h3><p>پیش از سفارش، پشتیبانی از سیستم‌عامل و نرم‌افزارهای مورد نیازتان را در گزینهٔ مورد نظر بررسی کنید. فهرست نسخه‌ها و گزینه‌های قابل ارائه ممکن است تغییر کند.</p></article>
+<article class="service-card"><h3>سیستم‌عامل و روش اتصال</h3><p>سیستم‌عامل‌های لینوکسی و گزینهٔ IPv4 برای طرح‌های نمایش‌داده‌شده در همین صفحه آمده‌اند. نسخهٔ سیستم‌عامل و شیوهٔ اتصال را هنگام انتخاب سرور در پنل بررسی کنید.</p></article>
+<article class="service-card"><h3>طرح‌ها و قیمت‌های اختصاصی سرویس</h3><p>طرح‌ها، منابع و قیمت‌های هایو فلش در جدول‌های همین صفحه آمده‌اند. جدول طرح‌های حساب، تعرفهٔ هایو فلش را نشان نمی‌دهد.</p></article>
+  </div></div></section>
+    <section  class="section product-catalog" id="product-pricing" aria-labelledby="product-pricing-title"><div  class="container">
+  <div class="section-heading"><p class="eyebrow">تعرفهٔ اختصاصی محصول</p><h2 id="product-pricing-title">طرح‌ها و قیمت‌های هایو فلش</h2><p>قیمت‌ها ماهانه و به تومان هستند. مبلغ نهایی گزینهٔ انتخابی را هنگام خرید در پنل ببینید.</p></div>
+      <p>جدول‌های زیر برای طرح‌های نمایش‌داده‌شدهٔ ایران هستند. در آن‌ها IPv4 آمده و IPv6 موجود نیست. طرح‌های Auto Scale سقف رم بالاتری دارند.</p>
+    <nav class="product-plan-nav" aria-label="نوع طرح هایو فلش"><ul><li><a href="#product-standard">هایو فلش</a></li><li><a href="#product-traffic">سرورهای ترافیکی ایران</a></li><li><a href="#product-auto-scale">هایو فلش Auto Scale</a></li></ul></nav>
+          <section class="product-plan-group" id="product-standard" aria-labelledby="product-standard-title">
+        <h3 id="product-standard-title">هایو فلش</h3>
+                <div class="product-table-scroll" role="region" tabindex="0" aria-label="جدول هایو فلش؛ برای دیدن همهٔ ستون‌ها افقی پیمایش کنید">
+          <table class="product-price-table"><thead><tr><th scope="col">طرح</th><th scope="col">پردازنده</th><th scope="col">رم</th><th scope="col">فضا</th><th scope="col">پهنای باند</th><th scope="col">ترافیک دانلودی</th><th scope="col">IP</th><th scope="col">قیمت ماهانه</th><th scope="col">خرید</th></tr></thead><tbody>
+            <tr><th scope="row"><bdi dir="ltr">Flash Nano</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">256 MB</bdi></td><td><bdi dir="ltr">5 GB SSD</bdi></td><td>۲۰ Mbps</td><td><bdi dir="ltr">50 GB</bdi></td><td>IPv4</td><td><strong>۴۵۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Nano در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Micro</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">512 MB</bdi></td><td><bdi dir="ltr">10 GB SSD</bdi></td><td>۲۰ Mbps</td><td><bdi dir="ltr">100 GB</bdi></td><td>IPv4</td><td><strong>۶۳۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Micro در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Lite</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">1 GB</bdi></td><td><bdi dir="ltr">15 GB SSD</bdi></td><td>۵۰ Mbps</td><td><bdi dir="ltr">200 GB</bdi></td><td>IPv4</td><td><strong>۹۶۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Lite در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Core</bdi></th><td>۲ vCPU</td><td><bdi dir="ltr">2 GB</bdi></td><td><bdi dir="ltr">25 GB SSD</bdi></td><td>۸۰ Mbps</td><td><bdi dir="ltr">300 GB</bdi></td><td>IPv4</td><td><strong>۱٬۱۴۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Core در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Max</bdi></th><td>۴ vCPU</td><td><bdi dir="ltr">4 GB</bdi></td><td><bdi dir="ltr">40 GB SSD</bdi></td><td>۱۰۰ Mbps</td><td><bdi dir="ltr">500 GB</bdi></td><td>IPv4</td><td><strong>۱٬۸۳۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Max در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Ultra</bdi></th><td>۶ vCPU</td><td><bdi dir="ltr">8 GB</bdi></td><td><bdi dir="ltr">60 GB SSD</bdi></td><td>۱۰۰ Mbps</td><td><bdi dir="ltr">1 TB</bdi></td><td>IPv4</td><td><strong>۳٬۲۱۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Ultra در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Titan</bdi></th><td>۸ vCPU</td><td><bdi dir="ltr">16 GB</bdi></td><td><bdi dir="ltr">100 GB SSD</bdi></td><td>۲۰۰ Mbps</td><td><bdi dir="ltr">2 TB</bdi></td><td>IPv4</td><td><strong>۶٬۱۲۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Titan در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Enterprise</bdi></th><td>۱۲ vCPU</td><td><bdi dir="ltr">24 GB</bdi></td><td><bdi dir="ltr">160 GB SSD</bdi></td><td>۲۰۰ Mbps</td><td><bdi dir="ltr">3 TB</bdi></td><td>IPv4</td><td><strong>۸٬۹۷۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Enterprise در پنل">انتخاب در پنل</a></td></tr>          </tbody></table>
+        </div>
+      </section>
+          <section class="product-plan-group" id="product-traffic" aria-labelledby="product-traffic-title">
+        <h3 id="product-traffic-title">سرورهای ترافیکی ایران</h3>
+                <div class="product-table-scroll" role="region" tabindex="0" aria-label="جدول سرورهای ترافیکی ایران؛ برای دیدن همهٔ ستون‌ها افقی پیمایش کنید">
+          <table class="product-price-table"><thead><tr><th scope="col">طرح</th><th scope="col">پردازنده</th><th scope="col">رم</th><th scope="col">فضا</th><th scope="col">پهنای باند</th><th scope="col">ترافیک دانلودی</th><th scope="col">IP</th><th scope="col">قیمت ماهانه</th><th scope="col">خرید</th></tr></thead><tbody>
+            <tr><th scope="row"><bdi dir="ltr">Flash Nano</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">256 MB</bdi></td><td><bdi dir="ltr">5 GB SSD</bdi></td><td>۴۰ Mbps</td><td><bdi dir="ltr">500 GB</bdi></td><td>IPv4</td><td><strong>۴۲۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Nano در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Micro</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">512 MB</bdi></td><td><bdi dir="ltr">10 GB SSD</bdi></td><td>۶۰ Mbps</td><td><bdi dir="ltr">1 TB</bdi></td><td>IPv4</td><td><strong>۵۸۸٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Micro در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Lite</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">1 GB</bdi></td><td><bdi dir="ltr">15 GB SSD</bdi></td><td>۸۰ Mbps</td><td><bdi dir="ltr">3 TB</bdi></td><td>IPv4</td><td><strong>۸۹۶٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Lite در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Core</bdi></th><td>۲ vCPU</td><td><bdi dir="ltr">2 GB</bdi></td><td><bdi dir="ltr">25 GB SSD</bdi></td><td>۸۰ Mbps</td><td><bdi dir="ltr">5 TB</bdi></td><td>IPv4</td><td><strong>۱٬۰۶۴٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Core در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Max</bdi></th><td>۴ vCPU</td><td><bdi dir="ltr">4 GB</bdi></td><td><bdi dir="ltr">40 GB SSD</bdi></td><td>۱۲۰ Mbps</td><td><bdi dir="ltr">7 TB</bdi></td><td>IPv4</td><td><strong>۱٬۷۰۸٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Max در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Ultra</bdi></th><td>۶ vCPU</td><td><bdi dir="ltr">8 GB</bdi></td><td><bdi dir="ltr">60 GB SSD</bdi></td><td>۱۲۰ Mbps</td><td><bdi dir="ltr">10 TB</bdi></td><td>IPv4</td><td><strong>۲٬۹۹۶٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Ultra در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Titan</bdi></th><td>۸ vCPU</td><td><bdi dir="ltr">16 GB</bdi></td><td><bdi dir="ltr">100 GB SSD</bdi></td><td>۱۵۰ Mbps</td><td><bdi dir="ltr">10 TB</bdi></td><td>IPv4</td><td><strong>۵٬۷۱۲٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Titan در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Enterprise</bdi></th><td>۱۲ vCPU</td><td><bdi dir="ltr">24 GB</bdi></td><td><bdi dir="ltr">160 GB SSD</bdi></td><td>۱۵۰ Mbps</td><td><bdi dir="ltr">15 TB</bdi></td><td>IPv4</td><td><strong>۸٬۳۷۲٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Enterprise در پنل">انتخاب در پنل</a></td></tr>          </tbody></table>
+        </div>
+      </section>
+          <section class="product-plan-group" id="product-auto-scale" aria-labelledby="product-auto-scale-title">
+        <h3 id="product-auto-scale-title">هایو فلش Auto Scale</h3>
+        <p>در این گروه، رم می‌تواند تا سقف ثبت‌شده در ستون «سقف رم» افزایش یابد. قیمت‌های جدول مستقیماً از فهرست منتشرشدهٔ محصول ثبت شده‌اند.</p>        <div class="product-table-scroll" role="region" tabindex="0" aria-label="جدول هایو فلش Auto Scale؛ برای دیدن همهٔ ستون‌ها افقی پیمایش کنید">
+          <table class="product-price-table"><thead><tr><th scope="col">طرح</th><th scope="col">پردازنده</th><th scope="col">رم</th><th scope="col">سقف رم</th><th scope="col">فضا</th><th scope="col">پهنای باند</th><th scope="col">ترافیک دانلودی</th><th scope="col">IP</th><th scope="col">قیمت ماهانه</th><th scope="col">خرید</th></tr></thead><tbody>
+            <tr><th scope="row"><bdi dir="ltr">Flash Nano</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">256 MB</bdi></td><td><bdi dir="ltr">512 MB</bdi></td><td><bdi dir="ltr">5 GB SSD</bdi></td><td>۲۰ Mbps</td><td><bdi dir="ltr">50 GB</bdi></td><td>IPv4</td><td><strong>۶۳۰٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Nano در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Micro</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">512 MB</bdi></td><td><bdi dir="ltr">1024 MB</bdi></td><td><bdi dir="ltr">10 GB SSD</bdi></td><td>۲۰ Mbps</td><td><bdi dir="ltr">100 GB</bdi></td><td>IPv4</td><td><strong>۸۸۲٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Micro در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Lite</bdi></th><td>۱ vCPU</td><td><bdi dir="ltr">1 GB</bdi></td><td><bdi dir="ltr">2048 MB</bdi></td><td><bdi dir="ltr">15 GB SSD</bdi></td><td>۵۰ Mbps</td><td><bdi dir="ltr">200 GB</bdi></td><td>IPv4</td><td><strong>۱٬۳۴۴٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Lite در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Core</bdi></th><td>۲ vCPU</td><td><bdi dir="ltr">2 GB</bdi></td><td><bdi dir="ltr">4096 MB</bdi></td><td><bdi dir="ltr">25 GB SSD</bdi></td><td>۸۰ Mbps</td><td><bdi dir="ltr">300 GB</bdi></td><td>IPv4</td><td><strong>۱٬۵۹۶٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Core در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Max</bdi></th><td>۴ vCPU</td><td><bdi dir="ltr">4 GB</bdi></td><td><bdi dir="ltr">8192 MB</bdi></td><td><bdi dir="ltr">40 GB SSD</bdi></td><td>۱۰۰ Mbps</td><td><bdi dir="ltr">500 GB</bdi></td><td>IPv4</td><td><strong>۲٬۵۶۲٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Max در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Ultra</bdi></th><td>۶ vCPU</td><td><bdi dir="ltr">8 GB</bdi></td><td><bdi dir="ltr">16384 MB</bdi></td><td><bdi dir="ltr">60 GB SSD</bdi></td><td>۱۰۰ Mbps</td><td><bdi dir="ltr">1 TB</bdi></td><td>IPv4</td><td><strong>۴٬۴۹۴٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Ultra در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Titan</bdi></th><td>۸ vCPU</td><td><bdi dir="ltr">16 GB</bdi></td><td><bdi dir="ltr">24576 MB</bdi></td><td><bdi dir="ltr">100 GB SSD</bdi></td><td>۲۰۰ Mbps</td><td><bdi dir="ltr">2 TB</bdi></td><td>IPv4</td><td><strong>۸٬۵۶۸٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Titan در پنل">انتخاب در پنل</a></td></tr><tr><th scope="row"><bdi dir="ltr">Flash Enterprise</bdi></th><td>۱۲ vCPU</td><td><bdi dir="ltr">24 GB</bdi></td><td><bdi dir="ltr">49152 MB</bdi></td><td><bdi dir="ltr">160 GB SSD</bdi></td><td>۲۰۰ Mbps</td><td><bdi dir="ltr">3 TB</bdi></td><td>IPv4</td><td><strong>۱۲٬۵۵۸٬۰۰۰ تومان</strong></td><td><a href="https://my.haio.ir/haioflash" aria-label="خرید Flash Enterprise در پنل">انتخاب در پنل</a></td></tr>          </tbody></table>
+        </div>
+      </section>
+      </div></section>
+<section data-wpr-lazyrender="1" class="section alt product-information" aria-labelledby="product-information-title"><div  class="container">
+  <h2 id="product-information-title">سیستم‌عامل‌ها و امکانات هایو فلش</h2>
+      <div class="product-information-grid"><div><h3>سیستم‌عامل‌های فهرست‌شده</h3><dl class="product-systems"><div><dt><bdi dir="ltr">Ubuntu</bdi></dt><dd><bdi dir="ltr">20.04 LTS، 22.04 LTS، 24.04 LTS</bdi></dd></div><div><dt><bdi dir="ltr">Debian</bdi></dt><dd><bdi dir="ltr">10، 11، 12</bdi></dd></div><div><dt><bdi dir="ltr">CentOS</bdi></dt><dd><bdi dir="ltr">7، 8 Stream</bdi></dd></div><div><dt><bdi dir="ltr">AlmaLinux</bdi></dt><dd><bdi dir="ltr">8، 9</bdi></dd></div><div><dt><bdi dir="ltr">Rocky Linux</bdi></dt><dd><bdi dir="ltr">8، 9</bdi></dd></div><div><dt><bdi dir="ltr">Fedora</bdi></dt><dd><bdi dir="ltr">38، 39</bdi></dd></div><div><dt><bdi dir="ltr">openSUSE</bdi></dt><dd><bdi dir="ltr">Leap 15.5</bdi></dd></div><div><dt><bdi dir="ltr">Arch Linux</bdi></dt><dd><bdi dir="ltr">Latest</bdi></dd></div><div><dt><bdi dir="ltr">Alpine Linux</bdi></dt><dd><bdi dir="ltr">3.18، 3.19</bdi></dd></div></dl></div>
+    <div><h3>امکانات معرفی‌شده</h3><ul class="product-features"><li>بکاپ خودکار روزانه</li><li>بازیابی سرور</li><li>اسنپ‌شات</li><li>مانیتورینگ منابع و ترافیک</li><li>Auto Scale برای طرح‌های مشخص‌شده</li><li>فایروال قابل تنظیم</li><li>مدیریت DNS</li><li>دسترسی API</li><li>ذخیره‌سازی SSD</li><li>پنل مدیریت</li><li>پشتیبانی</li><li>آمار مصرف</li></ul><p>جزئیات استفاده، هزینهٔ خدمات جانبی و نسخهٔ قابل انتخاب را در پنل بررسی کنید.</p></div></div>
+  </div></section>
+    <section data-wpr-lazyrender="1" class="section paas-steps" aria-labelledby="service-steps-title"><div  class="container"><div class="section-heading"><h2 id="service-steps-title">چطور گزینهٔ مناسب هایو فلش را پیدا کنید؟</h2><p>نیاز پروژه را با مشخصات و قیمت طرح‌های منتشرشده مقایسه کنید.</p></div><ol class="home-steps process-list process-list--service"><li><span>۰۱</span><div><h3>کاربرد سرور را مشخص کنید</h3><p>نوع نرم‌افزار یا محیط اجرا و نیاز احتمالی به ذخیره‌سازی را فهرست کنید.</p></div></li>
+<li><span>۰۲</span><div><h3>منابع مورد نیاز را برآورد کنید</h3><p>پردازنده، حافظه و فضای مورد نیاز را با توجه به بار کاری پروژه تعیین کنید.</p></div></li>
+<li><span>۰۳</span><div><h3>سازگاری محیط و اتصال را بررسی کنید</h3><p>سیستم‌عامل، نرم‌افزار و روش اتصال را با گزینه‌های روز تطبیق دهید.</p></div></li>
+<li><span>۰۴</span><div><h3>طرح را در پنل انتخاب کنید</h3><p>قیمت و مشخصات طرح مناسب را در جدول‌های همین صفحه ببینید و گزینهٔ انتخابی را در پنل بررسی کنید.</p></div></li>
+</ol>
+</div></section>
+      <section data-wpr-lazyrender="1" class="section product-guides" id="product-guides" aria-labelledby="product-guides-title"><div  class="container">
+  <div class="section-heading"><p class="eyebrow">مستندات</p><h2 id="product-guides-title">راهنماهای هایو فلش</h2><p>مراحل نصب و استفاده را در بخش مستندات بخوانید.</p></div>
+  <ul class="product-guide-list"><li><a href="https://haio.ir/docs/haio-flash-server-setup/">راهنمای کامل ساخت سرور مجازی هایو فلش <span aria-hidden="true">←</span></a></li></ul>
+</div></section>
+  <section data-wpr-lazyrender="1" class="section"><div  class="container prose"><h2>پرسش‌های متداول</h2><div class="faq-list"><details class="faq"><summary><span class="faq-question">هایو فلش چیست؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>هایو فلش نام سرویس سرور مجازی ابری هایو است. مشخصات منابع، محیط اجرا و شرایط ارائهٔ گزینه‌های موجود را پیش از انتخاب بررسی کنید.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا هایو فلش همان دسکتاپ ابری است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>خیر. دسکتاپ ابری در مدل فعلی یک اپلیکیشن بازارچه است که از جایگاه اپلیکیشن و منابع مشترک حساب استفاده می‌کند. هایو فلش به‌عنوان سرور مجازی ابری با مشخصات و تعرفهٔ جداگانه بررسی می‌شود. <a href="https://haio.ir/cloud-desktop/">دربارهٔ دسکتاپ ابری بخوانید</a></p></details>
+<details class="faq"><summary><span class="faq-question">آیا جدول طرح‌های حساب قیمت هایو فلش را نشان می‌دهد؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>خیر. طرح‌ها و قیمت‌های هایو فلش در جدول‌های همین صفحه آمده‌اند.<a href="#product-pricing">دیدن طرح‌های هایو فلش</a></p></details>
+<details class="faq"><summary><span class="faq-question">چه سیستم‌عامل‌هایی برای هایو فلش موجود است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>سیستم‌عامل‌ها و نسخه‌های فهرست‌شده در بخش امکانات همین صفحه آمده‌اند. نسخهٔ قابل انتخاب را برای طرح مورد نظر در پنل بررسی کنید.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا آی‌پی عمومی برای هایو فلش ارائه می‌شود؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>در جدول طرح‌های این صفحه، گزینهٔ IPv4 آمده و IPv6 برای طرح‌های نمایش‌داده‌شده موجود نیست. جزئیات گزینهٔ انتخابی را در پنل ببینید.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا بکاپ و اسنپ‌شات همراه سرویس است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>بکاپ خودکار روزانه و اسنپ‌شات در فهرست امکانات هایو فلش آمده‌اند. شرایط و هزینهٔ هر گزینه را هنگام انتخاب طرح در پنل بررسی کنید؛ اسنپ‌شات جایگزین بکاپ مستقل نیست.</p></details>
+</div>
+</div></section>
+</main>
+<footer data-wpr-lazyrender="1" class="site-footer" aria-label="اطلاعات و پیوندهای پایانی">
+    <div  class="container">
+        <div  class="footer-cta">
+  <div><p class="eyebrow">انتخاب سرور مناسب پروژه</p><h2>مشخصات هایو فلش را با نیاز پروژه تطبیق دهید</h2><p>منابع، سیستم‌عامل و روش اتصال مورد نیازتان را مشخص کنید. طرح‌ها و قیمت‌های منتشرشده را ببینید و گزینهٔ مناسب را در پنل انتخاب کنید.</p></div>
+  <div class="footer-cta-actions"><a class="button primary" href="https://my.haio.ir/haioflash">دیدن گزینه‌های هایو فلش در پنل</a><a class="button secondary" href="https://haio.ir/contact/">تماس برای پرسش‌های سرویس</a></div>
+</div>
+        <div  class="footer-main">
+            <div class="footer-about"><a class="brand" href="https://haio.ir/" aria-label="هایو کلود، صفحه اصلی"><img class="brand-logo brand-logo-light" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-dark-text.png" alt="" width="120" height="127" ><img class="brand-logo brand-logo-dark" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20127'%3E%3C/svg%3E" alt="" width="120" height="127" data-lazy-src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png"><noscript><img class="brand-logo brand-logo-dark" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png" alt="" width="120" height="127" loading="lazy"></noscript></a><p>هایو کلود بستری برای استقرار و اجرای نرم‌افزار است. میزبانی زیرساخت آن بر بستر شاتل انجام می‌شود.</p><p>ویرا ابر آینده جهان، شماره ثبت ۳۴۳۹</p></div>
+            <nav class="footer-column" aria-label="خدمات"><h3>خدمات</h3><ul><li><a href="https://haio.ir/paas/"><strong>استقرار اپلیکیشن</strong></a></li><li><a href="https://haio.ir/cloud-desktop/"><strong>دسکتاپ ابری</strong></a></li><li><a href="https://haio.ir/mcp/"><strong>مدیریت زیرساخت با MCP</strong></a></li><li><a href="https://haio.ir/anti-sanction/"><strong>تحریم شکن</strong></a></li><li><a href="https://haio.ir/haio-flash/"><strong>هایو فلش</strong></a></li><li><a href="https://haio.ir/services/"><strong>همه خدمات</strong></a></li></ul></nav><nav class="footer-column" aria-label="مارکت‌پلیس و انتخاب"><h3>مارکت‌پلیس و انتخاب</h3><ul><li><a href="https://my.haio.ir/marketplace"><strong>مارکت‌پلیس در پنل</strong></a></li><li><a href="https://haio.ir/pricing/"><strong>تعرفه‌ها</strong></a></li></ul></nav><nav class="footer-column" aria-label="راهنما و پشتیبانی"><h3>راهنما و پشتیبانی</h3><ul><li><a href="https://haio.ir/docs/"><strong>مستندات</strong></a></li><li><a href="https://haio.ir/docs/account-resources/"><strong>منابع حساب</strong></a></li><li><a href="https://haio.ir/contact/"><strong>تماس با ما</strong></a></li><li><a href="https://my.haio.ir/login"><strong>ورود به پنل</strong></a></li></ul></nav>        </div>
+        <div  class="footer-contact"><div><strong>ارتباط با هایو کلود</strong><p><a href="mailto:info@haio.ir" dir="ltr">info@haio.ir</a> · <a href="tel:+982156138461" dir="ltr">۰۲۱-۵۶۱۳۸۴۶۱</a></p></div><a href="https://haio.ir/contact/">همه راه‌های تماس و نشانی ←</a></div>
+        <div  class="footer-bottom"><p>© 2026 هایو کلود. همه حقوق محفوظ است.</p><div><a href="https://my.haio.ir/">پنل کاربری</a><a href="https://haio.ir/contact/">تماس و اطلاعات شرکت</a></div></div>
+    </div>
+</footer>
+<dialog class="service-request-modal" id="service-request-nav-database-storage" aria-labelledby="service-request-nav-database-storage-title" aria-describedby="service-request-nav-database-storage-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-database-storage-title">پایگاه داده و ذخیره‌سازی</h2>
+  <p id="service-request-nav-database-storage-description">نیاز داده و ذخیره‌سازی پروژه را مشخص کنید تا گزینه‌های مناسب و شرایط فعلی بررسی شوند.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=database-storage#contact-form">ثبت درخواست</a>
+  </dialog>
+<dialog class="service-request-modal" id="service-request-nav-serverless" aria-labelledby="service-request-nav-serverless-title" aria-describedby="service-request-nav-serverless-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-serverless-title">توابع بدون سرور</h2>
+  <p id="service-request-nav-serverless-description">کاربرد و نیاز فنی خود را بنویسید تا شرایط فعلی توابع بدون سرور بررسی شود.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=serverless#contact-form">ثبت درخواست</a>
+  </dialog>
+<dialog class="service-request-modal" id="service-request-nav-app-build-test" aria-labelledby="service-request-nav-app-build-test-title" aria-describedby="service-request-nav-app-build-test-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-app-build-test-title">ساخت و آزمون اپلیکیشن</h2>
+  <p id="service-request-nav-app-build-test-description">نیاز خود را انتخاب کنید؛ سپس درخواست را در فرم تماس ثبت کنید.</p>
+      <fieldset class="service-request-options"><legend>نیاز خود را انتخاب کنید</legend>
+      <label><input type="radio" name="service-request-nav-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=android-build-test#contact-form"> ساخت و آزمون Android</label><label><input type="radio" name="service-request-nav-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=macos-build#contact-form"> ساخت macOS</label>    </fieldset>
+    <a class="button primary" href="https://haio.ir/contact/?service=app-build-test#contact-form" data-service-request-submit hidden>ثبت درخواست</a>
+  </dialog>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/haio-cloud/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-wp-strategy="defer" defer id="haio-tools-logic-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/plugins/haio-tools/assets/logic.js?ver=1792394473"></script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-wp-strategy="defer" defer id="haio-tools-ui-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/plugins/haio-tools/assets/tools.js?ver=1792394473"></script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-wp-strategy="defer" defer id="haio-finder-logic-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/plugins/haio-tools/assets/finder-logic.js?ver=1792394473"></script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-wp-strategy="defer" defer id="haio-finder-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/plugins/haio-tools/assets/finder.js?ver=1792394473"></script>
+<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://haio.ir","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,a,c){function l(t,e){if(!a[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=a[t]={exports:{}},n[t][0].call(r.exports,function(e){return l(n[t][1][e]||e)},r,r.exports,o,n,a,c)}return a[t].exports}for(var u="function"==typeof require&&require,e=0;e<c.length;e++)l(c[e]);return l}({1:[function(e,t,r){{let r="undefined"==typeof rocket_pairs?[]:rocket_pairs,o=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var a=rocket_lazyload_css_data.threshold||300;let n=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&r.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:a+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(n.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}c(),(()=>{let r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}})()(document.querySelector("body"),c)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script data-minify="1" data-wp-strategy="defer" defer id="haio-cloud-theme-js" src="https://haio.ir/wp-content/cache/min/1/wp-content/themes/haio-cloud/assets/js/theme.js?ver=1792394473"></script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-wp-strategy="defer" defer id="haio-cloud-service-request-js" data-rocket-src="https://haio.ir/wp-content/cache/min/1/wp-content/themes/haio-cloud/assets/js/service-request.js?ver=1792394473"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://haio.ir/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="فیلم را ببینید"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script></body></html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1792856233 -->

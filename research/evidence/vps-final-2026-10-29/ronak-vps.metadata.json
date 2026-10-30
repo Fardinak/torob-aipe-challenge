@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://ronakhost.com/server/vps-ssd-nvme/",
+  "attempt_utc": "2026-10-29T09:49:44.923585+00:00",
+  "final_url": "https://ronakhost.com/server/vps-ssd-nvme/",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "X-DNS-Prefetch-Control": "on",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Link": "<https://ronakhost.com/?p=1447>; rel=shortlink",
+    "X-LiteSpeed-Cache-Control": "public,max-age=604800",
+    "X-LiteSpeed-Tag": "fb8_page,fb8_URL.ef2deb507588f784fd4e396908c202de,fb8_Po.1447,fb8_PGS,fb8_guest,fb8_,fb8_MIN.4cda4e13e50d9e78e8deb0d7d00fa563.css,fb8_MIN.9f81ab71e87e738a3779b9bc01b0e9ea.js",
+    "Etag": "\"16611-1793267397;;;\"",
+    "X-Litespeed-Cache": "miss",
+    "Transfer-Encoding": "chunked",
+    "Date": "Thu, 29 Oct 2026 09:49:57 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+  },
+  "bytes": 205129,
+  "sha256": "e98866b3410a03b00b9bb290fc1b4dc27fcffd8243b2ff420039eeb5baa6d908",
+  "saved_utc": "2026-10-29T09:50:04.062687+00:00"
+}

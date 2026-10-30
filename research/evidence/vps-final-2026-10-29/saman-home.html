@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>سامان هاستینگ | در حال بروزرسانی</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+  font-family: Vazirmatn, sans-serif;
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: radial-gradient(circle at top, #1b2b34, #0f2027 60%, #0b141a);
+  color:#fff;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:560px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border-radius:16px;
+  padding:30px;
+  text-align:center;
+}
+
+.logo{
+  width:60px;
+  margin-bottom:10px;
+}
+
+h1{
+  margin:10px 0;
+  font-size:1.5rem;
+}
+
+p{
+  opacity:0.85;
+  line-height:1.8;
+}
+
+.countdown{
+  margin-top:20px;
+  font-size:1.1rem;
+  font-weight:600;
+}
+
+.status{
+  margin-top:20px;
+  font-weight:bold;
+}
+
+.social{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.social a{
+  color:#fff;
+  font-size:1.4rem;
+  transition:0.2s;
+}
+
+.social a:hover{
+  color:#ffd54f;
+  transform:scale(1.1);
+}
+
+footer{
+  margin-top:20px;
+  font-size:0.85rem;
+  opacity:0.8;
+}
+
+footer a{
+  color:#ffd54f;
+  text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="./logo.png" class="logo">
+
+<h1>سایت به طور موقت از دسترس خارج شده است.</h1>
+
+<p>
+سامان هاستینگ در حال ارتقاء سرورهاست.<br>
+به‌زودی با کیفیت بهتر برمی‌گردیم.
+</p>
+
+<div id="countdown" class="countdown">در حال دریافت اطلاعات...</div>
+
+<div class="social">
+  <a href="https://t.me/samanhosting"><i class="fab fa-telegram"></i></a>
+  <a href="https://instagram.com/samanhosting"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<footer>
+توسعه‌دهنده:
+<a href="https://discord.com/users/1287010173344284712">SamanHostingTM</a>
+</footer>
+
+</div>
+
+<script>
+async function load() {
+
+  const el = document.getElementById("countdown");
+
+  try {
+    const res = await fetch("./maintenance.php?cache=" + Date.now());
+    const data = await res.json();
+
+    if (data.status === "online") {
+      el.innerHTML = "✅ سایت در دسترس است";
+      return;
+    }
+
+    if (data.status === "unknown") {
+      el.innerHTML = "⏳ زمان پایان مشخص نیست";
+      return;
+    }
+
+    function update() {
+
+      const diff = data.target_time - Math.floor(Date.now() / 1000);
+
+      if (diff <= 0) {
+        el.innerHTML = "✅ سایت فعال شد";
+        clearInterval(timer);
+        return;
+      }
+
+      const d = Math.floor(diff / 86400);
+      const h = Math.floor((diff % 86400) / 3600);
+      const m = Math.floor((diff % 3600) / 60);
+      const s = diff % 60;
+
+      el.innerHTML =
+        `${d} روز ${h} ساعت ${m} دقیقه ${s} ثانیه`;
+    }
+
+    update();
+    const timer = setInterval(update, 1000);
+
+  } catch (e) {
+    el.innerHTML = "⚠ خطا در دریافت اطلاعات سرور";
+  }
+}
+
+load();
+</script>
+
+</body>
+</html>

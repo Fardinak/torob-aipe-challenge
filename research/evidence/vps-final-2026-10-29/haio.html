@@ -1,0 +1,1402 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>زیرساخت ابری هایو</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://haio.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaio.ir%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://haio.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaio.ir%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='haio-tools-css' href='https://haio.ir/wp-content/plugins/haio-tools/assets/tools.css?ver=0.2.4' media='all' />
+<link rel='stylesheet' id='haio-cloud-main-css' href='https://haio.ir/wp-content/themes/haio-cloud/assets/css/main.css?ver=1792394424' media='all' />
+<link rel='stylesheet' id='haio-cloud-marketplace-app-css' href='https://haio.ir/wp-content/themes/haio-cloud/assets/css/marketplace-app.css?ver=1791544004' media='all' />
+<script id="haio-cloud-theme-init-js" src="https://haio.ir/wp-content/themes/haio-cloud/assets/js/theme-init.js?ver=1790324568"></script>
+<link rel="https://api.w.org/" href="https://haio.ir/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://haio.ir/wp-json/wp/v2/pages/297" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://haio.ir/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel="canonical" href="https://haio.ir/" />
+<link rel='shortlink' href='https://haio.ir/' />
+</head>
+<body class="rtl home wp-singular page-template page-template-elementor_header_footer page page-id-297 wp-theme-haio-cloud">
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="https://haio.ir/" aria-label="هایو کلود، صفحه اصلی">
+            <img class="brand-logo brand-logo-light" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-dark-text.png" alt="" width="120" height="127">
+            <img class="brand-logo brand-logo-dark" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png" alt="" width="120" height="127">
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-primary-nav" aria-expanded="false" hidden><span class="nav-toggle-lines" aria-hidden="true"></span><span>منو</span></button>
+        <nav class="site-nav" id="site-primary-nav" aria-label="منوی اصلی">
+                        <ul class="nav-list">
+                <li class="nav-mega-item"><details class="nav-mega nav-mega-services" data-mega-menu>
+  <summary aria-label="باز کردن منوی خدمات">خدمات<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div><span class="eyebrow">هایو کلود</span><h2>خدمات</h2></div><a class="mega-all" href="https://haio.ir/services/">مشاهده همه خدمات <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>مسیرهای اصلی</h3><ul>
+        <li><a href="https://haio.ir/paas/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Weather
+tags: [weather, online]
+version: "1.0"
+unicode: "ea76"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+</svg>
+</span><span class="mega-item-copy"><strong>استقرار اپلیکیشن (PaaS)</strong><small>Git، کانتینر، Compose و ZIP</small></span></a></li><li><a href="https://haio.ir/cloud-desktop/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [monitor, computer, imac]
+version: "1.0"
+unicode: "ea89"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+  <path d="M7 20h10" />
+  <path d="M9 16v4" />
+  <path d="M15 16v4" />
+</svg>
+</span><span class="mega-item-copy"><strong>دسکتاپ ابری و ماشین مجازی</strong><small>در منابع مشترک حساب</small></span></a></li><li><a href="https://haio.ir/mcp/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: System
+tags: [cog, edit, gear, preferences, tools]
+version: "1.0"
+unicode: "eb20"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+</span><span class="mega-item-copy"><strong>مدیریت زیرساخت با MCP</strong><small>برای ابزارها و عامل‌های هوش مصنوعی</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>خدمات دیگر</h3><ul>
+        <li><a href="https://haio.ir/haio-flash/"><span class="mega-item-visual" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><span class="mega-item-copy"><strong>هایو فلش</strong><small>Haio Flash؛ سرویس سرور ابری</small></span></a></li><li><a href="https://haio.ir/anti-sanction/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: System
+tags: [secure, security, closed, key, safety]
+version: "1.30"
+unicode: "ed58"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+  <path d="M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M12 12l0 2.5" />
+</svg>
+</span><span class="mega-item-copy"><strong>تحریم شکن</strong><small>شرایط و تعرفهٔ مستقل</small></span></a></li><li><a href="https://haio.ir/contact/?service=database-storage#contact-form" data-service-request-open="service-request-nav-database-storage"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Database
+tags: [storage, data, memory]
+version: "1.0"
+unicode: "ea88"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+  <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+  <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+</svg>
+</span><span class="mega-item-copy"><strong>پایگاه‌های داده و ذخیره‌سازی</strong><small>MySQL، PostgreSQL، Redis و حجم پایدار؛ برای جزئیات تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/contact/?service=serverless#contact-form" data-service-request-open="service-request-nav-serverless"><span class="mega-item-visual" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><span class="mega-item-copy"><strong>توابع بدون سرور</strong><small>برای شرایط فعلی تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/contact/?service=app-build-test#contact-form" data-service-request-open="service-request-nav-app-build-test"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [iphone, phone, smartphone, cellphone]
+version: "1.0"
+unicode: "ea8a"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+  <path d="M11 4h2" />
+  <path d="M12 17v.01" />
+</svg>
+</span><span class="mega-item-copy"><strong>ساخت و آزمون اندروید و macOS</strong><small>برای محیط‌های پشتیبانی‌شده تماس بگیرید</small></span></a></li><li><a href="https://haio.ir/marketplace/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>مارکت‌پلیس نرم‌افزار</strong><small>فهرست نرم‌افزارهای آماده در پنل</small></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>قابلیت‌های فنی پلتفرم</h3><ul>
+        <li><a href="https://haio.ir/docs/paas/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Devices
+tags: [storage, hosting, www]
+version: "1.0"
+unicode: "eb1f"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+  <path d="M7 8l0 .01" />
+  <path d="M7 16l0 .01" />
+</svg>
+</span><span class="mega-item-copy"><strong>استقرار و مدیریت پروژه</strong><small>تاریخچه، دامنه، TLS، لاگ و پایش</small></span></a></li><li><a href="https://haio.ir/docs/account-resources/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><span class="mega-item-copy"><strong>مدیریت منابع حساب</strong><small>ظرفیت مشترک برای اپ‌ها و دسکتاپ</small></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+<li class="nav-mega-item"><details class="nav-mega nav-mega-solutions" data-mega-menu>
+  <summary aria-label="باز کردن منوی راهکارها">راهکارها<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div><span class="eyebrow">هایو کلود</span><h2>راهکارها</h2></div><a class="mega-all" href="https://haio.ir/services/">بررسی خدمات هایو <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>توسعه و رشد</h3><ul>
+        <li><a href="https://haio.ir/solutions/independent-developers/"><span class="mega-item-visual" aria-hidden="true"><!--
+category: Weather
+tags: [weather, online]
+version: "1.0"
+unicode: "ea76"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+</svg>
+</span><span class="mega-item-copy"><strong>توسعه‌دهندگان مستقل</strong><small>استقرار با PaaS، هایو فلش و پایگاه داده</small></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+<li class="nav-mega-item"><details class="nav-mega nav-mega-marketplace" data-mega-menu>
+  <summary aria-label="باز کردن منوی مارکت‌پلیس">مارکت‌پلیس<span class="nav-chevron" aria-hidden="true"></span></summary>
+  <div class="mega-panel">
+    <div class="mega-heading"><div><span class="eyebrow">هایو کلود</span><h2>مارکت‌پلیس</h2></div><a class="mega-all" href="https://haio.ir/marketplace/">همه اپلیکیشن‌ها <span aria-hidden="true">←</span></a></div>
+    <div class="mega-groups">
+            <section class="mega-group"><h3>وب و محتوا</h3><ul>
+        <li><a href="https://haio.ir/marketplace/wordpress/"><span class="mega-item-visual mega-logo-wordpress" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/wordpress.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>وردپرس</strong></span></a></li><li><a href="https://haio.ir/marketplace/ghost/"><span class="mega-item-visual mega-logo-ghost" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-ghost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>گوست</strong></span></a></li><li><a href="https://haio.ir/marketplace/wikijs/"><span class="mega-item-visual mega-logo-wikijs" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-wikijs-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>ویکی‌جی‌اس</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>داده و بک‌اند</h3><ul>
+        <li><a href="https://haio.ir/marketplace/supabase/"><span class="mega-item-visual mega-logo-supabase" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-supabase-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>سوپابیس</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>هوش مصنوعی و اتوماسیون</h3><ul>
+        <li><a href="https://haio.ir/marketplace/n8n/"><span class="mega-item-visual mega-logo-n8n" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-n8n-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>n8n</strong></span></a></li>      </ul></section>
+            <section class="mega-group"><h3>تیم و کسب‌وکار</h3><ul>
+        <li><a href="https://haio.ir/marketplace/mattermost/"><span class="mega-item-visual mega-logo-mattermost" aria-hidden="true"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-mattermost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span class="mega-item-copy"><strong>مترموست</strong></span></a></li>      </ul></section>
+          </div>
+  </div>
+</details></li>
+                <li><a href="https://haio.ir/pricing/"><strong>تعرفه‌ها</strong></a></li><li><a href="https://haio.ir/docs/"><strong>راهنما</strong></a></li><li><a href="https://haio.ir/contact/"><strong>تماس</strong></a></li>            </ul>
+        </nav>
+        <div class="header-actions"><button class="theme-switch" type="button" data-theme-switch hidden aria-label="تغییر تم" aria-pressed="false"><!--
+category: Weather
+tags: [night, dark mode]
+version: "1.0"
+unicode: "eaf8"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+</svg>
+ <span>حالت تیره</span></button><a class="header-login" href="https://my.haio.ir/login">ورود</a><a class="button primary header-register" href="https://my.haio.ir/register">ساخت حساب</a></div>
+    </div>
+</header>
+<main id="main" class="home-page">
+<section class="home-hero" aria-labelledby="home-hero-title"><div class="container home-hero-grid"><div class="home-hero-copy"><p class="home-kicker"><span aria-hidden="true"></span> زیرساخت ابری برای نرم‌افزار شما</p><h1 id="home-hero-title">هایو کلود؛ پلتفرم ابری برای استقرار اپلیکیشن و اجرای دسکتاپ ابری</h1><p class="lead">اپلیکیشن خود را از Git، تصویر کانتینر، Compose یا ZIP مستقر کنید؛ دسکتاپ ابری و ابزارهای مدیریت زیرساخت با MCP را نیز در یک حساب به کار بگیرید. پردازنده، حافظه و فضای ذخیره‌سازی، منابع مشترک کل حساب هستند.</p><div class="actions"><a class="button primary" href="https://my.haio.ir/register">ساخت حساب و شروع <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a><a class="button secondary" href="https://haio.ir/services/">آشنایی با خدمات</a></div><div class="home-hero-foot"><span>استقرار اپلیکیشن</span><span>دسکتاپ ابری</span><span>مدیریت با MCP</span></div></div><div class="home-hero-art" data-pointer-art><div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div><div class="hero-core" aria-hidden="true"><span>هایو کلود</span><b>یک حساب، چند مسیر</b></div><a class="hero-node node-paas" href="https://haio.ir/paas/" aria-label="آشنایی با استقرار اپلیکیشن"><span>۰۱</span><strong>استقرار اپلیکیشن</strong><small>Build / Deploy</small></a><a class="hero-node node-desktop" href="https://haio.ir/cloud-desktop/" aria-label="آشنایی با دسکتاپ ابری"><span>۰۲</span><strong>دسکتاپ ابری</strong><small>Work / Create</small></a><a class="hero-node node-mcp" href="https://haio.ir/mcp/" aria-label="آشنایی با مدیریت زیرساخت با MCP"><span>۰۳</span><strong>مدیریت زیرساخت</strong><small>MCP / Manage</small></a><div class="hero-art-glow" aria-hidden="true"></div></div></div><div class="container home-hero-bottom"><span>محصولات و منابع را با دید روشن انتخاب کنید</span><a href="#services">کشف مسیرها <span aria-hidden="true">↓</span></a></div></section>
+<section class="services-section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services-section-head">
+      <div><p class="eyebrow">خدمات هایو کلود</p><h2 id="services-title">خدمات ابری برای ساخت، اجرا و مدیریت نرم‌افزار</h2></div>
+      <p>از استقرار برنامه و اجرای دسکتاپ ابری تا پایگاه داده، سرور ابری و ابزارهای توسعه؛ مسیر مناسب پروژهٔ خود را انتخاب کنید و سپس منابع موردنیاز آن را بسنجید.</p>
+    </div>
+          <div class="service-overview-grid service-overview-grid--featured"><article class="service-overview-card">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: Weather
+tags: [weather, online]
+version: "1.0"
+unicode: "ea76"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">PaaS</bdi></p></div>
+  <h3>استقرار اپلیکیشن</h3>
+  <p class="service-overview-copy">کد خود را از Git، کانتینر، Compose یا ZIP مستقر کنید و اجرای اپلیکیشن را مدیریت کنید.</p>
+  <ul class="service-overview-details"><li>استقرار کد</li><li>دامنه و TLS</li></ul>  <a class="service-overview-link" href="https://haio.ir/paas/" aria-label="جزئیات استقرار اپلیکیشن؛ استقرار اپلیکیشن"><span>جزئیات استقرار اپلیکیشن</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<article class="service-overview-card">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: Devices
+tags: [monitor, computer, imac]
+version: "1.0"
+unicode: "ea89"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+  <path d="M7 20h10" />
+  <path d="M9 16v4" />
+  <path d="M15 16v4" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Cloud Desktop</bdi></p></div>
+  <h3>دسکتاپ ابری</h3>
+  <p class="service-overview-copy">محیط دسکتاپ خود را در فضای ابری اجرا کنید؛ با یک جایگاه اپلیکیشن و سهمی از منابع حساب.</p>
+  <ul class="service-overview-details"><li>محیط کار ابری</li><li>منابع مشترک</li></ul>  <a class="service-overview-link" href="https://haio.ir/cloud-desktop/" aria-label="جزئیات دسکتاپ ابری؛ دسکتاپ ابری"><span>جزئیات دسکتاپ ابری</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<article class="service-overview-card">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: System
+tags: [cog, edit, gear, preferences, tools]
+version: "1.0"
+unicode: "eb20"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">MCP</bdi></p></div>
+  <h3>مدیریت زیرساخت با MCP</h3>
+  <p class="service-overview-copy">ابزارها و عامل‌های سازگار را با محدودهٔ دسترسی مشخص به مدیریت زیرساخت متصل کنید.</p>
+  <ul class="service-overview-details"><li>ابزارهای سازگار</li><li>مدیریت دسترسی</li></ul>  <a class="service-overview-link" href="https://haio.ir/mcp/" aria-label="جزئیات مدیریت زیرساخت با MCP؛ مدیریت زیرساخت با MCP"><span>جزئیات مدیریت زیرساخت با MCP</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+</div>
+      <h2 class="services-secondary-title">دیگر خدمات و ابزارها</h2>        <div class="service-overview-grid service-overview-grid--secondary"><article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Haio Flash</bdi></p></div>
+  <h3>هایو فلش</h3>
+  <p class="service-overview-copy">برای اجرای برنامه و محیط مورد نیاز خود، گزینه‌ها و شرایط روز سرویس سرور ابری هایو فلش را بررسی کنید.</p>
+    <a class="service-overview-link" href="https://haio.ir/haio-flash/" aria-label="جزئیات هایو فلش؛ هایو فلش"><span>جزئیات هایو فلش</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: System
+tags: [secure, security, closed, key, safety]
+version: "1.30"
+unicode: "ed58"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+  <path d="M12 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M12 12l0 2.5" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Anti-sanction</bdi></p></div>
+  <h3>تحریم شکن</h3>
+  <p class="service-overview-copy">تحریم شکن هایو برای دسترسی به سرویس‌ها و ابزارهای موردنیاز شما ارائه می‌شود. کاربرد، سازگاری و تعرفهٔ فعلی آن را پیش از انتخاب بررسی کنید.</p>
+    <a class="service-overview-link" href="https://haio.ir/anti-sanction/" aria-label="جزئیات تحریم شکن؛ تحریم شکن"><span>جزئیات تحریم شکن</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: Database
+tags: [storage, data, memory]
+version: "1.0"
+unicode: "ea88"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+  <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+  <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Database &amp; Storage</bdi></p></div>
+  <h3>پایگاه داده و ذخیره‌سازی</h3>
+  <p class="service-overview-copy">از PostgreSQL، MySQL، Redis و حجم‌های پایدار برای بخش دادهٔ برنامه استفاده کنید. پیکربندی مورد نیاز را بررسی کنید.</p>
+    <a class="service-overview-link" href="https://haio.ir/contact/?service=database-storage#contact-form" aria-label="بررسی شرایط این خدمت؛ پایگاه داده و ذخیره‌سازی" data-service-request-open="service-request-services-database-storage"><span>بررسی شرایط این خدمت</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<dialog class="service-request-modal" id="service-request-services-database-storage" aria-labelledby="service-request-services-database-storage-title" aria-describedby="service-request-services-database-storage-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-services-database-storage-title">پایگاه داده و ذخیره‌سازی</h2>
+  <p id="service-request-services-database-storage-description">نیاز داده و ذخیره‌سازی پروژه را مشخص کنید تا گزینه‌های مناسب و شرایط فعلی بررسی شوند.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=database-storage#contact-form">ثبت درخواست</a>
+  </dialog>
+<article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Serverless</bdi></p></div>
+  <h3>توابع بدون سرور</h3>
+  <p class="service-overview-copy">برای اجرای توابع برنامه، مسیر بدون سرور را بررسی کنید و نیاز فنی خود را با شرایط فعلی سرویس تطبیق دهید.</p>
+    <a class="service-overview-link" href="https://haio.ir/contact/?service=serverless#contact-form" aria-label="بررسی شرایط این خدمت؛ توابع بدون سرور" data-service-request-open="service-request-services-serverless"><span>بررسی شرایط این خدمت</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<dialog class="service-request-modal" id="service-request-services-serverless" aria-labelledby="service-request-services-serverless-title" aria-describedby="service-request-services-serverless-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-services-serverless-title">توابع بدون سرور</h2>
+  <p id="service-request-services-serverless-description">کاربرد و نیاز فنی خود را بنویسید تا شرایط فعلی توابع بدون سرور بررسی شود.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=serverless#contact-form">ثبت درخواست</a>
+  </dialog>
+<article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: Devices
+tags: [iphone, phone, smartphone, cellphone]
+version: "1.0"
+unicode: "ea8a"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+  <path d="M11 4h2" />
+  <path d="M12 17v.01" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Android &amp; macOS</bdi></p></div>
+  <h3>ساخت و آزمون اپلیکیشن</h3>
+  <p class="service-overview-copy">برای ساخت و آزمون اندروید و ساخت macOS، محیط‌ها و ابزارهای پشتیبانی‌شدهٔ مورد نیاز پروژه را بررسی کنید.</p>
+    <a class="service-overview-link" href="https://haio.ir/contact/?service=app-build-test#contact-form" aria-label="بررسی شرایط این خدمت؛ ساخت و آزمون اپلیکیشن" data-service-request-open="service-request-services-app-build-test"><span>بررسی شرایط این خدمت</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+<dialog class="service-request-modal" id="service-request-services-app-build-test" aria-labelledby="service-request-services-app-build-test-title" aria-describedby="service-request-services-app-build-test-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-services-app-build-test-title">ساخت و آزمون اپلیکیشن</h2>
+  <p id="service-request-services-app-build-test-description">نیاز خود را انتخاب کنید؛ سپس درخواست را در فرم تماس ثبت کنید.</p>
+      <fieldset class="service-request-options"><legend>نیاز خود را انتخاب کنید</legend>
+      <label><input type="radio" name="service-request-services-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=android-build-test#contact-form"> ساخت و آزمون Android</label><label><input type="radio" name="service-request-services-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=macos-build#contact-form"> ساخت macOS</label>    </fieldset>
+    <a class="button primary" href="https://haio.ir/contact/?service=app-build-test#contact-form" data-service-request-submit hidden>ثبت درخواست</a>
+  </dialog>
+<article class="service-overview-card service-overview-card--compact">
+  <div class="service-overview-top"><span class="service-overview-icon" aria-hidden="true"><!--
+category: Design
+tags: [pile, elements, layout, wrap]
+version: "1.39"
+unicode: "eef7"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+  <path d="M4 12l8 4l8 -4" />
+  <path d="M4 16l8 4l8 -4" />
+</svg>
+</span><p class="service-overview-label"><bdi dir="ltr">Marketplace</bdi></p></div>
+  <h3>مارکت‌پلیس نرم‌افزار</h3>
+  <p class="service-overview-copy">نرم‌افزارها و محیط‌های آماده را مرور کنید و گزینهٔ متناسب با پروژه، داده و ابزارهای تیم خود را انتخاب کنید.</p>
+    <a class="service-overview-link" href="https://haio.ir/marketplace/" aria-label="دیدن کاتالوگ مارکت‌پلیس؛ مارکت‌پلیس نرم‌افزار"><span>دیدن کاتالوگ مارکت‌پلیس</span><!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+</article>
+</div>  </div>
+</section>
+<section class="home-section home-customers" id="customers" aria-labelledby="home-customers-title"><div class="container">
+  <div class="home-section-head"><div><p class="eyebrow">مشتریان ما</p><h2 id="home-customers-title">همراهان هایو کلود</h2></div></div>
+  <ul class="customer-logo-grid">
+          <li><span><img width="300" height="300" src="https://haio.ir/wp-content/uploads/2026/10/IMG_20260725_171540_769-300x300.webp" class="attachment-medium size-medium" alt="بارسین تراز" loading="lazy" decoding="async" srcset="https://haio.ir/wp-content/uploads/2026/10/IMG_20260725_171540_769-300x300.webp 300w, https://haio.ir/wp-content/uploads/2026/10/IMG_20260725_171540_769-150x150.webp 150w, https://haio.ir/wp-content/uploads/2026/10/IMG_20260725_171540_769.webp 512w" sizes="auto, (max-width: 300px) 100vw, 300px" /></span></li>
+          <li><span><img width="300" height="200" src="https://haio.ir/wp-content/uploads/2026/10/83E862BA-63A6-4615-AF21-15C333F66BF8-300x200.webp" class="attachment-medium size-medium" alt="توسعه تجارت متین ایرانیان" loading="lazy" decoding="async" srcset="https://haio.ir/wp-content/uploads/2026/10/83E862BA-63A6-4615-AF21-15C333F66BF8-300x200.webp 300w, https://haio.ir/wp-content/uploads/2026/10/83E862BA-63A6-4615-AF21-15C333F66BF8-1024x683.webp 1024w, https://haio.ir/wp-content/uploads/2026/10/83E862BA-63A6-4615-AF21-15C333F66BF8-768x512.webp 768w, https://haio.ir/wp-content/uploads/2026/10/83E862BA-63A6-4615-AF21-15C333F66BF8.webp 1536w" sizes="auto, (max-width: 300px) 100vw, 300px" /></span></li>
+      </ul></div></section>
+<section class="home-section home-marketplace" id="marketplace" aria-labelledby="home-marketplace-title" data-marketplace-carousel>
+  <div class="marketplace-backdrop" aria-hidden="true"><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/wordpress.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-n8n-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-ghost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-wikijs-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-supabase-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-mattermost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+  <div class="container home-marketplace-inner">
+    <div class="home-marketplace-main">
+      <div class="home-marketplace-copy" data-reveal><p class="eyebrow">مارکت‌پلیس هایو کلود</p><h2 id="home-marketplace-title">نرم‌افزارهای آماده در مارکت‌پلیس هایو کلود</h2><p>اپلیکیشن‌های منتشرشده را مرور کنید. وضعیت فعلی در پنل، منابع موردنیاز و شرایط هر گزینه را پیش از استقرار بررسی کنید.</p><a class="button primary" href="https://haio.ir/marketplace/">دیدن همهٔ اپلیکیشن‌ها <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div>
+            <div class="marketplace-stage" data-reveal>
+        <div class="marketplace-viewport" data-marketplace-viewport tabindex="0" role="region" aria-label="اسلایدهای برنامه‌های مارکت‌پلیس">
+          <div class="marketplace-track"><article class="marketplace-slide" id="marketplace-app-1" data-marketplace-slide aria-label="وردپرس، 1 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">مدیریت محتوا</span>
+    <h3 dir="auto">وردپرس</h3>
+    <p>سیستم مدیریت محتوا برای ساخت وب‌سایت و انتشار محتوا.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/wordpress/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">01 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-wordpress"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/wordpress.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+<article class="marketplace-slide" id="marketplace-app-2" data-marketplace-slide aria-label="n8n، 2 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">اتوماسیون</span>
+    <h3 dir="auto">n8n</h3>
+    <p>ساخت گردش‌کار برای اتصال سرویس‌ها و خودکارسازی فرایندها.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/n8n/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">02 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-n8n"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-n8n-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+<article class="marketplace-slide" id="marketplace-app-3" data-marketplace-slide aria-label="گوست، 3 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">مدیریت محتوا</span>
+    <h3 dir="auto">گوست</h3>
+    <p>پلتفرم متن‌باز برای انتشار مقاله، وب‌سایت و خبرنامه.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/ghost/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">03 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-ghost"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-ghost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+<article class="marketplace-slide" id="marketplace-app-4" data-marketplace-slide aria-label="ویکی‌جی‌اس، 4 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">پایگاه دانش</span>
+    <h3 dir="auto">ویکی‌جی‌اس</h3>
+    <p>ویکی متن‌باز برای مستندسازی و سازمان‌دهی دانش تیمی.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/wikijs/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">04 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-wikijs"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-wikijs-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+<article class="marketplace-slide" id="marketplace-app-5" data-marketplace-slide aria-label="سوپابیس، 5 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">پایگاه داده</span>
+    <h3 dir="auto">سوپابیس</h3>
+    <p>مجموعه متن‌باز ابزارهای بک‌اند با پایگاه داده PostgreSQL.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/supabase/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">05 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-supabase"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-supabase-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+<article class="marketplace-slide" id="marketplace-app-6" data-marketplace-slide aria-label="مترموست، 6 از 6">
+  <div class="marketplace-slide-copy">
+    <span class="marketplace-slide-kicker">گفت‌وگوی تیمی</span>
+    <h3 dir="auto">مترموست</h3>
+    <p>فضای گفت‌وگو و همکاری تیمی با امکان استقرار شخصی.</p>
+    <a class="marketplace-slide-link" href="https://haio.ir/marketplace/mattermost/">مشاهده جزئیات <span aria-hidden="true">←</span></a>
+    <span class="marketplace-slide-number" dir="ltr">06 / 06</span>
+  </div>
+  <div class="marketplace-slide-visual" aria-hidden="true"><span class="marketplace-slide-orbit orbit-a"></span><span class="marketplace-slide-orbit orbit-b"></span><span class="marketplace-slide-logo mega-logo-mattermost"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-mattermost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span></div>
+</article>
+</div>
+        </div>
+        <div class="marketplace-stage-footer"><span>برای دیدن برنامه‌های دیگر ورق بزنید</span><div class="marketplace-controls"><button type="button" data-marketplace-prev aria-label="برنامهٔ قبلی" hidden>→</button><span data-marketplace-status aria-live="polite" hidden></span><button type="button" data-marketplace-next aria-label="برنامهٔ بعدی" hidden>←</button></div></div>
+      </div>
+          </div>
+    <aside class="marketplace-picks" aria-label="برنامه‌های منتخب" data-reveal><div class="marketplace-picks-head"><span class="eyebrow">انتخاب سریع</span><h3>از این برنامه‌ها شروع کنید</h3><p>یکی را انتخاب کنید یا همهٔ اپلیکیشن‌ها را ببینید.</p></div><div class="marketplace-pick-list"><a class="marketplace-pick" href="#marketplace-app-1" data-marketplace-pick="0" aria-current="true"><span class="marketplace-pick-logo mega-logo-wordpress"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/wordpress.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">وردپرس</strong><small>مدیریت محتوا</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+<a class="marketplace-pick" href="#marketplace-app-2" data-marketplace-pick="1"><span class="marketplace-pick-logo mega-logo-n8n"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-n8n-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">n8n</strong><small>اتوماسیون</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+<a class="marketplace-pick" href="#marketplace-app-3" data-marketplace-pick="2"><span class="marketplace-pick-logo mega-logo-ghost"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-ghost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">گوست</strong><small>مدیریت محتوا</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+<a class="marketplace-pick" href="#marketplace-app-4" data-marketplace-pick="3"><span class="marketplace-pick-logo mega-logo-wikijs"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-wikijs-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">ویکی‌جی‌اس</strong><small>پایگاه دانش</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+<a class="marketplace-pick" href="#marketplace-app-5" data-marketplace-pick="4"><span class="marketplace-pick-logo mega-logo-supabase"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-supabase-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">سوپابیس</strong><small>پایگاه داده</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+<a class="marketplace-pick" href="#marketplace-app-6" data-marketplace-pick="5"><span class="marketplace-pick-logo mega-logo-mattermost"><img width="96" height="96" src="https://haio.ir/wp-content/uploads/2026/10/haio-mattermost-logo.webp" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" decoding="async" /></span><span><strong dir="auto">مترموست</strong><small>گفت‌وگوی تیمی</small></span><span class="marketplace-pick-arrow" aria-hidden="true">←</span></a>
+</div></aside>  </div>
+  <noscript><div class="container"><ul class="marketplace-nojs"><li><a href="https://haio.ir/marketplace/wordpress/" dir="auto">وردپرس</a> — سیستم مدیریت محتوا برای ساخت وب‌سایت و انتشار محتوا.</li><li><a href="https://haio.ir/marketplace/n8n/" dir="auto">n8n</a> — ساخت گردش‌کار برای اتصال سرویس‌ها و خودکارسازی فرایندها.</li><li><a href="https://haio.ir/marketplace/ghost/" dir="auto">گوست</a> — پلتفرم متن‌باز برای انتشار مقاله، وب‌سایت و خبرنامه.</li><li><a href="https://haio.ir/marketplace/wikijs/" dir="auto">ویکی‌جی‌اس</a> — ویکی متن‌باز برای مستندسازی و سازمان‌دهی دانش تیمی.</li><li><a href="https://haio.ir/marketplace/supabase/" dir="auto">سوپابیس</a> — مجموعه متن‌باز ابزارهای بک‌اند با پایگاه داده PostgreSQL.</li><li><a href="https://haio.ir/marketplace/mattermost/" dir="auto">مترموست</a> — فضای گفت‌وگو و همکاری تیمی با امکان استقرار شخصی.</li></ul></div></noscript>
+</section>
+<section class="home-section home-iraj" id="iraj" aria-labelledby="home-iraj-title">
+    <div class="container home-iraj-inner">
+        <div class="home-iraj-copy">
+            <p class="home-iraj-eyebrow">هوش مصنوعی سازمانی در اکوسیستم هایو</p>
+            <h2 id="home-iraj-title">ایرج؛ ایجنت هوش مصنوعی برای سازمان شما</h2>
+            <p>ایرج برای اتصال به داده‌ها و سامانه‌های سازمان و انجام کارهای مجاز طراحی شده است؛ از تحلیل اطلاعات تا کمک به پیشبرد فرایندهای کاری.</p>
+            <a class="home-iraj-link" href="https://irajai.ir/" target="_blank" rel="noopener noreferrer" aria-label="آشنایی با ایرج در وب‌سایت ایرج (باز شدن در زبانهٔ جدید)">آشنایی با ایرج <span aria-hidden="true">↗</span></a>
+            <span class="home-iraj-domain" dir="ltr">irajai.ir</span>
+        </div>
+        <div class="home-iraj-visual" aria-hidden="true">
+            <span class="home-iraj-orbit"></span>
+            <div class="home-iraj-mark"><img src="https://haio.ir/wp-content/themes/haio-cloud/assets/images/iraj-logo.png" width="160" height="160" loading="lazy" alt=""></div>
+            <span class="home-iraj-visual-caption" dir="ltr">IRAJ · AI AGENT</span>
+        </div>
+    </div>
+</section>
+<section class="home-section home-process" id="how-it-works" aria-labelledby="home-process-title"><div class="container home-process-grid"><div data-reveal><p class="eyebrow">از نیاز تا اجرا</p><h2 id="home-process-title">قدم بعدی را با آگاهی بردارید</h2><p class="home-intro">مسیرهای خدماتی را مقایسه کنید، ظرفیت کل حساب را بسنجید و سپس در پنل، شرایط و گزینه‌های فعلی را بررسی کنید.</p><a class="text-link" href="https://haio.ir/docs/">راهنماهای شروع را بخوانید <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div><ol class="home-steps process-list process-list--home" data-reveal><li><span>۰۱</span><div><h3>نیاز خود را مشخص کنید</h3><p>اپلیکیشن، دسکتاپ یا مدیریت زیرساخت؟ نوع کار و وابستگی‌های آن را روشن کنید.</p></div></li>
+<li><span>۰۲</span><div><h3>منابع حساب را مقایسه کنید</h3><p>پردازنده، حافظه، فضا و تعداد اپلیکیشن‌ها در سطح کل حساب مشترک‌اند.</p></div></li>
+<li><span>۰۳</span><div><h3>جزئیات روز را در پنل ببینید</h3><p>قیمت نهایی، ظرفیت موجود و سازگاری را پیش از ثبت سفارش بررسی کنید.</p></div></li>
+</ol>
+</div></section>
+<section class="home-section home-pool" id="resources" aria-labelledby="home-pool-title"><div class="container home-pool-grid"><div data-reveal><p class="eyebrow">مدل منابع</p><h2 id="home-pool-title">یک حساب، یک مجموعه منابع مشترک</h2><p>ظرفیت پردازنده، حافظه و فضا برای کل حساب است. اپلیکیشن‌ها و دسکتاپ‌ها از همین مجموعه استفاده می‌کنند؛ دسکتاپ یک جایگاه اپلیکیشن را نیز مصرف می‌کند.</p><p class="home-pool-note">Starter به ظرفیت موجود وابسته است. از ۳۰ ساعت پردازش به بعد، در صورت نیاز به ظرفیت ممکن است سرویس متوقف شود؛ تداوم آن تضمین‌شده نیست.</p><a class="text-link" href="https://haio.ir/docs/account-resources/">توضیح کامل مدل منابع <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div><div class="home-pool-visual" data-reveal aria-hidden="true"><div class="pool-core"><span>منابع کل حساب</span><strong>CPU · RAM · Storage</strong></div><div class="pool-branches"><span>اپلیکیشن</span><span>دسکتاپ</span><span>سرویس‌های دیگر</span></div><small>ظرفیت هر طرح میان بارهای همان حساب تقسیم می‌شود</small></div></div></section>
+<section class="home-section home-pricing" id="pricing" aria-labelledby="home-pricing-title"><div class="container"><div class="home-section-head" data-reveal><div><p class="eyebrow">طرح‌ها</p><h2 id="home-pricing-title">تعرفه‌های ماهانه هایو کلود</h2></div><p>CPU، رم و فضا منابع مشترک کل حساب هستند. مبلغ نهایی و هزینهٔ خدمات جانبی انتخابی را پیش از پرداخت در پنل بررسی کنید.</p></div><div class="home-plan-wrap" data-reveal><div class="haio-plan-grid" aria-label="مقایسهٔ طرح‌ها">
+<article class="haio-plan haio-plan--starter">
+  <div class="haio-plan-top"><span class="haio-plan-type">شروع کار</span></div>
+  <h3><bdi>Starter</bdi></h3>
+  <p class="haio-plan-price">رایگان، وابسته به ظرفیت</p>
+  <p class="haio-plan-subtitle">CPU، رم و فضا منابع مشترک کل حساب هستند</p>
+  <ul class="haio-plan-specs">
+    <li><span>پردازنده</span><strong><bdi>۰٫۵ vCPU</bdi></strong></li><li><span>حافظه</span><strong><bdi>۰٫۵ GiB</bdi></strong></li><li><span>فضا</span><strong><bdi>۱ GiB</bdi></strong></li>    <li><span>اپلیکیشن</span><strong>تا ۱</strong></li><li><span>پروژه</span><strong>تا ۱</strong></li>    <li><span>دامنهٔ سفارشی</span><strong>دارد</strong></li><li><span>اسکیل هوشمند</span><strong>دارد</strong></li>  </ul>
+  <p class="haio-plan-starter-note">Starter به ظرفیت موجود وابسته است. از ۳۰ ساعت پردازش به بعد، در صورت نیاز به ظرفیت ممکن است سرویس متوقف شود؛ تداوم آن تضمین‌شده نیست.</p>
+  <a class="haio-plan-cta" href="https://my.haio.ir/register">فعال‌سازی طرح رایگان</a>
+</article>
+<article class="haio-plan haio-plan--pro">
+  <div class="haio-plan-top"><span class="haio-plan-type">طرح ماهانه</span><span class="haio-plan-featured">طرح میان‌رده</span></div>
+  <h3><bdi>Pro</bdi></h3>
+  <p class="haio-plan-price">۱٬۵۰۰٬۰۰۰ تومان در ماه</p>
+  <p class="haio-plan-subtitle">CPU، رم و فضا منابع مشترک کل حساب هستند</p>
+  <ul class="haio-plan-specs">
+    <li><span>پردازنده</span><strong><bdi>۴ vCPU</bdi></strong></li><li><span>حافظه</span><strong><bdi>۵٫۸۵۹۳۷۵ GiB</bdi></strong></li><li><span>فضا</span><strong><bdi>۷۰ GiB</bdi></strong></li>    <li><span>اپلیکیشن</span><strong>تا ۲۰</strong></li><li><span>پروژه</span><strong>تا ۵</strong></li>    <li><span>دامنهٔ سفارشی</span><strong>دارد</strong></li>  </ul>
+  <p class="haio-plan-note">CPU، رم و فضا منابع مشترک کل حساب هستند.</p>
+  <a class="haio-plan-cta" href="https://my.haio.ir/register">ساخت حساب و بررسی طرح</a>
+</article>
+<article class="haio-plan haio-plan--scale">
+  <div class="haio-plan-top"><span class="haio-plan-type">طرح ماهانه</span></div>
+  <h3><bdi>Scale</bdi></h3>
+  <p class="haio-plan-price">۳٬۵۰۰٬۰۰۰ تومان در ماه</p>
+  <p class="haio-plan-subtitle">CPU، رم و فضا منابع مشترک کل حساب هستند</p>
+  <ul class="haio-plan-specs">
+    <li><span>پردازنده</span><strong><bdi>۸ vCPU</bdi></strong></li><li><span>حافظه</span><strong><bdi>۱۱٫۷۱۸۷۵ GiB</bdi></strong></li><li><span>فضا</span><strong><bdi>۱۰۰ GiB</bdi></strong></li>    <li><span>اپلیکیشن</span><strong>تا ۲۰</strong></li><li><span>پروژه</span><strong>تا ۱۰</strong></li>    <li><span>دامنهٔ سفارشی</span><strong>دارد</strong></li><li><span>پشتیبانی</span><strong>دارد</strong></li>  </ul>
+  <p class="haio-plan-note">CPU، رم و فضا منابع مشترک کل حساب هستند.</p>
+  <a class="haio-plan-cta" href="https://my.haio.ir/register">ساخت حساب و بررسی طرح</a>
+</article>
+<article class="haio-plan haio-plan--business">
+  <div class="haio-plan-top"><span class="haio-plan-type">طرح ماهانه</span></div>
+  <h3><bdi>Business</bdi></h3>
+  <p class="haio-plan-price">۶٬۰۰۰٬۰۰۰ تومان در ماه</p>
+  <p class="haio-plan-subtitle">CPU، رم و فضا منابع مشترک کل حساب هستند</p>
+  <ul class="haio-plan-specs">
+    <li><span>پردازنده</span><strong><bdi>۱۶ vCPU</bdi></strong></li><li><span>حافظه</span><strong><bdi>۱۵٫۶۲۵ GiB</bdi></strong></li><li><span>فضا</span><strong><bdi>۲۰۰ GiB</bdi></strong></li>    <li><span>اپلیکیشن</span><strong>تا ۱۰۰</strong></li><li><span>پروژه</span><strong>تا ۲۰</strong></li>    <li><span>دامنهٔ سفارشی</span><strong>دارد</strong></li>  </ul>
+  <p class="haio-plan-note">این طرح در پنل با تخصیص دستی نمایش داده می‌شود؛ برای ارتقا یا فروش تماس بگیرید.</p>
+  <a class="haio-plan-cta" href="https://haio.ir/contact/?service=business-plan#contact-form">تماس دربارهٔ Business</a>
+</article>
+<article class="haio-plan haio-plan--enterprise">
+  <div class="haio-plan-top"><span class="haio-plan-type">سازمانی</span></div>
+  <h3><bdi>Enterprise</bdi></h3>
+  <p class="haio-plan-price">بر اساس قرارداد</p>
+  <p class="haio-plan-subtitle">پیشنهاد سازمانی جدا از طرح‌های ماهانهٔ پنل</p>
+  <ul class="haio-plan-specs">
+    <li><span>پردازنده</span><strong><bdi>قراردادی</bdi></strong></li><li><span>حافظه</span><strong><bdi>قراردادی</bdi></strong></li><li><span>فضا</span><strong><bdi>قراردادی</bdi></strong></li>    <li><span>اپلیکیشن</span><strong>قراردادی</strong></li><li><span>پروژه</span><strong>قراردادی</strong></li>      </ul>
+  <p class="haio-plan-note">پیشنهاد سازمانی جداگانه؛ قیمت، منابع و شرایط بر اساس قرارداد تعیین می‌شود.</p>
+  <a class="haio-plan-cta" href="https://haio.ir/contact/?service=enterprise-plan#contact-form">درخواست مشاورهٔ سازمانی</a>
+</article>
+</div>
+<p class="haio-tool-note">Starter، Pro، Scale، Business طرح‌های پنل هستند؛ Enterprise پیشنهاد سازمانی جداگانه با قیمت و منابع قراردادی است. CPU، رم و فضا منابع مشترک کل حساب هستند. مبلغ نهایی و هزینهٔ خدمات جانبی را پیش از پرداخت در پنل بررسی کنید. اگر حساب دارید، <a href="https://my.haio.ir/login">وارد شوید</a>.</p>
+</div><div class="home-price-foot"><p>شرایط طرح‌های ماهانه و پیشنهاد سازمانی را جداگانه بررسی کنید.</p><a class="text-link" href="https://haio.ir/pricing/">جزئیات تعرفه‌ها <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div></div></section>
+<section class="home-section home-technical" id="technical" aria-labelledby="home-technical-title"><div class="container home-technical-grid"><div data-reveal><p class="eyebrow">استقرار اپلیکیشن</p><h2 id="home-technical-title">از کد تا اجرای اپلیکیشن</h2><p>در هایو کلود می‌توانید اپلیکیشن را از مخزن Git، تصویر کانتینر، فایل Compose یا ZIP مستقر کنید. برای پروژه‌های چندبخشی، محیط‌های جداگانه بسازید و از تاریخچهٔ استقرار برای پیگیری تغییرات استفاده کنید.</p><p>دامنهٔ شخصی و TLS خودکار، لاگ، مانیتورینگ و ترمینال به مدیریت اجرای اپلیکیشن کمک می‌کنند. برای داده‌های برنامه نیز PostgreSQL، MySQL، Redis و فضای ذخیره‌سازی پایدار در فهرست قابلیت‌ها قرار دارند.</p><a class="text-link" href="https://haio.ir/paas/">آشنایی با استقرار اپلیکیشن <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div><div class="home-capabilities" data-reveal><h3>برای شروع چه چیزی لازم دارید؟</h3><ul><li><strong>منبع برنامه:</strong> مخزن Git، تصویر کانتینر، Compose یا ZIP</li><li><strong>نیاز منابع:</strong> برآورد مجموع پردازنده، حافظه و فضای همهٔ بارهای حساب</li><li><strong>وابستگی‌ها:</strong> پایگاه داده، فضای پایدار و دامنهٔ مورد نیاز برنامه</li><li><strong>محیط اجرا:</strong> تعیین پروژه و محیط متناسب با جریان توسعه</li></ul><a class="text-link" href="https://haio.ir/docs/paas/">راهنمای شروع استقرار <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div></div></section>
+<section class="home-section home-use-cases" aria-labelledby="home-use-cases-title"><div class="container"><div class="home-section-head" data-reveal><div><p class="eyebrow">کاربردها</p><h2 id="home-use-cases-title">هایو کلود برای چه تیمی مناسب است؟</h2></div><p>برای هر نوع تیم، مسیر آغاز و منابع موردنیاز را با توجه به کار واقعی انتخاب کنید.</p></div><div class="home-use-grid"><article data-reveal>
+    <h3>توسعه‌دهندهٔ مستقل</h3>
+  <p>کد برنامهٔ خود را از Git، تصویر کانتینر، Compose یا ZIP وارد کنید و پیش از انتخاب طرح، نیاز اپلیکیشن و پایگاه داده‌اش را برآورد کنید.</p>
+  <a class="text-link" href="https://haio.ir/paas/">مسیر استقرار اپلیکیشن <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></article>
+<article data-reveal>
+    <h3>تیم استارتاپی</h3>
+  <p>چند محیط و ابزار تیم را در یک حساب سازمان دهید و سهم مجموع اپلیکیشن‌ها، داده و دسکتاپ را از منابع طرح بسنجید.</p>
+  <a class="text-link" href="https://haio.ir/docs/account-resources/">راهنمای منابع حساب <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></article>
+<article data-reveal>
+    <h3>شرکت نرم‌افزاری</h3>
+  <p>برای پروژه‌ها و دامنه‌های متعدد، ظرفیت طرح‌ها را مقایسه کنید و محدودهٔ دسترسی تیم و ابزارهای مدیریت زیرساخت را مشخص کنید.</p>
+  <a class="text-link" href="https://haio.ir/pricing/">مقایسهٔ طرح‌ها <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></article>
+</div></div></section>
+<section class="blog-section" id="home-blog" aria-labelledby="home-blog-title">
+  <div class="container">
+    <div class="blog-section-head" data-reveal>
+      <div><p class="eyebrow">از وبلاگ هایو کلود</p><h2 id="home-blog-title">تازه‌ترین نوشته‌ها</h2></div>
+      <p>راهنماها و نوشته‌های مرتبط با استقرار، خدمات ابری و ابزارهای توسعه را بخوانید.</p>
+    </div>
+          <div class="post-card-grid" data-reveal>
+        <article class="post-card post-6876 post type-post status-publish format-standard has-post-thumbnail hentry category-27">
+  <a class="post-card-media" href="https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/" aria-label="اطلاعیه به‌روزرسانی قیمت سرویس‌های ابری هایو (۶ فوریه ۲۰۲۶)">
+    <img width="768" height="512" src="https://haio.ir/wp-content/uploads/2026/02/price-haio-768x512.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy" decoding="async" srcset="https://haio.ir/wp-content/uploads/2026/02/price-haio-768x512.webp 768w, https://haio.ir/wp-content/uploads/2026/02/price-haio-400x267.webp 400w, https://haio.ir/wp-content/uploads/2026/02/price-haio.webp 849w" sizes="auto, (max-width: 768px) 100vw, 768px" />  </a>
+  <div class="post-card-body">
+    <div class="post-card-meta"><span>اخبار</span><time datetime="2026-02-06T18:08:45+03:30">۱۷ بهمن ۱۴۰۴</time></div>
+    <h3><a href="https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/">اطلاعیه به‌روزرسانی قیمت سرویس‌های ابری هایو (۶ فوریه ۲۰۲۶)</a></h3>
+        <a class="text-link" href="https://haio.ir/%d9%82%db%8c%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%db%8c%d8%b3%d9%87%d8%a7%db%8c-%d8%a7%d8%a8%d8%b1%db%8c-%d9%87%d8%a7%db%8c%d9%88/">خواندن مقاله <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+  </div>
+</article>
+<article class="post-card post-6799 post type-post status-publish format-standard has-post-thumbnail hentry category-23">
+  <a class="post-card-media" href="https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/" aria-label="نصب n8n بر روی سرور مجازی اوبونتو 24">
+    <img width="768" height="512" src="https://haio.ir/wp-content/uploads/2025/12/setup-n8n-otomation-768x512.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy" decoding="async" srcset="https://haio.ir/wp-content/uploads/2025/12/setup-n8n-otomation-768x512.webp 768w, https://haio.ir/wp-content/uploads/2025/12/setup-n8n-otomation-400x267.webp 400w, https://haio.ir/wp-content/uploads/2025/12/setup-n8n-otomation.webp 849w" sizes="auto, (max-width: 768px) 100vw, 768px" />  </a>
+  <div class="post-card-body">
+    <div class="post-card-meta"><span>سرور ابری</span><time datetime="2025-12-04T02:43:46+03:30">۱۳ آذر ۱۴۰۴</time></div>
+    <h3><a href="https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/">نصب n8n بر روی سرور مجازی اوبونتو 24</a></h3>
+        <a class="text-link" href="https://haio.ir/%d9%86%d8%b5%d8%a8-n8n-%d8%a8%d8%b1-%d8%b1%d9%88%db%8c-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d8%a7%d9%88%d8%a8%d9%88%d9%86%d8%aa%d9%88-22/">خواندن مقاله <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+  </div>
+</article>
+<article class="post-card post-6786 post type-post status-publish format-standard has-post-thumbnail hentry category-23">
+  <a class="post-card-media" href="https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/" aria-label="خرید سرور مجازی ماهانه ارزان در ایران و خارج">
+    <img width="768" height="512" src="https://haio.ir/wp-content/uploads/2025/12/Monthly-VPS-1-768x512.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy" decoding="async" srcset="https://haio.ir/wp-content/uploads/2025/12/Monthly-VPS-1-768x512.webp 768w, https://haio.ir/wp-content/uploads/2025/12/Monthly-VPS-1-400x267.webp 400w, https://haio.ir/wp-content/uploads/2025/12/Monthly-VPS-1.webp 849w" sizes="auto, (max-width: 768px) 100vw, 768px" />  </a>
+  <div class="post-card-body">
+    <div class="post-card-meta"><span>سرور ابری</span><time datetime="2025-12-01T11:48:42+03:30">۱۰ آذر ۱۴۰۴</time></div>
+    <h3><a href="https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/">خرید سرور مجازی ماهانه ارزان در ایران و خارج</a></h3>
+        <a class="text-link" href="https://haio.ir/%d8%ae%d8%b1%db%8c%d8%af-%d8%b3%d8%b1%d9%88%d8%b1-%d9%85%d8%ac%d8%a7%d8%b2%db%8c-%d9%85%d8%a7%d9%87%d8%a7%d9%86%d9%87-%d8%a7%d8%b1%d8%b2%d8%a7%d9%86-%d8%af%d8%b1-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d9%88/">خواندن مقاله <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a>
+  </div>
+</article>
+      </div>
+        <div class="blog-section-more"><a class="button secondary" href="https://haio.ir/?post_type=post">دیدن همهٔ نوشته‌ها <!--
+tags: [back, swipe, return]
+category: Arrows
+version: "1.0"
+unicode: "ea19"
+-->
+<svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>
+</a></div>
+  </div>
+</section>
+<section class="home-section home-faq" id="faq" aria-labelledby="home-faq-title"><div class="container home-faq-grid"><div data-reveal><p class="eyebrow">پرسش‌های پرتکرار</p><h2 id="home-faq-title">پیش از انتخاب بدانید</h2><p>پاسخ‌های کوتاه به پرسش‌هایی که روی انتخاب طرح و سرویس اثر می‌گذارند.</p></div><div data-reveal><div class="faq-list"><details class="faq"><summary><span class="faq-question">هایو کلود برای چه کاری مناسب است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>می‌توانید اپلیکیشن مستقر کنید، از دسکتاپ ابری استفاده کنید یا زیرساخت را با MCP مدیریت کنید. انتخاب سرویس و طرح به نیاز واقعی شما و مجموع منابع حساب بستگی دارد.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا منابع هر اپلیکیشن جداگانه محاسبه می‌شود؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>خیر. ظرفیت پردازنده، حافظه و فضای طرح برای کل حساب است و میان اپلیکیشن‌ها و دسکتاپ‌ها مشترک می‌ماند.</p></details>
+<details class="faq"><summary><span class="faq-question">دسکتاپ ابری چه بخشی از طرح را مصرف می‌کند؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>دسکتاپ یک جایگاه اپلیکیشن و بخشی از منابع مشترک حساب را مصرف می‌کند. نیاز دقیق خود را با ظرفیت طرح بسنجید.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا Starter استفادهٔ تضمین‌شده دارد؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>خیر. Starter به ظرفیت موجود وابسته است. از ۳۰ ساعت پردازش به بعد، در صورت نیاز به ظرفیت ممکن است سرویس متوقف شود؛ تداوم آن تضمین‌شده نیست.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا بکاپ یا آی‌پی عمومی همراه طرح است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>بکاپ رایگان نیست و آی‌پی عمومی فعلاً ارائه نمی‌شود. برای خدمات جانبی، شرایط روز را بررسی کنید.</p></details>
+<details class="faq"><summary><span class="faq-question">آیا MCP شامل مدل یا API رایگان هوش مصنوعی است؟</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>خیر. MCP در اینجا برای مدیریت زیرساخت است و به معنی ارائهٔ استنتاج یا اعتبار رایگان هوش مصنوعی نیست.</p></details>
+</div>
+</div></div></section>
+</main>
+<footer class="site-footer" aria-label="اطلاعات و پیوندهای پایانی">
+    <div class="container">
+        <div class="footer-cta">
+  <div><p class="eyebrow">از ایده تا اجرا</p><h2>مسیر مناسب پروژه‌تان را پیدا کنید</h2><p>برای شروع، خدمات و منابع حساب را بررسی کنید. برای پرسش‌های ویژه با ما تماس بگیرید.</p></div>
+  <div class="footer-cta-actions"><a class="button primary" href="https://haio.ir/services/">بررسی خدمات</a></div>
+</div>
+        <div class="footer-main">
+            <div class="footer-about"><a class="brand" href="https://haio.ir/" aria-label="هایو کلود، صفحه اصلی"><img class="brand-logo brand-logo-light" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-dark-text.png" alt="" width="120" height="127" loading="lazy"><img class="brand-logo brand-logo-dark" src="https://haio.ir/wp-content/themes/haio-cloud/assets/brand/haio-logo-white-text.png" alt="" width="120" height="127" loading="lazy"></a><p>هایو کلود بستری برای استقرار و اجرای نرم‌افزار است. میزبانی زیرساخت آن بر بستر شاتل انجام می‌شود.</p><p>ویرا ابر آینده جهان، شماره ثبت ۳۴۳۹</p></div>
+            <nav class="footer-column" aria-label="خدمات"><h3>خدمات</h3><ul><li><a href="https://haio.ir/paas/"><strong>استقرار اپلیکیشن</strong></a></li><li><a href="https://haio.ir/cloud-desktop/"><strong>دسکتاپ ابری</strong></a></li><li><a href="https://haio.ir/mcp/"><strong>مدیریت زیرساخت با MCP</strong></a></li><li><a href="https://haio.ir/anti-sanction/"><strong>تحریم شکن</strong></a></li><li><a href="https://haio.ir/haio-flash/"><strong>هایو فلش</strong></a></li><li><a href="https://haio.ir/services/"><strong>همه خدمات</strong></a></li></ul></nav><nav class="footer-column" aria-label="مارکت‌پلیس و انتخاب"><h3>مارکت‌پلیس و انتخاب</h3><ul><li><a href="https://my.haio.ir/marketplace"><strong>مارکت‌پلیس در پنل</strong></a></li><li><a href="https://haio.ir/pricing/"><strong>تعرفه‌ها</strong></a></li></ul></nav><nav class="footer-column" aria-label="راهنما و پشتیبانی"><h3>راهنما و پشتیبانی</h3><ul><li><a href="https://haio.ir/docs/"><strong>مستندات</strong></a></li><li><a href="https://haio.ir/docs/account-resources/"><strong>منابع حساب</strong></a></li><li><a href="https://haio.ir/contact/"><strong>تماس با ما</strong></a></li><li><a href="https://my.haio.ir/login"><strong>ورود به پنل</strong></a></li></ul></nav>        </div>
+        <div class="footer-contact"><div><strong>ارتباط با هایو کلود</strong><p><a href="mailto:info@haio.ir" dir="ltr">info@haio.ir</a> · <a href="tel:+982156138461" dir="ltr">۰۲۱-۵۶۱۳۸۴۶۱</a></p></div><a href="https://haio.ir/contact/">همه راه‌های تماس و نشانی ←</a></div>
+        <div class="footer-bottom"><p>© 2026 هایو کلود. همه حقوق محفوظ است.</p><div><a href="https://my.haio.ir/">پنل کاربری</a><a href="https://haio.ir/contact/">تماس و اطلاعات شرکت</a></div></div>
+    </div>
+</footer>
+<dialog class="service-request-modal" id="service-request-nav-database-storage" aria-labelledby="service-request-nav-database-storage-title" aria-describedby="service-request-nav-database-storage-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-database-storage-title">پایگاه داده و ذخیره‌سازی</h2>
+  <p id="service-request-nav-database-storage-description">نیاز داده و ذخیره‌سازی پروژه را مشخص کنید تا گزینه‌های مناسب و شرایط فعلی بررسی شوند.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=database-storage#contact-form">ثبت درخواست</a>
+  </dialog>
+<dialog class="service-request-modal" id="service-request-nav-serverless" aria-labelledby="service-request-nav-serverless-title" aria-describedby="service-request-nav-serverless-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-serverless-title">توابع بدون سرور</h2>
+  <p id="service-request-nav-serverless-description">کاربرد و نیاز فنی خود را بنویسید تا شرایط فعلی توابع بدون سرور بررسی شود.</p>
+      <a class="button primary" href="https://haio.ir/contact/?service=serverless#contact-form">ثبت درخواست</a>
+  </dialog>
+<dialog class="service-request-modal" id="service-request-nav-app-build-test" aria-labelledby="service-request-nav-app-build-test-title" aria-describedby="service-request-nav-app-build-test-description">
+  <button class="service-request-close" type="button" data-service-request-close aria-label="بستن پنجره">×</button>
+  <p class="eyebrow">درخواست خدمت</p>
+  <h2 id="service-request-nav-app-build-test-title">ساخت و آزمون اپلیکیشن</h2>
+  <p id="service-request-nav-app-build-test-description">نیاز خود را انتخاب کنید؛ سپس درخواست را در فرم تماس ثبت کنید.</p>
+      <fieldset class="service-request-options"><legend>نیاز خود را انتخاب کنید</legend>
+      <label><input type="radio" name="service-request-nav-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=android-build-test#contact-form"> ساخت و آزمون Android</label><label><input type="radio" name="service-request-nav-app-build-test-choice" data-service-request-choice="https://haio.ir/contact/?service=macos-build#contact-form"> ساخت macOS</label>    </fieldset>
+    <a class="button primary" href="https://haio.ir/contact/?service=app-build-test#contact-form" data-service-request-submit hidden>ثبت درخواست</a>
+  </dialog>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/haio-cloud/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script data-wp-strategy="defer" defer id="haio-tools-logic-js" src="https://haio.ir/wp-content/plugins/haio-tools/assets/logic.js?ver=0.2.4"></script>
+<script data-wp-strategy="defer" defer id="haio-tools-ui-js" src="https://haio.ir/wp-content/plugins/haio-tools/assets/tools.js?ver=0.2.4"></script>
+<script data-wp-strategy="defer" defer id="haio-finder-logic-js" src="https://haio.ir/wp-content/plugins/haio-tools/assets/finder-logic.js?ver=0.2.0"></script>
+<script data-wp-strategy="defer" defer id="haio-finder-js" src="https://haio.ir/wp-content/plugins/haio-tools/assets/finder.js?ver=0.2.0"></script>
+<script data-wp-strategy="defer" defer id="haio-cloud-theme-js" src="https://haio.ir/wp-content/themes/haio-cloud/assets/js/theme.js?ver=1791540209"></script>
+<script data-wp-strategy="defer" defer id="haio-cloud-service-request-js" src="https://haio.ir/wp-content/themes/haio-cloud/assets/js/service-request.js?ver=1791540209"></script>
+<script data-wp-strategy="defer" defer id="haio-cloud-marketplace-js" src="https://haio.ir/wp-content/themes/haio-cloud/assets/js/marketplace.js?ver=1791553253"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://haio.ir/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://haio.ir/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>

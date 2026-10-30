@@ -1,0 +1,16 @@
+{
+  "provider": "sonhost",
+  "label": "سرور مجازی حجیم",
+  "url": "https://7ho.st/vps-hosting/storage",
+  "discovered_in": "32-sonhost-links.json",
+  "source_key": "81-sonhost",
+  "requested_url": "https://7ho.st/vps-hosting/storage",
+  "capture_time": "2026-10-29T19:16:43.078268+00:00",
+  "status": 200,
+  "final_url": "https://7ho.st/vps-hosting/storage",
+  "sha256": "3f8984268f0003db8b67d95d5229a429367dee11f296673e9a16880e6d0e6e63",
+  "snapshot": "research/evidence/vps-family-audit-2026-10-29/81-sonhost.html",
+  "text_snapshot": "research/evidence/vps-family-audit-2026-10-29/81-sonhost.txt",
+  "bytes": 329685,
+  "title": "خرید سرور مجازی حجیم | VPS فضای بالا لیتوانی - سون هاست"
+}
