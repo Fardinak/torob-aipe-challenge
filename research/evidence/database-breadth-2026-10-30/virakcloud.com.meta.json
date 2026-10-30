@@ -1,0 +1,12 @@
+{
+  "url": "https://virakcloud.com/",
+  "attempted_at": "2026-10-30T20:01:54.370948+00:00",
+  "status": 200,
+  "final_url": "https://virakcloud.com/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "deb7e332182f492bf813f9dda73812a27c429d02307833af66edb3ac35c3ef8c",
+  "bytes": 279169,
+  "snapshot": "virakcloud.com.html",
+  "text": "virakcloud.com.txt"
+}

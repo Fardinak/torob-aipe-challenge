@@ -145,3 +145,26 @@ identity. Mixed-media offers retain their composition; any decimal aggregate
 capacity is explicitly derived, never treated as a single-media exact match.
 MB values use decimal MB/1000 for the GB filter, retaining the original MB label;
 no implicit MB/MiB or GB/GiB equivalence is introduced.
+
+## Database breadth acquisition (#21)
+
+Continue from the [acquisition review](../research/database-acquisition-review-2026-10-30.md),
+[source search](../research/database-source-breadth-2026-10-30.md) and
+[machine-readable progress](../research/database-acquisition-progress.json).
+The reviewed named configurations span Liara, Chabokan, Weblines, ArvanCloud
+and Darmant, including engines beyond PostgreSQL/Redis. Engine-specific setup
+links or engine-page cards establish tariff applicability; shared platform
+quotas and same-page engine logos do not establish individual engine allocations.
+
+Preserve the explicit hourly/monthly references and native three-month, six-month
+and annual totals. The latter have no invented monthly reference and stay
+outside monthly ranking/budgets. Billing variants have distinct offer IDs.
+An unknown CPU is `null` with unknown evidence, remains inspectable, cannot
+satisfy a CPU filter and cannot prove exact identity. Unknown versions never
+satisfy a version filter. Reuse the existing catalog validator, comparison
+operation and representative multi-engine browser journeys.
+
+Custom-resource grids and ambiguous shared bundles remain unfinished acquisition,
+not an implicitly approved cap at named plans. The progress ledger records the
+remaining source/orderability/allocation questions. Return an evidence-backed
+inability to cover them to the human before changing the agreed scope.

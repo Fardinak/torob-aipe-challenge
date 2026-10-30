@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.chabokan.net/database/influxdb/install/",
+  "attempted_at": "2026-10-30T20:05:07.357776+00:00",
+  "status": 200,
+  "final_url": "https://docs.chabokan.net/database/influxdb/install/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "4cba47bed340a70c117738e1f20f8e3c82c1eac676b6af9f828331f571ac2b90",
+  "bytes": 74205,
+  "snapshot": "docs.chabokan.net_database_influxdb_install.html",
+  "text": "docs.chabokan.net_database_influxdb_install.txt"
+}

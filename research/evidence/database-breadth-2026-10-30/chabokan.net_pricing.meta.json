@@ -1,0 +1,12 @@
+{
+  "url": "https://chabokan.net/pricing/",
+  "attempted_at": "2026-10-30T20:01:01.502479+00:00",
+  "status": 200,
+  "final_url": "https://chabokan.net/pricing/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "df74b23bdbedfde57220c0c77760ff1a5e488236b35e02848ec6bd60cd7e2a4d",
+  "bytes": 479193,
+  "snapshot": "chabokan.net_pricing.html",
+  "text": "chabokan.net_pricing.txt"
+}

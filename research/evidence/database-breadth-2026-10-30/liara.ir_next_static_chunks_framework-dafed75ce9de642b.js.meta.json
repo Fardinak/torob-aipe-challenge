@@ -1,0 +1,12 @@
+{
+  "url": "https://liara.ir/_next/static/chunks/framework-dafed75ce9de642b.js",
+  "attempted_at": "2026-10-30T20:16:46.672744+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/_next/static/chunks/framework-dafed75ce9de642b.js",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "476fc5cf03bb623d343ad050235b6c2eb58d0aa62f766dfafc61f0fb84adb129",
+  "bytes": 189868,
+  "snapshot": "liara.ir_next_static_chunks_framework-dafed75ce9de642b.js.html",
+  "text": "liara.ir_next_static_chunks_framework-dafed75ce9de642b.js.txt"
+}

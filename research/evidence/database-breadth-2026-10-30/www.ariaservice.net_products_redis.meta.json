@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ariaservice.net/products/redis",
+  "attempted_at": "2026-10-30T20:02:09.458295+00:00",
+  "status": 200,
+  "final_url": "https://www.ariaservice.net/products/redis",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "fc8c821bf9a992355b87effd3f1c95b59abc0ecbde088e56b133b7017224188a",
+  "bytes": 43204,
+  "snapshot": "www.ariaservice.net_products_redis.html",
+  "text": "www.ariaservice.net_products_redis.txt"
+}

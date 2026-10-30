@@ -1,0 +1,346 @@
+Meilisearch مدیریت‌شده | جست‌وجوی فوری با تحمل غلط تایپی | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Meilisearch
+انجین جست‌وجو
+Meilisearch
+مدیریت‌شده برای جست‌وجوی فوری
+جست‌وجوی هنگام تایپ برای سایت و فروشگاه، با تحمل غلط تایپی و فیلتر؛ بدون تنظیم
+analyzer
+و ایندکس پیچیده.
+Meilisearch
+بسازید
+راهنمای کامل
+نسخه‌ها
+1.49
+(پیش‌فرض) و
+1.48
+API
+REST
+روی
+7700
+سرعت
+پاسخ زیر ۵۰ میلی‌ثانیه
+کاربرد
+جست‌وجوی سایت و فروشگاه
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت نود
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+جست‌وجویی که کاربر حس می‌کند
+Meilisearch
+برای جست‌وجوی هنگام تایپ ساخته شده است: نتیجه‌ها با هر حرف به‌روز می‌شوند، غلط‌های تایپی بخشیده می‌شوند و فیلتر و
+facet
+بدون تنظیم پیچیده کار می‌کنند.
+اسناد
+JSON
+را به ایندکس بفرستید و از
+SDK
+رسمی جست‌وجو کنید. برای جست‌وجوی محصول، مقاله و مستندات سایت، معمولاً تنها چیزی است که لازم دارید.
+مناسب برای
+جست‌وجوی محصول در فروشگاه
+جست‌وجوی مقاله و مستندات
+جست‌وجوی هنگام تایپ در اپ
+فیلتر و
+facet
+برای کاتالوگ
+از ساخت تا اتصال
+ساخت
+نود با نسخه‌ی پیش‌فرض ساخته می‌شود.
+--type meilisearch
+اطلاعات اتصال
+میزبان و کلید اصلی را بگیرید و به اپ بدهید.
+env set MEILISEARCH_HOST=…
+استفاده
+اسناد را اضافه و جست‌وجو کنید.
+:7700
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name site-search --type meilisearch
+✔ Provisioning site-search · db_4n8x2p
+$
+sakoo db credentials db_4n8x2p
+$
+sakoo env set MEILISEARCH_HOST=… MEILISEARCH_KEY=•••• --app my-api
+ساخت نود
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+site-search
+--type
+meilisearch
+تنظیمات
+متغیرهایی که تعریف می‌کنید
+اپ و سرویس را در یک پروژه بگذارید، مقدارها را از
+sakoo db credentials
+بردارید و با
+sakoo env set
+تعریف کنید. نام متغیرها دلخواه است.
+متغیر پیشنهادی
+مقدار
+MEILISEARCH_HOST
+آدرس داخلی (پورت
+7700
+)
+MEILISEARCH_KEY
+کلید اصلی (
+master key
+)
+اتصال از اپ
+SDK
+رسمی
+Meilisearch
+میزبان و کلید را می‌گیرد.
+Node.js
+Python
+کپی
+import
+{ MeiliSearch }
+from
+"meilisearch"
+;
+const
+meili =
+new
+MeiliSearch({
+host:
+`http://${process.env.MEILISEARCH_HOST}:7700`
+,
+apiKey: process.env.MEILISEARCH_KEY,
+});
+const
+{ hits } =
+await
+meili.index(
+"products"
+).search(
+"کفش"
+);
+import
+os, meilisearch
+client = meilisearch.Client(
+f
+'http://{os.environ["MEILISEARCH_HOST"]}:7700'
+,
+os.environ[
+"MEILISEARCH_KEY"
+],
+)
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Next.js
+Node.js
+Laravel
+خطاهای رایج
+403 Forbidden
+علت
+کلید
+API
+ارسال نشده یا کلید جست‌وجو برای کار ادمین استفاده شده است.
+راه‌حل
+برای افزودن اسناد کلید اصلی را استفاده کنید و در مرورگر فقط کلید جست‌وجو را بدهید.
+Index not found
+علت
+ایندکس هنوز ساخته نشده است.
+راه‌حل
+با اولین
+addDocuments
+ایندکس ساخته می‌شود؛ قبل از جست‌وجو اسناد را اضافه کنید.
+اتصال روی پورت اشتباه
+علت
+کلاینت به پورتی غیر از
+7700
+وصل می‌شود.
+راه‌حل
+REST API
+روی
+7700
+است.
+پرسش‌های متداول
+جست‌وجوی فارسی خوب کار می‌کند؟
+بله.
+Meilisearch
+متن یونیکد را پشتیبانی می‌کند؛ برای نتیجه‌ی بهتر، حروف عربی و فارسی را پیش از ایندکس یکسان کنید.
+کلید را در مرورگر بگذارم؟
+فقط کلید جست‌وجو (
+search key
+). کلید اصلی را در سرور نگه دارید.
+Meilisearch
+یا
+Elasticsearch
+؟
+برای جست‌وجوی سایت و اپ
+Meilisearch
+ساده‌تر است؛ برای تحلیل و
+aggregation
+پیچیده
+Elasticsearch
+.
+جزئیات بیشتر در
+راهنمای
+Meilisearch
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Elasticsearch
+انجین جست‌وجو و تحلیل
+جست‌وجوی متن کامل با امتیازدهی ارتباط،
+aggregation
+برای گزارش و تحلیل لاگ؛ با
+REST API
+روی پورت
+9200
+.
+Qdrant
+دیتابیس برداری
+embedding
+ها را ذخیره و نزدیک‌ترین‌ها را در میلی‌ثانیه پیدا کنید؛ با فیلتر روی متادیتا، از طریق
+REST
+یا
+gRPC
+.
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

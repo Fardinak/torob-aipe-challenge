@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:01:11 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+x-dns-prefetch-control: on
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+link: </fonts/YekanBakhFaNum-Regular.woff2>; rel=preload; as="font"; crossorigin="anonymous"; type="font/woff2", <https://backend.chabokan.net/uploads/Orrange_Logo_1_7af3cbfd11.svg>; rel=preload; as="image", </_next/static/chunks/07962p9evg-vr.css>; rel=preload; as="style"
+cache-control: max-age=2592000
+x-frame-options: sameorigin
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+ch-powered-by: Chabokan (chabokan.net)
+ch-request-time: 1.800
+expires: Sun, 29 Nov 2026 20:01:11 GMT
+x-xss-protection: 1; mode=block
+server: ArvanCloud
+server-timing: total;dur=1806
+x-cache: BYPASS
+x-request-id: 7672cde3075eef8ee88d69657fd2aa4b
+x-sid: 2094
+

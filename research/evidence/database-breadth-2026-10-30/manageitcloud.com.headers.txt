@@ -1,0 +1,28 @@
+HTTP/2 301 
+server: nginx
+date: Fri, 30 Oct 2026 20:00:07 GMT
+content-type: text/html; charset=UTF-8
+content-length: 0
+location: https://www.manageitcloud.com/
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-cache
+x-redirect-by: WordPress
+x-content-type-options: nosniff
+strict-transport-security: max-age=63072000
+x-cdn-edge: ManageitCloud.com
+via: ManageitCloud.com
+
+HTTP/2 200 
+server: nginx
+date: Fri, 30 Oct 2026 20:00:07 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-cache
+last-modified: Fri, 30 Oct 2026 12:33:23 GMT
+wpo-cache-status: cached
+x-content-type-options: nosniff
+strict-transport-security: max-age=63072000
+x-cdn-edge: ManageitCloud.com
+via: ManageitCloud.com
+

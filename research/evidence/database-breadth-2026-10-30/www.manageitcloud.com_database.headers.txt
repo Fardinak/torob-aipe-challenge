@@ -1,0 +1,14 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 30 Oct 2026 20:00:54 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-cache
+last-modified: Fri, 30 Oct 2026 06:42:52 GMT
+wpo-cache-status: cached
+x-content-type-options: nosniff
+strict-transport-security: max-age=63072000
+x-cdn-edge: ManageitCloud.com
+via: ManageitCloud.com
+

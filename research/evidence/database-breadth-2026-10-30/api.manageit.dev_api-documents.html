@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>مستندات API منیجیت | مدیریت سرور ابری و لود بالانسر</title>
+    <meta name="description" content="دو API عمومی منیجیت برای مدیریت سرور ابری، لود بالانسر و سرورهای هتزنر، دیجیتال‌اوشن و لینود؛ احراز هویت با توکن شخصی و مرجع تعاملی برای هر دو.">
+    <link rel="canonical" href="https://api.manageit.dev/api-documents">
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="ManageIt">
+    <meta property="og:url" content="https://api.manageit.dev/api-documents">
+    <meta property="og:title" content="مستندات API منیجیت | مدیریت سرور ابری و لود بالانسر">
+    <meta property="og:description" content="دو API عمومی منیجیت برای مدیریت سرور ابری، لود بالانسر و سرورهای هتزنر، دیجیتال‌اوشن و لینود؛ احراز هویت با توکن شخصی و مرجع تعاملی برای هر دو.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="مستندات API منیجیت | مدیریت سرور ابری و لود بالانسر">
+    <meta name="twitter:description" content="دو API عمومی منیجیت برای مدیریت سرور ابری، لود بالانسر و سرورهای هتزنر، دیجیتال‌اوشن و لینود؛ احراز هویت با توکن شخصی و مرجع تعاملی برای هر دو.">
+
+    <link rel="icon" href="https://api.manageit.dev/favicon.ico">
+    
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://api.manageit.dev/vendor/manageit-design/assets/fonts/YekanBakh-ExtraBold.woff2">
+    <link rel="stylesheet" href="https://api.manageit.dev/vendor/manageit-design/manageit.css">
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "APIReference",
+        "name": "مستندات API منیجیت",
+        "description": "دو API عمومی منیجیت برای مدیریت سرور ابری، لود بالانسر و سرورهای هتزنر، دیجیتال‌اوشن و لینود؛ احراز هویت با توکن شخصی و مرجع تعاملی برای هر دو.",
+        "url": "https://api.manageit.dev/api-documents",
+        "inLanguage": "fa-IR",
+        "provider": {
+            "@type": "Organization",
+            "name": "ManageIt",
+            "url": "https://manageit.dev"
+        }
+    }
+    </script>
+    
+    <script>
+        /* No-flash theme boot: ?theme= wins, then the stored choice, then the OS. */
+        (function () {
+            try {
+                var forced = new URLSearchParams(location.search).get('theme');
+                var theme = forced || localStorage.getItem('mi-theme');
+                if (theme !== 'light' && theme !== 'dark') {
+                    theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+                }
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (error) {
+                /* Keep the dark default. */
+            }
+        })();
+    </script>
+    <style>
+        /* Page-scoped layout only. Every colour still comes from the design tokens. */
+
+        /* `direction` alone does nothing to an inline box, so the design system's
+           own Latin helpers need isolation to actually run left-to-right inside
+           a Persian sentence. */
+        .mi-ltr, .mi-mono { unicode-bidi: isolate; }
+
+        .doc-nav-links { display: none; }
+        @media (min-width: 860px) { .doc-nav-links { display: flex; } }
+
+        .doc-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+        /* Hero terminal. The window's float and the caret's blink are the design
+           system's own animated classes, already covered by its reduced-motion
+           block; the one-shot line reveal below is this page's, so it carries
+           its own reduced-motion guard rather than forking the vendored
+           stylesheet. Positive --d delays because this plays once; negative
+           offsets only make sense for the looping meters. */
+        .doc-line { animation: doc-line-in 0.45s ease-out backwards; animation-delay: var(--d, 0s); }
+        @keyframes doc-line-in {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: none; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .doc-line { animation: none !important; }
+        }
+
+        /* Cards are grid siblings, so they share a height; the column layout
+           pins each call to action to the bottom instead of leaving it floating
+           after the shorter card's chips. */
+        .doc-api-card { display: flex; flex-direction: column; }
+        .doc-card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+        .doc-base-url { display: block; font-size: 12.5px; color: var(--muted2); margin-bottom: 14px; }
+        .doc-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 20px; }
+        .doc-chips .mi-chip { cursor: default; }
+        .doc-card-foot { margin-top: auto; border-top: 1px solid var(--border); padding-top: 18px; }
+
+        /* The not-yet-published API reads as deliberately unfinished rather than
+           as a broken copy of the other two: dashed edge, muted heading, no
+           hover lift, and a non-interactive stand-in where the others link. */
+        .doc-card-soon { border-style: dashed; }
+        .doc-card-soon .mi-card__title { color: var(--muted); }
+        .doc-card-soon .mi-iconbox { background: var(--bg2); border-color: var(--border); color: var(--faint); }
+        .doc-soon-note { display: block; text-align: center; font-size: 13px; font-weight: 700; color: var(--faint); padding: 13px 18px; border: 1px dashed var(--border); border-radius: 100px; }
+        .doc-title-row { display: flex; align-items: center; gap: 8px; }
+
+        .doc-copy { font: inherit; font-size: 11.5px; font-weight: 700; cursor: pointer; padding: 4px 12px; border-radius: 100px; color: var(--accent-ink); background: var(--chip-bg); border: 1px solid var(--chip-border); }
+    </style>
+</head>
+<body>
+
+<nav class="mi-nav">
+    <div style="display:flex;align-items:center;gap:32px">
+        <a href="https://console.manageit.dev" aria-label="منیجیت">
+            
+            <img src="https://api.manageit.dev/vendor/manageit-design/assets/logo-on-dark.svg" alt="" aria-hidden="true" height="25" class="mi-only-dark">
+            <img src="https://api.manageit.dev/vendor/manageit-design/assets/logo-on-light.svg" alt="" aria-hidden="true" height="25" class="mi-only-light">
+        </a>
+        <div class="mi-nav__links doc-nav-links">
+            <a href="#apis" class="is-active">دو API منیجیت</a>
+            <a href="#quickstart">شروع سریع</a>
+        </div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+        <button class="mi-theme-toggle" type="button" aria-label="تغییر حالت نمایش">
+            <svg class="mi-ic-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-15.07 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg class="mi-ic-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a class="mi-btn mi-btn--sm" href="https://console.manageit.dev/profile/tokens">ساخت توکن</a>
+    </div>
+</nav>
+
+<header class="mi-section mi-hero">
+    <div>
+        <h1 class="mi-h1">مستندات API منیجیت</h1>
+        <p class="mi-lead">
+            منیجیت دو API عمومی دارد: یکی برای پلتفرم سرور ابری خودِ منیجیت، و یکی برای تحویل سرور روی
+            <span class="mi-ltr">Hetzner</span>، <span class="mi-ltr">DigitalOcean</span> و <span class="mi-ltr">Linode</span>.
+            هر دو با یک توکن دسترسی شخصی کار می‌کنند.
+        </p>
+        <div class="doc-actions">
+            <a class="mi-btn" href="https://api.manageit.dev/docs">مرجع تعاملی ManageIt API</a>
+            <a class="mi-chip" href="https://hetzner.manageit.dev/docs">مرجع تعاملی Hetzner API</a>
+        </div>
+    </div>
+
+    
+    <div class="mi-window mi-window--float" style="max-width:430px;justify-self:center;width:100%" aria-hidden="true">
+        <div class="mi-window__bar"><i></i><i></i><i></i><span>api.manageit.dev</span></div>
+        <div class="mi-term">
+            <div class="doc-line"><span class="t-acc">$</span> curl -H "Authorization: Bearer mi_&hellip;" \</div>
+            <div class="doc-line" style="--d:.18s">&nbsp;&nbsp;&nbsp;&nbsp;https://api.manageit.dev/api/v1/projects</div>
+            <div class="doc-line t-ok" style="--d:.5s">&#10003; 200 OK &middot; application/json</div>
+            <div class="doc-line" style="--d:.7s">&#123; "data": [</div>
+            <div class="doc-line" style="--d:.85s">&nbsp;&nbsp;&#123; "name": "production", "servers_count": 12 &#125;,</div>
+            <div class="doc-line" style="--d:1s">&nbsp;&nbsp;&#123; "name": "staging", "servers_count": 3 &#125;</div>
+            <div class="doc-line" style="--d:1.15s">] &#125;<span class="mi-cursor"></span></div>
+        </div>
+    </div>
+</header>
+
+<section class="mi-section" id="apis">
+    <h2 class="mi-h2 mi-center">کدام API را لازم دارید؟</h2>
+    <p class="mi-sub mi-center">تفاوت در جایی است که سرور تحویل داده می‌شود، نه در نحوه احراز هویت.</p>
+
+    <div class="mi-grid" style="--min:340px">
+        <div class="mi-card mi-card--hover doc-api-card">
+            <div class="doc-card-head">
+                <div class="mi-iconbox mi-iconbox--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                </div>
+                <div>
+                    <h3 class="mi-card__title mi-ltr">ManageIt API</h3>
+                    <span class="mi-small">پلتفرم سرور ابری منیجیت</span>
+                </div>
+            </div>
+            <span class="mi-mono doc-base-url">https://api.manageit.dev/api</span>
+            <p class="mi-card__desc">
+                پروژه‌ها، سرورها همراه با IPها و اسنپ‌شات‌ها، کلیدهای SSH، و لود بالانسرها همراه با
+                دامنه‌ها و شبکه‌های خصوصی. ۴۲ اندپوینت در ۱۲ گروه.
+            </p>
+            <div class="doc-chips">
+                <span class="mi-chip mi-chip--sm mi-ltr">Projects</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Server Catalog</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Servers</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Server Assistant</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Server Power</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Server IPs</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Snapshots</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">SSH Keys</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Load Balancer Catalog</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Load Balancers</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Load Balancer Domains</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Load Balancer Private Networks</span>
+            </div>
+            <div class="doc-card-foot">
+                <a class="mi-btn mi-btn--sm mi-btn--block" href="https://api.manageit.dev/docs">مرجع تعاملی ManageIt API ←</a>
+            </div>
+        </div>
+
+        <div class="mi-card mi-card--hover doc-api-card">
+            <div class="doc-card-head">
+                <div class="mi-iconbox mi-iconbox--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2Z"/></svg>
+                </div>
+                <div>
+                    <h3 class="mi-card__title mi-ltr">ManageIt Hetzner API</h3>
+                    <span class="mi-small">سرور روی <span class="mi-ltr">Hetzner</span>، <span class="mi-ltr">DigitalOcean</span> و <span class="mi-ltr">Linode</span></span>
+                </div>
+            </div>
+            <span class="mi-mono doc-base-url">https://hetzner.manageit.dev/api</span>
+            <p class="mi-card__desc">
+                کاتالوگ (ریجن، ایمیج و پلن)، چرخه عمر سرور (ساخت، تغییر اندازه، نصب مجدد، روشن و خاموش، بکاپ)،
+                IPهای شناور و تراکنش‌های صورتحساب. ۱۶ اندپوینت در ۶ گروه، با سقف ۶۰ درخواست در دقیقه به ازای هر توکن.
+            </p>
+            <div class="doc-chips">
+                <span class="mi-chip mi-chip--sm mi-ltr">Server Catalog</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Servers</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Server Actions</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Backups</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Floating IPs</span>
+                <span class="mi-chip mi-chip--sm mi-ltr">Transactions</span>
+            </div>
+            <div class="doc-card-foot">
+                <a class="mi-btn mi-btn--sm mi-btn--block" href="https://hetzner.manageit.dev/docs">مرجع تعاملی Hetzner API ←</a>
+            </div>
+        </div>
+
+        
+        <div class="mi-card doc-api-card doc-card-soon">
+            <div class="doc-card-head">
+                <div class="mi-iconbox mi-iconbox--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2Z"/><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+                </div>
+                <div>
+                    <div class="doc-title-row">
+                        <h3 class="mi-card__title mi-ltr">ManageIt CDN API</h3>
+                        <span class="mi-badge is-off">به‌زودی</span>
+                    </div>
+                    <span class="mi-small">شبکه توزیع محتوا</span>
+                </div>
+            </div>
+            <p class="mi-card__desc">
+                تحویل فایل‌ها و محتوای ایستا از نزدیک‌ترین نقطه به کاربر. این سرویس فعلا آزمایشی است و
+                برای هر حساب جداگانه فعال می‌شود؛ مرجع API آن هنوز منتشر نشده است.
+            </p>
+            <div class="doc-card-foot">
+                <span class="doc-soon-note">مرجع تعاملی هنوز منتشر نشده است</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mi-section mi-section--tight mi-section--alt" id="quickstart">
+    <h2 class="mi-h2 mi-center">شروع سریع</h2>
+    <p class="mi-sub mi-center">
+        توکن دسترسی شخصی را در <a class="mi-ltr" href="https://console.manageit.dev/profile/tokens">https://console.manageit.dev/profile/tokens</a>
+        بسازید و در هدر <span class="mi-mono">Authorization</span> بفرستید. همین توکن روی هر دو آدرس پایه کار می‌کند.
+    </p>
+
+    <div class="mi-narrow">
+        <div class="mi-window">
+            <div class="mi-window__bar">
+                <i></i><i></i><i></i>
+                <span>curl</span>
+                <button type="button" class="doc-copy" style="margin-inline-start:12px" data-command='curl https://api.manageit.dev/api/v1/projects -H "Authorization: Bearer $MANAGEIT_TOKEN" -H "Accept: application/json"'>کپی</button>
+            </div>
+            <div class="mi-term">
+                <div><span class="t-acc">$</span> curl https://api.manageit.dev/api/v1/projects \</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;-H "Authorization: Bearer $MANAGEIT_TOKEN" \</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;-H "Accept: application/json"</div>
+                <div class="t-ok">&#10003; 200 OK &middot; application/json<span class="mi-cursor"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mi-footer">
+    <div style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));padding-bottom:8px">
+        <div>
+            <img src="https://api.manageit.dev/vendor/manageit-design/assets/logo-on-dark.svg" alt="منیجیت" height="23" style="margin-bottom:16px">
+            <p style="margin:0;font-size:13px;line-height:2">مدیریت کامل زیرساخت ابری منیجیت با استفاده از API</p>
+        </div>
+        <div>
+            <div style="font-size:14px;font-weight:700;color:var(--heading);margin-bottom:14px">مرجع API</div>
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:13.5px">
+                <a href="https://api.manageit.dev/docs">مرجع تعاملی ManageIt API</a>
+                <a href="https://hetzner.manageit.dev/docs">مرجع تعاملی Hetzner API</a>
+                <a href="https://console.manageit.dev/profile/tokens">ساخت توکن دسترسی</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mi-footer__bottom" style="text-align:start">کلیه حقوق برای منیجیت محفوظ است.</div>
+</footer>
+
+<script src="https://api.manageit.dev/vendor/manageit-design/manageit.js"></script>
+<script>
+    /* Copy the quick-start command; the terminal shows it wrapped, the button
+       hands over the single line you can actually paste. */
+    document.addEventListener('click', function (event) {
+        var button = event.target.closest('.doc-copy');
+        if (!button || !navigator.clipboard) {
+            return;
+        }
+
+        navigator.clipboard.writeText(button.dataset.command).then(function () {
+            button.textContent = 'کپی شد';
+            setTimeout(function () {
+                button.textContent = 'کپی';
+            }, 1600);
+        });
+    });
+</script>
+</body>
+</html>

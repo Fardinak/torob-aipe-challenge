@@ -1,0 +1,12 @@
+{
+  "url": "https://lexoya.com/landings/database",
+  "attempted_at": "2026-10-30T20:03:47.060343+00:00",
+  "status": 200,
+  "final_url": "https://lexoya.com/landings/database",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "26d9b05bc074cf584abe093a5d338e005a7560bb0d440e6233eb9b4e57f3c464",
+  "bytes": 52126,
+  "snapshot": "lexoya.com_landings_database.html",
+  "text": "lexoya.com_landings_database.txt"
+}

@@ -1,0 +1,379 @@
+Redis مدیریت‌شده | ردیس برای کش، صف و session | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis
+مدیریت‌شده برای کش، صف و
+session
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+Redis
+بسازید
+راهنمای کامل
+نسخه‌ها
+8
+(پیش‌فرض)،
+7.4
+و
+7.2
+حافظه
+--storage
+=
+maxmemory
+تخلیه
+allkeys-lru
+در اپ
+REDIS_URL
+با
+--prefix REDIS
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت
+Redis
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+Redis
+برای همان کارهایی که سریع باید باشند
+Redis
+داده را در حافظه نگه می‌دارد و پاسخ را در کسری از میلی‌ثانیه برمی‌گرداند. کش کوئری،
+session
+کاربر، محدودیت نرخ درخواست، شمارنده و صف کارهای پس‌زمینه کاربردهای اصلی آن است.
+در سکو کلود
+Redis
+به‌صورت تک‌نود روی دیسک ماندگار اجرا می‌شود. مقدار
+--storage
+سقف حافظه است و سیاست
+allkeys-lru
+وقتی حافظه پر شد، کلیدهای کم‌استفاده را حذف می‌کند.
+Redis
+پشتیبان‌گیری مدیریت‌شده ندارد، پس داده‌ی اصلی را در دیتابیس ماندگار نگه دارید.
+مناسب برای
+کش نتیجه‌ی کوئری و صفحه
+session
+و توکن کوتاه‌مدت
+صف
+BullMQ
+،
+Celery
+یا
+Laravel Queue
+محدودیت نرخ و شمارنده
+از ساخت تا اتصال
+ساخت
+نسخه و حافظه را انتخاب کنید.
+--type redis --storage 2
+لینک به اپ
+با پیشوند
+REDIS
+،
+REDIS_URL
+تزریق می‌شود.
+--prefix REDIS
+استفاده
+کلاینت فقط
+REDIS_URL
+را می‌خواند.
+REDIS_URL
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name cache --type redis --version 8
+✔ Provisioning cache · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api --prefix REDIS
+✔ Linked database. Env vars injected under REDIS_*.
+# REDIS_URL=redis://default:••••@…:6379
+ساخت
+Redis
+مقدار
+storage
+به گیگابایت، سقف حافظه‌ی
+Redis
+است.
+terminal
+کپی
+sakoo
+db create
+--name
+cache
+--type
+redis
+--version
+8
+--storage
+2
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+REDIS
+.
+متغیر
+مقدار
+REDIS_URL
+رشته‌ی کامل اتصال
+REDIS_HOST
+و
+REDIS_PORT
+آدرس داخلی و پورت
+6379
+REDIS_PASSWORD
+رمز تولیدشده
+محدودیت‌ها
+مورد
+مقدار
+حداکثر اتصال
+۱۰۰۰۰
+سیاست تخلیه
+allkeys-lru
+پشتیبان‌گیری مدیریت‌شده
+ندارد
+دسترسی عمومی
+در پلن‌های پولی
+اتصال از اپ
+کلاینت‌های رایج رشته‌ی اتصال را مستقیم قبول می‌کنند.
+Node.js
+Python
+Go
+کپی
+import
+{ createClient }
+from
+"redis"
+;
+const
+redis = createClient({ url: process.env.REDIS_URL });
+await
+redis.connect();
+import
+os, redis
+r = redis.from_url(os.environ[
+"REDIS_URL"
+])
+opt, _ := redis.ParseURL(os.Getenv(
+"REDIS_URL"
+))
+rdb := redis.NewClient(opt)
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Node.js
+Laravel
+Django
+خطاهای رایج
+NOAUTH Authentication required
+علت
+کلاینت بدون رمز وصل می‌شود.
+راه‌حل
+به‌جای
+host
+و
+port
+جدا،
+REDIS_URL
+را که رمز را دارد استفاده کنید.
+کلیدها زودتر از انتظار حذف می‌شوند
+علت
+حافظه پر شده و
+allkeys-lru
+کلیدهای کم‌استفاده را حذف می‌کند.
+راه‌حل
+حافظه را با
+sakoo db resize
+بیشتر کنید یا
+TTL
+کلیدها را کوتاه‌تر کنید.
+بعد از ری‌استارت داده‌ها نیستند
+علت
+این سرویس داده را در حافظه نگه می‌دارد و پشتیبان‌گیری مدیریت‌شده ندارد.
+راه‌حل
+داده‌ای که از دست رفتنش قابل قبول نیست را در
+PostgreSQL
+یا
+MongoDB
+نگه دارید و این سرویس را فقط برای کش یا داده‌ی موقت استفاده کنید.
+پرسش‌های متداول
+Redis
+یا
+Valkey
+؟
+هر دو پروتکل یکسان دارند.
+Redis 8
+جدیدترین قابلیت‌های
+Redis
+را دارد و
+Valkey
+نسخه‌ی کاملاً متن‌باز آن است.
+می‌توانم
+Redis
+را دیتابیس اصلی کنم؟
+توصیه نمی‌شود؛ پشتیبان‌گیری مدیریت‌شده ندارد. داده‌ی اصلی را در
+PostgreSQL
+یا
+MongoDB
+نگه دارید.
+Pub/Sub
+و
+Stream
+کار می‌کنند؟
+بله، همه‌ی ساختارهای داده‌ی
+Redis
+در دسترس است.
+جزئیات بیشتر در
+راهنمای
+Redis
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Valkey
+ذخیره‌ساز کلید-مقدار
+Valkey
+نسخه‌ی کاملاً متن‌باز
+Redis
+است که بنیاد لینوکس نگهداری می‌کند. همان کلاینت‌ها و همان دستورها، بدون تغییر کد.
+Memcached
+کش توزیع‌شده
+Memcached
+فقط یک کار را خوب انجام می‌دهد: کش کلید-مقدار در حافظه. اگر به ساختار داده و ماندگاری نیاز ندارید، ساده‌ترین گزینه است.
+RabbitMQ
+کارگزار پیام
+صف پیام قابل اطمینان برای جدا کردن سرویس‌ها و کارهای پس‌زمینه.
+AMQP
+استاندارد، با پنل مدیریت و تحویل تضمین‌شده‌ی پیام.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/mssql/quick-setup/",
+  "attempted_at": "2026-10-30T20:16:47.136137+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/mssql/quick-setup/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "2e9386c2c019bcf7c0134d2410213cfead7092db0c700aaa986f903b2c551658",
+  "bytes": 35451,
+  "snapshot": "docs.liara.ir_dbaas_mssql_quick-setup.html",
+  "text": "docs.liara.ir_dbaas_mssql_quick-setup.txt"
+}

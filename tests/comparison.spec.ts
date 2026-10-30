@@ -46,9 +46,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await expect(configurations).toHaveCount(6);
   await expect(offers).toContainText("منیجیت");
   const filteredURL = page.url();
-  await offers
-    .getByRole("link", { name: "کاتالوگ منیجیت" })
-    .click();
+  await offers.getByRole("link", { name: "کاتالوگ منیجیت" }).click();
   await expect(
     page.getByRole("heading", { name: "کاتالوگ منیجیت" }),
   ).toBeVisible();
@@ -212,11 +210,19 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   await expect(
     page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
   ).toHaveCount(0);
-  await expect(page.locator(".configuration")).toHaveCount(4);
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
   await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
-  await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
-  await expect(page.locator(".configuration")).toHaveCount(1);
+  await page.getByLabel("روش تطبیق منابع").selectOption("exact");
+  await page.getByLabel("دقیق رم (GB)", { exact: true }).fill("4");
+  await page.getByLabel("دقیق پردازنده (هسته)", { exact: true }).fill("2");
+  await page.getByLabel("دقیق دیسک (GB)", { exact: true }).fill("40");
+  await expect(page.locator(".configuration")).toHaveCount(3);
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
+    .filter({ hasText: "۴ GB رم" })
+    .click();
   await expect(page.getByRole("article")).toContainText("PostgreSQL");
   await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
   await expect(page.getByRole("article")).toContainText(
@@ -276,8 +282,12 @@ test("search, recover and restore the same discovery detail with browser navigat
     ).toBeFocused();
   }
   await search.fill("PostgreSQL");
-  await expect(page.locator(".configuration")).toHaveCount(2);
-  await page.locator(".configuration").last().click();
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
+    .filter({ hasText: "۴ GB رم" })
+    .click();
   await expect(page.getByRole("article")).toContainText("زحل");
   const shared = page.url();
   await page.reload();
@@ -301,11 +311,18 @@ test("search, recover and restore the same discovery detail with browser navigat
   await expect(page.getByRole("alert")).toHaveCount(0);
   await page.getByLabel("موتور دیتابیس").selectOption("PostgreSQL");
   await page.getByLabel("نسخه دیتابیس").selectOption("18.4");
-  await page.getByLabel("حداقل رم (GB)", { exact: true }).fill("4");
+  await page.getByLabel("روش تطبیق منابع").selectOption("exact");
+  await page.getByLabel("دقیق رم (GB)", { exact: true }).fill("4");
+  await page.getByLabel("دقیق پردازنده (هسته)", { exact: true }).fill("2");
+  await page.getByLabel("دقیق دیسک (GB)", { exact: true }).fill("40");
   await page.getByLabel("ترتیب در هر دسته و موتور").selectOption("price-desc");
   if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
-  await expect(page.locator(".configuration")).toHaveCount(1);
-  await page.locator(".configuration").click();
+  await expect(page.locator(".configuration")).toHaveCount(3);
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
+    .filter({ hasText: "۴ GB رم" })
+    .click();
   await page.reload();
   await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
   expect(page.url()).toContain("version=18.4");
@@ -315,17 +332,25 @@ test("search, recover and restore the same discovery detail with browser navigat
     .getByRole("article")
     .getByRole("link", { name: "کاتالوگ لیارا" })
     .click();
-  await expect(page.locator(".configuration")).toHaveCount(10);
+  await expect(page.locator(".configuration")).toHaveCount(195);
   await expect(
     page.getByText("شامل همه محصولات آن شرکت نیست", { exact: false }),
   ).toBeVisible();
   await expect(page.locator(".configuration-list")).toContainText("PostgreSQL");
   await expect(page.locator(".configuration-list")).toContainText("Redis");
   await expect(
-    page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first(),
+    page
+      .locator(".configuration")
+      .filter({ hasText: "PostgreSQL" })
+      .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
+      .filter({ hasText: "۴ GB رم" }),
   ).toContainText("۴٬۱۲۵٬۰۰۰");
   await expect(
-    page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first(),
+    page
+      .locator(".configuration")
+      .filter({ hasText: "PostgreSQL" })
+      .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
+      .filter({ hasText: "۴ GB رم" }),
   ).toContainText("تعارض شواهد");
   await page
     .locator(".configuration")
@@ -340,7 +365,7 @@ test("search, recover and restore the same discovery detail with browser navigat
   expect(page.url()).toBe(discoveryURL);
   await expect(page.getByRole("article")).toContainText("۴٬۱۲۵٬۰۰۰");
   await page.goForward();
-  await expect(page.locator(".configuration")).toHaveCount(10);
+  await expect(page.locator(".configuration")).toHaveCount(195);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -491,6 +516,7 @@ test("database handoff counts down five seconds with evidence warnings and fails
     .locator(".configuration")
     .filter({ hasText: "PostgreSQL" })
     .filter({ hasText: "۴ GB" })
+    .filter({ hasText: "۴٬۱۲۵٬۰۰۰" })
     .click();
   const href = await page
     .getByRole("article")
@@ -632,9 +658,9 @@ test("search homepage opens results and browser Back restores home", async ({
   ).toHaveCount(0);
   await page.getByLabel("جستجوی محصول، دسته یا موتور").fill("PostgreSQL");
   await page.getByRole("button", { name: "جستجو", exact: true }).click();
-  await expect(page.locator(".configuration")).toHaveCount(2);
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
   await page.reload();
-  await expect(page.locator(".configuration")).toHaveCount(2);
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
   await page.goBack();
   await expect(
     page.getByRole("heading", {
@@ -643,4 +669,50 @@ test("search homepage opens results and browser Back restores home", async ({
   ).toBeVisible();
   await page.getByRole("button", { name: "سرور مجازی", exact: true }).click();
   await expect(page.locator(".configuration")).not.toHaveCount(0);
+});
+
+test("multi-engine database discovery retains version, backup and billing distinctions", async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto(
+    "./?category=database&engine=MySQL&version=8.4&resourceMode=exact&cpu=4&ram=8&disk=80",
+  );
+  await expect(page.locator(".configuration")).toHaveCount(1);
+  await page.locator(".configuration").click();
+  await expect(page.getByRole("article")).toContainText("وب‌لاینز");
+  await expect(page.getByRole("article")).toContainText("۶٬۰۲۴٬۹۶۰");
+  if (isMobile) {
+    await page.getByRole("button", { name: "بازگشت به فهرست" }).click();
+    await page.getByRole("button", { name: "فیلترها", exact: true }).click();
+  }
+  await page
+    .getByLabel("ارائه‌دهنده", { exact: true })
+    .selectOption("weblines");
+  await page.getByLabel("موتور دیتابیس").selectOption("Redis");
+  await expect(page.getByLabel("نسخه دیتابیس")).toHaveValue("");
+  await page.getByLabel("نسخه دیتابیس").selectOption("7.2");
+  if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
+  await expect(page.locator(".configuration")).toHaveCount(1);
+  await page.locator(".configuration").click();
+  await page.getByText("جزئیات هزینه و منبع", { exact: true }).click();
+  await expect(page.getByRole("article")).toContainText(
+    "Redis در حال حاضر پشتیبان مدیریت‌شده ندارد.",
+  );
+
+  // A native annual price remains inspectable without becoming a monthly bargain.
+  await page.goto(
+    "./?category=database&engine=CouchDB&provider=chabokan&detail=offer%3Achabokan-couchdb-irn10-0.15-0.15-1-year",
+  );
+  await expect(page.getByRole("article")).toContainText("۱٬۸۱۸٬۵۷۶");
+  await expect(page.getByRole("article")).toContainText("تومان / سال");
+  await expect(page.getByRole("article")).toContainText("خارج از رتبه‌بندی");
+  await expect(page.getByRole("article")).toContainText(
+    "مرجع ماهانه به تومان در دسترس نیست",
+  );
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
 });

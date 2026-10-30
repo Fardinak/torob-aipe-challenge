@@ -1,0 +1,64 @@
+Managed Databases — Lexoya Docs
+Docs
+Search...
+⌘
+K
+FA
+Login
+Back to Home
+Databases
+About
+Connecting
+Database types
+MySQL
+MariaDB
+PostgreSQL
+MongoDB
+Redis
+Dragonfly
+Microsoft SQL Server
+Meilisearch
+RabbitMQ
+Elasticsearch
+Kafka
+Managed Databases
+One-click managed database deployment with automated backups, multiple engine choices, and version selection.
+What is a Managed Database?
+Managed Databases are services that handle installation, configuration, backups, and maintenance automatically. You simply choose your engine and version — Lexoya takes care of the rest.
+Supported Engines
+Lexoya supports one-click deployment of the following database engines:
+MySQL
+PostgreSQL
+MongoDB
+Redis
+MariaDB
+Microsoft SQL Server
+Meilisearch
+RabbitMQ
+Elasticsearch
+Dragonfly
+Kafka
+If your engine is not listed, you can use
+Docker
+on the
+Cloud Platform
+to run any database yourself.
+Clusters
+Lexoya Managed Databases run on two clusters in Iran and Germany. You can choose the appropriate cluster based on your needs.
+Cluster
+Datacenter
+Iran
+Amin Datacenter
+Germany
+Hetzner
+Also Read
+Getting Started with Databases
+Backup
+Cloud Platform
+Quick Apps
+Most Viewed Docs
+MySQL
+PostgreSQL
+Redis
+MongoDB
+MariaDB

@@ -1,0 +1,12 @@
+{
+  "url": "https://lexoya.com/landings/docs/database/tidb",
+  "attempted_at": "2026-10-30T20:00:14.093196+00:00",
+  "status": 200,
+  "final_url": "https://lexoya.com/docs/fa/database/about/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "5f95f56a792f363aa92bd7e0d354b9c692d74d8a508544367634771dce9e7441",
+  "bytes": 52869,
+  "snapshot": "lexoya.com_landings_docs_database_tidb.html",
+  "text": "lexoya.com_landings_docs_database_tidb.txt"
+}

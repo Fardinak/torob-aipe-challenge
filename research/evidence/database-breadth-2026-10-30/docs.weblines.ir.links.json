@@ -1,0 +1,262 @@
+[
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir"
+  },
+  {
+    "text": "",
+    "url": "https://weblines.ir"
+  },
+  {
+    "text": "",
+    "url": "https://weblines.ir/pricing"
+  },
+  {
+    "text": "",
+    "url": "https://console.weblines.ir/login"
+  },
+  {
+    "text": "",
+    "url": "https://console.weblines.ir/signup"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/getting-started"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/create-from-git"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/create"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/overview"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/create-docker-image"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/create-from-git"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/starter-templates"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/zip-upload"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/worker"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/link-database"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/env-vars"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/private-address"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/operate"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/metrics-and-uptime"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/cron-jobs"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/sleep-schedule"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/deploy-hooks"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/clone"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/storage"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/apps/resource-limits"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/overview"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/create"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/connection"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/public-access"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/sql-shell"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/backups"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/databases/migrate"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/services/overview"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/services/create"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/services/raha"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/domains/overview"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/billing/wallet"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/billing/pricing"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/api-keys"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/cli"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/ci"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/api"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/mcp"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/settings/alerts"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/faq"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/troubleshooting/deploy-failed"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/troubleshooting/login-issues"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir#weblines-cloud-در-یک-نگاه"
+  },
+  {
+    "text": "",
+    "url": "https://console.weblines.ir"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir#مفاهیم-پایه"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir#از-کجا-شروع-کنم"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/getting-started"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/apps/create-from-git"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/databases/create"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/apps/zip-upload"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/settings/mcp"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/settings/cli"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/settings/ci"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/services/raha"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/docs/getting-started/platform-limits"
+  },
+  {
+    "text": "",
+    "url": "tel:+982188717451"
+  },
+  {
+    "text": "",
+    "url": "https://console.weblines.ir/dashboard/support/new"
+  },
+  {
+    "text": "",
+    "url": "https://docs.weblines.ir/getting-started"
+  },
+  {
+    "text": "",
+    "url": "tel:+982188717451"
+  },
+  {
+    "text": "",
+    "url": "mailto:support@weblines.ir"
+  }
+]

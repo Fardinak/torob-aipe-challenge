@@ -1,0 +1,170 @@
+[
+  {
+    "name": "زمین",
+    "cpu": 0.5,
+    "ram": 0.512,
+    "disk": 5,
+    "hardware_month": 475000.0,
+    "hardware_hour": 659.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 382.0,
+        "monthlyPrice": 275000.0
+      },
+      "standard": {
+        "hourlyPrice": 660.0,
+        "monthlyPrice": 475000.0,
+        "recoveryDisk": 45.0
+      },
+      "pro": {
+        "hourlyPrice": 1146.0,
+        "monthlyPrice": 825000.0,
+        "recoveryDisk": 155.0
+      }
+    }
+  },
+  {
+    "name": "مریخ",
+    "cpu": 1.0,
+    "ram": 1.0,
+    "disk": 10,
+    "hardware_month": 825000.0,
+    "hardware_hour": 1145.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 660.0,
+        "monthlyPrice": 475000.0
+      },
+      "standard": {
+        "hourlyPrice": 1146.0,
+        "monthlyPrice": 825000.0,
+        "recoveryDisk": 90.0
+      },
+      "pro": {
+        "hourlyPrice": 2049.0,
+        "monthlyPrice": 1475000.0,
+        "recoveryDisk": 310.0
+      }
+    }
+  },
+  {
+    "name": "مشتری",
+    "cpu": 1.0,
+    "ram": 2.0,
+    "disk": 20,
+    "hardware_month": 1475000.0,
+    "hardware_hour": 2048.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 1146.0,
+        "monthlyPrice": 825000.0
+      },
+      "standard": {
+        "hourlyPrice": 2049.0,
+        "monthlyPrice": 1475000.0,
+        "recoveryDisk": 180.0
+      },
+      "pro": {
+        "hourlyPrice": 3681.0,
+        "monthlyPrice": 2650000.0,
+        "recoveryDisk": 620.0
+      }
+    }
+  },
+  {
+    "name": "زحل",
+    "cpu": 2.0,
+    "ram": 4.0,
+    "disk": 40,
+    "hardware_month": 2650000.0,
+    "hardware_hour": 3680.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 2049.0,
+        "monthlyPrice": 1475000.0
+      },
+      "standard": {
+        "hourlyPrice": 3681.0,
+        "monthlyPrice": 2650000.0,
+        "recoveryDisk": 360.0
+      },
+      "pro": {
+        "hourlyPrice": 6389.0,
+        "monthlyPrice": 4600000.0,
+        "recoveryDisk": 1240.0
+      }
+    }
+  },
+  {
+    "name": "اورانوس",
+    "cpu": 4.0,
+    "ram": 8.0,
+    "disk": 80,
+    "hardware_month": 4600000.0,
+    "hardware_hour": 6388.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 3681.0,
+        "monthlyPrice": 2650000.0
+      },
+      "standard": {
+        "hourlyPrice": 6389.0,
+        "monthlyPrice": 4600000.0,
+        "recoveryDisk": 720.0
+      },
+      "pro": {
+        "hourlyPrice": 11112.0,
+        "monthlyPrice": 8000000.0,
+        "recoveryDisk": 2480.0
+      }
+    }
+  },
+  {
+    "name": "نپتون",
+    "cpu": 8.0,
+    "ram": 16.0,
+    "disk": 160,
+    "hardware_month": 8000000.0,
+    "hardware_hour": 11111.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 6389.0,
+        "monthlyPrice": 4600000.0
+      },
+      "standard": {
+        "hourlyPrice": 11111.0,
+        "monthlyPrice": 8000000.0,
+        "recoveryDisk": 1440.0
+      },
+      "pro": {
+        "hourlyPrice": 19444.0,
+        "monthlyPrice": 14000000.0,
+        "recoveryDisk": 4960.0
+      }
+    }
+  },
+  {
+    "name": "پلوتون",
+    "cpu": 16.0,
+    "ram": 32.0,
+    "disk": 320,
+    "hardware_month": 14000000.0,
+    "hardware_hour": 19444.0,
+    "packages": {
+      "bronze": {
+        "hourlyPrice": 11111.0,
+        "monthlyPrice": 8000000.0
+      },
+      "standard": {
+        "hourlyPrice": 19444.0,
+        "monthlyPrice": 14000000.0,
+        "recoveryDisk": 2880.0
+      },
+      "pro": {
+        "hourlyPrice": 34167.0,
+        "monthlyPrice": 24600000.0,
+        "recoveryDisk": 9920.0
+      }
+    }
+  }
+]

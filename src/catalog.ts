@@ -25,7 +25,7 @@ const provider = z.object({
   disclosures: z.array(text),
 });
 const configuration = z.object({
-  cpu_count: z.number().positive().max(Number.MAX_SAFE_INTEGER),
+  cpu_count: z.number().positive().max(Number.MAX_SAFE_INTEGER).nullable(),
   ram_gb: z.number().positive().max(Number.MAX_SAFE_INTEGER),
   disk_gb: whole.positive(),
   storage_type: text.nullable(),
@@ -93,7 +93,7 @@ const published = configuration.extend({
     .object({
       amount: z.number().nonnegative().max(Number.MAX_SAFE_INTEGER),
       currency: z.enum(["toman", "USD"]),
-      basis: z.enum(["hour", "day", "month"]),
+      basis: z.enum(["hour", "day", "month", "quarter", "half-year", "year"]),
     })
     .optional(),
   traffic_allowance_gb_unspecified_direction: whole.nullable(),
@@ -158,6 +158,11 @@ export const catalogSchema = z
       const revisions = new Set<string>();
       let previousDate: string | null = null;
       for (const revision of [...offer.revisions, offer]) {
+        if (
+          revision.cpu_count === null &&
+          revision.evidence.facts.cpu_count === "verified"
+        )
+          issue(`Verified CPU requires a value: ${offer.id}`);
         if (
           revision.advertised_monthly_toman === null &&
           revision.evidence.facts.advertised_monthly_toman === "verified"

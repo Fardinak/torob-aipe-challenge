@@ -1,0 +1,379 @@
+RabbitMQ مدیریت‌شده | صف پیام AMQP برای سرویس‌ها | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+RabbitMQ
+کارگزار پیام
+RabbitMQ
+مدیریت‌شده برای صف و پیام‌رسانی
+صف پیام قابل اطمینان برای جدا کردن سرویس‌ها و کارهای پس‌زمینه.
+AMQP
+استاندارد، با پنل مدیریت و تحویل تضمین‌شده‌ی پیام.
+RabbitMQ
+بسازید
+راهنمای کامل
+نسخه
+RabbitMQ 4
+(پیش‌فرض)
+پروتکل
+AMQP 0-9-1
+روی
+5672
+پنل
+Management
+روی
+15672
+در اپ
+RABBITMQ_URL
+با
+--prefix RABBITMQ
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت
+broker
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+پیام‌ها گم نمی‌شوند
+RabbitMQ
+پیام‌ها را تا وقتی مصرف‌کننده تأیید نکند نگه می‌دارد. با
+exchange
+های
+direct
+،
+topic
+و
+fanout
+می‌توانید صف کار،
+pub/sub
+، مسیریابی بر اساس کلید و
+RPC
+بسازید.
+برای
+Celery
+در
+Django
+، کارگرهای
+Node.js
+با
+amqplib
+یا سرویس‌های
+Go
+با
+amqp091
+، فقط
+RABBITMQ_URL
+را بخوانید. پنل
+Management
+برای دیدن صف‌ها و نرخ پیام‌ها در دسترس است.
+مناسب برای
+صف کارهای پس‌زمینه و
+Celery
+ارسال ایمیل و نوتیفیکیشن
+ارتباط ناهمگام میکروسرویس‌ها
+RPC
+بین سرویس‌ها
+از ساخت تا اتصال
+ساخت
+broker
+با نسخه‌ی پیش‌فرض
+4
+ساخته می‌شود.
+--type rabbitmq
+لینک به اپ
+RABBITMQ_URL
+به تولیدکننده و مصرف‌کننده‌ها تزریق می‌شود.
+--prefix RABBITMQ
+استفاده
+صف‌ها و
+exchange
+ها از کد ساخته می‌شوند.
+amqp://
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name broker --type rabbitmq
+✔ Provisioning broker · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api --prefix RABBITMQ
+✔ Linked database. Env vars injected under RABBITMQ_*.
+# RABBITMQ_URL=amqp://app:••••@…:5672
+ساخت
+broker
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+broker
+--type
+rabbitmq
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+RABBITMQ
+.
+متغیر
+مقدار
+RABBITMQ_URL
+رشته‌ی کامل
+AMQP
+RABBITMQ_HOST
+و
+RABBITMQ_PORT
+آدرس داخلی و پورت
+5672
+اتصال از اپ
+تولیدکننده و مصرف‌کننده همان رشته را می‌خوانند.
+Node.js
+Celery
+کپی
+import
+amqp
+from
+"amqplib"
+;
+const
+conn =
+await
+amqp.connect(process.env.RABBITMQ_URL);
+const
+ch =
+await
+conn.createChannel();
+await
+ch.assertQueue(
+"emails"
+, { durable:
+true
+});
+import
+os
+from
+celery
+import
+Celery
+app = Celery(
+"tasks"
+, broker=os.environ[
+"RABBITMQ_URL"
+])
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Django
+Node.js
+Go
+خطاهای رایج
+ACCESS_REFUSED
+علت
+اطلاعات ورود اشتباه است یا
+vhost
+در رشته‌ی اتصال جا افتاده.
+راه‌حل
+فقط از
+RABBITMQ_URL
+تزریق‌شده استفاده کنید.
+NOT_FOUND - no queue
+علت
+مصرف‌کننده قبل از تعریف صف به آن وصل شده است.
+راه‌حل
+در هر دو طرف صف را با
+assertQueue
+یا
+queue_declare
+تعریف کنید.
+از سیستم خودم وصل نمی‌شوم
+علت
+آدرس داخلی فقط از اپ‌های همان پروژه در دسترس است.
+راه‌حل
+برای اتصال از بیرون، دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+terminal
+کپی
+sakoo
+db public-access <db-id>
+sakoocloud
+db credentials <db-id>
+پرسش‌های متداول
+RabbitMQ
+یا
+Kafka
+؟
+برای صف کار و پیام‌هایی که یک‌بار مصرف می‌شوند
+RabbitMQ
+؛ برای جریان رویداد با حجم بالا و بازخوانی تاریخچه
+Kafka
+.
+پنل
+Management
+در دسترس است؟
+بله، روی پورت
+15672
+با همان نام کاربری و رمز.
+پیام‌ها بعد از ری‌استارت می‌مانند؟
+صف‌ها و پیام‌های
+durable
+روی دیسک نگهداری می‌شوند.
+جزئیات بیشتر در
+راهنمای
+RabbitMQ
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Kafka
+استریم رویداد
+Kafka 4
+با احراز هویت
+SASL
+، کمتر از دو دقیقه آماده است. تاپیک‌ها روی دیسک ماندگارند و مصرف‌کننده‌ها می‌توانند تاریخچه را دوباره بخوانند.
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

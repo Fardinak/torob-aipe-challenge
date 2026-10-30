@@ -1,0 +1,12 @@
+{
+  "url": "https://lexoya.com/",
+  "attempted_at": "2026-10-30T20:01:01.688587+00:00",
+  "status": 200,
+  "final_url": "https://lexoya.com/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "ceb4ac146e98b5f4a6d4cc40ba3bb43b166d39d785ddd6b6cda5eb7705e1edd7",
+  "bytes": 4647,
+  "snapshot": "lexoya.com.html",
+  "text": "lexoya.com.txt"
+}

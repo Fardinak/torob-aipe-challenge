@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ariaservice.net/products/mysql",
+  "attempted_at": "2026-10-30T20:02:09.458064+00:00",
+  "status": 200,
+  "final_url": "https://www.ariaservice.net/products/mysql",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "83a79be53cd7304658022b14a28168bef1cb4d80d77787a4569533065e9f51f6",
+  "bytes": 43691,
+  "snapshot": "www.ariaservice.net_products_mysql.html",
+  "text": "www.ariaservice.net_products_mysql.txt"
+}

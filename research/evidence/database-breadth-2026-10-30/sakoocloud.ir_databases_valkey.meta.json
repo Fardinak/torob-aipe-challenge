@@ -1,0 +1,12 @@
+{
+  "url": "https://sakoocloud.ir/databases/valkey/",
+  "attempted_at": "2026-10-30T20:01:24.298017+00:00",
+  "status": 200,
+  "final_url": "https://sakoocloud.ir/databases/valkey/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "fe8844673a4c96bdbc6461c601539e54d61c654f6bc16560acc38fbbe920f09d",
+  "bytes": 226752,
+  "snapshot": "sakoocloud.ir_databases_valkey.html",
+  "text": "sakoocloud.ir_databases_valkey.txt"
+}

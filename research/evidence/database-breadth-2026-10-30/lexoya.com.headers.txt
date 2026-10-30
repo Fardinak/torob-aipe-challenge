@@ -1,0 +1,11 @@
+HTTP/2 200 
+content-length: 4647
+content-disposition: inline; filename="index.html"
+accept-ranges: bytes
+etag: "f4ee3ed899a96419775ce6b9afcf3fdf540cbd31"
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+date: Fri, 30 Oct 2026 20:00:54 GMT
+x-envoy-upstream-service-time: 5
+server: istio-envoy
+

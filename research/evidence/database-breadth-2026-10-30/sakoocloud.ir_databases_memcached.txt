@@ -1,0 +1,333 @@
+Memcached مدیریت‌شده | کش حافظه‌ای ساده و سریع | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Memcached
+کش توزیع‌شده
+Memcached
+مدیریت‌شده برای کش ساده و سریع
+Memcached
+فقط یک کار را خوب انجام می‌دهد: کش کلید-مقدار در حافظه. اگر به ساختار داده و ماندگاری نیاز ندارید، ساده‌ترین گزینه است.
+Memcached
+بسازید
+راهنمای کامل
+نسخه
+Memcached 1.6
+ذخیره
+فقط در
+RAM
+پورت
+11211
+دسترسی
+فقط از اپ‌های همان پروژه
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت
+Memcached
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+کش، بدون هیچ چیز اضافه
+Memcached
+داده را فقط در حافظه نگه می‌دارد و هیچ دیسکی ندارد؛ برای کش نتیجه‌ی کوئری، قطعه‌های صفحه و
+session
+در فریم‌ورک‌هایی مثل
+Django
+و
+PHP
+انتخاب رایجی است.
+Memcached
+برای مواجهه با اینترنت طراحی نشده است، پس سکو کلود دسترسی عمومی آن را فعال نمی‌کند. اپ و
+Memcached
+را در یک پروژه بگذارید تا فقط اپ‌های همان پروژه به آن دسترسی داشته باشند.
+مناسب برای
+کش کوئری دیتابیس
+کش قطعه‌های صفحه
+session
+در
+PHP
+و
+Django
+کاهش بار دیتابیس اصلی
+از ساخت تا اتصال
+ساخت
+حافظه‌ی کش را انتخاب کنید.
+--type memcached
+لینک به اپ
+میزبان و پورت با پیشوند
+MEMCACHED
+تزریق می‌شوند.
+--prefix MEMCACHED
+استفاده
+کلاینت آدرس را از
+MEMCACHED_HOST
+و
+MEMCACHED_PORT
+می‌سازد؛ نام کاربری و رمز ندارد و دسترسی را شبکه‌ی خصوصی پروژه محدود می‌کند.
+MEMCACHED_HOST:MEMCACHED_PORT
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name page-cache --type memcached
+✔ Provisioning page-cache · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api --prefix MEMCACHED
+✔ Linked database. Env vars injected under MEMCACHED_*.
+# MEMCACHED_HOST=… MEMCACHED_PORT=11211
+ساخت
+Memcached
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+page-cache
+--type
+memcached
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+MEMCACHED
+.
+متغیر
+مقدار
+MEMCACHED_HOST
+آدرس داخلی
+MEMCACHED_PORT
+11211
+اتصال از اپ
+میزبان و پورت را به کلاینت بدهید.
+Django
+PHP
+کپی
+import
+os
+CACHES = {
+"default"
+: {
+"BACKEND"
+:
+"django.core.cache.backends.memcached.PyMemcacheCache"
+,
+"LOCATION"
+: f
+'{os.environ["MEMCACHED_HOST"]}:{os.environ["MEMCACHED_PORT"]}'
+,
+}
+}
+<?php
+$m =
+new
+Memcached();
+$m->addServer(getenv(
+"MEMCACHED_HOST"
+), (int) getenv(
+"MEMCACHED_PORT"
+));
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+PHP
+Django
+Python
+خطاهای رایج
+Connection refused
+علت
+اپ در پروژه‌ی دیگری است یا میزبان دستی وارد شده.
+راه‌حل
+اپ و
+Memcached
+را در یک پروژه بگذارید و لینک کنید.
+بعد از ری‌استارت داده‌ها نیستند
+علت
+این سرویس داده را در حافظه نگه می‌دارد و پشتیبان‌گیری مدیریت‌شده ندارد.
+راه‌حل
+داده‌ای که از دست رفتنش قابل قبول نیست را در
+PostgreSQL
+یا
+MongoDB
+نگه دارید و این سرویس را فقط برای کش یا داده‌ی موقت استفاده کنید.
+دسترسی عمومی فعال نمی‌شود
+علت
+Memcached
+احراز هویت امن برای اینترنت ندارد و عمداً عمومی نمی‌شود.
+راه‌حل
+از داخل اپ‌های همان پروژه وصل شوید.
+پرسش‌های متداول
+Memcached
+یا
+Redis
+؟
+برای کش ساده کلید-مقدار،
+Memcached
+سبک‌تر است. اگر ساختار داده، صف یا
+Pub/Sub
+لازم دارید،
+Redis
+را انتخاب کنید.
+داده‌ها بعد از ری‌استارت می‌مانند؟
+نه.
+Memcached
+فقط در حافظه است و برای کش طراحی شده.
+چرا از بیرون نمی‌توانم وصل شوم؟
+برای امنیت، دسترسی
+Memcached
+فقط از اپ‌های همان پروژه ممکن است.
+جزئیات بیشتر در
+راهنمای
+Memcached
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+Valkey
+ذخیره‌ساز کلید-مقدار
+Valkey
+نسخه‌ی کاملاً متن‌باز
+Redis
+است که بنیاد لینوکس نگهداری می‌کند. همان کلاینت‌ها و همان دستورها، بدون تغییر کد.
+MySQL
+دیتابیس رابطه‌ای
+MySQL
+را با نسخه‌ای که اپ شما لازم دارد بسازید، به اپ لینک کنید و پشتیبان‌گیری را به پلتفرم بسپارید.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

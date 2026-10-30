@@ -1,0 +1,22 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:04:38 GMT
+content-type: application/json
+content-length: 157
+vary: Accept-Encoding
+vary: Origin, Cookie
+content-language: fa
+referrer-policy: same-origin
+cross-origin-opener-policy: same-origin
+x-frame-options: sameorigin
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+ch-powered-by: Chabokan (chabokan.net)
+ch-request-time: 0.161
+x-xss-protection: 1; mode=block
+server: ArvanCloud
+server-timing: total;dur=169
+x-cache: BYPASS
+x-request-id: 033e4cac31de4294577163de6d86ea9f
+x-sid: 2094
+accept-ranges: bytes
+

@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/mysql/choose-version/",
+  "attempted_at": "2026-10-30T20:16:47.034987+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/mysql/choose-version/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "d445fd474db52d35ed0d3869c2a9c9705e357025a35258356d367e831cd13d7a",
+  "bytes": 21898,
+  "snapshot": "docs.liara.ir_dbaas_mysql_choose-version.html",
+  "text": "docs.liara.ir_dbaas_mysql_choose-version.txt"
+}

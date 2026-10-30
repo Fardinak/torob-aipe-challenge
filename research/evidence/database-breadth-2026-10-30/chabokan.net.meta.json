@@ -1,0 +1,12 @@
+{
+  "url": "https://chabokan.net/",
+  "attempted_at": "2026-10-30T20:00:13.797973+00:00",
+  "status": 200,
+  "final_url": "https://chabokan.net/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "e48399c7583d58943c3960809ea05775bdd14d3cd2f96561e1ebad84e9afd034",
+  "bytes": 579123,
+  "snapshot": "chabokan.net.html",
+  "text": "chabokan.net.txt"
+}

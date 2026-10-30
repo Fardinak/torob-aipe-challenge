@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:03:09 GMT
+content-type: text/html
+etag: "584ac-6ae2302a-a0bd7b8243eba60e;;;"
+last-modified: Wed, 28 Oct 2026 17:26:02 GMT
+accept-ranges: bytes
+wcdn-edge: 172.18.0.11
+server: WCDN 3.9.62
+wcdn-cacheid: 29c526a66ad0bc1720aea000c20821de4e6f38e9962efdfc3760f201cb95ebf3
+wcdn-edge-id: 11764949
+wcdn-cache-policy: ALWAYS
+wcdn-delivery-duration: 0
+wcdn-hosting-waiting-duration: 0
+content-length: 361644
+vary: User-Agent
+x-turbo-charged-by: LiteSpeed
+wcdn-status: Hit
+wcdn-connection-duration: 0
+wcdn-total-duration: 0
+wcdn-country: IR
+

@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/mariadb/quick-setup/",
+  "attempted_at": "2026-10-30T20:16:47.059059+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/mariadb/quick-setup/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "eb5e4195bca80fe87ec2289093e69bf05552b58560068cc02561d80c699b013f",
+  "bytes": 35644,
+  "snapshot": "docs.liara.ir_dbaas_mariadb_quick-setup.html",
+  "text": "docs.liara.ir_dbaas_mariadb_quick-setup.txt"
+}

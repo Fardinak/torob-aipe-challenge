@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/rabbitmq/choose-version/",
+  "attempted_at": "2026-10-30T20:16:47.286663+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/rabbitmq/choose-version/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "cbd82b6e43143c047694ae4909aa3f8a8ad7e27191f68eae269f7e010c140326",
+  "bytes": 19648,
+  "snapshot": "docs.liara.ir_dbaas_rabbitmq_choose-version.html",
+  "text": "docs.liara.ir_dbaas_rabbitmq_choose-version.txt"
+}

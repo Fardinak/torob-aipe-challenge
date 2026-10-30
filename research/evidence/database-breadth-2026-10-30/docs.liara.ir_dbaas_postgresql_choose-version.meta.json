@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/postgresql/choose-version/",
+  "attempted_at": "2026-10-30T20:16:47.130682+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/postgresql/choose-version/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "a1cabfa196d608547a96ebffbee18fe9c736288544a7ce6141fbad3ad7b05a8a",
+  "bytes": 26662,
+  "snapshot": "docs.liara.ir_dbaas_postgresql_choose-version.html",
+  "text": "docs.liara.ir_dbaas_postgresql_choose-version.txt"
+}

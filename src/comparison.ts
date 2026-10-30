@@ -194,9 +194,10 @@ export function compare(
         (key) =>
           String(request[key] ?? "").trim() !== "" &&
           (plan.evidence.facts[resources[key]] !== "verified" ||
+            plan[resources[key]] === null ||
             (request.resourceMode === "exact"
               ? plan[resources[key]] !== amounts[key]
-              : plan[resources[key]] < amounts[key])),
+              : (plan[resources[key]] ?? 0) < amounts[key])),
       )
       .map((key) =>
         plan.evidence.facts[resources[key]] !== "verified"

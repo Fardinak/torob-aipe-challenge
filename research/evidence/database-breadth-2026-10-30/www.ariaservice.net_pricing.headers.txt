@@ -1,0 +1,24 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 30 Oct 2026 20:01:17 GMT
+content-type: text/html; charset=utf-8
+content-length: 65781
+vary: Accept-Encoding
+x-request-id: 810fd7ce-4160-48da-bbd2-88c3ae0cdb35
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-frame-options: DENY
+cross-origin-embedder-policy: unsafe-none
+cross-origin-opener-policy: same-origin-allow-popups
+cross-origin-resource-policy: cross-origin
+origin-agent-cluster: ?1
+referrer-policy: strict-origin-when-cross-origin
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+vary: Origin
+access-control-allow-origin: *
+permissions-policy: geolocation=(), microphone=(), camera=()
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:
+x-cache-status: MISS
+

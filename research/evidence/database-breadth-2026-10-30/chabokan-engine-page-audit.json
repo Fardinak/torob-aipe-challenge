@@ -1,0 +1,236 @@
+[
+  {
+    "engine_slug": "mysql",
+    "url": "https://chabokan.net/products/database/mysql/",
+    "raw_snapshot": "chabokan.net_products_database_mysql.html",
+    "http_status": 200,
+    "raw_sha256": "94a09f329cf53348de24dadbe3c8f07796f67716bbe8ca59745c663a8b59ae9d",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_mysql.txt"
+  },
+  {
+    "engine_slug": "mariadb",
+    "url": "https://chabokan.net/products/database/mariadb/",
+    "raw_snapshot": "chabokan.net_products_database_mariadb.html",
+    "http_status": 200,
+    "raw_sha256": "2036dba4a03ac46babbf8bd09f80250d0ead67e030e253106e4eaa32a30dd700",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_mariadb.txt"
+  },
+  {
+    "engine_slug": "postgresql",
+    "url": "https://chabokan.net/products/database/postgresql/",
+    "raw_snapshot": "chabokan.net_products_database_postgresql.html",
+    "http_status": 200,
+    "raw_sha256": "4bbaec8aeac3b9969d6607a0cd48f4f9a9174d00b629db8198c767039c2c57de",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_postgresql.txt"
+  },
+  {
+    "engine_slug": "mongodb",
+    "url": "https://chabokan.net/products/database/mongodb/",
+    "raw_snapshot": "chabokan.net_products_database_mongodb.html",
+    "http_status": 200,
+    "raw_sha256": "83e7a164fe89c3199d32ce5d95c751d53c4ed6cd8e7583d0f6f0f3a9bdee376e",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_mongodb.txt"
+  },
+  {
+    "engine_slug": "redis",
+    "url": "https://chabokan.net/products/database/redis/",
+    "raw_snapshot": "chabokan.net_products_database_redis.html",
+    "http_status": 200,
+    "raw_sha256": "9c6cf87f6039f3e6fdcbd67272ce8b9b68d34900047b0d3dbace2b9bf55276c0",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_redis.txt"
+  },
+  {
+    "engine_slug": "influxdb",
+    "url": "https://chabokan.net/products/database/influxdb/",
+    "raw_snapshot": "chabokan.net_products_database_influxdb.html",
+    "http_status": 200,
+    "raw_sha256": "ce182e517ed17a6b0f8dd8ad7fbe82b9dfb49da7fa088deb7b48b8306d77e8d6",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_influxdb.txt"
+  },
+  {
+    "engine_slug": "mssql",
+    "url": "https://chabokan.net/products/database/mssql/",
+    "raw_snapshot": "chabokan.net_products_database_mssql.html",
+    "http_status": 200,
+    "raw_sha256": "49c1371617d797fe568b1f935673045d446c34f25e36630abfd0e9b797d8ea79",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_mssql.txt"
+  },
+  {
+    "engine_slug": "rethinkdb",
+    "url": "https://chabokan.net/products/database/rethinkdb/",
+    "raw_snapshot": "chabokan.net_products_database_rethinkdb.html",
+    "http_status": 200,
+    "raw_sha256": "8c019c0012c6a4c6365ad1cf8082a0ccc6b34e422198be046d050da4529c4d07",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_rethinkdb.txt"
+  },
+  {
+    "engine_slug": "arangodb",
+    "url": "https://chabokan.net/products/database/arangodb/",
+    "raw_snapshot": "chabokan.net_products_database_arangodb.html",
+    "http_status": 200,
+    "raw_sha256": "bff409700f4d5936a0c16d3de07a5f7f4ae9ef50c4916b5f97ee687ed4dc61e4",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_arangodb.txt"
+  },
+  {
+    "engine_slug": "prometheus",
+    "url": "https://chabokan.net/products/database/prometheus/",
+    "raw_snapshot": "chabokan.net_products_database_prometheus.html",
+    "http_status": 200,
+    "raw_sha256": "e830848a830bd8413572fc0f95f94a82b8eb7fd3b6dbc8f9a43b1edeaa40e2b4",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_prometheus.txt"
+  },
+  {
+    "engine_slug": "cassandra",
+    "url": "https://chabokan.net/products/database/cassandra/",
+    "raw_snapshot": "chabokan.net_products_database_cassandra.html",
+    "http_status": 200,
+    "raw_sha256": "744d85eecc2e88eeb5430a438525aa38af5267da3b994fc161a2a5aec5083f7a",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_cassandra.txt"
+  },
+  {
+    "engine_slug": "neo4j",
+    "url": "https://chabokan.net/products/database/neo4j/",
+    "raw_snapshot": "chabokan.net_products_database_neo4j.html",
+    "http_status": 200,
+    "raw_sha256": "93d71a123e2b1b398359b8cedb8fe5dee31c427021dce106456f45c0f87d020f",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_neo4j.txt"
+  },
+  {
+    "engine_slug": "couchdb",
+    "url": "https://chabokan.net/products/database/couchdb/",
+    "raw_snapshot": "chabokan.net_products_database_couchdb.html",
+    "http_status": 200,
+    "raw_sha256": "6991e3ad9ede3aec079e29d0d862e2bef0fabe6e073b468c458df9fac8c1f324",
+    "eight_monthly_prices_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tariff_text": "chabokan.net_products_database_couchdb.txt"
+  }
+]

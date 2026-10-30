@@ -1,0 +1,12 @@
+{
+  "url": "https://www.manageitcloud.com/terms",
+  "attempted_at": "2026-10-30T20:01:01.500028+00:00",
+  "status": 200,
+  "final_url": "https://www.manageitcloud.com/terms",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "d15602e0061792833f98a915775a5b699c885a906f752bd1dcac74751571dfaa",
+  "bytes": 57773,
+  "snapshot": "www.manageitcloud.com_terms.html",
+  "text": "www.manageitcloud.com_terms.txt"
+}

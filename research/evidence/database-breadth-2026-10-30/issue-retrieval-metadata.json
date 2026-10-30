@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://github.com/Fardinak/torob-aipe-challenge/issues/21",
+    "snapshot": "issue-21.json",
+    "transport": "gh issue view --json number,title,body,comments,labels,url",
+    "observed_file_time_utc": "2026-10-30T19:58:23.983487+00:00",
+    "http_status": null,
+    "status_note": "CLI success; HTTP status not exposed",
+    "sha256": "998d51bbf3862461525cbd151f971f1a68750ac13247118599e3c5f80c900d64"
+  },
+  {
+    "url": "https://github.com/Fardinak/torob-aipe-challenge/issues/12",
+    "snapshot": "issue-12.json",
+    "transport": "gh issue view --json number,title,body,comments,labels,url",
+    "observed_file_time_utc": "2026-10-30T19:58:29.191487+00:00",
+    "http_status": null,
+    "status_note": "CLI success; HTTP status not exposed",
+    "sha256": "1de29195b56e6495498fe6f1669645d4335d3f4d70a439f5dc3f461ec75a53fe"
+  }
+]

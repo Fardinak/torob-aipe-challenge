@@ -1,0 +1,12 @@
+{
+  "url": "https://hub.chabokan.net/fa/pricing/?product=container&datacenter=irn10&ram=0.512&cpu=0.5&disk=5",
+  "attempted_at": "2026-10-30T20:04:45.299198+00:00",
+  "status": 200,
+  "final_url": "https://hub.chabokan.net/fa/pricing/?product=container&datacenter=irn10&ram=0.512&cpu=0.5&disk=5",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "a3a3d20663c2c800e7661a5d63930eadc6e5bdeed950afcbef179d7e374fe7d7",
+  "bytes": 161,
+  "snapshot": "hub.chabokan.net_fa_pricing_product_container_datacenter_irn10_ram_0.512_cpu_0.5_disk_5.html",
+  "text": "hub.chabokan.net_fa_pricing_product_container_datacenter_irn10_ram_0.512_cpu_0.5_disk_5.txt"
+}

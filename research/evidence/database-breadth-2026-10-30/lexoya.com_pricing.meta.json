@@ -1,0 +1,12 @@
+{
+  "url": "https://lexoya.com/pricing",
+  "attempted_at": "2026-10-30T20:01:18.438495+00:00",
+  "status": 404,
+  "final_url": "https://lexoya.com/pricing",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "00e601537a54a49c2564dbfda10105ca82e65004296169edea4ae4d7e02a6fc6",
+  "bytes": 6987,
+  "snapshot": "lexoya.com_pricing.html",
+  "text": "lexoya.com_pricing.txt"
+}

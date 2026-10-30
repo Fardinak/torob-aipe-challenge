@@ -1,0 +1,390 @@
+[
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/#__docusaurus_skipToContent_fallback"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://hub.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://github.com/chabokan/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/quick-start/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/intro/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/storage/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-server/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/server-assistant/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-dns/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ai/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-email/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/instruction/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/domain/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cli/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cicd/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/features/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/general-tips/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/openapi/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/change-log/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/quick-start/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/general-tips/panel-navigation/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/storage/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-server/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/server-assistant/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-dns/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ai/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-email/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/quick-start"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/intro"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/instruction/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/domain/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cli/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cicd/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/features/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/general-tips/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/openapi/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/change-log/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/laravel/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/django/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/docker/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/nodejs/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/php/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/python/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/wordpress/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/storage/minio/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/storage/nextcloud/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/mysql/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/postgresql/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/redis/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/sql-server/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/mariadb/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/mongodb/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/odoo/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/matomo/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/ready-application/gitlabrunner/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/dotnetcore/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/nextjs/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/nuxtjs/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/nest/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/react/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/flask/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/flutter/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/quick-start/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/intro/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/django/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/nodejs/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/php/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/cloud-hosting/docker/deploy/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/mysql/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/postgresql/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/mongodb/install/"
+  },
+  {
+    "text": "",
+    "url": "https://docs.chabokan.net/database/sql-server/install/"
+  },
+  {
+    "text": "",
+    "url": "https://gitlab.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://sentry.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://radar.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://mirror.chabokan.net/#browse/browse"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/ip/"
+  },
+  {
+    "text": "",
+    "url": "https://github.com/chabokan/chabok-s3-manager"
+  },
+  {
+    "text": "",
+    "url": "https://chromewebstore.google.com/detail/chabok-whois/ooknaaobajkeagaighenoofpimedplcl"
+  },
+  {
+    "text": "",
+    "url": "https://status.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://hub.chabokan.net/"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/faq/"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/terms/"
+  },
+  {
+    "text": "",
+    "url": "https://chabokan.net/blog/"
+  }
+]

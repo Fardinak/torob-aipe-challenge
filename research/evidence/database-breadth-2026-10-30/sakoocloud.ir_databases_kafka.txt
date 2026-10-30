@@ -1,0 +1,379 @@
+Kafka مدیریت‌شده | Apache Kafka 4 برای استریم رویداد | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Kafka
+استریم رویداد
+Apache Kafka
+مدیریت‌شده برای استریم رویداد
+Kafka 4
+با احراز هویت
+SASL
+، کمتر از دو دقیقه آماده است. تاپیک‌ها روی دیسک ماندگارند و مصرف‌کننده‌ها می‌توانند تاریخچه را دوباره بخوانند.
+Kafka
+بسازید
+راهنمای کامل
+نسخه‌ها
+4.3
+(پیش‌فرض)،
+4.2
+،
+4.1
+و
+3.9
+احراز هویت
+SASL/PLAIN
+ماندگاری
+تاپیک‌ها روی دیسک
+پورت
+9092
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت کلاستر
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+رویدادها، ماندگار و قابل بازخوانی
+Kafka
+برای جریان پیوسته‌ی رویداد ساخته شده است: لاگ تغییرات، کلیک‌استریم، داده‌ی سنسور و ارتباط سرویس‌ها در معماری رویدادمحور. پیام‌ها پس از مصرف حذف نمی‌شوند و هر
+consumer group
+از جای خودش می‌خواند.
+اتصال با
+SASL/PLAIN
+احراز هویت می‌شود. میزبان، نام کاربری و رمز را از
+sakoo db credentials
+بردارید و به اپ بدهید؛ کلاینت‌هایی مثل
+kafkajs
+،
+confluent-kafka
+و
+franz-go
+با همین سه مقدار وصل می‌شوند.
+مناسب برای
+معماری رویدادمحور
+پایپ‌لاین داده و
+ETL
+لاگ تغییرات و
+audit
+کلیک‌استریم و تحلیل بلادرنگ
+از ساخت تا اتصال
+ساخت
+نسخه را انتخاب کنید.
+--type kafka --version 4.3.0
+اطلاعات اتصال
+میزبان، نام کاربری و رمز
+SASL
+را بگیرید.
+db credentials
+تعریف متغیرها
+مقدارها را به‌صورت متغیر محیطی به اپ بدهید.
+env set KAFKA_HOST=…
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name events --type kafka --version 4.3.0
+✔ Provisioning events · db_4n8x2p
+$
+sakoo db credentials db_4n8x2p
+$
+sakoo env set KAFKA_HOST=… KAFKA_USER=… KAFKA_PASSWORD=•••• --app my-api
+ساخت کلاستر
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+events
+--type
+kafka
+--version
+4.3.0
+تنظیمات
+متغیرهایی که تعریف می‌کنید
+اپ و سرویس را در یک پروژه بگذارید، مقدارها را از
+sakoo db credentials
+بردارید و با
+sakoo env set
+تعریف کنید. نام متغیرها دلخواه است.
+متغیر پیشنهادی
+مقدار
+KAFKA_HOST
+آدرس
+broker
+(پورت
+9092
+)
+KAFKA_USER
+نام کاربری
+SASL
+KAFKA_PASSWORD
+رمز
+SASL
+اتصال از اپ
+میزبان و اطلاعات
+SASL
+را از متغیرها بخوانید.
+Node.js
+Python
+کپی
+import
+{ Kafka }
+from
+"kafkajs"
+;
+const
+kafka =
+new
+Kafka({
+brokers: [
+`${process.env.KAFKA_HOST}:9092`
+],
+sasl: {
+mechanism:
+"plain"
+,
+username: process.env.KAFKA_USER,
+password: process.env.KAFKA_PASSWORD,
+},
+});
+import
+os
+from
+confluent_kafka
+import
+Producer
+p = Producer({
+"bootstrap.servers"
+: os.environ[
+"KAFKA_HOST"
+] +
+":9092"
+,
+"security.protocol"
+:
+"SASL_PLAINTEXT"
+,
+"sasl.mechanism"
+:
+"PLAIN"
+,
+"sasl.username"
+: os.environ[
+"KAFKA_USER"
+],
+"sasl.password"
+: os.environ[
+"KAFKA_PASSWORD"
+],
+})
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Go
+Node.js
+Python
+خطاهای رایج
+خطای احراز هویت
+SASL
+علت
+مکانیزم یا اطلاعات ورود اشتباه است.
+راه‌حل
+مکانیزم را
+PLAIN
+بگذارید و نام کاربری و رمز را دوباره از
+sakoo db credentials
+بردارید.
+Topic not found
+علت
+تاپیک هنوز ساخته نشده است.
+راه‌حل
+تاپیک را با ابزار ادمین کلاینت یا از کد بسازید.
+broker
+با کمبود حافظه متوقف می‌شود
+علت
+حجم پیام یا تعداد پارتیشن از منابع انتخابی بیشتر است.
+راه‌حل
+با
+sakoo db resize
+حافظه را افزایش دهید.
+پرسش‌های متداول
+ZooKeeper
+لازم است؟
+نه.
+Kafka 4
+با
+KRaft
+اجرا می‌شود و
+ZooKeeper
+ندارد.
+پیام‌ها تا کی نگهداری می‌شوند؟
+طبق
+retention
+هر تاپیک که خودتان تنظیم می‌کنید؛ داده روی دیسک ماندگار است.
+Kafka Connect
+و
+Schema Registry
+دارید؟
+این سرویس خود
+broker
+است. ابزارهای جانبی را می‌توانید به‌عنوان اپ
+Docker
+کنارش اجرا کنید.
+جزئیات بیشتر در
+راهنمای
+Kafka
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+RabbitMQ
+کارگزار پیام
+صف پیام قابل اطمینان برای جدا کردن سرویس‌ها و کارهای پس‌زمینه.
+AMQP
+استاندارد، با پنل مدیریت و تحویل تضمین‌شده‌ی پیام.
+Elasticsearch
+انجین جست‌وجو و تحلیل
+جست‌وجوی متن کامل با امتیازدهی ارتباط،
+aggregation
+برای گزارش و تحلیل لاگ؛ با
+REST API
+روی پورت
+9200
+.
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

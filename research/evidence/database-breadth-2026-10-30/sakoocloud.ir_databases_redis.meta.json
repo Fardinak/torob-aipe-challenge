@@ -1,0 +1,12 @@
+{
+  "url": "https://sakoocloud.ir/databases/redis/",
+  "attempted_at": "2026-10-30T20:01:24.260219+00:00",
+  "status": 200,
+  "final_url": "https://sakoocloud.ir/databases/redis/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "f7d8d89e26330ccb9fa318b06ef457106c3ca7911517652f95cb785bd196e36d",
+  "bytes": 235655,
+  "snapshot": "sakoocloud.ir_databases_redis.html",
+  "text": "sakoocloud.ir_databases_redis.txt"
+}

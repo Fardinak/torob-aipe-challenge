@@ -5,7 +5,7 @@ import { compare } from "./comparison";
 const catalog: Catalog = {
   ...reviewedCatalog,
   plans: reviewedCatalog.plans
-    .filter((p) => p.revisions.length)
+    .filter((p) => p.category === "vps" && p.revisions.length)
     .map((p) => ({
       ...p,
       ...p.revisions[0],
@@ -66,6 +66,33 @@ test("retains a native tariff without inventing a monthly toman starting price",
   expect(
     budgeted.excluded.find((offer) => offer.plan.id === "second")?.reasons,
   ).toContain("monthly_reference_unavailable");
+});
+
+test("database offers preserve unknown CPU and long-period tariffs without inventing monthly rankings", () => {
+  const sample = structuredClone(reviewedCatalog);
+  const plan = structuredClone(
+    sample.plans.find((p) => p.category === "database")!,
+  );
+  sample.plans = [plan];
+  // A published yearly tariff is inspectable, but cannot supply a monthly budget.
+  Object.assign(plan, {
+    cpu_count: null,
+    advertised_monthly_toman: null,
+    published_tariff: { amount: 1818576, currency: "toman", basis: "year" },
+  });
+  plan.evidence.facts.cpu_count = "unknown";
+  plan.evidence.facts.advertised_monthly_toman = "unknown";
+  plan.evidence.facts.published_tariff = "verified";
+  const result = compare(sample, { category: "database" });
+  expect(result.items).toHaveLength(1);
+  expect(result.items[0].configuration.cpu).toBeNull();
+  expect(result.ranked).toHaveLength(0);
+  expect(
+    compare(sample, { category: "database", cpu: "1" }).items,
+  ).toHaveLength(0);
+  expect(
+    compare(sample, { category: "database", budget: "2000000" }).items,
+  ).toHaveLength(0);
 });
 
 test("consolidates only evidenced exact resources and storage type, retaining offer prices", () => {
@@ -711,13 +738,15 @@ test("searches catalog names across separate categories without searching provid
     category: "all",
     query: "postgresql",
   });
-  expect(postgres.items).toHaveLength(2);
+  expect(postgres.items.length).toBeGreaterThan(2);
   expect(
     compare(reviewedCatalog, { category: "all", query: "پستگرس" }).items,
-  ).toHaveLength(2);
+  ).toEqual(postgres.items);
   expect(
     compare(reviewedCatalog, { category: "all", query: "ردیس" }).items,
-  ).toHaveLength(2);
+  ).toEqual(
+    compare(reviewedCatalog, { category: "database", engine: "Redis" }).items,
+  );
   expect(postgres.items.every((item) => item.engine === "PostgreSQL")).toBe(
     true,
   );
@@ -742,15 +771,63 @@ test("global traffic discovery keeps database base prices and sorts within each 
   const databases = result.ranked.filter(
     ({ plan }) => plan.category === "database",
   );
-  expect(databases).toHaveLength(4);
+  expect(
+    databases.map(({ plan, subtotalToman }) => [plan.id, subtotalToman]),
+  ).toEqual(
+    compare(reviewedCatalog, {
+      category: "database",
+      sort: "price-desc",
+    }).ranked.map(({ plan, subtotalToman }) => [plan.id, subtotalToman]),
+  );
   expect(databases.every((quote) => quote.trafficChargeToman === 0)).toBe(true);
   expect(
     databases.find(({ plan }) => plan.id === "liara-pg-2c-4g-40g-base")
       ?.subtotalToman,
   ).toBe(4125000);
+  for (const engine of new Set(
+    databases.map(({ plan }) => plan.database!.engine),
+  )) {
+    const prices = result.items
+      .filter(
+        (item) => item.engine === engine && item.startingPriceToman !== null,
+      )
+      .map((item) => item.startingPriceToman!);
+    expect(prices).toEqual([...prices].sort((a, b) => b - a));
+  }
+});
+
+test("reviewed multi-engine offers use engine-specific versions and preserve service distinctions", () => {
+  const request = {
+    category: "database" as const,
+    engine: "MySQL",
+    resourceMode: "exact" as const,
+    cpu: "4",
+    ram: "8",
+    disk: "80",
+  };
+  const candidates = compare(reviewedCatalog, request);
   expect(
-    result.items
-      .filter((item) => item.engine === "PostgreSQL")
-      .map((item) => item.startingPriceToman),
-  ).toEqual([4125000, 1300000]);
+    candidates.items.some((item) =>
+      item.offers.some(({ plan }) => plan.provider === "chabokan"),
+    ),
+  ).toBe(true);
+  const supported = compare(reviewedCatalog, { ...request, version: "8.4" });
+  expect(
+    supported.ranked.map(({ plan, subtotalToman }) => [
+      plan.provider,
+      subtotalToman,
+    ]),
+  ).toEqual([["weblines", 6024960]]);
+  expect(supported.items[0].exactIdentity).toBe(false); // Unknown disk type/topology cannot establish a match.
+  expect(
+    compare(reviewedCatalog, { ...request, version: "18.4" }).items,
+  ).toEqual([]);
+  const redis = compare(reviewedCatalog, {
+    category: "database",
+    engine: "Redis",
+    provider: "weblines",
+    ram: "8",
+  });
+  expect(redis.ranked[0].plan.database!.backup.detail).toContain("ندارد");
+  expect(redis.ranked[0].plan.database!.versions).toEqual(["7.2"]);
 });

@@ -1,0 +1,12 @@
+{
+  "url": "https://www.sky-cloud.eu/cloud-database",
+  "attempted_at": "2026-10-30T20:02:09.595405+00:00",
+  "status": 0,
+  "final_url": "https://www.sky-cloud.eu/cloud-database",
+  "curl_exit": 28,
+  "error": "curl: (28) Connection timed out after 40001 milliseconds\n",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "snapshot": "www.sky-cloud.eu_cloud-database.html",
+  "text": "www.sky-cloud.eu_cloud-database.txt"
+}

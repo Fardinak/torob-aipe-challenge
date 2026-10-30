@@ -1,0 +1,397 @@
+MariaDB مدیریت‌شده | دیتابیس سازگار با MySQL روی سکو کلود | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+MariaDB
+دیتابیس رابطه‌ای
+MariaDB
+مدیریت‌شده، سازگار با
+MySQL
+MariaDB
+با همان کلاینت‌ها و درایورهای
+MySQL
+کار می‌کند؛ اپ‌های
+PHP
+و
+Laravel
+بدون تغییر کد به آن وصل می‌شوند.
+MariaDB
+بسازید
+راهنمای کامل
+نسخه
+MariaDB 11
+(پیش‌فرض)
+سازگاری
+کلاینت و درایورهای
+MySQL
+پورت
+3306
+پشتیبان
+دستی و زمان‌بندی‌شده
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت دیتابیس
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+جایگزین متن‌باز
+MySQL
+MariaDB
+از همان ریشه‌ی
+MySQL
+آمده و پروتکل و دستورهایش را حفظ کرده است. درایورهای
+MySQL
+در
+PHP
+،
+Node.js
+و
+Python
+بدون تغییر به آن وصل می‌شوند.
+اگر اپ شما روی
+MariaDB
+توسعه یافته یا سیستم قبلی شما
+MariaDB
+است، همین را انتخاب کنید تا رفتار کوئری‌ها و نوع داده‌ها همان بماند.
+مناسب برای
+اپ‌های
+PHP
+و
+Laravel
+WordPress
+و
+Joomla
+مهاجرت از هاست اشتراکی
+سامانه‌های تراکنشی
+از ساخت تا اتصال
+ساخت
+دیتابیس با نسخه‌ی پیش‌فرض
+MariaDB 11
+ساخته می‌شود.
+--type mariadb
+لینک به اپ
+متغیرهای
+DATABASE_*
+به اپ تزریق می‌شوند.
+apps link-db
+استفاده
+درایور
+MySQL
+همان آدرس را می‌خواند.
+mysql://
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name app-db --type mariadb
+✔ Provisioning app-db · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api
+✔ Linked database. Env vars injected under DATABASE_*.
+# DATABASE_URL=mysql://app:••••@…:3306/app-db
+ساخت دیتابیس
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+app-db
+--type
+mariadb
+--storage
+10
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+DATABASE
+.
+متغیر
+مقدار
+DATABASE_URL
+mysql://user:pass@host:3306/db
+DATABASE_HOST
+و
+DATABASE_PORT
+آدرس و پورت داخلی
+DATABASE_USER
+و
+DATABASE_PASSWORD
+نام کاربری و رمز تولیدشده
+DATABASE_NAME
+نام دیتابیس
+پشتیبان‌گیری
+پشتیبان‌ها به‌صورت
+dump
+منطقی گرفته و جدا از دیسک دیتابیس، روی فضای ذخیره‌سازی سازگار با
+S3
+نگهداری می‌شوند.
+نوع
+در دسترس
+پشتیبان دستی
+همه‌ی پلن‌ها
+زمان‌بندی خودکار
+پلن‌های پولی
+بازگردانی
+روی همان دیتابیس یا یک نمونه‌ی تازه (
+backups clone
+)
+عملیات روزمره
+کار
+دستور
+اطلاعات اتصال
+sakoo db credentials <id>
+اتصال مستقیم با کلاینت
+mariadb
+sakoo db connect <id>
+افزایش دیسک یا حافظه
+sakoo db resize <id> --storage 20
+پشتیبان دستی
+sakoo db backups create <id>
+ساخت نسخه‌ی
+staging
+از پشتیبان
+sakoo db backups clone <id> <backup-id>
+اتصال از اپ
+از درایور
+MySQL
+زبان خودتان استفاده کنید.
+PHP
+Node.js
+کپی
+<?php
+$pdo =
+new
+PDO(
+sprintf(
+"mysql:host=%s;port=%s;dbname=%s"
+, getenv(
+"DATABASE_HOST"
+), getenv(
+"DATABASE_PORT"
+), getenv(
+"DATABASE_NAME"
+)),
+getenv(
+"DATABASE_USER"
+),
+getenv(
+"DATABASE_PASSWORD"
+),
+);
+import
+mysql
+from
+"mysql2/promise"
+;
+const
+pool = mysql.createPool(process.env.DATABASE_URL);
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Laravel
+PHP
+Django
+خطاهای رایج
+از سیستم خودم وصل نمی‌شوم
+علت
+آدرس داخلی فقط از اپ‌های همان پروژه در دسترس است.
+راه‌حل
+برای اتصال از بیرون، دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+terminal
+کپی
+sakoo
+db public-access <db-id>
+sakoocloud
+db credentials <db-id>
+Access denied for user
+علت
+اطلاعات اتصال قدیمی یا دستی وارد شده است.
+راه‌حل
+از متغیرهای تزریق‌شده استفاده کنید.
+Too many connections
+علت
+اتصال‌های باز از سقف بیشتر شده‌اند.
+راه‌حل
+استخر اتصال اپ را محدود کنید یا سقف را از کنسول بالا ببرید.
+پرسش‌های متداول
+MariaDB
+یا
+MySQL
+؟
+اگر سیستم فعلی شما یکی از این دو است، همان را نگه دارید. برای پروژه‌ی جدید فرق عملی کمی دارند.
+می‌توانم از
+MySQL
+به
+MariaDB
+مهاجرت کنم؟
+در بیشتر موارد بله؛
+dump
+را بگیرید و در
+MariaDB
+بازگردانی کنید. قابلیت‌های خاص
+MySQL 8
+را قبلش بررسی کنید.
+پشتیبان‌گیری چطور است؟
+مثل
+MySQL
+: پشتیبان دستی روی همه‌ی پلن‌ها و زمان‌بندی خودکار روی پلن‌های پولی.
+جزئیات بیشتر در
+راهنمای
+MariaDB
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+MySQL
+دیتابیس رابطه‌ای
+MySQL
+را با نسخه‌ای که اپ شما لازم دارد بسازید، به اپ لینک کنید و پشتیبان‌گیری را به پلتفرم بسپارید.
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

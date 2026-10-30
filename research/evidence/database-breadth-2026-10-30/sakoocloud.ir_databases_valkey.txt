@@ -1,0 +1,354 @@
+Valkey مدیریت‌شده | جایگزین متن‌باز Redis | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Valkey
+ذخیره‌ساز کلید-مقدار
+Valkey
+مدیریت‌شده، سازگار با
+Redis
+Valkey
+نسخه‌ی کاملاً متن‌باز
+Redis
+است که بنیاد لینوکس نگهداری می‌کند. همان کلاینت‌ها و همان دستورها، بدون تغییر کد.
+Valkey
+بسازید
+راهنمای کامل
+نسخه
+Valkey 9
+(پیش‌فرض)
+سازگاری
+پروتکل و کلاینت‌های
+Redis
+پورت
+6379
+در اپ
+REDIS_URL
+با
+--prefix REDIS
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت
+Valkey
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+Redis
+، متن‌باز و بدون نگرانی مجوز
+Valkey
+از کد
+Redis
+جدا شده و با مجوز
+BSD
+توسعه می‌یابد. پروتکل
+RESP
+، دستورها و ساختارهای داده همان است، پس کلاینت‌های
+redis
+در هر زبانی بدون تغییر وصل می‌شوند.
+برای کش،
+session
+و صف همان کاربردهای
+Redis
+را دارد. داده در حافظه نگهداری می‌شود و پشتیبان‌گیری مدیریت‌شده ندارد.
+مناسب برای
+کش برنامه
+session
+و توکن
+صف کارهای پس‌زمینه
+جدول امتیاز با
+Sorted Set
+از ساخت تا اتصال
+ساخت
+Valkey
+با نسخه‌ی پیش‌فرض
+9
+ساخته می‌شود.
+--type valkey
+لینک به اپ
+با پیشوند
+REDIS
+، کلاینت‌های موجود بدون تغییر کار می‌کنند.
+--prefix REDIS
+استفاده
+کلاینت فقط
+REDIS_URL
+را می‌خواند؛
+ioredis
+،
+redis-py
+و
+go-redis
+همان‌طور که با
+Redis
+کار می‌کردند کار می‌کنند.
+REDIS_URL
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name cache --type valkey
+✔ Provisioning cache · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api --prefix REDIS
+✔ Linked database. Env vars injected under REDIS_*.
+# REDIS_URL=redis://default:••••@…:6379
+ساخت
+Valkey
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+cache
+--type
+valkey
+--storage
+1
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+REDIS
+.
+متغیر
+مقدار
+REDIS_URL
+رشته‌ی کامل اتصال
+REDIS_HOST
+و
+REDIS_PORT
+آدرس داخلی و پورت
+6379
+REDIS_PASSWORD
+رمز تولیدشده
+اتصال از اپ
+همان کلاینت
+Redis
+.
+Node.js
+Python
+کپی
+import
+Redis
+from
+"ioredis"
+;
+const
+cache =
+new
+Redis(process.env.REDIS_URL);
+import
+os, redis
+cache = redis.from_url(os.environ[
+"REDIS_URL"
+])
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Node.js
+Python
+Go
+خطاهای رایج
+NOAUTH Authentication required
+علت
+کلاینت بدون رمز وصل می‌شود.
+راه‌حل
+از
+REDIS_URL
+استفاده کنید.
+بعد از ری‌استارت داده‌ها نیستند
+علت
+این سرویس داده را در حافظه نگه می‌دارد و پشتیبان‌گیری مدیریت‌شده ندارد.
+راه‌حل
+داده‌ای که از دست رفتنش قابل قبول نیست را در
+PostgreSQL
+یا
+MongoDB
+نگه دارید و این سرویس را فقط برای کش یا داده‌ی موقت استفاده کنید.
+از سیستم خودم وصل نمی‌شوم
+علت
+آدرس داخلی فقط از اپ‌های همان پروژه در دسترس است.
+راه‌حل
+برای اتصال از بیرون، دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+terminal
+کپی
+sakoo
+db public-access <db-id>
+sakoocloud
+db credentials <db-id>
+پرسش‌های متداول
+کد
+Redis
+من با
+Valkey
+کار می‌کند؟
+بله. پروتکل و دستورها یکی است و کلاینت‌های
+redis
+بدون تغییر وصل می‌شوند.
+چرا
+Valkey
+به‌جای
+Redis
+؟
+اگر مجوز کاملاً متن‌باز برای شما مهم است. از نظر کاربرد روزمره فرقی نمی‌کنند.
+پشتیبان‌گیری دارد؟
+نه.
+Valkey
+حافظه‌ای است؛ داده‌ی ماندگار را در دیتابیس دیگری نگه دارید.
+جزئیات بیشتر در
+راهنمای
+Valkey
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+Memcached
+کش توزیع‌شده
+Memcached
+فقط یک کار را خوب انجام می‌دهد: کش کلید-مقدار در حافظه. اگر به ساختار داده و ماندگاری نیاز ندارید، ساده‌ترین گزینه است.
+RabbitMQ
+کارگزار پیام
+صف پیام قابل اطمینان برای جدا کردن سرویس‌ها و کارهای پس‌زمینه.
+AMQP
+استاندارد، با پنل مدیریت و تحویل تضمین‌شده‌ی پیام.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

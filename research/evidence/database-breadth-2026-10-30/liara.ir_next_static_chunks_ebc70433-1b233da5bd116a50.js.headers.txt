@@ -1,0 +1,13 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:16:29 GMT
+content-type: application/javascript
+content-length: 650
+last-modified: Fri, 30 Oct 2026 11:49:26 GMT
+vary: Accept-Encoding
+etag: "6ae48446-28a"
+expires: Sat, 30 Oct 2027 20:16:39 GMT
+cache-control: max-age=31536000
+cache-control: public
+accept-ranges: bytes
+server: Liara
+

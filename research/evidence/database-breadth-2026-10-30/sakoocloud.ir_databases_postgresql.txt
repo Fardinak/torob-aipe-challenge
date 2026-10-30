@@ -1,0 +1,466 @@
+PostgreSQL مدیریت‌شده | دیتابیس پستگرس با pgvector و پشتیبان‌گیری | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+PostgreSQL
+دیتابیس رابطه‌ای
+PostgreSQL
+مدیریت‌شده با
+pgvector
+و
+PostGIS
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+PostgreSQL
+بسازید
+راهنمای کامل
+نسخه‌ها
+18
+(پیش‌فرض)،
+17
+،
+16
+و
+15
+افزونه‌ها
+pgvector
+و
+postgis
+در اپ
+DATABASE_URL
+پشتیبان
+دستی و زمان‌بندی‌شده
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت دیتابیس
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+پستگرس، بدون نگهداری سرور
+PostgreSQL
+انتخاب پیش‌فرض بیشتر اپ‌های امروزی است: تراکنش‌های
+ACID
+،
+JSONB
+برای داده‌ی نیمه‌ساختاریافته، ایندکس‌های متنوع و اکوسیستم بزرگ افزونه‌ها. در سکو کلود نسخه را انتخاب می‌کنید و نصب، به‌روزرسانی امنیتی، دیسک ماندگار و پشتیبان‌گیری با ماست.
+با افزونه‌ی
+pgvector
+می‌توانید
+embedding
+ها را کنار داده‌ی اصلی ذخیره و جست‌وجوی شباهت انجام دهید، و با
+PostGIS
+داده‌ی جغرافیایی را مدیریت کنید. پارامترهایی مثل
+max_connections
+و
+shared_buffers
+از تب
+Tuning
+کنسول تنظیم می‌شوند.
+مناسب برای
+دیتابیس اصلی اپ وب و موبایل
+جست‌وجوی برداری با
+pgvector
+داده‌ی مکانی با
+PostGIS
+گزارش‌گیری و داده‌ی تحلیلی سبک
+از ساخت تا اتصال
+ساخت
+نسخه و فضای دیسک را انتخاب کنید؛ افزونه را می‌شود همان‌جا فعال کرد.
+--type postgres --version 18
+آماده‌سازی
+دیسک ماندگار، کاربر و رمز قوی ساخته و اتصال
+TLS
+فعال می‌شود.
+~90s
+لینک به اپ
+متغیرهای اتصال به اپ تزریق و اپ دوباره مستقر می‌شود.
+apps link-db
+استفاده
+کد شما فقط
+DATABASE_URL
+را می‌خواند.
+DATABASE_URL
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name main-db --type postgres --version 18
+✔ Provisioning main-db · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api
+✔ Linked database. Env vars injected under DATABASE_*.
+# DATABASE_URL=postgresql://app:••••@…:5432/main-db
+ساخت دیتابیس
+با
+CLI
+یا از کنسول بسازید. برای جست‌وجوی برداری، افزونه را هنگام ساخت فعال کنید.
+terminal
+کپی
+sakoo
+db create
+--name
+main-db
+--type
+postgres
+--version
+18
+--storage
+10
+sakoocloud
+db create
+--name
+vectors
+--type
+postgres
+--extension
+pgvector
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+DATABASE
+.
+متغیر
+مقدار
+DATABASE_URL
+postgresql://user:pass@host:5432/db
+DATABASE_HOST
+و
+DATABASE_PORT
+آدرس و پورت داخلی
+DATABASE_USER
+و
+DATABASE_PASSWORD
+نام کاربری و رمز تولیدشده
+DATABASE_NAME
+نام دیتابیس
+پشتیبان‌گیری
+پشتیبان‌ها به‌صورت
+dump
+منطقی گرفته و جدا از دیسک دیتابیس، روی فضای ذخیره‌سازی سازگار با
+S3
+نگهداری می‌شوند.
+نوع
+در دسترس
+پشتیبان دستی
+همه‌ی پلن‌ها
+زمان‌بندی خودکار
+پلن‌های پولی
+بازگردانی
+روی همان دیتابیس یا یک نمونه‌ی تازه (
+backups clone
+)
+عملیات روزمره
+کار
+دستور
+اطلاعات اتصال
+sakoo db credentials <id>
+اتصال مستقیم با کلاینت
+psql
+sakoo db connect <id>
+افزایش دیسک یا حافظه
+sakoo db resize <id> --storage 20
+پشتیبان دستی
+sakoo db backups create <id>
+ساخت نسخه‌ی
+staging
+از پشتیبان
+sakoo db backups clone <id> <backup-id>
+اتصال از اپ
+بعد از
+apps link-db
+، همین چند خط کافی است.
+Node.js
+Python
+Go
+Prisma
+کپی
+import
+pg
+from
+"pg"
+;
+const
+pool =
+new
+pg.Pool({ connectionString: process.env.DATABASE_URL });
+const
+{ rows } =
+await
+pool.query(
+"select now()"
+);
+import
+os, psycopg
+with
+psycopg.connect(os.environ[
+"DATABASE_URL"
+])
+as
+conn:
+print(conn.execute(
+"select now()"
+).fetchone())
+conn,
+err
+:= pgx.Connect(ctx, os.Getenv(
+"DATABASE_URL"
+))
+if
+err
+!=
+nil
+{
+log.Fatal(
+err
+)
+}
+datasource
+db {
+provider =
+"postgresql"
+url      =
+env
+(
+"DATABASE_URL"
+)
+}
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Node.js
+Django
+Go
+خطاهای رایج
+از سیستم خودم وصل نمی‌شوم
+علت
+آدرس داخلی فقط از اپ‌های همان پروژه در دسترس است.
+راه‌حل
+برای اتصال از بیرون، دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+terminal
+کپی
+sakoo
+db public-access <db-id>
+sakoocloud
+db credentials <db-id>
+too many connections
+علت
+تعداد اتصال‌های باز از
+max_connections
+بیشتر شده؛ معمولاً هر نمونه‌ی اپ استخر جدا باز می‌کند.
+راه‌حل
+اندازه‌ی استخر اتصال در اپ را کم کنید یا
+max_connections
+را از تب
+Tuning
+بالا ببرید.
+نوع داده‌ی
+vector
+پیدا نمی‌شود
+علت
+دیتابیس بدون افزونه‌ی
+pgvector
+ساخته شده است.
+راه‌حل
+دیتابیس را با
+--extension pgvector
+بسازید؛ افزونه از لحظه‌ی ساخت فعال است و نصب دستی لازم ندارد.
+پرسش‌های متداول
+کدام نسخه‌های
+PostgreSQL
+در دسترس است؟
+نسخه‌های
+15
+،
+16
+،
+17
+و
+18
+. پیش‌فرض
+18
+است و هنگام ساخت با
+--version
+انتخاب می‌شود.
+اتصال از طریق
+PgBouncer
+است؟
+نه. اتصال مستقیم به همان نمونه‌ی
+PostgreSQL
+شماست، پس پارامترهای نشست و
+prepared statement
+ها بدون محدودیت کار می‌کنند.
+پشتیبان‌ها کجا نگهداری می‌شوند؟
+جدا از دیسک دیتابیس، روی فضای ذخیره‌سازی سازگار با
+S3
+. پشتیبان دستی روی همه‌ی پلن‌ها و زمان‌بندی خودکار روی پلن‌های پولی است.
+می‌توانم با
+pgAdmin
+یا
+DBeaver
+وصل شوم؟
+بله. دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+جزئیات بیشتر در
+راهنمای
+PostgreSQL
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+MySQL
+دیتابیس رابطه‌ای
+MySQL
+را با نسخه‌ای که اپ شما لازم دارد بسازید، به اپ لینک کنید و پشتیبان‌گیری را به پلتفرم بسپارید.
+MongoDB
+دیتابیس سندگرا
+MongoDB
+را برای داده‌ی سندمحور بسازید؛ اگر تراکنش چندسندی یا
+Change Stream
+لازم دارید، با یک فلگ حالت
+Replica Set
+را فعال کنید.
+Qdrant
+دیتابیس برداری
+embedding
+ها را ذخیره و نزدیک‌ترین‌ها را در میلی‌ثانیه پیدا کنید؛ با فیلتر روی متادیتا، از طریق
+REST
+یا
+gRPC
+.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

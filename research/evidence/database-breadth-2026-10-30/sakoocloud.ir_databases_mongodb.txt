@@ -1,0 +1,398 @@
+MongoDB مدیریت‌شده | دیتابیس مونگو با Replica Set و پشتیبان‌گیری | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+MongoDB
+دیتابیس سندگرا
+MongoDB
+مدیریت‌شده با
+Replica Set
+MongoDB
+را برای داده‌ی سندمحور بسازید؛ اگر تراکنش چندسندی یا
+Change Stream
+لازم دارید، با یک فلگ حالت
+Replica Set
+را فعال کنید.
+MongoDB
+بسازید
+راهنمای کامل
+نسخه‌ها
+8
+(پیش‌فرض)،
+7
+،
+6
+و
+5
+حالت
+تک‌نود یا
+Replica Set
+در اپ
+MONGO_URL
+با
+--prefix MONGO
+پشتیبان
+mongodump
+، دستی و زمان‌بندی‌شده
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت دیتابیس
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+داده‌ی سندمحور، بدون مدیریت کلاستر
+MongoDB
+برای داده‌ای مناسب است که ساختارش با محصول تغییر می‌کند: پروفایل کاربر، کاتالوگ محصول، لاگ رویداد. اسناد
+JSON
+مانند ذخیره و با ایندکس و
+aggregation
+جست‌وجو می‌شوند.
+در حالت
+Replica Set
+، تراکنش‌های چندسندی و
+Change Stream
+در دسترس‌اند. رشته‌ی اتصال تزریق‌شده همه‌چیز را دارد، از جمله
+replicaSet
+؛ کد شما فقط آن را می‌خواند.
+مناسب برای
+کاتالوگ محصول و محتوای پویا
+پروفایل و تنظیمات کاربر
+لاگ رویداد و داده‌ی زمانی
+بک‌اند اپ موبایل
+از ساخت تا اتصال
+ساخت
+نسخه را انتخاب کنید؛ برای تراکنش
+Replica Set
+را فعال کنید.
+--type mongo --replica-set
+لینک به اپ
+رشته‌ی اتصال کامل با پیشوند
+MONGO
+تزریق می‌شود.
+--prefix MONGO
+استفاده
+درایور فقط
+MONGO_URL
+را می‌خواند.
+MONGO_URL
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name docs-db --type mongo --version 8
+✔ Provisioning docs-db · db_4n8x2p
+ℹ Ready in ~90s. Get credentials: sakoo db credentials db_4n8x2p
+$
+sakoo apps link-db db_4n8x2p --app my-api --prefix MONGO
+✔ Linked database. Env vars injected under MONGO_*.
+# MONGO_URL=mongodb://app:••••@…:27017/docs-db
+ساخت دیتابیس
+تک‌نود برای شروع کافی است؛
+Replica Set
+برای تراکنش و
+Change Stream
+.
+terminal
+کپی
+sakoo
+db create
+--name
+docs-db
+--type
+mongo
+sakoocloud
+db create
+--name
+events
+--type
+mongo
+--replica-set
+تنظیمات
+متغیرهایی که به اپ تزریق می‌شوند
+پیشوند پیش‌فرض
+DATABASE
+است؛ با
+--prefix
+می‌توانید نام دیگری بدهید، مثلاً
+MONGO
+.
+متغیر
+مقدار
+MONGO_URL
+رشته‌ی کامل، شامل
+replicaSet
+در صورت فعال بودن
+MONGO_HOST
+و
+MONGO_PORT
+آدرس و پورت داخلی
+MONGO_USER
+و
+MONGO_PASSWORD
+نام کاربری و رمز تولیدشده
+پشتیبان‌گیری
+پشتیبان‌ها به‌صورت
+dump
+منطقی گرفته و جدا از دیسک دیتابیس، روی فضای ذخیره‌سازی سازگار با
+S3
+نگهداری می‌شوند.
+نوع
+در دسترس
+پشتیبان دستی
+همه‌ی پلن‌ها
+زمان‌بندی خودکار
+پلن‌های پولی
+بازگردانی
+روی همان دیتابیس یا یک نمونه‌ی تازه (
+backups clone
+)
+اتصال از اپ
+رشته‌ی اتصال را مستقیم به درایور بدهید.
+Node.js
+Python
+Mongoose
+کپی
+import
+{ MongoClient }
+from
+"mongodb"
+;
+const
+client =
+new
+MongoClient(process.env.MONGO_URL);
+await
+client.connect();
+import
+os
+from
+pymongo
+import
+MongoClient
+client = MongoClient(os.environ[
+"MONGO_URL"
+])
+import
+mongoose
+from
+"mongoose"
+;
+await
+mongoose.connect(process.env.MONGO_URL);
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Node.js
+Python
+Bun
+خطاهای رایج
+از سیستم خودم وصل نمی‌شوم
+علت
+آدرس داخلی فقط از اپ‌های همان پروژه در دسترس است.
+راه‌حل
+برای اتصال از بیرون، دسترسی عمومی را روشن کنید و آدرس و پورت خارجی را از
+sakoo db credentials
+بگیرید.
+terminal
+کپی
+sakoo
+db public-access <db-id>
+sakoocloud
+db credentials <db-id>
+Transaction numbers are only allowed on a replica set
+علت
+دیتابیس در حالت تک‌نود ساخته شده است.
+راه‌حل
+یک دیتابیس با
+--replica-set
+بسازید و داده را منتقل کنید.
+Authentication failed
+علت
+authSource
+یا رمز دستی وارد شده و با رشته‌ی اتصال تزریق‌شده فرق دارد.
+راه‌حل
+فقط از
+MONGO_URL
+استفاده کنید.
+پرسش‌های متداول
+Replica Set
+را کی لازم دارم؟
+برای تراکنش‌های چندسندی و
+Change Stream
+. برای استفاده‌ی معمولی، تک‌نود کافی است.
+از
+MongoDB Atlas
+مهاجرت کنم؟
+با
+mongodump
+از
+Atlas
+خروجی بگیرید و با
+mongorestore
+در دیتابیس جدید بازگردانی کنید.
+Compass
+یا
+mongosh
+وصل می‌شود؟
+بله؛
+sakoo db connect
+برای
+mongosh
+و دسترسی عمومی برای
+Compass
+.
+جزئیات بیشتر در
+راهنمای
+MongoDB
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+Redis
+ذخیره‌ساز کلید-مقدار
+Redis 8
+با یک دستور آماده است. حافظه‌ای که انتخاب می‌کنید همان
+maxmemory
+است و وقتی پر شود، قدیمی‌ترین کلیدها کنار می‌روند.
+Elasticsearch
+انجین جست‌وجو و تحلیل
+جست‌وجوی متن کامل با امتیازدهی ارتباط،
+aggregation
+برای گزارش و تحلیل لاگ؛ با
+REST API
+روی پورت
+9200
+.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

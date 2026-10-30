@@ -1,0 +1,12 @@
+{
+  "url": "https://api.manageit.dev/api-documents",
+  "attempted_at": "2026-10-30T20:02:09.461358+00:00",
+  "status": 200,
+  "final_url": "https://api.manageit.dev/api-documents",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "28f9e41f44eba49f8a454bb28fadccb3bfe4a0d643619501ec10dffb8271af7c",
+  "bytes": 19347,
+  "snapshot": "api.manageit.dev_api-documents.html",
+  "text": "api.manageit.dev_api-documents.txt"
+}

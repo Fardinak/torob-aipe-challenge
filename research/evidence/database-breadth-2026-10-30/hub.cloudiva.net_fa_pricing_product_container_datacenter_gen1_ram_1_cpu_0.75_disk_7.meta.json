@@ -1,0 +1,12 @@
+{
+  "url": "https://hub.cloudiva.net/fa/pricing/?product=container&datacenter=gen1&ram=1&cpu=0.75&disk=7",
+  "attempted_at": "2026-10-30T20:04:45.569959+00:00",
+  "status": 200,
+  "final_url": "https://hub.cloudiva.net/fa/pricing/?product=container&datacenter=gen1&ram=1&cpu=0.75&disk=7",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "5656bc499b04bc75f38d0142133d75a21454661d551024ed7c06086718bec251",
+  "bytes": 163,
+  "snapshot": "hub.cloudiva.net_fa_pricing_product_container_datacenter_gen1_ram_1_cpu_0.75_disk_7.html",
+  "text": "hub.cloudiva.net_fa_pricing_product_container_datacenter_gen1_ram_1_cpu_0.75_disk_7.txt"
+}

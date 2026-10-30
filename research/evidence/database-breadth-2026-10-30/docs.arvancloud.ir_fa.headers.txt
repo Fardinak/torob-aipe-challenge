@@ -1,0 +1,663 @@
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 0fa24ad0e3063780ac0d1c2b2329a59a
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=2
+x-request-id: 7f929fafc66772f79bd5b0e418e77f5d
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 4a2f182251dfd7f43092528238366a7a
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: d4c3a4d33552bce20b26bea5b3f24fa0
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: f35a25665b433bab5c4b78d966c44bad
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 76291bfeed07207334af69c0279146db
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: aaab3d4faa21605f909e5f6a4ab5429a
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: a5f3067a4c92d0bd3cd9ab4f1fd24370
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=2
+x-request-id: bee6ff88418a175ead83d701bf9a50a0
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 2582fc9ea1e922d41a0762f3211045c2
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:00 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399640-edb6b871bcf19cf032494fdbd468471c; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 95fc1776e2bfe344097c9499956aa9bb
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 315720c93aa88d11e70da207dd345889
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 4a20d1a2b4eb17123a96318a69f20b5c
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 504e8ec130922578f833ff7c0d7c419b
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 34a93889aacf9f46c2f923be3b792d1d
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 9e4df30d34627d827191ed131f8e3c30
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: ae5e9b2ed9dda9bb3ad0d6851695f9eb
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 641cc96203d18d626b71bf23955e54ab
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 0bb9fa0c59dc02d54825e5615fdcc651
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 411d3cfdae528b358a9d73409df6298d
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 2feeb6c938bd7e0f22604fe1868aba2c
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: d0f5e8ce99027e22c562168d44c7bb4e
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 9b743999725f5210d6d47d8a91da0b4f
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 8ba8a467a2edd5dec15567ec5ffd0cdd
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 9b633d0d3558fb33b671ce7c7f316542
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: fc270ec45f3b098a5a9ed83db2ff447c
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 375e073fa6723423152777c5e78da62b
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: d38ebd4c579591a5e46a398680b2f2e2
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: c16f95588a55ce6d1b1193618c034609
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 8274d56149423b2adb2d3e5b1d2c368c
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 43373e3523cef758f81efd55dd46851f
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 13dd6f3e8126daba5261e85e4c727d1a
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 0abc1e20a5dca8b192697f67de2c292e
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 7ec907c6a806719b5cb7a3e05156c0b7
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 178fcff796878ee86bca9552035307e7
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: ada3ebf19b28843423bbd7c50b2a5377
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: bcf7bbb6dca3347c920627ad88cf0054
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 44d5737763188461e71f19949d7d9560
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 2bc8dcd432d874f7fdf24020500b13d4
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 0921305bd824e9f906e40980efb2e5db
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 3f82c9454994d62fa8963d2290ef4770
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: b2dc5c296374aeafc50b6401e3d86d62
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 3430612de3136e226f00ffb69c29775d
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 55ff17754f0322121daec5e393570b63
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 98ef51b1dd7c4f67f4af41191d27e8c8
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 2a905e9d42e8bbad5f0d08434d0324e6
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 16d6b99bea3ea16952f39960f9506f38
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: d5147525e9399e491558f2765e502014
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: 4d96a57bf045356c5474575f5af673c4
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: dd12ddaeaf1b1a237d5ed685a5e930ec
+x-sid: 2029
+
+HTTP/2 307 
+date: Fri, 30 Oct 2026 20:04:01 GMT
+content-type: text/html
+content-length: 0
+location: https://docs.arvancloud.ir/fa/
+set-cookie: __arcscoc=arcookie-1793399641-8c4772129a6e594528283c01324d23e1; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+set-cookie: __arcsco=83e5d777812dcbdb175b8a8faa6cf901; Path=/; Max-Age=9000; Domain=docs.arvancloud.ir
+x-frame-options: DENY
+server: ArvanCloud
+server-timing: total;dur=0
+x-request-id: fee4a039373160f1aa4d73bab26e279e
+x-sid: 2029
+

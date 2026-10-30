@@ -1,0 +1,12 @@
+{
+  "url": "https://virakcloud.com/pricing/",
+  "attempted_at": "2026-10-30T20:03:15.996344+00:00",
+  "status": 200,
+  "final_url": "https://virakcloud.com/pricing/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "e087e5a100d745c4b44d5092e737d895f10a26b0b581117efb61fbc36bcb9d25",
+  "bytes": 235274,
+  "snapshot": "virakcloud.com_pricing.html",
+  "text": "virakcloud.com_pricing.txt"
+}

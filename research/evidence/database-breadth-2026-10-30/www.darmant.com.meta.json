@@ -1,0 +1,12 @@
+{
+  "url": "https://www.darmant.com/",
+  "attempted_at": "2026-10-30T20:03:15.999173+00:00",
+  "status": 200,
+  "final_url": "https://www.darmant.com/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "bda1ca5737fa3c5dbc4d7c811287e96e6f30daa8ade713474f88d470bbc01abf",
+  "bytes": 43095,
+  "snapshot": "www.darmant.com.html",
+  "text": "www.darmant.com.txt"
+}

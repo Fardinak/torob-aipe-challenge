@@ -1,0 +1,24 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:03:08 GMT
+content-type: application/javascript; charset=UTF-8
+content-length: 48571
+vary: Accept-Encoding
+x-dns-prefetch-control: on
+cache-control: max-age=2592000
+last-modified: Wed, 21 Oct 2026 13:36:34 GMT
+etag: W/"bdbb-1a15ead8b84"
+vary: Accept-Encoding
+x-frame-options: sameorigin
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+ch-powered-by: Chabokan (chabokan.net)
+ch-request-time: 0.014
+expires: Sun, 29 Nov 2026 20:03:08 GMT
+x-xss-protection: 1; mode=block
+server: ArvanCloud
+server-timing: total;dur=17
+x-cache: MISS
+x-request-id: fff2f0c71bba7f55e69dcdfc02f11ce6
+x-sid: 2029
+accept-ranges: bytes
+

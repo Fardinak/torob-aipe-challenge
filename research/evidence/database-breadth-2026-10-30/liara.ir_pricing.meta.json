@@ -1,0 +1,12 @@
+{
+  "url": "https://liara.ir/pricing/",
+  "attempted_at": "2026-10-30T20:16:14.463080+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/pricing/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "3d7389d8312bcd25b7f0891f089f84e27d89722b46a08f8360a1c2e0cd741d57",
+  "bytes": 224705,
+  "snapshot": "liara.ir_pricing.html",
+  "text": "liara.ir_pricing.txt"
+}

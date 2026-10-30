@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ariaservice.net/products",
+  "attempted_at": "2026-10-30T20:01:24.901913+00:00",
+  "status": 200,
+  "final_url": "https://www.ariaservice.net/products",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "7e604fd64281392ed2621d54718db62889d033aaa186dcc325def217340d907f",
+  "bytes": 47716,
+  "snapshot": "www.ariaservice.net_products.html",
+  "text": "www.ariaservice.net_products.txt"
+}

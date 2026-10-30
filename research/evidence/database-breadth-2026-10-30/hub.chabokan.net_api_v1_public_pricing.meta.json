@@ -1,0 +1,12 @@
+{
+  "url": "https://hub.chabokan.net/api/v1/public/pricing/",
+  "attempted_at": "2026-10-30T20:04:07.697581+00:00",
+  "status": 200,
+  "final_url": "https://hub.chabokan.net/api/v1/public/pricing/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "16d2f3f049857bfe5ab36621f1998af935dea45c0d824d19c4fe3476cffeb2a8",
+  "bytes": 208097,
+  "snapshot": "hub.chabokan.net_api_v1_public_pricing.html",
+  "text": "hub.chabokan.net_api_v1_public_pricing.txt"
+}

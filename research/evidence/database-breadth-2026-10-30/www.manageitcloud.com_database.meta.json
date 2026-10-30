@@ -1,0 +1,12 @@
+{
+  "url": "https://www.manageitcloud.com/database",
+  "attempted_at": "2026-10-30T20:01:01.499670+00:00",
+  "status": 200,
+  "final_url": "https://www.manageitcloud.com/database",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "eeeee39b6c8f9f2cb4d1703203d1de8812a7d29dbfdce8e3781ba372bc2ccbaf",
+  "bytes": 72992,
+  "snapshot": "www.manageitcloud.com_database.html",
+  "text": "www.manageitcloud.com_database.txt"
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://liara.ir/_next/static/chunks/polyfills-42372ed130431b0a.js",
+  "attempted_at": "2026-10-30T20:16:46.672151+00:00",
+  "status": 200,
+  "final_url": "https://liara.ir/_next/static/chunks/polyfills-42372ed130431b0a.js",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+  "bytes": 112594,
+  "snapshot": "liara.ir_next_static_chunks_polyfills-42372ed130431b0a.js.html",
+  "text": "liara.ir_next_static_chunks_polyfills-42372ed130431b0a.js.txt"
+}

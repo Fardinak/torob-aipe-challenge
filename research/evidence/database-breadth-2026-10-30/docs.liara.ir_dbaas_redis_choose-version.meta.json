@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/redis/choose-version/",
+  "attempted_at": "2026-10-30T20:16:47.211730+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/redis/choose-version/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "4d6be6e8287b98c038f2a6f0d0aaa10c461e0114c1a5399050ed0fb40106de78",
+  "bytes": 21353,
+  "snapshot": "docs.liara.ir_dbaas_redis_choose-version.html",
+  "text": "docs.liara.ir_dbaas_redis_choose-version.txt"
+}

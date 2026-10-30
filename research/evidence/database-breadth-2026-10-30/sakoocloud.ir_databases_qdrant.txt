@@ -1,0 +1,387 @@
+Qdrant مدیریت‌شده | دیتابیس برداری برای RAG و جست‌وجوی معنایی | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Qdrant
+دیتابیس برداری
+Qdrant
+مدیریت‌شده برای
+RAG
+و جست‌وجوی معنایی
+embedding
+ها را ذخیره و نزدیک‌ترین‌ها را در میلی‌ثانیه پیدا کنید؛ با فیلتر روی متادیتا، از طریق
+REST
+یا
+gRPC
+.
+Qdrant
+بسازید
+راهنمای کامل
+نسخه‌ها
+1.18
+(پیش‌فرض)،
+1.17
+و
+1.16
+API
+REST
+6333
+و
+gRPC
+6334
+احراز هویت
+API Key
+کاربرد
+RAG
+، جست‌وجوی معنایی، توصیه‌گر
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت نود
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+حافظه‌ی بلندمدت برای اپ‌های هوش مصنوعی
+Qdrant
+بردارهای
+embedding
+را با هر تعداد بعد ذخیره و با جست‌وجوی شباهت (
+cosine
+،
+dot
+،
+euclid
+) نزدیک‌ترین‌ها را پیدا می‌کند. فیلتر روی
+payload
+اجازه می‌دهد جست‌وجوی معنایی را با شرط‌هایی مثل زبان، کاربر یا تاریخ ترکیب کنید.
+برای
+RAG
+، توصیه‌گر و جست‌وجوی معنایی در متن فارسی،
+embedding
+ها را با مدل دلخواه بسازید و در
+Qdrant
+نگه دارید. اگر فقط چند هزار بردار دارید،
+pgvector
+در
+PostgreSQL
+هم گزینه‌ی ساده‌تری است.
+مناسب برای
+RAG
+برای چت‌بات و دستیار
+جست‌وجوی معنایی اسناد
+توصیه‌گر محصول و محتوا
+تشخیص موارد مشابه و تکراری
+از ساخت تا اتصال
+ساخت
+نود
+Qdrant
+با نسخه‌ی پیش‌فرض
+1.18
+ساخته می‌شود.
+--type qdrant
+اطلاعات اتصال
+میزبان و کلید
+API
+را بگیرید و به اپ بدهید.
+env set QDRANT_HOST=…
+استفاده
+کالکشن بسازید، بردار
+upsert
+و جست‌وجو کنید.
+:6333
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name vectors --type qdrant
+✔ Provisioning vectors · db_4n8x2p
+$
+sakoo db credentials db_4n8x2p
+$
+sakoo env set QDRANT_HOST=… QDRANT_API_KEY=•••• --app my-api
+ساخت نود
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+vectors
+--type
+qdrant
+تنظیمات
+متغیرهایی که تعریف می‌کنید
+اپ و سرویس را در یک پروژه بگذارید، مقدارها را از
+sakoo db credentials
+بردارید و با
+sakoo env set
+تعریف کنید. نام متغیرها دلخواه است.
+متغیر پیشنهادی
+مقدار
+QDRANT_HOST
+آدرس داخلی؛
+REST
+روی
+6333
+،
+gRPC
+روی
+6334
+QDRANT_API_KEY
+کلید
+API
+اتصال از اپ
+کلاینت رسمی
+Qdrant
+میزبان و کلید را می‌گیرد.
+Python
+Node.js
+کپی
+import
+os
+from
+qdrant_client
+import
+QdrantClient
+client = QdrantClient(
+url=f
+'http://{os.environ["QDRANT_HOST"]}:6333'
+,
+api_key=os.environ[
+"QDRANT_API_KEY"
+],
+)
+hits = client.query_points(
+"docs"
+, query=embedding, limit=
+5
+)
+import
+{ QdrantClient }
+from
+"@qdrant/js-client-rest"
+;
+const
+qdrant =
+new
+QdrantClient({
+url:
+`http://${process.env.QDRANT_HOST}:6333`
+,
+apiKey: process.env.QDRANT_API_KEY,
+});
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Python
+Node.js
+Go
+خطاهای رایج
+403 Forbidden
+علت
+کلید
+API
+در درخواست نیست.
+راه‌حل
+QDRANT_API_KEY
+را به کلاینت بدهید.
+اتصال برقرار نمی‌شود
+علت
+کلاینت
+REST
+به پورت
+gRPC
+یا برعکس وصل می‌شود.
+راه‌حل
+REST
+روی
+6333
+و
+gRPC
+روی
+6334
+است.
+Collection not found
+علت
+کالکشن قبل از
+upsert
+ساخته نشده یا ابعاد بردار فرق دارد.
+راه‌حل
+کالکشن را با اندازه‌ی بردار مدل
+embedding
+بسازید.
+پرسش‌های متداول
+Qdrant
+یا
+pgvector
+؟
+برای چند ده هزار بردار کنار داده‌ی رابطه‌ای،
+pgvector
+ساده‌تر است. برای میلیون‌ها بردار و فیلتر پیچیده،
+Qdrant
+.
+embedding
+را با چه مدلی بسازم؟
+هر مدلی؛
+Qdrant
+فقط بردار را ذخیره می‌کند. ابعاد کالکشن باید با خروجی مدل یکی باشد.
+gRPC
+هم در دسترس است؟
+بله، روی پورت
+6334
+برای کارایی بالاتر.
+جزئیات بیشتر در
+راهنمای
+Qdrant
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+PostgreSQL
+دیتابیس رابطه‌ای
+یک
+PostgreSQL
+واقعی با نسخه‌ی دلخواه، کمتر از دو دقیقه بعد آماده است. اتصال مستقیم است، نه از طریق استخر اشتراکی؛ پس هر
+ORM
+و ابزار مهاجرتی بدون تنظیم خاص کار می‌کند.
+Elasticsearch
+انجین جست‌وجو و تحلیل
+جست‌وجوی متن کامل با امتیازدهی ارتباط،
+aggregation
+برای گزارش و تحلیل لاگ؛ با
+REST API
+روی پورت
+9200
+.
+Meilisearch
+انجین جست‌وجو
+جست‌وجوی هنگام تایپ برای سایت و فروشگاه، با تحمل غلط تایپی و فیلتر؛ بدون تنظیم
+analyzer
+و ایندکس پیچیده.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

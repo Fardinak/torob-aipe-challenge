@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ariaservice.net/pricing",
+  "attempted_at": "2026-10-30T20:01:24.478622+00:00",
+  "status": 200,
+  "final_url": "https://www.ariaservice.net/pricing",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "ff92405b031204e1f7d44e813f1ea4175fa35e6fdf7f9da6b253c26e7c3e86a9",
+  "bytes": 65781,
+  "snapshot": "www.ariaservice.net_pricing.html",
+  "text": "www.ariaservice.net_pricing.txt"
+}

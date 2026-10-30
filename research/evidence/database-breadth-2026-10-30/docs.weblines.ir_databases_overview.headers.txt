@@ -1,0 +1,18 @@
+HTTP/2 200 
+alt-svc: h3=":443"; ma=2592000
+cache-control: s-maxage=31536000
+content-type: text/html; charset=utf-8
+date: Fri, 30 Oct 2026 20:01:47 GMT
+etag: "2bz2m3tozp1foj"
+server: Caddy
+set-cookie: wl_ft=%257B%2522landing%2522%253A%2522%252Fdatabases%252Foverview%2522%252C%2522at%2522%253A%25222026-10-30T20%253A01%253A47.514Z%2522%257D; Path=/; Expires=Thu, 28 Jan 2027 20:01:47 GMT; Max-Age=7776000; Domain=.weblines.ir; Secure; HttpOnly; SameSite=lax
+set-cookie: wl_lt=%257B%2522landing%2522%253A%2522%252Fdatabases%252Foverview%2522%252C%2522at%2522%253A%25222026-10-30T20%253A01%253A47.514Z%2522%257D; Path=/; Expires=Thu, 28 Jan 2027 20:01:47 GMT; Max-Age=7776000; Domain=.weblines.ir; Secure; HttpOnly; SameSite=lax
+set-cookie: wl_vid=99ae9244-21db-4275-9608-462359b546f6; Path=/; Expires=Sat, 30 Oct 2027 20:01:47 GMT; Max-Age=31536000; Domain=.weblines.ir; Secure; HttpOnly; SameSite=lax
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+x-middleware-rewrite: /docs/databases/overview
+x-nextjs-cache: HIT
+x-nextjs-prerender: 1
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+

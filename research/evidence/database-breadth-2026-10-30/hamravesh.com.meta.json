@@ -1,0 +1,12 @@
+{
+  "url": "https://hamravesh.com/",
+  "attempted_at": "2026-10-30T20:00:13.798428+00:00",
+  "status": 200,
+  "final_url": "https://hamravesh.com/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "0a8035d11bff1e89978f2f53154a42f8d883f9b0b07182af373577ea7cb9dd4f",
+  "bytes": 395175,
+  "snapshot": "hamravesh.com.html",
+  "text": "hamravesh.com.txt"
+}

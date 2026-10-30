@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/mysql/quick-setup/",
+  "attempted_at": "2026-10-30T20:16:47.024722+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/mysql/quick-setup/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "adb59b722abf99f637d2100fa74dc4499cf3f20220168ce7933b343558207d1c",
+  "bytes": 35532,
+  "snapshot": "docs.liara.ir_dbaas_mysql_quick-setup.html",
+  "text": "docs.liara.ir_dbaas_mysql_quick-setup.txt"
+}

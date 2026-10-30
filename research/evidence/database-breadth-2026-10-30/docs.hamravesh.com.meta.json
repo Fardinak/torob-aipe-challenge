@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.hamravesh.com/",
+  "attempted_at": "2026-10-30T20:04:07.698870+00:00",
+  "status": 0,
+  "final_url": "https://docs.hamravesh.com/",
+  "curl_exit": 7,
+  "error": "curl: (7) Failed to connect to docs.hamravesh.com:443 after 338 ms: Could not connect to server\n",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "snapshot": "docs.hamravesh.com.html",
+  "text": "docs.hamravesh.com.txt"
+}

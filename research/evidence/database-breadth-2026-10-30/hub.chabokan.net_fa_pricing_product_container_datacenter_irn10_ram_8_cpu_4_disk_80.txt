@@ -1,0 +1,1 @@
+{"product": "container", "price": 10632.0, "prices": {"hourly": 10632, "monthly": 7272288, "every_3_months": 20668608, "every_6_months": 39040704, "yearly": 74509056}}

@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.liara.ir/dbaas/rabbitmq/quick-setup/",
+  "attempted_at": "2026-10-30T20:16:47.265325+00:00",
+  "status": 200,
+  "final_url": "https://docs.liara.ir/dbaas/rabbitmq/quick-setup/",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "df6732d3935222d9cf2635dbb0996f17fd45812a7488f77bd04294b771167668",
+  "bytes": 31013,
+  "snapshot": "docs.liara.ir_dbaas_rabbitmq_quick-setup.html",
+  "text": "docs.liara.ir_dbaas_rabbitmq_quick-setup.txt"
+}

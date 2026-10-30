@@ -1,0 +1,12 @@
+{
+  "url": "https://www.aviato.ir/pricing",
+  "attempted_at": "2026-10-30T20:03:15.999533+00:00",
+  "status": 404,
+  "final_url": "https://www.aviato.ir/pricing",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "78ebf9a16e8fd778dd76d0500c455749c1844c179da1e17da131de8a6c5ddecd",
+  "bytes": 14925,
+  "snapshot": "www.aviato.ir_pricing.html",
+  "text": "www.aviato.ir_pricing.txt"
+}

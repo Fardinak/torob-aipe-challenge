@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.arvancloud.ir/fa/dbaas/",
+  "attempted_at": "2026-10-30T20:03:16.199634+00:00",
+  "status": 307,
+  "final_url": "https://docs.arvancloud.ir/fa/dbaas/",
+  "curl_exit": 47,
+  "error": "curl: (47) Maximum (50) redirects followed\n",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "snapshot": "docs.arvancloud.ir_fa_dbaas.html",
+  "text": "docs.arvancloud.ir_fa_dbaas.txt"
+}

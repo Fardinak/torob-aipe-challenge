@@ -1,0 +1,12 @@
+HTTP/2 200 
+set-cookie: docs-lang=fa; Path=/; Expires=Sat, 30 Oct 2027 20:03:40 GMT; Max-Age=31536000
+set-cookie: docs-lang=fa; Path=/; Expires=Sat, 30 Oct 2027 20:03:40 GMT
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding
+link: </docs/_next/static/media/0484562807a97172-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </docs/_next/static/media/8888a3826f4a3af4-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </docs/_next/static/media/b957ea75a84b6ea7-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </docs/_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </docs/_next/static/media/eafabf029ad39a43-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+x-powered-by: Next.js
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Fri, 30 Oct 2026 20:03:40 GMT
+x-envoy-upstream-service-time: 153
+server: istio-envoy
+

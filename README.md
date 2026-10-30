@@ -1,8 +1,8 @@
 # سروربین — VPS and managed database discovery
 
-Persian RTL React + TypeScript discovery application. The reviewed static catalog includes Iranian VPS configurations across a broad provider search and initial Liara managed databases. Browse exact resource configurations, inspect each provider's own tariff and evidence, filter resources/providers/base budgets, and restore the journey through its URL. A separate traffic mode preserves the original ManageIT/IranServer worked scenario; other policies contribute estimates only when supported. Prices are published monthly references, with billing terms, mandatory-charge uncertainty and verification dates visible. No live-stock or complete-bill guarantee is made.
+Persian RTL React + TypeScript discovery application. The reviewed static catalog includes Iranian VPS configurations across a broad provider search and reviewed managed database configurations across five providers and sixteen engine identities. Browse exact resource configurations, inspect each provider's own tariff and evidence, filter resources/providers/base budgets, and restore the journey through its URL. A separate traffic mode preserves the original ManageIT/IranServer worked scenario; other policies contribute estimates only when supported. Prices are published monthly references, with billing terms, mandatory-charge uncertainty and verification dates visible. No live-stock or complete-bill guarantee is made.
 
-See the [VPS acquisition review](research/vps-breadth-review-2026-10-29.md) for search scope, admission decisions, exact overlaps and remaining limitations. Database acquisition and the overall release checklist remain separate from #20.
+See the [VPS acquisition review](research/vps-breadth-review-2026-10-29.md) for search scope, admission decisions, exact overlaps and remaining limitations. See the [database acquisition review](research/database-acquisition-review-2026-10-30.md) for admitted plans, engine applicability, billing variants and unresolved custom/shared families. The overall release checklist remains separate from acquisition.
 
 ## Deployment
 

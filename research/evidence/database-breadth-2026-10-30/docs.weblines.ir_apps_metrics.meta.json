@@ -1,0 +1,12 @@
+{
+  "url": "https://docs.weblines.ir/apps/metrics",
+  "attempted_at": "2026-10-30T20:03:15.998819+00:00",
+  "status": 404,
+  "final_url": "https://docs.weblines.ir/apps/metrics",
+  "curl_exit": 0,
+  "error": "",
+  "sha256": "1e53a5389bee9f558a9c5ea692c72fc89d9e727cc493c64781591abb1233f55d",
+  "bytes": 37881,
+  "snapshot": "docs.weblines.ir_apps_metrics.html",
+  "text": "docs.weblines.ir_apps_metrics.txt"
+}

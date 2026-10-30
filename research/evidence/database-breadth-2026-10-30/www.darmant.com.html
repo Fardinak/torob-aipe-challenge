@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <!-- Primary Meta Tags -->
+    <title>خدمات رایانش ابری دارمانت -ورردپرس-دیتابیس-برنامه کارهای کاربردی بدون نیاز یه نصب و راه اندازی</title>
+    <meta name="title" content="خدمات رایانش ابری دارمانت -ورردپرس-دیتابیس-برنامه کارهای کاربردی بدون نیاز یه نصب و راه اندازی">
+    <meta name="description" content="دارمانت - پلتفرم ابری ایرانی برای راه‌اندازی آسان وردپرس، دیتابیس، CRM، چت‌بات هوشمند، پلتفرم n8n، سرور ترید، نرم‌افزار حسابداری و حضور و غیاب. راه‌اندازی در کمتر از 5 دقیقه بدون نیاز به دانش فنی.">
+    <meta name="keywords" content="دارمانت، هاست ابری ایران، وردپرس ابری، دیتابیس ابری، CRM فارسی، دارمانت CRM، چت‌بات هوشمند، پلتفرم n8n، سرور ترید، نرم‌افزار حسابداری ابری، سیستم حضور و غیاب، خودکارسازی فرآیندها، PaaS ایران، پلتفرم ابری، SaaS ایران، سامانه مودیان، یکپارچه‌سازی، فروشگاه ساز">
+    <meta name="author" content="Darmant Cloud Services">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Persian">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Bing Webmaster Tools Verification -->
+    <meta name="msvalidate.01" content="A04375C8D7B3522FF48A158E5D16D422" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.darmant.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.darmant.com/">
+    <meta property="og:title" content="خدمات رایانش ابری دارمانت -ورردپرس-دیتابیس-برنامه کارهای کاربردی بدون نیاز یه نصب و راه اندازی">
+    <meta property="og:description" content="دارمانت - پلتفرم ابری ایرانی برای راه‌اندازی آسان وردپرس، دیتابیس، CRM، چت‌بات هوشمند، پلتفرم n8n، سرور ترید، نرم‌افزار حسابداری و حضور و غیاب. راه‌اندازی در کمتر از 5 دقیقه بدون نیاز به دانش فنی.">
+    <meta property="og:image" content="https://www.darmant.com/image/logo.png">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="دارمانت">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.darmant.com/">
+    <meta property="twitter:title" content="خدمات رایانش ابری دارمانت -ورردپرس-دیتابیس-برنامه کارهای کاربردی بدون نیاز یه نصب و راه اندازی">
+    <meta property="twitter:description" content="دارمانت - پلتفرم ابری ایرانی برای راه‌اندازی آسان وردپرس، دیتابیس، CRM، چت‌بات هوشمند، پلتفرم n8n، سرور ترید، نرم‌افزار حسابداری و حضور و غیاب. راه‌اندازی در کمتر از 5 دقیقه بدون نیاز به دانش فنی.">
+    <meta property="twitter:image" content="https://www.darmant.com/image/logo.png">
+    
+    <!-- hreflang for language targeting -->
+    <link rel="alternate" hreflang="fa" href="https://www.darmant.com/">
+    <link rel="alternate" hreflang="fa-IR" href="https://www.darmant.com/">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPK6QXBGH7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MPK6QXBGH7');
+      gtag('config', 'AW-17632851951');
+    </script>
+    
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17632851951/JfWMCLb0hLMbEO_v_9dB',
+        'value': 1.0,
+        'currency': 'TRY'
+      });
+    </script>
+    
+    <!-- Favicons - Google requires proper favicon setup -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/icon.png">
+    <link rel="shortcut icon" href="/image/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/image/icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/image/icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileImage" content="/image/icon.png">
+    <meta name="msapplication-TileColor" content="#0c2e8a">
+    <meta name="theme-color" content="#0c2e8a">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  
+  
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/modern-style.css" rel="stylesheet">
+  
+  
+  </head>
+
+<!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "دارمانت",
+  "alternateName": "Darmant Cloud Services",
+  "url": "https://www.darmant.com",
+  "logo": "https://www.darmant.com/image/logo.png",
+  "description": "پلتفرم ابری ایرانی برای راه‌اندازی سریع وردپرس، دیتابیس، CRM و نرم‌افزارهای کسب‌وکار",
+  "sameAs": [
+    "https://www.instagram.com/darmant.cloud/",
+    "https://www.linkedin.com/company/darmant"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": "Persian"
+    },
+    "contactType": "پشتیبانی مشتریان",
+    "availableLanguage": ["fa", "en"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IR"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "دارمانت",
+  "url": "https://www.darmant.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.darmant.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "خدمات ابری",
+  "provider": {
+    "@type": "Organization",
+    "name": "دارمانت"
+  },
+  "areaServed": "IR",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات ابری دارمانت",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "وردپرس ابری",
+          "description": "راه‌اندازی سریع وب‌سایت وردپرسی"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "دیتابیس‌های ابری",
+          "description": "مدیریت پایگاه داده MySQL، PostgreSQL، MongoDB"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "زی بیزینس (Z Business)",
+          "description": "مدیریت مشتریان و افزایش فروش"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "چت‌بات هوشمند",
+          "description": "پاسخگویی خودکار 24/7 با هوش مصنوعی"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "سرور ترید",
+          "description": "سرور مخصوص معاملات و ترید"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "سیستم حضور و غیاب",
+          "description": "مدیریت حضور کارمندان"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "نرم‌افزار حسابداری",
+          "description": "مدیریت مالی و حسابداری"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "پلتفرم n8n",
+          "description": "خودکارسازی فرآیندها"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+       
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.instagram.com/darmant.cloud/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/darmant" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+
+    <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+         <a href="/خانه"><img src="/image/logo.png" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- Products Dropdown -->
+          <li class="dropdown">
+            <a href="#"><span>محصولات</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/چت-بات-هوشمند">چت‌بات هوش مصنوعی <span class="badge-new">جدید!</span></a></li>
+              <li><a href="/وردپرس-ابری">وردپرس ابری</a></li>
+              <li><a href="/دیتابیس-ابری">دیتابیس‌های ابری</a></li>
+              <li><a href="/پلتفرم-n8n">پلتفرم n8n ابری</a></li>
+              <li><a href="/سیستم-crm">زی بیزینس <span class="badge-soon">جدید</span></a></li>
+              <li><a href="/سرور-ترید">سرور ترید</a></li>
+              <li><a href="/حضور-غیاب">نرم‌افزار حضور و غیاب <span class="badge-soon">به زودی</span></a></li>
+              <li><a href="/حسابداری">نرم‌افزار حسابداری</a></li>
+            </ul>
+          </li>
+          
+          <!-- Regular Menu Items -->
+          <li><a class="nav-link" href="/ورود">ورود </a></li>
+          <li><a class="nav-link" href="/عضویت">عضویت</a></li>
+          <li><a class="nav-link" href="/آموزش">آموزش</a></li>
+          <li><a class="nav-link" href="/تعرفه-ها">تعرفه ها</a></li>
+          <li><a class="nav-link" href="/درباره-ما">درباره ما</a></li>
+          <li><a class="nav-link" href="/سرویس-ها">سرویس ها</a></li>
+          <li><a class="nav-link active" href="/خانه">خانه</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+      
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2> ! یک راهکار آسون   <span><br>کمتر از 5 دقیقه یک وردپرس یا دیتابیس یا برنامه کاربردی </span><br> بساز</h2>
+      <div>
+        <a href="/چطوری-کار-می-کنه" class="btn-get-started scrollto">چطوری کار میکنه؟</a>
+        <a href="#portfolio" class="btn-projects scrollto">برای کیا خوبه؟</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/4.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/5.jpg');"></div>
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <!-- ======= Products Quick Access Section ======= -->
+  <section id="products-quick" class="py-5 bg-white" style="margin-top: -50px; position: relative; z-index: 10;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="text-4xl font-bold mb-3" style="color: #0c2e8a;">محصولات ما</h1>
+        <p class="text-lg text-gray-600">تمام خدمات ابری دارمانت در یک نگاه</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- WordPress Cloud -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+          <a href="/وردپرس-ابری" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);">
+                <i class="bi bi-wordpress" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">وردپرس ابری</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">راه‌اندازی سریع وب‌سایت</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Cloud Databases -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+          <a href="/دیتابیس-ابری" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(240, 147, 251, 0.3);">
+                <i class="bi bi-database" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">دیتابیس ابری</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">MySQL, PostgreSQL, MongoDB</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- CRM System -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <a href="/سیستم-crm" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);">
+                <i class="bi bi-people" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">زی بیزینس</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">سی‌ام مکالمه‌ای و چندکاناله</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+          <a href="/چت-بات-هوشمند" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(250, 112, 154, 0.3);">
+                <i class="bi bi-robot" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">چت‌بات هوشمند</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">پاسخگویی خودکار 24/7</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Trading Server -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+          <a href="/سرور-ترید" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(48, 207, 208, 0.3);">
+                <i class="bi bi-graph-up-arrow" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">سرور ترید</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">سرور مخصوص معاملات</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Attendance Software -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+          <a href="/حضور-غیاب" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(168, 237, 234, 0.3);">
+                <i class="bi bi-clock-history" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">حضور و غیاب</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">سیستم مدیریت حضور</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Accounting Software -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+          <a href="/حسابداری" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(252, 182, 159, 0.3);">
+                <i class="bi bi-calculator" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">نرم‌افزار حسابداری</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">مدیریت مالی و حسابداری</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- n8n Platform -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+          <a href="/پلتفرم-n8n" class="product-card-link" style="text-decoration: none; color: inherit;">
+            <div class="product-card text-center p-4 h-100" style="background: #fff; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent;">
+              <div class="product-icon mb-3" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);">
+                <i class="bi bi-diagram-3" style="font-size: 2.5rem; color: white;"></i>
+              </div>
+              <h4 class="product-title mb-2" style="font-size: 1.1rem; font-weight: bold; color: #0c2e8a;">پلتفرم n8n</h4>
+              <p class="product-desc mb-0" style="font-size: 0.9rem; color: #666;">خودکارسازی فرآیندها</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+      border-color: #0c2e8a !important;
+    }
+    .product-card-link:hover .product-title {
+      color: #0c2e8a !important;
+    }
+    .product-icon {
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover .product-icon {
+      transform: scale(1.1);
+    }
+  </style>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <video  controls width="400px" height="400px !important" class="col-lg-6" data-aos="fade-right" data-aos-delay="100">  
+            <source src="video/darmant.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="col-lg-6 content">
+            <h2>کسب‌وکار دیجیتال خود را در چند دقیقه راه‌اندازی کنید</h2>
+            <h3>ما یک پلتفرم نوآورانه هستیم که به شما امکان می‌دهد بدون نیاز به دانش فنی، نرم‌افزارهای موردنیاز کسب‌وکار خود را تنها با چند کلیک اجرا کنید. از راه‌اندازی سریع وردپرس و فروشگاه آنلاین تا دیتابیس و سرور ترید , CRM </h3>
+        
+            <ul>
+                <h3>چرا ما را انتخاب کنید؟</h3>
+                <li><i class="bi bi-check-circle"></i> راه‌اندازی سریع : در کمتر از ۵ دقیقه سرویس موردنظر خود را اجرا کنید </li>
+                <li><i class="bi bi-check-circle"></i> بدون نیاز به دانش فنی : همه چیز از قبل تنظیم شده، فقط کافی است انتخاب کنید </li>
+                <li><i class="bi bi-check-circle"></i> زیرساخت ابری پایدار : امنیت و پایداری بالا برای اطمینان از عملکرد بی‌نقص سرویس شما </li>
+                <li><i class="bi bi-check-circle"></i> پشتیبانی حرفه‌ای : تیم ما همیشه آماده است تا به شما کمک کند </li>
+            </ul>
+        </div>
+        
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+          <div class="section-header">
+              <h2>سرویس‌های  ما</h2>
+              <p>سرویس‌های ابری ما به شما امکان می‌دهند بدون نیاز به دانش فنی، به سرعت زیرساخت دیجیتال موردنیاز خود را راه‌اندازی کنید</p>
+          </div>
+          <div class="row gy-4">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="box">
+                      <div class="icon"><i class="bi bi-cloud"></i></div>
+                      <h4 class="title"><a href=""> وردپرس با قالبهای اورجیتال و افزونه های کاربردی</a></h4>
+                      <p class="description">راه‌اندازی سریع وب‌سایت وردپرسی با سرورهای پرسرعت و امنیت بالا بدون نیاز به پیکربندی پیچیده</p>
+                  </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="box">
+                      <div class="icon"><i class="bi bi-database"></i></div>
+                      <h4 class="title"><a href="">مدیریت دیتابیس ابری</a></h4>
+                      <p class="description" style="direction: rtl;">ارائه سرویس‌های پایگاه داده ابری با پشتیبانی از MySQL، PostgreSQL، و MongoDB با امنیت و مقیاس‌پذیری بالا</p>
+                  </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="box">
+                      <div class="icon"><i class="bi bi-shop"></i></div>
+                      <h4 class="title"><a href="">راه‌اندازی فروشگاه آنلاین</a></h4>
+                      <p class="description">ایجاد فروشگاه اینترنتی با  امکانات پیشرفته برای فروش محصولات و خدمات</p>
+                  </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="box">
+                      <div class="icon"><i class="bi bi-cloud-check"></i></div>
+                      <h4 class="title"><a href="">سرویس‌های ابری سفارشی</a></h4>
+                      <p class="description">ایجاد و مدیریت راهکارهای ابری اختصاصی برای کسب‌وکار شما APIها</p>
+                  </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-cloud-check"></i></div>
+                    <h4 class="title"><a href="">سرور مخصوص ترید</a></h4>
+                    <p class="description">یک سرور با امکانات مرورگر فایرفاکس مخصوص ترید بدون تنطیمات پیچیده</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="box">
+                  <div class="icon"><i class="bi bi-pc-display"></i></div>
+                  <h4 class="title"><a href="">نرم‌افزارهای تحت وب کاربردی</a></h4>
+                  <p class="description">به راحتی میتوانید یک نرافزار مقیاس پزیر را راه اندازی کنید</p>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section><!-- End Services Section -->
+  
+
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2> برای چه کسانی مناسب است</h2>
+          <div class="row gy-4">
+            <div class="col-lg-12">
+                <p>این سرویس برای تمام افرادی که می‌خواهند بدون دغدغه‌های فنی و در کمترین زمان ممکن یک کسب‌وکار دیجیتال راه‌اندازی کنند، ایده‌آل است</p><br>
+                <ul>
+                    <i class="bi bi-check-circle" ></i> <strong>کارآفرینان و استارتاپ‌ها</strong><br> <p style="direction: rtl;">اگر می‌خواهید بدون نیاز به دانش برنامه‌نویسی، یک وب‌سایت، فروشگاه آنلاین یا CRM راه‌اندازی کنید</p> 
+                    <i class="bi bi-check-circle"></i> <strong>کسب‌وکارهای کوچک و متوسط</strong><br> <p>برای شرکت‌هایی که به دنبال راهکارهای ابری مقیاس‌پذیر، پایدار و ایمن هستند</p> 
+                    <i class="bi bi-check-circle"></i> <strong>فریلنسرها و توسعه‌دهندگان</strong><br><p>اگر به دنبال یک محیط آماده برای میزبانی پروژه‌های خود هستید.</p>  
+                    <i class="bi bi-check-circle"></i> <strong>مدیران فروش و بازاریابی</strong><br> <p style="direction: rtl;">برای راه‌اندازی سریع سیستم‌های مدیریت ارتباط با مشتری (CRM) و افزایش فروش آنلاین</p> 
+                   <i class="bi bi-check-circle"></i> <strong>آژانس‌های دیجیتال مارکتینگ</strong><br><p>برای ارائه خدمات سریع و حرفه‌ای به مشتریان خود بدون نیاز به زیرساخت پیچیده</p> 
+                   <i class="bi bi-check-circle"></i> <strong>تریدرها</strong><br><p>یک سرور آماده قابل درسترسی سریع با مرورگر  به تمام وب سایت ترید و سرافی ها</p> 
+                </ul>
+            </div>
+        </div>
+        </div>
+
+<!--         <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="راه‌اندازی وردپرس ابری دارمانت در یک کلیک">
+            <div class="portfolio-info">
+              <h4>one-click wordpress</h4>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="راه‌اندازی وردپرس ابری"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="راه‌اندازی دیتابیس ابری دارمانت در یک کلیک">
+            <div class="portfolio-info">
+              <h4>one-click database</h4>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="راه‌اندازی دیتابیس ابری"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="راه‌اندازی نرم‌افزارهای کاربردی دارمانت در یک کلیک">
+            <div class="portfolio-info">
+              <h4>one-click apps</h4>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="راه‌اندازی نرم‌افزارهای کاربردی"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+            <h1 class="cta-title" style="direction: rtl;">سرویس های ما خیلی خوب و کارآمده ما سرویس تست و یا آزمایشی نداریم ...! </h1>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+    <section id="price">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>اطلاعات قیمت</h2>
+          <p>ما در این بخش قیمت‌های مختلف محصولات خود را قرار داده‌ایم. برای هر سوالی، می‌توانید با ما تماس بگیرید</p>
+        </div>
+    
+        <div class="row price-info">
+    
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light">
+              <div class="card-body text-center">
+                <i class="bi bi-wallet" style="font-size: 40px; color: #ff5733;"></i>
+                <h3 class="card-title mt-3">بسته حرفه‌ای ۹۰۰,۰۰۰ تومان</h3>
+                <p class="card-text">قیمت: ۱۰,۸۰۰,۰۰۰ تومان</p>
+                <ul class="list-unstyled">
+                  <li>اجرای نا محدود پلتفرم</li>
+                  <li>اتصال دامنه </li>
+                  <li>فضای نامحدود </li>
+                  <li>ترافیک نامحدود </li>
+                  <li> بک آپ روزانه </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light">
+              <div class="card-body text-center">
+                <i class="bi bi-wallet" style="font-size: 40px; color: #ff5733;"></i>
+                <h3 class="card-title mt-3">بسته استاندارد ۳۷۵,۰۰۰ تومان</h3>
+                <p class="card-text">قیمت سالانه: ۴,۵۰۰,۰۰۰ تومان</p>
+                <ul class="list-unstyled">
+                  <li>اجرای سه پلتفرم</li>
+                  <li>اتصال دامنه </li>
+                  <li>فضای نامحدود </li>
+                  <li>ترافیک نامحدود </li>
+                  <li>بدون بک آپ </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light">
+              <div class="card-body text-center">
+                <i class="bi bi-wallet" style="font-size: 40px; color: #ff5733;"></i>
+                <h3 class="card-title mt-3">بسته شروع ۸۰,۰۰۰ تومان</h3>
+                <p class="card-text">قیمت سالانه: ۹۶۰,۰۰۰ تومان</p>
+                <ul class="list-unstyled">
+                  <li>اجرای یک پلتفرم</li>
+                  <li>اتصال دامنه </li>
+                  <li>فضای نامحدود </li>
+                  <li>ترافیک نامحدود </li>
+                  <li>بدون بک آپ </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section><!-- End Price Section -->
+    
+    
+
+
+
+    <!-- ======= Contact Section ======= -->
+
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>  تماس و پشتیبانی </h2>
+          <p> هفت روز هفته 24 ساهت از شما پشتیبانی میکنیم</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-envelope"></i>
+              <h3>تماس با ایمیل</h3>
+              <address><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b3b5b0b0afb2b480a4a1b2ada1aeb4eea3afad">[email&#160;protected]</a></address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-telegram"></i>
+              <h3>پشتیبانی با تلگرام</h3>
+              <p><a href="https://t.me/darmant_cloud" target="_blank" >پشتیبانی با تلگرام</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-ticket"></i>
+              <h3>پشتیبانی با تیکت</h3>
+              <p><a href="/cdn-cgi/l/email-protection#a2d1d7d2d2cdd0d6e2c6c3d0cfc3ccd68cc1cdcf">ثبت تیکت</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-4 text-center text-md-right" style="margin-top: 10px;">
+          <div class="footer-links">
+            <a href="https://www.darmant.com/policy" style="color: #0c2e8a; text-decoration: none; display: inline-block; margin: 0 10px;">قوانین</a>
+            <a href="/آموزش" style="color: #0c2e8a; text-decoration: none; display: inline-block; margin: 0 10px;">آموزش</a>
+            <a href="/تعرفه-ها" style="color: #0c2e8a; text-decoration: none; display: inline-block; margin: 0 10px;">قیمت</a>
+            <a href="/بلاگ" style="color: #0c2e8a; text-decoration: none; display: inline-block; margin: 0 10px;">بلاگ</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="copyright">
+            خدمات ابری دارمانت
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-left">
+          <div class="enamad-logo" style="display: inline-block;">
+            <div style="margin-bottom: 5px; color: #0c2e8a; font-size: 14px; font-weight: bold;">نماد اعتماد</div>
+            <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=666878&Code=lImvs6l7CECWmhRuzLVOK8fndKVRPq8h'>
+              <img 
+                referrerpolicy='origin' 
+                src='https://trustseal.enamad.ir/logo.aspx?id=666878&Code=lImvs6l7CECWmhRuzLVOK8fndKVRPq8h' 
+                alt='نماد اعتماد الکترونیکی' 
+                style='cursor:pointer; max-width: 100px; height: auto; display: block;' 
+                code='lImvs6l7CECWmhRuzLVOK8fndKVRPq8h'
+                loading='lazy'
+                decoding='async'
+                fetchpriority='low'
+                onerror='this.style.display="none";'
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <div class="credits">
+            <div class="copyright">
+              &copy; Copyright <strong>Darmant</strong>. All Rights Reserved
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- AI Chatbot Widget -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    (function() {
+      var script = document.createElement('script');
+      script.src = 'https://apiaichatbot.darmant.com/widget.js';
+      script.setAttribute('data-api-key', 'sk_lN_mtUzSEmVDRnQh_GyWWvgYxoaaXbp59z3JG2iV8ZA');
+      script.setAttribute('data-api-url', 'https://apiaichatbot.darmant.com');
+      document.head.appendChild(script);
+    })();
+  </script>
+  <!-- End AI Chatbot Widget -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

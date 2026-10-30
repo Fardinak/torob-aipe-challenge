@@ -1,0 +1,359 @@
+Elasticsearch مدیریت‌شده | جست‌وجوی متن کامل و تحلیل لاگ | سکو کلود
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+از git push تا آدرس HTTPS
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+۱۲ انجین، یک دستور
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+باکت‌های سازگار با S3
+توابع بدون سرور سکو کلود (FaaS)
+کد بنویس، سروری در کار نیست
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+همه‌ی محیط‌های اجرا
+←
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+همه‌ی دیتابیس‌ها
+←
+وبلاگ
+قیمت‌ها
+مستندات
+ورود یا ثبت نام
+محصولات
+استقرار اپلیکیشن سکو کلود (PaaS)
+دیتابیس مدیریت‌شده سکو کلود (DBaaS)
+فضای ذخیره‌سازی ابری سکو کلود (Object Storage)
+توابع بدون سرور سکو کلود (FaaS)
+رانتایم‌ها
+Node.js
+Next.js
+Bun
+Deno
+Nuxt
+SvelteKit
+Astro
+React
+Vue.js
+Angular
+Hono
+Python
+Django
+Flask
+Go
+PHP
+Laravel
+.NET
+سایت استاتیک
+Docker
+دیتابیس‌ها
+PostgreSQL
+Redis
+MongoDB
+MySQL
+MariaDB
+Valkey
+Memcached
+RabbitMQ
+Kafka
+Qdrant
+Elasticsearch
+Meilisearch
+وبلاگ
+قیمت‌ها
+مستندات
+سکو کلود
+/
+دیتابیس‌ها
+/
+Elasticsearch
+انجین جست‌وجو و تحلیل
+Elasticsearch
+مدیریت‌شده برای جست‌وجو و تحلیل
+جست‌وجوی متن کامل با امتیازدهی ارتباط،
+aggregation
+برای گزارش و تحلیل لاگ؛ با
+REST API
+روی پورت
+9200
+.
+Elasticsearch
+بسازید
+راهنمای کامل
+نسخه‌ها
+9.4
+(پیش‌فرض) و
+9.3
+API
+REST
+روی
+9200
+احراز هویت
+کاربر
+elastic
+و رمز
+کاربرد
+جست‌وجوی متن، لاگ، تحلیل
+در این صفحه
+معرفی
+از ساخت تا اتصال
+ساخت نود
+تنظیمات
+اتصال از اپ
+خطاهای رایج
+پرسش‌های متداول
+جست‌وجو و تحلیل روی یک انجین
+Elasticsearch
+متن را تحلیل و ایندکس می‌کند و نتیجه‌ها را بر اساس ارتباط مرتب می‌کند. با
+aggregation
+می‌توانید داده را گروه‌بندی و آمار بگیرید؛ برای جست‌وجوی فروشگاه، تحلیل لاگ و داشبورد مناسب است.
+برای متن فارسی از
+analyzer
+مناسب استفاده کنید تا نرمال‌سازی حروف و نیم‌فاصله درست انجام شود. اگر فقط جست‌وجوی سریع با تحمل غلط تایپی می‌خواهید،
+Meilisearch
+ساده‌تر است.
+مناسب برای
+جست‌وجوی فروشگاه با فیلتر و
+facet
+تحلیل و جست‌وجوی لاگ
+داشبورد و گزارش با
+aggregation
+جست‌وجوی اسناد و مقاله‌ها
+از ساخت تا اتصال
+ساخت
+نود با نسخه‌ی پیش‌فرض
+9.4
+ساخته می‌شود.
+--type elasticsearch
+اطلاعات اتصال
+میزبان، کاربر و رمز را بگیرید و به اپ بدهید.
+env set ELASTICSEARCH_HOST=…
+استفاده
+ایندکس بسازید و از
+REST API
+جست‌وجو کنید.
+:9200
+خروجی ساخت سرویس
+sakoo db
+$
+sakoo db create --name search --type elasticsearch
+✔ Provisioning search · db_4n8x2p
+$
+sakoo db credentials db_4n8x2p
+$
+sakoo env set ELASTICSEARCH_HOST=… ELASTICSEARCH_PASSWORD=•••• --app my-api
+ساخت نود
+با
+CLI
+یا از کنسول.
+terminal
+کپی
+sakoo
+db create
+--name
+search
+--type
+elasticsearch
+تنظیمات
+متغیرهایی که تعریف می‌کنید
+اپ و سرویس را در یک پروژه بگذارید، مقدارها را از
+sakoo db credentials
+بردارید و با
+sakoo env set
+تعریف کنید. نام متغیرها دلخواه است.
+متغیر پیشنهادی
+مقدار
+ELASTICSEARCH_HOST
+آدرس داخلی (پورت
+9200
+)
+ELASTICSEARCH_USER
+elastic
+ELASTICSEARCH_PASSWORD
+رمز تولیدشده
+اتصال از اپ
+کلاینت رسمی
+Elastic
+را با احراز هویت پایه وصل کنید.
+Node.js
+Python
+کپی
+import
+{ Client }
+from
+"@elastic/elasticsearch"
+;
+const
+es =
+new
+Client({
+node:
+`http://${process.env.ELASTICSEARCH_HOST}:9200`
+,
+auth: {
+username: process.env.ELASTICSEARCH_USER,
+password: process.env.ELASTICSEARCH_PASSWORD,
+},
+});
+import
+os
+from
+elasticsearch
+import
+Elasticsearch
+es = Elasticsearch(
+f
+'http://{os.environ["ELASTICSEARCH_HOST"]}:9200'
+,
+basic_auth=(os.environ[
+"ELASTICSEARCH_USER"
+], os.environ[
+"ELASTICSEARCH_PASSWORD"
+]),
+)
+رانتایم‌هایی که معمولاً به آن وصل می‌شوند
+Node.js
+Python
+Laravel
+خطاهای رایج
+401 Unauthorized
+علت
+درخواست بدون نام کاربری و رمز ارسال شده است.
+راه‌حل
+ELASTICSEARCH_USER
+و
+ELASTICSEARCH_PASSWORD
+را به کلاینت بدهید.
+اتصال روی پورت اشتباه
+علت
+کلاینت به پورتی غیر از
+9200
+وصل می‌شود.
+راه‌حل
+REST API
+روی
+9200
+است.
+خطای حافظه یا
+heap
+علت
+ایندکس‌ها و کوئری‌ها از حافظه‌ی انتخابی بیشتر شده‌اند.
+راه‌حل
+با
+sakoo db resize
+حافظه را افزایش دهید.
+پرسش‌های متداول
+Elasticsearch
+یا
+Meilisearch
+؟
+برای تحلیل،
+aggregation
+و کوئری پیچیده
+Elasticsearch
+؛ برای جست‌وجوی فوری سایت با تنظیم کم
+Meilisearch
+.
+Kibana
+دارید؟
+می‌توانید
+Kibana
+را به‌عنوان اپ
+Docker
+کنار آن اجرا کنید.
+برای فارسی چه
+analyzer
+ای؟
+analyzer
+داخلی
+persian
+نقطه‌ی شروع خوبی است و نرمال‌سازی حروف عربی و فارسی را انجام می‌دهد.
+جزئیات بیشتر در
+راهنمای
+Elasticsearch
+در مستندات
+و
+مرجع CLI
+.
+سرویس‌های نزدیک
+Meilisearch
+انجین جست‌وجو
+جست‌وجوی هنگام تایپ برای سایت و فروشگاه، با تحمل غلط تایپی و فیلتر؛ بدون تنظیم
+analyzer
+و ایندکس پیچیده.
+Qdrant
+دیتابیس برداری
+embedding
+ها را ذخیره و نزدیک‌ترین‌ها را در میلی‌ثانیه پیدا کنید؛ با فیلتر روی متادیتا، از طریق
+REST
+یا
+gRPC
+.
+Kafka
+استریم رویداد
+Kafka 4
+با احراز هویت
+SASL
+، کمتر از دو دقیقه آماده است. تاپیک‌ها روی دیسک ماندگارند و مصرف‌کننده‌ها می‌توانند تاریخچه را دوباره بخوانند.
+سریع‌ترین مسیر
+از کد تا انتشار.
+ابتدا ابزار خط فرمان را نصب کنید، سپس همین‌جا امتحان کنید.
+(بنویسید، یا یکی از پیشنهادهای پایین ترمینال را بزنید)
+$
+npm i -g @sakoocloud/cli
+~/projects/my-app
+❯
+امتحان کنید
+help
+sakoo deploy
+sakoo db create --type redis
+sakoo apps list
+شروع با اعتبار هدیه
+زیرساخت ابری برای توسعه‌دهنده‌های ایرانی.
+محصولات
+استقرار اپ (PaaS)
+دیتابیس مدیریت‌شده
+فضای ذخیره‌سازی
+توابع بدون سرور
+منابع
+همه محصولات
+وبلاگ
+توافق‌نامه سطح خدمات
+مستندات
+قیمت‌ها
+پشتیبانی
+اجتماعی
+GitHub
+تلگرام
+© ۱۴۰۵ سکو کلود
+ساماندهی

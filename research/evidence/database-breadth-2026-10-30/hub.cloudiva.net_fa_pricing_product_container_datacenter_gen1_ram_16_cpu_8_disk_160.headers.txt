@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Fri, 30 Oct 2026 20:04:47 GMT
+content-type: application/json
+content-length: 170
+server: cloudflare
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+vary: Origin, Cookie
+content-language: fa
+referrer-policy: same-origin
+referrer-policy: strict-origin-when-cross-origin
+cross-origin-opener-policy: same-origin
+x-frame-options: sameorigin
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+ch-powered-by: Chabokan (chabokan.net)
+ch-request-time: 0.067
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=erLQkWues8Of8%2B7t10ZhIRL3HJmlw1kQ5nw3S%2BdxSrplYF%2BLMAdosLZsBRr71Z7a%2FMXlBaAbAAvnjVB3x4f11RjJOIDJNBF06f5dcBn1LkLaJUEZxbd%2FAU43uLF0d3xzAkqv"}]}
+cf-ray: a52d07f16d3714e2-FRA
+alt-svc: h3=":443"; ma=86400
+

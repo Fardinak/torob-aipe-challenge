@@ -283,7 +283,8 @@ function Offer({
           </span>
           <span>
             <strong>
-              {plan.evidence.facts.cpu_count === "verified"
+              {plan.evidence.facts.cpu_count === "verified" &&
+              plan.cpu_count !== null
                 ? number(plan.cpu_count)
                 : "نامشخص"}
             </strong>{" "}
@@ -311,7 +312,7 @@ function Offer({
           </strong>
           <span>
             {plan.advertised_monthly_toman === null && plan.published_tariff
-              ? `${plan.published_tariff.currency === "USD" ? "دلار آمریکا" : "تومان"} / ${{ hour: "ساعت", day: "روز", month: "ماه" }[plan.published_tariff.basis]}`
+              ? `${plan.published_tariff.currency === "USD" ? "دلار آمریکا" : "تومان"} / ${{ hour: "ساعت", day: "روز", month: "ماه", quarter: "سه ماه", "half-year": "شش ماه", year: "سال" }[plan.published_tariff.basis]}`
               : "تومان / ماه"}
           </span>
           <small>{plan.billing_display}</small>
