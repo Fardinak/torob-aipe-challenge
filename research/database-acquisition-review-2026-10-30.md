@@ -20,7 +20,7 @@ All admitted rows have source-specific numeric prices, configuration applicabili
 
 The [current DBaaS overview](https://docs.liara.ir/dbaas/about/) lists MariaDB, MySQL, PostgreSQL, SQL Server, MongoDB, Redis, Elasticsearch, RabbitMQ and ClickHouse. Each engine's `/quick-setup/` explicitly selects that engine followed by hardware and software/feature packages; these links establish applicability rather than assuming that a generic table covers every logo. Every engine's `/choose-version/` was retrieved and its listed numeric versions retained as provider statements, without runtime verification. Setup/version snapshots are named `docs.liara.ir_dbaas_<engine>_*.html` in the evidence directory.
 
-The [hardware guide](https://docs.liara.ir/dbaas/details/plans/hardware-plans/) specifies all seven sizes. The [live tariff](https://liara.ir/pricing/) initially renders Base; its referenced `2818-6e1d1405ad250e35.js` supplies all three package amounts and the addition function used by the page. Hardware price plus selected package is the published monthly and hourly display, rather than a conversion between hours and months. `liara-reviewed-price-inventory.json` transcribes those literals. Base monthly totals are 750000, 1300000, 2300000, 4125000, 7250000, 12600000 and 22000000 toman. Silver/Gold preserve the same page's distinct tariffs and per-size backup capacities. The page provides per-size backup quotas while the [package guide](https://docs.liara.ir/dbaas/details/plans/software-plans/) gives generic quotas; the catalog uses the more specific per-size price-page values and retains both sources.
+The [hardware guide](https://docs.liara.ir/dbaas/details/plans/hardware-plans/) specifies all seven sizes. The [live tariff](https://liara.ir/pricing/) initially renders Base; its referenced `2818-6e1d1405ad250e35.js` supplies all three package amounts and the addition function used by the page. Hardware price plus selected package is the published monthly and hourly display, rather than a conversion between hours and months. `liara-reviewed-price-inventory.json` transcribes those literals. Base monthly totals are 750000, 1300000, 2300000, 4125000, 7250000, 12600000 and 22000000 toman. Silver/Gold preserve the same page's distinct tariffs and per-size backup capacity claims, with conflicting package-guide claims disclosed. The page provides per-size backup quotas while the [package guide](https://docs.liara.ir/dbaas/details/plans/software-plans/) gives generic 45/155 GB quotas. The catalog retains both claims and marks the 108 non-Earth Silver/Gold backup facts conflicting rather than promising the larger capacity without provider clarification. Earth’s 45/155 GB values agree.
 
 Monitoring history beyond setup qualifies the managed boundary. No blanket automatic patch/update promise is invented. The PostgreSQL [backup guide](https://docs.liara.ir/dbaas/postgresql/how-tos/create-backup/) was rechecked: its generic daily backup claim conflicts with Base's no-backup package. This remains a visible conflict for Base PostgreSQL. For other Base engines, backup inclusion is unresolved and the package restriction is explicit. Silver/Gold package claims are retained without extrapolating PITR or an engine-specific operation absent from documentation. Node topology and database location remain unknown; IaaS location/IP/traffic terms are not applied to DBaaS.
 
@@ -49,3 +49,17 @@ Custom Chabokan resource domains/orderability, Arvan custom disk/node/region mat
 ## Validation
 
 Use catalog hash/schema validation, the existing `compare` seam and representative production-build desktop/mobile journeys. The added behavioral checks cover unknown CPU, native long-period tariffs outside monthly rankings, engine-specific version eligibility, independent same-engine price ordering and Redis backup differences. Existing search/restoration/handoff journeys now select exact known resource/price combinations rather than assuming the old four-offer sample. Executed at the production base path `/torob-aipe-challenge/`: type checking, catalog/hash validation and the production build passed; 42 unit tests and 17 desktop/mobile journeys passed, with three existing intentional mobile skips. All 1173 retained artifact hashes also verified. No synthetic catalog data was added. Integrated deployed verification remains #22.
+
+## Two-axis review
+
+Standards review found one violation of the maintenance history contract: the
+failed direct Arvan tariff retrieval was absent from offer attempts. Each affected
+offer now retains that failed content-verification attempt and its interstitial
+source before the successful web fallback, leaving final facts restored.
+
+Spec review found two issues: the unresolved custom/shared-family acquisition
+blocks completion, and the Liara Silver/Gold backup quota disagreement needed
+explicit conflicting status. The latter is fixed with both claims retained in
+108 affected offers. The former remains an explicit human checkpoint; no
+approval or ticket completion is inferred. No additional code correctness or
+standards findings were reported.
