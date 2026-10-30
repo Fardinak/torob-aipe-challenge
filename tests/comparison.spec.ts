@@ -46,8 +46,7 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
   await expect(configurations).toHaveCount(6);
   await expect(offers).toContainText("منیجیت");
   const filteredURL = page.url();
-  await page
-    .getByRole("navigation", { name: "کاتالوگ ارائه‌دهندگان" })
+  await offers
     .getByRole("link", { name: "کاتالوگ منیجیت" })
     .click();
   await expect(
@@ -208,7 +207,7 @@ test("browse managed databases, choose engine/version and inspect reviewed servi
   page,
 }) => {
   test.skip(test.info().project.name === "mobile");
-  await page.goto("./");
+  await page.goto("./?view=results");
   await page.getByLabel("دسته خدمات").selectOption("database");
   await expect(
     page.getByLabel("خروجی ماهانه (GB)", { exact: true }),
@@ -253,7 +252,7 @@ test("search, recover and restore the same discovery detail with browser navigat
   page,
   isMobile,
 }) => {
-  await page.goto("./");
+  await page.goto("./?view=results");
   const search = page.getByLabel("جستجوی محصول، دسته یا موتور");
   await expect(page.locator(".configuration")).not.toHaveCount(0);
   if (isMobile) {
@@ -322,13 +321,17 @@ test("search, recover and restore the same discovery detail with browser navigat
   ).toBeVisible();
   await expect(page.locator(".configuration-list")).toContainText("PostgreSQL");
   await expect(page.locator(".configuration-list")).toContainText("Redis");
-  await expect(page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first()).toContainText(
-    "۴٬۱۲۵٬۰۰۰",
-  );
-  await expect(page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first()).toContainText(
-    "تعارض شواهد",
-  );
-  await page.locator(".configuration").filter({ hasText: "Redis" }).last().click();
+  await expect(
+    page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first(),
+  ).toContainText("۴٬۱۲۵٬۰۰۰");
+  await expect(
+    page.locator(".configuration").filter({ hasText: "PostgreSQL" }).first(),
+  ).toContainText("تعارض شواهد");
+  await page
+    .locator(".configuration")
+    .filter({ hasText: "Redis" })
+    .last()
+    .click();
   await page.reload();
   await expect(page.getByRole("article")).toContainText("Redis");
   await expect(page.getByRole("article")).toContainText("هزینه نهایی نامشخص");
@@ -613,4 +616,31 @@ test("inspect a sourced exact VPS overlap and download its published evidence", 
   await page.getByLabel("سقف قیمت پایه ماهانه (تومان)").fill("1000000");
   if (isMobile) await page.getByRole("button", { name: "نمایش نتایج" }).click();
   await expect(page.locator(".configuration")).toHaveCount(0);
+});
+
+test("search homepage opens results and browser Back restores home", async ({
+  page,
+}) => {
+  await page.goto("./");
+  await expect(
+    page.getByRole("heading", {
+      name: "زیرساخت را پیدا کن، پیشنهادها را بسنج.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("navigation", { name: "کاتالوگ ارائه‌دهندگان" }),
+  ).toHaveCount(0);
+  await page.getByLabel("جستجوی محصول، دسته یا موتور").fill("PostgreSQL");
+  await page.getByRole("button", { name: "جستجو", exact: true }).click();
+  await expect(page.locator(".configuration")).toHaveCount(2);
+  await page.reload();
+  await expect(page.locator(".configuration")).toHaveCount(2);
+  await page.goBack();
+  await expect(
+    page.getByRole("heading", {
+      name: "زیرساخت را پیدا کن، پیشنهادها را بسنج.",
+    }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "سرور مجازی", exact: true }).click();
+  await expect(page.locator(".configuration")).not.toHaveCount(0);
 });

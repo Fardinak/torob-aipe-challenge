@@ -18,6 +18,7 @@ const requestKeys = [
   "priceMode",
 ] as const;
 function readLocation(): {
+  home: boolean;
   request: Request;
   selectedId: string | null;
   catalogId: string | null;
@@ -28,6 +29,7 @@ function readLocation(): {
     if (params.has(key)) request[key] = params.get(key)!;
   // Invalid enum values do not become a different comparison silently.
   return {
+    home: params.size === 0,
     request: request as Request,
     selectedId: params.get("detail"),
     catalogId: params.get("catalog"),
@@ -66,6 +68,7 @@ export function useDiscoveryState() {
     );
     const url = new URL(location.href);
     url.search = "";
+    url.searchParams.set("view", "results");
     if (state.catalogId) url.searchParams.set("catalog", state.catalogId);
     for (const key of requestKeys) {
       const value = request[key];
@@ -85,7 +88,7 @@ export function useDiscoveryState() {
       "",
       url,
     );
-    setState({ request, selectedId, catalogId: state.catalogId });
+    setState({ home: false, request, selectedId, catalogId: state.catalogId });
   };
   return {
     ...state,

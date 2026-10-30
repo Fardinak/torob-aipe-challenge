@@ -553,12 +553,6 @@ select {
   }
 }
 
-.provider-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 24px;
-}
 .provider-profile {
   margin-bottom: 24px;
 }
@@ -610,4 +604,57 @@ select {
 }
 .handoff-controls [role="status"] {
   flex-basis: 100%;
+}
+
+.search-home {
+  max-width: 680px;
+  margin: 12vh auto;
+  padding: 24px;
+  text-align: center;
+}
+.search-home .brand {
+  font-size: 3rem;
+  color: #096c60;
+}
+.search-home h1 {
+  margin: 16px 0;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+.search-home p,
+.search-home small {
+  color: #5b6973;
+}
+.search-home form {
+  margin: 28px 0;
+  text-align: right;
+}
+.home-search-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.home-search-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #bcc9d1;
+  border-radius: 8px;
+  font: inherit;
+}
+.home-search-box button {
+  background: #096c60;
+  color: white;
+}
+.home-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.home-categories button {
+  padding: 18px 24px;
+}
+a.brand {
+  text-decoration: none;
 }

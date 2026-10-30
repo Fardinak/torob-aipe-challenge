@@ -596,9 +596,54 @@ function Configuration({
   );
 }
 
+function SearchHome({ onSearch }: { onSearch: (request: Request) => void }) {
+  const [query, setQuery] = useState("");
+  return (
+    <main className="search-home">
+      <span className="brand">≋ سروربین</span>
+      <h1>زیرساخت را پیدا کن، پیشنهادها را بسنج.</h1>
+      <p>جستجوی محصول و موتور دیتابیس؛ ارائه‌دهنده را در نتایج فیلتر کنید.</p>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          onSearch({ query });
+        }}
+      >
+        <label htmlFor="home-search">جستجوی محصول، دسته یا موتور</label>
+        <div className="home-search-box">
+          <input
+            id="home-search"
+            type="search"
+            placeholder="VPS، PostgreSQL، Redis…"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+          <button type="submit">جستجو</button>
+        </div>
+      </form>
+      <nav className="home-categories" aria-label="دسته‌های خدمات">
+        <button onClick={() => onSearch({ category: "vps" })}>
+          سرور مجازی
+        </button>
+        <button onClick={() => onSearch({ category: "database" })}>
+          دیتابیس مدیریت‌شده
+        </button>
+      </nav>
+      <small>مقایسه قیمت‌های منتشرشده؛ قیمت و موجودی لحظه‌ای نیست.</small>
+    </main>
+  );
+}
+
 function App() {
-  const { request, selectedId, catalogId, setRequest, select, backToList } =
-    useDiscoveryState();
+  const {
+    home,
+    request,
+    selectedId,
+    catalogId,
+    setRequest,
+    select,
+    backToList,
+  } = useDiscoveryState();
   const [mobile, setMobile] = useState(
     () => matchMedia("(max-width: 720px)").matches,
   );
@@ -672,10 +717,14 @@ function App() {
         }
       />
     );
+  if (home) return <SearchHome onSearch={setRequest} />;
+
   return (
     <>
       <header className="site-header">
-        <span className="brand">≋ سروربین</span>
+        <a className="brand" href={import.meta.env.BASE_URL}>
+          ≋ سروربین
+        </a>
         <span>مقایسه زیرساخت</span>
       </header>
       <main className={mobile && selectedId && selected ? "show-detail" : ""}>
@@ -733,13 +782,6 @@ function App() {
                 <small>پوشش بررسی‌شده بازار؛ قیمت و موجودی لحظه‌ای نیست.</small>
               </aside>
             </section>
-            <nav className="provider-links" aria-label="کاتالوگ ارائه‌دهندگان">
-              {Object.entries(catalog.providers).map(([id, provider]) => (
-                <a key={id} href={catalogHref(id)}>
-                  کاتالوگ {provider.name}
-                </a>
-              ))}
-            </nav>
             <section className="search-entry" aria-label="جستجو">
               <label htmlFor="search">جستجوی محصول، دسته یا موتور</label>
               <input
