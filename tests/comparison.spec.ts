@@ -1,4 +1,40 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test as base, expect, type Page } from "@playwright/test";
+
+// Apply the release health gate to every journey, including handoff tabs.
+const test = base.extend<{ applicationHealth: void }>({
+  applicationHealth: [
+    async ({ context, baseURL }, use) => {
+      const errors: string[] = [];
+      const origin = new URL(baseURL!).origin;
+      context.on("page", (page) => {
+        page.on("pageerror", (error) => errors.push(error.message));
+        page.on("console", (message) => {
+          if (message.type() === "error") errors.push(message.text());
+        });
+      });
+      context.on("requestfailed", (request) => {
+        // Navigation may cancel an in-flight request during reload/Back.
+        if (
+          new URL(request.url()).origin === origin &&
+          request.failure()?.errorText !== "net::ERR_ABORTED"
+        )
+          errors.push(`${request.failure()?.errorText} ${request.url()}`);
+      });
+      context.on("response", (response) => {
+        if (
+          new URL(response.url()).origin === origin &&
+          response.status() >= 400
+        )
+          errors.push(`${response.status()} ${response.url()}`);
+      });
+      await use();
+      expect(errors, "Application runtime, console and asset errors").toEqual(
+        [],
+      );
+    },
+    { auto: true },
+  ],
+});
 
 // Pin the historical price-reversal scenario while acquisition expands the market.
 async function historicalProviders(page: Page) {
@@ -14,13 +50,6 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
     test.info().project.name === "mobile",
     "Desktop pricing journey; mobile discovery is covered separately.",
   );
-  const errors: string[] = [];
-  page.on("pageerror", (error) => errors.push(error.message));
-  page.on("requestfailed", (request) => errors.push(request.url()));
-  page.on("response", (response) => {
-    if (response.status() >= 400)
-      errors.push(`${response.status()} ${response.url()}`);
-  });
   expect((await page.goto("./?provider=manageit,iranserver"))?.status()).toBe(
     200,
   );
@@ -169,7 +198,6 @@ test("browse exact configurations, filter base budgets, inspect provider terms a
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBe(true);
-  expect(errors).toEqual([]);
 });
 
 test("evidence warnings accompany starting prices and unknown identity stays separate", async ({

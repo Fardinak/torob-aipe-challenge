@@ -174,4 +174,32 @@ On 2026-10-30, after that evidence checkpoint, the user explicitly chose
 boundary: publish the reviewed configurations and preserve the ledger’s
 custom/shared families and other unverified leads for resumable future work.
 Do not treat ticket closure as evidence that those families were acquired.
-Integrated release and deployed verification remain #22.
+The [integrated release review](release-verification.md) records the #22 evidence/eligibility review and delivery gate; final deployment results are retained on the ticket.
+
+
+## Release checklist
+
+Use [the integrated review](release-verification.md) as the release evidence index
+and [the demo outline](demo-outline.md) for the later recording. After any refresh:
+
+1. Reconcile the breadth reports and progress ledger with admitted configurations,
+   engine/tariff applicability, exclusions, deferred scope decisions and new leads.
+   Reopen research when evidence changes; do not infer that deferred families have
+   been acquired because a previous release was approved.
+2. Manually inspect source support, conflicts, dates, earlier revisions and failed
+   attempts. Run the existing catalog hash/schema validator and recompute eligible
+   starting prices through `compare`, including a real exact cross-provider item
+   before/after provider filtering. Retain actual outcomes and unresolved claims;
+   release review alone must not advance successful-verification dates.
+3. Run `BASE_PATH=/torob-aipe-challenge/ npm test`. This includes type/catalog/hash
+   validation and desktop/mobile journeys on the production artifact. Keep the
+   existing consequential behavior and representative journeys lean. Their shared
+   health gate checks runtime/console errors and failed application assets,
+   including handoff tabs; do not replace it with a homepage-only HTTP probe.
+4. Review, commit and push to `main`. Inspect the Pages workflow's **Verify deployed
+   desktop and mobile journey** step, not only artifact publication. It repeats
+   discovery, restoration, evidence and handoff at the actual hosting base path.
+   Reproduce with `PLAYWRIGHT_BASE_URL=https://fardinak.github.io/torob-aipe-challenge/ npm run test:browser`
+   if diagnosing a deployed failure. Record the verified commit/run URL and results
+   in the release issue before closure; a failed post-deployment check leaves the
+   release unverified. Never claim live availability or an unconditional final bill.

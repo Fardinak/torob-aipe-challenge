@@ -2,7 +2,7 @@
 
 Persian RTL React + TypeScript discovery application. The reviewed static catalog includes Iranian VPS configurations across a broad provider search and reviewed managed database configurations across five providers and sixteen engine identities. Browse exact resource configurations, inspect each provider's own tariff and evidence, filter resources/providers/base budgets, and restore the journey through its URL. A separate traffic mode preserves the original ManageIT/IranServer worked scenario; other policies contribute estimates only when supported. Prices are published monthly references, with billing terms, mandatory-charge uncertainty and verification dates visible. No live-stock or complete-bill guarantee is made.
 
-See the [VPS acquisition review](research/vps-breadth-review-2026-10-29.md) for search scope, admission decisions, exact overlaps and remaining limitations. See the [database acquisition review](research/database-acquisition-review-2026-10-30.md) for admitted plans, engine applicability, billing variants and unresolved custom/shared families. The overall release checklist remains separate from acquisition.
+See the [VPS acquisition review](research/vps-breadth-review-2026-10-29.md) for search scope, admission decisions, exact overlaps and remaining limitations. See the [database acquisition review](research/database-acquisition-review-2026-10-30.md) for admitted plans, engine applicability, billing variants and unresolved custom/shared families. The [integrated release review](docs/release-verification.md) records the evidence gate, representative journeys and deployment verification. Database coverage follows the explicitly approved boundary “Publish verified configurations; retain gaps”; deferred custom/shared families are not claimed acquired.
 
 ## Deployment
 
@@ -50,7 +50,7 @@ BASE_PATH=/torob-aipe-challenge/ npm test
 PLAYWRIGHT_BASE_URL=https://fardinak.github.io/torob-aipe-challenge/ npm run test:browser
 ```
 
-The journeys check configuration selection, minimum/exact resources, base-price budgets, traffic ranking/arithmetic, unknown costs, provider/source destinations, visible verification dates, 30-day stale warnings, keyboard operation, RTL, asset loading, runtime errors, reset and reload. Hosting serves the single application
+Every journey checks runtime/console errors and failed application assets, including handoff tabs. The journeys check configuration selection, minimum/exact resources, base-price budgets, traffic ranking/arithmetic, unknown costs, provider/source destinations, visible verification dates, 30-day stale warnings, keyboard operation, RTL, asset loading, runtime errors, reset and reload. Hosting serves the single application
 route `/torob-aipe-challenge/`; no other application routes are defined.
 
 ## Data and boundaries
@@ -65,52 +65,31 @@ Offers with a verified native hourly/daily tariff or USD monthly price retain th
 
 The returned `items` contain only eligible provider offers, exact or explicitly incomplete resource identity, a starting price/offer (or null), billing basis and offer-level cost uncertainty. Grouping requires verified CPU, RAM, storage capacity and a known storage type supported by verified storage evidence. Unknown facts produce separate items; equal resources do not promise equal performance. Stable offer IDs break price ties, and stable configuration IDs break listing ties. Legacy `ranked`, `unpriced`, `excluded` and validation errors remain available.
 
-Per-offer traffic policies and explicit assumptions keep product interpretations separate from source facts; `src/traffic-policy.ts` validates them: ManageIT download is egress billed at the source rate (1,200 toman/GB), upload is free ingress; IranServer’s unspecified-direction allowance is treated as shared ingress plus egress. Unknown required traffic charges stay outside ranked subtotals. Confirmed hard caps exclude plans; known paid overage charges only excess. Synthetic fixtures remain tests only. The reviewed catalog now contains first-party-backed exact cross-provider VPS matches, documented in the acquisition review; this does not complete database acquisition or every #12 release obligation. Calculations outside JavaScript’s safe integer range remain unpriced.
+Per-offer traffic policies and explicit assumptions keep product interpretations separate from source facts; `src/traffic-policy.ts` validates them: ManageIT download is egress billed at the source rate (1,200 toman/GB), upload is free ingress; IranServer’s unspecified-direction allowance is treated as shared ingress plus egress. Unknown required traffic charges stay outside ranked subtotals. Confirmed hard caps exclude plans; known paid overage charges only excess. Synthetic fixtures remain tests only. The reviewed catalog now contains first-party-backed exact cross-provider VPS matches, documented in the VPS acquisition review; the database acquisition review records its separate coverage and approved gaps. Calculations outside JavaScript’s safe integer range remain unpriced.
 
 Blank resource requirements impose no constraints; blank usage is zero. Usage is in whole GB, with 1 TB explicitly equal to 1,000 GB. Nonnegative whole numbers (including Persian/Arabic digits) update results immediately. Invalid input hides quotes until corrected. Equal prices sort by stable plan ID, with no performance preference implied.
 
 Billing disclosures preserve source-specific CPU allocation, tax, mandatory fees, IP/NAT and IPv4 uncertainty. ManageIT's optional floating IPv4 price is explanatory only. Native prices are not converted between currencies or invented monthly/hourly equivalents. The prototype remains on `prototype/vps-comparison`; this application implements approved layout C without merging the prototype.
 
-See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. VPS acquisition is indexed in the breadth review; database breadth and integrated release verification remain separate #12 work.
+See [manual refresh and identity rules](docs/catalog-maintenance.md) and the [2026-10-29 evidence review](research/vps-evidence-refresh-2026-10-29.md). Stale evidence alone stays eligible. Unresolved facts cannot support dependent filters/calculations; confirmed withdrawn offers remain archived and are excluded from comparison. VPS acquisition is indexed in the breadth review; the integrated release review links the completed acquisition checkpoints, retained gaps and delivery checks.
 
 ## Traffic comparison demo
 
 Open `?category=vps&ram=4&provider=manageit,iranserver&priceMode=traffic&egress=1000` to pin the historical provider scenario while coverage expands: eight offers are priced, led by IranServer NGP-small40 at 2,436,399 toman. ManageIT 2c/4g/75g shows 1,420,000 base + 1,200,000 traffic = 2,620,000 toman. Change outbound to 1,200 GB: three ManageIT offers remain ranked (2c/4g/75g at 2,860,000), with five IranServer offers separately unpriced. Select a configuration to inspect its provider offer. Inspect the original tariff wording and limitations, then reset. CPU and disk remain unconstrained by this preset.
 
-## Reproducible demo outline (under five minutes)
+## Demonstration and coverage
 
-1. **0:00–0:35:** Open the deployed URL and explain
-   the buyer problem: comparing sampled Iranian VPS offers requires
-   interpreting both resources and traffic terms.
-2. **0:35–1:30:** Browse the expanded catalog and a real multi-provider exact item, then open the pinned traffic-scenario URL above and point out
-   the changed ranking plus ManageIT's `۱٬۴۲۰٬۰۰۰ + ۱٬۲۰۰٬۰۰۰` arithmetic.
-3. **1:30–2:15:** Enter `1200` in outbound usage (without a thousands separator) and show three ranked ManageIT offers
-   alongside five separately unpriced candidates; explain why unknown overage
-   is not ranked as a cheap base price.
-4. **2:15–3:15:** Expand **جزئیات هزینه و منبع** to inspect original tariff wording and open
-   the provider handoff in a new tab; cancel the countdown to inspect its warnings, then use Continue now. Share or refresh the URL to restore the comparison; open the clean homepage to show defaults.
-5. **3:15–4:30:** Close with the engineering boundary: a static React/TypeScript app, exact
-   comparison operation tests, responsive browser tests, and fixed product
-   interpretations kept separate from source facts. Explain the AI-assisted
-   workflow: the agent implemented the approved issues, ran comparison and
-   browser tests, and reviewed the changes; human decisions set the buyer
-   problem, sample scope and traffic interpretation. Show the issue and test
-   results as evidence. AI supports development; the deployed app does not
-   call an AI model.
+Use the [current demonstration outline](docs/demo-outline.md) for the later recording: search/category entry, managed engines and versions, exact/provider-filtered offers, evidence, restoration, traffic ordering and selected-provider handoff. Recording and submission are subsequent work.
 
-The catalog is a reviewed, limited sample. It does not claim live availability,
-exhaustive market coverage, a final bill, or continuously verified provider terms;
-buyers should confirm conditions, inventory, tax and mandatory fees with the
-provider before purchase. The prototype reference remains on
-`prototype/vps-comparison`.
+The release contains 639 retained VPS records across 56 providers and 1,316 database offer records across five providers (60 distinct providers overall). Database records represent 484 engine/resource/package/region configurations with monthly references plus 832 native billing variants across 16 engine identities. These are inventory counts, not live availability or a count of fully priced exact matches. Unknown/conflicting facts and native tariffs without monthly toman references remain visible outside dependent rankings/filters. Database acquisition follows the approved named/published-configuration boundary; custom/shared families remain documented gaps, not an exhaustive-market claim.
 
-## Managed database initial slice (#15)
+## Managed database discovery
 
-Choose **دیتابیس مدیریت‌شده** in the category control, then an engine and a verified version. PostgreSQL and Redis each have two reviewed initial Liara base-package configurations. Minimum/exact resources and base-price budgets operate before listing prices. Engine/version choices come from admitted offers, with no engine whitelist. Version matching uses the exact published version string. Unknown/unsupported evidence cannot satisfy it. The clean homepage browses both release categories in separate groups; the comparison operation retains VPS as its default for existing callers. Database comparisons always use base prices and never VPS traffic policies; cross-engine browsing is ordered by engine, then price within each engine.
+Choose **دیتابیس مدیریت‌شده**, then an engine and an evidence-backed version. All admitted engines are available without a whitelist. Version matching uses the exact published string; unknown/unsupported versions cannot satisfy it. Minimum/exact CPU, RAM and disk constraints and base-price budgets apply before listing starting prices. Cross-engine browsing retains separate engine groups and prices; database offers never inherit VPS traffic policy.
 
-Database listing identity adds engine and verified node topology to exact CPU/RAM/storage identity, excluding version. Unknown topology keeps the initial offers independent. Details expose management, backups, location, topology, package, billing, mandatory-charge uncertainty, statuses, source links and general-tariff handoff. The visible backup conflict is unresolved, not an included-backup promise. See [initial review](research/managed-database-initial-review-2026-10-29.md). This does not fulfill the separate broad acquisition or genuine cross-provider release gate.
+Database listing identity adds engine and verified node topology to exact CPU/RAM/storage identity, excluding version. Unknown topology or storage keeps offers independent: no exact cross-provider database match is claimed. Details expose management, backups, location, topology, package, billing, mandatory-charge uncertainty, successful verification dates, statuses and retained/live sources. The initial four-offer [review](research/managed-database-initial-review-2026-10-29.md) is historical; use the [current acquisition review](research/database-acquisition-review-2026-10-30.md) for the shipped scope.
 
-Demo: switch category, select PostgreSQL / 18.4 / minimum 4 GB RAM, inspect Saturn at 4,125,000 toman/month and expand its service evidence. Switch to exact 8 GB to show preserved empty results, return to 4 GB, then choose Redis / 8.0. Follow the disclosed general provider tariff link. The representative browser journey runs on desktop and mobile alongside the existing VPS journeys.
+Try PostgreSQL / 18.4 / exact 2 CPU, 4 GB RAM and 40 GB disk, then inspect Liara's Base offer at 4,125,000 toman/month and its unresolved backup conflict. Switch to MySQL / 8.4 / exact 4 CPU, 8 GB RAM and 80 GB disk to inspect Weblines at 6,024,960. Changing engine clears the previous version. A budget filters published monthly bases, not final bills. Native hourly/quarterly/half-yearly/annual totals remain distinct and never invent monthly bargains.
 
 ## Search and restoration (#16)
 
@@ -168,7 +147,7 @@ Back/Forward restore catalog and detail navigation under the hosting base path.
 The comparison check uses a synthetic exact overlap to prove that an excluded
 cheaper provider cannot supply a starting price. Production VPS and database
 journeys exercise provider filtering, catalog prices, all-engine coverage and
-restoration. Real exact VPS overlaps are now present; see the acquisition review for supported identities and provider-specific differences. Database breadth and the remaining #12 release gates still require their own verification.
+restoration. Real exact VPS overlaps are now present; see the acquisition review for supported identities and provider-specific differences. See the integrated release review for the database completion boundary and verification evidence.
 
 ## VPS usage controls (#18)
 
